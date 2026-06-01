@@ -96,7 +96,7 @@ export default function Home() {
         {/* ── Kenapa ── */}
         <section className="mt-16 text-center sm:mt-24">
           <p className="mx-auto max-w-2xl text-balance font-serif text-2xl leading-snug tracking-tight text-fog sm:text-3xl">
-            Kenapa gw bikin ini? Karena gw tau orang Indo suka yang ✨gratis✨.
+            Kenapa gw bikin ini? Karena gw tau orang Indo suka yang ✨gratis✨
           </p>
         </section>
       </main>
