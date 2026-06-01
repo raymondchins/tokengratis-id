@@ -103,8 +103,65 @@ export default async function Page({
               </section>
             )}
 
+            {/* cara claim — alur umum (pakai field sumber: url + baseUrl). Bukan
+                instruksi terverifikasi per-provider; detail pasti di halaman resmi. */}
+            {p.url && (
+              <section className="rounded-[8px] border border-ink-line bg-ink-soft px-5 py-4">
+                <p className="text-xs font-semibold uppercase tracking-[0.15em] text-mute">
+                  Cara claim API key gratis
+                </p>
+                <p className="mt-1 text-[11px] text-mute">
+                  Langkah umum — detail pastinya ikutin halaman resmi {p.name}.
+                </p>
+                <ol className="mt-3 space-y-2 text-sm leading-relaxed text-fog">
+                  <li className="flex gap-2.5">
+                    <span className="font-mono text-xs text-mute">1.</span>
+                    <span>
+                      Buka{" "}
+                      <a
+                        href={p.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline decoration-ink-line underline-offset-2 hover:text-fog"
+                      >
+                        halaman API key {p.name} ↗
+                      </a>
+                    </span>
+                  </li>
+                  <li className="flex gap-2.5">
+                    <span className="font-mono text-xs text-mute">2.</span>
+                    <span>Daftar akun baru, atau login kalau udah punya.</span>
+                  </li>
+                  <li className="flex gap-2.5">
+                    <span className="font-mono text-xs text-mute">3.</span>
+                    <span>Generate API key di dashboard / settings.</span>
+                  </li>
+                  <li className="flex gap-2.5">
+                    <span className="font-mono text-xs text-mute">4.</span>
+                    <span>
+                      Pakai API key
+                      {p.baseUrl && (
+                        <>
+                          {" "}
+                          + Base URL{" "}
+                          <code className="rounded-[3px] border border-ink-line bg-ink px-1.5 py-0.5 font-mono text-[12px]">
+                            {p.baseUrl}
+                          </code>
+                        </>
+                      )}{" "}
+                      di SDK atau HTTP client.
+                    </span>
+                  </li>
+                </ol>
+              </section>
+            )}
+
             {/* models */}
-            <ModelsTable models={p.models} more={p.moreModels} />
+            <ModelsTable
+              models={p.models}
+              more={p.moreModels}
+              sourceUrl={p.sources[0]?.url}
+            />
           </div>
 
           {/* sidebar */}
@@ -133,7 +190,7 @@ export default async function Page({
 
               <div className="space-y-2.5 border-t border-ink-line pt-4">
                 {p.freeLimit && (
-                  <Fact label="Free limit">
+                  <Fact label="Rate limit">
                     <span className="text-grass">{p.freeLimit}</span>
                   </Fact>
                 )}
@@ -157,17 +214,19 @@ export default async function Page({
                 <p className="mb-1 text-xs font-semibold uppercase tracking-[0.15em] text-mute">
                   Sumber data
                 </p>
-                <SourceLine source={p.source} syncedAt={p.syncedAt} />
+                <SourceLine sources={p.sources} />
                 <p className="mt-2 text-[11px] leading-relaxed text-mute">
                   Kami aggregator — bukan verifier, bukan pemilik datanya. Kalau ada
                   yang ga akurat,{" "}
                   <a
-                    href={p.source.url}
+                    href={p.sources[0].url}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="underline decoration-ink-line underline-offset-2 hover:text-fog"
                   >
-                    perbaiki di sumbernya
+                    {p.sources.length > 1
+                      ? "perbaiki di sumber masing-masing"
+                      : "perbaiki di sumbernya"}
                   </a>
                   .
                 </p>

@@ -2,7 +2,7 @@ import type { Modality, Provider, ProviderListItem } from "./types";
 import { ctxNum } from "./ctxnum";
 import providersData from "@/data/providers.json";
 
-const providers = providersData as Provider[];
+const providers = providersData as unknown as Provider[];
 
 /** Semua provider (full) — buat halaman detail + sitemap. */
 export function getAllProviders(): Provider[] {
@@ -31,6 +31,23 @@ export function getListItems(): ProviderListItem[] {
 /** Cari satu provider by slug (full). undefined kalau ga ketemu. */
 export function getProviderBySlug(slug: string): Provider | undefined {
   return providers.find((p) => p.slug === slug);
+}
+
+/**
+ * Daftar sumber unik (name+url) di seluruh provider, diurut by berapa provider
+ * yang nyumbang dari sumber itu (paling banyak duluan). Buat atribusi footer —
+ * otomatis ikut berapapun sumber yang ke-wire, ga usah hardcode.
+ */
+export function getSources(): { name: string; url: string; count: number }[] {
+  const map = new Map<string, { name: string; url: string; count: number }>();
+  for (const p of providers) {
+    for (const s of p.sources) {
+      const cur = map.get(s.name);
+      if (cur) cur.count++;
+      else map.set(s.name, { name: s.name, url: s.url, count: 1 });
+    }
+  }
+  return [...map.values()].sort((a, b) => b.count - a.count);
 }
 
 export type FilterState = {

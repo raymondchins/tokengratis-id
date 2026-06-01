@@ -1,6 +1,4 @@
-import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import Spark from "@/components/Spark";
 import DirectoryClient from "./directory/DirectoryClient";
 import { getListItems } from "@/lib/data";
 
@@ -31,11 +29,7 @@ export default function Home() {
       <main className="mx-auto max-w-5xl px-6">
         {/* ── Hero ── */}
         <section className="mx-auto max-w-3xl pt-16 text-center sm:pt-24">
-          <span className="inline-flex items-center gap-1.5 rounded-full border border-grass-line bg-grass-bg px-3 py-1 text-xs font-medium text-grass">
-            ✅ {count} provider · {totalModels} model gratis
-          </span>
-
-          <h1 className="mt-6 font-serif text-5xl font-medium leading-[1.04] tracking-tight text-fog sm:text-6xl">
+          <h1 className="font-serif text-5xl font-medium leading-[1.04] tracking-tight text-fog sm:text-6xl">
             API AI yang bisa
             <br />
             dipake gratis
@@ -50,15 +44,9 @@ export default function Home() {
             apa adanya dari sumber.
           </p>
 
-          <div className="mt-8 flex justify-center">
-            <Link
-              href="#direktori"
-              className="inline-flex items-center gap-2 rounded-[6px] bg-ember px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-ember-soft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40"
-            >
-              <Spark className="h-4 w-4" />
-              Lihat direktori
-            </Link>
-          </div>
+          <span className="mt-6 inline-flex items-center gap-1.5 rounded-full border border-grass-line bg-grass-bg px-3 py-1 text-xs font-medium text-grass">
+            ✅ {count} provider · {totalModels} model gratis
+          </span>
         </section>
 
         {/* ── Directory table ── */}
@@ -82,27 +70,6 @@ export default function Home() {
             ))}
           </div>
         </section>
-
-        {/* ── Footer ── */}
-        <footer id="sumber" className="mt-24 border-t border-ink-line pt-8 text-sm text-mute scroll-mt-20">
-          <p className="max-w-2xl">
-            Sumber data:{" "}
-            <a
-              href="https://github.com/mnfst/awesome-free-llm-apis"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline decoration-ink-line underline-offset-2 hover:text-fog"
-            >
-              mnfst/awesome-free-llm-apis
-            </a>
-            . Di-sync otomatis dari `data.json` sumber. Kita aggregator — bukan
-            verifier, bukan pemilik datanya.
-          </p>
-          <p className="mt-3 text-xs text-mute">
-            <span className="font-medium text-fog">tokengratis.id</span> — karena
-            raymond boros token.
-          </p>
-        </footer>
       </main>
     </div>
   );

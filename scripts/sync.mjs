@@ -1,162 +1,40 @@
 // Pipeline sync tokengratis.id — aggregator, bukan verifier.
-// Narik data dari mnfst/awesome-free-llm-apis (data.json — satu-satunya sumber
-// free-LLM-API dengan JSON bersih & terstruktur), normalize ke schema kita,
-// tulis ke data/providers.json. Idempotent: jalanin ulang = refresh data.
+// Orchestrator multi-sumber: jalanin tiap adapter (paralel) → merge/dedup →
+// download logo → smoke test → tulis data/providers.json. Idempotent.
 //
 //   node scripts/sync.mjs
+//   npm run sync
 //
-// Anti-halusinasi: kita CUMA mindahin field yang ada di sumber + men-derive
-// facet modality / context maks dari data yang sudah eksplisit. Ga nebak.
+// Sumber (lihat scripts/adapters/*.mjs):
+//   1. mnfst/awesome-free-llm-apis  (JSON bersih — prioritas #1)
+//   2. freellm.net                  (HTML table — context/modality lengkap)
+//   3. cheahjs/free-llm-api-resources (README markdown — rate limit presisi)
+//
+// Anti-halusinasi: tiap adapter cuma mindahin field yang EKSPLISIT ada di
+// sumbernya. Merge = gap-fill by priority (scripts/lib/merge.mjs). Ga nebak.
 
 import { writeFileSync, mkdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
-const SRC_URL =
-  "https://raw.githubusercontent.com/mnfst/awesome-free-llm-apis/main/data.json";
-const SOURCE = {
-  name: "mnfst/awesome-free-llm-apis",
-  url: "https://github.com/mnfst/awesome-free-llm-apis",
-};
+import { fetchProviders as fetchMnfst } from "./adapters/mnfst.mjs";
+import { fetchProviders as fetchFreellm } from "./adapters/freellm.mjs";
+import { fetchProviders as fetchCheahjs } from "./adapters/cheahjs.mjs";
+import { mergeProviders } from "./lib/merge.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = join(__dirname, "..", "data", "providers.json");
 const LOGO_DIR = join(__dirname, "..", "public", "logos");
 
-/** Buang nilai sentinel ("—"/"-"/kosong) → null (anti-halusinasi: ga simpen placeholder). */
-function cleanStr(v) {
-  if (!v) return null;
-  const t = String(v).trim();
-  return t && t !== "—" && t !== "-" && t !== "N/A" ? t : null;
-}
-
-/** Allowlist scheme: cuma http(s). Blok javascript:/data: dll dari sumber. */
-function safeUrl(u) {
-  if (!u) return null;
-  try {
-    return /^https?:$/.test(new URL(u).protocol) ? u : null;
-  } catch {
-    return null;
-  }
-}
-
-function slugify(s) {
-  return s
-    .toLowerCase()
-    .replace(/[()]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
-
-/** Derive facet modality dari string mentah sumber (mis. "Text + Vision"). */
-function facetsOf(modality) {
-  const m = String(modality || "").toLowerCase();
-  const f = new Set();
-  if (/vision/.test(m)) f.add("vision");
-  if (/image/.test(m)) f.add("image");
-  if (/audio|speech/.test(m)) f.add("audio");
-  if (/video/.test(m)) f.add("video");
-  if (/\bcode\b/.test(m)) f.add("code");
-  if (/embed/.test(m)) f.add("embeddings");
-  if (/rerank/.test(m)) f.add("reranking");
-  if (/text|multimodal|llm|mllm|aigc|roleplay|reasoning|safety/.test(m))
-    f.add("text");
-  if (f.size === 0) f.add("text");
-  return [...f];
-}
-
-const ORDER = [
-  "text",
-  "vision",
-  "image",
-  "audio",
-  "video",
-  "code",
-  "embeddings",
-  "reranking",
+// Tiap adapter: { label, fn }. Adapter yang gagal fetch ga boleh ngejatuhin
+// seluruh pipeline — di-skip dengan warning (sumber lain tetep jalan).
+const ADAPTERS = [
+  { label: "mnfst/awesome-free-llm-apis", fn: fetchMnfst },
+  { label: "freellm.net", fn: fetchFreellm },
+  { label: "cheahjs/free-llm-api-resources", fn: fetchCheahjs },
 ];
 
-/**
- * Derive "free limit" ringkas dari description sumber.
- * Anti-halusinasi: cuma narik angka/frasa yang EKSPLISIT ada di teks. Kalau ga
- * ada angka → fallback "Free" / "Free (permanen)" (yang juga eksplisit di teks).
- */
-function freeLimitOf(desc) {
-  const d = desc || "";
-  const period = (s) =>
-    /\/\s*day|per\s+day|daily/i.test(s)
-      ? "/hari"
-      : /\/\s*month|per\s+month|monthly/i.test(s)
-        ? "/bln"
-        : "";
-  let m;
-  // $ credits (e.g. "$10 trial credits", "$25 sign-up credit")
-  if ((m = d.match(/\$[\d,]+(?:\.\d+)?/))) return `${m[0]} kredit`;
-  // tokens with amount (e.g. "5M free tokens", "~1B tokens/month", "1M tokens/day")
-  if ((m = d.match(/([~]?[\d.,]+\s*[KMB])\b[^.]*?tokens?(\s*\/\s*\w+)?/i))) {
-    const amt = m[1].replace(/\s+/g, "");
-    return `${amt} token${period(m[0])}`;
-  }
-  // K/M credits (e.g. "100K monthly ... credits")
-  if ((m = d.match(/([\d.,]+\s*[KMB])\b[^.]*?credits?/i))) {
-    return `${m[1].replace(/\s+/g, "")} kredit${period(m[0])}`;
-  }
-  // API calls (e.g. "1,000 API calls/month")
-  if ((m = d.match(/([\d,]+)\s*(?:API\s+)?calls?/i))) {
-    return `${m[1]} calls${period(d)}`;
-  }
-  // Neurons/day
-  if ((m = d.match(/([\d,]+)\s*Neurons?/i))) return `${m[1]} Neurons/hari`;
-  // req/day (e.g. "50 req/day")
-  if ((m = d.match(/([\d,]+)\s*req(?:uests?)?\s*\/?\s*day/i)))
-    return `${m[1]} req/hari`;
-  // RPM per IP (OVHcloud)
-  if ((m = d.match(/([\d,]+)\s*RPM(?:\s*(?:per IP|\/IP))?/i)))
-    return `${m[1]} RPM/IP`;
-  // free models count (e.g. "~28 free models", "3 permanently free models")
-  if ((m = d.match(/([~]?\d+\+?)\s*(?:permanently\s+)?free models?/i)))
-    return `${m[1]} model free`;
-  // fallbacks (semua eksplisit di teks)
-  if (/permanent/i.test(d)) return "Free (permanen)";
-  if (/no (registration|signup|sign-up)/i.test(d)) return "Free, no signup";
-  return "Free";
-}
-
-/** Ambil registrable domain dari URL (buat fetch logo provider). */
-function domainOf(...urls) {
-  for (const u of urls) {
-    if (!u) continue;
-    try {
-      const host = new URL(u).hostname.replace(/^www\./, "");
-      const parts = host.split(".");
-      if (parts.length <= 2) return host;
-      // handle .co.uk / .com.cn / .com.au dst
-      const tld2 = parts.slice(-2).join(".");
-      if (/^(co|com|net|org|gov|ac|edu)\.\w{2,3}$/.test(tld2)) {
-        return parts.slice(-3).join(".");
-      }
-      return parts.slice(-2).join(".");
-    } catch {
-      /* skip */
-    }
-  }
-  return null;
-}
-
-/** "256K"/"1M"/"2B" -> angka, buat nyari context maks. (mirror lib/ctxnum.ts) */
-function ctxNum(c) {
-  if (!c) return 0;
-  const m = String(c).match(/([\d.]+)\s*([KkMmBb]?)/);
-  if (!m) return 0;
-  let n = parseFloat(m[1]);
-  const u = m[2].toLowerCase();
-  if (u === "k") n *= 1e3;
-  if (u === "m") n *= 1e6;
-  if (u === "b") n *= 1e9;
-  return n;
-}
-
-/** Download favicon tiap provider ke public/logos/<slug>.png. Gagal → logo null (UI fallback flag). */
+/** Download favicon tiap provider ke public/logos/<slug>.png. Gagal → logo null (UI fallback flag/globe). */
 async function downloadLogos(providers) {
   mkdirSync(LOGO_DIR, { recursive: true });
   await Promise.all(
@@ -181,15 +59,19 @@ async function downloadLogos(providers) {
   );
 }
 
-/** Smoke test (PRD): tiap entry wajib punya source+syncedAt, ga ada nilai sentinel nyangkut. */
+/** Smoke test (PRD): tiap entry wajib punya source+syncedAt, ga ada sentinel nyangkut. */
 function smokeTest(providers) {
   const errs = [];
   for (const p of providers) {
-    if (!p.source || !p.syncedAt) errs.push(`${p.slug}: missing source/syncedAt`);
+    if (!p.sources || p.sources.length === 0 || !p.syncedAt)
+      errs.push(`${p.slug}: missing sources/syncedAt`);
+    if (p.sources?.some((s) => !s.name || !s.url || !s.syncedAt))
+      errs.push(`${p.slug}: source ref tidak lengkap`);
     if (p.modelCount === 0 && p.maxContext)
       errs.push(`${p.slug}: 0 models tapi maxContext keisi`);
     if (p.maxContext === "—" || p.maxContext === "-")
       errs.push(`${p.slug}: maxContext sentinel`);
+    if (!p.slug || !p.name) errs.push(`${p.slug || "?"}: slug/name kosong`);
   }
   if (errs.length) {
     console.error("✗ Smoke test FAILED:\n" + errs.join("\n"));
@@ -199,73 +81,46 @@ function smokeTest(providers) {
 }
 
 async function main() {
-  const res = await fetch(SRC_URL);
-  if (!res.ok) throw new Error(`Fetch gagal: ${res.status}`);
-  const data = await res.json();
-  const syncedAt = new Date().toISOString();
+  const mergeRunAt = new Date().toISOString();
 
-  const providers = data.providers.map((p) => {
-    const allModels = (p.models || []).map((m) => ({
-      id: m.id,
-      name: m.name,
-      context: cleanStr(m.context),
-      maxOutput: cleanStr(m.maxOutput),
-      modality: m.modality,
-      rateLimit: cleanStr(m.rateLimit),
-    }));
-
-    // Sumber kadang nyelipin baris "catatan" (id null), mis. "+ 42 more models".
-    // Itu BUKAN model beneran → pisahin: jangan masuk tabel/hitungan, simpan
-    // sebagai note "+N more".
-    const models = allModels.filter((m) => m.id);
-    const moreEntry = allModels.find((m) => !m.id);
-    const moreModels = moreEntry
-      ? moreEntry.name.replace(/^\+\s*/, "").trim()
-      : null;
-
-    const modalities = ORDER.filter((f) =>
-      models.some((m) => facetsOf(m.modality).includes(f)),
-    );
-
-    const maxModel = models.reduce(
-      (best, m) => (ctxNum(m.context) > ctxNum(best?.context) ? m : best),
-      models[0],
-    );
-
-    const domain = domainOf(p.url, p.baseUrl);
-    const slug = slugify(p.name);
-
-    return {
-      slug,
-      name: p.name,
-      category: p.category,
-      country: p.country,
-      flag: p.flag,
-      domain,
-      // logo path diisi/di-null-in pas downloadLogos() (self-host favicon).
-      logo: domain ? `/logos/${slug}.png` : null,
-      url: safeUrl(p.url),
-      baseUrl: safeUrl(p.baseUrl),
-      description: p.description || "",
-      modalities,
-      modelCount: models.length,
-      maxContext: maxModel?.context || null,
-      moreModels,
-      freeLimit: freeLimitOf(p.description),
-      models,
-      source: SOURCE,
-      syncedAt,
-      sourceUpdatedAt: data.lastUpdated || null,
-    };
+  // 1. Fetch semua sumber paralel. Sumber gagal → skip (jangan jatohin pipeline).
+  const settled = await Promise.allSettled(ADAPTERS.map((a) => a.fn()));
+  const partialGroups = [];
+  settled.forEach((res, i) => {
+    const label = ADAPTERS[i].label;
+    if (res.status === "fulfilled" && Array.isArray(res.value)) {
+      console.log(
+        `  ✓ ${label}: ${res.value.length} provider, ${res.value.reduce((a, p) => a + (p.models?.length || 0), 0)} model`,
+      );
+      partialGroups.push(res.value);
+    } else {
+      const reason = res.status === "rejected" ? res.reason : "bukan array";
+      console.warn(`  ⚠ ${label} di-SKIP: ${reason?.message || reason}`);
+    }
   });
 
+  if (partialGroups.length === 0) {
+    throw new Error("Semua sumber gagal — ga ada data buat ditulis.");
+  }
+
+  // 2. Merge / dedup (gap-fill by priority). Buang provider tanpa model
+  //    (card kosong = useless di direktori; mis. entri "gateway" tanpa daftar model).
+  const merged = mergeProviders(partialGroups, mergeRunAt);
+  const dropped = merged.filter((p) => p.modelCount === 0).map((p) => p.slug);
+  const providers = merged.filter((p) => p.modelCount > 0);
+  if (dropped.length) console.log(`  · drop ${dropped.length} provider 0-model: ${dropped.join(", ")}`);
+
+  // 3. Logo (favicon self-host) + smoke test.
   await downloadLogos(providers);
   smokeTest(providers);
 
+  // 4. Tulis output.
   const withLogo = providers.filter((p) => p.logo).length;
+  const totalModels = providers.reduce((a, p) => a + p.modelCount, 0);
+  const multiSource = providers.filter((p) => p.sources.length > 1).length;
   writeFileSync(OUT, JSON.stringify(providers, null, 2) + "\n");
   console.log(
-    `✓ Wrote ${providers.length} providers → data/providers.json (${withLogo} logos)`,
+    `✓ Wrote ${providers.length} providers (${totalModels} models, ${withLogo} logos, ${multiSource} multi-source) → data/providers.json`,
   );
 }
 

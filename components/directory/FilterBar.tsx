@@ -34,10 +34,13 @@ export default function FilterBar({
   state,
   onChange,
   availableModalities,
+  rightSlot,
 }: {
   state: FilterState;
   onChange: (next: FilterState) => void;
   availableModalities: Modality[];
+  /** Slot opsional di ujung kanan baris chip (mis. kontrol sort). */
+  rightSlot?: React.ReactNode;
 }) {
   function toggleModality(m: Modality) {
     const has = state.modalities.includes(m);
@@ -66,21 +69,25 @@ export default function FilterBar({
         />
       </div>
 
-      {/* Chip row — modality facets */}
-      <div className="-mx-1 flex flex-wrap items-center gap-2 px-1">
-        <Chip active={isAll} onClick={() => onChange(emptyFilter())}>
-          Semua
-        </Chip>
-
-        {availableModalities.map((m) => (
-          <Chip
-            key={m}
-            active={state.modalities.includes(m)}
-            onClick={() => toggleModality(m)}
-          >
-            {modalityLabel(m)}
+      {/* Chip row (modality facets) + slot kanan (sort) — 1 baris */}
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <div className="-mx-1 flex flex-wrap items-center gap-2 px-1">
+          <Chip active={isAll} onClick={() => onChange(emptyFilter())}>
+            Semua
           </Chip>
-        ))}
+
+          {availableModalities.map((m) => (
+            <Chip
+              key={m}
+              active={state.modalities.includes(m)}
+              onClick={() => toggleModality(m)}
+            >
+              {modalityLabel(m)}
+            </Chip>
+          ))}
+        </div>
+
+        {rightSlot && <div className="shrink-0">{rightSlot}</div>}
       </div>
     </div>
   );

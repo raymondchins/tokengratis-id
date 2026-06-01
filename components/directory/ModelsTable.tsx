@@ -10,9 +10,12 @@ const PAGE_SIZE = MODELS_PAGE_SIZE;
 export default function ModelsTable({
   models,
   more,
+  sourceUrl,
 }: {
   models: Model[];
   more?: string | null;
+  /** URL sumber utama — bikin "di sumber" clickable. */
+  sourceUrl?: string | null;
 }) {
   const [q, setQ] = useState("");
   const [page, setPage] = useState(1);
@@ -96,7 +99,20 @@ export default function ModelsTable({
       {/* note: model lain dari sumber (bukan entri detail) */}
       {more && (
         <p className="border-t border-ink-line px-5 py-3 text-xs text-mute">
-          + {more} — daftar lengkapnya ada di sumber.
+          + {more} — daftar lengkapnya ada{" "}
+          {sourceUrl ? (
+            <a
+              href={sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-ink-line underline-offset-2 hover:text-fog"
+            >
+              di sumber
+            </a>
+          ) : (
+            "di sumber"
+          )}
+          .
         </p>
       )}
 

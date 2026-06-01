@@ -41,7 +41,7 @@ function ProviderRow({ p }: { p: ProviderListItem }) {
         <ModalityTags modalities={p.modalities} />
       </div>
 
-      {/* Free limit */}
+      {/* Rate limit */}
       <div className="text-sm font-semibold">
         {p.freeLimit ? (
           <span className="text-grass">{p.freeLimit}</span>
@@ -92,6 +92,9 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
     (current - 1) * DIRECTORY_PAGE_SIZE,
     current * DIRECTORY_PAGE_SIZE,
   );
+  // Range provider yang beneran tampil di halaman ini (buat label "Menampilkan").
+  const rangeFrom = (current - 1) * DIRECTORY_PAGE_SIZE + 1;
+  const rangeTo = (current - 1) * DIRECTORY_PAGE_SIZE + pageItems.length;
 
   if (items.length === 0) {
     return (
@@ -111,29 +114,23 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
         state={filter}
         onChange={setFilter}
         availableModalities={availableModalities}
+        rightSlot={
+          <label className="flex items-center gap-2 text-sm text-mute">
+            Urutkan
+            <select
+              value={sort}
+              onChange={(e) => setSort(e.target.value as SortKey)}
+              className="rounded-[4px] border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:border-fog/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40"
+            >
+              {(Object.keys(SORT_LABELS) as SortKey[]).map((k) => (
+                <option key={k} value={k}>
+                  {SORT_LABELS[k]}
+                </option>
+              ))}
+            </select>
+          </label>
+        }
       />
-
-      {/* Count + sort */}
-      <div className="flex flex-wrap items-center justify-between gap-3">
-        <p className="text-sm text-mute">
-          Menampilkan <span className="font-semibold text-fog">{results.length}</span>{" "}
-          dari <span className="font-semibold text-fog">{items.length}</span> provider
-        </p>
-        <label className="flex items-center gap-2 text-sm text-mute">
-          Urutkan
-          <select
-            value={sort}
-            onChange={(e) => setSort(e.target.value as SortKey)}
-            className="rounded-[4px] border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:border-fog/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40"
-          >
-            {(Object.keys(SORT_LABELS) as SortKey[]).map((k) => (
-              <option key={k} value={k}>
-                {SORT_LABELS[k]}
-              </option>
-            ))}
-          </select>
-        </label>
-      </div>
 
       {/* Table (list of links) */}
       <div className="overflow-hidden rounded-[8px] border border-ink-line bg-ink-soft">
@@ -145,7 +142,7 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
           >
             <span>Provider</span>
             <span>Kemampuan</span>
-            <span>Free limit</span>
+            <span>Rate limit</span>
             <span>Catatan</span>
             <span className="text-right">Aksi</span>
           </div>
@@ -172,12 +169,37 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
         </div>
       </div>
 
-      {/* Pagination */}
-      {totalPages > 1 && (
-        <nav
-          aria-label="Navigasi halaman direktori"
-          className="flex items-center justify-center gap-1.5"
-        >
+      {/* Count (kiri) + pagination (kanan) — 1 baris */}
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <p className="text-sm text-mute">
+          {results.length === 0 ? (
+            <>
+              Menampilkan <span className="font-semibold text-fog">0</span> dari{" "}
+              <span className="font-semibold text-fog">{items.length}</span> provider
+            </>
+          ) : totalPages === 1 ? (
+            <>
+              Menampilkan{" "}
+              <span className="font-semibold text-fog">{results.length}</span> dari{" "}
+              <span className="font-semibold text-fog">{items.length}</span> provider
+            </>
+          ) : (
+            <>
+              Menampilkan{" "}
+              <span className="font-semibold text-fog">
+                {rangeFrom}–{rangeTo}
+              </span>{" "}
+              dari <span className="font-semibold text-fog">{results.length}</span>{" "}
+              provider
+            </>
+          )}
+        </p>
+
+        {totalPages > 1 && (
+          <nav
+            aria-label="Navigasi halaman direktori"
+            className="flex items-center gap-1.5"
+          >
           <button
             type="button"
             onClick={() => setPage(current - 1)}
@@ -213,7 +235,8 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
             Next →
           </button>
         </nav>
-      )}
+        )}
+      </div>
     </div>
   );
 }

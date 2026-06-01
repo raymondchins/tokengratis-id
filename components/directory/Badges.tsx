@@ -35,8 +35,6 @@ export const MODALITY_ORDER: Modality[] = [
   "audio",
   "video",
   "code",
-  "embeddings",
-  "reranking",
 ];
 
 export function modalityLabel(m: Modality): string {
@@ -201,31 +199,59 @@ function fmtDate(iso: string): string {
 }
 
 export function SourceLine({
-  source,
-  syncedAt,
+  sources,
   linkless = false,
 }: {
-  source: SourceRef;
-  syncedAt: string;
+  sources: SourceRef[];
   linkless?: boolean;
 }) {
+  if (sources.length === 0) return null;
+
+  const maxSyncedAt = sources.reduce(
+    (max, s) => (s.syncedAt > max ? s.syncedAt : max),
+    sources[0].syncedAt,
+  );
+
+  function SourceName({ s }: { s: SourceRef }) {
+    if (linkless) {
+      return (
+        <span className="underline decoration-ink-line underline-offset-2">
+          {s.name}
+        </span>
+      );
+    }
+    return (
+      <a
+        href={s.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline decoration-ink-line underline-offset-2 transition-colors hover:text-fog"
+      >
+        {s.name}
+      </a>
+    );
+  }
+
+  if (sources.length === 1) {
+    return (
+      <span className="text-[11px] leading-relaxed text-mute">
+        Disinkron {fmtDate(sources[0].syncedAt)} dari{" "}
+        <SourceName s={sources[0]} />
+      </span>
+    );
+  }
+
   return (
     <span className="text-[11px] leading-relaxed text-mute">
-      Disinkron {fmtDate(syncedAt)} dari{" "}
-      {linkless ? (
-        <span className="underline decoration-ink-line underline-offset-2">
-          {source.name}
+      Disinkron dari{" "}
+      {sources.map((s, i) => (
+        <span key={s.url}>
+          <SourceName s={s} />
+          {i < sources.length - 1 && <span>, </span>}
         </span>
-      ) : (
-        <a
-          href={source.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline decoration-ink-line underline-offset-2 transition-colors hover:text-fog"
-        >
-          {source.name}
-        </a>
-      )}
+      ))}
+      {" · update terakhir "}
+      {fmtDate(maxSyncedAt)}
     </span>
   );
 }

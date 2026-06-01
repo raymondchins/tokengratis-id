@@ -13,7 +13,7 @@ export default function ProviderLogo({
   className = "h-9 w-9",
 }: {
   logo: string | null;
-  flag: string;
+  flag: string | null;
   name: string;
   className?: string;
 }) {
@@ -36,7 +36,7 @@ export default function ProviderLogo({
         />
       ) : (
         <span aria-hidden className="text-base">
-          {flag}
+          {flag ?? "🌐"}
         </span>
       )}
     </div>
