@@ -37,7 +37,7 @@ export default function Navbar() {
 
         {/* Right actions */}
         <div className="flex items-center gap-2">
-          <span className="hidden text-base sm:inline" aria-hidden>
+          <span className="text-base" aria-hidden>
             🇮🇩
           </span>
           <Link
