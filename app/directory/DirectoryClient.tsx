@@ -11,58 +11,103 @@ import {
   type SortKey,
 } from "@/lib/data";
 import type { Modality, ProviderListItem } from "@/lib/types";
-import { DIRECTORY_GRID, DIRECTORY_PAGE_SIZE } from "@/lib/constants";
+import { DIRECTORY_GRID, DIRECTORY_GRID_COLS, DIRECTORY_PAGE_SIZE } from "@/lib/constants";
 import FilterBar from "@/components/directory/FilterBar";
 import { CategoryTag, ModalityTags, MODALITY_ORDER } from "@/components/directory/Badges";
 import ProviderLogo from "@/components/ProviderLogo";
 
 function ProviderRow({ p }: { p: ProviderListItem }) {
+  const ariaLabel = `${p.name} — ${p.modelCount} model${p.freeLimit ? `, gratis ${p.freeLimit}` : ""}`;
+
   return (
-    <Link
-      href={`/provider/${p.slug}`}
-      aria-label={`${p.name} — ${p.modelCount} model${p.freeLimit ? `, gratis ${p.freeLimit}` : ""}`}
-      className={`group ${DIRECTORY_GRID} border-t border-ink-line py-4 transition-colors hover:bg-ink/40 focus-visible:bg-ink/40 focus-visible:outline-none`}
-    >
-      {/* Provider */}
-      <div className="flex items-center gap-3 min-w-0">
-        <ProviderLogo logo={p.logo} flag={p.flag} name={p.name} className="h-9 w-9" />
-        <div className="min-w-0">
-          <span className="block truncate font-semibold text-fog">{p.name}</span>
-          <div className="mt-1 flex items-center gap-2">
-            <span className="text-[11px] text-mute">{p.modelCount} model</span>
-            <CategoryTag category={p.category} />
+    <>
+      {/* ── Mobile card (hidden on md+) ── */}
+      <Link
+        href={`/provider/${p.slug}`}
+        aria-label={ariaLabel}
+        className="group flex flex-col gap-3 border-t border-ink-line px-4 py-4 transition-colors hover:bg-ink/40 focus-visible:bg-ink/40 focus-visible:outline-none md:hidden"
+      >
+        {/* Logo + name + meta */}
+        <div className="flex items-center gap-3 min-w-0">
+          <ProviderLogo logo={p.logo} flag={p.flag} name={p.name} className="h-10 w-10 shrink-0" />
+          <div className="min-w-0">
+            <span className="block truncate font-semibold text-fog">{p.name}</span>
+            <div className="mt-1 flex flex-wrap items-center gap-2">
+              <span className="text-[11px] text-mute">{p.modelCount} model</span>
+              <CategoryTag category={p.category} />
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Kemampuan */}
-      <div>
-        <ModalityTags modalities={p.modalities} />
-      </div>
-
-      {/* Rate limit */}
-      <div className="text-sm font-semibold">
-        {p.freeLimit ? (
-          <span className="text-grass">{p.freeLimit}</span>
-        ) : (
-          <span className="text-mute">—</span>
+        {/* Rate limit */}
+        {p.freeLimit && (
+          <div className="flex items-center gap-2 text-sm">
+            <span className="text-mute">Rate limit:</span>
+            <span className="font-semibold text-grass">{p.freeLimit}</span>
+          </div>
         )}
-      </div>
 
-      {/* Catatan (teks apa adanya dari sumber) */}
-      <div>
-        <p className="line-clamp-2 text-[13px] leading-snug text-mute">
-          {p.description || "—"}
-        </p>
-      </div>
+        {/* Description */}
+        {p.description && (
+          <p className="line-clamp-2 text-[13px] leading-snug text-mute">{p.description}</p>
+        )}
 
-      {/* Aksi (visual — seluruh row yang jadi link) */}
-      <div className="flex justify-end">
-        <span className="inline-flex items-center rounded-[6px] bg-ember px-4 py-2 text-sm font-semibold text-white transition-colors group-hover:bg-ember-soft">
-          Lihat
-        </span>
-      </div>
-    </Link>
+        {/* Modality icons + Lihat button */}
+        <div className="flex items-center justify-between gap-3">
+          <ModalityTags modalities={p.modalities} />
+          <span className="inline-flex shrink-0 items-center rounded-[6px] bg-ember px-4 py-2 text-sm font-semibold text-white transition-colors group-hover:bg-ember-soft">
+            Lihat
+          </span>
+        </div>
+      </Link>
+
+      {/* ── Desktop grid row (hidden below md) ── */}
+      <Link
+        href={`/provider/${p.slug}`}
+        aria-label={ariaLabel}
+        className={`group hidden border-t border-ink-line py-4 transition-colors hover:bg-ink/40 focus-visible:bg-ink/40 focus-visible:outline-none md:grid ${DIRECTORY_GRID_COLS}`}
+      >
+        {/* Provider */}
+        <div className="flex items-center gap-3 min-w-0">
+          <ProviderLogo logo={p.logo} flag={p.flag} name={p.name} className="h-9 w-9" />
+          <div className="min-w-0">
+            <span className="block truncate font-semibold text-fog">{p.name}</span>
+            <div className="mt-1 flex items-center gap-2">
+              <span className="text-[11px] text-mute">{p.modelCount} model</span>
+              <CategoryTag category={p.category} />
+            </div>
+          </div>
+        </div>
+
+        {/* Kemampuan */}
+        <div>
+          <ModalityTags modalities={p.modalities} />
+        </div>
+
+        {/* Rate limit */}
+        <div className="text-sm font-semibold">
+          {p.freeLimit ? (
+            <span className="text-grass">{p.freeLimit}</span>
+          ) : (
+            <span className="text-mute">—</span>
+          )}
+        </div>
+
+        {/* Catatan */}
+        <div>
+          <p className="line-clamp-2 text-[13px] leading-snug text-mute">
+            {p.description || "—"}
+          </p>
+        </div>
+
+        {/* Aksi */}
+        <div className="flex justify-end">
+          <span className="inline-flex items-center rounded-[6px] bg-ember px-4 py-2 text-sm font-semibold text-white transition-colors group-hover:bg-ember-soft">
+            Lihat
+          </span>
+        </div>
+      </Link>
+    </>
   );
 }
 
@@ -132,39 +177,46 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
 
       {/* Table (list of links) */}
       <div className="overflow-hidden rounded-[8px] border border-ink-line bg-ink-soft">
-        <div className="overflow-x-auto">
-          {/* Header row — visual guide; aria-hidden karena tiap row adalah satu link, bukan grid cell */}
-          <div
-            aria-hidden="true"
-            className={`${DIRECTORY_GRID} py-3 text-[11px] font-semibold uppercase tracking-wider text-mute`}
-          >
-            <span>Provider</span>
-            <span>Kemampuan</span>
-            <span>Rate limit</span>
-            <span>Catatan</span>
-            <span className="text-right">Aksi</span>
+        {results.length === 0 ? (
+          <div className="px-5 py-16 text-center">
+            <p className="text-base font-medium text-fog">
+              Ga ada yang cocok sama filter ini.
+            </p>
+            <p className="mt-2 text-sm text-mute">
+              Coba hapus beberapa filter atau ganti kata kunci.
+            </p>
+            <button
+              type="button"
+              onClick={() => setFilter(emptyFilter())}
+              className="mt-6 rounded-full border border-ink-line bg-ink px-5 py-2 text-sm font-medium text-fog transition-colors hover:border-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40"
+            >
+              Reset semua filter
+            </button>
           </div>
-
-          {results.length === 0 ? (
-            <div className="border-t border-ink-line px-5 py-16 text-center">
-              <p className="text-base font-medium text-fog">
-                Ga ada yang cocok sama filter ini.
-              </p>
-              <p className="mt-2 text-sm text-mute">
-                Coba hapus beberapa filter atau ganti kata kunci.
-              </p>
-              <button
-                type="button"
-                onClick={() => setFilter(emptyFilter())}
-                className="mt-6 rounded-full border border-ink-line bg-ink px-5 py-2 text-sm font-medium text-fog transition-colors hover:border-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40"
+        ) : (
+          <>
+            {/* Desktop: scrollable grid with header — hidden on mobile */}
+            <div className="hidden md:block overflow-x-auto">
+              {/* Header row — aria-hidden; tiap row adalah satu link */}
+              <div
+                aria-hidden="true"
+                className={`${DIRECTORY_GRID} py-3 text-[11px] font-semibold uppercase tracking-wider text-mute`}
               >
-                Reset semua filter
-              </button>
+                <span>Provider</span>
+                <span>Kemampuan</span>
+                <span>Rate limit</span>
+                <span>Catatan</span>
+                <span className="text-right">Aksi</span>
+              </div>
+              {pageItems.map((p) => <ProviderRow key={p.slug} p={p} />)}
             </div>
-          ) : (
-            pageItems.map((p) => <ProviderRow key={p.slug} p={p} />)
-          )}
-        </div>
+
+            {/* Mobile: stacked cards — hidden on md+ */}
+            <div className="md:hidden">
+              {pageItems.map((p) => <ProviderRow key={p.slug} p={p} />)}
+            </div>
+          </>
+        )}
       </div>
 
       {/* Count (kiri) + pagination (kanan) — 1 baris */}
@@ -203,7 +255,7 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
             onClick={() => setPage(current - 1)}
             disabled={current <= 1}
             aria-label="Halaman sebelumnya"
-            className="rounded-[6px] border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40 disabled:cursor-not-allowed disabled:opacity-40"
+            className="min-h-[40px] rounded-[6px] border border-ink-line bg-ink-soft px-3 py-2 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40 disabled:cursor-not-allowed disabled:opacity-40"
           >
             ← Prev
           </button>
@@ -214,7 +266,7 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
               onClick={() => setPage(n)}
               aria-label={`Halaman ${n}`}
               aria-current={n === current ? "page" : undefined}
-              className={`min-w-9 rounded-[6px] border px-3 py-1.5 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40 ${
+              className={`min-h-[40px] min-w-[40px] rounded-[6px] border px-3 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40 ${
                 n === current
                   ? "border-ember bg-ember text-white"
                   : "border-ink-line bg-ink-soft text-mute hover:border-mute hover:text-fog"
@@ -228,7 +280,7 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
             onClick={() => setPage(current + 1)}
             disabled={current >= totalPages}
             aria-label="Halaman berikutnya"
-            className="rounded-[6px] border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40 disabled:cursor-not-allowed disabled:opacity-40"
+            className="min-h-[40px] rounded-[6px] border border-ink-line bg-ink-soft px-3 py-2 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40 disabled:cursor-not-allowed disabled:opacity-40"
           >
             Next →
           </button>

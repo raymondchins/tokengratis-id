@@ -46,7 +46,7 @@ export default async function Page({
   return (
     <div className="min-h-dvh pb-24">
       <Navbar />
-      <main className="mx-auto max-w-5xl px-6 pt-12">
+      <main className="mx-auto max-w-5xl px-4 pt-8 sm:px-6 sm:pt-12">
         {/* back */}
         <Link
           href="/#direktori"
@@ -88,7 +88,7 @@ export default async function Page({
         </header>
 
         {/* 2-col: main + sidebar */}
-        <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_300px]">
+        <div className="mt-6 grid gap-6 sm:mt-8 sm:gap-8 lg:grid-cols-[1fr_300px]">
           {/* main */}
           <div className="order-2 space-y-6 lg:order-1">
             {/* catatan */}
@@ -144,7 +144,7 @@ export default async function Page({
                         <>
                           {" "}
                           + Base URL{" "}
-                          <code className="rounded-[3px] border border-ink-line bg-ink px-1.5 py-0.5 font-mono text-[12px]">
+                          <code className="inline-block max-w-full overflow-x-auto whitespace-nowrap rounded-[3px] border border-ink-line bg-ink px-1.5 py-0.5 align-bottom font-mono text-[12px]">
                             {p.baseUrl}
                           </code>
                         </>

@@ -34,16 +34,16 @@ export default function Home() {
     <div className="min-h-dvh pb-24">
       <Navbar />
 
-      <main className="mx-auto max-w-5xl px-6">
+      <main className="mx-auto max-w-5xl px-4 sm:px-6">
         {/* ── Hero ── */}
         <section className="mx-auto max-w-3xl pt-16 text-center sm:pt-24">
-          <h1 className="font-serif text-5xl font-medium leading-[1.04] tracking-tight text-fog sm:text-6xl">
+          <h1 className="font-serif text-4xl font-medium leading-[1.04] tracking-tight text-fog sm:text-5xl md:text-6xl">
             API AI yang bisa
             <br />
             dipake gratis
           </h1>
 
-          <p className="mx-auto mt-5 max-w-xl text-pretty text-lg leading-relaxed text-mute">
+          <p className="mx-auto mt-5 max-w-xl text-pretty text-base leading-relaxed text-mute sm:text-lg">
             Free tier &amp; free credits API LLM — di-aggregate otomatis dari
             sumber komunitas. Tiap provider nampilin{" "}
             <span className="font-medium text-fog">
@@ -58,7 +58,7 @@ export default function Home() {
         </section>
 
         {/* ── Directory table ── */}
-        <section id="direktori" className="mt-16 scroll-mt-20">
+        <section id="direktori" className="mt-12 scroll-mt-20 sm:mt-16">
           {lastUpdated && (
             <p className="mb-3 text-right text-xs text-mute opacity-50">
               Last update {lastUpdated}. Udah stale? DM{" "}
@@ -77,7 +77,7 @@ export default function Home() {
         </section>
 
         {/* ── How it works ── */}
-        <section id="cara-kerja" className="mt-24 scroll-mt-20">
+        <section id="cara-kerja" className="mt-16 scroll-mt-20 sm:mt-24">
           <h2 className="font-serif text-3xl font-semibold tracking-tight text-fog">
             Cara kerja
           </h2>

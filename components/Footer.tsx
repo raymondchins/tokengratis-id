@@ -14,7 +14,7 @@ export default function Footer() {
       id="sumber"
       className="mt-24 border-t border-ink-line scroll-mt-20"
     >
-      <div className="mx-auto max-w-5xl px-6 py-8 text-sm text-mute">
+      <div className="mx-auto max-w-5xl px-4 py-8 text-sm text-mute sm:px-6">
         <p className="max-w-2xl">
           Sumber data:{" "}
           {sources.map((s, i) => (
@@ -39,7 +39,9 @@ export default function Footer() {
             <span className="font-medium text-fog">tokengratis.id</span> — karena
             raymond boros token.
           </p>
-          <SocialIcons />
+          <div className="[&_a]:p-1.5 [&_a]:-m-1.5">
+            <SocialIcons />
+          </div>
         </div>
       </div>
     </footer>

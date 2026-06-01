@@ -42,7 +42,7 @@ export default function ModelsTable({
           {more ? "+" : ""})
         </p>
         {searchable && (
-          <div className="relative">
+          <div className="relative w-full sm:w-auto">
             <SearchIcon className="pointer-events-none absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-mute" />
             <input
               type="search"
@@ -53,14 +53,52 @@ export default function ModelsTable({
               }}
               placeholder="Cari model…"
               aria-label="Cari model"
-              className="w-44 rounded-[4px] border border-ink-line bg-ink py-1.5 pl-8 pr-3 text-xs text-fog placeholder:text-mute focus:border-fog/40 focus:outline-none focus:ring-2 focus:ring-fog/30"
+              className="w-full rounded-[4px] border border-ink-line bg-ink py-1.5 pl-8 pr-3 text-xs text-fog placeholder:text-mute focus:border-fog/40 focus:outline-none focus:ring-2 focus:ring-fog/30 sm:w-44"
             />
           </div>
         )}
       </div>
 
-      {/* table */}
-      <div className="overflow-x-auto">
+      {/* mobile cards (hidden on md+) */}
+      <div className="divide-y divide-ink-line md:hidden">
+        {slice.length === 0 ? (
+          <p className="px-5 py-10 text-center text-sm text-mute">
+            Ga ada model yang cocok sama &ldquo;{q}&rdquo;.
+          </p>
+        ) : (
+          slice.map((m) => (
+            <div key={m.id} className="px-4 py-3.5">
+              <div className="mb-2 min-w-0">
+                <div className="font-medium text-fog">{m.name}</div>
+                <div className="break-all font-mono text-[11px] text-mute">{m.id}</div>
+              </div>
+              <dl className="grid grid-cols-2 gap-x-4 gap-y-1.5 text-xs">
+                <div>
+                  <dt className="font-semibold uppercase tracking-wider text-mute">Modality</dt>
+                  <dd className="text-fog">{m.modality ?? "—"}</dd>
+                </div>
+                <div>
+                  <dt className="font-semibold uppercase tracking-wider text-mute">Context</dt>
+                  <dd className="font-medium text-fog">{m.context ?? "—"}</dd>
+                </div>
+                <div>
+                  <dt className="font-semibold uppercase tracking-wider text-mute">Output</dt>
+                  <dd className="text-fog">{m.maxOutput ?? "—"}</dd>
+                </div>
+                {m.rateLimit && (
+                  <div className="col-span-2">
+                    <dt className="font-semibold uppercase tracking-wider text-mute">Rate limit</dt>
+                    <dd className="text-fog">{m.rateLimit}</dd>
+                  </div>
+                )}
+              </dl>
+            </div>
+          ))
+        )}
+      </div>
+
+      {/* desktop table (hidden below md) */}
+      <div className="hidden overflow-x-auto md:block">
         <table className="w-full min-w-[560px] text-sm">
           <thead>
             <tr className="text-left text-[11px] font-semibold uppercase tracking-wider text-mute">
@@ -120,7 +158,7 @@ export default function ModelsTable({
       {pages > 1 && (
         <nav
           aria-label="Navigasi halaman model"
-          className="flex items-center justify-between gap-3 border-t border-ink-line px-5 py-3 text-xs text-mute"
+          className="flex flex-wrap items-center justify-between gap-3 border-t border-ink-line px-5 py-3 text-xs text-mute"
         >
           <span>
             Hal {current}/{pages} · {filtered.length} model
@@ -131,7 +169,7 @@ export default function ModelsTable({
               onClick={() => setPage(current - 1)}
               disabled={current <= 1}
               aria-label="Halaman model sebelumnya"
-              className="rounded-[4px] border border-ink-line bg-ink px-3 py-1.5 font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40 disabled:cursor-not-allowed disabled:opacity-40"
+              className="min-h-[40px] min-w-[40px] rounded-[4px] border border-ink-line bg-ink px-3 py-1.5 font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40 disabled:cursor-not-allowed disabled:opacity-40"
             >
               ← Prev
             </button>
@@ -140,7 +178,7 @@ export default function ModelsTable({
               onClick={() => setPage(current + 1)}
               disabled={current >= pages}
               aria-label="Halaman model berikutnya"
-              className="rounded-[4px] border border-ink-line bg-ink px-3 py-1.5 font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40 disabled:cursor-not-allowed disabled:opacity-40"
+              className="min-h-[40px] min-w-[40px] rounded-[4px] border border-ink-line bg-ink px-3 py-1.5 font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40 disabled:cursor-not-allowed disabled:opacity-40"
             >
               Next →
             </button>

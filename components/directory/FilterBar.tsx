@@ -69,8 +69,10 @@ export default function FilterBar({
         />
       </div>
 
-      {/* Chip row (modality facets) + slot kanan (sort) — 1 baris */}
-      <div className="flex flex-wrap items-center justify-between gap-3">
+      {/* Chip row (modality facets) + slot kanan (sort)
+           mobile: stacked (chips on top, sort below right-aligned)
+           sm+:    side-by-side (chips left, sort right) */}
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
         <div className="-mx-1 flex flex-wrap items-center gap-2 px-1">
           <Chip active={isAll} onClick={() => onChange(emptyFilter())}>
             Semua
@@ -87,7 +89,9 @@ export default function FilterBar({
           ))}
         </div>
 
-        {rightSlot && <div className="shrink-0">{rightSlot}</div>}
+        {rightSlot && (
+          <div className="flex shrink-0 justify-end">{rightSlot}</div>
+        )}
       </div>
     </div>
   );

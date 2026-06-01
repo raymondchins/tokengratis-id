@@ -15,12 +15,12 @@ export default function DirectoryPage() {
     <div className="min-h-dvh pb-24">
       <Navbar />
 
-      <main className="mx-auto max-w-5xl px-6">
-        <header className="pt-14 sm:pt-20">
+      <main className="mx-auto max-w-5xl px-4 sm:px-6">
+        <header className="pt-10 sm:pt-14 md:pt-20">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-mute">
             Direktori API AI gratis
           </p>
-          <h1 className="mt-4 font-serif text-4xl font-semibold leading-tight tracking-tight text-fog sm:text-5xl">
+          <h1 className="mt-4 font-serif text-3xl font-semibold leading-tight tracking-tight text-fog sm:text-4xl md:text-5xl">
             Semua provider di satu tempat.
           </h1>
           <p className="mt-4 max-w-2xl text-pretty text-base leading-relaxed text-mute">
@@ -31,7 +31,7 @@ export default function DirectoryPage() {
           </p>
         </header>
 
-        <section className="mt-10">
+        <section className="mt-8 sm:mt-10">
           <DirectoryClient items={items} />
         </section>
 
