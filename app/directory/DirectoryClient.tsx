@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import {
   filterProviders,
@@ -22,6 +22,8 @@ import Spark from "@/components/Spark";
 
 const GRID =
   "grid min-w-[960px] grid-cols-[minmax(190px,1.8fr)_minmax(130px,1fr)_minmax(120px,0.9fr)_minmax(200px,1.7fr)_108px] items-start gap-4 px-5 text-left";
+
+const PAGE_SIZE = 10;
 
 function ProviderRow({ p }: { p: Provider }) {
   return (
@@ -76,7 +78,15 @@ function ProviderRow({ p }: { p: Provider }) {
 export default function DirectoryClient({ providers }: { providers: Provider[] }) {
   const [filter, setFilter] = useState<FilterState>(emptyFilter());
   const [sort, setSort] = useState<SortKey>("popular");
+  const [page, setPage] = useState(1);
   const results = sortProviders(filterProviders(providers, filter), sort);
+
+  // Reset ke hal 1 tiap filter/sort berubah.
+  useEffect(() => setPage(1), [filter, sort]);
+
+  const totalPages = Math.max(1, Math.ceil(results.length / PAGE_SIZE));
+  const current = Math.min(page, totalPages);
+  const pageItems = results.slice((current - 1) * PAGE_SIZE, current * PAGE_SIZE);
 
   const availableModalities = useMemo<Modality[]>(() => {
     const present = new Set(providers.flatMap((p) => p.modalities));
@@ -154,10 +164,46 @@ export default function DirectoryClient({ providers }: { providers: Provider[] }
               </button>
             </div>
           ) : (
-            results.map((p) => <ProviderRow key={p.slug} p={p} />)
+            pageItems.map((p) => <ProviderRow key={p.slug} p={p} />)
           )}
         </div>
       </div>
+
+      {/* Pagination */}
+      {totalPages > 1 && (
+        <div className="flex items-center justify-center gap-1.5">
+          <button
+            type="button"
+            onClick={() => setPage(current - 1)}
+            disabled={current <= 1}
+            className="rounded-[6px] border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute disabled:cursor-not-allowed disabled:opacity-40"
+          >
+            ← Prev
+          </button>
+          {Array.from({ length: totalPages }, (_, i) => i + 1).map((n) => (
+            <button
+              key={n}
+              type="button"
+              onClick={() => setPage(n)}
+              className={`min-w-9 rounded-[6px] border px-3 py-1.5 text-sm font-medium transition-colors ${
+                n === current
+                  ? "border-ember bg-ember text-white"
+                  : "border-ink-line bg-ink-soft text-mute hover:border-mute hover:text-fog"
+              }`}
+            >
+              {n}
+            </button>
+          ))}
+          <button
+            type="button"
+            onClick={() => setPage(current + 1)}
+            disabled={current >= totalPages}
+            className="rounded-[6px] border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute disabled:cursor-not-allowed disabled:opacity-40"
+          >
+            Next →
+          </button>
+        </div>
+      )}
     </div>
   );
 }

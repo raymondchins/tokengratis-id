@@ -41,7 +41,8 @@ export default function DirectoryPage() {
             dari sumber.
           </p>
           <p className="mt-2 text-xs text-mute/70">
-            <span className="font-medium text-mute">tokengratis.id</span>
+            <span className="font-medium text-mute">tokengratis.id</span> — karena
+            raymond boros token.
           </p>
         </footer>
       </main>

@@ -104,7 +104,7 @@ export default async function Page({
             )}
 
             {/* models */}
-            <ModelsTable models={p.models} />
+            <ModelsTable models={p.models} more={p.moreModels} />
           </div>
 
           {/* sidebar */}
@@ -141,7 +141,14 @@ export default async function Page({
                 <Fact label="Jumlah model">{p.modelCount}</Fact>
                 {p.domain && (
                   <Fact label="Domain">
-                    <span className="font-mono text-xs">{p.domain}</span>
+                    <a
+                      href={`https://${p.domain}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-mono text-xs text-fog underline decoration-ink-line underline-offset-2 transition-colors hover:decoration-mute"
+                    >
+                      {p.domain}
+                    </a>
                   </Fact>
                 )}
               </div>

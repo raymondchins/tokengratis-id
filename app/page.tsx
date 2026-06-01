@@ -66,22 +66,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ── Trust / source (single-source jujur — cuma mnfst yang di-ingest) ── */}
-        <section className="mt-16 text-center">
-          <p className="text-sm text-mute">Data di-aggregate &amp; di-sync otomatis dari</p>
-          <a
-            href="https://github.com/mnfst/awesome-free-llm-apis"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-3 inline-block font-serif text-base font-medium tracking-tight text-fog underline decoration-ink-line underline-offset-4 transition-colors hover:decoration-mute"
-          >
-            mnfst/awesome-free-llm-apis
-          </a>
-          <p className="mt-2 text-xs text-mute/70">
-            Sumber tunggal saat ini — sumber komunitas lain nyusul.
-          </p>
-        </section>
-
         {/* ── Directory table ── */}
         <section id="direktori" className="mt-16 scroll-mt-20">
           <DirectoryClient providers={providers} />
@@ -120,7 +104,8 @@ export default function Home() {
             verifier, bukan pemilik datanya.
           </p>
           <p className="mt-3 text-xs text-mute/70">
-            <span className="font-medium text-mute">tokengratis.id</span>
+            <span className="font-medium text-mute">tokengratis.id</span> — karena
+            raymond boros token.
           </p>
         </footer>
       </main>

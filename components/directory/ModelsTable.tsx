@@ -5,7 +5,13 @@ import type { Model } from "@/lib/types";
 
 const PAGE_SIZE = 8;
 
-export default function ModelsTable({ models }: { models: Model[] }) {
+export default function ModelsTable({
+  models,
+  more,
+}: {
+  models: Model[];
+  more?: string | null;
+}) {
   const [q, setQ] = useState("");
   const [page, setPage] = useState(1);
 
@@ -27,7 +33,8 @@ export default function ModelsTable({ models }: { models: Model[] }) {
       {/* header */}
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-ink-line px-5 py-3.5">
         <p className="text-xs font-semibold uppercase tracking-[0.15em] text-mute">
-          Model tersedia ({models.length})
+          Model tersedia ({models.length}
+          {more ? "+" : ""})
         </p>
         {searchable && (
           <div className="relative">
@@ -95,6 +102,13 @@ export default function ModelsTable({ models }: { models: Model[] }) {
           </tbody>
         </table>
       </div>
+
+      {/* note: model lain dari sumber (bukan entri detail) */}
+      {more && (
+        <p className="border-t border-ink-line px-5 py-3 text-xs text-mute">
+          + {more} — daftar lengkapnya ada di sumber.
+        </p>
+      )}
 
       {/* pagination */}
       {pages > 1 && (

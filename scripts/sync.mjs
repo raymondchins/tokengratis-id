@@ -144,7 +144,7 @@ async function main() {
   const syncedAt = new Date().toISOString();
 
   const providers = data.providers.map((p) => {
-    const models = (p.models || []).map((m) => ({
+    const allModels = (p.models || []).map((m) => ({
       id: m.id,
       name: m.name,
       context: m.context || null,
@@ -152,6 +152,15 @@ async function main() {
       modality: m.modality,
       rateLimit: m.rateLimit || null,
     }));
+
+    // Sumber kadang nyelipin baris "catatan" (id null), mis. "+ 42 more models".
+    // Itu BUKAN model beneran → pisahin: jangan masuk tabel/hitungan, simpan
+    // sebagai note "+N more".
+    const models = allModels.filter((m) => m.id);
+    const moreEntry = allModels.find((m) => !m.id);
+    const moreModels = moreEntry
+      ? moreEntry.name.replace(/^\+\s*/, "").trim()
+      : null;
 
     const modalities = ORDER.filter((f) =>
       models.some((m) => facetsOf(m.modality).includes(f)),
@@ -180,6 +189,7 @@ async function main() {
       modalities,
       modelCount: models.length,
       maxContext: maxModel?.context || null,
+      moreModels,
       freeLimit: freeLimitOf(p.description),
       models,
       source: SOURCE,

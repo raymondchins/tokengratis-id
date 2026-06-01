@@ -60,6 +60,8 @@ export interface Provider {
   maxContext: string | null;
   /** Ringkasan "sampe sejauh apa gratisnya", di-derive dari `description`. */
   freeLimit: string | null;
+  /** Catatan "+N model lain" dari sumber (entri non-model). null kalau ga ada. */
+  moreModels: string | null;
 
   models: Model[];
 
