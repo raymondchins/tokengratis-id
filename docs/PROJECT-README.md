@@ -2,20 +2,18 @@
 
 > **30-second orientation.** Working style → `~/.claude/playbook/PLAYBOOK.md`. Current state → `docs/STATE.md`. History → `docs/CHANGELOG.md`. Numbered learnings → `docs/log.md`.
 
-Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.
+Directory free tier & free credits API LLM, audience Indonesia, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol. **No DB, no auth, no backend** — data = `data/providers.json` (di-generate `npm run sync`).
 
 ## Quick facts
 
 | | |
 |---|---|
-| **Live URL** | https://<canonical-domain> |
+| **Live URL** | https://tokengratis.id (domain pending attach) |
 | **Vercel fallback** | https://tokengratis-id.vercel.app |
 | **GitHub repo** | https://github.com/raymondchins/tokengratis-id (Private) |
-| **Supabase project** | `<project_ref>` · `<region>` · Free plan |
-| **Supabase SQL Editor** | https://supabase.com/dashboard/project/<project_ref>/sql/new |
-| **Vercel project** | `tokengratis-id` · team `raymondchins-projects` · region `<region>` |
-| **Stack** | <e.g., Next.js 16 + TypeScript strict + Supabase Postgres + RLS + Tailwind 4 + shadcn/ui> |
-| **Domain** | `tokengratis-id.raymondchins.com` |
+| **Stack** | Next.js 16 (App Router, Turbopack) + TypeScript strict + Tailwind 4. Static/SSG. |
+| **Data** | `data/providers.json` ← `scripts/sync.mjs` (anchor: mnfst/awesome-free-llm-apis). NO database. |
+| **Design** | Light/paper neutral (getaiperks-style), Georgia serif + Inter |
 
 ## Files in this folder
 
@@ -25,8 +23,8 @@ Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sum
 | `docs/STATE.md` | Current state SoT | Read on demand when prompt asks about state/phase |
 | `docs/log.md` | Numbered learnings + decisions (append-only) | Read on demand for learning archeology |
 | `docs/CHANGELOG.md` | Append-only chronological history | Read on demand for what shipped when |
-| `.credentials` | Supabase publishable + secret keys | `source` before cred-using actions (gitignored) |
-| `supabase/migrations/` | All migrations (committed) | Reference when debugging or re-running |
+| `lib/types.ts` | Schema canonical (Provider + Model) | Reference sebelum nyentuh data/UI |
+| `scripts/sync.mjs` | Pipeline aggregator (`npm run sync`) | Reference saat refresh / tambah sumber |
 
 ## Daily workflow
 

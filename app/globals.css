@@ -1,20 +1,43 @@
 @import "tailwindcss";
 
+/*
+ * Design language: getaiperks.com — paper + editorial serif + neutral black/white,
+ * dengan accent hijau (free/positif) & ungu (partner).
+ * Token names lama dipertahankan (ink/ember/fog/mute) biar low-churn:
+ *   ink       = paper background (#f1f0e8)
+ *   ink-soft  = card / input surface (putih)
+ *   ink-line  = border / divider
+ *   fog       = primary text (cool near-black)
+ *   mute      = secondary text (cool gray)
+ *   ember*    = accent → pure black (buttons & selected states)
+ * Accent baru: grass* (hijau) + grape* (ungu).
+ */
 @theme {
-  /* Brand palette (PRD §11) */
-  --color-ink: #0a0807;
-  --color-ink-soft: #14110f;
-  --color-ink-line: #241f1b;
-  --color-ember: #dc4f1c;
-  --color-ember-soft: #f0673a;
-  --color-mute: #9a8f86;
-  --color-fog: #cfc6bd;
+  --color-ink: #f1f0e8;        /* page background — warm paper */
+  --color-ink-soft: #ffffff;   /* cards, inputs */
+  --color-ink-line: #e4e2d8;   /* borders, dividers */
+  --color-ember: #000000;      /* accent → pure black (buttons) */
+  --color-ember-soft: #1a1a1a; /* black hover */
+  --color-mute: #5f6a70;       /* secondary text */
+  --color-fog: #11181c;        /* primary text */
 
-  --font-sans: var(--font-work-sans), ui-sans-serif, system-ui, sans-serif;
+  /* Green accent — free tier / positif / "bisa diakses" */
+  --color-grass: #0e793c;
+  --color-grass-bg: #e8faf0;
+  --color-grass-line: #a2e9c1;
+  --color-grass-solid: #00a63e;
+
+  /* Purple accent — partner / kategori sekunder */
+  --color-grape: #7c3aed;
+  --color-grape-bg: #f4f3fb;
+  --color-grape-line: #d8cef2;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: Georgia, "Times New Roman", Times, serif;
 }
 
 html {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 body {
@@ -24,7 +47,18 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Editorial serif headings (getaiperks pakai Georgia, weight 600, tight tracking). */
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-serif);
+    letter-spacing: -0.02em;
+  }
+}
+
 ::selection {
   background: var(--color-ember);
-  color: var(--color-ink);
+  color: #ffffff;
 }

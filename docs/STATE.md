@@ -6,18 +6,29 @@
 
 ## Project Summary
 
-**What:** Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. **Aggregator transparan (bukan verifier)**, anti-halusinasi, maintenance ~nol. Social/branding project, bukan startup.
-**Deploy target:** https://tokengratis.id (status: 🚧 bootstrapping)
+**What:** Directory free tier & free credits API LLM, auto-aggregated dari sumber komunitas. **Aggregator transparan (bukan verifier)**, anti-halusinasi, maintenance ~nol. Audience Indonesia. Social/branding project, bukan startup.
+**Deploy target:** https://tokengratis.id (status: 🚧 domain pending attach)
 **Vercel fallback:** https://tokengratis-id.vercel.app
 
 ## Current phase
 
-**Phase 0 — Bootstrap.** Repo + Vercel project being set up. No app code yet. Spec di `docs/PRD.md`. Next: scaffold Next.js + Tailwind app, design data schema (JSON), build directory + filter UI on seed data, lalu pipeline aggregator.
+**Phase 2/3 — Directory live di data real.** App jalan: homepage (hero serif + tabel), `/directory`, `/provider/[slug]`. Data dari pipeline `npm run sync` (mnfst `data.json`, 24 provider). Next: cron nightly + attach domain Vercel.
 
-## Architecture (intentionally minimal — PRD §11)
+## Architecture
 
-- **NO database, NO auth, NO backend.** Data = file di repo (JSON/MDX), read-only, regenerate tiap build.
-- Static/ISR. Pipeline script jalan nightly (GitHub Actions / Vercel Cron) → fetch sumber → normalize → dedupe → extract opsional (LLM, extract-or-null) → diff → commit/rebuild.
+- **NO database, NO auth, NO backend.** Data = `data/providers.json` (read-only, di-generate `scripts/sync.mjs`).
+- Static / SSG (Next.js 16 + Turbopack). `/provider/[slug]` prerendered via `generateStaticParams`.
+- **Pipeline:** `scripts/sync.mjs` (`npm run sync`) → fetch mnfst `data.json` → normalize (derive facet modality + maxContext) → tulis `data/providers.json`. Idempotent. Belum di-cron (masih manual / on-build).
+
+## Data model (canonical = `lib/types.ts`)
+
+- **Provider:** slug, name, category (`provider_api`/`inference_provider`), country+flag, url, baseUrl, description (prosa apa adanya), modalities[] (facet), modelCount, maxContext, models[], source, syncedAt, sourceUpdatedAt.
+- **Model:** id, name, context, maxOutput, modality, rateLimit.
+- **DIBUANG (2026-06-01):** requiresCreditCard, requiresPhoneVerification, indonesiaAccess, offerType, freeQuota — ga ada sumber yang track terstruktur → "Unknown" bertaburan. Info itu kalau ada tetep di `description`.
+
+## Design
+
+Light / paper / neutral ala getaiperks.com. bg `#f1f0e8`, card putih, text `#11181c`, tombol pure black, accent hijau (`grass`) + ungu (`grape`). Heading Georgia serif, body Inter. Token di `app/globals.css`. Oren `#dc4f1c` di-pause (revert = 1-2 baris).
 
 ## Infrastructure
 
@@ -27,48 +38,45 @@
 | GitHub PAT | ✅ Live | `~/.claude/.credentials.shared` → `GITHUB_PAT` |
 | Vercel project | 🚧 Pending | will be `tokengratis-id.vercel.app` |
 | Custom domain `tokengratis.id` | 🚧 Pending | Ray punya domain, attach di Vercel |
-| Supabase | 🗄️ N/A | no DB by design |
-| Auth | 🗄️ N/A | no auth by design |
-| LLM key (extract step) | ⏸️ Later | `.credentials` kalau step extract dipakai |
+| Supabase / Auth | 🗄️ N/A | no DB / no auth by design |
 
 ## Data sources wired
 
 | Source | Format | Status |
 |---|---|---|
-| cheahjs/free-llm-api-resources | GitHub MD | ⏸️ Not yet |
-| amardeeplakshkar/awesome-free-llm-apis | GitHub MD | ⏸️ Not yet |
-| mnfst/awesome-free-llm-apis | GitHub MD | ⏸️ Not yet |
-| aicredits.dev | llms.txt | ⏸️ Not yet |
+| mnfst/awesome-free-llm-apis | JSON (`data.json`) | ✅ **Live anchor** — 24 provider |
+| cheahjs/free-llm-api-resources | GitHub MD | ⏸️ Cross-ref (butuh scraping) |
+| amardeeplakshkar/awesome-free-llm-apis | GitHub MD | ⏸️ Cross-ref |
+| aicredits.dev | llms.txt | ⏸️ Cross-ref (startup credits, scope luas) |
 
 ## Phase Progress
 
 | Phase | Scope | Status |
 |---|---|---|
-| 0 | Bootstrap (repo + Vercel) | 🚧 In progress |
-| 1 | Next.js scaffold + design system (dark/orange) | ⏸️ Pending |
-| 2 | Directory + detail + filter/search UI on seed JSON | ⏸️ Pending |
-| 3 | Pipeline aggregator (2-3 sources, dedupe, "Synced" labels) | ⏸️ Pending |
-| 4 | Nightly cron + auto-rebuild | ⏸️ Pending |
-| 5 (opt) | "Masih works? 👍/👎" anonymous counter | ⏸️ v2 maybe |
+| 0 | Bootstrap (repo + Vercel) | ✅ Done (repo) / 🚧 Vercel |
+| 1 | Next.js scaffold + design system | ✅ Done (light/paper neutral, getaiperks-style) |
+| 2 | Directory + detail + filter/search UI | ✅ Done (tabel, real data) |
+| 3 | Pipeline aggregator (mnfst JSON) | ✅ Done (`npm run sync`, 24 provider) |
+| 4 | Nightly cron + auto-rebuild | ⏸️ Pending (GitHub Actions / Vercel Cron) |
+| 5 (opt) | Tambah sumber (cheahjs/aicredits) + "masih works?" | ⏸️ v2 maybe |
 
 Legend: ✅ Complete · 🚧 In dev · ⏸️ Pending · 🗄️ N/A
 
 ## Open Questions / Blockers
 
-- None blocking. Pipeline LLM-extract step: pakai key apa (Anthropic/Gemini free?) — decide pas masuk Phase 3.
+- None blocking. Akses-Indonesia descoped (no source); kalau mau hidupin → layer editorial manual (lihat log.md).
 
 **Action required (Ray):**
-- Confirm Vercel project created + domain `tokengratis.id` attached (gw setup, Ray verify).
+- Confirm Vercel project + domain `tokengratis.id` attached.
 
 ## Next Up
 
-**Current wave:** Bootstrap → push scaffold → create Vercel project.
-**Backlog:** Phase 1 scaffold (Next.js + Tailwind + brand palette).
+**Current wave:** Push ke main (done) → setup Vercel project + domain.
+**Backlog:** GitHub Actions cron buat `npm run sync` nightly + auto-commit/rebuild. Tambah cheahjs/aicredits sources (butuh parser markdown/llms.txt).
 
-## Definition of Done (v1 — PRD §13)
+## Definition of Done (v1)
 
-- Directory bisa dibuka, di-search, di-filter.
-- Tiap entry punya atribusi sumber + tanggal sync + link.
-- Pipeline sync jalan otomatis tiap malam, no manual.
-- Ga ada satu pun klaim tanpa sumber.
-- Situs fresh tanpa Ray ngapa-ngapain.
+- ✅ Directory bisa dibuka, di-search, di-filter.
+- ✅ Tiap provider punya atribusi sumber + tanggal sync + link.
+- ✅ Ga ada klaim tanpa sumber (zero "Unknown" tebakan).
+- ⏸️ Pipeline sync jalan otomatis tiap malam (cron belum).

@@ -1,53 +1,65 @@
-// Data model untuk satu offer/listing (PRD §6).
-// ATURAN ANTI-HALUSINASI (PRD §7): field yang ga eksplisit di sumber = "unknown".
-// Jangan pernah infer/nebak. Tiap entry WAJIB punya minimal satu `sources`.
+// Data model tokengratis.id.
+// ATURAN ANTI-HALUSINASI: HANYA simpan field yang BENERAN ada di sumber.
+// Sumber (mnfst/awesome-free-llm-apis data.json) nyediain data level
+// provider + model. Field yang ga ada di sumber (butuh CC, butuh HP, akses
+// Indonesia, expiry terstruktur) SENGAJA ga di-model — info kayak gitu yang
+// kebetulan ditulis di prosa tetep utuh di `description` (apa adanya).
 
-export type Category = "llm" | "embeddings" | "image" | "audio" | "agent";
+export type ProviderCategory = "provider_api" | "inference_provider";
 
-export type OfferType = "free_tier" | "free_credits" | "trial";
+/** Facet kemampuan, di-derive dari string modality tiap model di sumber. */
+export type Modality =
+  | "text"
+  | "vision"
+  | "image"
+  | "audio"
+  | "video"
+  | "code"
+  | "embeddings"
+  | "reranking";
 
-/** Tri-state jujur: kalau ragu, "unknown" — bukan Yes/No palsu. */
-export type Tristate = "yes" | "no" | "unknown";
-
-/** Status akses dari Indonesia (PRD §9). Default WAJIB "unconfirmed". */
-export type IndonesiaAccess = "accessible" | "conditional" | "unconfirmed";
-
-/** Atribusi sumber — tiap field hasil extract simpan kutipan + URL (PRD §7.2). */
-export interface SourceRef {
-  /** Nama sumber, mis. "cheahjs/free-llm-api-resources" */
+export interface Model {
+  id: string;
   name: string;
-  url: string;
-  /** Potongan teks asal dari sumber (buat audit). Opsional. */
-  quote?: string;
+  /** Context window apa adanya dari sumber, mis. "256K". null = ga ditulis. */
+  context: string | null;
+  maxOutput: string | null;
+  /** String modality mentah dari sumber, mis. "Text + Vision". */
+  modality: string;
+  /** Rate limit apa adanya, mis. "200 RPM, 10 RPS". null = ga ditulis. */
+  rateLimit: string | null;
 }
 
-export interface Offer {
+export interface SourceRef {
+  name: string;
+  url: string;
+}
+
+export interface Provider {
   slug: string;
-  provider: string;
-  /** Path/URL logo. null kalau belum ada. */
-  logo: string | null;
-  category: Category;
-  offerType: OfferType;
+  name: string;
+  category: ProviderCategory;
+  /** ISO-2 country code (HQ provider — BUKAN ketersediaan akses). */
+  country: string;
+  flag: string;
+  /** Halaman daftar / ambil API key. */
+  url: string | null;
+  /** Base URL API (buat dipanggil developer). */
+  baseUrl: string | null;
+  /** Teks deskripsi apa adanya dari sumber (sering memuat catatan CC/expiry/region). */
+  description: string;
 
-  /** Jumlah credit/kuota gratis kalau tertulis. null = unknown. */
-  freeQuota: string | null;
-  /** Rate limit kalau tertulis. null = unknown. */
-  rateLimit: string | null;
+  /** Facet kemampuan provider (union dari modality semua model-nya). */
+  modalities: Modality[];
+  modelCount: number;
+  /** Context window terbesar di antara model-nya, mis. "1M". null = ga ada data. */
+  maxContext: string | null;
 
-  requiresCreditCard: Tristate;
-  requiresPhoneVerification: Tristate;
-  apiAvailable: Tristate;
+  models: Model[];
 
-  indonesiaAccess: IndonesiaAccess;
-
-  /** Aturan kadaluarsa kalau ada. null = unknown. */
-  expiry: string | null;
-
-  signupUrl: string | null;
-  docsUrl: string | null;
-
-  /** WAJIB ≥1 (PRD §7.4). */
-  sources: SourceRef[];
-  /** ISO date string, tanggal terakhir di-sync dari sumber. */
+  /** Atribusi sumber (WAJIB) + kapan di-sync. */
+  source: SourceRef;
   syncedAt: string;
+  /** Tanggal `lastUpdated` yang ditulis sumber. null kalau ga ada. */
+  sourceUpdatedAt: string | null;
 }

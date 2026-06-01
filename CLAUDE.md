@@ -13,7 +13,7 @@
 
 ## What this is
 
-Directory **free AI credits & free tier**, di-aggregate otomatis dari sumber komunitas, di-filter buat akses dari Indonesia. **Social/branding project, BUKAN startup, BUKAN dimonetisasi.** Optimasi: selalu fresh, jujur, maintenance ~nol.
+Directory **free tier & free credits API LLM**, di-aggregate otomatis dari sumber komunitas. Audience Indonesia (antarmuka Bahasa Indonesia). **Social/branding project, BUKAN startup, BUKAN dimonetisasi.** Optimasi: selalu fresh, jujur, maintenance ~nol.
 
 ## CORE PRINCIPLE (non-negotiable — baca PRD §2 & §7)
 
@@ -21,9 +21,9 @@ Directory **free AI credits & free tier**, di-aggregate otomatis dari sumber kom
 
 - JANGAN pakai kata **"Verified"** di mana pun. Pakai **"Synced [tanggal] dari [sumber]"** + link.
 - Trust dari **transparansi**, bukan klaim. Tiap data WAJIB tampil: dari mana, di-sync kapan, link sumber asli.
-- **Anti-halusinasi = aturan #1.** Extract-or-null: kalau info ga eksplisit di sumber → isi **"Unknown"** / **"belum dikonfirmasi"**. DILARANG infer/nebak/ngelengkapin.
-- Akses-dari-Indonesia default = ❓ **belum dikonfirmasi**. ✅ HANYA kalau sumber eksplisit.
-- Mantra: lebih baik **"Unknown" yang jujur** daripada **"No credit card" yang ngarang**.
+- **Anti-halusinasi = aturan #1.** CUMA model field yang BENERAN ada di sumber. Kalau sumber ga nyediain suatu info secara terstruktur → **JANGAN bikin kolomnya** (jangan ada sel "Unknown" kosong). Info yang kebetulan ada di prosa sumber (mis. "no credit card", expiry, region) ditampilin **apa adanya sebagai teks `description`**, bukan dipaksa jadi boolean palsu.
+- **DILARANG** infer/nebak/ngelengkapin field yang ga ada di sumber. (Update 2026-06-01: field `requiresCreditCard`/`requiresPhoneVerification`/`indonesiaAccess` DIBUANG dari schema — ga ada satu sumber pun yang track-nya terstruktur.)
+- Mantra: lebih baik **nampilin yang real** daripada bikin kolom yang isinya tebakan.
 
 ## Tech stack (locked — sengaja seminimal mungkin, maintenance ~nol)
 
@@ -31,9 +31,9 @@ Directory **free AI credits & free tier**, di-aggregate otomatis dari sumber kom
 |---|---|
 | Frontend | Next.js (App Router) + TypeScript strict + Tailwind 4 |
 | Rendering | Static / ISR — rebuild tiap malam, datanya read-only |
-| Data | **File-based di repo** (JSON/MDX). **NO database** untuk v1. |
+| Data | **`data/providers.json`** (di-generate `scripts/sync.mjs`). **NO database** untuk v1. |
 | Backend | **NONE** — no server actions, no API yang nyimpen state, no auth |
-| Pipeline | Script aggregator (fetch → normalize → dedupe → extract opsional → diff → rebuild) |
+| Pipeline | `scripts/sync.mjs` (`npm run sync`) → fetch mnfst `data.json` → normalize → tulis `data/providers.json`. Idempotent. |
 | Scheduling | GitHub Actions (cron nightly) ATAU Vercel Cron — trigger sync + rebuild |
 | Deploy | Vercel auto-deploy on `main` push |
 
@@ -41,32 +41,36 @@ Directory **free AI credits & free tier**, di-aggregate otomatis dari sumber kom
 
 ## Design
 
-Clean, dark, premium. Brand palette Ray: near-black `#0A0807` + burnt orange `#DC4F1C`. Work Sans buat body. Fokus: keterbacaan tabel & filter yang cepet.
+Clean, **light / paper / neutral** (terinspirasi getaiperks.com). Palette token di `app/globals.css`:
+- bg paper `#f1f0e8` · card putih · text near-black `#11181c` · tombol/selected pure black
+- accent hijau (`grass*` — positif/free) + ungu (`grape*` — modality tags)
+- **Font:** heading = Georgia serif (tracking −0.02em), body = Inter
+- Oren `#dc4f1c` di-PAUSE (mau balikin? ganti `--color-ember` di globals.css)
+
+Layout: floating pill navbar → hero serif + 2 tombol → tabel list langsung (ala getaiperks). Detail token = semantic (`ink`/`ember`/`fog`/`mute`/`grass`/`grape`).
 
 ## Live URLs
 
 - **Canonical:** https://tokengratis.id (domain udah disiapin Ray — attach di Vercel)
 - **Vercel fallback:** https://tokengratis-id.vercel.app
 
-## Data sources (titik awal — PRD §10)
+## Data sources (PRD §10)
 
-Mulai 2-3 dulu biar pipeline kebukti, baru nambah:
+**Anchor (live):** `github.com/mnfst/awesome-free-llm-apis` — satu-satunya sumber free-LLM-API dengan **JSON bersih** (`data.json`), ~24 provider, data level-model lengkap (context, modality, rate limit), maintained aktif. Sync via `scripts/sync.mjs`.
 
-- `github.com/cheahjs/free-llm-api-resources` (paling aktif)
-- `github.com/amardeeplakshkar/awesome-free-llm-apis`
-- `github.com/mnfst/awesome-free-llm-apis`
-- `aicredits.dev` (punya `llms.txt` — machine-readable)
+**Cross-ref (markdown only — belum di-ingest):** cheahjs/free-llm-api-resources, amardeeplakshkar/awesome-free-llm-apis, aicredits.dev. Butuh scraping; tambah belakangan kalau perlu.
 
-## Listing fields (PRD §6)
+## Listing fields (schema = `lib/types.ts`)
 
-Provider+logo · kategori (LLM/Embeddings/Image/Audio/Agent) · tipe offer (free tier permanen / free credits sekali / trial) · jumlah credit/kuota · rate limit · butuh CC? (Yes/No/**Unknown**) · butuh verif HP? (Yes/No/**Unknown**) · API tersedia? · akses Indonesia (✅/⚠️/❓) · expiry · link signup · link docs · **sumber (nama+link)** · **terakhir di-sync**.
+**Provider:** slug · name · category (`provider_api`/`inference_provider`) · country+flag (HQ, BUKAN akses) · url (API key) · baseUrl · **description** (prosa apa adanya, sering memuat catatan CC/expiry/region) · modalities (facet: text/vision/image/audio/video/code/embeddings/reranking) · modelCount · maxContext · **models[]** · source · syncedAt · sourceUpdatedAt.
+**Model:** id · name · context · maxOutput · modality · rateLimit.
 
-Field ga ketemu di sumber → **"Unknown"**, jangan dikosongin diam-diam, jangan ditebak.
+Semua field di atas BENERAN ada di sumber → **zero "Unknown"**. Field absent ga di-render (bukan sel kosong).
 
 ## Project-specific anti-patterns
 
 - ❌ Kata "Verified" / klaim "verified by us" di mana pun. → "Synced from [sumber]".
-- ❌ Isi field CC/HP/akses-Indonesia tanpa dasar eksplisit dari sumber. Default = Unknown/❓.
+- ❌ Bikin kolom/field yang sumbernya ga nyediain terstruktur (mis. CC/HP/akses-Indonesia) → jadi "Unknown" bertaburan. Info kayak gitu cukup tampil sebagai teks `description` apa adanya.
 - ❌ Nambahin DB/auth/backend "biar future-proof". v1 sengaja static. Tahan.
 - ❌ Pipeline bikin klaim baru pas sumber berubah. Cukup update + tandai "source updated".
 

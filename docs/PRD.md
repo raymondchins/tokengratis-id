@@ -1,6 +1,8 @@
 # PRD — tokengratis.id
 
-> Directory free AI credits & free tier, di-aggregate otomatis dari sumber yang udah dipercaya komunitas, di-filter buat akses dari Indonesia. Social/branding project, bukan startup.
+> Directory free tier & free credits API LLM, di-aggregate otomatis dari sumber yang udah dipercaya komunitas. Audience Indonesia. Social/branding project, bukan startup.
+>
+> **⚠️ Update 2026-06-01 (lihat docs/log.md):** Schema & scope direvisi setelah validasi sumber. Anchor data = `mnfst/awesome-free-llm-apis` (`data.json`). Field `akses Indonesia` / `butuh CC` / `butuh HP` **DIBUANG** — ga ada sumber yang track terstruktur (→ "Unknown" bertaburan = UI jelek). Info itu kalau ada tetep tampil sebagai teks `description`. Bagian di bawah yang nyebut field/filter/sumber itu = historis; yang berlaku = `lib/types.ts` + CLAUDE.md.
 
 ---
 
@@ -61,41 +63,26 @@ Alasan: semua itu butuh komunitas yang udah jalan dulu. Hari pertama belum ada. 
 
 ---
 
-## 5. Search & filter
+## 5. Search & filter (REVISED — implemented)
 
-**Search:** by nama provider atau nama model.
+**Search:** by nama provider atau nama/id model.
 
-**Filter (yang paling penting di atas):**
+**Filter:**
 
-- ✅ Bisa diakses dari Indonesia (lihat aturan label di Section 7 & 9)
-- ✅ Ga butuh kartu kredit
-- ✅ Ga butuh verifikasi nomor HP
-- Kategori: LLM / Embeddings / Image / Audio / Agent
-- Tipe offer: Free tier permanen / Free credits (sekali) / Trial
-- API tersedia
+- Kategori provider: `Provider API` / `Inference`
+- Modality (facet, di-derive dari model): Text / Vision / Image / Audio / Video / Code / Embeddings / Reranking — cuma yang ada di data yang muncul.
+
+_(Filter lama: akses-Indonesia / no-CC / no-HP / tipe-offer / API-tersedia → DIBUANG. Sumber ga track field-nya terstruktur.)_
 
 ---
 
-## 6. Field per listing
+## 6. Field per listing (REVISED — schema canonical = `lib/types.ts`)
 
-Setiap offer nampilin:
+**Provider:** name · category (`provider_api`/`inference_provider`) · country + flag (HQ, BUKAN akses) · url (halaman API key) · baseUrl · **description** (teks apa adanya dari sumber — sering memuat catatan "no credit card"/expiry/region) · modalities (facet) · modelCount · maxContext · **models[]** · source (nama+link) · syncedAt + sourceUpdatedAt.
 
-- Nama provider + logo
-- Kategori
-- Tipe offer (free tier / free credits / trial)
-- Jumlah credit / kuota gratis (kalau ada)
-- Rate limit (kalau ada)
-- Butuh kartu kredit? (Yes / No / **Unknown**)
-- Butuh verifikasi nomor HP? (Yes / No / **Unknown**)
-- API tersedia? (Yes / No)
-- Region / akses dari Indonesia (Section 9)
-- Aturan kadaluarsa (kalau ada)
-- Link signup (resmi)
-- Link dokumentasi (resmi)
-- **Sumber data** (nama + link, misal "cheahjs/free-llm-api-resources")
-- **Terakhir di-sync** (tanggal)
+**Model:** id · name · context · maxOutput · modality · rateLimit.
 
-Field yang datanya ga ketemu di sumber → tampilkan **"Unknown"**, jangan dikosongin diam-diam dan jangan ditebak.
+Semua field di atas BENERAN ada di sumber → **ga ada "Unknown"**. Field yang absent (mis. context ga ditulis) → render "—" / ga ditampilin, bukan kolom "Unknown". Info CC/HP/region yang ga terstruktur **tetap utuh** di `description`.
 
 ---
 
@@ -128,29 +115,21 @@ User ga pernah lihat proses ini. Mereka cuma lihat directory yang selalu update.
 
 ---
 
-## 9. Framing Indonesia-first
+## 9. Framing Indonesia (REVISED — descoped)
 
-Ini positioning utama. Buat tiap offer, tampilkan status akses dari Indonesia salah satu dari:
+Status akses-per-provider dari Indonesia **DIBUANG** sebagai field/badge — ZERO sumber yang track-nya terstruktur, jadi semua bakal jadi ❓ "belum dikonfirmasi" (lawan prinsip "ga nampilin yang nebak"). 
 
-- ✅ **Bisa diakses** — kalau sumber/docs eksplisit ga ada region block & ga butuh CC/nomor luar.
-- ⚠️ **Ada syarat** — misal butuh kartu kredit internasional, atau verif nomor HP.
-- ❓ **Belum dikonfirmasi** — default kalau ga ada info jelas. (Ini yang paling sering, dan ga apa-apa — jujur.)
-
-Jangan pernah kasih label ✅ tanpa dasar dari sumber. Default-nya ❓.
+"Indonesia-first" sekarang = **audience & antarmuka Bahasa Indonesia**, bukan klaim filtering akses. Kalau suatu provider punya region block yang eksplisit di sumber (mis. Gemini "unavailable in EU/UK"), itu muncul apa adanya di `description`. Kalau nanti mau hidupin sinyal akses ID lagi → harus lewat layer editorial manual (lihat keputusan di docs/log.md).
 
 ---
 
-## 10. Sumber data (titik awal)
+## 10. Sumber data (REVISED — validated 2026-06-01)
 
-Sumber yang udah di-maintain komunitas & relatif terstruktur:
+**Anchor (live):** `github.com/mnfst/awesome-free-llm-apis` — satu-satunya yang punya **JSON bersih** (`data.json`, ~24 provider, model-level lengkap, maintained). Di-ingest langsung via `scripts/sync.mjs`.
 
-- `github.com/cheahjs/free-llm-api-resources` (paling aktif)
-- `github.com/amardeeplakshkar/awesome-free-llm-apis`
-- `github.com/mnfst/awesome-free-llm-apis`
-- `aicredits.dev` (punya `llms.txt` — machine-readable, gampang di-parse)
-- Halaman pricing/docs resmi provider yang punya `llms.txt` sendiri
+**Cross-ref (markdown only — belum di-ingest, butuh scraping):** cheahjs/free-llm-api-resources, amardeeplakshkar/awesome-free-llm-apis, aicredits.dev (llms.txt, scope startup-credits lebih luas).
 
-Mulai dari 2-3 sumber dulu biar pipeline kebukti, baru nambah.
+Verdict riset: CC-required / phone-required / akses-Indonesia **ga pernah** jadi field terstruktur di sumber manapun → ga di-model. Yang reliable: provider, model, context, modality, rate limit, signup url.
 
 ---
 
@@ -160,7 +139,7 @@ Mulai dari 2-3 sumber dulu biar pipeline kebukti, baru nambah.
 - **Data:** simpan sebagai file di repo (JSON/MDX). **Belum perlu database** buat v1 — datanya read-only & di-generate ulang tiap build.
 - **Penjadwalan:** GitHub Actions atau Vercel Cron buat trigger sync + rebuild harian.
 - **Hosting:** Vercel.
-- **Desain:** clean, dark, premium. Boleh ikut brand palette gw (near-black `#0A0807` + burnt orange `#DC4F1C`, Work Sans buat body). Fokus ke keterbacaan tabel & filter yang cepet.
+- **Desain (REVISED):** clean **light / paper / neutral** ala getaiperks.com. bg paper `#f1f0e8` · card putih · text `#11181c` · tombol pure black · accent hijau+ungu. Heading Georgia serif, body Inter. (Oren `#dc4f1c` di-pause, gampang dibalikin di `globals.css`.)
 
 Sengaja tanpa DB, tanpa auth, tanpa backend kompleks — biar maintenance nyaris nol.
 

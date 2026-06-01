@@ -1,28 +1,14 @@
 "use client";
 
-import type { FilterState } from "@/lib/data";
-import type { Category, OfferType } from "@/lib/types";
+import { emptyFilter, type FilterState } from "@/lib/data";
+import type { Modality, ProviderCategory } from "@/lib/types";
+import { modalityLabel } from "./Badges";
 
-// ─── Label maps ──────────────────────────────────────────────────────────────
-
-const CATEGORY_LABELS: Record<Category, string> = {
-  llm: "LLM",
-  embeddings: "Embeddings",
-  image: "Image",
-  audio: "Audio",
-  agent: "Agent",
+const CATEGORY_LABELS: Record<ProviderCategory, string> = {
+  provider_api: "Provider API",
+  inference_provider: "Inference",
 };
-
-const OFFER_TYPE_LABELS: Record<OfferType, string> = {
-  free_tier: "Free tier",
-  free_credits: "Free credits",
-  trial: "Trial",
-};
-
-const ALL_CATEGORIES: Category[] = ["llm", "embeddings", "image", "audio", "agent"];
-const ALL_OFFER_TYPES: OfferType[] = ["free_tier", "free_credits", "trial"];
-
-// ─── Chip primitive ──────────────────────────────────────────────────────────
+const ALL_CATEGORIES: ProviderCategory[] = ["provider_api", "inference_provider"];
 
 function Chip({
   active,
@@ -38,9 +24,9 @@ function Chip({
       type="button"
       onClick={onClick}
       className={[
-        "inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-medium transition-colors",
+        "inline-flex shrink-0 items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-[13px] font-medium transition-colors",
         active
-          ? "border-ember bg-ember/15 text-ember"
+          ? "border-ember bg-ember text-white"
           : "border-ink-line bg-ink-soft text-mute hover:border-mute hover:text-fog",
       ].join(" ")}
     >
@@ -49,16 +35,16 @@ function Chip({
   );
 }
 
-// ─── FilterBar ───────────────────────────────────────────────────────────────
-
 export default function FilterBar({
   state,
   onChange,
+  availableModalities,
 }: {
   state: FilterState;
   onChange: (next: FilterState) => void;
+  availableModalities: Modality[];
 }) {
-  function toggleCategory(cat: Category) {
+  function toggleCategory(cat: ProviderCategory) {
     const has = state.categories.includes(cat);
     onChange({
       ...state,
@@ -68,105 +54,77 @@ export default function FilterBar({
     });
   }
 
-  function toggleOfferType(type: OfferType) {
-    const has = state.offerTypes.includes(type);
+  function toggleModality(m: Modality) {
+    const has = state.modalities.includes(m);
     onChange({
       ...state,
-      offerTypes: has
-        ? state.offerTypes.filter((t) => t !== type)
-        : [...state.offerTypes, type],
+      modalities: has
+        ? state.modalities.filter((x) => x !== m)
+        : [...state.modalities, m],
     });
   }
+
+  const isAll =
+    !state.search &&
+    state.categories.length === 0 &&
+    state.modalities.length === 0;
 
   return (
     <div className="flex flex-col gap-4">
       {/* Search */}
-      <input
-        type="search"
-        value={state.search}
-        onChange={(e) => onChange({ ...state, search: e.target.value })}
-        placeholder="Cari provider atau model..."
-        className="w-full rounded-lg border border-ink-line bg-ink-soft px-4 py-2.5 text-sm text-fog placeholder:text-mute focus:border-ember/60 focus:outline-none focus:ring-1 focus:ring-ember/30 transition-colors"
-      />
-
-      {/* Priority toggles */}
-      <div>
-        <p className="mb-2 text-[11px] font-semibold uppercase tracking-widest text-mute">
-          Filter utama
-        </p>
-        <div className="flex flex-wrap gap-2">
-          <Chip
-            active={state.indonesiaAccessibleOnly}
-            onClick={() =>
-              onChange({ ...state, indonesiaAccessibleOnly: !state.indonesiaAccessibleOnly })
-            }
-          >
-            ✅ Bisa diakses dari Indonesia
-          </Chip>
-          <Chip
-            active={state.noCreditCard}
-            onClick={() => onChange({ ...state, noCreditCard: !state.noCreditCard })}
-          >
-            Tanpa kartu kredit
-          </Chip>
-          <Chip
-            active={state.noPhone}
-            onClick={() => onChange({ ...state, noPhone: !state.noPhone })}
-          >
-            Tanpa verif HP
-          </Chip>
-        </div>
+      <div className="relative">
+        <svg
+          className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-mute"
+          viewBox="0 0 20 20"
+          fill="none"
+          aria-hidden="true"
+        >
+          <circle cx="9" cy="9" r="6" stroke="currentColor" strokeWidth="1.6" />
+          <path
+            d="M14 14l3.5 3.5"
+            stroke="currentColor"
+            strokeWidth="1.6"
+            strokeLinecap="round"
+          />
+        </svg>
+        <input
+          type="search"
+          value={state.search}
+          onChange={(e) => onChange({ ...state, search: e.target.value })}
+          placeholder="Cari provider atau model — Gemini, Groq, DeepSeek, Llama, Qwen…"
+          className="w-full rounded-2xl border border-ink-line bg-ink-soft py-3.5 pl-11 pr-4 text-sm text-fog placeholder:text-mute focus:border-fog/40 focus:outline-none focus:ring-2 focus:ring-fog/10 transition-colors"
+        />
       </div>
 
-      {/* Category multi-select */}
-      <div>
-        <p className="mb-2 text-[11px] font-semibold uppercase tracking-widest text-mute">
-          Kategori
-        </p>
-        <div className="flex flex-wrap gap-2">
-          {ALL_CATEGORIES.map((cat) => (
-            <Chip
-              key={cat}
-              active={state.categories.includes(cat)}
-              onClick={() => toggleCategory(cat)}
-            >
-              {CATEGORY_LABELS[cat]}
-            </Chip>
-          ))}
-        </div>
-      </div>
+      {/* Chip row */}
+      <div className="-mx-1 flex flex-wrap items-center gap-2 px-1">
+        <Chip active={isAll} onClick={() => onChange(emptyFilter())}>
+          Semua
+        </Chip>
 
-      {/* OfferType multi-select */}
-      <div>
-        <p className="mb-2 text-[11px] font-semibold uppercase tracking-widest text-mute">
-          Tipe offer
-        </p>
-        <div className="flex flex-wrap gap-2">
-          {ALL_OFFER_TYPES.map((type) => (
-            <Chip
-              key={type}
-              active={state.offerTypes.includes(type)}
-              onClick={() => toggleOfferType(type)}
-            >
-              {OFFER_TYPE_LABELS[type]}
-            </Chip>
-          ))}
-        </div>
-      </div>
-
-      {/* API toggle */}
-      <div>
-        <p className="mb-2 text-[11px] font-semibold uppercase tracking-widest text-mute">
-          Akses
-        </p>
-        <div className="flex flex-wrap gap-2">
+        {ALL_CATEGORIES.map((cat) => (
           <Chip
-            active={state.apiOnly}
-            onClick={() => onChange({ ...state, apiOnly: !state.apiOnly })}
+            key={cat}
+            active={state.categories.includes(cat)}
+            onClick={() => toggleCategory(cat)}
           >
-            API tersedia
+            {CATEGORY_LABELS[cat]}
           </Chip>
-        </div>
+        ))}
+
+        {availableModalities.length > 0 && (
+          <span className="mx-1 h-5 w-px bg-ink-line" aria-hidden />
+        )}
+
+        {availableModalities.map((m) => (
+          <Chip
+            key={m}
+            active={state.modalities.includes(m)}
+            onClick={() => toggleModality(m)}
+          >
+            {modalityLabel(m)}
+          </Chip>
+        ))}
       </div>
     </div>
   );

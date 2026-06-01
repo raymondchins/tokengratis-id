@@ -29,13 +29,23 @@
 
 ## Numbered learnings
 
-### 1. _(first learning here)_
+### 1. Schema harus ngikut apa yang sumber BENERAN punya, bukan apa yang "ideal"
 
-**Context:** _(what triggered)_
+**Context:** PRD awal nge-spec field CC-required / phone-required / akses-Indonesia / freeQuota / offerType. Pas isi data, hampir semua jadi "Unknown" → UI tabel jelek (kolom kosong di mana-mana). Riset 3 sumber utama (cheahjs, mnfst, aicredits) konfirmasi: ZERO sumber yang track field itu secara terstruktur — paling banter ada di prosa.
 
-**Learning:** _(what we know now)_
+**Learning:** Mendesain schema dari "apa yang pengen ditampilin" (wishlist) ketabrak realita sumber. Yang reliable cuma: provider, model, context, modality, rate limit, signup url. Field aspirasional yang ga ada sumbernya = "Unknown" generator = anti-pattern UI + lawan prinsip anti-halusinasi.
 
-**How to apply:** _(when this recurs, do X)_
+**How to apply:** Sebelum bikin field/kolom, cek dulu sumber NYEDIAIN data itu terstruktur apa ga. Kalau cuma kadang muncul di prosa → simpan utuh sebagai `description`, JANGAN bikin kolom boolean/tristate yang mayoritas "Unknown". "Drop the column" > "show Unknown".
+
+**Tag:** `[UNIVERSAL?]` (data-modeling: schema follows source reality, not wishlist — relevan ke project aggregator/scraper manapun.)
+
+### 2. Pilih sumber by machine-readability, bukan popularity
+
+**Context:** cheahjs paling terkenal/aktif tapi markdown-only (butuh scraping rapuh). mnfst (4.7k⭐) punya `data.json` bersih + terstruktur.
+
+**Learning:** Buat aggregator maintenance-nol, sumber dengan JSON/structured output >> sumber populer tapi markdown. Scraping markdown = brittle + maintenance.
+
+**How to apply:** Saat milih sumber data, prioritas: (1) ada JSON/API publik? (2) maintained? (3) coverage. Anchor ke yang structured, sisanya cross-ref belakangan.
 
 ---
 
@@ -43,7 +53,9 @@
 
 _(record major architecture / API contract / schema choices with rationale)_
 
-- **YYYY-MM-DD — <Decision>:** _(rationale, alternatives considered, tradeoffs)_
+- **2026-06-01 — Anchor data = mnfst `data.json`:** Pilih mnfst/awesome-free-llm-apis sebagai sumber utama (JSON bersih, 24 provider, model-level). Alternatif (cheahjs/amardeeplakshkar = markdown, aicredits = llms.txt prosa) ditunda — butuh parser. Tradeoff: coverage lebih kecil tapi reliability + maintenance ~nol menang.
+- **2026-06-01 — Buang field CC/HP/akses-Indonesia:** Ga ada sumber yang track terstruktur → selalu "Unknown". Indonesia-first di-reframe jadi audience/bahasa, bukan klaim filtering akses. Kalau mau hidupin lagi → WAJIB layer editorial manual (lawan maintenance-nol, jadi ditahan).
+- **2026-06-01 — Desain pivot ke light/paper neutral (getaiperks-style):** Dari dark/oren brand palette → light paper + Georgia serif + Inter + accent hijau/ungu. Oren di-pause (token-based, revert 1-2 baris). Rationale: Ray mau ikut UI language getaiperks.com.
 
 ---
 

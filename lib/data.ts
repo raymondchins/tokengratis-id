@@ -1,73 +1,53 @@
-import type { Category, Offer, OfferType } from "./types";
+import type { Modality, Provider, ProviderCategory } from "./types";
 import providersData from "@/data/providers.json";
 
-const providers = providersData as Offer[];
+const providers = providersData as Provider[];
 
-/** Semua offer dari data/providers.json (read-only, di-generate pipeline). */
-export function getAllOffers(): Offer[] {
+/** Semua provider dari data/providers.json (read-only, di-generate scripts/sync.mjs). */
+export function getAllProviders(): Provider[] {
   return providers;
 }
 
-/** Cari satu offer by slug. undefined kalau ga ketemu. */
-export function getOfferBySlug(slug: string): Offer | undefined {
-  return providers.find((offer) => offer.slug === slug);
+/** Cari satu provider by slug. undefined kalau ga ketemu. */
+export function getProviderBySlug(slug: string): Provider | undefined {
+  return providers.find((p) => p.slug === slug);
 }
 
 export type FilterState = {
   search: string;
-  categories: Category[];
-  offerTypes: OfferType[];
-  indonesiaAccessibleOnly: boolean;
-  noCreditCard: boolean;
-  noPhone: boolean;
-  apiOnly: boolean;
+  categories: ProviderCategory[];
+  modalities: Modality[];
 };
 
-/** State filter kosong (no filter aktif). */
 export function emptyFilter(): FilterState {
-  return {
-    search: "",
-    categories: [],
-    offerTypes: [],
-    indonesiaAccessibleOnly: false,
-    noCreditCard: false,
-    noPhone: false,
-    apiOnly: false,
-  };
+  return { search: "", categories: [], modalities: [] };
 }
 
 /**
- * Filter PURE & client-safe (no server-only imports).
- * - search: case-insensitive substring pada nama provider.
- * - categories/offerTypes kosong = no filter; else keep kalau membership match.
- * - noCreditCard: keep requiresCreditCard === "no".
- * - noPhone: keep requiresPhoneVerification === "no".
- * - indonesiaAccessibleOnly: keep indonesiaAccess === "accessible".
- * - apiOnly: keep apiAvailable === "yes".
+ * Filter PURE & client-safe.
+ * - search: substring pada nama provider + nama/id model.
+ * - categories kosong = no filter; else keep kalau category match.
+ * - modalities kosong = no filter; else keep kalau provider punya ≥1 modality match.
  */
-export function filterOffers(offers: Offer[], f: FilterState): Offer[] {
-  const query = f.search.trim().toLowerCase();
+export function filterProviders(list: Provider[], f: FilterState): Provider[] {
+  const q = f.search.trim().toLowerCase();
 
-  return offers.filter((offer) => {
-    if (query && !offer.provider.toLowerCase().includes(query)) {
+  return list.filter((p) => {
+    if (q) {
+      const hay = (
+        p.name +
+        " " +
+        p.models.map((m) => `${m.name} ${m.id}`).join(" ")
+      ).toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    if (f.categories.length > 0 && !f.categories.includes(p.category)) {
       return false;
     }
-    if (f.categories.length > 0 && !f.categories.includes(offer.category)) {
-      return false;
-    }
-    if (f.offerTypes.length > 0 && !f.offerTypes.includes(offer.offerType)) {
-      return false;
-    }
-    if (f.indonesiaAccessibleOnly && offer.indonesiaAccess !== "accessible") {
-      return false;
-    }
-    if (f.noCreditCard && offer.requiresCreditCard !== "no") {
-      return false;
-    }
-    if (f.noPhone && offer.requiresPhoneVerification !== "no") {
-      return false;
-    }
-    if (f.apiOnly && offer.apiAvailable !== "yes") {
+    if (
+      f.modalities.length > 0 &&
+      !f.modalities.some((m) => p.modalities.includes(m))
+    ) {
       return false;
     }
     return true;
