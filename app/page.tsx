@@ -1,3 +1,4 @@
+import Link from "next/link";
 import providers from "@/data/providers.json";
 
 const principles = [
@@ -39,9 +40,17 @@ export default function Home() {
           punya sumber, tanggal sync, dan link aslinya.
         </p>
 
-        <div className="mt-8 inline-flex items-center gap-2 rounded-full border border-ink-line bg-ink-soft px-4 py-2 text-sm text-fog">
-          <span className="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-ember-soft" />
-          Direktori lagi dibangun &mdash; {count} listing live. Pipeline sync nightly nyusul.
+        <div className="mt-8 flex flex-wrap items-center gap-3">
+          <Link
+            href="/directory"
+            className="inline-flex items-center gap-2 rounded-full bg-ember px-5 py-2.5 text-sm font-semibold text-ink transition hover:bg-ember-soft"
+          >
+            Lihat direktori &rarr;
+          </Link>
+          <span className="inline-flex items-center gap-2 rounded-full border border-ink-line bg-ink-soft px-4 py-2 text-sm text-mute">
+            <span className="inline-block h-1.5 w-1.5 rounded-full bg-ember-soft" />
+            {count} offer live &middot; di-sync dari sumber komunitas
+          </span>
         </div>
       </section>
 

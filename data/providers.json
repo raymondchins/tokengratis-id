@@ -1,1 +1,266 @@
-[]
+[
+  {
+    "slug": "openrouter",
+    "provider": "OpenRouter",
+    "logo": null,
+    "category": "llm",
+    "offerType": "free_tier",
+    "freeQuota": null,
+    "rateLimit": "20 requests/minute, 50 requests/day",
+    "requiresCreditCard": "unknown",
+    "requiresPhoneVerification": "unknown",
+    "apiAvailable": "yes",
+    "indonesiaAccess": "unconfirmed",
+    "expiry": null,
+    "signupUrl": "https://openrouter.ai",
+    "docsUrl": null,
+    "sources": [
+      {
+        "name": "cheahjs/free-llm-api-resources",
+        "url": "https://github.com/cheahjs/free-llm-api-resources",
+        "quote": "20 requests/minute, 50 requests/day"
+      }
+    ],
+    "syncedAt": "2026-06-01"
+  },
+  {
+    "slug": "google-ai-studio",
+    "provider": "Google AI Studio",
+    "logo": null,
+    "category": "llm",
+    "offerType": "free_tier",
+    "freeQuota": null,
+    "rateLimit": "250,000 tokens/minute, 5 requests/minute",
+    "requiresCreditCard": "unknown",
+    "requiresPhoneVerification": "unknown",
+    "apiAvailable": "yes",
+    "indonesiaAccess": "unconfirmed",
+    "expiry": null,
+    "signupUrl": "https://aistudio.google.com",
+    "docsUrl": null,
+    "sources": [
+      {
+        "name": "cheahjs/free-llm-api-resources",
+        "url": "https://github.com/cheahjs/free-llm-api-resources",
+        "quote": "Data is used for training when used outside of the UK/CH/EEA/EU."
+      }
+    ],
+    "syncedAt": "2026-06-01"
+  },
+  {
+    "slug": "nvidia-nim",
+    "provider": "NVIDIA NIM",
+    "logo": null,
+    "category": "llm",
+    "offerType": "free_tier",
+    "freeQuota": null,
+    "rateLimit": "40 requests/minute",
+    "requiresCreditCard": "unknown",
+    "requiresPhoneVerification": "yes",
+    "apiAvailable": "yes",
+    "indonesiaAccess": "unconfirmed",
+    "expiry": null,
+    "signupUrl": "https://build.nvidia.com/explore/discover",
+    "docsUrl": null,
+    "sources": [
+      {
+        "name": "cheahjs/free-llm-api-resources",
+        "url": "https://github.com/cheahjs/free-llm-api-resources",
+        "quote": "Phone number verification required."
+      }
+    ],
+    "syncedAt": "2026-06-01"
+  },
+  {
+    "slug": "mistral-la-plateforme",
+    "provider": "Mistral (La Plateforme)",
+    "logo": null,
+    "category": "llm",
+    "offerType": "free_tier",
+    "freeQuota": "1,000,000,000 tokens/month",
+    "rateLimit": "1 request/second, 500,000 tokens/minute",
+    "requiresCreditCard": "unknown",
+    "requiresPhoneVerification": "yes",
+    "apiAvailable": "yes",
+    "indonesiaAccess": "unconfirmed",
+    "expiry": null,
+    "signupUrl": "https://console.mistral.ai/",
+    "docsUrl": null,
+    "sources": [
+      {
+        "name": "cheahjs/free-llm-api-resources",
+        "url": "https://github.com/cheahjs/free-llm-api-resources",
+        "quote": "Requires phone number verification."
+      }
+    ],
+    "syncedAt": "2026-06-01"
+  },
+  {
+    "slug": "mistral-codestral",
+    "provider": "Mistral (Codestral)",
+    "logo": null,
+    "category": "llm",
+    "offerType": "free_tier",
+    "freeQuota": null,
+    "rateLimit": "30 requests/minute, 2,000 requests/day",
+    "requiresCreditCard": "unknown",
+    "requiresPhoneVerification": "yes",
+    "apiAvailable": "yes",
+    "indonesiaAccess": "unconfirmed",
+    "expiry": null,
+    "signupUrl": "https://codestral.mistral.ai/",
+    "docsUrl": null,
+    "sources": [
+      {
+        "name": "cheahjs/free-llm-api-resources",
+        "url": "https://github.com/cheahjs/free-llm-api-resources",
+        "quote": "Requires phone number verification"
+      }
+    ],
+    "syncedAt": "2026-06-01"
+  },
+  {
+    "slug": "cerebras",
+    "provider": "Cerebras",
+    "logo": null,
+    "category": "llm",
+    "offerType": "free_tier",
+    "freeQuota": null,
+    "rateLimit": "30 requests/minute, 60,000 tokens/minute",
+    "requiresCreditCard": "unknown",
+    "requiresPhoneVerification": "unknown",
+    "apiAvailable": "yes",
+    "indonesiaAccess": "unconfirmed",
+    "expiry": null,
+    "signupUrl": "https://cloud.cerebras.ai/",
+    "docsUrl": null,
+    "sources": [
+      {
+        "name": "cheahjs/free-llm-api-resources",
+        "url": "https://github.com/cheahjs/free-llm-api-resources",
+        "quote": "30 requests/minute, 60,000 tokens/minute"
+      }
+    ],
+    "syncedAt": "2026-06-01"
+  },
+  {
+    "slug": "groq",
+    "provider": "Groq",
+    "logo": null,
+    "category": "llm",
+    "offerType": "free_tier",
+    "freeQuota": null,
+    "rateLimit": "6,000 tokens/minute",
+    "requiresCreditCard": "unknown",
+    "requiresPhoneVerification": "unknown",
+    "apiAvailable": "yes",
+    "indonesiaAccess": "unconfirmed",
+    "expiry": null,
+    "signupUrl": "https://console.groq.com",
+    "docsUrl": null,
+    "sources": [
+      {
+        "name": "cheahjs/free-llm-api-resources",
+        "url": "https://github.com/cheahjs/free-llm-api-resources",
+        "quote": "6,000 tokens/minute"
+      }
+    ],
+    "syncedAt": "2026-06-01"
+  },
+  {
+    "slug": "cohere",
+    "provider": "Cohere",
+    "logo": null,
+    "category": "llm",
+    "offerType": "free_tier",
+    "freeQuota": null,
+    "rateLimit": "20 requests/minute, 1,000 requests/month",
+    "requiresCreditCard": "unknown",
+    "requiresPhoneVerification": "unknown",
+    "apiAvailable": "yes",
+    "indonesiaAccess": "unconfirmed",
+    "expiry": null,
+    "signupUrl": "https://cohere.com",
+    "docsUrl": null,
+    "sources": [
+      {
+        "name": "cheahjs/free-llm-api-resources",
+        "url": "https://github.com/cheahjs/free-llm-api-resources",
+        "quote": "20 requests/minute, 1,000 requests/month"
+      }
+    ],
+    "syncedAt": "2026-06-01"
+  },
+  {
+    "slug": "cloudflare-workers-ai",
+    "provider": "Cloudflare Workers AI",
+    "logo": null,
+    "category": "llm",
+    "offerType": "free_tier",
+    "freeQuota": "10,000 neurons/day",
+    "rateLimit": null,
+    "requiresCreditCard": "unknown",
+    "requiresPhoneVerification": "unknown",
+    "apiAvailable": "yes",
+    "indonesiaAccess": "unconfirmed",
+    "expiry": null,
+    "signupUrl": "https://developers.cloudflare.com/workers-ai",
+    "docsUrl": null,
+    "sources": [
+      {
+        "name": "cheahjs/free-llm-api-resources",
+        "url": "https://github.com/cheahjs/free-llm-api-resources",
+        "quote": "10,000 neurons/day"
+      }
+    ],
+    "syncedAt": "2026-06-01"
+  },
+  {
+    "slug": "github-models",
+    "provider": "GitHub Models",
+    "logo": null,
+    "category": "llm",
+    "offerType": "free_tier",
+    "freeQuota": null,
+    "rateLimit": "Dependent on Copilot subscription tier",
+    "requiresCreditCard": "unknown",
+    "requiresPhoneVerification": "unknown",
+    "apiAvailable": "yes",
+    "indonesiaAccess": "unconfirmed",
+    "expiry": null,
+    "signupUrl": "https://github.com/marketplace/models",
+    "docsUrl": null,
+    "sources": [
+      {
+        "name": "cheahjs/free-llm-api-resources",
+        "url": "https://github.com/cheahjs/free-llm-api-resources",
+        "quote": "Dependent on Copilot subscription tier"
+      }
+    ],
+    "syncedAt": "2026-06-01"
+  },
+  {
+    "slug": "huggingface-inference",
+    "provider": "HuggingFace",
+    "logo": null,
+    "category": "llm",
+    "offerType": "free_tier",
+    "freeQuota": "$0.10/month in credits",
+    "rateLimit": null,
+    "requiresCreditCard": "unknown",
+    "requiresPhoneVerification": "unknown",
+    "apiAvailable": "yes",
+    "indonesiaAccess": "unconfirmed",
+    "expiry": null,
+    "signupUrl": "https://huggingface.co/docs/inference-providers/en/index",
+    "docsUrl": null,
+    "sources": [
+      {
+        "name": "cheahjs/free-llm-api-resources",
+        "url": "https://github.com/cheahjs/free-llm-api-resources",
+        "quote": "$0.10/month in credits"
+      }
+    ],
+    "syncedAt": "2026-06-01"
+  }
+]
