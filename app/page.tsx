@@ -35,8 +35,10 @@ export default function Home() {
             ✅ {count} provider · {totalModels} model gratis
           </span>
 
-          <h1 className="mt-6 text-balance font-serif text-5xl font-semibold leading-[1.04] tracking-tight text-fog sm:text-6xl">
-            API AI yang bisa dipake gratis
+          <h1 className="mt-6 font-serif text-5xl font-medium leading-[1.04] tracking-tight text-fog sm:text-6xl">
+            API AI yang bisa
+            <br />
+            dipake gratis
           </h1>
 
           <p className="mx-auto mt-5 max-w-xl text-pretty text-lg leading-relaxed text-mute">
@@ -48,20 +50,13 @@ export default function Home() {
             apa adanya dari sumber.
           </p>
 
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+          <div className="mt-8 flex justify-center">
             <Link
               href="#direktori"
-              className="inline-flex items-center gap-2 rounded-[6px] bg-ember px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-ember-soft"
+              className="inline-flex items-center gap-2 rounded-[6px] bg-ember px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-ember-soft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40"
             >
               <Spark className="h-4 w-4" />
               Lihat direktori
-            </Link>
-            <Link
-              href="#cara-kerja"
-              className="inline-flex items-center gap-2 rounded-[6px] border border-ink-line bg-ink-soft px-6 py-3 text-sm font-semibold text-fog transition-colors hover:border-fog/40"
-            >
-              Cara kerja
-              <span aria-hidden>→</span>
             </Link>
           </div>
         </section>
