@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <footer
       id="sumber"
-      className="mt-24 border-t border-ink-line scroll-mt-20"
+      className="mt-16 border-t border-ink-line scroll-mt-20"
     >
       <div className="mx-auto max-w-5xl px-4 py-8 text-sm text-mute sm:px-6">
         <p className="max-w-2xl">

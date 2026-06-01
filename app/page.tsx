@@ -31,7 +31,7 @@ export default function Home() {
     : null;
 
   return (
-    <div className="min-h-dvh pb-24">
+    <div className="min-h-dvh pb-12">
       <Navbar />
 
       <main className="mx-auto max-w-5xl px-4 sm:px-6">
@@ -91,6 +91,13 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </section>
+
+        {/* ── Kenapa ── */}
+        <section className="mt-16 text-center sm:mt-24">
+          <p className="mx-auto max-w-2xl text-balance font-serif text-2xl leading-snug tracking-tight text-fog sm:text-3xl">
+            Kenapa gw bikin ini? Karena gw tau orang Indo suka yang ✨gratis✨.
+          </p>
         </section>
       </main>
     </div>
