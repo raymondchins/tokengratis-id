@@ -1,0 +1,49 @@
+name: nightly-data-sync
+
+# Pipeline aggregator tokengratis.id (PRD §8). Tiap malam re-fetch
+# mnfst/awesome-free-llm-apis, normalize via scripts/sync.mjs, commit HANYA
+# kalau sumber berubah → push ke main → Vercel auto-deploy (rebuild fresh).
+# Maintenance ~nol. Bisa juga di-trigger manual ("Run workflow").
+#
+# Change-detection = git diff (PRD §8.5): malam tanpa perubahan = no commit,
+# no rebuild. Smoke test di sync.mjs exit 1 kalau data cacat → push di-skip,
+# last-known-good aman.
+
+on:
+  schedule:
+    - cron: "0 19 * * *" # 02:00 WIB (UTC+7) tiap malam
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nightly-data-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Sync data dari sumber komunitas
+        run: node scripts/sync.mjs
+
+      - name: Commit + push kalau sumber berubah
+        run: |
+          git add data/providers.json public/logos
+          if git diff --cached --quiet; then
+            echo "Sumber ga berubah — skip commit (no rebuild)."
+          else
+            git config user.name "tokengratis-bot"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git commit -m "chore(data): nightly sync dari mnfst/awesome-free-llm-apis"
+            git push
+            echo "Data berubah — pushed, Vercel akan rebuild."
+          fi
