@@ -98,7 +98,10 @@ export default function Home() {
           <p className="mx-auto max-w-2xl text-balance font-serif text-2xl leading-snug tracking-tight text-fog sm:text-3xl">
             Kenapa gw bikin ini? Karena ✨gratis✨ itu indah, dan gw tau banyak
             dev yang baru belajar suka kepentok token. This is for you guys,
-            lets build! Punya project AI / suka ngulik AI? daftar di{" "}
+            lets build!
+          </p>
+          <p className="mx-auto mt-5 max-w-xl text-balance font-serif text-xl leading-snug tracking-tight text-mute sm:text-2xl">
+            Punya project AI / suka ngulik AI? Daftar di{" "}
             <a
               href="https://genesis.ceo"
               target="_blank"
