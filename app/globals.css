@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand palette (PRD §11) */
+  --color-ink: #0a0807;
+  --color-ink-soft: #14110f;
+  --color-ink-line: #241f1b;
+  --color-ember: #dc4f1c;
+  --color-ember-soft: #f0673a;
+  --color-mute: #9a8f86;
+  --color-fog: #cfc6bd;
+
+  --font-sans: var(--font-work-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-fog);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-ember);
+  color: var(--color-ink);
+}
