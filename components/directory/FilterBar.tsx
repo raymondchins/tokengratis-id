@@ -69,11 +69,12 @@ export default function FilterBar({
         />
       </div>
 
-      {/* Chip row (modality facets) + slot kanan (sort)
-           mobile: stacked (chips on top, sort below right-aligned)
-           sm+:    side-by-side (chips left, sort right) */}
+      {/* Modality facets + slot kanan (sort)
+           mobile: dua dropdown sebaris (Filter modality kiri, Urutkan kanan)
+           sm+:    chip pills kiri, sort kanan */}
       <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
-        <div className="-mx-1 flex flex-wrap items-center gap-2 px-1">
+        {/* Desktop: chip pills */}
+        <div className="-mx-1 hidden flex-wrap items-center gap-2 px-1 sm:flex">
           <Chip active={isAll} onClick={() => onChange(emptyFilter())}>
             Semua
           </Chip>
@@ -89,8 +90,37 @@ export default function FilterBar({
           ))}
         </div>
 
+        {/* Mobile: dropdown modality (single-select) + sort sebaris */}
+        <div className="flex items-center justify-between gap-3 sm:hidden">
+          <label className="flex items-center gap-2 text-sm text-mute">
+            Filter
+            <select
+              value={state.modalities[0] ?? ""}
+              onChange={(e) =>
+                onChange({
+                  ...state,
+                  modalities: e.target.value
+                    ? [e.target.value as Modality]
+                    : [],
+                })
+              }
+              aria-label="Filter modality"
+              className="rounded-[4px] border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:border-fog/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40"
+            >
+              <option value="">Semua</option>
+              {availableModalities.map((m) => (
+                <option key={m} value={m}>
+                  {modalityLabel(m)}
+                </option>
+              ))}
+            </select>
+          </label>
+          {rightSlot}
+        </div>
+
+        {/* Desktop: sort */}
         {rightSlot && (
-          <div className="flex shrink-0 justify-end">{rightSlot}</div>
+          <div className="hidden shrink-0 justify-end sm:flex">{rightSlot}</div>
         )}
       </div>
     </div>

@@ -60,7 +60,7 @@ export default function Home() {
         {/* ── Directory table ── */}
         <section id="direktori" className="mt-12 scroll-mt-20 sm:mt-16">
           {lastUpdated && (
-            <p className="mb-3 text-right text-xs text-mute opacity-50">
+            <p className="mb-3 text-balance text-right text-xs text-mute opacity-50">
               Last update {lastUpdated}. Udah stale? DM{" "}
               <a
                 href="https://instagram.com/raymondchins"
