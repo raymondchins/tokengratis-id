@@ -10,26 +10,19 @@ import {
   type FilterState,
   type SortKey,
 } from "@/lib/data";
-import type { Modality, Provider } from "@/lib/types";
+import type { Modality, ProviderListItem } from "@/lib/types";
+import { DIRECTORY_GRID, DIRECTORY_PAGE_SIZE } from "@/lib/constants";
 import FilterBar from "@/components/directory/FilterBar";
-import {
-  CategoryTag,
-  ModalityTags,
-  MODALITY_ORDER,
-} from "@/components/directory/Badges";
+import { CategoryTag, ModalityTags, MODALITY_ORDER } from "@/components/directory/Badges";
 import ProviderLogo from "@/components/ProviderLogo";
 import Spark from "@/components/Spark";
 
-const GRID =
-  "grid min-w-[960px] grid-cols-[minmax(190px,1.8fr)_minmax(130px,1fr)_minmax(120px,0.9fr)_minmax(200px,1.7fr)_108px] items-start gap-4 px-5 text-left";
-
-const PAGE_SIZE = 10;
-
-function ProviderRow({ p }: { p: Provider }) {
+function ProviderRow({ p }: { p: ProviderListItem }) {
   return (
     <Link
       href={`/provider/${p.slug}`}
-      className={`group ${GRID} border-t border-ink-line py-4 transition-colors hover:bg-ink/40`}
+      aria-label={`${p.name} — ${p.modelCount} model${p.freeLimit ? `, gratis ${p.freeLimit}` : ""}`}
+      className={`group ${DIRECTORY_GRID} border-t border-ink-line py-4 transition-colors hover:bg-ink/40 focus-visible:bg-ink/40 focus-visible:outline-none`}
     >
       {/* Provider */}
       <div className="flex items-center gap-3 min-w-0">
@@ -75,25 +68,32 @@ function ProviderRow({ p }: { p: Provider }) {
   );
 }
 
-export default function DirectoryClient({ providers }: { providers: Provider[] }) {
+export default function DirectoryClient({ items }: { items: ProviderListItem[] }) {
   const [filter, setFilter] = useState<FilterState>(emptyFilter());
   const [sort, setSort] = useState<SortKey>("popular");
   const [page, setPage] = useState(1);
-  const results = sortProviders(filterProviders(providers, filter), sort);
+
+  const results = useMemo(
+    () => sortProviders(filterProviders(items, filter), sort),
+    [items, filter, sort],
+  );
 
   // Reset ke hal 1 tiap filter/sort berubah.
   useEffect(() => setPage(1), [filter, sort]);
 
-  const totalPages = Math.max(1, Math.ceil(results.length / PAGE_SIZE));
-  const current = Math.min(page, totalPages);
-  const pageItems = results.slice((current - 1) * PAGE_SIZE, current * PAGE_SIZE);
-
   const availableModalities = useMemo<Modality[]>(() => {
-    const present = new Set(providers.flatMap((p) => p.modalities));
+    const present = new Set(items.flatMap((p) => p.modalities));
     return MODALITY_ORDER.filter((m) => present.has(m));
-  }, [providers]);
+  }, [items]);
 
-  if (providers.length === 0) {
+  const totalPages = Math.max(1, Math.ceil(results.length / DIRECTORY_PAGE_SIZE));
+  const current = Math.min(page, totalPages);
+  const pageItems = results.slice(
+    (current - 1) * DIRECTORY_PAGE_SIZE,
+    current * DIRECTORY_PAGE_SIZE,
+  );
+
+  if (items.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center rounded-[8px] border border-ink-line bg-ink-soft px-8 py-20 text-center">
         <span className="inline-block h-2.5 w-2.5 animate-pulse rounded-full bg-grass-solid" />
@@ -116,16 +116,15 @@ export default function DirectoryClient({ providers }: { providers: Provider[] }
       {/* Count + sort */}
       <div className="flex flex-wrap items-center justify-between gap-3">
         <p className="text-sm text-mute">
-          Menampilkan{" "}
-          <span className="font-semibold text-fog">{results.length}</span> dari{" "}
-          <span className="font-semibold text-fog">{providers.length}</span> provider
+          Menampilkan <span className="font-semibold text-fog">{results.length}</span>{" "}
+          dari <span className="font-semibold text-fog">{items.length}</span> provider
         </p>
         <label className="flex items-center gap-2 text-sm text-mute">
           Urutkan
           <select
             value={sort}
             onChange={(e) => setSort(e.target.value as SortKey)}
-            className="rounded-[4px] border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute focus:border-fog/40 focus:outline-none"
+            className="rounded-[4px] border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:border-fog/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40"
           >
             {(Object.keys(SORT_LABELS) as SortKey[]).map((k) => (
               <option key={k} value={k}>
@@ -136,10 +135,14 @@ export default function DirectoryClient({ providers }: { providers: Provider[] }
         </label>
       </div>
 
-      {/* Table */}
+      {/* Table (list of links) */}
       <div className="overflow-hidden rounded-[8px] border border-ink-line bg-ink-soft">
         <div className="overflow-x-auto">
-          <div className={`${GRID} py-3 text-[11px] font-semibold uppercase tracking-wider text-mute`}>
+          {/* Header row — visual guide; aria-hidden karena tiap row adalah satu link, bukan grid cell */}
+          <div
+            aria-hidden="true"
+            className={`${DIRECTORY_GRID} py-3 text-[11px] font-semibold uppercase tracking-wider text-mute`}
+          >
             <span>Provider</span>
             <span>Kemampuan</span>
             <span>Free limit</span>
@@ -158,7 +161,7 @@ export default function DirectoryClient({ providers }: { providers: Provider[] }
               <button
                 type="button"
                 onClick={() => setFilter(emptyFilter())}
-                className="mt-6 rounded-full border border-ink-line bg-ink px-5 py-2 text-sm font-medium text-fog transition-colors hover:border-fog"
+                className="mt-6 rounded-full border border-ink-line bg-ink px-5 py-2 text-sm font-medium text-fog transition-colors hover:border-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40"
               >
                 Reset semua filter
               </button>
@@ -171,12 +174,16 @@ export default function DirectoryClient({ providers }: { providers: Provider[] }
 
       {/* Pagination */}
       {totalPages > 1 && (
-        <div className="flex items-center justify-center gap-1.5">
+        <nav
+          aria-label="Navigasi halaman direktori"
+          className="flex items-center justify-center gap-1.5"
+        >
           <button
             type="button"
             onClick={() => setPage(current - 1)}
             disabled={current <= 1}
-            className="rounded-[6px] border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute disabled:cursor-not-allowed disabled:opacity-40"
+            aria-label="Halaman sebelumnya"
+            className="rounded-[6px] border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40 disabled:cursor-not-allowed disabled:opacity-40"
           >
             ← Prev
           </button>
@@ -185,7 +192,9 @@ export default function DirectoryClient({ providers }: { providers: Provider[] }
               key={n}
               type="button"
               onClick={() => setPage(n)}
-              className={`min-w-9 rounded-[6px] border px-3 py-1.5 text-sm font-medium transition-colors ${
+              aria-label={`Halaman ${n}`}
+              aria-current={n === current ? "page" : undefined}
+              className={`min-w-9 rounded-[6px] border px-3 py-1.5 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40 ${
                 n === current
                   ? "border-ember bg-ember text-white"
                   : "border-ink-line bg-ink-soft text-mute hover:border-mute hover:text-fog"
@@ -198,11 +207,12 @@ export default function DirectoryClient({ providers }: { providers: Provider[] }
             type="button"
             onClick={() => setPage(current + 1)}
             disabled={current >= totalPages}
-            className="rounded-[6px] border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute disabled:cursor-not-allowed disabled:opacity-40"
+            aria-label="Halaman berikutnya"
+            className="rounded-[6px] border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40 disabled:cursor-not-allowed disabled:opacity-40"
           >
             Next →
           </button>
-        </div>
+        </nav>
       )}
     </div>
   );

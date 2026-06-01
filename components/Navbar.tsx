@@ -10,7 +10,10 @@ const NAV_LINKS = [
 export default function Navbar() {
   return (
     <header className="sticky top-3 z-50 px-4">
-      <nav className="mx-auto flex max-w-5xl items-center justify-between gap-4 rounded-full border border-ink-line bg-ink-soft/90 px-3 py-2 pl-5 shadow-[0_8px_30px_rgba(17,24,28,0.06)] backdrop-blur">
+      <nav
+        aria-label="Navigasi utama"
+        className="mx-auto flex max-w-5xl items-center justify-between gap-4 rounded-full border border-ink-line bg-ink-soft/90 px-3 py-2 pl-5 shadow-[0_8px_30px_rgba(17,24,28,0.06)] backdrop-blur"
+      >
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <Spark className="h-4 w-4 text-fog" />

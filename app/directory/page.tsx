@@ -1,5 +1,5 @@
 import Navbar from "@/components/Navbar";
-import { getAllProviders } from "@/lib/data";
+import { getListItems } from "@/lib/data";
 import DirectoryClient from "./DirectoryClient";
 
 export const metadata = {
@@ -9,7 +9,7 @@ export const metadata = {
 };
 
 export default function DirectoryPage() {
-  const providers = getAllProviders();
+  const items = getListItems();
 
   return (
     <div className="min-h-dvh pb-24">
@@ -32,7 +32,7 @@ export default function DirectoryPage() {
         </header>
 
         <section className="mt-10">
-          <DirectoryClient providers={providers} />
+          <DirectoryClient items={items} />
         </section>
 
         <footer className="mt-20 border-t border-ink-line pt-8 text-sm text-mute">
@@ -40,8 +40,8 @@ export default function DirectoryPage() {
             Sumber data: mnfst/awesome-free-llm-apis (data.json). Di-sync otomatis
             dari sumber.
           </p>
-          <p className="mt-2 text-xs text-mute/70">
-            <span className="font-medium text-mute">tokengratis.id</span> — karena
+          <p className="mt-2 text-xs text-mute">
+            <span className="font-medium text-fog">tokengratis.id</span> — karena
             raymond boros token.
           </p>
         </footer>

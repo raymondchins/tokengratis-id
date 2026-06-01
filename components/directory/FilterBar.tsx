@@ -3,6 +3,7 @@
 import { emptyFilter, type FilterState } from "@/lib/data";
 import type { Modality } from "@/lib/types";
 import { modalityLabel } from "./Badges";
+import SearchIcon from "@/components/SearchIcon";
 
 function Chip({
   active,
@@ -18,7 +19,7 @@ function Chip({
       type="button"
       onClick={onClick}
       className={[
-        "inline-flex shrink-0 items-center gap-1.5 rounded-[6px] border px-4 py-2 text-[13px] font-medium transition-colors",
+        "inline-flex shrink-0 items-center gap-1.5 rounded-[6px] border px-4 py-2 text-[13px] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40",
         active
           ? "border-mute/60 bg-ink-line/70 text-fog"
           : "border-ink-line bg-ink-soft text-mute hover:border-mute hover:text-fog",
@@ -54,26 +55,14 @@ export default function FilterBar({
     <div className="flex flex-col gap-4">
       {/* Search */}
       <div className="relative">
-        <svg
-          className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-mute"
-          viewBox="0 0 20 20"
-          fill="none"
-          aria-hidden="true"
-        >
-          <circle cx="9" cy="9" r="6" stroke="currentColor" strokeWidth="1.6" />
-          <path
-            d="M14 14l3.5 3.5"
-            stroke="currentColor"
-            strokeWidth="1.6"
-            strokeLinecap="round"
-          />
-        </svg>
+        <SearchIcon className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-mute" />
         <input
           type="search"
           value={state.search}
           onChange={(e) => onChange({ ...state, search: e.target.value })}
           placeholder="Cari provider atau model — Gemini, Groq, DeepSeek, Llama, Qwen…"
-          className="w-full rounded-[8px] border border-ink-line bg-ink-soft py-3.5 pl-11 pr-4 text-sm text-fog placeholder:text-mute focus:border-fog/40 focus:outline-none focus:ring-2 focus:ring-fog/10 transition-colors"
+          aria-label="Cari provider atau model"
+          className="w-full rounded-[8px] border border-ink-line bg-ink-soft py-3.5 pl-11 pr-4 text-sm text-fog placeholder:text-mute focus:border-fog/40 focus:outline-none focus:ring-2 focus:ring-fog/30 transition-colors"
         />
       </div>
 

@@ -71,3 +71,22 @@ export interface Provider {
   /** Tanggal `lastUpdated` yang ditulis sumber. null kalau ga ada. */
   sourceUpdatedAt: string | null;
 }
+
+/**
+ * Versi ramping buat tabel direktori (client). Sengaja TANPA models[]/baseUrl/
+ * source/url biar payload yang dikirim ke client kecil. `searchText` =
+ * name + nama/id model (di-precompute) biar search tetep jalan.
+ */
+export interface ProviderListItem {
+  slug: string;
+  name: string;
+  logo: string | null;
+  flag: string;
+  category: ProviderCategory;
+  modelCount: number;
+  modalities: Modality[];
+  maxContext: string | null;
+  freeLimit: string | null;
+  description: string;
+  searchText: string;
+}

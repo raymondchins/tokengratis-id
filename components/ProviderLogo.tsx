@@ -27,7 +27,9 @@ export default function ProviderLogo({
         // eslint-disable-next-line @next/next/no-img-element
         <img
           src={logo}
-          alt={`${name} logo`}
+          alt={`Logo ${name}`}
+          width={64}
+          height={64}
           className="h-2/3 w-2/3 object-contain"
           loading="lazy"
           onError={() => setFailed(true)}

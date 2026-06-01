@@ -31,6 +31,35 @@ tail -10 docs/CHANGELOG.md
 
 <!-- First entry below this line. DO NOT delete this comment block — keeps the format reference at top. -->
 
+### 2026-06-01 — Audit fixes: perf + a11y + correctness + security + SEO (P0–P2)
+
+**Trigger:** 5-agent parallel audit (perf/correctness/a11y-seo/code-quality/security). Fixing all tiers.
+
+**Perf:**
+- Self-host favicons — `sync.mjs` download ke `public/logos/<slug>.png` (23/24), UI pakai path lokal + `width/height` (no more 24 third-party requests, no CLS, no Google privacy leak).
+- Trim client payload — `getListItems()` kirim versi ramping (tanpa models[]/baseUrl/source) + `searchText` precomputed; `filterProviders`/`sortProviders` jalan di ProviderListItem.
+- `useMemo` filter+sort di DirectoryClient.
+
+**Correctness:**
+- `ctxNum` kenal "B" (miliar) — extract ke `lib/ctxnum.ts`, mirror di sync.mjs (fix mis-sort context).
+- Sentinel "—"/"-"/"N/A" context → null (anti-halusinasi); `cleanStr` di sync.
+- Smoke test di sync (assert source+syncedAt, no sentinel maxContext).
+
+**Security:**
+- URL scheme allowlist (`safeUrl`) buat url/baseUrl di sync (blok javascript:/data:).
+- Security headers di `next.config.ts` (X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy).
+
+**A11y:**
+- Row-as-link: `aria-label` per row + header `aria-hidden` (pola list-of-links yg bener buat clickable rows).
+- Kontras: footer `mute/70`→`mute`/`fog`; icon audio/image digelapin (AA).
+- Focus ring jelas (select/chip/pagination/search), pagination `aria-label`/`aria-current`, nav `aria-label`, "+N" aria-label.
+
+**SEO:** `app/sitemap.ts`, `app/robots.ts`, `app/icon.tsx` (favicon), `app/opengraph-image.tsx` (OG image), twitter card di layout; metadata copy disesuaikan (drop klaim akses-Indonesia).
+
+**Code quality:** dedupe `ctxNum` (lib/ctxnum.ts), `SearchIcon` component, `PAGE_SIZE`/`GRID` ke `lib/constants.ts`.
+
+**Test cases:** build 32 route hijau; `npm run sync` → 24 provider + 23 logo + smoke pass; favicon lokal muncul; chip/pagination keyboard-focusable; sitemap.xml & robots.txt ke-serve.
+
 ### 2026-06-01 — Directory polish: free-limit, logo asli, sort, modality icons
 
 **Trigger / context:** Iterasi UI/UX lanjutan di atas redesign getaiperks.

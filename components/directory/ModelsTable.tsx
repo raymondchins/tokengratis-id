@@ -2,8 +2,10 @@
 
 import { useMemo, useState } from "react";
 import type { Model } from "@/lib/types";
+import { MODELS_PAGE_SIZE } from "@/lib/constants";
+import SearchIcon from "@/components/SearchIcon";
 
-const PAGE_SIZE = 8;
+const PAGE_SIZE = MODELS_PAGE_SIZE;
 
 export default function ModelsTable({
   models,
@@ -38,20 +40,7 @@ export default function ModelsTable({
         </p>
         {searchable && (
           <div className="relative">
-            <svg
-              className="pointer-events-none absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-mute"
-              viewBox="0 0 20 20"
-              fill="none"
-              aria-hidden="true"
-            >
-              <circle cx="9" cy="9" r="6" stroke="currentColor" strokeWidth="1.6" />
-              <path
-                d="M14 14l3.5 3.5"
-                stroke="currentColor"
-                strokeWidth="1.6"
-                strokeLinecap="round"
-              />
-            </svg>
+            <SearchIcon className="pointer-events-none absolute left-2.5 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-mute" />
             <input
               type="search"
               value={q}
@@ -60,7 +49,8 @@ export default function ModelsTable({
                 setPage(1);
               }}
               placeholder="Cari model…"
-              className="w-44 rounded-[4px] border border-ink-line bg-ink py-1.5 pl-8 pr-3 text-xs text-fog placeholder:text-mute focus:border-fog/40 focus:outline-none"
+              aria-label="Cari model"
+              className="w-44 rounded-[4px] border border-ink-line bg-ink py-1.5 pl-8 pr-3 text-xs text-fog placeholder:text-mute focus:border-fog/40 focus:outline-none focus:ring-2 focus:ring-fog/30"
             />
           </div>
         )}
@@ -112,7 +102,10 @@ export default function ModelsTable({
 
       {/* pagination */}
       {pages > 1 && (
-        <div className="flex items-center justify-between gap-3 border-t border-ink-line px-5 py-3 text-xs text-mute">
+        <nav
+          aria-label="Navigasi halaman model"
+          className="flex items-center justify-between gap-3 border-t border-ink-line px-5 py-3 text-xs text-mute"
+        >
           <span>
             Hal {current}/{pages} · {filtered.length} model
           </span>
@@ -121,7 +114,8 @@ export default function ModelsTable({
               type="button"
               onClick={() => setPage(current - 1)}
               disabled={current <= 1}
-              className="rounded-[4px] border border-ink-line bg-ink px-3 py-1.5 font-medium text-fog transition-colors hover:border-mute disabled:cursor-not-allowed disabled:opacity-40"
+              aria-label="Halaman model sebelumnya"
+              className="rounded-[4px] border border-ink-line bg-ink px-3 py-1.5 font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40 disabled:cursor-not-allowed disabled:opacity-40"
             >
               ← Prev
             </button>
@@ -129,12 +123,13 @@ export default function ModelsTable({
               type="button"
               onClick={() => setPage(current + 1)}
               disabled={current >= pages}
-              className="rounded-[4px] border border-ink-line bg-ink px-3 py-1.5 font-medium text-fog transition-colors hover:border-mute disabled:cursor-not-allowed disabled:opacity-40"
+              aria-label="Halaman model berikutnya"
+              className="rounded-[4px] border border-ink-line bg-ink px-3 py-1.5 font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40 disabled:cursor-not-allowed disabled:opacity-40"
             >
               Next →
             </button>
           </div>
-        </div>
+        </nav>
       )}
     </section>
   );

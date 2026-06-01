@@ -9,18 +9,24 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "tokengratis.id — Direktori AI gratis, Indonesia-first",
+  title: "tokengratis.id — Direktori API AI gratis",
   description:
-    "Kumpulan free tier & free credits AI, di-aggregate otomatis dari sumber komunitas, di-filter buat akses dari Indonesia. Transparan: tiap data ada sumber + tanggal sync.",
+    "Kumpulan free tier & free credits API LLM, di-aggregate otomatis dari sumber komunitas. Tiap provider nampilin model, context window, rate limit & modality apa adanya. Aggregator transparan, bukan verifier.",
   metadataBase: new URL("https://tokengratis.id"),
   openGraph: {
-    title: "tokengratis.id",
+    title: "tokengratis.id — Direktori API AI gratis",
     description:
-      "Direktori free tier & free credits AI, Indonesia-first. Aggregator transparan, bukan verifier.",
+      "Free tier & free credits API LLM, di-aggregate dari sumber komunitas. Aggregator transparan, bukan verifier.",
     url: "https://tokengratis.id",
     siteName: "tokengratis.id",
     locale: "id_ID",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "tokengratis.id — Direktori API AI gratis",
+    description:
+      "Free tier & free credits API LLM, di-aggregate dari sumber komunitas.",
   },
 };
 

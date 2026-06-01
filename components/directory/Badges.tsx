@@ -47,8 +47,8 @@ export function modalityLabel(m: Modality): string {
 const MODALITY_COLOR: Record<Modality, string> = {
   text: "text-[#475569]", // slate
   vision: "text-[#2563eb]", // blue
-  image: "text-[#0e9f6e]", // green
-  audio: "text-[#d97706]", // amber
+  image: "text-[#0d7a56]", // green (darkened for AA contrast)
+  audio: "text-[#b45309]", // amber (darkened for AA contrast)
   video: "text-[#e11d48]", // rose
   code: "text-[#7c3aed]", // violet
   embeddings: "text-[#0891b2]", // cyan
@@ -174,6 +174,9 @@ export function ModalityTags({
       {extra.length > 0 && (
         <span
           title={extra.map((m) => MODALITY_LABELS[m]).join(", ")}
+          aria-label={`${extra.length} lagi: ${extra
+            .map((m) => MODALITY_LABELS[m])
+            .join(", ")}`}
           className="inline-flex h-6 w-6 items-center justify-center rounded-[2px] border border-ink-line bg-ink-soft text-[10px] font-semibold text-mute"
         >
           +{extra.length}

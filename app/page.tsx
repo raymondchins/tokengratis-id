@@ -2,7 +2,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Spark from "@/components/Spark";
 import DirectoryClient from "./directory/DirectoryClient";
-import { getAllProviders } from "@/lib/data";
+import { getListItems } from "@/lib/data";
 
 const principles = [
   {
@@ -20,9 +20,9 @@ const principles = [
 ];
 
 export default function Home() {
-  const providers = getAllProviders();
-  const count = providers.length;
-  const totalModels = providers.reduce((n, p) => n + p.modelCount, 0);
+  const items = getListItems();
+  const count = items.length;
+  const totalModels = items.reduce((n, p) => n + p.modelCount, 0);
 
   return (
     <div className="min-h-dvh pb-24">
@@ -68,7 +68,7 @@ export default function Home() {
 
         {/* ── Directory table ── */}
         <section id="direktori" className="mt-16 scroll-mt-20">
-          <DirectoryClient providers={providers} />
+          <DirectoryClient items={items} />
         </section>
 
         {/* ── How it works ── */}
@@ -103,8 +103,8 @@ export default function Home() {
             . Di-sync otomatis dari `data.json` sumber. Kita aggregator — bukan
             verifier, bukan pemilik datanya.
           </p>
-          <p className="mt-3 text-xs text-mute/70">
-            <span className="font-medium text-mute">tokengratis.id</span> — karena
+          <p className="mt-3 text-xs text-mute">
+            <span className="font-medium text-fog">tokengratis.id</span> — karena
             raymond boros token.
           </p>
         </footer>

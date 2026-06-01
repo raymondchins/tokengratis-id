@@ -8,7 +8,7 @@
 // Anti-halusinasi: kita CUMA mindahin field yang ada di sumber + men-derive
 // facet modality / context maks dari data yang sudah eksplisit. Ga nebak.
 
-import { writeFileSync } from "node:fs";
+import { writeFileSync, mkdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -21,6 +21,24 @@ const SOURCE = {
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = join(__dirname, "..", "data", "providers.json");
+const LOGO_DIR = join(__dirname, "..", "public", "logos");
+
+/** Buang nilai sentinel ("—"/"-"/kosong) → null (anti-halusinasi: ga simpen placeholder). */
+function cleanStr(v) {
+  if (!v) return null;
+  const t = String(v).trim();
+  return t && t !== "—" && t !== "-" && t !== "N/A" ? t : null;
+}
+
+/** Allowlist scheme: cuma http(s). Blok javascript:/data: dll dari sumber. */
+function safeUrl(u) {
+  if (!u) return null;
+  try {
+    return /^https?:$/.test(new URL(u).protocol) ? u : null;
+  } catch {
+    return null;
+  }
+}
 
 function slugify(s) {
   return s
@@ -125,16 +143,59 @@ function domainOf(...urls) {
   return null;
 }
 
-/** "256K" / "1M" -> angka, buat nyari context maks. */
+/** "256K"/"1M"/"2B" -> angka, buat nyari context maks. (mirror lib/ctxnum.ts) */
 function ctxNum(c) {
   if (!c) return 0;
-  const m = String(c).match(/([\d.]+)\s*([KkMm]?)/);
+  const m = String(c).match(/([\d.]+)\s*([KkMmBb]?)/);
   if (!m) return 0;
   let n = parseFloat(m[1]);
   const u = m[2].toLowerCase();
   if (u === "k") n *= 1e3;
   if (u === "m") n *= 1e6;
+  if (u === "b") n *= 1e9;
   return n;
+}
+
+/** Download favicon tiap provider ke public/logos/<slug>.png. Gagal → logo null (UI fallback flag). */
+async function downloadLogos(providers) {
+  mkdirSync(LOGO_DIR, { recursive: true });
+  await Promise.all(
+    providers.map(async (p) => {
+      if (!p.domain) {
+        p.logo = null;
+        return;
+      }
+      try {
+        const r = await fetch(
+          `https://www.google.com/s2/favicons?sz=128&domain=${p.domain}`,
+        );
+        if (!r.ok) throw new Error(String(r.status));
+        const buf = Buffer.from(await r.arrayBuffer());
+        if (buf.length < 100) throw new Error("empty favicon");
+        writeFileSync(join(LOGO_DIR, `${p.slug}.png`), buf);
+        p.logo = `/logos/${p.slug}.png`;
+      } catch {
+        p.logo = null;
+      }
+    }),
+  );
+}
+
+/** Smoke test (PRD): tiap entry wajib punya source+syncedAt, ga ada nilai sentinel nyangkut. */
+function smokeTest(providers) {
+  const errs = [];
+  for (const p of providers) {
+    if (!p.source || !p.syncedAt) errs.push(`${p.slug}: missing source/syncedAt`);
+    if (p.modelCount === 0 && p.maxContext)
+      errs.push(`${p.slug}: 0 models tapi maxContext keisi`);
+    if (p.maxContext === "—" || p.maxContext === "-")
+      errs.push(`${p.slug}: maxContext sentinel`);
+  }
+  if (errs.length) {
+    console.error("✗ Smoke test FAILED:\n" + errs.join("\n"));
+    process.exit(1);
+  }
+  console.log("✓ Smoke test passed");
 }
 
 async function main() {
@@ -147,10 +208,10 @@ async function main() {
     const allModels = (p.models || []).map((m) => ({
       id: m.id,
       name: m.name,
-      context: m.context || null,
-      maxOutput: m.maxOutput || null,
+      context: cleanStr(m.context),
+      maxOutput: cleanStr(m.maxOutput),
       modality: m.modality,
-      rateLimit: m.rateLimit || null,
+      rateLimit: cleanStr(m.rateLimit),
     }));
 
     // Sumber kadang nyelipin baris "catatan" (id null), mis. "+ 42 more models".
@@ -172,19 +233,19 @@ async function main() {
     );
 
     const domain = domainOf(p.url, p.baseUrl);
+    const slug = slugify(p.name);
 
     return {
-      slug: slugify(p.name),
+      slug,
       name: p.name,
       category: p.category,
       country: p.country,
       flag: p.flag,
       domain,
-      logo: domain
-        ? `https://www.google.com/s2/favicons?sz=128&domain=${domain}`
-        : null,
-      url: p.url || null,
-      baseUrl: p.baseUrl || null,
+      // logo path diisi/di-null-in pas downloadLogos() (self-host favicon).
+      logo: domain ? `/logos/${slug}.png` : null,
+      url: safeUrl(p.url),
+      baseUrl: safeUrl(p.baseUrl),
       description: p.description || "",
       modalities,
       modelCount: models.length,
@@ -198,8 +259,14 @@ async function main() {
     };
   });
 
+  await downloadLogos(providers);
+  smokeTest(providers);
+
+  const withLogo = providers.filter((p) => p.logo).length;
   writeFileSync(OUT, JSON.stringify(providers, null, 2) + "\n");
-  console.log(`✓ Wrote ${providers.length} providers → data/providers.json`);
+  console.log(
+    `✓ Wrote ${providers.length} providers → data/providers.json (${withLogo} logos)`,
+  );
 }
 
 main().catch((e) => {
