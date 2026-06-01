@@ -1,13 +1,18 @@
 name: nightly-data-sync
 
 # Pipeline aggregator tokengratis.id (PRD §8). Tiap malam re-fetch
-# mnfst/awesome-free-llm-apis, normalize via scripts/sync.mjs, commit HANYA
-# kalau sumber berubah → push ke main → Vercel auto-deploy (rebuild fresh).
-# Maintenance ~nol. Bisa juga di-trigger manual ("Run workflow").
+# mnfst/awesome-free-llm-apis, normalize via scripts/sync.mjs, commit hasilnya
+# → push ke main → Vercel auto-deploy (rebuild fresh). Maintenance ~nol.
+# Bisa di-trigger manual ("Run workflow").
 #
-# Change-detection = git diff (PRD §8.5): malam tanpa perubahan = no commit,
-# no rebuild. Smoke test di sync.mjs exit 1 kalau data cacat → push di-skip,
-# last-known-good aman.
+# sync.mjs nge-stamp `syncedAt` tiap run, jadi normalnya ADA diff tiap malam →
+# commit + rebuild harian. Itu disengaja: "Synced [tanggal]" maju tiap malam =
+# sinyal liveness/fresh (PRD §2 trust dari transparansi). Saat sumber mnfst
+# memang berubah, perubahan kontennya ikut ke-commit di run yang sama.
+#
+# Safety: smoke test di sync.mjs exit 1 kalau data cacat / fetch gagal → step
+# push ga jalan, last-known-good tetap live. Guard `git diff --cached` cuma
+# nge-skip kasus byte-identik yang langka.
 
 on:
   schedule:
