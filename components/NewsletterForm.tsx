@@ -17,7 +17,8 @@ export default function NewsletterForm() {
       const res = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
+        // `website` is the honeypot field — always empty for real users
+        body: JSON.stringify({ email, website: "" }),
       });
       if (res.ok) {
         setStatus("ok");
@@ -47,6 +48,15 @@ export default function NewsletterForm() {
         onSubmit={submit}
         className="mx-auto flex w-full max-w-md flex-col gap-2 sm:flex-row"
       >
+        {/* Honeypot field — hidden from real users, bots fill it automatically */}
+        <input
+          type="text"
+          name="website"
+          tabIndex={-1}
+          autoComplete="off"
+          aria-hidden="true"
+          style={{ position: "absolute", left: "-9999px" }}
+        />
         <input
           type="email"
           required

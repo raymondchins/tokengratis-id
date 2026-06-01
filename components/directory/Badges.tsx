@@ -35,6 +35,8 @@ export const MODALITY_ORDER: Modality[] = [
   "audio",
   "video",
   "code",
+  "embeddings",
+  "reranking",
 ];
 
 export function modalityLabel(m: Modality): string {
@@ -200,10 +202,8 @@ function fmtDate(iso: string): string {
 
 export function SourceLine({
   sources,
-  linkless = false,
 }: {
   sources: SourceRef[];
-  linkless?: boolean;
 }) {
   if (sources.length === 0) return null;
 
@@ -213,13 +213,6 @@ export function SourceLine({
   );
 
   function SourceName({ s }: { s: SourceRef }) {
-    if (linkless) {
-      return (
-        <span className="underline decoration-ink-line underline-offset-2">
-          {s.name}
-        </span>
-      );
-    }
     return (
       <a
         href={s.url}

@@ -51,10 +51,22 @@ export const SOURCE_PRIORITY = [
 // ─── String / URL hygiene ──────────────────────────────────────────────────────
 
 /** Buang nilai sentinel ("—"/"-"/"N/A"/kosong) → null (anti-halusinasi: ga simpen placeholder). */
+const SENTINELS = new Set([
+  "—", // em dash —
+  "–", // en dash –
+  "-",
+  "n/a",
+  "N/A",
+  "N/a",
+  "none",
+  "None",
+  "null",
+  "undefined",
+]);
 export function cleanStr(v) {
   if (!v) return null;
   const t = String(v).trim();
-  return t && t !== "—" && t !== "-" && t !== "N/A" && t !== "—" ? t : null;
+  return t && !SENTINELS.has(t) ? t : null;
 }
 
 /** Allowlist scheme: cuma http(s). Blok javascript:/data: dll dari sumber. */
@@ -266,7 +278,7 @@ export function domainOf(...urls) {
       const parts = host.split(".");
       if (parts.length <= 2) return host;
       const tld2 = parts.slice(-2).join(".");
-      if (/^(co|com|net|org|gov|ac|edu)\.\w{2,3}$/.test(tld2)) {
+      if (/^(co|com|net|org|gov|ac|edu|or|my|sch|go)\.\w{2,3}$/.test(tld2)) {
         return parts.slice(-3).join(".");
       }
       return parts.slice(-2).join(".");
@@ -314,5 +326,5 @@ export function freeLimitOf(desc) {
     return `${m[1]} model free`;
   if (/permanent/i.test(d)) return "Free (permanen)";
   if (/no (registration|signup|sign-up)/i.test(d)) return "Free, no signup";
-  return "Free";
+  return null;
 }

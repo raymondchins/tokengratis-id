@@ -90,6 +90,10 @@ function slugName(displayName) {
  *   </tbody></table>
  * Returns Model[] with rateLimit filled from the limits cell.
  */
+/** Guard: skip disclaimer/note text masquerading as model names. */
+const NOTE_PATTERN =
+  /^(currently|requires?|monthly|free tier|various|see |note:?|until |subject to|opting|paid|trial|subscription)/i;
+
 function parseHtmlTable(tableHtml) {
   const models = [];
   // Extract each <tr>...</tr> in tbody (rows with <td>)
@@ -103,6 +107,7 @@ function parseHtmlTable(tableHtml) {
       .replace(/&gt;/g, ">")
       .trim();
     if (!modelName) continue;
+    if (NOTE_PATTERN.test(modelName)) continue; // skip disclaimer rows
 
     // Replace <br> / <br /> with ", " and strip remaining tags
     const limitsRaw = m[2]
@@ -156,6 +161,7 @@ function parseBulletModels(block, sharedRateLimit) {
     // Strip markdown link: [Name](url) → Name
     modelName = modelName.replace(/^\[([^\]]+)\]\([^)]+\)/, "$1").trim();
     if (!modelName) continue;
+    if (NOTE_PATTERN.test(modelName)) continue; // skip disclaimer/note bullets
     models.push({
       id: slugify(modelName),
       name: modelName,
@@ -256,7 +262,9 @@ function parseProviderBlock(headingText, body) {
       // Still emit a single synthetic entry so rate limit is captured
       // Only do this if the body contains a meaningful models reference
       const genericRef = body.match(/\[([^\]]+models[^\]]*)\]\([^)]+\)/i);
-      if (genericRef) {
+      // Anti-hallucination: a generic "...models" link (e.g. "Various open
+      // models") is NOT a real named model — never fabricate a model row for it.
+      if (genericRef && !NOTE_PATTERN.test(genericRef[1].trim())) {
         models = [
           {
             id: slugify(genericRef[1]),

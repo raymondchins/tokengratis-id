@@ -207,8 +207,8 @@ export async function fetchProviders() {
   }
   const tbody = html.slice(tbodyStart, tbodyEnd + 8);
 
-  // Match every <tr ...>...</tr> block
-  const trRe = /<tr\s[\s\S]*?<\/tr>/g;
+  // Match every <tr ...>...</tr> block ([\s>] covers both <tr attr> and bare <tr>)
+  const trRe = /<tr[\s>][\s\S]*?<\/tr>/g;
   const rowsByProvider = new Map(); // providerName -> { name, models[] }
 
   let trMatch;

@@ -1,6 +1,6 @@
 "use client";
 
-import { emptyFilter, type FilterState } from "@/lib/data";
+import { emptyFilter, type FilterState } from "@/lib/filter";
 import type { Modality } from "@/lib/types";
 import { modalityLabel } from "./Badges";
 import SearchIcon from "@/components/SearchIcon";

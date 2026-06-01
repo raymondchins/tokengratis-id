@@ -219,7 +219,7 @@ export default async function Page({
                   Kami aggregator — bukan verifier, bukan pemilik datanya. Kalau ada
                   yang ga akurat,{" "}
                   <a
-                    href={p.sources[0].url}
+                    href={p.sources[0]?.url ?? "#"}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="underline decoration-ink-line underline-offset-2 hover:text-fog"

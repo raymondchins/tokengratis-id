@@ -9,14 +9,34 @@ import {
   SORT_LABELS,
   type FilterState,
   type SortKey,
-} from "@/lib/data";
+} from "@/lib/filter";
 import type { Modality, ProviderListItem } from "@/lib/types";
 import { DIRECTORY_GRID, DIRECTORY_GRID_COLS, DIRECTORY_PAGE_SIZE } from "@/lib/constants";
 import FilterBar from "@/components/directory/FilterBar";
 import { CategoryTag, ModalityTags, MODALITY_ORDER } from "@/components/directory/Badges";
 import ProviderLogo from "@/components/ProviderLogo";
 
-function ProviderRow({ p }: { p: ProviderListItem }) {
+/**
+ * Daftar nomor halaman buat pagination. <=7 halaman → tampil semua. >7 → pola
+ * ellipsis: first, last, current±1, dengan "…" di gap. Selalu render first+last.
+ */
+function pageNumbers(current: number, total: number): (number | "…")[] {
+  if (total <= 7) return Array.from({ length: total }, (_, i) => i + 1);
+
+  const pages = new Set<number>([1, total, current, current - 1, current + 1]);
+  const sorted = [...pages].filter((n) => n >= 1 && n <= total).sort((a, b) => a - b);
+
+  const out: (number | "…")[] = [];
+  let prev = 0;
+  for (const n of sorted) {
+    if (n - prev > 1) out.push("…");
+    out.push(n);
+    prev = n;
+  }
+  return out;
+}
+
+function ProviderRow({ p, priority = false }: { p: ProviderListItem; priority?: boolean }) {
   const ariaLabel = `${p.name} — ${p.modelCount} model${p.freeLimit ? `, gratis ${p.freeLimit}` : ""}`;
 
   return (
@@ -29,7 +49,7 @@ function ProviderRow({ p }: { p: ProviderListItem }) {
       >
         {/* Logo + name + meta */}
         <div className="flex items-center gap-3 min-w-0">
-          <ProviderLogo logo={p.logo} flag={p.flag} name={p.name} className="h-10 w-10 shrink-0" />
+          <ProviderLogo logo={p.logo} flag={p.flag} name={p.name} className="h-10 w-10 shrink-0" priority={priority} />
           <div className="min-w-0">
             <span className="block truncate font-semibold text-fog">{p.name}</span>
             <div className="mt-1 flex flex-wrap items-center gap-2">
@@ -69,7 +89,7 @@ function ProviderRow({ p }: { p: ProviderListItem }) {
       >
         {/* Provider */}
         <div className="flex items-center gap-3 min-w-0">
-          <ProviderLogo logo={p.logo} flag={p.flag} name={p.name} className="h-9 w-9" />
+          <ProviderLogo logo={p.logo} flag={p.flag} name={p.name} className="h-9 w-9" priority={priority} />
           <div className="min-w-0">
             <span className="block truncate font-semibold text-fog">{p.name}</span>
             <div className="mt-1 flex items-center gap-2">
@@ -208,12 +228,16 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
                 <span>Catatan</span>
                 <span className="text-right">Aksi</span>
               </div>
-              {pageItems.map((p) => <ProviderRow key={p.slug} p={p} />)}
+              {pageItems.map((p, i) => (
+                <ProviderRow key={p.slug} p={p} priority={current === 1 && i < 3} />
+              ))}
             </div>
 
             {/* Mobile: stacked cards — hidden on md+ */}
             <div className="md:hidden">
-              {pageItems.map((p) => <ProviderRow key={p.slug} p={p} />)}
+              {pageItems.map((p, i) => (
+                <ProviderRow key={p.slug} p={p} priority={current === 1 && i < 3} />
+              ))}
             </div>
           </>
         )}
@@ -259,22 +283,32 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
           >
             ← Prev
           </button>
-          {Array.from({ length: totalPages }, (_, i) => i + 1).map((n) => (
-            <button
-              key={n}
-              type="button"
-              onClick={() => setPage(n)}
-              aria-label={`Halaman ${n}`}
-              aria-current={n === current ? "page" : undefined}
-              className={`min-h-[40px] min-w-[40px] rounded-[6px] border px-3 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40 ${
-                n === current
-                  ? "border-ember bg-ember text-white"
-                  : "border-ink-line bg-ink-soft text-mute hover:border-mute hover:text-fog"
-              }`}
-            >
-              {n}
-            </button>
-          ))}
+          {pageNumbers(current, totalPages).map((n, i) =>
+            n === "…" ? (
+              <span
+                key={`gap-${i}`}
+                aria-hidden="true"
+                className="min-h-[40px] px-1.5 py-2 text-sm text-mute"
+              >
+                …
+              </span>
+            ) : (
+              <button
+                key={n}
+                type="button"
+                onClick={() => setPage(n)}
+                aria-label={`Halaman ${n}`}
+                aria-current={n === current ? "page" : undefined}
+                className={`min-h-[40px] min-w-[40px] rounded-[6px] border px-3 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40 ${
+                  n === current
+                    ? "border-ember bg-ember text-white"
+                    : "border-ink-line bg-ink-soft text-mute hover:border-mute hover:text-fog"
+                }`}
+              >
+                {n}
+              </button>
+            ),
+          )}
           <button
             type="button"
             onClick={() => setPage(current + 1)}

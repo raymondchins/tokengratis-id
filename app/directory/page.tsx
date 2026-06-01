@@ -34,17 +34,6 @@ export default function DirectoryPage() {
         <section className="mt-8 sm:mt-10">
           <DirectoryClient items={items} />
         </section>
-
-        <footer className="mt-20 border-t border-ink-line pt-8 text-sm text-mute">
-          <p>
-            Sumber data: mnfst/awesome-free-llm-apis (data.json). Di-sync otomatis
-            dari sumber.
-          </p>
-          <p className="mt-2 text-xs text-mute">
-            <span className="font-medium text-fog">tokengratis.id</span> — karena
-            raymond boros token.
-          </p>
-        </footer>
       </main>
     </div>
   );

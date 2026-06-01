@@ -11,11 +11,14 @@ export default function ProviderLogo({
   flag,
   name,
   className = "h-9 w-9",
+  priority = false,
 }: {
   logo: string | null;
   flag: string | null;
   name: string;
   className?: string;
+  /** Above-fold logo → eager-load + high fetch priority (LCP). Default lazy. */
+  priority?: boolean;
 }) {
   const [failed, setFailed] = useState(false);
 
@@ -31,7 +34,8 @@ export default function ProviderLogo({
           width={64}
           height={64}
           className="h-2/3 w-2/3 object-contain"
-          loading="lazy"
+          loading={priority ? "eager" : "lazy"}
+          fetchPriority={priority ? "high" : undefined}
           onError={() => setFailed(true)}
         />
       ) : (
