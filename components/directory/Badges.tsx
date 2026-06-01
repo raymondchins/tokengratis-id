@@ -96,9 +96,12 @@ function formatSyncDate(iso: string): string {
 export function SyncedLabel({
   sources,
   syncedAt,
+  linkless = false,
 }: {
   sources: SourceRef[];
   syncedAt: string;
+  /** When rendered inside another <a> (e.g. OfferCard), avoid nested anchors. */
+  linkless?: boolean;
 }) {
   return (
     <p className="text-[11px] leading-relaxed text-mute">
@@ -106,14 +109,20 @@ export function SyncedLabel({
       {sources.map((src, i) => (
         <span key={src.url}>
           {i > 0 && <span className="mx-0.5 text-ink-line">,</span>}
-          <a
-            href={src.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline decoration-ink-line underline-offset-2 transition-colors hover:text-fog hover:decoration-mute"
-          >
-            {src.name}
-          </a>
+          {linkless ? (
+            <span className="underline decoration-ink-line underline-offset-2">
+              {src.name}
+            </span>
+          ) : (
+            <a
+              href={src.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-ink-line underline-offset-2 transition-colors hover:text-fog hover:decoration-mute"
+            >
+              {src.name}
+            </a>
+          )}
         </span>
       ))}
     </p>

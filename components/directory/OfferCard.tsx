@@ -56,7 +56,7 @@ export default function OfferCard({ offer }: { offer: Offer }) {
 
       {/* Synced attribution */}
       <div className="mt-4 border-t border-ink-line pt-3">
-        <SyncedLabel sources={offer.sources} syncedAt={offer.syncedAt} />
+        <SyncedLabel sources={offer.sources} syncedAt={offer.syncedAt} linkless />
       </div>
     </Link>
   );

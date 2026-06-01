@@ -92,8 +92,7 @@ export default function DirectoryPage() {
           mnfst/awesome-free-llm-apis, aicredits.dev. Di-sync otomatis tiap malam.
         </p>
         <p className="mt-2 text-xs text-ink-line">
-          <span className="text-mute">tokengratis.id</span> &middot; proyek
-          komunitas, bukan startup, ga dimonetisasi.
+          <span className="text-mute">tokengratis.id</span> &middot; ga dimonetisasi.
         </p>
       </footer>
     </main>
