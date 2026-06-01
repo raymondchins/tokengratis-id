@@ -1,19 +1,19 @@
 import Navbar from "@/components/Navbar";
 import DirectoryClient from "./directory/DirectoryClient";
-import { getListItems } from "@/lib/data";
+import { getListItems, getLastUpdated } from "@/lib/data";
 
 const principles = [
   {
     title: "Aggregator, bukan verifier",
-    body: "Data dikumpulin dari sumber komunitas yang udah dipercaya, lalu ditampilin apa adanya — lengkap sama atribusi & link sumbernya.",
+    body: "Data dikumpulin dari sumber komunitas tepercaya, ditampilin apa adanya — lengkap sama atribusi & link sumbernya.",
   },
   {
     title: "Synced, bukan “verified”",
-    body: "Tiap provider nampilin terakhir di-sync kapan dan dari mana. Trust dari transparansi, bukan dari klaim.",
+    body: "Tiap provider nampilin terakhir di-sync kapan & dari sumber mana — trust dari transparansi, bukan dari klaim.",
   },
   {
     title: "Apa adanya, ga nebak",
-    body: "Cuma nampilin yang beneran ada di sumber — model, context window, rate limit, modality. Ga ada field tebakan, ga ada kolom “Unknown” kosong.",
+    body: "Cuma nampilin yang ada di sumber — model, context, rate limit, modality. Ga ada field tebakan atau kolom kosong.",
   },
 ];
 
@@ -21,6 +21,14 @@ export default function Home() {
   const items = getListItems();
   const count = items.length;
   const totalModels = items.reduce((n, p) => n + p.modelCount, 0);
+  const lastUpdatedIso = getLastUpdated();
+  const lastUpdated = lastUpdatedIso
+    ? new Intl.DateTimeFormat("id-ID", {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+      }).format(new Date(lastUpdatedIso))
+    : null;
 
   return (
     <div className="min-h-dvh pb-24">
@@ -51,6 +59,20 @@ export default function Home() {
 
         {/* ── Directory table ── */}
         <section id="direktori" className="mt-16 scroll-mt-20">
+          {lastUpdated && (
+            <p className="mb-3 text-right text-xs text-mute opacity-50">
+              Last update {lastUpdated}. Udah stale? DM{" "}
+              <a
+                href="https://instagram.com/raymondchins"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-fog underline decoration-ink-line underline-offset-2 hover:decoration-mute"
+              >
+                @raymondchins
+              </a>{" "}
+              suruh gw update.
+            </p>
+          )}
           <DirectoryClient items={items} />
         </section>
 

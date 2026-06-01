@@ -38,6 +38,15 @@ export function getProviderBySlug(slug: string): Provider | undefined {
  * yang nyumbang dari sumber itu (paling banyak duluan). Buat atribusi footer —
  * otomatis ikut berapapun sumber yang ke-wire, ga usah hardcode.
  */
+/** ISO timestamp sync paling baru di seluruh provider (buat label "Last update"). */
+export function getLastUpdated(): string | null {
+  let max: string | null = null;
+  for (const p of providers) {
+    if (p.syncedAt && (!max || p.syncedAt > max)) max = p.syncedAt;
+  }
+  return max;
+}
+
 export function getSources(): { name: string; url: string; count: number }[] {
   const map = new Map<string, { name: string; url: string; count: number }>();
   for (const p of providers) {

@@ -15,7 +15,6 @@ import { DIRECTORY_GRID, DIRECTORY_PAGE_SIZE } from "@/lib/constants";
 import FilterBar from "@/components/directory/FilterBar";
 import { CategoryTag, ModalityTags, MODALITY_ORDER } from "@/components/directory/Badges";
 import ProviderLogo from "@/components/ProviderLogo";
-import Spark from "@/components/Spark";
 
 function ProviderRow({ p }: { p: ProviderListItem }) {
   return (
@@ -59,8 +58,7 @@ function ProviderRow({ p }: { p: ProviderListItem }) {
 
       {/* Aksi (visual — seluruh row yang jadi link) */}
       <div className="flex justify-end">
-        <span className="inline-flex items-center gap-1.5 rounded-[6px] bg-ember px-4 py-2 text-sm font-semibold text-white transition-colors group-hover:bg-ember-soft">
-          <Spark className="h-3.5 w-3.5" />
+        <span className="inline-flex items-center rounded-[6px] bg-ember px-4 py-2 text-sm font-semibold text-white transition-colors group-hover:bg-ember-soft">
           Lihat
         </span>
       </div>
