@@ -42,6 +42,10 @@ export interface Provider {
   /** ISO-2 country code (HQ provider — BUKAN ketersediaan akses). */
   country: string;
   flag: string;
+  /** Registrable domain provider (buat logo). null kalau ga ke-derive. */
+  domain: string | null;
+  /** URL favicon/logo provider. null kalau ga ada domain. Fallback UI = flag. */
+  logo: string | null;
   /** Halaman daftar / ambil API key. */
   url: string | null;
   /** Base URL API (buat dipanggil developer). */
@@ -54,6 +58,8 @@ export interface Provider {
   modelCount: number;
   /** Context window terbesar di antara model-nya, mis. "1M". null = ga ada data. */
   maxContext: string | null;
+  /** Ringkasan "sampe sejauh apa gratisnya", di-derive dari `description`. */
+  freeLimit: string | null;
 
   models: Model[];
 

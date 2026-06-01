@@ -58,6 +58,73 @@ const ORDER = [
   "reranking",
 ];
 
+/**
+ * Derive "free limit" ringkas dari description sumber.
+ * Anti-halusinasi: cuma narik angka/frasa yang EKSPLISIT ada di teks. Kalau ga
+ * ada angka → fallback "Free" / "Free (permanen)" (yang juga eksplisit di teks).
+ */
+function freeLimitOf(desc) {
+  const d = desc || "";
+  const period = (s) =>
+    /\/\s*day|per\s+day|daily/i.test(s)
+      ? "/hari"
+      : /\/\s*month|per\s+month|monthly/i.test(s)
+        ? "/bln"
+        : "";
+  let m;
+  // $ credits (e.g. "$10 trial credits", "$25 sign-up credit")
+  if ((m = d.match(/\$[\d,]+(?:\.\d+)?/))) return `${m[0]} kredit`;
+  // tokens with amount (e.g. "5M free tokens", "~1B tokens/month", "1M tokens/day")
+  if ((m = d.match(/([~]?[\d.,]+\s*[KMB])\b[^.]*?tokens?(\s*\/\s*\w+)?/i))) {
+    const amt = m[1].replace(/\s+/g, "");
+    return `${amt} token${period(m[0])}`;
+  }
+  // K/M credits (e.g. "100K monthly ... credits")
+  if ((m = d.match(/([\d.,]+\s*[KMB])\b[^.]*?credits?/i))) {
+    return `${m[1].replace(/\s+/g, "")} kredit${period(m[0])}`;
+  }
+  // API calls (e.g. "1,000 API calls/month")
+  if ((m = d.match(/([\d,]+)\s*(?:API\s+)?calls?/i))) {
+    return `${m[1]} calls${period(d)}`;
+  }
+  // Neurons/day
+  if ((m = d.match(/([\d,]+)\s*Neurons?/i))) return `${m[1]} Neurons/hari`;
+  // req/day (e.g. "50 req/day")
+  if ((m = d.match(/([\d,]+)\s*req(?:uests?)?\s*\/?\s*day/i)))
+    return `${m[1]} req/hari`;
+  // RPM per IP (OVHcloud)
+  if ((m = d.match(/([\d,]+)\s*RPM(?:\s*(?:per IP|\/IP))?/i)))
+    return `${m[1]} RPM/IP`;
+  // free models count (e.g. "~28 free models", "3 permanently free models")
+  if ((m = d.match(/([~]?\d+\+?)\s*(?:permanently\s+)?free models?/i)))
+    return `${m[1]} model free`;
+  // fallbacks (semua eksplisit di teks)
+  if (/permanent/i.test(d)) return "Free (permanen)";
+  if (/no (registration|signup|sign-up)/i.test(d)) return "Free, no signup";
+  return "Free";
+}
+
+/** Ambil registrable domain dari URL (buat fetch logo provider). */
+function domainOf(...urls) {
+  for (const u of urls) {
+    if (!u) continue;
+    try {
+      const host = new URL(u).hostname.replace(/^www\./, "");
+      const parts = host.split(".");
+      if (parts.length <= 2) return host;
+      // handle .co.uk / .com.cn / .com.au dst
+      const tld2 = parts.slice(-2).join(".");
+      if (/^(co|com|net|org|gov|ac|edu)\.\w{2,3}$/.test(tld2)) {
+        return parts.slice(-3).join(".");
+      }
+      return parts.slice(-2).join(".");
+    } catch {
+      /* skip */
+    }
+  }
+  return null;
+}
+
 /** "256K" / "1M" -> angka, buat nyari context maks. */
 function ctxNum(c) {
   if (!c) return 0;
@@ -95,18 +162,25 @@ async function main() {
       models[0],
     );
 
+    const domain = domainOf(p.url, p.baseUrl);
+
     return {
       slug: slugify(p.name),
       name: p.name,
       category: p.category,
       country: p.country,
       flag: p.flag,
+      domain,
+      logo: domain
+        ? `https://www.google.com/s2/favicons?sz=128&domain=${domain}`
+        : null,
       url: p.url || null,
       baseUrl: p.baseUrl || null,
       description: p.description || "",
       modalities,
       modelCount: models.length,
       maxContext: maxModel?.context || null,
+      freeLimit: freeLimitOf(p.description),
       models,
       source: SOURCE,
       syncedAt,

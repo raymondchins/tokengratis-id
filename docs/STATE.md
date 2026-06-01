@@ -22,7 +22,7 @@
 
 ## Data model (canonical = `lib/types.ts`)
 
-- **Provider:** slug, name, category (`provider_api`/`inference_provider`), country+flag, url, baseUrl, description (prosa apa adanya), modalities[] (facet), modelCount, maxContext, models[], source, syncedAt, sourceUpdatedAt.
+- **Provider:** slug, name, category (`provider_api`/`inference_provider`), country+flag, domain+logo (favicon, fallback flag), url, baseUrl, description (prosa apa adanya), modalities[] (facet), modelCount, maxContext, freeLimit (derived dari description), models[], source, syncedAt, sourceUpdatedAt.
 - **Model:** id, name, context, maxOutput, modality, rateLimit.
 - **DIBUANG (2026-06-01):** requiresCreditCard, requiresPhoneVerification, indonesiaAccess, offerType, freeQuota — ga ada sumber yang track terstruktur → "Unknown" bertaburan. Info itu kalau ada tetep di `description`.
 

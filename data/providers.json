@@ -5,6 +5,8 @@
     "category": "provider_api",
     "country": "IL",
     "flag": "🇮🇱",
+    "domain": "ai21.com",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=ai21.com",
     "url": "https://studio.ai21.com/account/api-key",
     "baseUrl": "https://api.ai21.com/studio/v1",
     "description": "$10 trial credits at signup, no credit card. Credits expire in 3 months. Covers Jamba Large and Jamba Mini.",
@@ -13,6 +15,7 @@
     ],
     "modelCount": 2,
     "maxContext": "256K",
+    "freeLimit": "$10 kredit",
     "models": [
       {
         "id": "jamba-large",
@@ -35,7 +38,7 @@
       "name": "mnfst/awesome-free-llm-apis",
       "url": "https://github.com/mnfst/awesome-free-llm-apis"
     },
-    "syncedAt": "2026-06-01T11:14:40.188Z",
+    "syncedAt": "2026-06-01T11:37:08.165Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -44,6 +47,8 @@
     "category": "provider_api",
     "country": "CN",
     "flag": "🇨🇳",
+    "domain": "alibabacloud.com",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=alibabacloud.com",
     "url": "https://bailian.console.alibabacloud.com/?apiKey=1",
     "baseUrl": "https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
     "description": "1M free tokens per Qwen model on signup, expires in 90 days (International / Singapore region). No credit card required.",
@@ -54,6 +59,7 @@
     ],
     "modelCount": 5,
     "maxContext": "1M",
+    "freeLimit": "1M token",
     "models": [
       {
         "id": "qwen3-max",
@@ -100,7 +106,7 @@
       "name": "mnfst/awesome-free-llm-apis",
       "url": "https://github.com/mnfst/awesome-free-llm-apis"
     },
-    "syncedAt": "2026-06-01T11:14:40.188Z",
+    "syncedAt": "2026-06-01T11:37:08.165Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -109,6 +115,8 @@
     "category": "provider_api",
     "country": "CA",
     "flag": "🇨🇦",
+    "domain": "cohere.com",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=cohere.com",
     "url": "https://dashboard.cohere.com/api-keys",
     "baseUrl": "https://api.cohere.com/v2",
     "description": "Free \"Trial\" API key, no credit card. 1,000 API calls/month. Non-commercial use only.",
@@ -120,6 +128,7 @@
     ],
     "modelCount": 6,
     "maxContext": "256K",
+    "freeLimit": "1,000 calls/bln",
     "models": [
       {
         "id": "command-a-03-2025",
@@ -174,7 +183,7 @@
       "name": "mnfst/awesome-free-llm-apis",
       "url": "https://github.com/mnfst/awesome-free-llm-apis"
     },
-    "syncedAt": "2026-06-01T11:14:40.188Z",
+    "syncedAt": "2026-06-01T11:37:08.165Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -183,6 +192,8 @@
     "category": "provider_api",
     "country": "CN",
     "flag": "🇨🇳",
+    "domain": "deepseek.com",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=deepseek.com",
     "url": "https://platform.deepseek.com/api_keys",
     "baseUrl": "https://api.deepseek.com/v1",
     "description": "5M free tokens on signup, no credit card. Credits expire 30 days after signup; pay-as-you-go after. Prompts may be used for training unless opted out.",
@@ -191,6 +202,7 @@
     ],
     "modelCount": 2,
     "maxContext": "128K",
+    "freeLimit": "5M token",
     "models": [
       {
         "id": "deepseek-chat",
@@ -213,7 +225,7 @@
       "name": "mnfst/awesome-free-llm-apis",
       "url": "https://github.com/mnfst/awesome-free-llm-apis"
     },
-    "syncedAt": "2026-06-01T11:14:40.188Z",
+    "syncedAt": "2026-06-01T11:37:08.165Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -222,6 +234,8 @@
     "category": "provider_api",
     "country": "US",
     "flag": "🇺🇸",
+    "domain": "google.com",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=google.com",
     "url": "https://aistudio.google.com/app/apikey",
     "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
     "description": "Free tier unavailable in EU/UK/Switzerland. Free-tier prompts may be used by Google to improve products.",
@@ -233,6 +247,7 @@
     ],
     "modelCount": 4,
     "maxContext": "2M",
+    "freeLimit": "Free",
     "models": [
       {
         "id": "gemini-2.5-pro",
@@ -271,7 +286,7 @@
       "name": "mnfst/awesome-free-llm-apis",
       "url": "https://github.com/mnfst/awesome-free-llm-apis"
     },
-    "syncedAt": "2026-06-01T11:14:40.188Z",
+    "syncedAt": "2026-06-01T11:37:08.165Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -280,6 +295,8 @@
     "category": "provider_api",
     "country": "FR",
     "flag": "🇫🇷",
+    "domain": "mistral.ai",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=mistral.ai",
     "url": "https://console.mistral.ai/api-keys",
     "baseUrl": "https://api.mistral.ai/v1",
     "description": "Free \"Experiment\" plan, no credit card. ~1B tokens/month. Prompts may be used to improve models.",
@@ -290,6 +307,7 @@
     ],
     "modelCount": 6,
     "maxContext": "256K",
+    "freeLimit": "~1B token/bln",
     "models": [
       {
         "id": "mistral-small-2603",
@@ -344,7 +362,7 @@
       "name": "mnfst/awesome-free-llm-apis",
       "url": "https://github.com/mnfst/awesome-free-llm-apis"
     },
-    "syncedAt": "2026-06-01T11:14:40.188Z",
+    "syncedAt": "2026-06-01T11:37:08.165Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -353,6 +371,8 @@
     "category": "provider_api",
     "country": "CN",
     "flag": "🇨🇳",
+    "domain": "bigmodel.cn",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=bigmodel.cn",
     "url": "https://open.bigmodel.cn/usercenter/apikeys",
     "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
     "description": "Permanent free models, no credit card required.",
@@ -362,6 +382,7 @@
     ],
     "modelCount": 3,
     "maxContext": "200K",
+    "freeLimit": "Free (permanen)",
     "models": [
       {
         "id": "glm-4.7-flash",
@@ -392,7 +413,7 @@
       "name": "mnfst/awesome-free-llm-apis",
       "url": "https://github.com/mnfst/awesome-free-llm-apis"
     },
-    "syncedAt": "2026-06-01T11:14:40.188Z",
+    "syncedAt": "2026-06-01T11:37:08.165Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -401,6 +422,8 @@
     "category": "inference_provider",
     "country": "US",
     "flag": "🇺🇸",
+    "domain": "cerebras.ai",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=cerebras.ai",
     "url": "https://cloud.cerebras.ai/",
     "baseUrl": "https://api.cerebras.ai/v1",
     "description": "Free tier, no credit card. Ultra-fast inference (~2,600 tok/s). 1M tokens/day cap. 8K context cap on free tier. llama3.1-8b scheduled for deprecation May 27, 2026.",
@@ -410,6 +433,7 @@
     ],
     "modelCount": 6,
     "maxContext": "131K (8K on free)",
+    "freeLimit": "1M token/hari",
     "models": [
       {
         "id": "llama-3.3-70b",
@@ -464,7 +488,7 @@
       "name": "mnfst/awesome-free-llm-apis",
       "url": "https://github.com/mnfst/awesome-free-llm-apis"
     },
-    "syncedAt": "2026-06-01T11:14:40.188Z",
+    "syncedAt": "2026-06-01T11:37:08.165Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -473,6 +497,8 @@
     "category": "inference_provider",
     "country": "US",
     "flag": "🇺🇸",
+    "domain": "cloudflare.com",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=cloudflare.com",
     "url": "https://dash.cloudflare.com/profile/api-tokens",
     "baseUrl": "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run",
     "description": "10,000 Neurons/day free. 50+ models available on free tier.",
@@ -485,6 +511,7 @@
     ],
     "modelCount": 9,
     "maxContext": "Up to 10M",
+    "freeLimit": "10,000 Neurons/hari",
     "models": [
       {
         "id": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
@@ -563,7 +590,7 @@
       "name": "mnfst/awesome-free-llm-apis",
       "url": "https://github.com/mnfst/awesome-free-llm-apis"
     },
-    "syncedAt": "2026-06-01T11:14:40.188Z",
+    "syncedAt": "2026-06-01T11:37:08.165Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -572,6 +599,8 @@
     "category": "inference_provider",
     "country": "US",
     "flag": "🇺🇸",
+    "domain": "github.com",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=github.com",
     "url": "https://github.com/marketplace/models",
     "baseUrl": "https://models.github.ai/inference",
     "description": "Free prototyping for all GitHub users. 45+ models. Per-request limits (8K in / 4K out).",
@@ -582,6 +611,7 @@
     ],
     "modelCount": 11,
     "maxContext": "1M",
+    "freeLimit": "Free",
     "models": [
       {
         "id": "openai/gpt-5",
@@ -676,7 +706,7 @@
       "name": "mnfst/awesome-free-llm-apis",
       "url": "https://github.com/mnfst/awesome-free-llm-apis"
     },
-    "syncedAt": "2026-06-01T11:14:40.188Z",
+    "syncedAt": "2026-06-01T11:37:08.165Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -685,6 +715,8 @@
     "category": "inference_provider",
     "country": "US",
     "flag": "🇺🇸",
+    "domain": "groq.com",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=groq.com",
     "url": "https://console.groq.com/keys",
     "baseUrl": "https://api.groq.com/openai/v1",
     "description": "Free tier, no credit card. Ultra-fast LPU inference.",
@@ -695,6 +727,7 @@
     ],
     "modelCount": 10,
     "maxContext": "262K",
+    "freeLimit": "Free",
     "models": [
       {
         "id": "llama-3.3-70b-versatile",
@@ -781,7 +814,7 @@
       "name": "mnfst/awesome-free-llm-apis",
       "url": "https://github.com/mnfst/awesome-free-llm-apis"
     },
-    "syncedAt": "2026-06-01T11:14:40.188Z",
+    "syncedAt": "2026-06-01T11:37:08.165Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -790,6 +823,8 @@
     "category": "inference_provider",
     "country": "US",
     "flag": "🇺🇸",
+    "domain": "huggingface.co",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=huggingface.co",
     "url": "https://huggingface.co/settings/tokens",
     "baseUrl": "https://router.huggingface.co/v1",
     "description": "100K monthly Inference Provider credits for free users. Routes to Fireworks, Together, Hyperbolic, Nebius, Novita, DeepInfra and others. Thousands of models.",
@@ -801,6 +836,7 @@
     ],
     "modelCount": 6,
     "maxContext": "131K",
+    "freeLimit": "100K kredit/bln",
     "models": [
       {
         "id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
@@ -855,7 +891,7 @@
       "name": "mnfst/awesome-free-llm-apis",
       "url": "https://github.com/mnfst/awesome-free-llm-apis"
     },
-    "syncedAt": "2026-06-01T11:14:40.188Z",
+    "syncedAt": "2026-06-01T11:37:08.165Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -864,6 +900,8 @@
     "category": "inference_provider",
     "country": "US",
     "flag": "🇺🇸",
+    "domain": "kilo.ai",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=kilo.ai",
     "url": "https://kilo.ai",
     "baseUrl": "https://api.kilo.ai/api/gateway",
     "description": "Free models with no credit card required. `kilo-auto/free` auto-router routes to minimax/minimax-m2.5:free (80%) and stepfun/step-3.5-flash:free (20%).",
@@ -873,6 +911,7 @@
     ],
     "modelCount": 6,
     "maxContext": "262K",
+    "freeLimit": "Free",
     "models": [
       {
         "id": "x-ai/grok-code-fast-1:free",
@@ -927,7 +966,7 @@
       "name": "mnfst/awesome-free-llm-apis",
       "url": "https://github.com/mnfst/awesome-free-llm-apis"
     },
-    "syncedAt": "2026-06-01T11:14:40.188Z",
+    "syncedAt": "2026-06-01T11:37:08.165Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -936,6 +975,8 @@
     "category": "inference_provider",
     "country": "GB",
     "flag": "🇬🇧",
+    "domain": "llm7.io",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=llm7.io",
     "url": "https://token.llm7.io",
     "baseUrl": "https://api.llm7.io/v1",
     "description": "Zero-friction API gateway. No registration needed for basic access. 30+ models. GDPR-compliant.",
@@ -946,6 +987,7 @@
     ],
     "modelCount": 7,
     "maxContext": "32K",
+    "freeLimit": "Free, no signup",
     "models": [
       {
         "id": "deepseek-r1-0528",
@@ -1008,7 +1050,7 @@
       "name": "mnfst/awesome-free-llm-apis",
       "url": "https://github.com/mnfst/awesome-free-llm-apis"
     },
-    "syncedAt": "2026-06-01T11:14:40.188Z",
+    "syncedAt": "2026-06-01T11:37:08.165Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -1017,6 +1059,8 @@
     "category": "inference_provider",
     "country": "CN",
     "flag": "🇨🇳",
+    "domain": "modelscope.cn",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=modelscope.cn",
     "url": "https://modelscope.cn/my/myaccesstoken",
     "baseUrl": "https://api-inference.modelscope.cn/v1",
     "description": "Free API-Inference for registered users. Requires Alibaba Cloud account binding + real-name verification.",
@@ -1027,6 +1071,7 @@
     ],
     "modelCount": 4,
     "maxContext": "—",
+    "freeLimit": "Free",
     "models": [
       {
         "id": "Qwen/Qwen3.5-35B-A3B",
@@ -1065,7 +1110,7 @@
       "name": "mnfst/awesome-free-llm-apis",
       "url": "https://github.com/mnfst/awesome-free-llm-apis"
     },
-    "syncedAt": "2026-06-01T11:14:40.188Z",
+    "syncedAt": "2026-06-01T11:37:08.165Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -1074,6 +1119,8 @@
     "category": "inference_provider",
     "country": "NL",
     "flag": "🇳🇱",
+    "domain": "nebius.com",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=nebius.com",
     "url": "https://studio.nebius.com/settings/api-keys",
     "baseUrl": "https://api.studio.nebius.com/v1",
     "description": "$1 free signup credits, no credit card required. 60+ open-source models via OpenAI-compatible API. EU-based.",
@@ -1085,6 +1132,7 @@
     ],
     "modelCount": 6,
     "maxContext": "128K",
+    "freeLimit": "$1 kredit",
     "models": [
       {
         "id": "meta-llama/Meta-Llama-3.3-70B-Instruct",
@@ -1139,7 +1187,7 @@
       "name": "mnfst/awesome-free-llm-apis",
       "url": "https://github.com/mnfst/awesome-free-llm-apis"
     },
-    "syncedAt": "2026-06-01T11:14:40.188Z",
+    "syncedAt": "2026-06-01T11:37:08.165Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -1148,6 +1196,8 @@
     "category": "inference_provider",
     "country": "GB",
     "flag": "🇬🇧",
+    "domain": "nscale.com",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=nscale.com",
     "url": "https://console.nscale.com/",
     "baseUrl": "https://inference.api.nscale.com/v1",
     "description": "$5 free signup credits, no credit card required. EU-sovereign provider; data centers in Norway. \"No rate limits, no cold starts.\"",
@@ -1157,6 +1207,7 @@
     ],
     "modelCount": 5,
     "maxContext": "256K",
+    "freeLimit": "$5 kredit",
     "models": [
       {
         "id": "meta-llama/Llama-3.3-70B-Instruct",
@@ -1203,7 +1254,7 @@
       "name": "mnfst/awesome-free-llm-apis",
       "url": "https://github.com/mnfst/awesome-free-llm-apis"
     },
-    "syncedAt": "2026-06-01T11:14:40.188Z",
+    "syncedAt": "2026-06-01T11:37:08.165Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -1212,6 +1263,8 @@
     "category": "inference_provider",
     "country": "US",
     "flag": "🇺🇸",
+    "domain": "nvidia.com",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=nvidia.com",
     "url": "https://build.nvidia.com/explore/discover",
     "baseUrl": "https://integrate.api.nvidia.com/v1",
     "description": "Free with NVIDIA Developer Program membership. 100+ models. Rate-limited (no daily token cap).",
@@ -1225,6 +1278,7 @@
     ],
     "modelCount": 11,
     "maxContext": "262K",
+    "freeLimit": "Free",
     "models": [
       {
         "id": "deepseek-ai/deepseek-r1",
@@ -1319,7 +1373,7 @@
       "name": "mnfst/awesome-free-llm-apis",
       "url": "https://github.com/mnfst/awesome-free-llm-apis"
     },
-    "syncedAt": "2026-06-01T11:14:40.188Z",
+    "syncedAt": "2026-06-01T11:37:08.165Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -1328,6 +1382,8 @@
     "category": "inference_provider",
     "country": "US",
     "flag": "🇺🇸",
+    "domain": "ollama.com",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=ollama.com",
     "url": "https://ollama.com/settings/keys",
     "baseUrl": "https://api.ollama.com",
     "description": "Free tier with qualitative usage limits. 400+ models from Ollama library. Not OpenAI SDK-compatible; uses [Ollama API](https://docs.ollama.com/cloud).",
@@ -1337,6 +1393,7 @@
     ],
     "modelCount": 7,
     "maxContext": "262K",
+    "freeLimit": "Free",
     "models": [
       {
         "id": "gpt-oss:120b-cloud",
@@ -1399,7 +1456,7 @@
       "name": "mnfst/awesome-free-llm-apis",
       "url": "https://github.com/mnfst/awesome-free-llm-apis"
     },
-    "syncedAt": "2026-06-01T11:14:40.188Z",
+    "syncedAt": "2026-06-01T11:37:08.165Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -1408,6 +1465,8 @@
     "category": "inference_provider",
     "country": "US",
     "flag": "🇺🇸",
+    "domain": "openrouter.ai",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=openrouter.ai",
     "url": "https://openrouter.ai/keys",
     "baseUrl": "https://openrouter.ai/api/v1",
     "description": "~28 free models (marked with `:free` suffix). OpenAI SDK-compatible.",
@@ -1418,6 +1477,7 @@
     ],
     "modelCount": 13,
     "maxContext": "10M",
+    "freeLimit": "~28 model free",
     "models": [
       {
         "id": "deepseek/deepseek-r1-0528:free",
@@ -1528,7 +1588,7 @@
       "name": "mnfst/awesome-free-llm-apis",
       "url": "https://github.com/mnfst/awesome-free-llm-apis"
     },
-    "syncedAt": "2026-06-01T11:14:40.188Z",
+    "syncedAt": "2026-06-01T11:37:08.165Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -1537,6 +1597,8 @@
     "category": "inference_provider",
     "country": "FR",
     "flag": "🇫🇷",
+    "domain": "ovh.net",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=ovh.net",
     "url": "https://endpoints.ai.cloud.ovh.net/",
     "baseUrl": "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
     "description": "Free anonymous tier (no API key, no signup): 2 RPM per IP per model. 40+ open-weight models hosted in EU. OpenAI SDK-compatible.",
@@ -1549,6 +1611,7 @@
     ],
     "modelCount": 11,
     "maxContext": "262K",
+    "freeLimit": "2 RPM/IP",
     "models": [
       {
         "id": "Meta-Llama-3_3-70B-Instruct",
@@ -1643,7 +1706,7 @@
       "name": "mnfst/awesome-free-llm-apis",
       "url": "https://github.com/mnfst/awesome-free-llm-apis"
     },
-    "syncedAt": "2026-06-01T11:14:40.188Z",
+    "syncedAt": "2026-06-01T11:37:08.165Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -1652,6 +1715,8 @@
     "category": "inference_provider",
     "country": "CN",
     "flag": "🇨🇳",
+    "domain": "siliconflow.cn",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=siliconflow.cn",
     "url": "https://cloud.siliconflow.cn/account/ak",
     "baseUrl": "https://api.siliconflow.cn/v1",
     "description": "3 permanently free models. Free tier capped at 50 req/day; ≥10 CNY lifetime purchase raises cap to 1,000/day. 200+ paid models also available.",
@@ -1661,6 +1726,7 @@
     ],
     "modelCount": 3,
     "maxContext": "131K",
+    "freeLimit": "50 req/hari",
     "models": [
       {
         "id": "Qwen/Qwen3-8B",
@@ -1691,7 +1757,7 @@
       "name": "mnfst/awesome-free-llm-apis",
       "url": "https://github.com/mnfst/awesome-free-llm-apis"
     },
-    "syncedAt": "2026-06-01T11:14:40.188Z",
+    "syncedAt": "2026-06-01T11:37:08.165Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -1700,6 +1766,8 @@
     "category": "provider_api",
     "country": "IL",
     "flag": "🇮🇱",
+    "domain": "aionlabs.ai",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=aionlabs.ai",
     "url": "https://www.aionlabs.ai",
     "baseUrl": "https://api.aionlabs.ai/v1",
     "description": "Free daily token allowance, no credit card required. Specialized for roleplay and storytelling.",
@@ -1708,6 +1776,7 @@
     ],
     "modelCount": 3,
     "maxContext": "131K",
+    "freeLimit": "Free",
     "models": [
       {
         "id": "aion-2.0",
@@ -1738,7 +1807,7 @@
       "name": "mnfst/awesome-free-llm-apis",
       "url": "https://github.com/mnfst/awesome-free-llm-apis"
     },
-    "syncedAt": "2026-06-01T11:14:40.188Z",
+    "syncedAt": "2026-06-01T11:37:08.165Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -1747,6 +1816,8 @@
     "category": "provider_api",
     "country": "US",
     "flag": "🇺🇸",
+    "domain": "x.ai",
+    "logo": "https://www.google.com/s2/favicons?sz=128&domain=x.ai",
     "url": "https://console.x.ai",
     "baseUrl": "https://api.x.ai/v1",
     "description": "$25 sign-up credit, no credit card required. One-time only; additional $150/month available via opt-in data-sharing program (requires prior spend).",
@@ -1755,6 +1826,7 @@
     ],
     "modelCount": 3,
     "maxContext": "2M",
+    "freeLimit": "$25 kredit",
     "models": [
       {
         "id": "grok-4.3",
@@ -1785,7 +1857,7 @@
       "name": "mnfst/awesome-free-llm-apis",
       "url": "https://github.com/mnfst/awesome-free-llm-apis"
     },
-    "syncedAt": "2026-06-01T11:14:40.188Z",
+    "syncedAt": "2026-06-01T11:37:08.165Z",
     "sourceUpdatedAt": "2026-05-20"
   }
 ]

@@ -2,6 +2,7 @@ import { getAllProviders, getProviderBySlug } from "@/lib/data";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import ProviderLogo from "@/components/ProviderLogo";
 import { CategoryTag, ModalityTags, SourceLine } from "@/components/directory/Badges";
 import type { Provider } from "@/lib/types";
 
@@ -49,9 +50,12 @@ export default async function Page({
 
         {/* header */}
         <header className="flex items-start gap-4">
-          <div className="mt-1 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-ink-line bg-ink-soft text-2xl">
-            <span aria-hidden>{p.flag}</span>
-          </div>
+          <ProviderLogo
+            logo={p.logo}
+            flag={p.flag}
+            name={p.name}
+            className="mt-1 h-12 w-12"
+          />
           <div className="min-w-0">
             <h1 className="font-serif text-2xl font-semibold tracking-tight text-fog sm:text-3xl">
               {p.name}

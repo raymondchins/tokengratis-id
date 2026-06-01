@@ -1,14 +1,8 @@
 "use client";
 
 import { emptyFilter, type FilterState } from "@/lib/data";
-import type { Modality, ProviderCategory } from "@/lib/types";
+import type { Modality } from "@/lib/types";
 import { modalityLabel } from "./Badges";
-
-const CATEGORY_LABELS: Record<ProviderCategory, string> = {
-  provider_api: "Provider API",
-  inference_provider: "Inference",
-};
-const ALL_CATEGORIES: ProviderCategory[] = ["provider_api", "inference_provider"];
 
 function Chip({
   active,
@@ -24,9 +18,9 @@ function Chip({
       type="button"
       onClick={onClick}
       className={[
-        "inline-flex shrink-0 items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-[13px] font-medium transition-colors",
+        "inline-flex shrink-0 items-center gap-1.5 rounded-xl border px-4 py-2 text-[13px] font-medium transition-colors",
         active
-          ? "border-ember bg-ember text-white"
+          ? "border-mute/60 bg-ink-line/70 text-fog"
           : "border-ink-line bg-ink-soft text-mute hover:border-mute hover:text-fog",
       ].join(" ")}
     >
@@ -44,16 +38,6 @@ export default function FilterBar({
   onChange: (next: FilterState) => void;
   availableModalities: Modality[];
 }) {
-  function toggleCategory(cat: ProviderCategory) {
-    const has = state.categories.includes(cat);
-    onChange({
-      ...state,
-      categories: has
-        ? state.categories.filter((c) => c !== cat)
-        : [...state.categories, cat],
-    });
-  }
-
   function toggleModality(m: Modality) {
     const has = state.modalities.includes(m);
     onChange({
@@ -64,10 +48,7 @@ export default function FilterBar({
     });
   }
 
-  const isAll =
-    !state.search &&
-    state.categories.length === 0 &&
-    state.modalities.length === 0;
+  const isAll = !state.search && state.modalities.length === 0;
 
   return (
     <div className="flex flex-col gap-4">
@@ -96,25 +77,11 @@ export default function FilterBar({
         />
       </div>
 
-      {/* Chip row */}
+      {/* Chip row — modality facets */}
       <div className="-mx-1 flex flex-wrap items-center gap-2 px-1">
         <Chip active={isAll} onClick={() => onChange(emptyFilter())}>
           Semua
         </Chip>
-
-        {ALL_CATEGORIES.map((cat) => (
-          <Chip
-            key={cat}
-            active={state.categories.includes(cat)}
-            onClick={() => toggleCategory(cat)}
-          >
-            {CATEGORY_LABELS[cat]}
-          </Chip>
-        ))}
-
-        {availableModalities.length > 0 && (
-          <span className="mx-1 h-5 w-px bg-ink-line" aria-hidden />
-        )}
 
         {availableModalities.map((m) => (
           <Chip
