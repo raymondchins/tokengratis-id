@@ -109,9 +109,10 @@ export function filterProviders(list: Provider[], f: FilterState): Provider[] {
       ).toLowerCase();
       if (!hay.includes(q)) return false;
     }
+    // AND: provider WAJIB punya SEMUA modality yang dipilih (bukan salah satu).
     if (
       f.modalities.length > 0 &&
-      !f.modalities.some((m) => p.modalities.includes(m))
+      !f.modalities.every((m) => p.modalities.includes(m))
     ) {
       return false;
     }

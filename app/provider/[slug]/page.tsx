@@ -4,6 +4,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import ProviderLogo from "@/components/ProviderLogo";
 import { CategoryTag, ModalityTags, SourceLine } from "@/components/directory/Badges";
+import ModelsTable from "@/components/directory/ModelsTable";
 import type { Provider } from "@/lib/types";
 
 export async function generateStaticParams() {
@@ -24,6 +25,15 @@ export async function generateMetadata({
   };
 }
 
+function Fact({ label, children }: { label: string; children: React.ReactNode }) {
+  return (
+    <div className="flex items-center justify-between gap-3">
+      <span className="text-xs text-mute">{label}</span>
+      <span className="text-sm font-medium text-fog">{children}</span>
+    </div>
+  );
+}
+
 export default async function Page({
   params,
 }: {
@@ -36,11 +46,11 @@ export default async function Page({
   return (
     <div className="min-h-dvh pb-24">
       <Navbar />
-      <main className="mx-auto max-w-3xl px-6 pt-12">
+      <main className="mx-auto max-w-5xl px-6 pt-12">
         {/* back */}
         <Link
           href="/#direktori"
-          className="group mb-10 inline-flex items-center gap-1.5 text-sm text-mute transition-colors hover:text-fog"
+          className="group mb-8 inline-flex items-center gap-1.5 text-sm text-mute transition-colors hover:text-fog"
         >
           <span aria-hidden className="transition-transform group-hover:-translate-x-0.5">
             ←
@@ -48,131 +58,116 @@ export default async function Page({
           Kembali ke direktori
         </Link>
 
-        {/* header */}
-        <header className="flex items-start gap-4">
+        {/* hero header */}
+        <header className="flex flex-col gap-5 border-b border-ink-line pb-8 sm:flex-row sm:items-start">
           <ProviderLogo
             logo={p.logo}
             flag={p.flag}
             name={p.name}
-            className="mt-1 h-12 w-12"
+            className="h-16 w-16"
           />
-          <div className="min-w-0">
-            <h1 className="font-serif text-2xl font-semibold tracking-tight text-fog sm:text-3xl">
+          <div className="min-w-0 flex-1">
+            <h1 className="font-serif text-3xl font-semibold tracking-tight text-fog sm:text-4xl">
               {p.name}
             </h1>
-            <div className="mt-2 flex flex-wrap items-center gap-2">
+            <div className="mt-3 flex flex-wrap items-center gap-2 text-xs text-mute">
               <CategoryTag category={p.category} />
-              <span className="text-xs text-mute">
-                {p.modelCount} model · context maks {p.maxContext ?? "—"}
-              </span>
+              <span>{p.modelCount} model</span>
+              <span aria-hidden>·</span>
+              <span>context maks {p.maxContext ?? "—"}</span>
+              {p.freeLimit && (
+                <span className="inline-flex items-center rounded-full border border-grass-line bg-grass-bg px-2.5 py-0.5 font-medium text-grass">
+                  Gratis: {p.freeLimit}
+                </span>
+              )}
             </div>
-            <div className="mt-3">
-              <ModalityTags modalities={p.modalities} />
+            <div className="mt-4">
+              <ModalityTags modalities={p.modalities} full />
             </div>
           </div>
         </header>
 
-        {/* actions */}
-        {(p.url || p.baseUrl) && (
-          <div className="mt-8 space-y-3">
-            {p.url && (
-              <a
-                href={p.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-xl bg-ember px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-ember-soft"
-              >
-                Dapatkan API key
-                <span aria-hidden>↗</span>
-              </a>
+        {/* 2-col: main + sidebar */}
+        <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_300px]">
+          {/* main */}
+          <div className="order-2 space-y-6 lg:order-1">
+            {/* catatan */}
+            {p.description && (
+              <section className="rounded-[8px] border border-ink-line bg-ink-soft px-5 py-4">
+                <p className="text-xs font-semibold uppercase tracking-[0.15em] text-mute">
+                  Catatan dari sumber
+                </p>
+                <p className="mt-2 text-sm leading-relaxed text-fog">
+                  {p.description}
+                </p>
+              </section>
             )}
-            {p.baseUrl && (
-              <div className="flex flex-wrap items-center gap-2 text-xs text-mute">
-                <span className="font-medium">Base URL</span>
-                <code className="rounded-md border border-ink-line bg-ink-soft px-2 py-1 font-mono text-[12px] text-fog">
-                  {p.baseUrl}
-                </code>
+
+            {/* models */}
+            <ModelsTable models={p.models} />
+          </div>
+
+          {/* sidebar */}
+          <aside className="order-1 h-fit space-y-4 lg:order-2 lg:sticky lg:top-20">
+            <div className="space-y-4 rounded-[8px] border border-ink-line bg-ink-soft p-5">
+              {p.url && (
+                <a
+                  href={p.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex w-full items-center justify-center gap-2 rounded-[6px] bg-ember px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-ember-soft"
+                >
+                  Dapatkan API key
+                  <span aria-hidden>↗</span>
+                </a>
+              )}
+
+              {p.baseUrl && (
+                <div>
+                  <p className="mb-1.5 text-xs font-medium text-mute">Base URL</p>
+                  <code className="block overflow-x-auto whitespace-nowrap rounded-[4px] border border-ink-line bg-ink px-3 py-2 font-mono text-[12px] text-fog">
+                    {p.baseUrl}
+                  </code>
+                </div>
+              )}
+
+              <div className="space-y-2.5 border-t border-ink-line pt-4">
+                {p.freeLimit && (
+                  <Fact label="Free limit">
+                    <span className="text-grass">{p.freeLimit}</span>
+                  </Fact>
+                )}
+                <Fact label="Context maks">{p.maxContext ?? "—"}</Fact>
+                <Fact label="Jumlah model">{p.modelCount}</Fact>
+                {p.domain && (
+                  <Fact label="Domain">
+                    <span className="font-mono text-xs">{p.domain}</span>
+                  </Fact>
+                )}
               </div>
-            )}
-          </div>
-        )}
 
-        {/* description (apa adanya dari sumber) */}
-        {p.description && (
-          <section className="mt-8 rounded-2xl border border-ink-line bg-ink-soft px-5 py-4">
-            <p className="text-xs font-semibold uppercase tracking-[0.15em] text-mute">
-              Catatan dari sumber
-            </p>
-            <p className="mt-2 text-sm leading-relaxed text-fog">{p.description}</p>
-          </section>
-        )}
-
-        {/* models */}
-        <section className="mt-8 overflow-hidden rounded-2xl border border-ink-line">
-          <div className="px-5 py-3.5 text-xs font-semibold uppercase tracking-[0.15em] text-mute">
-            Model tersedia ({p.modelCount})
-          </div>
-          <div className="overflow-x-auto">
-            <table className="w-full min-w-[560px] border-t border-ink-line text-sm">
-              <thead>
-                <tr className="text-left text-[11px] font-semibold uppercase tracking-wider text-mute">
-                  <th className="px-5 py-2.5 font-semibold">Model</th>
-                  <th className="px-3 py-2.5 font-semibold">Modality</th>
-                  <th className="px-3 py-2.5 font-semibold">Context</th>
-                  <th className="px-3 py-2.5 font-semibold">Output</th>
-                  <th className="px-5 py-2.5 font-semibold">Rate limit</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-ink-line">
-                {p.models.map((m) => (
-                  <tr key={m.id} className="align-top">
-                    <td className="px-5 py-3">
-                      <div className="font-medium text-fog">{m.name}</div>
-                      <div className="font-mono text-[11px] text-mute">{m.id}</div>
-                    </td>
-                    <td className="px-3 py-3 text-mute">{m.modality}</td>
-                    <td className="px-3 py-3 text-fog">{m.context ?? "—"}</td>
-                    <td className="px-3 py-3 text-mute">{m.maxOutput ?? "—"}</td>
-                    <td className="px-5 py-3 text-mute">{m.rateLimit ?? "—"}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        {/* source */}
-        <section className="mt-8 rounded-2xl border border-ink-line bg-ink-soft px-5 py-5">
-          <div className="flex flex-wrap items-start justify-between gap-3">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.15em] text-mute">
-                Sumber data
-              </p>
-              <p className="mt-1 max-w-md text-xs leading-relaxed text-mute">
-                Data ini di-sync apa adanya dari sumber di bawah. Kami aggregator —
-                bukan verifier, bukan pemilik datanya.
-              </p>
+              <div className="border-t border-ink-line pt-4">
+                <p className="mb-1 text-xs font-semibold uppercase tracking-[0.15em] text-mute">
+                  Sumber data
+                </p>
+                <SourceLine source={p.source} syncedAt={p.syncedAt} />
+                <p className="mt-2 text-[11px] leading-relaxed text-mute">
+                  Kami aggregator — bukan verifier, bukan pemilik datanya. Kalau ada
+                  yang ga akurat,{" "}
+                  <a
+                    href={p.source.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline decoration-ink-line underline-offset-2 hover:text-fog"
+                  >
+                    perbaiki di sumbernya
+                  </a>
+                  .
+                </p>
+              </div>
             </div>
-            <SourceLine source={p.source} syncedAt={p.syncedAt} />
-          </div>
-        </section>
-
-        {/* footer */}
-        <footer className="mt-16 text-xs text-mute">
-          <p>
-            Data di-aggregate otomatis dari sumber komunitas. Kalau ada yang ga
-            akurat,{" "}
-            <a
-              href={p.source.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline decoration-ink-line underline-offset-2 hover:text-fog"
-            >
-              perbaiki di sumbernya
-            </a>{" "}
-            — kita ikut sync ulang.
-          </p>
-        </footer>
+          </aside>
+        </div>
       </main>
     </div>
   );

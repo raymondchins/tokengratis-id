@@ -9,7 +9,7 @@ const CATEGORY_LABELS: Record<ProviderCategory, string> = {
 
 export function CategoryTag({ category }: { category: ProviderCategory }) {
   return (
-    <span className="inline-flex shrink-0 items-center rounded border border-ink-line bg-ink px-2 py-0.5 text-[11px] font-medium text-mute">
+    <span className="inline-flex shrink-0 items-center rounded-[2px] border border-ink-line bg-ink px-2 py-0.5 text-[11px] font-medium text-mute">
       {CATEGORY_LABELS[category]}
     </span>
   );
@@ -127,9 +127,41 @@ function ModalityIcon({ m }: { m: Modality }) {
   }
 }
 
-export function ModalityTags({ modalities }: { modalities: Modality[] }) {
+function ModalityChip({ m }: { m: Modality }) {
+  return (
+    <span
+      title={MODALITY_LABELS[m]}
+      aria-label={MODALITY_LABELS[m]}
+      className={`inline-flex h-6 w-6 items-center justify-center rounded-[2px] border border-ink-line bg-ink-soft transition-colors hover:border-mute ${MODALITY_COLOR[m]}`}
+    >
+      <ModalityIcon m={m} />
+    </span>
+  );
+}
+
+/**
+ * `full` (detail page): flow horizontal, tampil semua, ga ada cap.
+ * default (tabel direktori): grid 3 kolom × 2 baris (maks 6), sisanya "+N".
+ */
+export function ModalityTags({
+  modalities,
+  full = false,
+}: {
+  modalities: Modality[];
+  full?: boolean;
+}) {
   const sorted = MODALITY_ORDER.filter((m) => modalities.includes(m));
-  // Maks 6 icon (grid 3 kolom × 2 baris). Sisanya jadi "+N".
+
+  if (full) {
+    return (
+      <div className="flex flex-wrap gap-1.5">
+        {sorted.map((m) => (
+          <ModalityChip key={m} m={m} />
+        ))}
+      </div>
+    );
+  }
+
   const MAX = 6;
   const shown = sorted.length > MAX ? sorted.slice(0, MAX - 1) : sorted;
   const extra = sorted.slice(shown.length);
@@ -137,19 +169,12 @@ export function ModalityTags({ modalities }: { modalities: Modality[] }) {
   return (
     <div className="grid w-fit grid-cols-3 gap-1">
       {shown.map((m) => (
-        <span
-          key={m}
-          title={MODALITY_LABELS[m]}
-          aria-label={MODALITY_LABELS[m]}
-          className={`inline-flex h-6 w-6 items-center justify-center rounded border border-ink-line bg-ink-soft transition-colors hover:border-mute ${MODALITY_COLOR[m]}`}
-        >
-          <ModalityIcon m={m} />
-        </span>
+        <ModalityChip key={m} m={m} />
       ))}
       {extra.length > 0 && (
         <span
           title={extra.map((m) => MODALITY_LABELS[m]).join(", ")}
-          className="inline-flex h-6 w-6 items-center justify-center rounded border border-ink-line bg-ink-soft text-[10px] font-semibold text-mute"
+          className="inline-flex h-6 w-6 items-center justify-center rounded-[2px] border border-ink-line bg-ink-soft text-[10px] font-semibold text-mute"
         >
           +{extra.length}
         </span>

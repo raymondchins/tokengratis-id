@@ -21,7 +21,7 @@ export default function ProviderLogo({
 
   return (
     <div
-      className={`flex shrink-0 items-center justify-center overflow-hidden rounded-lg border border-ink-line bg-ink-soft ${className}`}
+      className={`flex shrink-0 items-center justify-center overflow-hidden rounded-[4px] border border-ink-line bg-ink-soft ${className}`}
     >
       {logo && !failed ? (
         // eslint-disable-next-line @next/next/no-img-element

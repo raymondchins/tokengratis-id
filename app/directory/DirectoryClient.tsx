@@ -64,7 +64,7 @@ function ProviderRow({ p }: { p: Provider }) {
 
       {/* Aksi (visual — seluruh row yang jadi link) */}
       <div className="flex justify-end">
-        <span className="inline-flex items-center gap-1.5 rounded-xl bg-ember px-4 py-2 text-sm font-semibold text-white transition-colors group-hover:bg-ember-soft">
+        <span className="inline-flex items-center gap-1.5 rounded-[6px] bg-ember px-4 py-2 text-sm font-semibold text-white transition-colors group-hover:bg-ember-soft">
           <Spark className="h-3.5 w-3.5" />
           Lihat
         </span>
@@ -85,7 +85,7 @@ export default function DirectoryClient({ providers }: { providers: Provider[] }
 
   if (providers.length === 0) {
     return (
-      <div className="flex flex-col items-center justify-center rounded-2xl border border-ink-line bg-ink-soft px-8 py-20 text-center">
+      <div className="flex flex-col items-center justify-center rounded-[8px] border border-ink-line bg-ink-soft px-8 py-20 text-center">
         <span className="inline-block h-2.5 w-2.5 animate-pulse rounded-full bg-grass-solid" />
         <p className="mt-4 text-base font-medium text-fog">Direktori lagi dibangun</p>
         <p className="mt-2 max-w-sm text-sm leading-relaxed text-mute">
@@ -115,7 +115,7 @@ export default function DirectoryClient({ providers }: { providers: Provider[] }
           <select
             value={sort}
             onChange={(e) => setSort(e.target.value as SortKey)}
-            className="rounded-lg border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute focus:border-fog/40 focus:outline-none"
+            className="rounded-[4px] border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute focus:border-fog/40 focus:outline-none"
           >
             {(Object.keys(SORT_LABELS) as SortKey[]).map((k) => (
               <option key={k} value={k}>
@@ -127,7 +127,7 @@ export default function DirectoryClient({ providers }: { providers: Provider[] }
       </div>
 
       {/* Table */}
-      <div className="overflow-hidden rounded-2xl border border-ink-line bg-ink-soft">
+      <div className="overflow-hidden rounded-[8px] border border-ink-line bg-ink-soft">
         <div className="overflow-x-auto">
           <div className={`${GRID} py-3 text-[11px] font-semibold uppercase tracking-wider text-mute`}>
             <span>Provider</span>

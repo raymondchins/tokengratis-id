@@ -51,14 +51,14 @@ export default function Home() {
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <Link
               href="#direktori"
-              className="inline-flex items-center gap-2 rounded-xl bg-ember px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-ember-soft"
+              className="inline-flex items-center gap-2 rounded-[6px] bg-ember px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-ember-soft"
             >
               <Spark className="h-4 w-4" />
               Lihat direktori
             </Link>
             <Link
               href="#cara-kerja"
-              className="inline-flex items-center gap-2 rounded-xl border border-ink-line bg-ink-soft px-6 py-3 text-sm font-semibold text-fog transition-colors hover:border-fog/40"
+              className="inline-flex items-center gap-2 rounded-[6px] border border-ink-line bg-ink-soft px-6 py-3 text-sm font-semibold text-fog transition-colors hover:border-fog/40"
             >
               Cara kerja
               <span aria-hidden>→</span>
@@ -92,7 +92,7 @@ export default function Home() {
           <h2 className="font-serif text-3xl font-semibold tracking-tight text-fog">
             Cara kerja
           </h2>
-          <div className="mt-6 grid gap-px overflow-hidden rounded-2xl border border-ink-line bg-ink-line sm:grid-cols-3">
+          <div className="mt-6 grid gap-px overflow-hidden rounded-[8px] border border-ink-line bg-ink-line sm:grid-cols-3">
             {principles.map((p) => (
               <div key={p.title} className="bg-ink-soft p-6">
                 <h3 className="font-serif text-base font-semibold tracking-tight text-fog">
