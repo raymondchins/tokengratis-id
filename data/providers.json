@@ -39,15 +39,15 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-01T22:12:55.115Z"
+        "syncedAt": "2026-06-02T01:44:53.383Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-01T22:12:55.184Z"
+        "syncedAt": "2026-06-02T01:44:53.223Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.184Z",
+    "syncedAt": "2026-06-02T01:44:53.383Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -98,15 +98,15 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-01T22:12:55.115Z"
+        "syncedAt": "2026-06-02T01:44:53.383Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-01T22:12:55.184Z"
+        "syncedAt": "2026-06-02T01:44:53.223Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.184Z",
+    "syncedAt": "2026-06-02T01:44:53.383Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -175,15 +175,15 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-01T22:12:55.115Z"
+        "syncedAt": "2026-06-02T01:44:53.383Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-01T22:12:55.184Z"
+        "syncedAt": "2026-06-02T01:44:53.223Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.184Z",
+    "syncedAt": "2026-06-02T01:44:53.383Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -210,7 +210,7 @@
         "id": "llama-3-1-70b",
         "name": "Llama 3.1 70B",
         "context": "131K",
-        "maxOutput": "0",
+        "maxOutput": null,
         "modality": "text",
         "rateLimit": null
       },
@@ -275,20 +275,20 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-01T22:12:55.115Z"
+        "syncedAt": "2026-06-02T01:44:53.383Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-01T22:12:55.184Z"
+        "syncedAt": "2026-06-02T01:44:53.223Z"
       },
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources",
-        "syncedAt": "2026-06-01T22:12:55.080Z"
+        "syncedAt": "2026-06-02T01:44:53.393Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.184Z",
+    "syncedAt": "2026-06-02T01:44:53.393Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -301,7 +301,6 @@
     "logo": null,
     "url": null,
     "baseUrl": null,
-    "description": "",
     "modalities": [
       "text"
     ],
@@ -314,7 +313,7 @@
         "id": "deepseek-r1",
         "name": "DeepSeek-R1",
         "context": "131K",
-        "maxOutput": "0",
+        "maxOutput": null,
         "modality": "text",
         "rateLimit": "Community-powered, no hard cap"
       },
@@ -322,7 +321,7 @@
         "id": "llama-3-1-70b",
         "name": "Llama 3.1 70B",
         "context": "131K",
-        "maxOutput": "0",
+        "maxOutput": null,
         "modality": "text",
         "rateLimit": "Community-powered, no hard cap"
       }
@@ -331,10 +330,10 @@
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-01T22:12:55.184Z"
+        "syncedAt": "2026-06-02T01:44:53.223Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.184Z",
+    "syncedAt": "2026-06-02T01:44:53.223Z",
     "sourceUpdatedAt": null
   },
   {
@@ -417,7 +416,7 @@
         "id": "mistral-7b",
         "name": "Mistral 7B",
         "context": "33K",
-        "maxOutput": "0",
+        "maxOutput": null,
         "modality": "text",
         "rateLimit": null
       },
@@ -425,7 +424,7 @@
         "id": "qwen-1-5-7b",
         "name": "Qwen 1.5 7B",
         "context": "33K",
-        "maxOutput": "0",
+        "maxOutput": null,
         "modality": "text",
         "rateLimit": null
       },
@@ -698,20 +697,20 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-01T22:12:55.115Z"
+        "syncedAt": "2026-06-02T01:44:53.383Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-01T22:12:55.184Z"
+        "syncedAt": "2026-06-02T01:44:53.223Z"
       },
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources",
-        "syncedAt": "2026-06-01T22:12:55.081Z"
+        "syncedAt": "2026-06-02T01:44:53.393Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.184Z",
+    "syncedAt": "2026-06-02T01:44:53.393Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -743,22 +742,6 @@
         "maxOutput": "4K",
         "modality": "Text",
         "rateLimit": "20 RPM"
-      },
-      {
-        "id": "embed-v4.0",
-        "name": "Embed 4",
-        "context": "131K",
-        "maxOutput": "131K",
-        "modality": "Embeddings (Text + Image)",
-        "rateLimit": "2,000 inputs/min"
-      },
-      {
-        "id": "rerank-v3.5",
-        "name": "Rerank 3.5",
-        "context": "131K",
-        "maxOutput": "131K",
-        "modality": "Reranking",
-        "rateLimit": "10 RPM"
       },
       {
         "id": "command-r-plus-08-2024",
@@ -831,26 +814,42 @@
         "maxOutput": null,
         "modality": "",
         "rateLimit": "20 requests/minute, 1,000 requests/month"
+      },
+      {
+        "id": "embed-v4.0",
+        "name": "Embed 4",
+        "context": null,
+        "maxOutput": null,
+        "modality": "Embeddings (Text + Image)",
+        "rateLimit": "2,000 inputs/min"
+      },
+      {
+        "id": "rerank-v3.5",
+        "name": "Rerank 3.5",
+        "context": null,
+        "maxOutput": null,
+        "modality": "Reranking",
+        "rateLimit": "10 RPM"
       }
     ],
     "sources": [
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-01T22:12:55.115Z"
+        "syncedAt": "2026-06-02T01:44:53.383Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-01T22:12:55.184Z"
+        "syncedAt": "2026-06-02T01:44:53.223Z"
       },
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources",
-        "syncedAt": "2026-06-01T22:12:55.080Z"
+        "syncedAt": "2026-06-02T01:44:53.393Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.184Z",
+    "syncedAt": "2026-06-02T01:44:53.393Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -893,15 +892,15 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-01T22:12:55.115Z"
+        "syncedAt": "2026-06-02T01:44:53.383Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-01T22:12:55.184Z"
+        "syncedAt": "2026-06-02T01:44:53.223Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.184Z",
+    "syncedAt": "2026-06-02T01:44:53.383Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -952,7 +951,7 @@
         "id": "ai21-jamba-1-5-large",
         "name": "AI21 Jamba 1.5 Large",
         "context": "256K",
-        "maxOutput": "0",
+        "maxOutput": null,
         "modality": "text",
         "rateLimit": "Dependent on Copilot subscription tier (Free/Pro/Pro+/Business/Enterprise)"
       },
@@ -992,7 +991,7 @@
         "id": "mistral-large-24-11",
         "name": "Mistral Large (24.11)",
         "context": "131K",
-        "maxOutput": "0",
+        "maxOutput": null,
         "modality": "text",
         "rateLimit": null
       },
@@ -1000,7 +999,7 @@
         "id": "phi-4",
         "name": "Phi-4",
         "context": "131K",
-        "maxOutput": "0",
+        "maxOutput": null,
         "modality": "text",
         "rateLimit": "Dependent on Copilot subscription tier (Free/Pro/Pro+/Business/Enterprise)"
       },
@@ -1273,20 +1272,20 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-01T22:12:55.115Z"
+        "syncedAt": "2026-06-02T01:44:53.383Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-01T22:12:55.184Z"
+        "syncedAt": "2026-06-02T01:44:53.223Z"
       },
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources",
-        "syncedAt": "2026-06-01T22:12:55.080Z"
+        "syncedAt": "2026-06-02T01:44:53.393Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.184Z",
+    "syncedAt": "2026-06-02T01:44:53.393Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -1299,7 +1298,6 @@
     "logo": null,
     "url": null,
     "baseUrl": null,
-    "description": "",
     "modalities": [
       "text"
     ],
@@ -1312,7 +1310,7 @@
         "id": "llama-3-1-70b",
         "name": "Llama 3.1 70B",
         "context": "131K",
-        "maxOutput": "0",
+        "maxOutput": null,
         "modality": "text",
         "rateLimit": "Unlimited for free models"
       },
@@ -1320,7 +1318,7 @@
         "id": "mixtral-8x7b",
         "name": "Mixtral 8x7B",
         "context": "33K",
-        "maxOutput": "0",
+        "maxOutput": null,
         "modality": "text",
         "rateLimit": "Unlimited for free models"
       }
@@ -1329,10 +1327,10 @@
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-01T22:12:55.184Z"
+        "syncedAt": "2026-06-02T01:44:53.223Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.184Z",
+    "syncedAt": "2026-06-02T01:44:53.223Z",
     "sourceUpdatedAt": null
   },
   {
@@ -1474,20 +1472,20 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-01T22:12:55.115Z"
+        "syncedAt": "2026-06-02T01:44:53.383Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-01T22:12:55.184Z"
+        "syncedAt": "2026-06-02T01:44:53.223Z"
       },
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources",
-        "syncedAt": "2026-06-01T22:12:55.079Z"
+        "syncedAt": "2026-06-02T01:44:53.393Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.184Z",
+    "syncedAt": "2026-06-02T01:44:53.393Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -1531,7 +1529,7 @@
         "id": "gpt-oss-20b",
         "name": "GPT-OSS 20B",
         "context": "131K",
-        "maxOutput": "0",
+        "maxOutput": null,
         "modality": "text",
         "rateLimit": "1,000 requests/day, 8,000 tokens/minute"
       },
@@ -1539,7 +1537,7 @@
         "id": "gpt-oss-safeguard-20b",
         "name": "GPT-OSS Safeguard 20B",
         "context": "131K",
-        "maxOutput": "0",
+        "maxOutput": null,
         "modality": "text",
         "rateLimit": "1,000 requests/day, 8,000 tokens/minute"
       },
@@ -1587,7 +1585,7 @@
         "id": "moonshot-kimi-k2-0905",
         "name": "Moonshot Kimi K2 0905",
         "context": "131K",
-        "maxOutput": "0",
+        "maxOutput": null,
         "modality": "text",
         "rateLimit": null
       },
@@ -1598,14 +1596,6 @@
         "maxOutput": "131K",
         "modality": "Text",
         "rateLimit": "30 RPM, 14,400 RPD"
-      },
-      {
-        "id": "whisper-large-v3",
-        "name": "whisper-large-v3",
-        "context": "131K",
-        "maxOutput": "131K",
-        "modality": "Audio → Text",
-        "rateLimit": "20 RPM, 2,000 RPD"
       },
       {
         "id": "allam-2-7b",
@@ -1670,26 +1660,34 @@
         "maxOutput": null,
         "modality": "",
         "rateLimit": null
+      },
+      {
+        "id": "whisper-large-v3",
+        "name": "whisper-large-v3",
+        "context": null,
+        "maxOutput": null,
+        "modality": "Audio → Text",
+        "rateLimit": "20 RPM, 2,000 RPD"
       }
     ],
     "sources": [
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-01T22:12:55.115Z"
+        "syncedAt": "2026-06-02T01:44:53.383Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-01T22:12:55.184Z"
+        "syncedAt": "2026-06-02T01:44:53.223Z"
       },
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources",
-        "syncedAt": "2026-06-01T22:12:55.080Z"
+        "syncedAt": "2026-06-02T01:44:53.393Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.184Z",
+    "syncedAt": "2026-06-02T01:44:53.393Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -1756,20 +1754,20 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-01T22:12:55.115Z"
+        "syncedAt": "2026-06-02T01:44:53.383Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-01T22:12:55.184Z"
+        "syncedAt": "2026-06-02T01:44:53.223Z"
       },
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources",
-        "syncedAt": "2026-06-01T22:12:55.080Z"
+        "syncedAt": "2026-06-02T01:44:53.393Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.184Z",
+    "syncedAt": "2026-06-02T01:44:53.393Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -1845,15 +1843,15 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-01T22:12:55.115Z"
+        "syncedAt": "2026-06-02T01:44:53.383Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-01T22:12:55.184Z"
+        "syncedAt": "2026-06-02T01:44:53.223Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.184Z",
+    "syncedAt": "2026-06-02T01:44:53.383Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -1930,15 +1928,15 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-01T22:12:55.115Z"
+        "syncedAt": "2026-06-02T01:44:53.383Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-01T22:12:55.184Z"
+        "syncedAt": "2026-06-02T01:44:53.223Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.184Z",
+    "syncedAt": "2026-06-02T01:44:53.383Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -2014,7 +2012,7 @@
         "id": "mistral-7b",
         "name": "Mistral 7B",
         "context": "33K",
-        "maxOutput": "0",
+        "maxOutput": null,
         "modality": "text",
         "rateLimit": null
       },
@@ -2022,7 +2020,7 @@
         "id": "mixtral-8x7b",
         "name": "Mixtral 8x7B",
         "context": "33K",
-        "maxOutput": "0",
+        "maxOutput": null,
         "modality": "text",
         "rateLimit": null
       },
@@ -2039,20 +2037,20 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-01T22:12:55.115Z"
+        "syncedAt": "2026-06-02T01:44:53.383Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-01T22:12:55.184Z"
+        "syncedAt": "2026-06-02T01:44:53.223Z"
       },
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources",
-        "syncedAt": "2026-06-01T22:12:55.080Z"
+        "syncedAt": "2026-06-02T01:44:53.393Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.184Z",
+    "syncedAt": "2026-06-02T01:44:53.393Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -2065,10 +2063,7 @@
     "logo": "/logos/mistral-codestral.png",
     "url": "https://codestral.mistral.ai/",
     "baseUrl": null,
-    "description": "",
-    "modalities": [
-      "text"
-    ],
+    "modalities": [],
     "modelCount": 1,
     "maxContext": null,
     "freeLimit": null,
@@ -2087,10 +2082,10 @@
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources",
-        "syncedAt": "2026-06-01T22:12:55.080Z"
+        "syncedAt": "2026-06-02T01:44:53.393Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.080Z",
+    "syncedAt": "2026-06-02T01:44:53.393Z",
     "sourceUpdatedAt": null
   },
   {
@@ -2143,15 +2138,15 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-01T22:12:55.115Z"
+        "syncedAt": "2026-06-02T01:44:53.383Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-01T22:12:55.184Z"
+        "syncedAt": "2026-06-02T01:44:53.223Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.184Z",
+    "syncedAt": "2026-06-02T01:44:53.383Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -2218,15 +2213,15 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-01T22:12:55.115Z"
+        "syncedAt": "2026-06-02T01:44:53.383Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-01T22:12:55.184Z"
+        "syncedAt": "2026-06-02T01:44:53.223Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.184Z",
+    "syncedAt": "2026-06-02T01:44:53.383Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -2294,15 +2289,15 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-01T22:12:55.115Z"
+        "syncedAt": "2026-06-02T01:44:53.383Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-01T22:12:55.184Z"
+        "syncedAt": "2026-06-02T01:44:53.223Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.184Z",
+    "syncedAt": "2026-06-02T01:44:53.383Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -2524,20 +2519,20 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-01T22:12:55.115Z"
+        "syncedAt": "2026-06-02T01:44:53.383Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-01T22:12:55.184Z"
+        "syncedAt": "2026-06-02T01:44:53.223Z"
       },
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources",
-        "syncedAt": "2026-06-01T22:12:55.080Z"
+        "syncedAt": "2026-06-02T01:44:53.393Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.184Z",
+    "syncedAt": "2026-06-02T01:44:53.393Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -2613,15 +2608,15 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-01T22:12:55.115Z"
+        "syncedAt": "2026-06-02T01:44:53.383Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-01T22:12:55.184Z"
+        "syncedAt": "2026-06-02T01:44:53.223Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.184Z",
+    "syncedAt": "2026-06-02T01:44:53.383Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -2635,9 +2630,7 @@
     "url": "https://opencode.ai/docs/zen/",
     "baseUrl": null,
     "description": "AI gateway with curated models.",
-    "modalities": [
-      "text"
-    ],
+    "modalities": [],
     "modelCount": 3,
     "maxContext": null,
     "freeLimit": null,
@@ -2672,10 +2665,10 @@
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources",
-        "syncedAt": "2026-06-01T22:12:55.080Z"
+        "syncedAt": "2026-06-02T01:44:53.393Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.080Z",
+    "syncedAt": "2026-06-02T01:44:53.393Z",
     "sourceUpdatedAt": null
   },
   {
@@ -2934,14 +2927,6 @@
         "rateLimit": null
       },
       {
-        "id": "nvidia-llama-nemotron-embed-vl-1b-v2-free",
-        "name": "NVIDIA: Llama Nemotron Embed VL 1B V2 (free)",
-        "context": "131K",
-        "maxOutput": "8K",
-        "modality": "text + image + embeddings",
-        "rateLimit": null
-      },
-      {
         "id": "openai-gpt-oss-20b-free",
         "name": "OpenAI: gpt-oss-20b (free)",
         "context": "131K",
@@ -3054,6 +3039,14 @@
         "rateLimit": "20 requests/minute, 50 requests/day, Up to 1000 requests/day with $10 lifetime topup"
       },
       {
+        "id": "nvidia-llama-nemotron-embed-vl-1b-v2-free",
+        "name": "NVIDIA: Llama Nemotron Embed VL 1B V2 (free)",
+        "context": null,
+        "maxOutput": null,
+        "modality": "text + image + embeddings",
+        "rateLimit": null
+      },
+      {
         "id": "nvidia-nemotron-3-nano-omni-30b-a3b-reasoning-free",
         "name": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
         "context": null,
@@ -3082,20 +3075,20 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-01T22:12:55.115Z"
+        "syncedAt": "2026-06-02T01:44:53.383Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-01T22:12:55.184Z"
+        "syncedAt": "2026-06-02T01:44:53.223Z"
       },
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources",
-        "syncedAt": "2026-06-01T22:12:55.078Z"
+        "syncedAt": "2026-06-02T01:44:53.393Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.184Z",
+    "syncedAt": "2026-06-02T01:44:53.393Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -3204,15 +3197,15 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-01T22:12:55.115Z"
+        "syncedAt": "2026-06-02T01:44:53.383Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-01T22:12:55.184Z"
+        "syncedAt": "2026-06-02T01:44:53.223Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.184Z",
+    "syncedAt": "2026-06-02T01:44:53.383Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -3272,15 +3265,15 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-01T22:12:55.115Z"
+        "syncedAt": "2026-06-02T01:44:53.383Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-01T22:12:55.184Z"
+        "syncedAt": "2026-06-02T01:44:53.223Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.184Z",
+    "syncedAt": "2026-06-02T01:44:53.383Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -3322,7 +3315,7 @@
         "id": "grok-2",
         "name": "Grok-2",
         "context": "131K",
-        "maxOutput": "0",
+        "maxOutput": null,
         "modality": "text",
         "rateLimit": "$25/month free credits, resets monthly"
       },
@@ -3330,7 +3323,7 @@
         "id": "grok-2-mini",
         "name": "Grok-2 Mini",
         "context": "131K",
-        "maxOutput": "0",
+        "maxOutput": null,
         "modality": "text",
         "rateLimit": "$25/month free credits, resets monthly"
       },
@@ -3347,15 +3340,15 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-01T22:12:55.115Z"
+        "syncedAt": "2026-06-02T01:44:53.383Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-01T22:12:55.184Z"
+        "syncedAt": "2026-06-02T01:44:53.223Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.184Z",
+    "syncedAt": "2026-06-02T01:44:53.383Z",
     "sourceUpdatedAt": "2026-05-20"
   },
   {
@@ -3407,15 +3400,15 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-01T22:12:55.115Z"
+        "syncedAt": "2026-06-02T01:44:53.383Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-01T22:12:55.184Z"
+        "syncedAt": "2026-06-02T01:44:53.223Z"
       }
     ],
-    "syncedAt": "2026-06-01T22:12:55.184Z",
+    "syncedAt": "2026-06-02T01:44:53.383Z",
     "sourceUpdatedAt": "2026-05-20"
   }
 ]

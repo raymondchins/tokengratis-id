@@ -232,7 +232,8 @@ export function facetsOf(modality) {
   if (/rerank/.test(m)) f.add("reranking");
   if (/text|multimodal|llm|mllm|aigc|roleplay|reasoning|safety/.test(m))
     f.add("text");
-  if (f.size === 0) f.add("text");
+  // ANTI-HALUSINASI: kalau sumber ga nyebut modality apa-apa (string kosong),
+  // JANGAN nebak "text". Biarin kosong — facet absent != facet "text".
   return [...f];
 }
 
@@ -265,6 +266,21 @@ export function maxContextOf(models) {
     if (ctxNum(m.context) > ctxNum(best)) best = m.context;
   }
   return best || null;
+}
+
+/**
+ * Model yang SECARA SEMANTIK ga punya context-window token (embeddings,
+ * reranking, transkripsi audio). Sumber sekunder (freellm) sering ngisi angka
+ * generik (mis. "131K") buat baris ini, padahal sumber otoritatif (mnfst)
+ * nandain "—" (N/A). ANTI-HALUSINASI: context/maxOutput buat model begini
+ * dipaksa null — mending kosong daripada nampilin angka yang ga berlaku.
+ */
+export function noTokenContext(modality, id = "", name = "") {
+  const s = `${modality} ${id} ${name}`.toLowerCase();
+  if (/embed|rerank/.test(s)) return true;
+  if (/whisper|transcrib|speech.?to.?text|\bstt\b/.test(s)) return true;
+  if (/audio\s*(?:→|->|to)\s*text/.test(s)) return true;
+  return false;
 }
 
 // ─── Domain (buat logo favicon) ────────────────────────────────────────────────

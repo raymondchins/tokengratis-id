@@ -19,6 +19,7 @@ import {
   SOURCE_PRIORITY,
   modalitiesOf,
   maxContextOf,
+  noTokenContext,
   domainOf,
   freeLimitOf,
   modelKey,
@@ -132,7 +133,16 @@ function mergeModels(contributors) {
 
   return groups
     .filter((g) => !g.dead)
-    .map((g) => g.base)
+    .map((g) => {
+      const m = g.base;
+      // Embeddings/rerank/transkripsi audio: nolin context+maxOutput yang
+      // ke-gap-fill dari angka generik sumber sekunder (anti-halusinasi).
+      if (noTokenContext(m.modality, m.id, m.name)) {
+        m.context = null;
+        m.maxOutput = null;
+      }
+      return m;
+    })
     .sort((a, b) => {
       const ctxDiff = ctxNum(b.context) - ctxNum(a.context);
       if (ctxDiff !== 0) return ctxDiff;
@@ -202,7 +212,9 @@ export function mergeProviders(partialGroups, mergeRunAt) {
     const flag            = gapFill(contributors, "flag");
     const url             = gapFill(contributors, "url");
     const baseUrl         = gapFill(contributors, "baseUrl");
-    const description     = gapFill(contributors, "description", "");
+    // ANTI-HALUSINASI: kalau ga ada sumber yang punya description → null (di-omit
+    // dari output), BUKAN "" yang jadi sel kosong.
+    const description     = gapFill(contributors, "description");
     const sourceUpdatedAt = gapFill(contributors, "sourceUpdatedAt");
     const moreModels      = gapFill(contributors, "moreModels");
 
@@ -234,7 +246,7 @@ export function mergeProviders(partialGroups, mergeRunAt) {
       logo,
       url,
       baseUrl,
-      description,
+      ...(description ? { description } : {}),
       modalities,
       modelCount,
       maxContext,

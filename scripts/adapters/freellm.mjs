@@ -152,13 +152,20 @@ function parseRow(trHtml) {
 
   if (!modelName) return null; // skip rows without a model name
 
+  // freellm taro "0" di kolom numerik kalau nilainya unknown — itu placeholder,
+  // BUKAN "max output 0". Anti-halusinasi: perlakukan "0" sebagai absent.
+  const numCell = (raw) => {
+    const c = cleanStr(raw);
+    return c && c !== "0" ? c : null;
+  };
+
   // ── Context ───────────────────────────────────────────────────────────────
   const contextRaw = cells[2] ? textOf(cells[2]) : "";
-  const context = cleanStr(contextRaw);
+  const context = numCell(contextRaw);
 
   // ── Max Output ────────────────────────────────────────────────────────────
   const maxOutputRaw = cells[3] ? textOf(cells[3]) : "";
-  const maxOutput = cleanStr(maxOutputRaw);
+  const maxOutput = numCell(maxOutputRaw);
 
   // ── Modality: use data-modality attr, join badges with " + " for readability
   // data-modality is comma-separated e.g. "text,vision" — map to display string

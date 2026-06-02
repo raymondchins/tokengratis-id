@@ -59,8 +59,9 @@ export interface Provider {
   url: string | null;
   /** Base URL API (buat dipanggil developer). */
   baseUrl: string | null;
-  /** Teks deskripsi apa adanya dari sumber (sering memuat catatan CC/expiry/region). */
-  description: string;
+  /** Teks deskripsi apa adanya dari sumber (sering memuat catatan CC/expiry/region).
+   *  Absent (di-omit) kalau ga ada sumber yang nyediain — bukan "" kosong. */
+  description?: string;
 
   /** Facet kemampuan provider (union dari modality semua model-nya). */
   modalities: Modality[];
@@ -97,6 +98,6 @@ export interface ProviderListItem {
   modalities: Modality[];
   maxContext: string | null;
   freeLimit: string | null;
-  description: string;
+  description?: string;
   searchText: string;
 }

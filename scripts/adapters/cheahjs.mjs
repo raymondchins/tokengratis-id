@@ -253,30 +253,11 @@ function parseProviderBlock(headingText, body) {
       if (inline) sharedRateLimit = parseLimitsBlock(inline[1]);
     }
 
-    // Bullet models
-    const bulletModels = parseBulletModels(body, sharedRateLimit);
-    if (bulletModels.length > 0) {
-      models = bulletModels;
-    } else if (sharedRateLimit) {
-      // Has limits but no named models (e.g. "Various open models")
-      // Still emit a single synthetic entry so rate limit is captured
-      // Only do this if the body contains a meaningful models reference
-      const genericRef = body.match(/\[([^\]]+models[^\]]*)\]\([^)]+\)/i);
-      // Anti-hallucination: a generic "...models" link (e.g. "Various open
-      // models") is NOT a real named model — never fabricate a model row for it.
-      if (genericRef && !NOTE_PATTERN.test(genericRef[1].trim())) {
-        models = [
-          {
-            id: slugify(genericRef[1]),
-            name: genericRef[1],
-            context: null,
-            maxOutput: null,
-            modality: "",
-            rateLimit: sharedRateLimit,
-          },
-        ];
-      }
-    }
+    // Bullet models saja. Kalau ga ada model BERNAMA (cuma **Limits:** + link
+    // generik "Various open models"), JANGAN bikin baris model sintetis —
+    // anti-halusinasi: link generik bukan nama model. Lebih baik 0 model; provider
+    // tetap ke-cover sumber lain (mnfst/freellm) via merge kalau emang ada.
+    models = parseBulletModels(body, sharedRateLimit);
   }
 
   // Description: first non-blank prose line that is clearly descriptive.

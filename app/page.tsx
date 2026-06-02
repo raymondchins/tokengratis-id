@@ -27,6 +27,10 @@ export default function Home() {
         day: "numeric",
         month: "long",
         year: "numeric",
+        // Audience Indonesia + cron sync jam 02:00 WIB = ~19:00 UTC hari
+        // sebelumnya. Tanpa timeZone, build/runtime UTC di Vercel bikin label
+        // "Last update" mundur 1 hari. Paksa WIB biar tanggalnya jujur.
+        timeZone: "Asia/Jakarta",
       }).format(new Date(lastUpdatedIso))
     : null;
 
