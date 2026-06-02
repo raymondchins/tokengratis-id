@@ -32,12 +32,12 @@ Directory **free tier & free credits API LLM**, di-aggregate otomatis dari sumbe
 | Frontend | Next.js (App Router) + TypeScript strict + Tailwind 4 |
 | Rendering | Static / ISR — rebuild tiap malam, datanya read-only |
 | Data | **`data/providers.json`** (di-generate `scripts/sync.mjs`). **NO database** untuk v1. |
-| Backend | **NONE** — no server actions, no API yang nyimpen state, no auth |
+| Backend | **Minimal** — stateless `/api/subscribe` route (Resend email contact add-only). No DB, no server actions, no auth. |
 | Pipeline | `scripts/sync.mjs` (`npm run sync`) → fetch **3 sumber paralel** (JSON + HTML + markdown) via `scripts/adapters/*.mjs` → parse + normalize ke satu schema → merge/dedup gap-fill by priority (`lib/merge.mjs`) → smoke test → tulis `data/providers.json`. Idempotent. |
 | Scheduling | GitHub Actions (cron nightly) ATAU Vercel Cron — trigger sync + rebuild |
 | Deploy | Vercel auto-deploy on `main` push |
 
-**TIDAK ADA:** DB, auth, admin panel, user accounts, submission form, voting, komentar, monetisasi. (PRD §4 "TIDAK masuk v1".) Jangan bangun infra yang nungguin komunitas.
+**TIDAK ADA:** DB, auth, admin panel, user accounts, submission form, voting, komentar, monetisasi. (PRD §4 "TIDAK masuk v1".) One exception: `/api/subscribe` (stateless Resend Audience contact add for newsletter signup). Jangan bangun infra yang nungguin komunitas.
 
 ## Design
 

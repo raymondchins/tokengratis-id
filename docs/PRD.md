@@ -141,7 +141,7 @@ Verdict riset: CC-required / phone-required / akses-Indonesia **ga pernah** jadi
 - **Hosting:** Vercel.
 - **Desain (REVISED):** clean **light / paper / neutral** ala getaiperks.com. bg paper `#f1f0e8` · card putih · text `#11181c` · tombol pure black · accent hijau+ungu. Heading Georgia serif, body Inter. (Oren `#dc4f1c` di-pause, gampang dibalikin di `globals.css`.)
 
-Sengaja tanpa DB, tanpa auth, tanpa backend kompleks — biar maintenance nyaris nol.
+Sengaja tanpa DB, tanpa auth, tanpa backend kompleks — biar maintenance nyaris nol. One exception: `/api/subscribe` (stateless Resend email contact add for newsletter signup — env `RESEND_API_KEY` + `RESEND_AUDIENCE_ID`).
 
 ---
 
