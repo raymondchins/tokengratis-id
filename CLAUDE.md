@@ -33,7 +33,7 @@ Directory **free tier & free credits API LLM**, di-aggregate otomatis dari sumbe
 | Rendering | Static / ISR — rebuild tiap malam, datanya read-only |
 | Data | **`data/providers.json`** (di-generate `scripts/sync.mjs`). **NO database** untuk v1. |
 | Backend | **NONE** — no server actions, no API yang nyimpen state, no auth |
-| Pipeline | `scripts/sync.mjs` (`npm run sync`) → fetch mnfst `data.json` → normalize → tulis `data/providers.json`. Idempotent. |
+| Pipeline | `scripts/sync.mjs` (`npm run sync`) → fetch **3 sumber paralel** (JSON + HTML + markdown) via `scripts/adapters/*.mjs` → parse + normalize ke satu schema → merge/dedup gap-fill by priority (`lib/merge.mjs`) → smoke test → tulis `data/providers.json`. Idempotent. |
 | Scheduling | GitHub Actions (cron nightly) ATAU Vercel Cron — trigger sync + rebuild |
 | Deploy | Vercel auto-deploy on `main` push |
 
@@ -56,9 +56,15 @@ Layout: floating pill navbar → hero serif + 2 tombol → tabel list langsung (
 
 ## Data sources (PRD §10)
 
-**Anchor (live):** `github.com/mnfst/awesome-free-llm-apis` — satu-satunya sumber free-LLM-API dengan **JSON bersih** (`data.json`), ~24 provider, data level-model lengkap (context, modality, rate limit), maintained aktif. Sync via `scripts/sync.mjs`.
+**3 sumber LIVE & di-ingest** (tiap satu = 1 adapter di `scripts/adapters/`, jalan paralel; sumber gagal di-skip, ga jatohin pipeline):
 
-**Cross-ref (markdown only — belum di-ingest):** cheahjs/free-llm-api-resources, amardeeplakshkar/awesome-free-llm-apis, aicredits.dev. Butuh scraping; tambah belakangan kalau perlu.
+1. **`mnfst/awesome-free-llm-apis`** (`mnfst.mjs`) — **JSON bersih** (`data.json`), prioritas #1. Data level-model lengkap (context, modality, rate limit). `JSON.parse` doang.
+2. **`freellm.net`** (`freellm.mjs`) — **HTML table** server-rendered (`/models/`). Di-parse pakai regex (NO cheerio/browser). Kuat di context + modality.
+3. **`cheahjs/free-llm-api-resources`** (`cheahjs.mjs`) — **README markdown** (2 format tabel). Cuma section "Free Providers" (skip trial-credits). Kuat di rate limit presisi.
+
+Merge = gap-fill by priority di `scripts/lib/merge.mjs` — tiap adapter cuma mindahin field yang EKSPLISIT ada di sumbernya, merge ga nebak. Provider 0-model di-drop (card kosong = useless).
+
+**Belum di-ingest (markdown, butuh scraping):** amardeeplakshkar/awesome-free-llm-apis, aicredits.dev. Tambah belakangan kalau perlu.
 
 ## Listing fields (schema = `lib/types.ts`)
 
