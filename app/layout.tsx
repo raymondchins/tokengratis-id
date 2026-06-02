@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import Footer from "@/components/Footer";
+import CloudflareAnalytics from "@/components/CloudflareAnalytics";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -44,6 +45,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <Analytics />
+        <CloudflareAnalytics />
       </body>
     </html>
   );
