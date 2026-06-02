@@ -90,7 +90,7 @@ export default async function Page({
         {/* 2-col: main + sidebar */}
         <div className="mt-6 grid gap-6 sm:mt-8 sm:gap-8 lg:grid-cols-[1fr_300px]">
           {/* main */}
-          <div className="order-2 space-y-6 lg:order-1">
+          <div className="order-2 min-w-0 space-y-6 lg:order-1">
             {/* catatan */}
             {p.description && (
               <section className="rounded-[8px] border border-ink-line bg-ink-soft px-5 py-4">
@@ -138,7 +138,7 @@ export default async function Page({
                   </li>
                   <li className="flex gap-2.5">
                     <span className="font-mono text-xs text-mute">4.</span>
-                    <span>
+                    <span className="min-w-0">
                       Pakai API key
                       {p.baseUrl && (
                         <>
@@ -165,7 +165,7 @@ export default async function Page({
           </div>
 
           {/* sidebar */}
-          <aside className="order-1 h-fit space-y-4 lg:order-2 lg:sticky lg:top-20">
+          <aside className="order-1 h-fit min-w-0 space-y-4 lg:order-2 lg:sticky lg:top-20">
             <div className="space-y-4 rounded-[8px] border border-ink-line bg-ink-soft p-5">
               {p.url && (
                 <a
