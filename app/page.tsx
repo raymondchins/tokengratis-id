@@ -38,7 +38,7 @@ export default function Home() {
     <div className="min-h-dvh pb-12">
       <Navbar />
 
-      <main className="mx-auto max-w-5xl px-4 sm:px-6">
+      <main id="main-content" className="mx-auto max-w-5xl px-4 sm:px-6">
         {/* ── Hero ── */}
         <section className="mx-auto max-w-3xl pt-16 text-center sm:pt-24">
           <h1 className="font-serif text-4xl font-medium leading-[1.04] tracking-tight text-fog sm:text-5xl md:text-6xl">
@@ -57,14 +57,15 @@ export default function Home() {
           </p>
 
           <span className="mt-6 inline-flex items-center gap-1.5 rounded-full border border-grass-line bg-grass-bg px-3 py-1 text-xs font-medium text-grass">
-            ✅ {count} provider · {totalModels} model gratis
+            <span aria-hidden="true">✅</span> {count} provider · {totalModels} model gratis
           </span>
         </section>
 
         {/* ── Directory table ── */}
         <section id="direktori" className="mt-12 scroll-mt-20 sm:mt-16">
+          <h2 className="sr-only">Direktori provider</h2>
           {lastUpdated && (
-            <p className="mb-3 text-balance text-right text-xs text-mute opacity-50">
+            <p className="mb-3 text-balance text-right text-xs text-mute">
               Last update {lastUpdated}. Udah stale? DM{" "}
               <a
                 href="https://instagram.com/raymondchins"

@@ -19,7 +19,7 @@ function Chip({
       type="button"
       onClick={onClick}
       className={[
-        "inline-flex shrink-0 items-center gap-1.5 rounded-[6px] border px-4 py-2 text-[13px] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40",
+        "inline-flex shrink-0 items-center gap-1.5 rounded-[6px] border px-4 py-2 text-[13px] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70",
         active
           ? "border-mute/60 bg-ink-line/70 text-fog"
           : "border-ink-line bg-ink-soft text-mute hover:border-mute hover:text-fog",
@@ -65,7 +65,7 @@ export default function FilterBar({
           onChange={(e) => onChange({ ...state, search: e.target.value })}
           placeholder="Cari provider atau model — Gemini, Groq, DeepSeek, Llama, Qwen…"
           aria-label="Cari provider atau model"
-          className="w-full rounded-[8px] border border-ink-line bg-ink-soft py-3.5 pl-11 pr-4 text-sm text-fog placeholder:text-mute focus:border-fog/40 focus:outline-none focus:ring-2 focus:ring-fog/30 transition-colors"
+          className="w-full rounded-[8px] border border-ink-line bg-ink-soft py-3.5 pl-11 pr-4 text-sm text-fog placeholder:text-mute focus:border-fog/40 focus:outline-none focus:ring-2 focus:ring-fog/70 transition-colors"
         />
       </div>
 

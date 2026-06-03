@@ -129,6 +129,7 @@ function ModalityIcon({ m }: { m: Modality }) {
 function ModalityChip({ m }: { m: Modality }) {
   return (
     <span
+      role="img"
       title={MODALITY_LABELS[m]}
       aria-label={MODALITY_LABELS[m]}
       className={`inline-flex h-6 w-6 items-center justify-center rounded-[2px] border border-ink-line bg-ink-soft transition-colors hover:border-mute ${MODALITY_COLOR[m]}`}
@@ -172,6 +173,7 @@ export function ModalityTags({
       ))}
       {extra.length > 0 && (
         <span
+          role="img"
           title={extra.map((m) => MODALITY_LABELS[m]).join(", ")}
           aria-label={`${extra.length} lagi: ${extra
             .map((m) => MODALITY_LABELS[m])

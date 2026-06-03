@@ -1,6 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  poweredByHeader: false,
+  reactStrictMode: true,
+  experimental: {
+    optimizePackageImports: ["next-view-transitions", "@vercel/analytics"],
+  },
   // Static/ISR directory — no DB, no auth (see docs/PRD.md §11).
   async headers() {
     return [

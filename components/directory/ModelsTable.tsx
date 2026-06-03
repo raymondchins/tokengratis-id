@@ -53,7 +53,7 @@ export default function ModelsTable({
               }}
               placeholder="Cari model…"
               aria-label="Cari model"
-              className="w-full rounded-[4px] border border-ink-line bg-ink py-1.5 pl-8 pr-3 text-xs text-fog placeholder:text-mute focus:border-fog/40 focus:outline-none focus:ring-2 focus:ring-fog/30 sm:w-44"
+              className="w-full rounded-[4px] border border-ink-line bg-ink py-1.5 pl-8 pr-3 text-xs text-fog placeholder:text-mute focus:border-fog/40 focus:outline-none focus:ring-2 focus:ring-fog/70 sm:w-44"
             />
           </div>
         )}

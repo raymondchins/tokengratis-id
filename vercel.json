@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "www.tokengratis.id" }],
+      "destination": "https://tokengratis.id/$1",
+      "permanent": true
+    }
+  ]
+}

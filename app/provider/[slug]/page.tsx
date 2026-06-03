@@ -19,9 +19,25 @@ export async function generateMetadata({
   const { slug } = await params;
   const p = getProviderBySlug(slug);
   if (!p) return {};
+  const contextClause = p.maxContext ? `, sampai ${p.maxContext} context` : "";
+  const description = `Free tier / free credits API dari ${p.name}. ${p.modelCount} model${contextClause}. Aggregator, bukan verifier.`;
   return {
     title: `${p.name} — tokengratis.id`,
-    description: `Free tier / free credits API dari ${p.name}. ${p.modelCount} model, sampai ${p.maxContext ?? "?"} context. Aggregator, bukan verifier.`,
+    description,
+    alternates: { canonical: `https://tokengratis.id/provider/${p.slug}` },
+    openGraph: {
+      title: `${p.name} — tokengratis.id`,
+      description,
+      url: `https://tokengratis.id/provider/${p.slug}`,
+      siteName: "tokengratis.id",
+      locale: "id_ID",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${p.name} — tokengratis.id`,
+      description,
+    },
   };
 }
 
@@ -46,7 +62,7 @@ export default async function Page({
   return (
     <div className="min-h-dvh pb-24">
       <Navbar />
-      <main className="mx-auto max-w-5xl px-4 pt-8 sm:px-6 sm:pt-12">
+      <main id="main-content" className="mx-auto max-w-5xl px-4 pt-8 sm:px-6 sm:pt-12">
         {/* back */}
         <Link
           href="/#direktori"
@@ -234,6 +250,36 @@ export default async function Page({
             </div>
           </aside>
         </div>
+
+        {/* SoftwareApplication JSON-LD */}
+        {(() => {
+          const providerUrl =
+            p.url ?? (p.domain ? `https://${p.domain}` : undefined);
+          const jsonLd: Record<string, unknown> = {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            name: p.name,
+            applicationCategory: "DeveloperApplication",
+            operatingSystem: "Web",
+            inLanguage: "id",
+            description:
+              p.description ?? `Free tier API dari ${p.name} — ${p.modelCount} model.`,
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "USD",
+            },
+          };
+          if (providerUrl) jsonLd.url = providerUrl;
+          return (
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+              }}
+            />
+          );
+        })()}
       </main>
     </div>
   );

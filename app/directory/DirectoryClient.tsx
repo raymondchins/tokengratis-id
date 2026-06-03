@@ -45,7 +45,7 @@ function ProviderRow({ p, priority = false }: { p: ProviderListItem; priority?: 
       <Link
         href={`/provider/${p.slug}`}
         aria-label={ariaLabel}
-        className="group flex flex-col gap-3 border-t border-ink-line px-4 py-4 transition-colors hover:bg-ink/40 focus-visible:bg-ink/40 focus-visible:outline-none md:hidden"
+        className="group flex flex-col gap-3 border-t border-ink-line px-4 py-4 transition-colors hover:bg-ink/40 focus-visible:bg-ink/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog focus-visible:ring-inset md:hidden"
       >
         {/* Logo + name + meta */}
         <div className="flex items-center gap-3 min-w-0">
@@ -85,7 +85,7 @@ function ProviderRow({ p, priority = false }: { p: ProviderListItem; priority?: 
       <Link
         href={`/provider/${p.slug}`}
         aria-label={ariaLabel}
-        className={`group hidden border-t border-ink-line py-4 transition-colors hover:bg-ink/40 focus-visible:bg-ink/40 focus-visible:outline-none md:grid ${DIRECTORY_GRID_COLS}`}
+        className={`group hidden border-t border-ink-line py-4 transition-colors hover:bg-ink/40 focus-visible:bg-ink/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog focus-visible:ring-inset md:grid ${DIRECTORY_GRID_COLS}`}
       >
         {/* Provider */}
         <div className="flex items-center gap-3 min-w-0">
@@ -107,7 +107,7 @@ function ProviderRow({ p, priority = false }: { p: ProviderListItem; priority?: 
         {/* Rate limit */}
         <div className="text-sm font-semibold">
           {p.freeLimit ? (
-            <span className="text-grass">{p.freeLimit}</span>
+            <span className="text-grass"><span className="sr-only">Rate limit gratis: </span>{p.freeLimit}</span>
           ) : (
             <span className="text-mute">—</span>
           )}

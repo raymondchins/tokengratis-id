@@ -28,7 +28,7 @@ export default function Navbar() {
             <Link
               key={l.href}
               href={l.href}
-              className="transition-colors hover:text-fog"
+              className="rounded-sm transition-colors hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/60"
             >
               {l.label}
             </Link>

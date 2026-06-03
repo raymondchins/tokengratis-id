@@ -18,6 +18,7 @@ export const metadata: Metadata = {
   description:
     "Kumpulan free tier & free credits API LLM, di-aggregate otomatis dari sumber komunitas. Tiap provider nampilin model, context window, rate limit & modality apa adanya. Aggregator transparan, bukan verifier.",
   metadataBase: new URL("https://tokengratis.id"),
+  alternates: { canonical: "https://tokengratis.id" },
   openGraph: {
     title: "tokengratis.id — Direktori API AI gratis",
     description:
@@ -44,6 +45,26 @@ export default function RootLayout({
     <ViewTransitions>
       <html lang="id" className={inter.variable}>
         <body>
+          <a
+            href="#main-content"
+            className="sr-only focus:not-sr-only focus:absolute focus:left-3 focus:top-3 focus:z-[100] focus:rounded-md focus:border focus:border-ink-line focus:bg-ink focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-fog"
+          >
+            Lewati ke konten
+          </a>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                name: "tokengratis.id",
+                url: "https://tokengratis.id",
+                description:
+                  "Direktori free tier & free credits API LLM, di-aggregate dari sumber komunitas.",
+                inLanguage: "id",
+              }).replace(/</g, "\\u003c"),
+            }}
+          />
           {children}
           <Footer />
           <Analytics />
