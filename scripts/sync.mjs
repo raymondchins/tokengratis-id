@@ -13,7 +13,7 @@
 // Anti-halusinasi: tiap adapter cuma mindahin field yang EKSPLISIT ada di
 // sumbernya. Merge = gap-fill by priority (scripts/lib/merge.mjs). Ga nebak.
 
-import { writeFileSync, mkdirSync } from "node:fs";
+import { writeFileSync, mkdirSync, readFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -21,6 +21,8 @@ import { fetchProviders as fetchMnfst } from "./adapters/mnfst.mjs";
 import { fetchProviders as fetchFreellm } from "./adapters/freellm.mjs";
 import { fetchProviders as fetchCheahjs } from "./adapters/cheahjs.mjs";
 import { mergeProviders } from "./lib/merge.mjs";
+import { snapshotDiff } from "./lib/diff-guard.mjs";
+import { checkSourceFloor } from "./lib/source-sanity.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = join(__dirname, "..", "data", "providers.json");
@@ -124,15 +126,32 @@ function smokeTest(providers) {
 async function main() {
   const mergeRunAt = new Date().toISOString();
 
+  // 0. Baca snapshot lama (data/providers.json yang udah ke-commit) buat
+  //    snapshot-diff guard di langkah 4. First run / file korup → [] (guard skip).
+  let prevProviders = [];
+  try {
+    if (existsSync(OUT)) prevProviders = JSON.parse(readFileSync(OUT, "utf8"));
+  } catch {
+    prevProviders = [];
+  }
+
   // 1. Fetch semua sumber paralel. Sumber gagal → skip (jangan jatohin pipeline).
   const settled = await Promise.allSettled(ADAPTERS.map((a) => a.fn()));
   const partialGroups = [];
   settled.forEach((res, i) => {
     const label = ADAPTERS[i].label;
     if (res.status === "fulfilled" && Array.isArray(res.value)) {
-      console.log(
-        `  ✓ ${label}: ${res.value.length} provider, ${res.value.reduce((a, p) => a + (p.models?.length || 0), 0)} model`,
-      );
+      const provCount = res.value.length;
+      const modelCount = res.value.reduce((a, p) => a + (p.models?.length || 0), 0);
+      // Sanity floor: fetch sukses tapi parse jeblok (markup sumber berubah →
+      // regex cuma dapet sedikit row) → skip sumber ini, jangan korup merge.
+      // Sumber lain + last-good gap-fill tetep jalan.
+      const floor = checkSourceFloor(label, provCount, modelCount);
+      if (!floor.ok) {
+        console.warn(`  ⚠ ${label} di-SKIP (sanity floor): ${floor.message}`);
+        return;
+      }
+      console.log(`  ✓ ${label}: ${provCount} provider, ${modelCount} model`);
       partialGroups.push(res.value);
     } else {
       const reason = res.status === "rejected" ? res.reason : "bukan array";
@@ -154,6 +173,29 @@ async function main() {
   // 3. Logo (favicon self-host) + smoke test.
   await downloadLogos(providers);
   smokeTest(providers);
+
+  // 3b. Snapshot-diff guard: bandingin vs data lama. Provider hilang / total
+  //     model anjlok / 1 provider nyusut drastis → FAIL → push step di CI ga
+  //     jalan → last-known-good tetep live. ALLOW_DATA_SHRINK=1 buat override
+  //     (mis. sumber emang sengaja ngebuang provider).
+  const diff = snapshotDiff(prevProviders, providers);
+  if (diff.warnings.length)
+    console.warn("⚠ Snapshot guard:\n" + diff.warnings.join("\n"));
+  if (!diff.ok) {
+    if (process.env.ALLOW_DATA_SHRINK === "1") {
+      console.warn(
+        "⚠ Snapshot guard tripped, ALLOW_DATA_SHRINK=1 → bypass:\n" +
+          diff.errors.join("\n"),
+      );
+    } else {
+      console.error(
+        "✗ Snapshot guard FAILED (data shrink/disappear). Last-known-good tetep live. Set ALLOW_DATA_SHRINK=1 buat force.\n" +
+          diff.errors.join("\n"),
+      );
+      console.error("stats: " + JSON.stringify(diff.stats));
+      process.exit(1);
+    }
+  }
 
   // 4. Tulis output.
   const withLogo = providers.filter((p) => p.logo).length;

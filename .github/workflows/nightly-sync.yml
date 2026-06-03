@@ -10,17 +10,28 @@ name: nightly-data-sync
 # sinyal liveness/fresh (PRD §2 trust dari transparansi). Saat sumber mnfst
 # memang berubah, perubahan kontennya ikut ke-commit di run yang sama.
 #
-# Safety: smoke test di sync.mjs exit 1 kalau data cacat / fetch gagal → step
-# push ga jalan, last-known-good tetap live. Guard `git diff --cached` cuma
-# nge-skip kasus byte-identik yang langka.
+# Safety: snapshot-diff guard di sync.mjs exit 1 kalau provider hilang atau
+# model count collapse vs data terakhir yang di-commit → step push ga jalan,
+# last-known-good tetap live. Guard `git diff --cached` cuma nge-skip kasus
+# byte-identik yang langka.
+#
+# Manual override: kalau sumber memang sengaja hapus provider / shrink data,
+# trigger "Run workflow" dengan `allow_data_shrink = true` buat bypass guard.
+# Cron run (scheduled) SELALU pakai guard ON — default aman.
 
 on:
   schedule:
     - cron: "0 19 * * *" # 02:00 WIB (UTC+7) tiap malam
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      allow_data_shrink:
+        type: boolean
+        default: false
+        description: "Bypass data-shrink guard untuk perubahan sumber yang disengaja"
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: nightly-data-sync
@@ -38,6 +49,11 @@ jobs:
           node-version: "22"
 
       - name: Sync data dari sumber komunitas
+        id: sync
+        env:
+          # Cron run: inputs kosong → ALLOW_DATA_SHRINK="" → guard ON (aman).
+          # Manual run dengan allow_data_shrink=true → ALLOW_DATA_SHRINK="1" → guard bypass.
+          ALLOW_DATA_SHRINK: ${{ inputs.allow_data_shrink && '1' || '' }}
         run: node scripts/sync.mjs
 
       - name: Commit + push kalau sumber berubah
@@ -52,3 +68,50 @@ jobs:
             git push
             echo "Data berubah — pushed, Vercel akan rebuild."
           fi
+
+      - name: Buka / update issue kalau sync gagal
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const label = 'sync-failure';
+            const title = '⚠️ Nightly data sync failed';
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const body = `Run gagal: ${runUrl}\n\nLast-known-good masih live — data lama belum ke-overwrite.\nCek output guard di log run untuk detail (provider hilang / model count collapse).\n\nTutup issue ini setelah root cause diatasi.`;
+
+            // Pastikan label ada dulu
+            try {
+              await github.rest.issues.getLabel({ owner: context.repo.owner, repo: context.repo.repo, name: label });
+            } catch {
+              await github.rest.issues.createLabel({ owner: context.repo.owner, repo: context.repo.repo, name: label, color: 'd93f0b' });
+            }
+
+            // Cek apakah sudah ada open issue dengan label ini
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: label,
+              state: 'open',
+              per_page: 1,
+            });
+
+            if (existing.data.length > 0) {
+              // Tambah komentar ke issue yang ada — hindari spam duplikat
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.data[0].number,
+                body: `Run baru juga gagal: ${runUrl}`,
+              });
+              console.log(`Komentar ditambahkan ke issue #${existing.data[0].number}`);
+            } else {
+              // Buat issue baru
+              const issue = await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+                labels: [label],
+              });
+              console.log(`Issue baru dibuat: ${issue.data.html_url}`);
+            }
