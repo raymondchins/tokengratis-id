@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { ViewTransitions } from "next-view-transitions";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import CloudflareAnalytics from "@/components/CloudflareAnalytics";
@@ -40,13 +41,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="id" className={inter.variable}>
-      <body>
-        {children}
-        <Footer />
-        <Analytics />
-        <CloudflareAnalytics />
-      </body>
-    </html>
+    <ViewTransitions>
+      <html lang="id" className={inter.variable}>
+        <body>
+          {children}
+          <Footer />
+          <Analytics />
+          <CloudflareAnalytics />
+        </body>
+      </html>
+    </ViewTransitions>
   );
 }

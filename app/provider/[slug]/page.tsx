@@ -1,6 +1,6 @@
 import { getAllProviders, getProviderBySlug } from "@/lib/data";
 import { notFound } from "next/navigation";
-import Link from "next/link";
+import { Link } from "next-view-transitions";
 import Navbar from "@/components/Navbar";
 import ProviderLogo from "@/components/ProviderLogo";
 import { CategoryTag, ModalityTags, SourceLine } from "@/components/directory/Badges";

@@ -62,3 +62,30 @@ body {
   background: var(--color-ember);
   color: #ffffff;
 }
+
+/* ─── View Transitions — subtle crossfade on page navigation ─── */
+@media (prefers-reduced-motion: no-preference) {
+  ::view-transition-old(root) {
+    animation: 200ms ease both fade-out;
+  }
+  ::view-transition-new(root) {
+    animation: 200ms ease both fade-in;
+  }
+
+  @keyframes fade-out {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+  }
+
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+  }
+}

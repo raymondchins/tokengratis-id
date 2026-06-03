@@ -35,6 +35,7 @@ export default function ProviderLogo({
           height={64}
           className="h-2/3 w-2/3 object-contain"
           loading={priority ? "eager" : "lazy"}
+          decoding="async"
           fetchPriority={priority ? "high" : undefined}
           onError={() => setFailed(true)}
         />
