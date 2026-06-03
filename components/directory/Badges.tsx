@@ -7,7 +7,8 @@ const CATEGORY_LABELS: Record<ProviderCategory, string> = {
   inference_provider: "Inference",
 };
 
-export function CategoryTag({ category }: { category: ProviderCategory }) {
+export function CategoryTag({ category }: { category: ProviderCategory | null }) {
+  if (!category) return null;
   return (
     <span className="inline-flex shrink-0 items-center rounded-[2px] border border-ink-line bg-ink px-2 py-0.5 text-[11px] font-medium text-mute">
       {CATEGORY_LABELS[category]}

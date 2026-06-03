@@ -123,7 +123,7 @@ export default function ModelsTable({
                     <div className="font-medium text-fog">{m.name}</div>
                     <div className="font-mono text-[11px] text-mute">{m.id}</div>
                   </td>
-                  <td className="px-3 py-3 text-mute">{m.modality}</td>
+                  <td className="px-3 py-3 text-mute">{m.modality ?? "—"}</td>
                   <td className="px-3 py-3 font-medium text-fog">{m.context ?? "—"}</td>
                   <td className="px-3 py-3 text-mute">{m.maxOutput ?? "—"}</td>
                   <td className="px-5 py-3 text-mute">{m.rateLimit ?? "—"}</td>

@@ -94,6 +94,27 @@ function slugName(displayName) {
 const NOTE_PATTERN =
   /^(currently|requires?|monthly|free tier|various|see |note:?|until |subject to|opting|paid|trial|subscription)/i;
 
+/**
+ * Guard: skip bullets that are generic section descriptors, not callable model ids.
+ * Matches phrases like "Open and Proprietary Mistral models" — adjective-only
+ * prefixes followed by a bare "models" suffix. Real model names always contain
+ * a version token (number, dash-id, or slash) such as "mistral-7b", "llama-3.1",
+ * "gpt-4o", "meta/llama-3", so they will NOT match this pattern.
+ *
+ * Rule: the bullet ends with the word "models" (plural) AND the entire string
+ * contains no digit, no slash, and no dash — i.e. it is purely descriptive prose.
+ *
+ * Examples that WILL match (rejected — descriptors):
+ *   "Open and Proprietary Mistral models"
+ *   "Various open models"
+ *
+ * Examples that will NOT match (kept — real model names):
+ *   "mistral-7b-instruct"     ← has dash
+ *   "meta/llama-3.1-8b"      ← has slash + digit
+ *   "Mistral Large"           ← no "models" suffix
+ */
+const GENERIC_MODELS_PATTERN = /\bmodels\s*$/i;
+
 function parseHtmlTable(tableHtml) {
   const models = [];
   // Extract each <tr>...</tr> in tbody (rows with <td>)
@@ -108,6 +129,7 @@ function parseHtmlTable(tableHtml) {
       .trim();
     if (!modelName) continue;
     if (NOTE_PATTERN.test(modelName)) continue; // skip disclaimer rows
+    if (GENERIC_MODELS_PATTERN.test(modelName) && !/[\d\-\/]/.test(modelName)) continue;
 
     // Replace <br> / <br /> with ", " and strip remaining tags
     const limitsRaw = m[2]
@@ -162,6 +184,12 @@ function parseBulletModels(block, sharedRateLimit) {
     modelName = modelName.replace(/^\[([^\]]+)\]\([^)]+\)/, "$1").trim();
     if (!modelName) continue;
     if (NOTE_PATTERN.test(modelName)) continue; // skip disclaimer/note bullets
+    // Skip generic section descriptors ending in "models" with no version/id signal
+    // (e.g. "Open and Proprietary Mistral models" — doc-link caption, not a real model).
+    if (
+      GENERIC_MODELS_PATTERN.test(modelName) &&
+      !/[\d\-\/]/.test(modelName)
+    ) continue;
     models.push({
       id: slugify(modelName),
       name: modelName,

@@ -25,6 +25,7 @@ import {
   modelKey,
   slugify,
   ctxNum,
+  cleanModality,
 } from "./normalize.mjs";
 
 // ─── Priority helpers ─────────────────────────────────────────────────────────
@@ -108,7 +109,7 @@ function mergeModels(contributors) {
             name: model.name ?? "",
             context: model.context ?? null,
             maxOutput: model.maxOutput ?? null,
-            modality: model.modality ?? "",
+            modality: cleanModality(model.modality),
             rateLimit: model.rateLimit ?? null,
           },
           keys: new Set(keys),
@@ -218,8 +219,8 @@ export function mergeProviders(partialGroups, mergeRunAt) {
     const sourceUpdatedAt = gapFill(contributors, "sourceUpdatedAt");
     const moreModels      = gapFill(contributors, "moreModels");
 
-    // category: gap-fill then fallback to "provider_api"
-    const category = gapFill(contributors, "category") ?? "provider_api";
+    // category: gap-fill only — no default fabrication (anti-halusinasi rule)
+    const category = gapFill(contributors, "category");
 
     // 4. Merge models (union + complement gap-fill)
     const models = mergeModels(contributors);

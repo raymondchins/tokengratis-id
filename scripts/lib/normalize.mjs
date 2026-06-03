@@ -200,8 +200,12 @@ export function modelKey(nameOrId) {
   s = s.replace(/^[a-z0-9.\s]+:\s*/i, "");
   // prefix vendor bentuk kata: "OpenAI ", "Meta ", "Qwen "
   s = s.replace(VENDOR_WORD, "");
-  // suffix varian umum
-  s = s.replace(/[-_\s]?(instruct|versatile|instant|chat|preview|latest|turbo)\b/g, "");
+  // suffix kosmetik (NON-varian): cuma kata yang ga pernah mbedain model.
+  // SENGAJA TANPA turbo/instant/versatile + date/version stamp (mis. -08-2024,
+  // 0905) — itu nandain MODEL BERBEDA. Strip-nya bikin over-merge → model real
+  // ke-drop (whisper-large-v3-turbo, command-r-08-2024, Kimi K2 0905). Lebih
+  // baik under-merge (2 baris near-dup) daripada over-merge (ilang 1 model real).
+  s = s.replace(/[-_\s]?(instruct|chat|preview|latest)\b/g, "");
   // sisanya: alnum doang
   return s.replace(/[^a-z0-9]+/g, "").trim();
 }
@@ -219,7 +223,21 @@ export const MODALITY_ORDER = [
   "reranking",
 ];
 
-/** Derive facet modality dari string mentah sumber (mis. "Text + Vision"). */
+/**
+ * Normalisasi nilai modality buat field model: string trimmed, atau `null`
+ * kalau kosong / whitespace-only. Schema = `modality: string | null` — JANGAN
+ * simpen "" (string kosong). Idempotent: cleanModality(null) === null.
+ */
+export function cleanModality(modality) {
+  if (modality == null) return null;
+  const t = String(modality).trim();
+  return t ? t : null;
+}
+
+/**
+ * Derive facet modality dari string mentah sumber (mis. "Text + Vision").
+ * Null-safe: `null`/`undefined`/""/whitespace → [] (ga nebak "text").
+ */
 export function facetsOf(modality) {
   const m = String(modality || "").toLowerCase();
   const f = new Set();
@@ -259,13 +277,26 @@ export function ctxNum(c) {
   return n;
 }
 
+/**
+ * Bersihin FORMAT display string context — TANPA ngubah magnitude.
+ * - buang qualifier depan "Up to "/"up to " (mis. cloudflare "Up to 10M" → "10M")
+ * - drop trailing ".0" sebelum unit K/M/B (mis. nvidia "1.0M" → "1M", "2.0M" → "2M")
+ * Cuma kosmetik: angka + unit tetep sama persis.
+ */
+export function cleanCtxStr(c) {
+  if (c == null) return c;
+  let s = String(c).trim().replace(/^up\s+to\s+/i, "");
+  s = s.replace(/(\d+)\.0+\s*([KkMmBb])\b/g, "$1$2");
+  return s;
+}
+
 /** Context window terbesar (string) di antara model-nya. null kalau kosong. */
 export function maxContextOf(models) {
   let best = null;
   for (const m of models) {
     if (ctxNum(m.context) > ctxNum(best)) best = m.context;
   }
-  return best || null;
+  return best ? cleanCtxStr(best) : null;
 }
 
 /**

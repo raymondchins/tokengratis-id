@@ -62,7 +62,17 @@ async function downloadLogos(providers) {
 /** Smoke test (PRD): tiap entry wajib punya source+syncedAt, ga ada sentinel nyangkut. */
 function smokeTest(providers) {
   const errs = [];
+  const warns = [];
+
+  // Valid category values (null = not sourced, which is fine for cheahjs/freellm-only providers)
+  const VALID_CATEGORIES = new Set(["provider_api", "inference_provider", null]);
+
+  // Meta-row pattern: generic descriptor ending in "models" with no version/id signal.
+  // Mirrors GENERIC_MODELS_PATTERN in cheahjs.mjs — catches fake models that slip through merge.
+  const META_MODEL_PATTERN = /\bmodels\s*$/i;
+
   for (const p of providers) {
+    // ── existing provenance checks ──────────────────────────────────────────
     if (!p.sources || p.sources.length === 0 || !p.syncedAt)
       errs.push(`${p.slug}: missing sources/syncedAt`);
     if (p.sources?.some((s) => !s.name || !s.url || !s.syncedAt))
@@ -72,6 +82,37 @@ function smokeTest(providers) {
     if (p.maxContext === "—" || p.maxContext === "-")
       errs.push(`${p.slug}: maxContext sentinel`);
     if (!p.slug || !p.name) errs.push(`${p.slug || "?"}: slug/name kosong`);
+
+    // ── FIX 2a: category must be a valid enum value or null ─────────────────
+    if (!VALID_CATEGORIES.has(p.category))
+      errs.push(
+        `${p.slug}: invalid category "${p.category}" — must be "provider_api", "inference_provider", or null`,
+      );
+
+    // ── FIX 2b: no model may have a meta-row id/name (section descriptor, not callable model) ──
+    if (Array.isArray(p.models)) {
+      for (const m of p.models) {
+        const suspicious =
+          (META_MODEL_PATTERN.test(m.id || "") && !/[\d\-\/]/.test(m.id || "")) ||
+          (META_MODEL_PATTERN.test(m.name || "") && !/[\d\-\/]/.test(m.name || ""));
+        if (suspicious)
+          errs.push(
+            `${p.slug}: model "${m.name}" (id="${m.id}") looks like a section descriptor, not a real model`,
+          );
+      }
+    }
+
+    // ── FIX 2c: warn on modality === "" (should be null, never empty string) ──
+    if (Array.isArray(p.models)) {
+      for (const m of p.models) {
+        if (m.modality === "")
+          warns.push(`${p.slug} › ${m.id}: modality is "" — should be null`);
+      }
+    }
+  }
+
+  if (warns.length) {
+    console.warn("⚠ Smoke test warnings:\n" + warns.join("\n"));
   }
   if (errs.length) {
     console.error("✗ Smoke test FAILED:\n" + errs.join("\n"));

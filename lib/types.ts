@@ -30,8 +30,8 @@ export interface Model {
   /** Context window apa adanya dari sumber, mis. "256K". null = ga ditulis. */
   context: string | null;
   maxOutput: string | null;
-  /** String modality mentah dari sumber, mis. "Text + Vision". */
-  modality: string;
+  /** String modality mentah dari sumber, mis. "Text + Vision". null = ga ditulis di sumber. */
+  modality: string | null;
   /** Rate limit apa adanya, mis. "200 RPM, 10 RPS". null = ga ditulis. */
   rateLimit: string | null;
 }
@@ -46,7 +46,8 @@ export interface SourceRef {
 export interface Provider {
   slug: string;
   name: string;
-  category: ProviderCategory;
+  /** null = tidak ada sumber yang mengklasifikasikan provider ini. */
+  category: ProviderCategory | null;
   /** ISO-2 country code (HQ provider — BUKAN ketersediaan akses). null kalau sumber ga nyediain. */
   country: string | null;
   /** Emoji bendera HQ. null kalau sumber ga nyediain (UI fallback ke logo / globe). */
@@ -93,7 +94,7 @@ export interface ProviderListItem {
   name: string;
   logo: string | null;
   flag: string | null;
-  category: ProviderCategory;
+  category: ProviderCategory | null;
   modelCount: number;
   modalities: Modality[];
   maxContext: string | null;
