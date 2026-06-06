@@ -118,7 +118,7 @@ const GENERIC_MODELS_PATTERN = /\bmodels\s*$/i;
 function parseHtmlTable(tableHtml) {
   const models = [];
   // Extract each <tr>...</tr> in tbody (rows with <td>)
-  const rowRe = /<tr>\s*<td>([\s\S]*?)<\/td>\s*<td>([\s\S]*?)<\/td>\s*<\/tr>/gi;
+  const rowRe = /<tr[^>]*>\s*<td[^>]*>([\s\S]*?)<\/td>\s*<td[^>]*>([\s\S]*?)<\/td>\s*<\/tr>/gi;
   let m;
   while ((m = rowRe.exec(tableHtml)) !== null) {
     const modelName = m[1]

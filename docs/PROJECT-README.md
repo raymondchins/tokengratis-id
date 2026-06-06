@@ -12,7 +12,7 @@ Directory free tier & free credits API LLM, audience Indonesia, auto-aggregated 
 | **Vercel fallback** | https://tokengratis-id.vercel.app |
 | **GitHub repo** | https://github.com/raymondchins/tokengratis-id (Private) |
 | **Stack** | Next.js 16 (App Router, Turbopack) + TypeScript strict + Tailwind 4. Static/SSG. |
-| **Data** | `data/providers.json` ← `scripts/sync.mjs` (anchor: mnfst/awesome-free-llm-apis). NO database. |
+| **Data** | `data/providers.json` ← `scripts/sync.mjs` (3 sumber: mnfst/freellm.net/cheahjs). NO database. |
 | **Design** | Light/paper neutral (getaiperks-style), Georgia serif + Inter |
 
 ## Files in this folder
@@ -32,9 +32,10 @@ Directory free tier & free credits API LLM, audience Indonesia, auto-aggregated 
 2. Ray gives feedback / bug / feature request.
 3. Claude implements → push to feature branch → Vercel preview → PR.
 4. After Ray approval → merge to `main` → Vercel auto-deploys prod.
-5. Migration baru? → apply via Supabase MCP `apply_migration` → update migrations table in `docs/STATE.md`.
-6. Every push: test cases in chat + append entry to `docs/CHANGELOG.md` (bash `>>`).
-7. New learning? → append to `docs/log.md`, tag `[UNIVERSAL?]` if cross-project.
+5. Every push: test cases in chat + append entry to `docs/CHANGELOG.md` (bash `>>`).
+6. New learning? → append to `docs/log.md`, tag `[UNIVERSAL?]` if cross-project.
+
+**Note:** no DB / no migrations. Only server surface = dormant Resend newsletter route (`app/api/subscribe`) — not mounted in UI, no state stored.
 
 ## Conventions (deltas from playbook default)
 

@@ -220,7 +220,7 @@ export function mergeProviders(partialGroups, mergeRunAt) {
     // "[Ollama API](url)") biar prosa bersih di UI.
     const description     = stripMdLinks(gapFill(contributors, "description"));
     const sourceUpdatedAt = gapFill(contributors, "sourceUpdatedAt");
-    const moreModels      = gapFill(contributors, "moreModels");
+    let moreModels        = gapFill(contributors, "moreModels");
 
     // category: gap-fill only — no default fabrication (anti-halusinasi rule)
     const category = gapFill(contributors, "category");
@@ -231,6 +231,17 @@ export function mergeProviders(partialGroups, mergeRunAt) {
     // 5. Compute derived fields
     const modalities = modalitiesOf(models);
     const modelCount = models.length;
+
+    // Reconcile moreModels: if the "+N more" number is <= modelCount, those models
+    // are already represented in the merged list — the note is now false/redundant.
+    // Purely-qualitative notes (no number) are left untouched.
+    if (moreModels) {
+      const m = /(\d[\d,]*)\s*(?:more|additional)/i.exec(moreModels);
+      if (m) {
+        const claimed = parseInt(m[1].replace(/,/g, ""), 10);
+        if (claimed <= modelCount) moreModels = null;
+      }
+    }
     const maxContext = maxContextOf(models);
     const domain     = domainOf(url, baseUrl);
     const logo       = domain ? `/logos/${slug}.png` : null;

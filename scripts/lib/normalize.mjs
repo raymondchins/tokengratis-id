@@ -77,7 +77,11 @@ export function cleanStr(v) {
  */
 export function stripMdLinks(s) {
   if (s == null) return s;
-  return String(s).replace(/\[([^\]]+)\]\([^)]+\)/g, "$1");
+  return String(s)
+    // markdown link/image: "[text](url)" / "![alt](url)" → text/alt (buang leading "!" biar ga ada orphan)
+    .replace(/!?\[([^\]]+)\]\([^)]+\)/g, "$1")
+    // inline code: "`code`" → "code"
+    .replace(/`([^`]+)`/g, "$1");
 }
 
 /** Allowlist scheme: cuma http(s). Blok javascript:/data: dll dari sumber. */
@@ -126,6 +130,8 @@ const ALIAS = {
   mistral: "mistral-ai",
   mistralai: "mistral-ai",
   "mistral-api": "mistral-ai",
+  "mistral-codestral": "mistral-ai",
+  codestral: "mistral-ai",
   // OpenRouter
   "open-router": "openrouter",
   "openrouter-ai": "openrouter",
@@ -364,7 +370,12 @@ export function freeLimitOf(desc) {
         ? "/bln"
         : "";
   let m;
-  if ((m = d.match(/\$[\d,]+(?:\.\d+)?/))) return `${m[0]} kredit`;
+  if ((m = d.match(/\$[\d,]+(?:\.\d+)?/))) {
+    // ANTI-HALUSINASI: kredit trial sekali-pakai / kadaluarsa BUKAN free allowance
+    // standing. Biarin `description` verbatim yang bawa term aslinya.
+    if (/one[- ]?time|expir|trial|sign[- ]?up\s+credit/i.test(d)) return null;
+    return `${m[0]} kredit`;
+  }
   if ((m = d.match(/([~]?[\d.,]+\s*[KMB])\b[^.]*?tokens?(\s*\/\s*\w+)?/i))) {
     const amt = m[1].replace(/\s+/g, "");
     return `${amt} token${period(m[0])}`;

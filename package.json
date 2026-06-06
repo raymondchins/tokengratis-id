@@ -2,11 +2,15 @@
   "name": "tokengratis-id",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=20.9.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "sync": "node scripts/sync.mjs"
+    "sync": "node scripts/sync.mjs",
+    "test": "node scripts/lib/diff-guard.mjs --selftest && node scripts/lib/source-sanity.mjs --selftest && node scripts/lib/merge.mjs && node scripts/audit-dupes.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

@@ -98,3 +98,43 @@ tail -10 docs/CHANGELOG.md
 2. Search "gemini"/"qwen", chip "Vision"/"Inference" → filter jalan.
 3. Klik "Lihat" → `/provider/[slug]`: tabel model (context/rate limit), base URL, catatan sumber, atribusi.
 4. `npm run sync` → "✓ Wrote 24 providers".
+
+### 2026-06-06 — Multi-source aggregation + infra features (2026-06-01 → 2026-06-06)
+
+**Trigger:** Batch of features shipped post-2026-06-01 that were not individually logged.
+
+**Changes:**
+- **Multi-source pipeline:** ditambahkan dua adapter (`scripts/adapters/freellm.mjs` HTML regex-parse, `scripts/adapters/cheahjs.mjs` markdown-parse) di samping mnfst. Ketiga sumber jalan paralel, merged/gap-fill by priority di `scripts/lib/merge.mjs`. Provider count naik ke ~26.
+- **Nightly cron live:** `.github/workflows/nightly-sync.yml` (cron `0 19 * * *`) auto-commit data + trigger Vercel rebuild. Pipeline jalan otomatis tiap malam.
+- **Resend newsletter route:** `app/api/subscribe/route.ts` ditambahkan sebagai server route dormant (belum di-mount di UI). Tidak ada DB/auth/state.
+- **Snapshot-diff integrity guards:** pipeline cek diff sebelum commit (skip kalau sama), guard same-count identity check.
+- **CI gate:** GitHub Actions build/test gate sebelum push ke main.
+- **Analytics paralel:** Cloudflare Analytics + Vercel Analytics jalan bersamaan. Rencana matiin Vercel setelah banding angka stabil.
+- **SEO:** JSON-LD structured data (ItemList di homepage, provider detail), canonical + OG tags, `app/sitemap.ts`, `app/robots.ts`.
+- **View Transitions API:** navigasi homepage → detail pakai `startViewTransition`.
+- **Mobile responsive sweep:** layout tabel + hero + filter chip di-test + di-fix buat small screens.
+- **`/directory` route dihapus:** duplikat homepage → di-remove, ItemList JSON-LD dipindah ke homepage.
+- **Logo pruning + branded 404:** logo tidak terpakai dibersihkan, not-found page berbranding.
+- **Web manifest + apple-icon:** `app/manifest.ts`, `app/apple-icon.tsx`.
+
+**Test cases:**
+1. `npm run sync` → ~26 provider, ketiga sumber terhit, smoke pass.
+2. Homepage: hero count sesuai live data, tabel terisi dari 3 sumber.
+3. Nightly cron: cek GitHub Actions run history → green nightly commit.
+4. `/provider/[slug]` → sources[] ditampilkan (multi-sumber tercatat di provenance).
+5. Cloudflare + Vercel analytics keduanya tracking pageview.
+6. sitemap.xml + robots.txt ke-serve di prod.
+7. View Transition mulus saat klik provider → detail.
+
+### 2026-06-06 — Audit fixes: doc sync + label/schema corrections
+
+**Trigger:** Doc audit — align STATE.md / CHANGELOG.md / README.md / PROJECT-README.md / CLAUDE.md ke realitas kode aktual.
+
+**Changes:**
+- **"Rate limit" → "Gratis":** label kolom `freeLimit` di UI diubah dari "Rate limit" ke "Gratis" + drop one-time/expiring credit derivation (cuma tampil free permanent/tiered — bukan kredit sekali pakai).
+- **Modalities embeddings/reranking:** ditampilkan di filter chip dan modality badge (sebelumnya di-skip UI).
+- **Diff-guard same-count identity check:** pipeline tidak commit kalau provider count identik dan tidak ada perubahan field.
+- **CI build/test gate:** GitHub Actions jalanin `npm run build` + smoke sebelum auto-push nightly sync.
+- **`/directory` route removed:** homepage is the directory; `/directory` path dihapus, ItemList JSON-LD pindah ke homepage root.
+- **`sources[]` schema:** field `source` (singular string) diganti `sources[]` (SourceRef array: name/url/syncedAt) — tiap provider catat provenance dari semua adapter yang berkontribusi.
+- **Docs synced:** STATE.md (provider count, 3 sumber, cron ✅, schema sources[]), CHANGELOG.md (batch entries ini), README.md (drop Indonesia-filter framing, fix struktur app/), PROJECT-README.md (drop Supabase reference, note route dormant Resend), CLAUDE.md (Backend row carve-out, sources[] di listing fields).

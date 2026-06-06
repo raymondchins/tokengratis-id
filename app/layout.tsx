@@ -33,6 +33,7 @@ export const metadata: Metadata = {
     title: "tokengratis.id — Direktori API AI gratis",
     description:
       "Free tier & free credits API LLM, di-aggregate dari sumber komunitas.",
+    creator: "@raymondchins",
   },
 };
 
@@ -62,6 +63,11 @@ export default function RootLayout({
                 description:
                   "Direktori free tier & free credits API LLM, di-aggregate dari sumber komunitas.",
                 inLanguage: "id",
+                author: {
+                  "@type": "Person",
+                  name: "Raymond Chin",
+                  url: "https://instagram.com/raymondchins",
+                },
               }).replace(/</g, "\\u003c"),
             }}
           />

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 /**
  * Logo provider dari favicon service. Fallback ke flag emoji kalau gambar gagal
@@ -21,6 +21,8 @@ export default function ProviderLogo({
   priority?: boolean;
 }) {
   const [failed, setFailed] = useState(false);
+
+  useEffect(() => setFailed(false), [logo]);
 
   return (
     <div

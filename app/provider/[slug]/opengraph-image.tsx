@@ -5,6 +5,7 @@ import { getProviderBySlug } from "@/lib/data";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
+export const alt = "Provider API gratis — tokengratis.id";
 
 // Font dibundel di repo (app/og-fonts/*.woff) → no build-time network fetch.
 const FONT_DIR = join(process.cwd(), "app", "og-fonts");

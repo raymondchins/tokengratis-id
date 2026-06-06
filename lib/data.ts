@@ -21,8 +21,9 @@ export function getAllProviders(): Provider[] {
 }
 
 /** Versi ramping buat tabel direktori (client). models[] dibuang, search di-precompute. */
+let _listItems: ProviderListItem[] | null = null;
 export function getListItems(): ProviderListItem[] {
-  return providers.map((p) => ({
+  return (_listItems ??= providers.map((p) => ({
     slug: p.slug,
     name: p.name,
     logo: p.logo,
@@ -36,7 +37,7 @@ export function getListItems(): ProviderListItem[] {
     searchText: `${p.name} ${p.models
       .map((m) => `${m.name} ${m.id}`)
       .join(" ")}`.toLowerCase(),
-  }));
+  })));
 }
 
 /** Cari satu provider by slug (full). undefined kalau ga ketemu. */

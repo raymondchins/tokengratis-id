@@ -206,7 +206,7 @@ export default async function Page({
 
               <div className="space-y-2.5 border-t border-ink-line pt-4">
                 {p.freeLimit && (
-                  <Fact label="Rate limit">
+                  <Fact label="Gratis">
                     <span className="text-grass">{p.freeLimit}</span>
                   </Fact>
                 )}
@@ -264,11 +264,6 @@ export default async function Page({
             inLanguage: "id",
             description:
               p.description ?? `Free tier API dari ${p.name} — ${p.modelCount} model.`,
-            offers: {
-              "@type": "Offer",
-              price: "0",
-              priceCurrency: "USD",
-            },
           };
           if (providerUrl) jsonLd.url = providerUrl;
           return (

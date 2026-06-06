@@ -36,6 +36,8 @@ export const MODALITY_ORDER: Modality[] = [
   "audio",
   "video",
   "code",
+  "embeddings",
+  "reranking",
 ];
 
 export function modalityLabel(m: Modality): string {

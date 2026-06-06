@@ -2,7 +2,7 @@
 
 > **Auto-read on demand** — when prompt asks "current state", "what phase", "what's deployed", "what's blocked". Update on every meaningful push.
 >
-> **Last updated:** 2026-06-01
+> **Last updated:** 2026-06-06
 
 ## Project Summary
 
@@ -12,17 +12,18 @@
 
 ## Current phase
 
-**Phase 2/3 — Directory live di data real.** App jalan: homepage (hero serif + tabel), `/directory`, `/provider/[slug]`. Data dari pipeline `npm run sync` (mnfst `data.json`, 24 provider). Next: cron nightly + attach domain Vercel.
+**Phase 4+ — Directory live, multi-source, cron aktif.** App jalan: homepage (hero serif + tabel), `/provider/[slug]`. Data dari pipeline `npm run sync` (3 sumber paralel, ~26 provider). Nightly cron live via GitHub Actions. Domain attach ke Vercel sudah dilakukan.
 
 ## Architecture
 
-- **NO database, NO auth, NO backend.** Data = `data/providers.json` (read-only, di-generate `scripts/sync.mjs`).
-- Static / SSG (Next.js 16 + Turbopack). `/provider/[slug]` prerendered via `generateStaticParams`.
-- **Pipeline:** `scripts/sync.mjs` (`npm run sync`) → fetch mnfst `data.json` → normalize (derive facet modality + maxContext) → tulis `data/providers.json`. Idempotent. Belum di-cron (masih manual / on-build).
+- **NO database, NO auth.** Satu-satunya server surface: route Resend newsletter dormant di `app/api/subscribe/route.ts` (belum di-mount di UI). Data = `data/providers.json` (read-only, di-generate `scripts/sync.mjs`).
+- Static / SSG (Next.js 16 + Turbopack). `/provider/[slug]` prerendered via `generateStaticParams`. Route `/directory` sudah dihapus (duplikat homepage).
+- **Pipeline:** `scripts/sync.mjs` (`npm run sync`) → fetch **3 sumber paralel** via `scripts/adapters/mnfst.mjs` + `scripts/adapters/freellm.mjs` + `scripts/adapters/cheahjs.mjs` → merge/gap-fill by priority di `scripts/lib/merge.mjs` → smoke test → tulis `data/providers.json`. Idempotent.
+- **Nightly cron:** `.github/workflows/nightly-sync.yml` (cron `0 19 * * *`) — auto-commit data + trigger Vercel rebuild.
 
 ## Data model (canonical = `lib/types.ts`)
 
-- **Provider:** slug, name, category (`provider_api`/`inference_provider`), country+flag, domain+logo (favicon, fallback flag), url, baseUrl, description (prosa apa adanya), modalities[] (facet), modelCount, maxContext, freeLimit (derived dari description), models[], source, syncedAt, sourceUpdatedAt.
+- **Provider:** slug, name, category (`provider_api`/`inference_provider`), country+flag, domain+logo (favicon, fallback flag), url, baseUrl, description (prosa apa adanya), modalities[] (facet), modelCount, maxContext, freeLimit (derived dari description), models[], sources[] (provenance array — tiap SourceRef: name/url/syncedAt), syncedAt, sourceUpdatedAt.
 - **Model:** id, name, context, maxOutput, modality, rateLimit.
 - **DIBUANG (2026-06-01):** requiresCreditCard, requiresPhoneVerification, indonesiaAccess, offerType, freeQuota — ga ada sumber yang track terstruktur → "Unknown" bertaburan. Info itu kalau ada tetep di `description`.
 
@@ -36,47 +37,46 @@ Light / paper / neutral ala getaiperks.com. bg `#f1f0e8`, card putih, text `#111
 |---|---|---|
 | GitHub repo `tokengratis-id` | ✅ Live (private) | github.com/raymondchins/tokengratis-id |
 | GitHub PAT | ✅ Live | `~/.claude/.credentials.shared` → `GITHUB_PAT` |
-| Vercel project | 🚧 Pending | will be `tokengratis-id.vercel.app` |
-| Custom domain `tokengratis.id` | 🚧 Pending | Ray punya domain, attach di Vercel |
+| Vercel project | ✅ Live | tokengratis-id.vercel.app |
+| Custom domain `tokengratis.id` | ✅ Live | attached di Vercel |
+| Nightly cron | ✅ Live | `.github/workflows/nightly-sync.yml` |
 | Supabase / Auth | 🗄️ N/A | no DB / no auth by design |
 
 ## Data sources wired
 
-| Source | Format | Status |
-|---|---|---|
-| mnfst/awesome-free-llm-apis | JSON (`data.json`) | ✅ **Live anchor** — 24 provider |
-| cheahjs/free-llm-api-resources | GitHub MD | ⏸️ Cross-ref (butuh scraping) |
-| amardeeplakshkar/awesome-free-llm-apis | GitHub MD | ⏸️ Cross-ref |
-| aicredits.dev | llms.txt | ⏸️ Cross-ref (startup credits, scope luas) |
+| Source | Format | Adapter | Status |
+|---|---|---|---|
+| mnfst/awesome-free-llm-apis | JSON (`data.json`) | `scripts/adapters/mnfst.mjs` | ✅ **Live, prioritas #1** |
+| freellm.net | HTML table (server-rendered) | `scripts/adapters/freellm.mjs` | ✅ Live |
+| cheahjs/free-llm-api-resources | README markdown | `scripts/adapters/cheahjs.mjs` | ✅ Live |
+| amardeeplakshkar/awesome-free-llm-apis | GitHub MD | — | ⏸️ Belum di-ingest |
+| aicredits.dev | llms.txt | — | ⏸️ Belum di-ingest (scope luas) |
 
 ## Phase Progress
 
 | Phase | Scope | Status |
 |---|---|---|
-| 0 | Bootstrap (repo + Vercel) | ✅ Done (repo) / 🚧 Vercel |
+| 0 | Bootstrap (repo + Vercel) | ✅ Done |
 | 1 | Next.js scaffold + design system | ✅ Done (light/paper neutral, getaiperks-style) |
 | 2 | Directory + detail + filter/search UI | ✅ Done (tabel, real data) |
-| 3 | Pipeline aggregator (mnfst JSON) | ✅ Done (`npm run sync`, 24 provider) |
-| 4 | Nightly cron + auto-rebuild | ⏸️ Pending (GitHub Actions / Vercel Cron) |
-| 5 (opt) | Tambah sumber (cheahjs/aicredits) + "masih works?" | ⏸️ v2 maybe |
+| 3 | Pipeline aggregator (mnfst JSON, anchor) | ✅ Done |
+| 4 | Nightly cron + auto-rebuild | ✅ Done (GitHub Actions nightly-sync.yml) |
+| 4b | Multi-source (freellm.net + cheahjs) + 3-way merge | ✅ Done (~26 provider) |
+| 5 (opt) | Tambah sumber (amardeeplakshkar/aicredits) | ⏸️ v2 maybe |
 
 Legend: ✅ Complete · 🚧 In dev · ⏸️ Pending · 🗄️ N/A
 
 ## Open Questions / Blockers
 
-- None blocking. Akses-Indonesia descoped (no source); kalau mau hidupin → layer editorial manual (lihat log.md).
-
-**Action required (Ray):**
-- Confirm Vercel project + domain `tokengratis.id` attached.
+- None blocking. Akses-Indonesia descoped permanently (no structured source); info itu kalau ada tetap di teks `description`.
 
 ## Next Up
 
-**Current wave:** Push ke main (done) → setup Vercel project + domain.
-**Backlog:** GitHub Actions cron buat `npm run sync` nightly + auto-commit/rebuild. Tambah cheahjs/aicredits sources (butuh parser markdown/llms.txt).
+**Backlog:** Tambah sumber amardeeplakshkar/aicredits.dev (butuh parser). Analytics: matiin Vercel analytics setelah angka Cloudflare stabil (banding 2-3 minggu).
 
 ## Definition of Done (v1)
 
 - ✅ Directory bisa dibuka, di-search, di-filter.
 - ✅ Tiap provider punya atribusi sumber + tanggal sync + link.
 - ✅ Ga ada klaim tanpa sumber (zero "Unknown" tebakan).
-- ⏸️ Pipeline sync jalan otomatis tiap malam (cron belum).
+- ✅ Pipeline sync jalan otomatis tiap malam (cron live).

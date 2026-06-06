@@ -9,13 +9,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: BASE, changeFrequency: "daily", priority: 1, lastModified: lastUpdated },
-    { url: `${BASE}/directory`, changeFrequency: "daily", priority: 0.9, lastModified: lastUpdated },
   ];
   const providerRoutes: MetadataRoute.Sitemap = getAllProviders().map((p) => ({
     url: `${BASE}/provider/${p.slug}`,
     changeFrequency: "weekly",
     priority: 0.7,
-    lastModified: p.syncedAt ? new Date(p.syncedAt) : lastUpdated,
+    lastModified: p.sourceUpdatedAt ? new Date(p.sourceUpdatedAt) : (p.syncedAt ? new Date(p.syncedAt) : lastUpdated),
   }));
   return [...staticRoutes, ...providerRoutes];
 }

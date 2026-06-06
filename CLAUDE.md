@@ -32,7 +32,7 @@ Directory **free tier & free credits API LLM**, di-aggregate otomatis dari sumbe
 | Frontend | Next.js (App Router) + TypeScript strict + Tailwind 4 |
 | Rendering | Static / ISR — rebuild tiap malam, datanya read-only |
 | Data | **`data/providers.json`** (di-generate `scripts/sync.mjs`). **NO database** untuk v1. |
-| Backend | **NONE** — no server actions, no API yang nyimpen state, no auth |
+| Backend | **NONE** — no server actions, no API yang nyimpen state, no auth. Kecuali 1 route dormant: Resend newsletter (`app/api/subscribe`) — no DB, no auth, no state-storing backend. |
 | Pipeline | `scripts/sync.mjs` (`npm run sync`) → fetch **3 sumber paralel** (JSON + HTML + markdown) via `scripts/adapters/*.mjs` → parse + normalize ke satu schema → merge/dedup gap-fill by priority (`lib/merge.mjs`) → smoke test → tulis `data/providers.json`. Idempotent. |
 | Scheduling | GitHub Actions (cron nightly) ATAU Vercel Cron — trigger sync + rebuild |
 | Deploy | Vercel auto-deploy on `main` push |
@@ -68,7 +68,7 @@ Merge = gap-fill by priority di `scripts/lib/merge.mjs` — tiap adapter cuma mi
 
 ## Listing fields (schema = `lib/types.ts`)
 
-**Provider:** slug · name · category (`provider_api`/`inference_provider`) · country+flag (HQ, BUKAN akses) · url (API key) · baseUrl · **description** (prosa apa adanya, sering memuat catatan CC/expiry/region) · modalities (facet: text/vision/image/audio/video/code/embeddings/reranking) · modelCount · maxContext · **models[]** · source · syncedAt · sourceUpdatedAt.
+**Provider:** slug · name · category (`provider_api`/`inference_provider`) · country+flag (HQ, BUKAN akses) · url (API key) · baseUrl · **description** (prosa apa adanya, sering memuat catatan CC/expiry/region) · modalities (facet: text/vision/image/audio/video/code/embeddings/reranking) · modelCount · maxContext · **models[]** · sources[] (provenance array — tiap SourceRef: name/url/syncedAt) · syncedAt · sourceUpdatedAt.
 **Model:** id · name · context · maxOutput · modality · rateLimit.
 
 Semua field di atas BENERAN ada di sumber → **zero "Unknown"**. Field absent ga di-render (bukan sel kosong).

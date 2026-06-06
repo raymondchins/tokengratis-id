@@ -1,8 +1,9 @@
 name: nightly-data-sync
 
-# Pipeline aggregator tokengratis.id (PRD §8). Tiap malam re-fetch
-# mnfst/awesome-free-llm-apis, normalize via scripts/sync.mjs, commit hasilnya
-# → push ke main → Vercel auto-deploy (rebuild fresh). Maintenance ~nol.
+# Pipeline aggregator tokengratis.id (PRD §8). Tiap malam re-fetch 3 sumber
+# paralel (mnfst JSON + freellm.net HTML + cheahjs README), normalize via
+# scripts/sync.mjs, commit hasilnya → push ke main → Vercel auto-deploy
+# (rebuild fresh). Maintenance ~nol.
 # Bisa di-trigger manual ("Run workflow").
 #
 # sync.mjs nge-stamp `syncedAt` tiap run, jadi normalnya ADA diff tiap malam →
@@ -48,6 +49,9 @@ jobs:
         with:
           node-version: "22"
 
+      - name: Install dependencies
+        run: npm ci
+
       - name: Sync data dari sumber komunitas
         id: sync
         env:
@@ -55,6 +59,12 @@ jobs:
           # Manual run dengan allow_data_shrink=true → ALLOW_DATA_SHRINK="1" → guard bypass.
           ALLOW_DATA_SHRINK: ${{ inputs.allow_data_shrink && '1' || '' }}
         run: node scripts/sync.mjs
+
+      - name: Test pipeline self-tests
+        run: npm test
+
+      - name: Build (gate — pastiin data baru ke-render)
+        run: npm run build
 
       - name: Commit + push kalau sumber berubah
         run: |
@@ -65,6 +75,7 @@ jobs:
             git config user.name "tokengratis-bot"
             git config user.email "github-actions[bot]@users.noreply.github.com"
             git commit -m "chore(data): nightly sync dari mnfst/awesome-free-llm-apis"
+            git pull --rebase origin main
             git push
             echo "Data berubah — pushed, Vercel akan rebuild."
           fi

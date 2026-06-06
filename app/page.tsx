@@ -34,6 +34,21 @@ export default function Home() {
       }).format(new Date(lastUpdatedIso))
     : null;
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Direktori API AI gratis",
+    url: "https://tokengratis.id",
+    inLanguage: "id",
+    numberOfItems: items.length,
+    itemListElement: items.map((p, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: `https://tokengratis.id/provider/${p.slug}`,
+      name: p.name,
+    })),
+  };
+
   return (
     <div className="min-h-dvh pb-12">
       <Navbar />
@@ -57,7 +72,7 @@ export default function Home() {
           </p>
 
           <span className="mt-6 inline-flex items-center gap-1.5 rounded-full border border-grass-line bg-grass-bg px-3 py-1 text-xs font-medium text-grass">
-            <span aria-hidden="true">✅</span> {count} provider · {totalModels} model gratis
+            <span aria-hidden="true" className="inline-block h-2 w-2 rounded-full bg-grass-solid" /> {count} provider · {totalModels} model gratis
           </span>
         </section>
 
@@ -118,6 +133,11 @@ export default function Home() {
             :)
           </p>
         </section>
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
+        />
       </main>
     </div>
   );

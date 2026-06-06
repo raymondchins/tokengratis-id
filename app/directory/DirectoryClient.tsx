@@ -11,7 +11,7 @@ import {
   type SortKey,
 } from "@/lib/filter";
 import type { Modality, ProviderListItem } from "@/lib/types";
-import { DIRECTORY_GRID, DIRECTORY_GRID_COLS, DIRECTORY_PAGE_SIZE } from "@/lib/constants";
+import { DIRECTORY_GRID_COLS, DIRECTORY_PAGE_SIZE } from "@/lib/constants";
 import FilterBar from "@/components/directory/FilterBar";
 import { CategoryTag, ModalityTags, MODALITY_ORDER } from "@/components/directory/Badges";
 import ProviderLogo from "@/components/ProviderLogo";
@@ -59,10 +59,10 @@ function ProviderRow({ p, priority = false }: { p: ProviderListItem; priority?: 
           </div>
         </div>
 
-        {/* Rate limit */}
+        {/* Gratis (free-tier amount) */}
         {p.freeLimit && (
           <div className="flex items-center gap-2 text-sm">
-            <span className="text-mute">Rate limit:</span>
+            <span className="text-mute">Gratis:</span>
             <span className="font-semibold text-grass">{p.freeLimit}</span>
           </div>
         )}
@@ -104,10 +104,10 @@ function ProviderRow({ p, priority = false }: { p: ProviderListItem; priority?: 
           <ModalityTags modalities={p.modalities} />
         </div>
 
-        {/* Rate limit */}
+        {/* Gratis (free-tier amount) */}
         <div className="text-sm font-semibold">
           {p.freeLimit ? (
-            <span className="text-grass"><span className="sr-only">Rate limit gratis: </span>{p.freeLimit}</span>
+            <span className="text-grass"><span className="sr-only">Gratis: </span>{p.freeLimit}</span>
           ) : (
             <span className="text-mute">—</span>
           )}
@@ -214,32 +214,23 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
             </button>
           </div>
         ) : (
-          <>
-            {/* Desktop: scrollable grid with header — hidden on mobile */}
-            <div className="hidden md:block overflow-x-auto">
-              {/* Header row — aria-hidden; tiap row adalah satu link */}
-              <div
-                aria-hidden="true"
-                className={`${DIRECTORY_GRID} py-3 text-[11px] font-semibold uppercase tracking-wider text-mute`}
-              >
-                <span>Provider</span>
-                <span>Kemampuan</span>
-                <span>Rate limit</span>
-                <span>Catatan</span>
-                <span className="text-right">Aksi</span>
-              </div>
-              {pageItems.map((p, i) => (
-                <ProviderRow key={p.slug} p={p} priority={current === 1 && i < 3} />
-              ))}
+          <div className="overflow-x-auto">
+            {/* Desktop header row — aria-hidden, hidden below md; tiap row adalah satu link.
+                ProviderRow sendiri yang switch mobile-card vs desktop-grid responsif. */}
+            <div
+              aria-hidden="true"
+              className={`hidden md:grid ${DIRECTORY_GRID_COLS} py-3 text-[11px] font-semibold uppercase tracking-wider text-mute`}
+            >
+              <span>Provider</span>
+              <span>Kemampuan</span>
+              <span>Gratis</span>
+              <span>Catatan</span>
+              <span className="text-right">Aksi</span>
             </div>
-
-            {/* Mobile: stacked cards — hidden on md+ */}
-            <div className="md:hidden">
-              {pageItems.map((p, i) => (
-                <ProviderRow key={p.slug} p={p} priority={current === 1 && i < 3} />
-              ))}
-            </div>
-          </>
+            {pageItems.map((p, i) => (
+              <ProviderRow key={p.slug} p={p} priority={current === 1 && i < 3} />
+            ))}
+          </div>
         )}
       </div>
 

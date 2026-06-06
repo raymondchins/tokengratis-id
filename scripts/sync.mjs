@@ -13,7 +13,7 @@
 // Anti-halusinasi: tiap adapter cuma mindahin field yang EKSPLISIT ada di
 // sumbernya. Merge = gap-fill by priority (scripts/lib/merge.mjs). Ga nebak.
 
-import { writeFileSync, mkdirSync, readFileSync, existsSync } from "node:fs";
+import { writeFileSync, mkdirSync, readFileSync, existsSync, readdirSync, unlinkSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -48,6 +48,7 @@ async function downloadLogos(providers) {
       try {
         const r = await fetch(
           `https://www.google.com/s2/favicons?sz=128&domain=${p.domain}`,
+          { signal: AbortSignal.timeout(5000) },
         );
         if (!r.ok) throw new Error(String(r.status));
         const buf = Buffer.from(await r.arrayBuffer());
@@ -178,7 +179,7 @@ async function main() {
   //     model anjlok / 1 provider nyusut drastis → FAIL → push step di CI ga
   //     jalan → last-known-good tetep live. ALLOW_DATA_SHRINK=1 buat override
   //     (mis. sumber emang sengaja ngebuang provider).
-  const diff = snapshotDiff(prevProviders, providers);
+  const diff = snapshotDiff(prevProviders, providers, { minProviders: prevProviders.length ? Math.floor(prevProviders.length * 0.8) : null });
   if (diff.warnings.length)
     console.warn("⚠ Snapshot guard:\n" + diff.warnings.join("\n"));
   if (!diff.ok) {
@@ -205,6 +206,24 @@ async function main() {
   console.log(
     `✓ Wrote ${providers.length} providers (${totalModels} models, ${withLogo} logos, ${multiSource} multi-source) → data/providers.json`,
   );
+
+  // 5. Prune orphan logos (best-effort — ga boleh ngejatuhin run).
+  //    File PNG di LOGO_DIR yang slug-nya ga ada di providers saat ini → delete.
+  try {
+    const activeSlugSet = new Set(providers.map((p) => p.slug));
+    const logoFiles = readdirSync(LOGO_DIR).filter((f) => f.endsWith(".png"));
+    let pruned = 0;
+    for (const file of logoFiles) {
+      const slug = file.slice(0, -4); // strip ".png"
+      if (!activeSlugSet.has(slug)) {
+        unlinkSync(join(LOGO_DIR, file));
+        pruned++;
+      }
+    }
+    if (pruned > 0) console.log(`  · pruned ${pruned} orphan logo(s)`);
+  } catch (e) {
+    console.warn(`  ⚠ logo prune skipped: ${e.message}`);
+  }
 }
 
 main().catch((e) => {

@@ -27,6 +27,9 @@ function modelCount(p) {
  * @param {number}  [opts.maxTotalDropPct=15]    Error if total model count drops > this %.
  * @param {number}  [opts.maxProviderDropPct=40] Error if any single provider's model count drops > this %
  *                                               (only when prev had >= 3 models).
+ * @param {number}  [opts.maxIdChurnPct=50]      Error if a provider's model ids churn > this %
+ *                                               (overlap of prev∩next id sets too low — catches
+ *                                               same-count garbage swaps; only when prev had >= 3 ids).
  * @param {number|null} [opts.minProviders=null] Error if next has fewer providers than this.
  *
  * @returns {{
@@ -40,7 +43,8 @@ function modelCount(p) {
  *     nextModels: number,
  *     totalDropPct: number|null,
  *     disappeared: string[],
- *     shrunk: Array<{slug: string, prev: number, next: number, dropPct: number}>
+ *     shrunk: Array<{slug: string, prev: number, next: number, dropPct: number}>,
+ *     churned: Array<{slug: string, overlapPct: number, prevIds: number, nextIds: number}>
  *   }
  * }}
  */
@@ -48,6 +52,7 @@ export function snapshotDiff(prev, next, opts = {}) {
   const {
     maxTotalDropPct = 15,
     maxProviderDropPct = 40,
+    maxIdChurnPct = 50,
     minProviders = null,
   } = opts;
 
@@ -71,6 +76,7 @@ export function snapshotDiff(prev, next, opts = {}) {
         totalDropPct: null,
         disappeared: [],
         shrunk: [],
+        churned: [],
       },
     };
   }
@@ -80,6 +86,17 @@ export function snapshotDiff(prev, next, opts = {}) {
   const prevMap = new Map(prev.map((p) => [p.slug, modelCount(p)]));
   /** @type {Map<string, number>} */
   const nextMap = new Map(next.map((p) => [p.slug, modelCount(p)]));
+
+  // Id sets (by slug) — needed for identity-aware churn detection. Counts alone
+  // can't catch a same-count garbage swap (every model id replaced at equal size).
+  /** @type {Map<string, Set<string>>} slug → set of model ids */
+  const prevIdMap = new Map(
+    prev.map((p) => [p.slug, new Set((p.models ?? []).map((m) => m.id).filter(Boolean))]),
+  );
+  /** @type {Map<string, Set<string>>} */
+  const nextIdMap = new Map(
+    next.map((p) => [p.slug, new Set((p.models ?? []).map((m) => m.id).filter(Boolean))]),
+  );
 
   // ── Stats ─────────────────────────────────────────────────────────────────
   const prevModels = [...prevMap.values()].reduce((a, n) => a + n, 0);
@@ -102,6 +119,25 @@ export function snapshotDiff(prev, next, opts = {}) {
     const dropPct = ((prevCount - nextCount) / prevCount) * 100;
     if (dropPct > maxProviderDropPct) {
       shrunk.push({ slug, prev: prevCount, next: nextCount, dropPct });
+    }
+  }
+
+  // Per-provider id churn (prev had >= 3 ids). Overlap = |prev ∩ next| / |prev|.
+  // Low overlap at a similar count = ids wholesale replaced (likely source corruption,
+  // e.g. a column-shift turning every model id into a date string).
+  const churned = [];
+  const minOverlap = 1 - maxIdChurnPct / 100;
+  for (const [slug, prevIds] of prevIdMap.entries()) {
+    if (!nextIdMap.has(slug)) continue; // already in disappeared
+    if (prevIds.size < 3) continue; // too small — skip noise
+    const nextIds = nextIdMap.get(slug);
+    let kept = 0;
+    for (const id of prevIds) {
+      if (nextIds.has(id)) kept++;
+    }
+    const overlap = kept / prevIds.size;
+    if (overlap < minOverlap) {
+      churned.push({ slug, overlapPct: overlap * 100, prevIds: prevIds.size, nextIds: nextIds.size });
     }
   }
 
@@ -135,6 +171,14 @@ export function snapshotDiff(prev, next, opts = {}) {
     );
   }
 
+  // ── Rule 5: per-provider model id churn (same-count garbage swap) ─────────
+  for (const c of churned) {
+    errors.push(
+      `provider "${c.slug}" model ids churned ${(100 - c.overlapPct).toFixed(1)}% ` +
+        `at same-ish count (overlap ${c.overlapPct.toFixed(1)}%) — possible source corruption`,
+    );
+  }
+
   return {
     ok: errors.length === 0,
     errors,
@@ -147,6 +191,7 @@ export function snapshotDiff(prev, next, opts = {}) {
       totalDropPct,
       disappeared,
       shrunk,
+      churned,
     },
   };
 }
@@ -267,6 +312,33 @@ if (process.argv.includes("--selftest")) {
       // undefined prev
       const r3 = snapshotDiff(undefined, next);
       assert.strictEqual(r3.ok, true, "undefined prev: ok should be true");
+    });
+
+    // ── (e) Same-count garbage swap (ids wholesale replaced) → ok=false ──────
+    run("(e) same-count id churn → ok=false", () => {
+      const prev = [makeProvider("openrouter", ["a", "b", "c", "d", "e"])];
+      // Same slug, same count (5), but every id replaced — overlap 0%.
+      const next = [makeProvider("openrouter", ["z1", "z2", "z3", "z4", "z5"])];
+      const result = snapshotDiff(prev, next);
+      assert.strictEqual(result.ok, false, "ok should be false");
+      assert.ok(
+        result.errors.some((e) => e.includes("openrouter") && e.includes("churned")),
+        `expected churn error for "openrouter", got: ${result.errors.join("; ")}`,
+      );
+      assert.ok(
+        result.stats.churned.some((c) => c.slug === "openrouter"),
+        "churned array should include 'openrouter'",
+      );
+    });
+
+    // ── (f) Normal churn (1 of 5 ids changes) stays ok=true ──────────────────
+    run("(f) normal id churn (1/5 changes) → ok=true", () => {
+      const prev = [makeProvider("openrouter", ["a", "b", "c", "d", "e"])];
+      // One id swapped (e → f): 80% overlap, well above default 50% floor.
+      const next = [makeProvider("openrouter", ["a", "b", "c", "d", "f"])];
+      const result = snapshotDiff(prev, next);
+      assert.strictEqual(result.ok, true, `ok should be true, errors: ${result.errors.join("; ")}`);
+      assert.strictEqual(result.stats.churned.length, 0, "no churn expected");
     });
 
     console.log(`\n${passed + failed} tests — ${passed} passed, ${failed} failed\n`);
