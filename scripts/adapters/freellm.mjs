@@ -39,6 +39,22 @@ import { canonicalSlug, slugify, cleanStr, SOURCES } from "../lib/normalize.mjs"
 
 const SOURCE_URL = "https://freellm.net/models/";
 
+// freellm.net's own model table occasionally carries glossary/legend artifacts
+// as if they were callable models (e.g. a "Abbreviation" row under SiliconFlow —
+// a column-legend entry, NOT a model; it even has its own /models/.../abbreviation/
+// page on their side). Anti-halusinasi: drop these exact non-model tokens.
+// Conservative exact-match set so real single-word models (Codestral, Mixtral,
+// Mistral, Magistral, …) are never affected.
+const JUNK_MODEL_NAMES = new Set([
+  "abbreviation",
+  "abbreviations",
+  "legend",
+  "glossary",
+  "notes",
+  "note",
+  "key",
+]);
+
 // ─── HTTP fetch with redirect-following ──────────────────────────────────────
 
 function fetchHtml(url, depth = 0) {
@@ -151,6 +167,7 @@ function parseRow(trHtml) {
   }
 
   if (!modelName) return null; // skip rows without a model name
+  if (JUNK_MODEL_NAMES.has(modelName.toLowerCase())) return null; // glossary/legend artifact, not a model
 
   // freellm taro "0" di kolom numerik kalau nilainya unknown — itu placeholder,
   // BUKAN "max output 0". Anti-halusinasi: perlakukan "0" sebagai absent.

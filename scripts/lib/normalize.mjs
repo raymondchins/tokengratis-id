@@ -69,6 +69,17 @@ export function cleanStr(v) {
   return t && !SENTINELS.has(t) ? t : null;
 }
 
+/**
+ * Strip inline markdown links → display text only ("[Ollama API](url)" → "Ollama API").
+ * description di-render sebagai prosa plain; sintaks markdown mentah dari sumber
+ * (mis. mnfst data.json kadang nyimpen "[Ollama API](https://…)") ga boleh bocor
+ * ke UI. Null-safe + idempotent. Cuma link inline yang dibersihin, teks lain utuh.
+ */
+export function stripMdLinks(s) {
+  if (s == null) return s;
+  return String(s).replace(/\[([^\]]+)\]\([^)]+\)/g, "$1");
+}
+
 /** Allowlist scheme: cuma http(s). Blok javascript:/data: dll dari sumber. */
 export function safeUrl(u) {
   if (!u) return null;

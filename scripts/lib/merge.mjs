@@ -26,6 +26,7 @@ import {
   slugify,
   ctxNum,
   cleanModality,
+  stripMdLinks,
 } from "./normalize.mjs";
 
 // ─── Priority helpers ─────────────────────────────────────────────────────────
@@ -215,7 +216,9 @@ export function mergeProviders(partialGroups, mergeRunAt) {
     const baseUrl         = gapFill(contributors, "baseUrl");
     // ANTI-HALUSINASI: kalau ga ada sumber yang punya description → null (di-omit
     // dari output), BUKAN "" yang jadi sel kosong.
-    const description     = gapFill(contributors, "description");
+    // stripMdLinks: buang sintaks markdown link mentah dari sumber (mis. mnfst
+    // "[Ollama API](url)") biar prosa bersih di UI.
+    const description     = stripMdLinks(gapFill(contributors, "description"));
     const sourceUpdatedAt = gapFill(contributors, "sourceUpdatedAt");
     const moreModels      = gapFill(contributors, "moreModels");
 
