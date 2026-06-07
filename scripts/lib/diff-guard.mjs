@@ -31,6 +31,11 @@ function modelCount(p) {
  *                                               (overlap of prev∩next id sets too low — catches
  *                                               same-count garbage swaps; only when prev had >= 3 ids).
  * @param {number|null} [opts.minProviders=null] Error if next has fewer providers than this.
+ * @param {number}  [opts.maxDisappeared=1]      Tolerate up to this many disappeared providers WHEN the
+ *                                               catalog otherwise grows (provider count not shrinking AND
+ *                                               total model count within maxTotalDropPct) — normal upstream
+ *                                               churn (a provider renamed/removed, others added). Above this,
+ *                                               or alongside any net shrink, disappearance stays a hard error.
  *
  * @returns {{
  *   ok: boolean,
@@ -54,6 +59,7 @@ export function snapshotDiff(prev, next, opts = {}) {
     maxProviderDropPct = 40,
     maxIdChurnPct = 50,
     minProviders = null,
+    maxDisappeared = 1,
   } = opts;
 
   const errors = [];
@@ -142,10 +148,35 @@ export function snapshotDiff(prev, next, opts = {}) {
   }
 
   // ── Rule 1: disappeared providers ────────────────────────────────────────
-  for (const slug of disappeared) {
-    errors.push(
-      `provider "${slug}" disappeared (was in prev, missing in next)`,
+  // A small number of providers vanishing while the catalog OVERALL grows
+  // (provider count not shrinking AND total model count within maxTotalDropPct)
+  // is normal upstream churn — a provider gets renamed/removed at the source
+  // while others are added (e.g. mistral-codestral dropped, net 26→27 providers).
+  // Demote that to a warning so the nightly run still ships. Mass disappearance
+  // (> maxDisappeared), or ANY disappearance alongside a net provider/model
+  // shrink, stays a hard error. The minProviders floor (Rule 4) independently
+  // backstops mass loss.
+  const totalModelsWithinBound =
+    totalDropPct === null || totalDropPct <= maxTotalDropPct;
+  const disappearanceIsBenignChurn =
+    disappeared.length > 0 &&
+    disappeared.length <= maxDisappeared &&
+    next.length >= prev.length &&
+    totalModelsWithinBound;
+
+  if (disappearanceIsBenignChurn) {
+    warnings.push(
+      `provider${disappeared.length > 1 ? "s" : ""} ` +
+        `${disappeared.map((s) => `"${s}"`).join(", ")} disappeared, but catalog grew ` +
+        `(${prev.length}→${next.length} providers, ${prevModels}→${nextModels} models) — ` +
+        `treating as normal upstream churn`,
     );
+  } else {
+    for (const slug of disappeared) {
+      errors.push(
+        `provider "${slug}" disappeared (was in prev, missing in next)`,
+      );
+    }
   }
 
   // ── Rule 2: total model count drop ───────────────────────────────────────
@@ -339,6 +370,66 @@ if (process.argv.includes("--selftest")) {
       const result = snapshotDiff(prev, next);
       assert.strictEqual(result.ok, true, `ok should be true, errors: ${result.errors.join("; ")}`);
       assert.strictEqual(result.stats.churned.length, 0, "no churn expected");
+    });
+
+    // ── (g) Single provider disappears but catalog grows → ok=true (benign churn) ─
+    run("(g) 1 disappeared + net growth → ok=true (warning, not error)", () => {
+      const prev = [
+        makeProvider("mistral-codestral", ["c1", "c2", "c3"]),
+        makeProvider("openrouter", ["m1", "m2", "m3"]),
+      ];
+      // mistral-codestral removed upstream, but two new providers added → net grows.
+      const next = [
+        makeProvider("openrouter", ["m1", "m2", "m3", "m4"]),
+        makeProvider("groq", ["g1", "g2"]),
+        makeProvider("cerebras", ["x1", "x2"]),
+      ];
+      const result = snapshotDiff(prev, next);
+      assert.strictEqual(result.ok, true, `ok should be true, errors: ${result.errors.join("; ")}`);
+      assert.ok(
+        result.warnings.some((w) => w.includes("mistral-codestral") && w.includes("upstream churn")),
+        `expected benign-churn warning, got: ${result.warnings.join("; ")}`,
+      );
+      assert.ok(
+        result.stats.disappeared.includes("mistral-codestral"),
+        "disappeared array should still record 'mistral-codestral'",
+      );
+    });
+
+    // ── (h) Multiple disappear (> maxDisappeared) even with growth → ok=false ─────
+    run("(h) 2 disappeared exceeds tolerance → ok=false", () => {
+      const prev = [
+        makeProvider("a", ["a1", "a2"]),
+        makeProvider("b", ["b1", "b2"]),
+        makeProvider("c", ["c1", "c2"]),
+      ];
+      // a and b both vanish; one big new provider keeps counts up.
+      const next = [
+        makeProvider("c", ["c1", "c2"]),
+        makeProvider("big", ["n1", "n2", "n3", "n4", "n5", "n6"]),
+      ];
+      const result = snapshotDiff(prev, next, { maxDisappeared: 1 });
+      assert.strictEqual(result.ok, false, "ok should be false (2 disappeared > tolerance)");
+      assert.ok(
+        result.errors.some((e) => e.includes("disappeared")),
+        `expected disappeared errors, got: ${result.errors.join("; ")}`,
+      );
+    });
+
+    // ── (i) 1 disappeared but net provider shrink → ok=false ─────────────────────
+    run("(i) 1 disappeared with net shrink → ok=false", () => {
+      const prev = [
+        makeProvider("a", ["a1", "a2"]),
+        makeProvider("b", ["b1", "b2"]),
+      ];
+      // a vanishes, nothing added → fewer providers → real loss.
+      const next = [makeProvider("b", ["b1", "b2", "b3"])];
+      const result = snapshotDiff(prev, next);
+      assert.strictEqual(result.ok, false, "ok should be false (net provider shrink)");
+      assert.ok(
+        result.errors.some((e) => e.includes("\"a\"") && e.includes("disappeared")),
+        `expected disappeared error for "a", got: ${result.errors.join("; ")}`,
+      );
     });
 
     console.log(`\n${passed + failed} tests — ${passed} passed, ${failed} failed\n`);
