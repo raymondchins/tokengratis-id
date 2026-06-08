@@ -50,3 +50,6 @@ Thumbs.db
 .cache
 .parcel-cache
 .vercel
+
+# Generated repomap (ts-morph; not hand-authored; refresh via npm run repomap)
+.claude/repomap.json
