@@ -5,8 +5,11 @@ import { execSync } from "node:child_process";
 const MAP = ".claude/repomap.json";
 const sh = (c) => { try { return execSync(c).toString().trim(); } catch { return ""; } };
 const currentSha = () => sh("git rev-parse --short HEAD");
+// Count uncommitted source files — any extension the graph indexes (.ts/.tsx
+// plus the .mjs/.cjs/.js pipeline files added below) so a dirty tree triggers
+// a rebuild rather than serving a stale cache.
 const dirtyCount = () =>
-  sh("git status --porcelain").split("\n").filter((l) => /\.(ts|tsx)$/.test(l)).length;
+  sh("git status --porcelain").split("\n").filter((l) => /\.(ts|tsx|mjs|cjs|jsx|js)$/.test(l)).length;
 
 // Feature = first real route segment under app/ (or src/app/), skipping route
 // groups (parens), dynamic segments ([id]) and parallel routes (@slot).
@@ -23,6 +26,11 @@ function featureOf(path) {
 
 function build() {
   const project = new Project({ tsConfigFilePath: "tsconfig.json" });
+  // tsconfig `include` globs usually cover only .ts/.tsx, so build/pipeline
+  // scripts (.mjs/.cjs/.js) are invisible to ts-morph. Add them by path
+  // explicitly — ts-morph parses them regardless of the tsconfig include set —
+  // so their dependency graph (often the most interconnected code) is mapped.
+  project.addSourceFilesAtPaths(["scripts/**/*.mjs", "scripts/**/*.cjs", "scripts/**/*.js", "*.mjs", "*.cjs"]);
   const cwd = process.cwd().replace(/\\/g, "/");
   const rel = (p) => p.replace(cwd + "/", "");
   const files = {}, dependents = {}, features = {};
@@ -31,17 +39,34 @@ function build() {
     const path = rel(sf.getFilePath());
     if (path.includes("node_modules") || path.includes(".next")) continue;
     const exports = [...sf.getExportedDeclarations()].map(
-      ([name, d]) => ({ name, kind: d[0]?.getKindName() ?? "?" })
+      ([name, d]) => ({
+        // getExportedDeclarations() keys a default export as the literal
+        // "default" — fall back to the declaration's own name so --find can
+        // locate default-exported pages/components by their real symbol.
+        name: name === "default" ? (d[0]?.getName?.() ?? "default") : name,
+        kind: d[0]?.getKindName() ?? "?",
+      })
     );
-    const imports = [];
+    // Dependency edges from BOTH static imports and re-export barrels
+    // (`export ... from "./x"`), deduped per file so a module imported twice
+    // (e.g. value + `import type`) counts as one edge.
+    const importSet = new Set();
     for (const imp of sf.getImportDeclarations()) {
       const t = imp.getModuleSpecifierSourceFile();
       if (!t) continue;
       const tp = rel(t.getFilePath());
       if (tp.includes("node_modules")) continue;
-      imports.push(tp);
-      (dependents[tp] ??= []).push(path);
+      importSet.add(tp);
     }
+    for (const exp of sf.getExportDeclarations()) {
+      const t = exp.getModuleSpecifierSourceFile();
+      if (!t) continue;
+      const tp = rel(t.getFilePath());
+      if (tp.includes("node_modules")) continue;
+      importSet.add(tp);
+    }
+    const imports = [...importSet];
+    for (const tp of imports) (dependents[tp] ??= []).push(path);
     files[path] = { exports, imports };
     const feat = featureOf(path);
     if (feat) (features[feat] ??= []).push(path);
@@ -58,16 +83,17 @@ function build() {
   return out;
 }
 
-// Serve cached map; rebuild only if missing, HEAD changed, or schema is old
-// (no `features` key = pre-feature map). Warn (stderr) if working tree dirty.
+// Serve the cached map ONLY when it is provably current: same committed HEAD,
+// known schema (features key present), AND a clean working tree. A dirty tree
+// REBUILDS — build() reads saved files from disk, so queries reflect in-flight
+// edits. Querying mid-edit (before commit) is the tool's highest-value moment,
+// so it must never answer from a pre-edit snapshot.
 function ensureFresh() {
   const sha = currentSha();
   if (existsSync(MAP)) {
     try {
       const cached = JSON.parse(readFileSync(MAP, "utf8"));
-      if (sha && cached.generatedSha === sha && cached.features) {
-        const d = dirtyCount();
-        if (d) console.error(`⚠ repomap: ${d} uncommitted .ts/.tsx file(s) — run \`npm run repomap\` for exact current state`);
+      if (sha && cached.generatedSha === sha && cached.features && dirtyCount() === 0) {
         return cached;
       }
     } catch {}
@@ -92,9 +118,21 @@ if (has("--find")) {
 } else if (has("--relates")) {
   const q = arg("--relates") || "";
   const data = ensureFresh();
-  const key = data.files[q] ? q : Object.keys(data.files).find((k) => k.includes(q));
-  if (!key) console.log(`relates: no file matching "${q}"`);
-  else {
+  const keys = Object.keys(data.files);
+  // Resolve target by exact path → unique basename → unique substring. If a
+  // substring is ambiguous, LIST the candidates instead of silently picking the
+  // first insertion-order match (a wrong-but-confident blast-radius answer).
+  const subs = keys.filter((k) => k.includes(q));
+  const base = keys.filter((k) => k.split("/").pop() === q);
+  const key = data.files[q] ? q : (base.length === 1 ? base[0] : (subs.length === 1 ? subs[0] : null));
+  if (!key) {
+    if (subs.length > 1) {
+      console.log(`relates: "${q}" matched ${subs.length} files — narrow it:`);
+      for (const k of subs) console.log(`  ${k}`);
+    } else {
+      console.log(`relates: no file matching "${q}"`);
+    }
+  } else {
     const f = data.files[key];
     console.log(`relates: ${key}`);
     console.log(`exports (${f.exports.length}): ${f.exports.map((e) => `${e.name}(${e.kind})`).join(", ") || "—"}`);

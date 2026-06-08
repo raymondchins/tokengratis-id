@@ -1,0 +1,4 @@
+# Keep the repomap engine byte-identical across repos (md5 invariant) and shell
+# hooks LF-executable on checkout, regardless of core.autocrlf on Windows.
+scripts/repomap.mjs text eol=lf
+*.sh text eol=lf
