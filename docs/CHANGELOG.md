@@ -138,3 +138,33 @@ tail -10 docs/CHANGELOG.md
 - **`/directory` route removed:** homepage is the directory; `/directory` path dihapus, ItemList JSON-LD pindah ke homepage root.
 - **`sources[]` schema:** field `source` (singular string) diganti `sources[]` (SourceRef array: name/url/syncedAt) — tiap provider catat provenance dari semua adapter yang berkontribusi.
 - **Docs synced:** STATE.md (provider count, 3 sumber, cron ✅, schema sources[]), CHANGELOG.md (batch entries ini), README.md (drop Indonesia-filter framing, fix struktur app/), PROJECT-README.md (drop Supabase reference, note route dormant Resend), CLAUDE.md (Backend row carve-out, sources[] di listing fields).
+
+### 2026-06-10 — Pipeline v2: 4 sumber + enrichment + LLM fallback + rolling baselines (commit `2f7a909`)
+
+**Trigger / context:** Sumber community (mnfst/freellm/cheahjs) ga exhaustive buat free-tier LLM; openrouter live API authoritative buat providernya sendiri + models.dev nyumbuhin metadata teknis yg sering missing. Unstructured sumber (HTML/markdown) rawan markup drift → perlu automated fallback re-parse. Data shrinkage risk → rolling baseline auto-guard.
+
+**Changes:**
+
+**Sumber:**
+- **Sumber ke-4: openrouter live API** — fetch `openrouter.ai/api/v1/models`, filter `:free` only (public, no auth). Emit single provider `openrouter`, authoritative buat model list (post-merge, pangkas ke model live → stale community entry auto-drop). Adapter di `scripts/adapters/openrouter.mjs`.
+- **Enrichment layer (models.dev):** Post-merge, exact-key gap-fill `context`/`maxOutput` dari `api.json` models.dev (cuma metadata teknis, bukan sumber free-tier discovery). Never overwrite existing, append SourceRef, exact-match only. Di `scripts/lib/enrich.mjs` (427 lines). Reduce null-value di listing, improve sort-by-context.
+- **LLM fallback (Claude Haiku):** freellm HTML / cheahjs markdown → kalau regex sanity floor fail (markup drift), re-fetch + re-parse via LLM (verbatim-only prompt, structured JSON output). Dual backend: raw `ANTHROPIC_API_KEY` (API billing) OR headless `claude` CLI via `CLAUDE_CODE_OAUTH_TOKEN` + lokal subscription (kuota Max). Off kalau kedua-duanya absent. Hasil tetap lewat sanity + smoke + diff guard. Di `scripts/lib/llm-fallback.mjs` (683 lines).
+- **Rolling baseline (data/source-baselines.json):** Auto-recalibrate tiap sync sukses, store provider-count/model-count/sanity per sumber. Guard >25% diff → block push. Early warning catastrophic loss.
+
+**Fixes:**
+- **Critical: authoritative-trim openrouter bug** — sebelumnya cari "group pertama di partialGroups" → ambil group mnfst (bukan live API). 19 model openrouter live ke-drop. Fix: capture by-label (find instead of first-match). Lesson appended ke `docs/log.md`.
+
+**CI/Infra:**
+- `.github/workflows/nightly-sync.yml` — commit msg updated, env auth fallback (ANTHROPIC_API_KEY + CLAUDE_CODE_OAUTH_TOKEN secrets), `git add data/` (bukan cuma providers.json → include rolling baseline).
+
+**Data delta:**
+- providers.json: sync timestamp updated, ~26 provider live + openrouter models fresh.
+- source-baselines.json: baru (rolling baseline initialization).
+
+**Test cases (after deploy):**
+1. Nightly cron jalan → providers.json + source-baselines.json di-commit.
+2. `/provider/openrouter` muncul, model list berisi `:free` saja (150+ model).
+3. Sumber lain (anthropic, groq, grok) punya context value dari enrichment (null sebelumnya).
+4. Markup drift fallback: edit freellm/cheahjs HTML structure → sync tetap jalan (LLM rescue) kalau `ANTHROPIC_API_KEY` ada.
+5. Rolling baseline: baseline mencatat baseline sebelumnya, >25% diff block push.
+

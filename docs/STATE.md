@@ -2,7 +2,7 @@
 
 > **Auto-read on demand** — when prompt asks "current state", "what phase", "what's deployed", "what's blocked". Update on every meaningful push.
 >
-> **Last updated:** 2026-06-06
+> **Last updated:** 2026-06-10
 
 ## Project Summary
 
@@ -12,7 +12,7 @@
 
 ## Current phase
 
-**Phase 4+ — Directory live, multi-source, cron aktif.** App jalan: homepage (hero serif + tabel), `/provider/[slug]`. Data dari pipeline `npm run sync` (4 sumber paralel + enrichment models.dev, ~26 provider). Nightly cron live via GitHub Actions. Domain attach ke Vercel sudah dilakukan.
+**Phase 4+ — Directory live, 4-source + enrichment + LLM fallback + rolling baselines.** App jalan: homepage (hero serif + tabel), `/provider/[slug]`. Data dari pipeline `npm run sync` (4 sumber paralel + enrichment models.dev + LLM fallback Claude Haiku + rolling baselines, ~26 provider). Nightly cron live via GitHub Actions. Domain attach ke Vercel sudah dilakukan. LLM fallback (Haiku) aktif kalau `ANTHROPIC_API_KEY` di-set (raw API) ATAU `CLAUDE_CODE_OAUTH_TOKEN` ada (headless CLI).
 
 ## Architecture
 
@@ -66,6 +66,7 @@ Light / paper / neutral ala getaiperks.com. bg `#f1f0e8`, card putih, text `#111
 | 3 | Pipeline aggregator (mnfst JSON, anchor) | ✅ Done |
 | 4 | Nightly cron + auto-rebuild | ✅ Done (GitHub Actions nightly-sync.yml) |
 | 4b | Multi-source (freellm.net + cheahjs) + 3-way merge | ✅ Done (~26 provider) |
+| 4c | Sumber ke-4 (openrouter live API) + enrichment models.dev + LLM fallback + rolling baselines | ✅ Done (2026-06-10) |
 | 5 (opt) | Tambah sumber (amardeeplakshkar/aicredits) | ⏸️ v2 maybe |
 
 Legend: ✅ Complete · 🚧 In dev · ⏸️ Pending · 🗄️ N/A
