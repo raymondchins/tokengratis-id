@@ -12,13 +12,13 @@
 
 ## Current phase
 
-**Phase 4+ — Directory live, multi-source, cron aktif.** App jalan: homepage (hero serif + tabel), `/provider/[slug]`. Data dari pipeline `npm run sync` (3 sumber paralel, ~26 provider). Nightly cron live via GitHub Actions. Domain attach ke Vercel sudah dilakukan.
+**Phase 4+ — Directory live, multi-source, cron aktif.** App jalan: homepage (hero serif + tabel), `/provider/[slug]`. Data dari pipeline `npm run sync` (4 sumber paralel + enrichment models.dev, ~26 provider). Nightly cron live via GitHub Actions. Domain attach ke Vercel sudah dilakukan.
 
 ## Architecture
 
 - **NO database, NO auth.** Satu-satunya server surface: route Resend newsletter dormant di `app/api/subscribe/route.ts` (belum di-mount di UI). Data = `data/providers.json` (read-only, di-generate `scripts/sync.mjs`).
 - Static / SSG (Next.js 16 + Turbopack). `/provider/[slug]` prerendered via `generateStaticParams`. Route `/directory` sudah dihapus (duplikat homepage).
-- **Pipeline:** `scripts/sync.mjs` (`npm run sync`) → fetch **3 sumber paralel** via `scripts/adapters/mnfst.mjs` + `scripts/adapters/freellm.mjs` + `scripts/adapters/cheahjs.mjs` → merge/gap-fill by priority di `scripts/lib/merge.mjs` → smoke test → tulis `data/providers.json`. Idempotent.
+- **Pipeline:** `scripts/sync.mjs` (`npm run sync`) → fetch **4 sumber paralel** via `scripts/adapters/mnfst.mjs` + `scripts/adapters/freellm.mjs` + `scripts/adapters/cheahjs.mjs` + `scripts/adapters/openrouter.mjs` → merge/gap-fill by priority di `scripts/lib/merge.mjs` → enrich context/maxOutput dari models.dev (`scripts/lib/enrich.mjs`) → smoke test → tulis `data/providers.json`. LLM fallback (`scripts/lib/llm-fallback.mjs`, Claude Haiku) re-parse sumber unstructured yang drift kalau `ANTHROPIC_API_KEY` ada (raw API) ATAU `CLAUDE_CODE_OAUTH_TOKEN` di-set (headless Claude Code, subscription Max). Idempotent.
 - **Nightly cron:** `.github/workflows/nightly-sync.yml` (cron `0 19 * * *`) — auto-commit data + trigger Vercel rebuild.
 
 ## Data model (canonical = `lib/types.ts`)
@@ -46,11 +46,15 @@ Light / paper / neutral ala getaiperks.com. bg `#f1f0e8`, card putih, text `#111
 
 | Source | Format | Adapter | Status |
 |---|---|---|---|
-| mnfst/awesome-free-llm-apis | JSON (`data.json`) | `scripts/adapters/mnfst.mjs` | ✅ **Live, prioritas #1** |
+| mnfst/awesome-free-llm-apis | JSON (`data.json`) | `scripts/adapters/mnfst.mjs` | ✅ **Live, prioritas #1** (non-openrouter) |
 | freellm.net | HTML table (server-rendered) | `scripts/adapters/freellm.mjs` | ✅ Live |
 | cheahjs/free-llm-api-resources | README markdown | `scripts/adapters/cheahjs.mjs` | ✅ Live |
+| openrouter.ai/api/v1/models | JSON live API (no auth) | `scripts/adapters/openrouter.mjs` | ✅ Live (authoritative buat provider `openrouter`, filter `:free`) |
+| models.dev | JSON (`api.json`) — enrichment | `scripts/lib/enrich.mjs` | ✅ Live (gap-fill context/maxOutput post-merge, exact match doang) |
 | amardeeplakshkar/awesome-free-llm-apis | GitHub MD | — | ⏸️ Belum di-ingest |
 | aicredits.dev | llms.txt | — | ⏸️ Belum di-ingest (scope luas) |
+
+**LLM fallback:** `scripts/lib/llm-fallback.mjs` (Claude Haiku) re-parse freellm/cheahjs kalau regex drift di bawah sanity floor — aktif kalau `ANTHROPIC_API_KEY` di-set (repo secret di CI, raw API) ATAU `CLAUDE_CODE_OAUTH_TOKEN` di-set (headless Claude Code, subscription Max). Hasil tetap lewat semua guard.
 
 ## Phase Progress
 

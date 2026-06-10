@@ -27,6 +27,12 @@
 // ─── Konstanta sumber (dipakai adapter + merge untuk prioritas) ────────────────
 
 export const SOURCES = {
+  // Live JSON API OpenRouter. Cuma emit provider "openrouter" — authoritative
+  // buat dirinya sendiri (live API = ground truth). Lihat openrouter.mjs.
+  openrouter: {
+    name: "openrouter.ai/api/v1/models",
+    url: "https://openrouter.ai/api/v1/models",
+  },
   mnfst: {
     name: "mnfst/awesome-free-llm-apis",
     url: "https://github.com/mnfst/awesome-free-llm-apis",
@@ -41,8 +47,17 @@ export const SOURCES = {
   },
 };
 
-/** Urutan prioritas merge (index kecil = menang saat gap-fill scalar field). */
+/**
+ * Urutan prioritas merge (index kecil = menang saat gap-fill scalar field).
+ *
+ * openrouter di TOP priority: adapter-nya CUMA emit provider "openrouter" dan
+ * data live API = ground truth buat provider itu, jadi top priority TIDAK bisa
+ * ngaruh provider lain (mnfst tetap menang buat semua provider non-openrouter).
+ * Buat openrouter sendiri, model :free dari live API menang gap-fill atas entri
+ * komunitas yang mungkin stale.
+ */
 export const SOURCE_PRIORITY = [
+  SOURCES.openrouter.name,
   SOURCES.mnfst.name,
   SOURCES.freellm.name,
   SOURCES.cheahjs.name,

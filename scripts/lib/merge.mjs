@@ -7,8 +7,12 @@
  *   - Lower-priority sources fill in gaps.
  *   - Models are unioned by modelKey(); colliding keys are merged (complement, not override).
  *
- * SOURCE_PRIORITY order (index 0 = highest):
- *   mnfst/awesome-free-llm-apis → freellm.net → cheahjs/free-llm-api-resources
+ * SOURCE_PRIORITY order (index 0 = highest, didefinisikan di normalize.mjs):
+ *   openrouter.ai/api/v1/models → mnfst/awesome-free-llm-apis → freellm.net → cheahjs/free-llm-api-resources
+ *
+ * CATATAN openrouter @ TOP priority: adapter openrouter CUMA emit provider
+ * "openrouter" dan live API = authoritative buat dirinya sendiri, jadi top
+ * priority ga bisa ngaruh provider lain (mnfst tetap menang buat non-openrouter).
  *
  * Called by scripts/sync.mjs:
  *   import { mergeProviders } from './lib/merge.mjs';

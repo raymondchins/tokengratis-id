@@ -1,9 +1,11 @@
 name: nightly-data-sync
 
-# Pipeline aggregator tokengratis.id (PRD §8). Tiap malam re-fetch 3 sumber
-# paralel (mnfst JSON + freellm.net HTML + cheahjs README), normalize via
-# scripts/sync.mjs, commit hasilnya → push ke main → Vercel auto-deploy
-# (rebuild fresh). Maintenance ~nol.
+# Pipeline aggregator tokengratis.id (PRD §8). Tiap malam re-fetch 4 sumber
+# paralel (mnfst JSON + freellm.net HTML + cheahjs README + openrouter live API),
+# gap-fill context/maxOutput dari models.dev, normalize via scripts/sync.mjs,
+# commit hasilnya → push ke main → Vercel auto-deploy (rebuild fresh).
+# Maintenance ~nol. LLM fallback (Claude Haiku) re-parse sumber unstructured
+# yang drift kalau ANTHROPIC_API_KEY di-set sebagai repo secret.
 # Bisa di-trigger manual ("Run workflow").
 #
 # sync.mjs nge-stamp `syncedAt` tiap run, jadi normalnya ADA diff tiap malam →
@@ -58,6 +60,13 @@ jobs:
           # Cron run: inputs kosong → ALLOW_DATA_SHRINK="" → guard ON (aman).
           # Manual run dengan allow_data_shrink=true → ALLOW_DATA_SHRINK="1" → guard bypass.
           ALLOW_DATA_SHRINK: ${{ inputs.allow_data_shrink && '1' || '' }}
+          # LLM fallback (scripts/lib/llm-fallback.mjs) cuma aktif kalau salah satu auth ada:
+          # ANTHROPIC_API_KEY → raw Anthropic API (billing per-token).
+          # CLAUDE_CODE_OAUTH_TOKEN → headless Claude Code via `npx @anthropic-ai/claude-code -p`
+          #   (pakai kuota subscription Max, BUKAN API billing). Set via `claude setup-token`.
+          # Kalau dua-duanya ga di-set → fallback OFF (sync jalan normal).
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
         run: node scripts/sync.mjs
 
       - name: Test pipeline self-tests
@@ -68,13 +77,15 @@ jobs:
 
       - name: Commit + push kalau sumber berubah
         run: |
-          git add data/providers.json public/logos
+          # data/ (bukan cuma providers.json) supaya data/source-baselines.json
+          # ikut ke-commit (rolling baseline last-known-good).
+          git add data/ public/logos
           if git diff --cached --quiet; then
             echo "Sumber ga berubah — skip commit (no rebuild)."
           else
             git config user.name "tokengratis-bot"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git commit -m "chore(data): nightly sync dari mnfst/awesome-free-llm-apis"
+            git commit -m "chore(data): nightly sync (mnfst + freellm + cheahjs + openrouter)"
             git pull --rebase origin main
             git push
             echo "Data berubah — pushed, Vercel akan rebuild."

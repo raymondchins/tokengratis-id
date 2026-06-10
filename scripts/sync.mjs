@@ -9,6 +9,15 @@
 //   1. mnfst/awesome-free-llm-apis  (JSON bersih — prioritas #1)
 //   2. freellm.net                  (HTML table — context/modality lengkap)
 //   3. cheahjs/free-llm-api-resources (README markdown — rate limit presisi)
+//   4. openrouter.ai/api/v1/models  (JSON live API — authoritative buat provider openrouter)
+//
+// Enrichment: setelah merge, gap-fill context/maxOutput dari models.dev
+// (scripts/lib/enrich.mjs) — best-effort, ga pernah throw.
+//
+// LLM fallback: kalau sumber unstructured (freellm HTML / cheahjs markdown) gagal
+// sanity floor DAN ANTHROPIC_API_KEY ada → re-fetch + re-parse via Claude Haiku
+// (scripts/lib/llm-fallback.mjs). Hasil LLM tetap lewat sanity floor + smoke +
+// diff guard. mnfst & openrouter (JSON bersih) ga butuh fallback.
 //
 // Anti-halusinasi: tiap adapter cuma mindahin field yang EKSPLISIT ada di
 // sumbernya. Merge = gap-fill by priority (scripts/lib/merge.mjs). Ga nebak.
@@ -20,9 +29,12 @@ import { dirname, join } from "node:path";
 import { fetchProviders as fetchMnfst } from "./adapters/mnfst.mjs";
 import { fetchProviders as fetchFreellm } from "./adapters/freellm.mjs";
 import { fetchProviders as fetchCheahjs } from "./adapters/cheahjs.mjs";
+import { fetchProviders as fetchOpenRouter } from "./adapters/openrouter.mjs";
 import { mergeProviders } from "./lib/merge.mjs";
+import { enrichFromModelsDev } from "./lib/enrich.mjs";
+import { llmParseSource, llmBackendAvailable } from "./lib/llm-fallback.mjs";
 import { snapshotDiff } from "./lib/diff-guard.mjs";
-import { checkSourceFloor } from "./lib/source-sanity.mjs";
+import { checkSourceFloor, updateBaselines } from "./lib/source-sanity.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = join(__dirname, "..", "data", "providers.json");
@@ -34,7 +46,75 @@ const ADAPTERS = [
   { label: "mnfst/awesome-free-llm-apis", fn: fetchMnfst },
   { label: "freellm.net", fn: fetchFreellm },
   { label: "cheahjs/free-llm-api-resources", fn: fetchCheahjs },
+  { label: "openrouter.ai/api/v1/models", fn: fetchOpenRouter },
 ];
+
+// Slug provider yang dipegang otoritatif oleh adapter openrouter — model list-nya
+// dipakai sebagai ground truth (lihat langkah 2c di main()).
+const OPENROUTER_LABEL = "openrouter.ai/api/v1/models";
+
+// Registry buat LLM fallback: cuma sumber UNSTRUCTURED (HTML/markdown) yang
+// regex-nya bisa drift saat markup sumber berubah. mnfst + openrouter = JSON
+// bersih → ga butuh fallback. Tiap entri: { url, format } buat re-fetch + re-parse.
+// `url` = URL mentah yang di-fetch adapter; `format` = hint buat prompt LLM.
+const SOURCE_REGISTRY = {
+  "freellm.net": {
+    url: "https://freellm.net/models/",
+    format: "html",
+  },
+  "cheahjs/free-llm-api-resources": {
+    url: "https://raw.githubusercontent.com/cheahjs/free-llm-api-resources/main/README.md",
+    format: "markdown",
+  },
+};
+
+/**
+ * LLM fallback buat satu sumber unstructured yang gagal sanity floor (atau
+ * adapter-nya throw). Re-fetch URL sumber → llmParseSource() → re-cek sanity
+ * floor pada hasil LLM. Lolos → return ProviderPartial[]; gagal/null → null
+ * (caller skip sumber kayak biasa). TIDAK PERNAH throw.
+ *
+ * Cuma dipanggil kalau process.env.ANTHROPIC_API_KEY ada (di-cek caller).
+ *
+ * @param {string} label  - Nama sumber (key di SOURCE_REGISTRY + SOURCES).
+ * @returns {Promise<Array<Object>|null>}
+ */
+async function tryLlmFallback(label) {
+  const reg = SOURCE_REGISTRY[label];
+  if (!reg) return null; // sumber ini ga di-registry (mis. JSON bersih) → no fallback
+
+  // 1. Re-fetch raw source (llm-fallback ga fetch sendiri — kontraknya).
+  let raw;
+  try {
+    const res = await fetch(reg.url, { signal: AbortSignal.timeout(20_000) });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    raw = await res.text();
+  } catch (e) {
+    console.warn(`  ⚠ LLM fallback ${label}: re-fetch gagal (${e.message}) — skip.`);
+    return null;
+  }
+
+  // 2. Re-parse via Claude Haiku (anti-halusinasi prompt + structured output).
+  const partials = await llmParseSource({
+    sourceName: label,
+    url: reg.url,
+    format: reg.format,
+    raw,
+  });
+  if (!partials || partials.length === 0) return null; // null = skip (warn sudah dari llm-fallback)
+
+  // 3. Hasil LLM HARUS tetap lolos sanity floor — ga ada bypass guard.
+  const provCount = partials.length;
+  const modelCount = partials.reduce((a, p) => a + (p.models?.length || 0), 0);
+  const floor = checkSourceFloor(label, provCount, modelCount);
+  if (!floor.ok) {
+    console.warn(`  ⚠ LLM fallback ${label} masih di bawah sanity floor: ${floor.message} — skip.`);
+    return null;
+  }
+
+  console.log(`  ✓ LLM fallback rescued ${label}: ${provCount} provider, ${modelCount} model`);
+  return partials;
+}
 
 /** Download favicon tiap provider ke public/logos/<slug>.png. Gagal → logo null (UI fallback flag/globe). */
 async function downloadLogos(providers) {
@@ -137,8 +217,42 @@ async function main() {
   }
 
   // 1. Fetch semua sumber paralel. Sumber gagal → skip (jangan jatohin pipeline).
+  //    `acceptedCounts` nyimpen count per-source yang LOLOS (buat updateBaselines
+  //    di langkah 5). `okLabels` = set label yang masuk merge (buat authoritative
+  //    openrouter-models step di langkah 2c).
   const settled = await Promise.allSettled(ADAPTERS.map((a) => a.fn()));
   const partialGroups = [];
+  const acceptedCounts = {};
+  const okLabels = new Set();
+  // Backend LLM fallback: "api" (ANTHROPIC_API_KEY) / "cli" (CLAUDE_CODE_OAUTH_TOKEN
+  // atau login `claude` CLI lokal — kuota subscription) / null (fallback off).
+  const llmBackend = llmBackendAvailable();
+  const hasLlmKey = !!llmBackend;
+  if (hasLlmKey) console.log(`  · LLM fallback siap (backend: ${llmBackend})`);
+
+  // Sumber yang gagal (fetch error / parse collapse di bawah floor) dan
+  // PUNYA entri di SOURCE_REGISTRY → kandidat LLM fallback. Dikumpulin dulu,
+  // di-rescue serial setelah loop (re-fetch + API call, ga perlu paralel ketat).
+  const fallbackCandidates = [];
+
+  // Id model live dari adapter openrouter — ground truth buat langkah 2c.
+  // WAJIB di-capture by-label DI SINI: sumber komunitas (mnfst dkk) juga punya
+  // entri slug "openrouter", jadi nyari "group pertama yang ada openrouter" di
+  // partialGroups bakal dapet punya mnfst (urutan adapter), bukan live API.
+  let openrouterLiveIds = null;
+
+  /** Catat partial group yang lolos: push ke merge + simpan count + tandai label. */
+  function accept(label, value, provCount, modelCount) {
+    console.log(`  ✓ ${label}: ${provCount} provider, ${modelCount} model`);
+    partialGroups.push(value);
+    acceptedCounts[label] = { providers: provCount, models: modelCount };
+    okLabels.add(label);
+    if (label === OPENROUTER_LABEL) {
+      const orp = value.find((p) => p.slug === "openrouter");
+      openrouterLiveIds = new Set((orp?.models || []).map((m) => m.id));
+    }
+  }
+
   settled.forEach((res, i) => {
     const label = ADAPTERS[i].label;
     if (res.status === "fulfilled" && Array.isArray(res.value)) {
@@ -150,15 +264,29 @@ async function main() {
       const floor = checkSourceFloor(label, provCount, modelCount);
       if (!floor.ok) {
         console.warn(`  ⚠ ${label} di-SKIP (sanity floor): ${floor.message}`);
+        if (SOURCE_REGISTRY[label] && hasLlmKey) fallbackCandidates.push(label);
         return;
       }
-      console.log(`  ✓ ${label}: ${provCount} provider, ${modelCount} model`);
-      partialGroups.push(res.value);
+      accept(label, res.value, provCount, modelCount);
     } else {
       const reason = res.status === "rejected" ? res.reason : "bukan array";
       console.warn(`  ⚠ ${label} di-SKIP: ${reason?.message || reason}`);
+      if (SOURCE_REGISTRY[label] && hasLlmKey) fallbackCandidates.push(label);
     }
   });
+
+  // 1b. LLM fallback buat sumber unstructured yang gagal — re-fetch + re-parse
+  //     via Claude Haiku, lalu re-cek sanity floor. Lolos → masuk merge sama
+  //     kayak adapter biasa. Cuma jalan kalau ANTHROPIC_API_KEY ada (di-cek
+  //     waktu ngumpulin fallbackCandidates).
+  for (const label of fallbackCandidates) {
+    const rescued = await tryLlmFallback(label);
+    if (rescued) {
+      const provCount = rescued.length;
+      const modelCount = rescued.reduce((a, p) => a + (p.models?.length || 0), 0);
+      accept(label, rescued, provCount, modelCount);
+    }
+  }
 
   if (partialGroups.length === 0) {
     throw new Error("Semua sumber gagal — ga ada data buat ditulis.");
@@ -167,9 +295,41 @@ async function main() {
   // 2. Merge / dedup (gap-fill by priority). Buang provider tanpa model
   //    (card kosong = useless di direktori; mis. entri "gateway" tanpa daftar model).
   const merged = mergeProviders(partialGroups, mergeRunAt);
+
+  // 2c. Authoritative-models rule buat OpenRouter:
+  //     OpenRouter punya live API yang ngembaliin daftar model :free SEKARANG —
+  //     itu GROUND TRUTH buat dirinya sendiri. Entri model dari sumber komunitas
+  //     (mnfst/freellm/cheahjs) bisa STALE: model yang dulu :free tapi udah ilang
+  //     dari OpenRouter = info salah. Jadi: kalau adapter openrouter sukses run
+  //     ini, daftar model provider "openrouter" yang udah ke-merge di-PANGKAS ke
+  //     HANYA model id yang beneran ada di live API (matching keep field gap-fill,
+  //     stale di-drop). Kalau adapter openrouter GAGAL run ini (okLabels ga punya),
+  //     JANGAN pangkas — biarin last-known-good dari sumber komunitas tetep ada.
+  if (okLabels.has(OPENROUTER_LABEL) && openrouterLiveIds && openrouterLiveIds.size > 0) {
+    const orProvider = merged.find((p) => p.slug === "openrouter");
+    if (orProvider && Array.isArray(orProvider.models)) {
+      const before = orProvider.models.length;
+      orProvider.models = orProvider.models.filter((m) => openrouterLiveIds.has(m.id));
+      orProvider.modelCount = orProvider.models.length;
+      const droppedStale = before - orProvider.models.length;
+      if (droppedStale > 0) {
+        console.log(
+          `  · openrouter: ${droppedStale} model komunitas stale di-drop (live API = ground truth)`,
+        );
+      }
+    }
+  }
+
+  // Buang provider tanpa model (card kosong = useless).
   const dropped = merged.filter((p) => p.modelCount === 0).map((p) => p.slug);
   const providers = merged.filter((p) => p.modelCount > 0);
   if (dropped.length) console.log(`  · drop ${dropped.length} provider 0-model: ${dropped.join(", ")}`);
+
+  // 2b. Enrich: gap-fill context/maxOutput dari models.dev (best-effort, never
+  //     throws). Jalan SEBELUM smoke test biar data yang di-validate = data yang
+  //     udah di-enrich. enrichFromModelsDev mutate in-place + return array sama.
+  const { enrichedCount } = await enrichFromModelsDev(providers);
+  console.log(`  · enrich models.dev: +${enrichedCount} field`);
 
   // 3. Logo (favicon self-host) + smoke test.
   await downloadLogos(providers);
@@ -206,6 +366,12 @@ async function main() {
   console.log(
     `✓ Wrote ${providers.length} providers (${totalModels} models, ${withLogo} logos, ${multiSource} multi-source) → data/providers.json`,
   );
+
+  // 4b. Update rolling baselines (last-known-good) — SETELAH semua guard lulus
+  //     (smoke test + snapshot-diff guard) + providers.json ke-tulis. Cuma
+  //     source yang LOLOS sanity floor run ini yang dicatat (acceptedCounts).
+  //     data/source-baselines.json di-commit bareng providers.json di workflow.
+  updateBaselines(acceptedCounts);
 
   // 5. Prune orphan logos (best-effort — ga boleh ngejatuhin run).
   //    File PNG di LOGO_DIR yang slug-nya ga ada di providers saat ini → delete.
