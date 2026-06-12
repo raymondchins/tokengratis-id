@@ -2,21 +2,21 @@
   "mnfst/awesome-free-llm-apis": {
     "providers": 24,
     "models": 139,
-    "updatedAt": "2026-06-11T21:23:53.429Z"
+    "updatedAt": "2026-06-12T21:03:05.330Z"
   },
   "freellm.net": {
     "providers": 27,
     "models": 176,
-    "updatedAt": "2026-06-11T21:23:53.429Z"
+    "updatedAt": "2026-06-12T21:03:05.330Z"
   },
   "cheahjs/free-llm-api-resources": {
     "providers": 13,
     "models": 149,
-    "updatedAt": "2026-06-11T21:23:53.429Z"
+    "updatedAt": "2026-06-12T21:03:05.330Z"
   },
   "openrouter.ai/api/v1/models": {
     "providers": 1,
     "models": 22,
-    "updatedAt": "2026-06-11T21:23:53.429Z"
+    "updatedAt": "2026-06-12T21:03:05.330Z"
   }
 }
