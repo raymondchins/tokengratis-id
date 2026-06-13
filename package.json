@@ -11,7 +11,7 @@
     "start": "next start",
     "sync": "node scripts/sync.mjs",
     "sync:opensource": "node scripts/sync-opensource.mjs",
-    "repomap": "node scripts/repomap.mjs",
+    "agentmap": "agentmap",
     "test": "node scripts/lib/diff-guard.mjs --selftest && node scripts/lib/source-sanity.mjs --selftest && node scripts/lib/merge.mjs && node scripts/audit-dupes.mjs"
   },
   "dependencies": {
@@ -23,6 +23,7 @@
     "resend": "^6.12.4"
   },
   "devDependencies": {
+    "@raymondchins/agentmap": "^0.2.2",
     "@tailwindcss/postcss": "^4.0.0",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",

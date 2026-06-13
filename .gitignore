@@ -51,7 +51,7 @@ Thumbs.db
 .parcel-cache
 .vercel
 
-# Generated repomap (ts-morph; not hand-authored; refresh via npm run repomap)
-.claude/repomap.json
+# Generated agentmap (ts-morph; not hand-authored; refresh via npm run agentmap)
+.claude/agentmap.json
 graphify-out/
 .claude/launch.json
