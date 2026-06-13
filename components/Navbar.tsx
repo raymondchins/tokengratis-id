@@ -1,10 +1,11 @@
 import { Link } from "next-view-transitions";
 import Spark from "./Spark";
 
-const NAV_LINKS = [
+const NAV_LINKS: { label: string; href: string; badge?: string }[] = [
   { label: "Direktori", href: "/#direktori" },
   { label: "Cara kerja", href: "/#cara-kerja" },
   { label: "Sumber", href: "/#sumber" },
+  { label: "Open source", href: "/opensource", badge: "NEW" },
 ];
 
 export default function Navbar() {
@@ -28,9 +29,14 @@ export default function Navbar() {
             <Link
               key={l.href}
               href={l.href}
-              className="rounded-sm transition-colors hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/60"
+              className="inline-flex items-center gap-1.5 rounded-sm transition-colors hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/60"
             >
               {l.label}
+              {l.badge && (
+                <span className="inline-flex items-center rounded-full border border-grass-line bg-grass-bg px-1.5 py-0.5 text-[9px] font-semibold uppercase leading-none tracking-wide text-grass">
+                  {l.badge}
+                </span>
+              )}
             </Link>
           ))}
         </div>
