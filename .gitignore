@@ -53,3 +53,5 @@ Thumbs.db
 
 # Generated repomap (ts-morph; not hand-authored; refresh via npm run repomap)
 .claude/repomap.json
+graphify-out/
+.claude/launch.json
