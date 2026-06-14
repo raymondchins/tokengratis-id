@@ -1,7 +1,8 @@
 /**
  * Adapter: cheahjs/free-llm-api-resources
  * Source: https://raw.githubusercontent.com/cheahjs/free-llm-api-resources/main/README.md
- * License: MIT
+ * Upstream license: none declared (all rights reserved) — we re-surface only the
+ *   factual data (rate limits, context windows) with attribution + a link back.
  *
  * Parses the README markdown to extract free-tier LLM API providers.
  * Only ingests the "Free Providers" section — the "Providers with trial credits"

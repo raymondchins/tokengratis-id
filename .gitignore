@@ -5,11 +5,10 @@
 .env
 .env.local
 .env.*.local
+!.env.example
 
-# Claude Code workspace state
-.claude/memory/
-.claude/scheduled_tasks.lock
-.claude/settings.local.json
+# Claude Code workspace state (local dev only — not for public repo)
+.claude/
 
 # Dependencies
 node_modules/
@@ -51,7 +50,5 @@ Thumbs.db
 .parcel-cache
 .vercel
 
-# Generated agentmap (ts-morph; not hand-authored; refresh via npm run agentmap)
-.claude/agentmap.json
+# Generated code maps (not hand-authored)
 graphify-out/
-.claude/launch.json

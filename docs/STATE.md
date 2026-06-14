@@ -7,7 +7,7 @@
 ## Project Summary
 
 **What:** Directory free tier & free credits API LLM, auto-aggregated dari sumber komunitas. **Aggregator transparan (bukan verifier)**, anti-halusinasi, maintenance ~nol. Audience Indonesia. Social/branding project, bukan startup.
-**Deploy target:** https://tokengratis.id (status: 🚧 domain pending attach)
+**Deploy target:** https://tokengratis.id (status: ✅ live, domain attached)
 **Vercel fallback:** https://tokengratis-id.vercel.app
 
 ## Current phase
@@ -35,8 +35,7 @@ Light / paper / neutral ala getaiperks.com. bg `#f1f0e8`, card putih, text `#111
 
 | Resource | Status | Location |
 |---|---|---|
-| GitHub repo `tokengratis-id` | ✅ Live (private) | github.com/raymondchins/tokengratis-id |
-| GitHub PAT | ✅ Live | `~/.claude/.credentials.shared` → `GITHUB_PAT` |
+| GitHub repo `tokengratis-id` | ✅ Live (public) | github.com/raymondchins/tokengratis-id |
 | Vercel project | ✅ Live | tokengratis-id.vercel.app |
 | Custom domain `tokengratis.id` | ✅ Live | attached di Vercel |
 | Nightly cron | ✅ Live | `.github/workflows/nightly-sync.yml` |

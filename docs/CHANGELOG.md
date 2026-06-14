@@ -1,8 +1,8 @@
 # tokengratis.id — Changelog
 
-> **APPEND-ONLY.** Use bash `>>` heredoc to add entries. NEVER edit existing entries (git is revision history).
+> **APPEND-ONLY.** Add new entries at the bottom; don't edit existing ones (git is the revision history).
 >
-> **Format:** `### YYYY-MM-DD — Title (commit \`SHA\`)`. Append directly to this file — no sandbox copy needed (Code tab desktop writes to local NTFS).
+> **Format:** `### YYYY-MM-DD — Title (commit \`SHA\`)`.
 
 ---
 
@@ -33,7 +33,7 @@ tail -10 docs/CHANGELOG.md
 
 ### 2026-06-01 — Audit fixes: perf + a11y + correctness + security + SEO (P0–P2)
 
-**Trigger:** 5-agent parallel audit (perf/correctness/a11y-seo/code-quality/security). Fixing all tiers.
+**Trigger:** Full audit (perf / correctness / a11y-seo / code-quality / security). Fixing all tiers.
 
 **Perf:**
 - Self-host favicons — `sync.mjs` download ke `public/logos/<slug>.png` (23/24), UI pakai path lokal + `width/height` (no more 24 third-party requests, no CLS, no Google privacy leak).
@@ -82,7 +82,7 @@ tail -10 docs/CHANGELOG.md
 
 ### 2026-06-01 — Directory v1: light/paper redesign + mnfst data re-architecture
 
-**Trigger / context:** Iterasi desain ke arah getaiperks.com (light/paper, serif, tabel list). Pas implement ketahuan masalah data: schema lama (CC/HP/akses-Indonesia/freeQuota) bikin "Unknown" bertaburan karena ga ada sumber yang track field itu. Riset sumber (3 agent paralel) → pivot.
+**Trigger / context:** Iterasi desain ke arah getaiperks.com (light/paper, serif, tabel list). Pas implement ketahuan masalah data: schema lama (CC/HP/akses-Indonesia/freeQuota) bikin "Unknown" bertaburan karena ga ada sumber yang track field itu. Riset sumber → pivot.
 
 **Changes:**
 - **Desain:** dark/oren → **light/paper/neutral** (token remap `globals.css`). Font: Inter (body) + Georgia serif (heading). Accent hijau (`grass`) + ungu (`grape`). Oren di-pause.

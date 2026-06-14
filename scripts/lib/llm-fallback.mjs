@@ -482,7 +482,8 @@ export async function llmParseSource({ sourceName, url, format, raw }) {
 // ─── Self-test CLI mode ────────────────────────────────────────────────────────
 // Jalankan: node scripts/lib/llm-fallback.mjs --selftest
 // JANGAN tambahkan ke npm test — CI tidak punya ANTHROPIC_API_KEY.
-// Verifikasi lokal: set -a; source ~/.claude/.credentials.shared; set +a; node scripts/lib/llm-fallback.mjs --selftest
+// Verifikasi lokal: set ANTHROPIC_API_KEY (atau CLAUDE_CODE_OAUTH_TOKEN) di env dulu,
+// mis. `set -a; source .env; set +a`, lalu: node scripts/lib/llm-fallback.mjs --selftest
 
 const IS_MAIN =
   process.argv[1] &&

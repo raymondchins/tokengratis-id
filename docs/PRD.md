@@ -16,7 +16,7 @@ Ini proyek komunitas / branding. **Bukan** produk yang dimonetisasi, bukan start
 
 ---
 
-## 2. Prinsip inti (WAJIB dipegang Claude Code)
+## 2. Prinsip inti (non-negotiable)
 
 **Situs ini AGGREGATOR, bukan VERIFIER.**
 
@@ -130,6 +130,15 @@ Status akses-per-provider dari Indonesia **DIBUANG** sebagai field/badge — ZER
 **Cross-ref (markdown only — belum di-ingest, butuh scraping):** cheahjs/free-llm-api-resources, amardeeplakshkar/awesome-free-llm-apis, aicredits.dev (llms.txt, scope startup-credits lebih luas).
 
 Verdict riset: CC-required / phone-required / akses-Indonesia **ga pernah** jadi field terstruktur di sumber manapun → ga di-model. Yang reliable: provider, model, context, modality, rate limit, signup url.
+
+**Lisensi & atribusi sumber (penting buat redistribusi):**
+
+- Yang di-redistribusi cuma **fakta** (nama provider, context window, rate limit, signup URL) — bukan teks kurasi sumber — selalu dengan **atribusi + link balik** ke sumber asli (lihat `components/Footer.tsx` + `sources[]` provenance per provider). Fakta teknis pada dasarnya tidak hak-cipta-able; tetap kita kredit penuh.
+- `mnfst/awesome-free-llm-apis` — **CC0-1.0** (public domain). Anchor source, paling bebas.
+- `cheahjs/free-llm-api-resources` — **no license** (default all-rights-reserved). Cuma fakta (rate limit, context) yang di-surface ulang dengan atribusi; ga nyalin prosa/kurasinya.
+- `freellm.net` — ToS-nya melarang scraping. Adapter HTML tetap dipakai (datanya juga udah live di situs publik), tapi ini **judgment call sadar** pemilik proyek, didokumentasikan di sini. Kalau sumber minta turun → drop adapternya (`scripts/adapters/freellm.mjs`, lepas dari `scripts/sync.mjs`).
+- `openrouter.ai/api/v1/models` — API publik tanpa auth; dipakai sebagaimana mestinya (kita directory yang nunjuk KE openrouter, bukan layanan saingan).
+- `models.dev` (`api.json`) — enrichment metadata teknis (context/maxOutput) doang, bukan sumber discovery.
 
 ---
 

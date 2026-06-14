@@ -1,15 +1,14 @@
 # tokengratis.id — Project Instructions
 
-> **Auto-loaded every Claude Code session in this repo.**
->
-> Universal rules + working principles live at `~/.claude/CLAUDE.md` (auto-loaded baseline) and `~/.claude/playbook/` (on-demand reference). This file = project-specific only.
+> Project-specific conventions for working in this repo (handy for both human
+> contributors and AI coding assistants). Read alongside `README.md` (setup) and
+> `CONTRIBUTING.md` (how to add a source).
 
-## Read on session start
+## Read first
 
-1. `~/.claude/CLAUDE.md` (auto-loaded — baseline rules).
-2. This file (auto-loaded — project specifics).
-3. `docs/PRD.md` (the spec — read before any feature work).
-4. `docs/STATE.md` (on-demand — current state, phase, sources wired, blockers).
+1. This file — project conventions + the core principle.
+2. `docs/PRD.md` — the spec (read before any feature work).
+3. `docs/STATE.md` — current state, phase, sources wired, blockers (on demand).
 
 ## What this is
 
@@ -51,7 +50,7 @@ Layout: floating pill navbar → hero serif + 2 tombol → tabel list langsung (
 
 ## Live URLs
 
-- **Canonical:** https://tokengratis.id (domain udah disiapin Ray — attach di Vercel)
+- **Canonical:** https://tokengratis.id
 - **Vercel fallback:** https://tokengratis-id.vercel.app
 
 ## Data sources (PRD §10)
@@ -89,6 +88,6 @@ Semua field di atas BENERAN ada di sumber → **zero "Unknown"**. Field absent g
 
 No automated tests yet — verify via Vercel preview + click-through. Pipeline harus punya smoke test: parse sumber → assert tiap entry punya `source` + `synced_at`, ga ada field yang di-infer.
 
-## Push pattern
+## Contributing
 
-Default: feature branch + PR + Vercel preview (per `~/.claude/CLAUDE.md` push routing rule). UI-only → local preview, no PR. Direct to main ONLY kalau Ray bilang "langsung ke main".
+See `CONTRIBUTING.md` for how to add a data source and the house rules (aggregator-not-verifier, extract-or-null, zero "Unknown"). Open a PR against `main`; CI runs typecheck + build + pipeline self-tests.

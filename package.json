@@ -2,6 +2,14 @@
   "name": "tokengratis-id",
   "version": "0.1.0",
   "private": true,
+  "description": "Aggregator direktori free-tier & free-credit LLM API (audience Indonesia) — transparan, bukan verifier.",
+  "license": "MIT",
+  "author": "Raymond Chin",
+  "homepage": "https://tokengratis.id",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raymondchins/tokengratis-id"
+  },
   "engines": {
     "node": ">=20.9.0"
   },
@@ -23,7 +31,7 @@
     "resend": "^6.12.4"
   },
   "devDependencies": {
-    "@raymondchins/agentmap": "^0.2.2",
+    "@raymondchins/agentmap": "^0.2.3",
     "@tailwindcss/postcss": "^4.0.0",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
