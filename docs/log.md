@@ -73,3 +73,4 @@ _(record major architecture / API contract / schema choices with rationale)_
 - **Project-specific learning** → write here as the next-numbered entry.
 - **Decision made** → append to Key Technical Decisions with date + rationale.
 - **State change** (phase shift, source added/removed, blocker change) → update `STATE.md`, not here.
+- WHY 2026-06-18: accept upstream contraction 27→20 providers (force ALLOW_DATA_SHRINK once) — verified 8 providers genuinely delisted by ALL sources 2 days running; mnfst clean JSON confirms not a parse flake. Aggregator mirrors sources; guard was preserving stale entries. Floor kept at 21.
