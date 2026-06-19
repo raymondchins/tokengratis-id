@@ -11,9 +11,9 @@
       "homepage": null,
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
-      "stars": 1201,
+      "stars": 1202,
       "forks": 1144,
-      "openIssues": 360,
+      "openIssues": 361,
       "license": null,
       "topics": [
         "opensid",
@@ -34,7 +34,7 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 822,
+      "stars": 823,
       "forks": 257,
       "openIssues": 1,
       "license": "MIT",
@@ -54,7 +54,7 @@
       "homepage": "https://jokoui.web.id",
       "description": "Free Open Source Tailwind CSS Component for Sat-set Developers with Zero Configuration, Installation, and Setup",
       "language": "TypeScript",
-      "stars": 405,
+      "stars": 406,
       "forks": 26,
       "openIssues": 8,
       "license": "MIT",
@@ -81,7 +81,7 @@
       "homepage": null,
       "description": "A simple, modern GUI for ADB and Fastboot",
       "language": "TypeScript",
-      "stars": 317,
+      "stars": 316,
       "forks": 36,
       "openIssues": 12,
       "license": "MIT",
@@ -106,9 +106,9 @@
       "homepage": "https://omni.weekndlabs.com",
       "description": "The Context OS for Autonomous AI Agents. Distill terminal noise into pure semantic signal, stop agent hallucinations, and cut token costs by up to 90%.",
       "language": "Rust",
-      "stars": 272,
-      "forks": 26,
-      "openIssues": 0,
+      "stars": 275,
+      "forks": 27,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "ai-agents",
@@ -128,7 +128,7 @@
         "token-savings"
       ],
       "archived": false,
-      "pushedAt": "2026-06-15T14:06:43Z",
+      "pushedAt": "2026-06-19T09:11:59Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -142,9 +142,9 @@
       "homepage": "https://demo.erdbuilderpro.com",
       "description": "ERD Builder Pro is a professional-grade, high-performance web application designed for developers and database architects to build, document, and visualize complex data structures. Built with a modular architecture and modern tech stack, it offers a seamless experience for database design and technical documentation.",
       "language": "TypeScript",
-      "stars": 144,
-      "forks": 27,
-      "openIssues": 0,
+      "stars": 145,
+      "forks": 28,
+      "openIssues": 1,
       "license": null,
       "topics": [
         "coding",
@@ -171,9 +171,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 139,
+      "stars": 140,
       "forks": 31,
-      "openIssues": 34,
+      "openIssues": 35,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -207,11 +207,11 @@
       "language": "Java",
       "stars": 132,
       "forks": 97,
-      "openIssues": 1,
+      "openIssues": 2,
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-06-10T22:42:42Z",
+      "pushedAt": "2026-06-19T11:22:40Z",
       "createdAt": "2018-08-06T13:38:19Z"
     },
     {
@@ -322,16 +322,16 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 60,
+      "stars": 62,
       "forks": 21,
-      "openIssues": 1,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [
         "ai",
         "airouter"
       ],
       "archived": false,
-      "pushedAt": "2026-06-17T06:11:55Z",
+      "pushedAt": "2026-06-19T19:19:20Z",
       "createdAt": "2026-05-31T09:02:50Z"
     },
     {
@@ -382,6 +382,26 @@
       "createdAt": "2025-05-26T04:42:45Z"
     },
     {
+      "slug": "raymondchins/agentmap",
+      "fullName": "raymondchins/agentmap",
+      "name": "agentmap",
+      "owner": "raymondchins",
+      "ownerUrl": "https://github.com/raymondchins",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
+      "url": "https://github.com/raymondchins/agentmap",
+      "homepage": null,
+      "description": "The repo map your coding agent is forced to use — ~98% fewer tokens (up to 99.9% per task) to understand a TS/JS codebase. PageRank hubs, Aider-style symbol ranking, token-budgeted digest, --any router, wired into the agent loop.",
+      "language": "JavaScript",
+      "stars": 38,
+      "forks": 10,
+      "openIssues": 1,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-06-16T04:08:21Z",
+      "createdAt": "2026-06-13T11:29:36Z"
+    },
+    {
       "slug": "ilhamrisky/tedi",
       "fullName": "IlhamriSKY/TEDI",
       "name": "TEDI",
@@ -414,28 +434,8 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-06-18T11:36:31Z",
+      "pushedAt": "2026-06-19T18:34:18Z",
       "createdAt": "2026-05-13T00:00:22Z"
-    },
-    {
-      "slug": "raymondchins/agentmap",
-      "fullName": "raymondchins/agentmap",
-      "name": "agentmap",
-      "owner": "raymondchins",
-      "ownerUrl": "https://github.com/raymondchins",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
-      "url": "https://github.com/raymondchins/agentmap",
-      "homepage": null,
-      "description": "The repo map your coding agent is forced to use — ~98% fewer tokens (up to 99.9% per task) to understand a TS/JS codebase. PageRank hubs, Aider-style symbol ranking, token-budgeted digest, --any router, wired into the agent loop.",
-      "language": "JavaScript",
-      "stars": 37,
-      "forks": 9,
-      "openIssues": 1,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-06-16T04:08:21Z",
-      "createdAt": "2026-06-13T11:29:36Z"
     },
     {
       "slug": "firewalker06/tycho",
@@ -454,7 +454,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-06-18T05:07:56Z",
+      "pushedAt": "2026-06-19T09:54:03Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -572,7 +572,7 @@
         "windows"
       ],
       "archived": false,
-      "pushedAt": "2026-06-18T12:17:50Z",
+      "pushedAt": "2026-06-19T03:19:44Z",
       "createdAt": "2026-05-23T05:37:35Z"
     },
     {
@@ -586,9 +586,9 @@
       "homepage": "https://bansos.dev",
       "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
       "language": "Svelte",
-      "stars": 21,
+      "stars": 22,
       "forks": 3,
-      "openIssues": 3,
+      "openIssues": 5,
       "license": "MIT",
       "topics": [
         "bansos",
@@ -603,7 +603,7 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-06-18T17:43:47Z",
+      "pushedAt": "2026-06-19T19:07:12Z",
       "createdAt": "2026-06-11T13:28:54Z"
     },
     {
@@ -743,6 +743,40 @@
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
+      "slug": "codecoradev/uteke",
+      "fullName": "codecoradev/uteke",
+      "name": "uteke",
+      "owner": "codecoradev",
+      "ownerUrl": "https://github.com/codecoradev",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
+      "url": "https://github.com/codecoradev/uteke",
+      "homepage": "https://codecora.dev",
+      "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
+      "language": "Rust",
+      "stars": 13,
+      "forks": 1,
+      "openIssues": 1,
+      "license": "Apache-2.0",
+      "topics": [
+        "ai",
+        "cli",
+        "cli-tool",
+        "embeddings",
+        "hnsw",
+        "local-first",
+        "memory",
+        "onnx",
+        "onnxruntime",
+        "rust",
+        "semantic-search",
+        "sqlite",
+        "vector-database"
+      ],
+      "archived": false,
+      "pushedAt": "2026-06-19T05:15:04Z",
+      "createdAt": "2026-05-29T00:27:31Z"
+    },
+    {
       "slug": "rizukirr/numc",
       "fullName": "rizukirr/numc",
       "name": "numc",
@@ -805,40 +839,6 @@
       "createdAt": "2026-04-29T18:48:11Z"
     },
     {
-      "slug": "codecoradev/uteke",
-      "fullName": "codecoradev/uteke",
-      "name": "uteke",
-      "owner": "codecoradev",
-      "ownerUrl": "https://github.com/codecoradev",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
-      "url": "https://github.com/codecoradev/uteke",
-      "homepage": "https://codecora.dev",
-      "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
-      "language": "Rust",
-      "stars": 12,
-      "forks": 1,
-      "openIssues": 15,
-      "license": "Apache-2.0",
-      "topics": [
-        "ai",
-        "cli",
-        "cli-tool",
-        "embeddings",
-        "hnsw",
-        "local-first",
-        "memory",
-        "onnx",
-        "onnxruntime",
-        "rust",
-        "semantic-search",
-        "sqlite",
-        "vector-database"
-      ],
-      "archived": false,
-      "pushedAt": "2026-06-18T16:24:23Z",
-      "createdAt": "2026-05-29T00:27:31Z"
-    },
-    {
       "slug": "rahmanef63/si-coder-agent",
       "fullName": "rahmanef63/si-coder-agent",
       "name": "si-coder-agent",
@@ -868,7 +868,7 @@
         "zero-human"
       ],
       "archived": false,
-      "pushedAt": "2026-06-15T04:20:37Z",
+      "pushedAt": "2026-06-19T16:26:22Z",
       "createdAt": "2026-03-18T18:38:41Z"
     },
     {
@@ -922,6 +922,35 @@
       "archived": false,
       "pushedAt": "2026-06-18T16:47:27Z",
       "createdAt": "2026-02-23T13:59:12Z"
+    },
+    {
+      "slug": "fadhilbarkah/diskus",
+      "fullName": "fadhilbarkah/diskus",
+      "name": "diskus",
+      "owner": "fadhilbarkah",
+      "ownerUrl": "https://github.com/fadhilbarkah",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/185883281?v=4",
+      "url": "https://github.com/fadhilbarkah/diskus",
+      "homepage": "https://diskus.pages.dev",
+      "description": "An ultra-lightweight, privacy-first, and self-hosted Disqus alternative",
+      "language": "TypeScript",
+      "stars": 10,
+      "forks": 0,
+      "openIssues": 0,
+      "license": "GPL-3.0",
+      "topics": [
+        "blog-comments",
+        "comment",
+        "comment-system",
+        "comments",
+        "comments-system",
+        "comments-widget",
+        "disqus-alternative",
+        "open-source"
+      ],
+      "archived": false,
+      "pushedAt": "2026-06-18T09:33:23Z",
+      "createdAt": "2026-06-05T18:22:55Z"
     },
     {
       "slug": "ahmadghaisanfad2/absen-kelas",
@@ -1000,26 +1029,6 @@
       "createdAt": "2026-05-23T08:12:20Z"
     },
     {
-      "slug": "muhfauziazhar/nusakit-api",
-      "fullName": "muhfauziazhar/nusakit-api",
-      "name": "nusakit-api",
-      "owner": "muhfauziazhar",
-      "ownerUrl": "https://github.com/muhfauziazhar",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/72305833?v=4",
-      "url": "https://github.com/muhfauziazhar/nusakit-api",
-      "homepage": "https://nusakit.my.id",
-      "description": "🇮🇩 Indonesian Data Validation API — NIK, NPWP, Phone, Rupiah, Bank, Wilayah. Live: nusakit.my.id",
-      "language": "TypeScript",
-      "stars": 8,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-06-13T16:18:08Z",
-      "createdAt": "2026-06-12T01:36:09Z"
-    },
-    {
       "slug": "anandazp/tempa-ui",
       "fullName": "anandazp/tempa-ui",
       "name": "tempa-ui",
@@ -1041,7 +1050,7 @@
         "tailwindcss"
       ],
       "archived": false,
-      "pushedAt": "2026-06-13T03:47:11Z",
+      "pushedAt": "2026-06-19T03:50:38Z",
       "createdAt": "2026-06-04T12:49:01Z"
     },
     {
@@ -1055,7 +1064,7 @@
       "homepage": "https://goigniter.semutdev.my.id",
       "description": "Open Source GOLANG Framework with Codeigniter Flavour",
       "language": "Go",
-      "stars": 7,
+      "stars": 8,
       "forks": 2,
       "openIssues": 0,
       "license": null,
@@ -1067,6 +1076,26 @@
       "archived": false,
       "pushedAt": "2026-06-18T08:31:38Z",
       "createdAt": "2026-01-11T03:16:04Z"
+    },
+    {
+      "slug": "muhfauziazhar/nusakit-api",
+      "fullName": "muhfauziazhar/nusakit-api",
+      "name": "nusakit-api",
+      "owner": "muhfauziazhar",
+      "ownerUrl": "https://github.com/muhfauziazhar",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/72305833?v=4",
+      "url": "https://github.com/muhfauziazhar/nusakit-api",
+      "homepage": "https://nusakit.my.id",
+      "description": "🇮🇩 Indonesian Data Validation API — NIK, NPWP, Phone, Rupiah, Bank, Wilayah. Live: nusakit.my.id",
+      "language": "TypeScript",
+      "stars": 8,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-06-13T16:18:08Z",
+      "createdAt": "2026-06-12T01:36:09Z"
     },
     {
       "slug": "rizukirr/hyprsimple",
@@ -1092,7 +1121,7 @@
         "omarchy"
       ],
       "archived": false,
-      "pushedAt": "2026-06-15T10:11:24Z",
+      "pushedAt": "2026-06-19T13:34:06Z",
       "createdAt": "2025-10-04T10:27:45Z"
     },
     {
@@ -1112,8 +1141,28 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-06-18T08:23:26Z",
+      "pushedAt": "2026-06-19T15:51:20Z",
       "createdAt": "2026-06-09T15:06:10Z"
+    },
+    {
+      "slug": "muhammadhasbiashshiddieqy/openclawn",
+      "fullName": "MuhammadHasbiAshshiddieqy/OpenClawn",
+      "name": "OpenClawn",
+      "owner": "MuhammadHasbiAshshiddieqy",
+      "ownerUrl": "https://github.com/MuhammadHasbiAshshiddieqy",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/47019965?v=4",
+      "url": "https://github.com/MuhammadHasbiAshshiddieqy/OpenClawn",
+      "homepage": null,
+      "description": "Lightweight, safe, self-improving multi-role AI agent framework. Hybrid local + cloud LLMs with self-calibrating routing, decaying skills, and confidence-gated learning — 25 sandboxed tools for code, data, docs, git, and the web.",
+      "language": "Python",
+      "stars": 6,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-06-19T11:19:17Z",
+      "createdAt": "2026-06-15T14:35:14Z"
     },
     {
       "slug": "achmdfzn/hippocrates",
@@ -1200,26 +1249,6 @@
       "createdAt": "2026-06-09T15:29:44Z"
     },
     {
-      "slug": "rifqiakrm/code-island",
-      "fullName": "rifqiakrm/code-island",
-      "name": "code-island",
-      "owner": "rifqiakrm",
-      "ownerUrl": "https://github.com/rifqiakrm",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/35358522?v=4",
-      "url": "https://github.com/rifqiakrm/code-island",
-      "homepage": "https://rifqiakrm.github.io/code-island/",
-      "description": "macOS app that turns your MacBook's notch into a live dashboard for Claude Code, Codex, etc",
-      "language": "Swift",
-      "stars": 5,
-      "forks": 0,
-      "openIssues": 0,
-      "license": "GPL-3.0",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-06-18T15:48:04Z",
-      "createdAt": "2026-04-23T06:17:57Z"
-    },
-    {
       "slug": "xpajonx/openempiric",
       "fullName": "xpajonx/openempiric",
       "name": "openempiric",
@@ -1252,8 +1281,28 @@
         "semantic-search"
       ],
       "archived": false,
-      "pushedAt": "2026-06-18T08:08:33Z",
+      "pushedAt": "2026-06-19T09:43:51Z",
       "createdAt": "2026-06-02T04:21:59Z"
+    },
+    {
+      "slug": "rifqiakrm/code-island",
+      "fullName": "rifqiakrm/code-island",
+      "name": "code-island",
+      "owner": "rifqiakrm",
+      "ownerUrl": "https://github.com/rifqiakrm",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/35358522?v=4",
+      "url": "https://github.com/rifqiakrm/code-island",
+      "homepage": "https://rifqiakrm.github.io/code-island/",
+      "description": "macOS app that turns your MacBook's notch into a live dashboard for Claude Code, Codex, etc",
+      "language": "Swift",
+      "stars": 5,
+      "forks": 0,
+      "openIssues": 0,
+      "license": "GPL-3.0",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-06-19T05:46:32Z",
+      "createdAt": "2026-04-23T06:17:57Z"
     },
     {
       "slug": "raymondchins/tokengratis-id",
@@ -1272,7 +1321,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-06-18T05:37:29Z",
+      "pushedAt": "2026-06-18T21:23:12Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1284,7 +1333,7 @@
       "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
       "url": "https://github.com/rizukirr/apic",
       "homepage": null,
-      "description": "A lightweight, Git-friendly CLI tool for designing and collaborating on API contracts written in Rust",
+      "description": "A lightweight, Git-friendly tool for designing and collaborating on API contracts written in Rust",
       "language": "Rust",
       "stars": 4,
       "forks": 0,
@@ -1300,7 +1349,7 @@
         "rust"
       ],
       "archived": false,
-      "pushedAt": "2026-06-18T16:19:37Z",
+      "pushedAt": "2026-06-19T15:29:40Z",
       "createdAt": "2026-06-04T12:15:07Z"
     },
     {
@@ -1359,35 +1408,6 @@
       "createdAt": "2026-05-28T12:17:41Z"
     },
     {
-      "slug": "fadhilbarkah/diskus",
-      "fullName": "fadhilbarkah/diskus",
-      "name": "diskus",
-      "owner": "fadhilbarkah",
-      "ownerUrl": "https://github.com/fadhilbarkah",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/185883281?v=4",
-      "url": "https://github.com/fadhilbarkah/diskus",
-      "homepage": "https://diskus.pages.dev",
-      "description": "An ultra-lightweight, privacy-first, and self-hosted Disqus alternative",
-      "language": "TypeScript",
-      "stars": 2,
-      "forks": 0,
-      "openIssues": 0,
-      "license": "GPL-3.0",
-      "topics": [
-        "blog-comments",
-        "comment",
-        "comment-system",
-        "comments",
-        "comments-system",
-        "comments-widget",
-        "disqus-alternative",
-        "open-source"
-      ],
-      "archived": false,
-      "pushedAt": "2026-06-18T09:33:23Z",
-      "createdAt": "2026-06-05T18:22:55Z"
-    },
-    {
       "slug": "dayartcrew-web/masday-workflow-rust",
       "fullName": "dayartcrew-web/masday-workflow-rust",
       "name": "masday-workflow-rust",
@@ -1400,12 +1420,49 @@
       "language": "Rust",
       "stars": 2,
       "forks": 0,
-      "openIssues": 7,
+      "openIssues": 0,
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-06-17T22:03:55Z",
+      "pushedAt": "2026-06-19T20:24:44Z",
       "createdAt": "2026-05-31T08:23:44Z"
+    },
+    {
+      "slug": "codecoradev/trapfall",
+      "fullName": "codecoradev/trapfall",
+      "name": "trapfall",
+      "owner": "codecoradev",
+      "ownerUrl": "https://github.com/codecoradev",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
+      "url": "https://github.com/codecoradev/trapfall",
+      "homepage": "https://codecora.dev",
+      "description": "TrapFall — Lightweight self-hosted error capture engine. Sentry-compatible, Rust + SvelteKit 5.",
+      "language": "Rust",
+      "stars": 2,
+      "forks": 0,
+      "openIssues": 3,
+      "license": "Apache-2.0",
+      "topics": [
+        "axum",
+        "blake3",
+        "dashboard",
+        "docker",
+        "error-capture",
+        "error-tracking",
+        "monitoring",
+        "rust",
+        "self-hosted",
+        "sentry",
+        "sentry-compatible",
+        "sqlite",
+        "svelte",
+        "sveltekit",
+        "tailwindcss",
+        "websockets"
+      ],
+      "archived": false,
+      "pushedAt": "2026-06-19T09:39:47Z",
+      "createdAt": "2026-06-06T00:23:26Z"
     },
     {
       "slug": "adityazxxx/sheltermark",
@@ -1428,43 +1485,6 @@
       "createdAt": "2026-02-10T04:21:08Z"
     },
     {
-      "slug": "codecoradev/trapfall",
-      "fullName": "codecoradev/trapfall",
-      "name": "trapfall",
-      "owner": "codecoradev",
-      "ownerUrl": "https://github.com/codecoradev",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
-      "url": "https://github.com/codecoradev/trapfall",
-      "homepage": "https://codecora.dev",
-      "description": "TrapFall — Lightweight self-hosted error capture engine. Sentry-compatible, Rust + SvelteKit 5.",
-      "language": "Rust",
-      "stars": 2,
-      "forks": 0,
-      "openIssues": 0,
-      "license": "Apache-2.0",
-      "topics": [
-        "axum",
-        "blake3",
-        "dashboard",
-        "docker",
-        "error-capture",
-        "error-tracking",
-        "monitoring",
-        "rust",
-        "self-hosted",
-        "sentry",
-        "sentry-compatible",
-        "sqlite",
-        "svelte",
-        "sveltekit",
-        "tailwindcss",
-        "websockets"
-      ],
-      "archived": false,
-      "pushedAt": "2026-06-16T11:50:28Z",
-      "createdAt": "2026-06-06T00:23:26Z"
-    },
-    {
       "slug": "jutionck/tahlil-tracker",
       "fullName": "jutionck/tahlil-tracker",
       "name": "tahlil-tracker",
@@ -1483,6 +1503,26 @@
       "archived": false,
       "pushedAt": "2026-06-02T07:13:42Z",
       "createdAt": "2025-12-10T04:16:53Z"
+    },
+    {
+      "slug": "bimoalfarrabi/pantau-bbm",
+      "fullName": "bimoalfarrabi/pantau-bbm",
+      "name": "pantau-bbm",
+      "owner": "bimoalfarrabi",
+      "ownerUrl": "https://github.com/bimoalfarrabi",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/46051173?v=4",
+      "url": "https://github.com/bimoalfarrabi/pantau-bbm",
+      "homepage": "https://pantaubbm.viasco.my.id",
+      "description": "Aplikasi web untuk memantau harga BBM Indonesia per wilayah",
+      "language": "PHP",
+      "stars": 1,
+      "forks": 0,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-06-19T01:29:20Z",
+      "createdAt": "2026-06-04T02:35:05Z"
     },
     {
       "slug": "nzxcode/hospital-ai-sales-agent",
@@ -1523,40 +1563,20 @@
       "archived": false,
       "pushedAt": "2026-06-13T16:43:45Z",
       "createdAt": "2025-11-22T11:52:35Z"
-    },
-    {
-      "slug": "bimoalfarrabi/pantau-bbm",
-      "fullName": "bimoalfarrabi/pantau-bbm",
-      "name": "pantau-bbm",
-      "owner": "bimoalfarrabi",
-      "ownerUrl": "https://github.com/bimoalfarrabi",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/46051173?v=4",
-      "url": "https://github.com/bimoalfarrabi/pantau-bbm",
-      "homepage": "https://pantaubbm.viasco.my.id",
-      "description": "Aplikasi web untuk memantau harga BBM Indonesia per wilayah",
-      "language": "PHP",
-      "stars": 1,
-      "forks": 0,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-06-10T01:56:59Z",
-      "createdAt": "2026-06-04T02:35:05Z"
     }
   ],
   "sources": [
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-06-18T21:23:03.405Z"
+      "syncedAt": "2026-06-19T20:26:51.481Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-06-18T21:23:03.405Z"
+      "syncedAt": "2026-06-19T20:26:51.481Z"
     }
   ],
-  "syncedAt": "2026-06-18T21:23:03.405Z",
-  "count": 60
+  "syncedAt": "2026-06-19T20:26:51.481Z",
+  "count": 61
 }
