@@ -13,7 +13,7 @@
       "language": "PHP",
       "stars": 1202,
       "forks": 1144,
-      "openIssues": 362,
+      "openIssues": 363,
       "license": null,
       "topics": [
         "opensid",
@@ -34,13 +34,13 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 824,
+      "stars": 825,
       "forks": 257,
       "openIssues": 1,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-05-29T12:39:38Z",
+      "pushedAt": "2026-06-21T09:47:06Z",
       "createdAt": "2026-01-15T09:55:34Z"
     },
     {
@@ -157,7 +157,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-06-20T16:35:29Z",
+      "pushedAt": "2026-06-21T16:52:32Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -171,9 +171,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 140,
+      "stars": 143,
       "forks": 32,
-      "openIssues": 38,
+      "openIssues": 36,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -191,7 +191,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-06-20T03:14:25Z",
+      "pushedAt": "2026-06-21T09:19:39Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -275,12 +275,12 @@
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
       "stars": 83,
-      "forks": 40,
-      "openIssues": 2,
+      "forks": 41,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-06-20T13:17:40Z",
+      "pushedAt": "2026-06-21T16:06:28Z",
       "createdAt": "2026-02-12T11:02:43Z"
     },
     {
@@ -331,7 +331,7 @@
         "airouter"
       ],
       "archived": false,
-      "pushedAt": "2026-06-20T19:39:08Z",
+      "pushedAt": "2026-06-21T03:28:24Z",
       "createdAt": "2026-05-31T09:02:50Z"
     },
     {
@@ -353,6 +353,26 @@
       "archived": false,
       "pushedAt": "2026-02-18T08:47:11Z",
       "createdAt": "2026-01-11T07:23:01Z"
+    },
+    {
+      "slug": "raymondchins/agentmap",
+      "fullName": "raymondchins/agentmap",
+      "name": "agentmap",
+      "owner": "raymondchins",
+      "ownerUrl": "https://github.com/raymondchins",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
+      "url": "https://github.com/raymondchins/agentmap",
+      "homepage": null,
+      "description": "The repo map your coding agent is forced to use — ~98% fewer tokens (up to 99.9% per task) to understand a TS/JS codebase. PageRank hubs, Aider-style symbol ranking, token-budgeted digest, --any router, wired into the agent loop.",
+      "language": "JavaScript",
+      "stars": 40,
+      "forks": 9,
+      "openIssues": 1,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-06-16T04:08:21Z",
+      "createdAt": "2026-06-13T11:29:36Z"
     },
     {
       "slug": "akbxr/dns",
@@ -380,26 +400,6 @@
       "archived": false,
       "pushedAt": "2026-04-01T07:43:03Z",
       "createdAt": "2025-05-26T04:42:45Z"
-    },
-    {
-      "slug": "raymondchins/agentmap",
-      "fullName": "raymondchins/agentmap",
-      "name": "agentmap",
-      "owner": "raymondchins",
-      "ownerUrl": "https://github.com/raymondchins",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
-      "url": "https://github.com/raymondchins/agentmap",
-      "homepage": null,
-      "description": "The repo map your coding agent is forced to use — ~98% fewer tokens (up to 99.9% per task) to understand a TS/JS codebase. PageRank hubs, Aider-style symbol ranking, token-budgeted digest, --any router, wired into the agent loop.",
-      "language": "JavaScript",
-      "stars": 39,
-      "forks": 10,
-      "openIssues": 1,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-06-16T04:08:21Z",
-      "createdAt": "2026-06-13T11:29:36Z"
     },
     {
       "slug": "ilhamrisky/tedi",
@@ -454,7 +454,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-06-20T12:46:28Z",
+      "pushedAt": "2026-06-21T13:24:08Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -550,32 +550,6 @@
       "createdAt": "2026-04-09T16:08:42Z"
     },
     {
-      "slug": "ardli-firman/sha-print",
-      "fullName": "ardli-firman/sha-print",
-      "name": "sha-print",
-      "owner": "ardli-firman",
-      "ownerUrl": "https://github.com/ardli-firman",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/48121202?v=4",
-      "url": "https://github.com/ardli-firman/sha-print",
-      "homepage": null,
-      "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
-      "language": "C#",
-      "stars": 24,
-      "forks": 10,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "desktop-app",
-        "printer",
-        "sharing",
-        "sharing-printer",
-        "windows"
-      ],
-      "archived": false,
-      "pushedAt": "2026-06-19T03:19:44Z",
-      "createdAt": "2026-05-23T05:37:35Z"
-    },
-    {
       "slug": "wauputr4/bansos",
       "fullName": "wauputr4/bansos",
       "name": "bansos",
@@ -586,9 +560,9 @@
       "homepage": "https://bansos.dev",
       "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
       "language": "Svelte",
-      "stars": 23,
+      "stars": 27,
       "forks": 3,
-      "openIssues": 4,
+      "openIssues": 5,
       "license": "MIT",
       "topics": [
         "bansos",
@@ -603,7 +577,7 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-06-20T17:42:19Z",
+      "pushedAt": "2026-06-21T16:06:24Z",
       "createdAt": "2026-06-11T13:28:54Z"
     },
     {
@@ -617,7 +591,7 @@
       "homepage": "https://diskus.pages.dev",
       "description": "An ultra-lightweight, privacy-first, and self-hosted Disqus alternative",
       "language": "TypeScript",
-      "stars": 22,
+      "stars": 25,
       "forks": 0,
       "openIssues": 0,
       "license": "GPL-3.0",
@@ -634,6 +608,32 @@
       "archived": false,
       "pushedAt": "2026-06-20T14:50:04Z",
       "createdAt": "2026-06-05T18:22:55Z"
+    },
+    {
+      "slug": "ardli-firman/sha-print",
+      "fullName": "ardli-firman/sha-print",
+      "name": "sha-print",
+      "owner": "ardli-firman",
+      "ownerUrl": "https://github.com/ardli-firman",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/48121202?v=4",
+      "url": "https://github.com/ardli-firman/sha-print",
+      "homepage": null,
+      "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
+      "language": "C#",
+      "stars": 25,
+      "forks": 10,
+      "openIssues": 0,
+      "license": null,
+      "topics": [
+        "desktop-app",
+        "printer",
+        "sharing",
+        "sharing-printer",
+        "windows"
+      ],
+      "archived": false,
+      "pushedAt": "2026-06-19T03:19:44Z",
+      "createdAt": "2026-05-23T05:37:35Z"
     },
     {
       "slug": "rayasabari/yntk-ts",
@@ -672,7 +672,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-06-14T12:42:44Z",
+      "pushedAt": "2026-06-21T15:30:35Z",
       "createdAt": "2026-03-20T14:25:48Z"
     },
     {
@@ -694,6 +694,65 @@
       "archived": false,
       "pushedAt": "2026-05-21T16:51:06Z",
       "createdAt": "2026-03-28T09:34:42Z"
+    },
+    {
+      "slug": "abilfida/omnidrive",
+      "fullName": "abilfida/OmniDrive",
+      "name": "OmniDrive",
+      "owner": "abilfida",
+      "ownerUrl": "https://github.com/abilfida",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/38366329?v=4",
+      "url": "https://github.com/abilfida/OmniDrive",
+      "homepage": null,
+      "description": "Omnidrive lets you connect multiple Google Drive accounts and manage all your files from a single dashboard. It runs entirely on Cloudflare's edge network — Workers for the API, D1 for the database, and KV for session storage — so there's no traditional server to maintain.",
+      "language": "TypeScript",
+      "stars": 16,
+      "forks": 2,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "cloudflare",
+        "google-drive",
+        "reactjs",
+        "vitejs"
+      ],
+      "archived": false,
+      "pushedAt": "2026-06-21T17:26:49Z",
+      "createdAt": "2026-06-07T16:49:12Z"
+    },
+    {
+      "slug": "codecoradev/uteke",
+      "fullName": "codecoradev/uteke",
+      "name": "uteke",
+      "owner": "codecoradev",
+      "ownerUrl": "https://github.com/codecoradev",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
+      "url": "https://github.com/codecoradev/uteke",
+      "homepage": "https://codecora.dev",
+      "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
+      "language": "Rust",
+      "stars": 16,
+      "forks": 2,
+      "openIssues": 0,
+      "license": "Apache-2.0",
+      "topics": [
+        "ai",
+        "cli",
+        "cli-tool",
+        "embeddings",
+        "hnsw",
+        "local-first",
+        "memory",
+        "onnx",
+        "onnxruntime",
+        "rust",
+        "semantic-search",
+        "sqlite",
+        "vector-database"
+      ],
+      "archived": false,
+      "pushedAt": "2026-06-21T15:47:38Z",
+      "createdAt": "2026-05-29T00:27:31Z"
     },
     {
       "slug": "rizukirr/vibekit",
@@ -723,42 +782,8 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-06-12T17:42:03Z",
+      "pushedAt": "2026-06-21T06:25:09Z",
       "createdAt": "2026-04-21T15:17:02Z"
-    },
-    {
-      "slug": "codecoradev/uteke",
-      "fullName": "codecoradev/uteke",
-      "name": "uteke",
-      "owner": "codecoradev",
-      "ownerUrl": "https://github.com/codecoradev",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
-      "url": "https://github.com/codecoradev/uteke",
-      "homepage": "https://codecora.dev",
-      "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
-      "language": "Rust",
-      "stars": 15,
-      "forks": 2,
-      "openIssues": 3,
-      "license": "Apache-2.0",
-      "topics": [
-        "ai",
-        "cli",
-        "cli-tool",
-        "embeddings",
-        "hnsw",
-        "local-first",
-        "memory",
-        "onnx",
-        "onnxruntime",
-        "rust",
-        "semantic-search",
-        "sqlite",
-        "vector-database"
-      ],
-      "archived": false,
-      "pushedAt": "2026-06-19T05:15:04Z",
-      "createdAt": "2026-05-29T00:27:31Z"
     },
     {
       "slug": "maziyank/nats",
@@ -779,31 +804,6 @@
       "archived": false,
       "pushedAt": "2026-06-18T01:27:09Z",
       "createdAt": "2026-03-29T13:58:03Z"
-    },
-    {
-      "slug": "abilfida/omnidrive",
-      "fullName": "abilfida/OmniDrive",
-      "name": "OmniDrive",
-      "owner": "abilfida",
-      "ownerUrl": "https://github.com/abilfida",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/38366329?v=4",
-      "url": "https://github.com/abilfida/OmniDrive",
-      "homepage": null,
-      "description": "Omnidrive lets you connect multiple Google Drive accounts and manage all your files from a single dashboard. It runs entirely on Cloudflare's edge network — Workers for the API, D1 for the database, and KV for session storage — so there's no traditional server to maintain.",
-      "language": "TypeScript",
-      "stars": 15,
-      "forks": 2,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "cloudflare",
-        "google-drive",
-        "reactjs",
-        "vitejs"
-      ],
-      "archived": false,
-      "pushedAt": "2026-06-16T18:48:48Z",
-      "createdAt": "2026-06-07T16:49:12Z"
     },
     {
       "slug": "rahmanef63/open-silong",
@@ -837,6 +837,26 @@
       "createdAt": "2026-04-29T18:48:11Z"
     },
     {
+      "slug": "muhammadhasbiashshiddieqy/openclawn",
+      "fullName": "MuhammadHasbiAshshiddieqy/OpenClawn",
+      "name": "OpenClawn",
+      "owner": "MuhammadHasbiAshshiddieqy",
+      "ownerUrl": "https://github.com/MuhammadHasbiAshshiddieqy",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/47019965?v=4",
+      "url": "https://github.com/MuhammadHasbiAshshiddieqy/OpenClawn",
+      "homepage": null,
+      "description": "Lightweight, safe, self-improving multi-role AI agent framework. Hybrid local + cloud LLMs with self-calibrating routing, decaying skills, and confidence-gated learning — 25 sandboxed tools for code, data, docs, git, and the web.",
+      "language": "Python",
+      "stars": 13,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-06-20T20:02:38Z",
+      "createdAt": "2026-06-15T14:35:14Z"
+    },
+    {
       "slug": "rizukirr/numc",
       "fullName": "rizukirr/numc",
       "name": "numc",
@@ -866,26 +886,6 @@
       "archived": false,
       "pushedAt": "2026-06-16T16:14:20Z",
       "createdAt": "2026-03-12T09:55:51Z"
-    },
-    {
-      "slug": "muhammadhasbiashshiddieqy/openclawn",
-      "fullName": "MuhammadHasbiAshshiddieqy/OpenClawn",
-      "name": "OpenClawn",
-      "owner": "MuhammadHasbiAshshiddieqy",
-      "ownerUrl": "https://github.com/MuhammadHasbiAshshiddieqy",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/47019965?v=4",
-      "url": "https://github.com/MuhammadHasbiAshshiddieqy/OpenClawn",
-      "homepage": null,
-      "description": "Lightweight, safe, self-improving multi-role AI agent framework. Hybrid local + cloud LLMs with self-calibrating routing, decaying skills, and confidence-gated learning — 25 sandboxed tools for code, data, docs, git, and the web.",
-      "language": "Python",
-      "stars": 11,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-06-20T20:02:38Z",
-      "createdAt": "2026-06-15T14:35:14Z"
     },
     {
       "slug": "rahmanef63/si-coder-agent",
@@ -921,26 +921,6 @@
       "createdAt": "2026-03-18T18:38:41Z"
     },
     {
-      "slug": "hellodit/openmasjid",
-      "fullName": "hellodit/OpenMasjid",
-      "name": "OpenMasjid",
-      "owner": "hellodit",
-      "ownerUrl": "https://github.com/hellodit",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/32544683?v=4",
-      "url": "https://github.com/hellodit/OpenMasjid",
-      "homepage": null,
-      "description": null,
-      "language": "Vue",
-      "stars": 11,
-      "forks": 0,
-      "openIssues": 0,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-05-21T12:29:21Z",
-      "createdAt": "2026-05-16T04:31:37Z"
-    },
-    {
       "slug": "rizukirr/muslimtify",
       "fullName": "rizukirr/muslimtify",
       "name": "muslimtify",
@@ -951,7 +931,7 @@
       "homepage": null,
       "description": "A daily prayer notification daemon for Muslims on Windows and Linux, supporting 21 global standard calculation methods, all madzhab, all country.",
       "language": "C",
-      "stars": 10,
+      "stars": 11,
       "forks": 1,
       "openIssues": 0,
       "license": "MIT",
@@ -973,24 +953,24 @@
       "createdAt": "2026-02-23T13:59:12Z"
     },
     {
-      "slug": "ahmadghaisanfad2/absen-kelas",
-      "fullName": "ahmadghaisanfad2/absen-kelas",
-      "name": "absen-kelas",
-      "owner": "ahmadghaisanfad2",
-      "ownerUrl": "https://github.com/ahmadghaisanfad2",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/82021575?v=4",
-      "url": "https://github.com/ahmadghaisanfad2/absen-kelas",
+      "slug": "hellodit/openmasjid",
+      "fullName": "hellodit/OpenMasjid",
+      "name": "OpenMasjid",
+      "owner": "hellodit",
+      "ownerUrl": "https://github.com/hellodit",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/32544683?v=4",
+      "url": "https://github.com/hellodit/OpenMasjid",
       "homepage": null,
       "description": null,
-      "language": "TypeScript",
-      "stars": 10,
-      "forks": 3,
+      "language": "Vue",
+      "stars": 11,
+      "forks": 0,
       "openIssues": 0,
-      "license": "MIT",
+      "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-06-11T16:34:43Z",
-      "createdAt": "2026-05-31T14:34:04Z"
+      "pushedAt": "2026-05-21T12:29:21Z",
+      "createdAt": "2026-05-16T04:31:37Z"
     },
     {
       "slug": "fajarhide/heimsense",
@@ -1003,7 +983,7 @@
       "homepage": null,
       "description": "Unlock Your Claude Code for Any LLM",
       "language": "Go",
-      "stars": 10,
+      "stars": 11,
       "forks": 1,
       "openIssues": 1,
       "license": "MIT",
@@ -1022,6 +1002,26 @@
       "archived": false,
       "pushedAt": "2026-05-03T11:25:37Z",
       "createdAt": "2026-03-25T12:38:25Z"
+    },
+    {
+      "slug": "ahmadghaisanfad2/absen-kelas",
+      "fullName": "ahmadghaisanfad2/absen-kelas",
+      "name": "absen-kelas",
+      "owner": "ahmadghaisanfad2",
+      "ownerUrl": "https://github.com/ahmadghaisanfad2",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/82021575?v=4",
+      "url": "https://github.com/ahmadghaisanfad2/absen-kelas",
+      "homepage": null,
+      "description": null,
+      "language": "TypeScript",
+      "stars": 10,
+      "forks": 3,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-06-11T16:34:43Z",
+      "createdAt": "2026-05-31T14:34:04Z"
     },
     {
       "slug": "rrndev/app-permission-analyzer",
@@ -1161,8 +1161,28 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-06-20T14:33:32Z",
+      "pushedAt": "2026-06-21T15:24:07Z",
       "createdAt": "2026-06-09T15:06:10Z"
+    },
+    {
+      "slug": "rifqiakrm/code-island",
+      "fullName": "rifqiakrm/code-island",
+      "name": "code-island",
+      "owner": "rifqiakrm",
+      "ownerUrl": "https://github.com/rifqiakrm",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/35358522?v=4",
+      "url": "https://github.com/rifqiakrm/code-island",
+      "homepage": "https://rifqiakrm.github.io/code-island/",
+      "description": "macOS app that turns your MacBook's notch into a live dashboard for Claude Code, Codex, etc",
+      "language": "Swift",
+      "stars": 6,
+      "forks": 0,
+      "openIssues": 0,
+      "license": "GPL-3.0",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-06-19T05:46:32Z",
+      "createdAt": "2026-04-23T06:17:57Z"
     },
     {
       "slug": "achmdfzn/hippocrates",
@@ -1273,7 +1293,7 @@
         "rust"
       ],
       "archived": false,
-      "pushedAt": "2026-06-20T18:52:54Z",
+      "pushedAt": "2026-06-21T18:21:32Z",
       "createdAt": "2026-06-04T12:15:07Z"
     },
     {
@@ -1293,7 +1313,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-06-19T20:27:00Z",
+      "pushedAt": "2026-06-20T20:18:03Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1331,26 +1351,6 @@
       "archived": false,
       "pushedAt": "2026-06-19T09:43:51Z",
       "createdAt": "2026-06-02T04:21:59Z"
-    },
-    {
-      "slug": "rifqiakrm/code-island",
-      "fullName": "rifqiakrm/code-island",
-      "name": "code-island",
-      "owner": "rifqiakrm",
-      "ownerUrl": "https://github.com/rifqiakrm",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/35358522?v=4",
-      "url": "https://github.com/rifqiakrm/code-island",
-      "homepage": "https://rifqiakrm.github.io/code-island/",
-      "description": "macOS app that turns your MacBook's notch into a live dashboard for Claude Code, Codex, etc",
-      "language": "Swift",
-      "stars": 5,
-      "forks": 0,
-      "openIssues": 0,
-      "license": "GPL-3.0",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-06-19T05:46:32Z",
-      "createdAt": "2026-04-23T06:17:57Z"
     },
     {
       "slug": "faisalaffan/ragi-instant",
@@ -1408,6 +1408,26 @@
       "createdAt": "2026-05-28T12:17:41Z"
     },
     {
+      "slug": "jutionck/tahlil-tracker",
+      "fullName": "jutionck/tahlil-tracker",
+      "name": "tahlil-tracker",
+      "owner": "jutionck",
+      "ownerUrl": "https://github.com/jutionck",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/30655440?v=4",
+      "url": "https://github.com/jutionck/tahlil-tracker",
+      "homepage": "https://tahlil-tracker.vercel.app/",
+      "description": "Aplikasi untuk menghitung hari selamatan orang meninggal (tahlilan) dan panduan bacaan Yasin & Tahlil lengkap, serta tata cara pengurusan jenazah.",
+      "language": "TypeScript",
+      "stars": 3,
+      "forks": 0,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-06-02T07:13:42Z",
+      "createdAt": "2025-12-10T04:16:53Z"
+    },
+    {
       "slug": "dayartcrew-web/masday-workflow-rust",
       "fullName": "dayartcrew-web/masday-workflow-rust",
       "name": "masday-workflow-rust",
@@ -1424,7 +1444,7 @@
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-06-20T18:11:33Z",
+      "pushedAt": "2026-06-21T17:42:50Z",
       "createdAt": "2026-05-31T08:23:44Z"
     },
     {
@@ -1440,7 +1460,7 @@
       "language": "Rust",
       "stars": 2,
       "forks": 0,
-      "openIssues": 3,
+      "openIssues": 1,
       "license": "Apache-2.0",
       "topics": [
         "axum",
@@ -1461,8 +1481,28 @@
         "websockets"
       ],
       "archived": false,
-      "pushedAt": "2026-06-19T09:39:47Z",
+      "pushedAt": "2026-06-21T10:15:16Z",
       "createdAt": "2026-06-06T00:23:26Z"
+    },
+    {
+      "slug": "bimoalfarrabi/pantau-bbm",
+      "fullName": "bimoalfarrabi/pantau-bbm",
+      "name": "pantau-bbm",
+      "owner": "bimoalfarrabi",
+      "ownerUrl": "https://github.com/bimoalfarrabi",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/46051173?v=4",
+      "url": "https://github.com/bimoalfarrabi/pantau-bbm",
+      "homepage": "https://pantaubbm.viasco.my.id",
+      "description": "Aplikasi web untuk memantau harga BBM Indonesia per wilayah",
+      "language": "PHP",
+      "stars": 2,
+      "forks": 0,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-06-19T01:29:20Z",
+      "createdAt": "2026-06-04T02:35:05Z"
     },
     {
       "slug": "adityazxxx/sheltermark",
@@ -1483,46 +1523,6 @@
       "archived": false,
       "pushedAt": "2026-06-17T13:21:12Z",
       "createdAt": "2026-02-10T04:21:08Z"
-    },
-    {
-      "slug": "jutionck/tahlil-tracker",
-      "fullName": "jutionck/tahlil-tracker",
-      "name": "tahlil-tracker",
-      "owner": "jutionck",
-      "ownerUrl": "https://github.com/jutionck",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/30655440?v=4",
-      "url": "https://github.com/jutionck/tahlil-tracker",
-      "homepage": "https://tahlil-tracker.vercel.app/",
-      "description": "Aplikasi untuk menghitung hari selamatan orang meninggal (tahlilan) dan panduan bacaan Yasin & Tahlil lengkap, serta tata cara pengurusan jenazah.",
-      "language": "TypeScript",
-      "stars": 2,
-      "forks": 0,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-06-02T07:13:42Z",
-      "createdAt": "2025-12-10T04:16:53Z"
-    },
-    {
-      "slug": "bimoalfarrabi/pantau-bbm",
-      "fullName": "bimoalfarrabi/pantau-bbm",
-      "name": "pantau-bbm",
-      "owner": "bimoalfarrabi",
-      "ownerUrl": "https://github.com/bimoalfarrabi",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/46051173?v=4",
-      "url": "https://github.com/bimoalfarrabi/pantau-bbm",
-      "homepage": "https://pantaubbm.viasco.my.id",
-      "description": "Aplikasi web untuk memantau harga BBM Indonesia per wilayah",
-      "language": "PHP",
-      "stars": 1,
-      "forks": 0,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-06-19T01:29:20Z",
-      "createdAt": "2026-06-04T02:35:05Z"
     },
     {
       "slug": "nzxcode/hospital-ai-sales-agent",
@@ -1569,14 +1569,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-06-20T20:17:53.398Z"
+      "syncedAt": "2026-06-21T20:26:48.929Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-06-20T20:17:53.398Z"
+      "syncedAt": "2026-06-21T20:26:48.929Z"
     }
   ],
-  "syncedAt": "2026-06-20T20:17:53.398Z",
+  "syncedAt": "2026-06-21T20:26:48.929Z",
   "count": 61
 }
