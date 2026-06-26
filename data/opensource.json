@@ -13,7 +13,7 @@
       "language": "PHP",
       "stars": 1204,
       "forks": 1151,
-      "openIssues": 352,
+      "openIssues": 354,
       "license": null,
       "topics": [
         "opensid",
@@ -34,13 +34,13 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 836,
-      "forks": 261,
+      "stars": 841,
+      "forks": 262,
       "openIssues": 1,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-06-25T11:56:24Z",
+      "pushedAt": "2026-06-26T08:03:45Z",
       "createdAt": "2026-01-15T09:55:34Z"
     },
     {
@@ -54,8 +54,8 @@
       "homepage": "https://jokoui.web.id",
       "description": "Free Open Source Tailwind CSS Component for Sat-set Developers with Zero Configuration, Installation, and Setup",
       "language": "TypeScript",
-      "stars": 407,
-      "forks": 26,
+      "stars": 408,
+      "forks": 27,
       "openIssues": 8,
       "license": "MIT",
       "topics": [
@@ -106,7 +106,7 @@
       "homepage": "https://omni.weekndlabs.com",
       "description": "Noise-canceling context and long-term memory for your AI agent. Stop paying Claude to read 10,000 lines of terminal noise like a headphone for AI agent",
       "language": "Rust",
-      "stars": 281,
+      "stars": 282,
       "forks": 29,
       "openIssues": 0,
       "license": "MIT",
@@ -194,7 +194,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-06-25T15:09:58Z",
+      "pushedAt": "2026-06-26T13:56:36Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -208,13 +208,13 @@
       "homepage": null,
       "description": null,
       "language": "Python",
-      "stars": 138,
+      "stars": 139,
       "forks": 32,
-      "openIssues": 1,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-06-20T10:12:10Z",
+      "pushedAt": "2026-06-26T05:38:51Z",
       "createdAt": "2026-06-20T09:48:06Z"
     },
     {
@@ -297,7 +297,7 @@
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": null,
-      "stars": 85,
+      "stars": 86,
       "forks": 6,
       "openIssues": 0,
       "license": "MIT",
@@ -333,7 +333,7 @@
       "homepage": null,
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
-      "stars": 83,
+      "stars": 84,
       "forks": 41,
       "openIssues": 1,
       "license": "MIT",
@@ -401,7 +401,7 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 62,
+      "stars": 63,
       "forks": 21,
       "openIssues": 2,
       "license": "MIT",
@@ -410,7 +410,7 @@
         "airouter"
       ],
       "archived": false,
-      "pushedAt": "2026-06-24T05:33:06Z",
+      "pushedAt": "2026-06-26T12:39:35Z",
       "createdAt": "2026-05-31T09:02:50Z"
     },
     {
@@ -486,7 +486,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-06-23T12:55:54Z",
+      "pushedAt": "2026-06-26T07:03:13Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -502,7 +502,7 @@
       "language": null,
       "stars": 39,
       "forks": 3,
-      "openIssues": 15,
+      "openIssues": 16,
       "license": "MIT",
       "topics": [
         "adblock",
@@ -582,7 +582,7 @@
         "web-desktop"
       ],
       "archived": false,
-      "pushedAt": "2026-06-25T14:23:41Z",
+      "pushedAt": "2026-06-26T09:30:00Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -659,7 +659,7 @@
       "homepage": "https://diskus.pages.dev",
       "description": "An ultra-lightweight, privacy-first, and self-hosted Disqus alternative",
       "language": "TypeScript",
-      "stars": 29,
+      "stars": 30,
       "forks": 0,
       "openIssues": 0,
       "license": "GPL-3.0",
@@ -801,7 +801,7 @@
       "language": "Rust",
       "stars": 17,
       "forks": 3,
-      "openIssues": 3,
+      "openIssues": 1,
       "license": "Apache-2.0",
       "topics": [
         "ai",
@@ -819,7 +819,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-06-24T23:22:27Z",
+      "pushedAt": "2026-06-26T06:57:34Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -874,6 +874,26 @@
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
+      "slug": "muhammadhasbiashshiddieqy/openclawn",
+      "fullName": "MuhammadHasbiAshshiddieqy/OpenClawn",
+      "name": "OpenClawn",
+      "owner": "MuhammadHasbiAshshiddieqy",
+      "ownerUrl": "https://github.com/MuhammadHasbiAshshiddieqy",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/47019965?v=4",
+      "url": "https://github.com/MuhammadHasbiAshshiddieqy/OpenClawn",
+      "homepage": null,
+      "description": "Lightweight, safe, self-improving multi-role AI agent framework. Hybrid local + cloud LLMs with self-calibrating routing, decaying skills, and confidence-gated learning — 25 sandboxed tools for code, data, docs, git, and the web.",
+      "language": "Python",
+      "stars": 14,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-06-24T23:54:01Z",
+      "createdAt": "2026-06-15T14:35:14Z"
+    },
+    {
       "slug": "maziyank/nats",
       "fullName": "maziyank/nats",
       "name": "nats",
@@ -892,26 +912,6 @@
       "archived": false,
       "pushedAt": "2026-06-18T01:27:09Z",
       "createdAt": "2026-03-29T13:58:03Z"
-    },
-    {
-      "slug": "muhammadhasbiashshiddieqy/openclawn",
-      "fullName": "MuhammadHasbiAshshiddieqy/OpenClawn",
-      "name": "OpenClawn",
-      "owner": "MuhammadHasbiAshshiddieqy",
-      "ownerUrl": "https://github.com/MuhammadHasbiAshshiddieqy",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/47019965?v=4",
-      "url": "https://github.com/MuhammadHasbiAshshiddieqy/OpenClawn",
-      "homepage": null,
-      "description": "Lightweight, safe, self-improving multi-role AI agent framework. Hybrid local + cloud LLMs with self-calibrating routing, decaying skills, and confidence-gated learning — 25 sandboxed tools for code, data, docs, git, and the web.",
-      "language": "Python",
-      "stars": 13,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-06-24T23:54:01Z",
-      "createdAt": "2026-06-15T14:35:14Z"
     },
     {
       "slug": "rahmanef63/open-silong",
@@ -1040,7 +1040,7 @@
         "semantic-search"
       ],
       "archived": false,
-      "pushedAt": "2026-06-25T07:03:54Z",
+      "pushedAt": "2026-06-26T20:33:28Z",
       "createdAt": "2026-06-02T04:21:59Z"
     },
     {
@@ -1148,6 +1148,26 @@
       "createdAt": "2026-05-31T14:34:04Z"
     },
     {
+      "slug": "rudycity/superagent",
+      "fullName": "RudyCity/superagent",
+      "name": "superagent",
+      "owner": "RudyCity",
+      "ownerUrl": "https://github.com/RudyCity",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/82188919?v=4",
+      "url": "https://github.com/RudyCity/superagent",
+      "homepage": null,
+      "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
+      "language": "Python",
+      "stars": 8,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-06-26T15:56:50Z",
+      "createdAt": "2026-06-09T15:06:10Z"
+    },
+    {
       "slug": "rrndev/app-permission-analyzer",
       "fullName": "RRNDev/app-permission-analyzer",
       "name": "app-permission-analyzer",
@@ -1191,6 +1211,33 @@
       "archived": false,
       "pushedAt": "2026-03-29T08:39:29Z",
       "createdAt": "2026-01-09T17:20:39Z"
+    },
+    {
+      "slug": "rizukirr/hyprsimple",
+      "fullName": "rizukirr/hyprsimple",
+      "name": "hyprsimple",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/hyprsimple",
+      "homepage": null,
+      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
+      "language": "Shell",
+      "stars": 7,
+      "forks": 0,
+      "openIssues": 0,
+      "license": null,
+      "topics": [
+        "arch-linux",
+        "dotfiles",
+        "hyprland",
+        "hyprland-config",
+        "linux",
+        "omarchy"
+      ],
+      "archived": false,
+      "pushedAt": "2026-06-26T03:40:31Z",
+      "createdAt": "2025-10-04T10:27:45Z"
     },
     {
       "slug": "anandazp/tempa-ui",
@@ -1273,12 +1320,12 @@
       "description": null,
       "language": "TypeScript",
       "stars": 6,
-      "forks": 0,
+      "forks": 1,
       "openIssues": 0,
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-06-25T16:52:12Z",
+      "pushedAt": "2026-06-26T16:39:22Z",
       "createdAt": "2026-06-13T11:24:30Z"
     },
     {
@@ -1298,35 +1345,8 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-06-24T20:49:47Z",
+      "pushedAt": "2026-06-25T20:59:27Z",
       "createdAt": "2026-06-01T10:04:41Z"
-    },
-    {
-      "slug": "rizukirr/hyprsimple",
-      "fullName": "rizukirr/hyprsimple",
-      "name": "hyprsimple",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/hyprsimple",
-      "homepage": null,
-      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
-      "language": "Shell",
-      "stars": 6,
-      "forks": 0,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "arch-linux",
-        "dotfiles",
-        "hyprland",
-        "hyprland-config",
-        "linux",
-        "omarchy"
-      ],
-      "archived": false,
-      "pushedAt": "2026-06-19T13:34:06Z",
-      "createdAt": "2025-10-04T10:27:45Z"
     },
     {
       "slug": "rifqiakrm/code-island",
@@ -1382,24 +1402,32 @@
       "createdAt": "2026-06-12T19:08:26Z"
     },
     {
-      "slug": "rudycity/superagent",
-      "fullName": "RudyCity/superagent",
-      "name": "superagent",
-      "owner": "RudyCity",
-      "ownerUrl": "https://github.com/RudyCity",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/82188919?v=4",
-      "url": "https://github.com/RudyCity/superagent",
+      "slug": "rizukirr/apic",
+      "fullName": "rizukirr/apic",
+      "name": "apic",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/apic",
       "homepage": null,
-      "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
-      "language": "Python",
+      "description": "A lightweight, Git-friendly tool for designing and collaborating on API contracts",
+      "language": "Rust",
       "stars": 5,
-      "forks": 1,
+      "forks": 2,
       "openIssues": 0,
       "license": "MIT",
-      "topics": [],
+      "topics": [
+        "api",
+        "api-contract",
+        "cli-tool",
+        "colaboration",
+        "contracts",
+        "rest-api",
+        "rust"
+      ],
       "archived": false,
-      "pushedAt": "2026-06-25T07:07:00Z",
-      "createdAt": "2026-06-09T15:06:10Z"
+      "pushedAt": "2026-06-23T17:46:04Z",
+      "createdAt": "2026-06-04T12:15:07Z"
     },
     {
       "slug": "ramaaditya49/ai-agentic",
@@ -1420,34 +1448,6 @@
       "archived": false,
       "pushedAt": "2026-06-09T15:51:19Z",
       "createdAt": "2026-06-09T15:29:44Z"
-    },
-    {
-      "slug": "rizukirr/apic",
-      "fullName": "rizukirr/apic",
-      "name": "apic",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/apic",
-      "homepage": null,
-      "description": "A lightweight, Git-friendly tool for designing and collaborating on API contracts",
-      "language": "Rust",
-      "stars": 4,
-      "forks": 2,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "api",
-        "api-contract",
-        "cli-tool",
-        "colaboration",
-        "contracts",
-        "rest-api",
-        "rust"
-      ],
-      "archived": false,
-      "pushedAt": "2026-06-23T17:46:04Z",
-      "createdAt": "2026-06-04T12:15:07Z"
     },
     {
       "slug": "faisalaffan/ragi-instant",
@@ -1521,7 +1521,7 @@
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-06-24T23:42:56Z",
+      "pushedAt": "2026-06-26T16:39:07Z",
       "createdAt": "2026-05-31T08:23:44Z"
     },
     {
@@ -1557,7 +1557,7 @@
       "language": "Rust",
       "stars": 1,
       "forks": 0,
-      "openIssues": 2,
+      "openIssues": 16,
       "license": "Apache-2.0",
       "topics": [
         "axum",
@@ -1646,14 +1646,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-06-25T20:59:17.295Z"
+      "syncedAt": "2026-06-26T20:51:34.953Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-06-25T20:59:17.295Z"
+      "syncedAt": "2026-06-26T20:51:34.953Z"
     }
   ],
-  "syncedAt": "2026-06-25T20:59:17.295Z",
+  "syncedAt": "2026-06-26T20:51:34.953Z",
   "count": 65
 }
