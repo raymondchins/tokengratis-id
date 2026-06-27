@@ -11,9 +11,9 @@
       "homepage": null,
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
-      "stars": 1204,
+      "stars": 1205,
       "forks": 1151,
-      "openIssues": 354,
+      "openIssues": 353,
       "license": null,
       "topics": [
         "opensid",
@@ -34,9 +34,9 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 841,
-      "forks": 262,
-      "openIssues": 1,
+      "stars": 847,
+      "forks": 263,
+      "openIssues": 2,
       "license": "MIT",
       "topics": [],
       "archived": false,
@@ -106,7 +106,7 @@
       "homepage": "https://omni.weekndlabs.com",
       "description": "Noise-canceling context and long-term memory for your AI agent. Stop paying Claude to read 10,000 lines of terminal noise like a headphone for AI agent",
       "language": "Rust",
-      "stars": 282,
+      "stars": 284,
       "forks": 29,
       "openIssues": 0,
       "license": "MIT",
@@ -145,9 +145,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 147,
-      "forks": 33,
-      "openIssues": 35,
+      "stars": 148,
+      "forks": 34,
+      "openIssues": 42,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -180,7 +180,7 @@
       "description": "ERD Builder Pro is a professional-grade, high-performance web application designed for developers and database architects to build, document, and visualize complex data structures. Built with a modular architecture and modern tech stack, it offers a seamless experience for database design and technical documentation.",
       "language": "TypeScript",
       "stars": 144,
-      "forks": 27,
+      "forks": 28,
       "openIssues": 0,
       "license": null,
       "topics": [
@@ -194,7 +194,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-06-26T13:56:36Z",
+      "pushedAt": "2026-06-27T16:13:10Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -208,7 +208,7 @@
       "homepage": null,
       "description": null,
       "language": "Python",
-      "stars": 139,
+      "stars": 142,
       "forks": 32,
       "openIssues": 0,
       "license": "MIT",
@@ -333,7 +333,7 @@
       "homepage": null,
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
-      "stars": 84,
+      "stars": 85,
       "forks": 41,
       "openIssues": 1,
       "license": "MIT",
@@ -403,14 +403,14 @@
       "language": "Go",
       "stars": 63,
       "forks": 21,
-      "openIssues": 2,
+      "openIssues": 4,
       "license": "MIT",
       "topics": [
         "ai",
         "airouter"
       ],
       "archived": false,
-      "pushedAt": "2026-06-26T12:39:35Z",
+      "pushedAt": "2026-06-27T19:06:00Z",
       "createdAt": "2026-05-31T09:02:50Z"
     },
     {
@@ -454,42 +454,6 @@
       "createdAt": "2026-06-13T11:29:36Z"
     },
     {
-      "slug": "ilhamrisky/tedi",
-      "fullName": "IlhamriSKY/TEDI",
-      "name": "TEDI",
-      "owner": "IlhamriSKY",
-      "ownerUrl": "https://github.com/IlhamriSKY",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/18723904?v=4",
-      "url": "https://github.com/IlhamriSKY/TEDI",
-      "homepage": "https://tedi.ilhamriski.com",
-      "description": "One lightweight app. Eight features. Your whole dev workflow in a single window.",
-      "language": "TypeScript",
-      "stars": 39,
-      "forks": 5,
-      "openIssues": 0,
-      "license": "Apache-2.0",
-      "topics": [
-        "ai",
-        "ai-agent",
-        "claude-code",
-        "cmd",
-        "code-editor",
-        "codex",
-        "open-source",
-        "opencode",
-        "powershell",
-        "rust",
-        "sftp",
-        "source-control",
-        "ssh",
-        "tauri",
-        "terminal"
-      ],
-      "archived": false,
-      "pushedAt": "2026-06-26T07:03:13Z",
-      "createdAt": "2026-05-13T00:00:22Z"
-    },
-    {
       "slug": "akbxr/dns",
       "fullName": "akbxr/dns",
       "name": "dns",
@@ -517,6 +481,42 @@
       "createdAt": "2025-05-26T04:42:45Z"
     },
     {
+      "slug": "ilhamrisky/tedi",
+      "fullName": "IlhamriSKY/TEDI",
+      "name": "TEDI",
+      "owner": "IlhamriSKY",
+      "ownerUrl": "https://github.com/IlhamriSKY",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/18723904?v=4",
+      "url": "https://github.com/IlhamriSKY/TEDI",
+      "homepage": "https://tedi.ilhamriski.com",
+      "description": "One lightweight app. Eight features. Your whole dev workflow in a single window.",
+      "language": "TypeScript",
+      "stars": 38,
+      "forks": 5,
+      "openIssues": 1,
+      "license": "Apache-2.0",
+      "topics": [
+        "ai",
+        "ai-agent",
+        "claude-code",
+        "cmd",
+        "code-editor",
+        "codex",
+        "open-source",
+        "opencode",
+        "powershell",
+        "rust",
+        "sftp",
+        "source-control",
+        "ssh",
+        "tauri",
+        "terminal"
+      ],
+      "archived": false,
+      "pushedAt": "2026-06-27T03:44:24Z",
+      "createdAt": "2026-05-13T00:00:22Z"
+    },
+    {
       "slug": "firewalker06/tycho",
       "fullName": "firewalker06/tycho",
       "name": "tycho",
@@ -533,7 +533,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-06-23T13:06:58Z",
+      "pushedAt": "2026-06-27T10:12:01Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -567,7 +567,7 @@
       "homepage": null,
       "description": "Topside — mobile-first web cockpit for a headless Linux VPS. Terminal, files, monitor, media + a real remote browser in a desktop-style UI. Single Next.js app, no database, no agent.",
       "language": "TypeScript",
-      "stars": 33,
+      "stars": 34,
       "forks": 5,
       "openIssues": 0,
       "license": "MIT",
@@ -612,8 +612,37 @@
         "xendit"
       ],
       "archived": false,
-      "pushedAt": "2026-06-19T22:43:20Z",
+      "pushedAt": "2026-06-26T22:43:47Z",
       "createdAt": "2026-05-05T01:16:45Z"
+    },
+    {
+      "slug": "fadhilbarkah/diskus",
+      "fullName": "fadhilbarkah/diskus",
+      "name": "diskus",
+      "owner": "fadhilbarkah",
+      "ownerUrl": "https://github.com/fadhilbarkah",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/185883281?v=4",
+      "url": "https://github.com/fadhilbarkah/diskus",
+      "homepage": "https://diskus.pages.dev",
+      "description": "An ultra-lightweight, privacy-first, and self-hosted Disqus alternative",
+      "language": "TypeScript",
+      "stars": 31,
+      "forks": 0,
+      "openIssues": 0,
+      "license": "GPL-3.0",
+      "topics": [
+        "blog-comments",
+        "comment",
+        "comment-system",
+        "comments",
+        "comments-system",
+        "comments-widget",
+        "disqus-alternative",
+        "open-source"
+      ],
+      "archived": false,
+      "pushedAt": "2026-06-20T14:50:04Z",
+      "createdAt": "2026-06-05T18:22:55Z"
     },
     {
       "slug": "rizukirr/no-vibe",
@@ -647,35 +676,6 @@
       "archived": false,
       "pushedAt": "2026-06-12T15:10:29Z",
       "createdAt": "2026-04-09T16:08:42Z"
-    },
-    {
-      "slug": "fadhilbarkah/diskus",
-      "fullName": "fadhilbarkah/diskus",
-      "name": "diskus",
-      "owner": "fadhilbarkah",
-      "ownerUrl": "https://github.com/fadhilbarkah",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/185883281?v=4",
-      "url": "https://github.com/fadhilbarkah/diskus",
-      "homepage": "https://diskus.pages.dev",
-      "description": "An ultra-lightweight, privacy-first, and self-hosted Disqus alternative",
-      "language": "TypeScript",
-      "stars": 30,
-      "forks": 0,
-      "openIssues": 0,
-      "license": "GPL-3.0",
-      "topics": [
-        "blog-comments",
-        "comment",
-        "comment-system",
-        "comments",
-        "comments-system",
-        "comments-widget",
-        "disqus-alternative",
-        "open-source"
-      ],
-      "archived": false,
-      "pushedAt": "2026-06-20T14:50:04Z",
-      "createdAt": "2026-06-05T18:22:55Z"
     },
     {
       "slug": "galpratama/agent-cli",
@@ -744,6 +744,40 @@
       "createdAt": "2026-04-08T09:27:49Z"
     },
     {
+      "slug": "codecoradev/uteke",
+      "fullName": "codecoradev/uteke",
+      "name": "uteke",
+      "owner": "codecoradev",
+      "ownerUrl": "https://github.com/codecoradev",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
+      "url": "https://github.com/codecoradev/uteke",
+      "homepage": "https://codecora.dev",
+      "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
+      "language": "Rust",
+      "stars": 19,
+      "forks": 4,
+      "openIssues": 0,
+      "license": "Apache-2.0",
+      "topics": [
+        "ai",
+        "cli",
+        "cli-tool",
+        "embeddings",
+        "hnsw",
+        "local-first",
+        "memory",
+        "onnx",
+        "onnxruntime",
+        "rust",
+        "semantic-search",
+        "sqlite",
+        "vector-database"
+      ],
+      "archived": false,
+      "pushedAt": "2026-06-27T10:18:07Z",
+      "createdAt": "2026-05-29T00:27:31Z"
+    },
+    {
       "slug": "abilfida/omnidrive",
       "fullName": "abilfida/OmniDrive",
       "name": "OmniDrive",
@@ -789,38 +823,24 @@
       "createdAt": "2026-03-20T14:25:48Z"
     },
     {
-      "slug": "codecoradev/uteke",
-      "fullName": "codecoradev/uteke",
-      "name": "uteke",
-      "owner": "codecoradev",
-      "ownerUrl": "https://github.com/codecoradev",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
-      "url": "https://github.com/codecoradev/uteke",
-      "homepage": "https://codecora.dev",
-      "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
-      "language": "Rust",
-      "stars": 17,
-      "forks": 3,
-      "openIssues": 1,
-      "license": "Apache-2.0",
-      "topics": [
-        "ai",
-        "cli",
-        "cli-tool",
-        "embeddings",
-        "hnsw",
-        "local-first",
-        "memory",
-        "onnx",
-        "onnxruntime",
-        "rust",
-        "semantic-search",
-        "sqlite",
-        "vector-database"
-      ],
+      "slug": "maziyank/nats",
+      "fullName": "maziyank/nats",
+      "name": "nats",
+      "owner": "maziyank",
+      "ownerUrl": "https://github.com/maziyank",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/3317904?v=4",
+      "url": "https://github.com/maziyank/nats",
+      "homepage": "https://maziyank.github.io/nats",
+      "description": "NATS | Open Source Business and Accounting Software",
+      "language": "TypeScript",
+      "stars": 18,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
       "archived": false,
-      "pushedAt": "2026-06-26T06:57:34Z",
-      "createdAt": "2026-05-29T00:27:31Z"
+      "pushedAt": "2026-06-18T01:27:09Z",
+      "createdAt": "2026-03-29T13:58:03Z"
     },
     {
       "slug": "rafiulm/warungos",
@@ -892,26 +912,6 @@
       "archived": false,
       "pushedAt": "2026-06-24T23:54:01Z",
       "createdAt": "2026-06-15T14:35:14Z"
-    },
-    {
-      "slug": "maziyank/nats",
-      "fullName": "maziyank/nats",
-      "name": "nats",
-      "owner": "maziyank",
-      "ownerUrl": "https://github.com/maziyank",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/3317904?v=4",
-      "url": "https://github.com/maziyank/nats",
-      "homepage": "https://maziyank.github.io/nats",
-      "description": "NATS | Open Source Business and Accounting Software",
-      "language": "TypeScript",
-      "stars": 14,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-06-18T01:27:09Z",
-      "createdAt": "2026-03-29T13:58:03Z"
     },
     {
       "slug": "rahmanef63/open-silong",
@@ -1004,7 +1004,7 @@
         "windows-desktop"
       ],
       "archived": false,
-      "pushedAt": "2026-06-22T10:46:38Z",
+      "pushedAt": "2026-06-27T18:49:12Z",
       "createdAt": "2026-02-23T13:59:12Z"
     },
     {
@@ -1040,7 +1040,7 @@
         "semantic-search"
       ],
       "archived": false,
-      "pushedAt": "2026-06-26T20:33:28Z",
+      "pushedAt": "2026-06-26T22:55:40Z",
       "createdAt": "2026-06-02T04:21:59Z"
     },
     {
@@ -1164,7 +1164,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-06-26T15:56:50Z",
+      "pushedAt": "2026-06-26T22:24:52Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1325,7 +1325,7 @@
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-06-26T16:39:22Z",
+      "pushedAt": "2026-06-27T11:58:10Z",
       "createdAt": "2026-06-13T11:24:30Z"
     },
     {
@@ -1345,7 +1345,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-06-25T20:59:27Z",
+      "pushedAt": "2026-06-27T11:01:38Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1367,6 +1367,34 @@
       "archived": false,
       "pushedAt": "2026-06-19T05:46:32Z",
       "createdAt": "2026-04-23T06:17:57Z"
+    },
+    {
+      "slug": "rizukirr/apic",
+      "fullName": "rizukirr/apic",
+      "name": "apic",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/apic",
+      "homepage": null,
+      "description": "A lightweight, Git-friendly tool for designing and collaborating on API contracts",
+      "language": "Rust",
+      "stars": 5,
+      "forks": 2,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "api",
+        "api-contract",
+        "cli-tool",
+        "colaboration",
+        "contracts",
+        "rest-api",
+        "rust"
+      ],
+      "archived": false,
+      "pushedAt": "2026-06-27T18:04:19Z",
+      "createdAt": "2026-06-04T12:15:07Z"
     },
     {
       "slug": "achmdfzn/hippocrates",
@@ -1400,34 +1428,6 @@
       "archived": false,
       "pushedAt": "2026-06-25T12:19:25Z",
       "createdAt": "2026-06-12T19:08:26Z"
-    },
-    {
-      "slug": "rizukirr/apic",
-      "fullName": "rizukirr/apic",
-      "name": "apic",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/apic",
-      "homepage": null,
-      "description": "A lightweight, Git-friendly tool for designing and collaborating on API contracts",
-      "language": "Rust",
-      "stars": 5,
-      "forks": 2,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "api",
-        "api-contract",
-        "cli-tool",
-        "colaboration",
-        "contracts",
-        "rest-api",
-        "rust"
-      ],
-      "archived": false,
-      "pushedAt": "2026-06-23T17:46:04Z",
-      "createdAt": "2026-06-04T12:15:07Z"
     },
     {
       "slug": "ramaaditya49/ai-agentic",
@@ -1505,6 +1505,43 @@
       "createdAt": "2025-12-10T04:16:53Z"
     },
     {
+      "slug": "codecoradev/trapfall",
+      "fullName": "codecoradev/trapfall",
+      "name": "trapfall",
+      "owner": "codecoradev",
+      "ownerUrl": "https://github.com/codecoradev",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
+      "url": "https://github.com/codecoradev/trapfall",
+      "homepage": "https://codecora.dev",
+      "description": "TrapFall — Lightweight self-hosted error capture engine. Sentry-compatible, Rust + SvelteKit 5.",
+      "language": "Rust",
+      "stars": 1,
+      "forks": 0,
+      "openIssues": 0,
+      "license": "Apache-2.0",
+      "topics": [
+        "axum",
+        "blake3",
+        "dashboard",
+        "docker",
+        "error-capture",
+        "error-tracking",
+        "monitoring",
+        "rust",
+        "self-hosted",
+        "sentry",
+        "sentry-compatible",
+        "sqlite",
+        "svelte",
+        "sveltekit",
+        "tailwindcss",
+        "websockets"
+      ],
+      "archived": false,
+      "pushedAt": "2026-06-27T11:17:43Z",
+      "createdAt": "2026-06-06T00:23:26Z"
+    },
+    {
       "slug": "dayartcrew-web/masday-workflow-rust",
       "fullName": "dayartcrew-web/masday-workflow-rust",
       "name": "masday-workflow-rust",
@@ -1521,7 +1558,7 @@
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-06-26T16:39:07Z",
+      "pushedAt": "2026-06-26T22:59:56Z",
       "createdAt": "2026-05-31T08:23:44Z"
     },
     {
@@ -1543,43 +1580,6 @@
       "archived": false,
       "pushedAt": "2026-06-24T03:36:18Z",
       "createdAt": "2026-02-10T04:21:08Z"
-    },
-    {
-      "slug": "codecoradev/trapfall",
-      "fullName": "codecoradev/trapfall",
-      "name": "trapfall",
-      "owner": "codecoradev",
-      "ownerUrl": "https://github.com/codecoradev",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
-      "url": "https://github.com/codecoradev/trapfall",
-      "homepage": "https://codecora.dev",
-      "description": "TrapFall — Lightweight self-hosted error capture engine. Sentry-compatible, Rust + SvelteKit 5.",
-      "language": "Rust",
-      "stars": 1,
-      "forks": 0,
-      "openIssues": 16,
-      "license": "Apache-2.0",
-      "topics": [
-        "axum",
-        "blake3",
-        "dashboard",
-        "docker",
-        "error-capture",
-        "error-tracking",
-        "monitoring",
-        "rust",
-        "self-hosted",
-        "sentry",
-        "sentry-compatible",
-        "sqlite",
-        "svelte",
-        "sveltekit",
-        "tailwindcss",
-        "websockets"
-      ],
-      "archived": false,
-      "pushedAt": "2026-06-21T10:15:16Z",
-      "createdAt": "2026-06-06T00:23:26Z"
     },
     {
       "slug": "bimoalfarrabi/pantau-bbm",
@@ -1646,14 +1646,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-06-26T20:51:34.953Z"
+      "syncedAt": "2026-06-27T20:10:02.200Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-06-26T20:51:34.953Z"
+      "syncedAt": "2026-06-27T20:10:02.200Z"
     }
   ],
-  "syncedAt": "2026-06-26T20:51:34.953Z",
+  "syncedAt": "2026-06-27T20:10:02.200Z",
   "count": 65
 }

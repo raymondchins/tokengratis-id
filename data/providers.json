@@ -47,15 +47,15 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-27T11:00:44.059Z"
+        "syncedAt": "2026-06-27T20:09:59.387Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-27T11:00:44.183Z"
+        "syncedAt": "2026-06-27T20:09:59.492Z"
       }
     ],
-    "syncedAt": "2026-06-27T11:00:44.183Z",
+    "syncedAt": "2026-06-27T20:09:59.492Z",
     "sourceUpdatedAt": "2026-06-15"
   },
   {
@@ -114,20 +114,20 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-27T11:00:44.059Z"
+        "syncedAt": "2026-06-27T20:09:59.387Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-27T11:00:44.183Z"
+        "syncedAt": "2026-06-27T20:09:59.492Z"
       },
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources",
-        "syncedAt": "2026-06-27T11:00:44.058Z"
+        "syncedAt": "2026-06-27T20:09:59.365Z"
       }
     ],
-    "syncedAt": "2026-06-27T11:00:44.183Z",
+    "syncedAt": "2026-06-27T20:09:59.492Z",
     "sourceUpdatedAt": "2026-06-15"
   },
   {
@@ -169,10 +169,10 @@
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-27T11:00:44.183Z"
+        "syncedAt": "2026-06-27T20:09:59.492Z"
       }
     ],
-    "syncedAt": "2026-06-27T11:00:44.183Z",
+    "syncedAt": "2026-06-27T20:09:59.492Z",
     "sourceUpdatedAt": null
   },
   {
@@ -190,7 +190,7 @@
       "text",
       "code"
     ],
-    "modelCount": 30,
+    "modelCount": 28,
     "maxContext": "10M",
     "freeLimit": "10,000 Neurons/hari",
     "moreModels": "42 more models",
@@ -258,22 +258,6 @@
         "maxOutput": "Shared w/ context",
         "modality": "Text (reasoning)",
         "rateLimit": "10K neurons/day (shared)"
-      },
-      {
-        "id": "mistral-7b",
-        "name": "Mistral 7B",
-        "context": "44",
-        "maxOutput": "33K",
-        "modality": "text",
-        "rateLimit": null
-      },
-      {
-        "id": "qwen-1-5-7b",
-        "name": "Qwen 1.5 7B",
-        "context": "44",
-        "maxOutput": "33K",
-        "modality": "text",
-        "rateLimit": null
       },
       {
         "id": "cf-aisingapore-gemma-sea-lion-v4-27b-it",
@@ -440,25 +424,25 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-27T11:00:44.059Z"
+        "syncedAt": "2026-06-27T20:09:59.387Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-27T11:00:44.183Z"
+        "syncedAt": "2026-06-27T20:09:59.492Z"
       },
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources",
-        "syncedAt": "2026-06-27T11:00:44.059Z"
+        "syncedAt": "2026-06-27T20:09:59.366Z"
       },
       {
         "name": "models.dev",
         "url": "https://models.dev",
-        "syncedAt": "2026-06-27T11:00:44.307Z"
+        "syncedAt": "2026-06-27T20:09:59.515Z"
       }
     ],
-    "syncedAt": "2026-06-27T11:00:44.183Z",
+    "syncedAt": "2026-06-27T20:09:59.492Z",
     "sourceUpdatedAt": "2026-06-15"
   },
   {
@@ -565,25 +549,25 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-27T11:00:44.059Z"
+        "syncedAt": "2026-06-27T20:09:59.387Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-27T11:00:44.183Z"
+        "syncedAt": "2026-06-27T20:09:59.492Z"
       },
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources",
-        "syncedAt": "2026-06-27T11:00:44.058Z"
+        "syncedAt": "2026-06-27T20:09:59.366Z"
       },
       {
         "name": "models.dev",
         "url": "https://models.dev",
-        "syncedAt": "2026-06-27T11:00:44.307Z"
+        "syncedAt": "2026-06-27T20:09:59.515Z"
       }
     ],
-    "syncedAt": "2026-06-27T11:00:44.183Z",
+    "syncedAt": "2026-06-27T20:09:59.492Z",
     "sourceUpdatedAt": "2026-06-15"
   },
   {
@@ -689,10 +673,18 @@
       {
         "id": "ai21-jamba-1-5-large",
         "name": "AI21 Jamba 1.5 Large",
-        "context": "58",
+        "context": "59",
         "maxOutput": "256K",
         "modality": "text",
         "rateLimit": null
+      },
+      {
+        "id": "phi-4",
+        "name": "Phi-4",
+        "context": "44",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Dependent on Copilot subscription tier (Free/Pro/Pro+/Business/Enterprise)"
       },
       {
         "id": "mistral-large-24-11",
@@ -701,14 +693,6 @@
         "maxOutput": "131K",
         "modality": "text",
         "rateLimit": null
-      },
-      {
-        "id": "phi-4",
-        "name": "Phi-4",
-        "context": "43",
-        "maxOutput": "131K",
-        "modality": "text",
-        "rateLimit": "Dependent on Copilot subscription tier (Free/Pro/Pro+/Business/Enterprise)"
       },
       {
         "id": "codestral-25-01",
@@ -923,25 +907,25 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-27T11:00:44.059Z"
+        "syncedAt": "2026-06-27T20:09:59.387Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-27T11:00:44.183Z"
+        "syncedAt": "2026-06-27T20:09:59.492Z"
       },
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources",
-        "syncedAt": "2026-06-27T11:00:44.058Z"
+        "syncedAt": "2026-06-27T20:09:59.366Z"
       },
       {
         "name": "models.dev",
         "url": "https://models.dev",
-        "syncedAt": "2026-06-27T11:00:44.307Z"
+        "syncedAt": "2026-06-27T20:09:59.515Z"
       }
     ],
-    "syncedAt": "2026-06-27T11:00:44.183Z",
+    "syncedAt": "2026-06-27T20:09:59.492Z",
     "sourceUpdatedAt": "2026-06-15"
   },
   {
@@ -983,10 +967,10 @@
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-27T11:00:44.183Z"
+        "syncedAt": "2026-06-27T20:09:59.492Z"
       }
     ],
-    "syncedAt": "2026-06-27T11:00:44.183Z",
+    "syncedAt": "2026-06-27T20:09:59.492Z",
     "sourceUpdatedAt": null
   },
   {
@@ -1128,20 +1112,20 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-27T11:00:44.059Z"
+        "syncedAt": "2026-06-27T20:09:59.387Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-27T11:00:44.183Z"
+        "syncedAt": "2026-06-27T20:09:59.492Z"
       },
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources",
-        "syncedAt": "2026-06-27T11:00:44.058Z"
+        "syncedAt": "2026-06-27T20:09:59.365Z"
       }
     ],
-    "syncedAt": "2026-06-27T11:00:44.183Z",
+    "syncedAt": "2026-06-27T20:09:59.492Z",
     "sourceUpdatedAt": "2026-06-15"
   },
   {
@@ -1159,7 +1143,7 @@
       "text",
       "vision"
     ],
-    "modelCount": 22,
+    "modelCount": 20,
     "maxContext": "131K",
     "freeLimit": null,
     "moreModels": null,
@@ -1205,22 +1189,6 @@
         "rateLimit": "30 RPM, 1,000 RPD"
       },
       {
-        "id": "moonshot-kimi-k2",
-        "name": "Moonshot Kimi K2",
-        "context": "60",
-        "maxOutput": "131K",
-        "modality": "text",
-        "rateLimit": null
-      },
-      {
-        "id": "moonshot-kimi-k2-0905",
-        "name": "Moonshot Kimi K2 0905",
-        "context": "60",
-        "maxOutput": "131K",
-        "modality": "text",
-        "rateLimit": null
-      },
-      {
         "id": "gpt-oss-20b",
         "name": "GPT-OSS 20B",
         "context": "53",
@@ -1231,7 +1199,7 @@
       {
         "id": "gpt-oss-safeguard-20b",
         "name": "GPT-OSS Safeguard 20B",
-        "context": "38",
+        "context": "37",
         "maxOutput": "131K",
         "modality": "text",
         "rateLimit": "1,000 requests/day, 8,000 tokens/minute"
@@ -1345,25 +1313,25 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-27T11:00:44.059Z"
+        "syncedAt": "2026-06-27T20:09:59.387Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-27T11:00:44.183Z"
+        "syncedAt": "2026-06-27T20:09:59.492Z"
       },
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources",
-        "syncedAt": "2026-06-27T11:00:44.058Z"
+        "syncedAt": "2026-06-27T20:09:59.366Z"
       },
       {
         "name": "models.dev",
         "url": "https://models.dev",
-        "syncedAt": "2026-06-27T11:00:44.307Z"
+        "syncedAt": "2026-06-27T20:09:59.515Z"
       }
     ],
-    "syncedAt": "2026-06-27T11:00:44.183Z",
+    "syncedAt": "2026-06-27T20:09:59.492Z",
     "sourceUpdatedAt": "2026-06-15"
   },
   {
@@ -1430,20 +1398,20 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-27T11:00:44.059Z"
+        "syncedAt": "2026-06-27T20:09:59.387Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-27T11:00:44.183Z"
+        "syncedAt": "2026-06-27T20:09:59.492Z"
       },
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources",
-        "syncedAt": "2026-06-27T11:00:44.058Z"
+        "syncedAt": "2026-06-27T20:09:59.365Z"
       }
     ],
-    "syncedAt": "2026-06-27T11:00:44.183Z",
+    "syncedAt": "2026-06-27T20:09:59.492Z",
     "sourceUpdatedAt": "2026-06-15"
   },
   {
@@ -1493,7 +1461,7 @@
       {
         "id": "arcee-ai/trinity-large-thinking:free",
         "name": "arcee-ai/trinity-large-thinking:free",
-        "context": "76",
+        "context": "60",
         "maxOutput": "131K",
         "modality": "Text (reasoning)",
         "rateLimit": "~200 req/hr"
@@ -1501,7 +1469,7 @@
       {
         "id": "bytedance-seed/dola-seed-2.0-pro:free",
         "name": "bytedance-seed/dola-seed-2.0-pro:free",
-        "context": "61",
+        "context": "60",
         "maxOutput": "131K",
         "modality": "Text",
         "rateLimit": "~200 req/hr"
@@ -1519,15 +1487,15 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-27T11:00:44.059Z"
+        "syncedAt": "2026-06-27T20:09:59.387Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-27T11:00:44.183Z"
+        "syncedAt": "2026-06-27T20:09:59.492Z"
       }
     ],
-    "syncedAt": "2026-06-27T11:00:44.183Z",
+    "syncedAt": "2026-06-27T20:09:59.492Z",
     "sourceUpdatedAt": "2026-06-15"
   },
   {
@@ -1555,47 +1523,47 @@
         "id": "mistral-small-3.1-24b",
         "name": "mistral-small-3.1-24b",
         "context": "32K",
-        "maxOutput": "32K",
+        "maxOutput": null,
         "modality": "Text",
         "rateLimit": "30 RPM (120 with token)"
       },
       {
         "id": "deepseek-r1-0528",
         "name": "deepseek-r1-0528",
-        "context": "55",
-        "maxOutput": "131K",
+        "context": null,
+        "maxOutput": null,
         "modality": "Text (reasoning)",
         "rateLimit": "30 RPM (120 with token)"
       },
       {
         "id": "deepseek-v3-0324",
         "name": "deepseek-v3-0324",
-        "context": "52",
-        "maxOutput": "131K",
+        "context": null,
+        "maxOutput": null,
         "modality": "Text",
         "rateLimit": "30 RPM (120 with token)"
       },
       {
         "id": "gemini-2.5-flash-lite",
         "name": "gemini-2.5-flash-lite",
-        "context": "49",
-        "maxOutput": "131K",
+        "context": null,
+        "maxOutput": null,
         "modality": "Text + Vision",
         "rateLimit": "30 RPM (120 with token)"
       },
       {
         "id": "gpt-4o-mini",
         "name": "gpt-4o-mini",
-        "context": "47",
-        "maxOutput": "131K",
+        "context": null,
+        "maxOutput": null,
         "modality": "Text + Vision",
         "rateLimit": "30 RPM (120 with token)"
       },
       {
         "id": "qwen2.5-coder-32b",
         "name": "qwen2.5-coder-32b",
-        "context": "47",
-        "maxOutput": "131K",
+        "context": null,
+        "maxOutput": null,
         "modality": "Text (code)",
         "rateLimit": "30 RPM (120 with token)"
       }
@@ -1604,15 +1572,10 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-27T11:00:44.059Z"
-      },
-      {
-        "name": "freellm.net",
-        "url": "https://freellm.net",
-        "syncedAt": "2026-06-27T11:00:44.183Z"
+        "syncedAt": "2026-06-27T20:09:59.387Z"
       }
     ],
-    "syncedAt": "2026-06-27T11:00:44.183Z",
+    "syncedAt": "2026-06-27T20:09:59.387Z",
     "sourceUpdatedAt": "2026-06-15"
   },
   {
@@ -1695,7 +1658,7 @@
       {
         "id": "mistral-7b",
         "name": "Mistral 7B",
-        "context": "47",
+        "context": "46",
         "maxOutput": "33K",
         "modality": "text",
         "rateLimit": null
@@ -1705,20 +1668,20 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-27T11:00:44.059Z"
+        "syncedAt": "2026-06-27T20:09:59.387Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-27T11:00:44.183Z"
+        "syncedAt": "2026-06-27T20:09:59.492Z"
       },
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources",
-        "syncedAt": "2026-06-27T11:00:44.058Z"
+        "syncedAt": "2026-06-27T20:09:59.365Z"
       }
     ],
-    "syncedAt": "2026-06-27T11:00:44.183Z",
+    "syncedAt": "2026-06-27T20:09:59.492Z",
     "sourceUpdatedAt": "2026-06-15"
   },
   {
@@ -1736,14 +1699,14 @@
       "text"
     ],
     "modelCount": 2,
-    "maxContext": "74",
+    "maxContext": "75",
     "freeLimit": null,
     "moreModels": "API-Inference-enabled models",
     "models": [
       {
         "id": "Qwen/Qwen3.5-27B",
         "name": "Qwen/Qwen3.5-27B",
-        "context": "74",
+        "context": "75",
         "maxOutput": "131K",
         "modality": "Text",
         "rateLimit": "2,000 RPD total; <=500 RPD/model (dynamic)"
@@ -1751,7 +1714,7 @@
       {
         "id": "Qwen/Qwen3.5-35B-A3B",
         "name": "Qwen/Qwen3.5-35B-A3B",
-        "context": "69",
+        "context": "70",
         "maxOutput": "131K",
         "modality": "Text",
         "rateLimit": "2,000 RPD total; <=500 RPD/model (dynamic)"
@@ -1761,15 +1724,15 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-27T11:00:44.059Z"
+        "syncedAt": "2026-06-27T20:09:59.387Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-27T11:00:44.183Z"
+        "syncedAt": "2026-06-27T20:09:59.492Z"
       }
     ],
-    "syncedAt": "2026-06-27T11:00:44.183Z",
+    "syncedAt": "2026-06-27T20:09:59.492Z",
     "sourceUpdatedAt": "2026-06-15"
   },
   {
@@ -1785,9 +1748,12 @@
     "description": "Free with NVIDIA Developer Program membership. 100+ models. Rate-limited (no daily token cap).",
     "modalities": [
       "text",
-      "image"
+      "image",
+      "audio",
+      "video",
+      "embeddings"
     ],
-    "modelCount": 25,
+    "modelCount": 81,
     "maxContext": "262K",
     "freeLimit": null,
     "moreModels": "90 more models",
@@ -1865,105 +1831,465 @@
         "rateLimit": "~40 RPM"
       },
       {
-        "id": "minimaxai-minimax-m3",
-        "name": "minimaxai/minimax-m3",
-        "context": "95",
-        "maxOutput": "1.0M",
-        "modality": "text + image",
-        "rateLimit": "Up to 40 RPM"
-      },
-      {
-        "id": "moonshotai-kimi-k2-6",
-        "name": "moonshotai/kimi-k2.6",
-        "context": "91",
-        "maxOutput": "262K",
-        "modality": "text + image",
-        "rateLimit": "Up to 40 RPM"
-      },
-      {
-        "id": "z-ai-glm-5-1",
-        "name": "z-ai/glm-5.1",
-        "context": "88",
-        "maxOutput": "203K",
-        "modality": "text",
-        "rateLimit": "Up to 40 RPM"
-      },
-      {
-        "id": "stepfun-ai-step-3-7-flash",
-        "name": "stepfun-ai/step-3.7-flash",
-        "context": "87",
-        "maxOutput": "256K",
-        "modality": "text + image",
-        "rateLimit": "Up to 40 RPM"
-      },
-      {
         "id": "deepseek-ai-deepseek-v4-pro",
         "name": "deepseek-ai/deepseek-v4-pro",
-        "context": "86",
+        "context": "88",
         "maxOutput": "1.0M",
-        "modality": "text",
+        "modality": "text + reasoning",
         "rateLimit": "Up to 40 RPM"
       },
       {
         "id": "deepseek-ai-deepseek-v4-flash",
         "name": "deepseek-ai/deepseek-v4-flash",
-        "context": "83",
+        "context": "85",
         "maxOutput": "1.0M",
+        "modality": "text + reasoning",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "moonshotai-kimi-k2-6",
+        "name": "moonshotai/kimi-k2.6",
+        "context": "73",
+        "maxOutput": "262K",
+        "modality": "text + image + video + reasoning",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "qwen-qwen3-5-122b-a10b",
+        "name": "qwen/qwen3.5-122b-a10b",
+        "context": "72",
+        "maxOutput": "262K",
+        "modality": "text + image + video + audio + reasoning",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "qwen-qwen3-5-397b-a17b",
+        "name": "qwen/qwen3.5-397b-a17b",
+        "context": "72",
+        "maxOutput": "256K",
+        "modality": "text + image + video + audio + reasoning",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "z-ai-glm-5-1",
+        "name": "z-ai/glm-5.1",
+        "context": "67",
+        "maxOutput": "203K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "01-ai-yi-large",
+        "name": "01-ai/yi-large",
+        "context": "60",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "ai21labs-jamba-1-5-large-instruct",
+        "name": "ai21labs/jamba-1.5-large-instruct",
+        "context": "60",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "meta-codellama-70b",
+        "name": "meta/codellama-70b",
+        "context": "60",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "meta-llama2-70b",
+        "name": "meta/llama2-70b",
+        "context": "60",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "nvidia-llama-3-1-nemotron-70b-instruct",
+        "name": "nvidia/llama-3.1-nemotron-70b-instruct",
+        "context": "60",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "nvidia-llama3-chatqa-1-5-70b",
+        "name": "nvidia/llama3-chatqa-1.5-70b",
+        "context": "60",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "writer-palmyra-fin-70b-32k",
+        "name": "writer/palmyra-fin-70b-32k",
+        "context": "60",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "writer-palmyra-med-70b",
+        "name": "writer/palmyra-med-70b",
+        "context": "60",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "writer-palmyra-med-70b-32k",
+        "name": "writer/palmyra-med-70b-32k",
+        "context": "60",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "ibm-granite-34b-code-instruct",
+        "name": "ibm/granite-34b-code-instruct",
+        "context": "56",
+        "maxOutput": "131K",
         "modality": "text",
         "rateLimit": "Up to 40 RPM"
       },
       {
         "id": "stepfun-ai-step-3-5-flash",
         "name": "stepfun-ai/step-3.5-flash",
-        "context": "74",
+        "context": "56",
         "maxOutput": "262K",
-        "modality": "text",
+        "modality": "text + reasoning",
         "rateLimit": "Up to 40 RPM"
       },
       {
-        "id": "qwen-qwen3-5-122b-a10b",
-        "name": "qwen/qwen3.5-122b-a10b",
-        "context": "70",
-        "maxOutput": "262K",
-        "modality": "text + image",
-        "rateLimit": "Up to 40 RPM"
-      },
-      {
-        "id": "qwen-qwen3-5-397b-a17b",
-        "name": "qwen/qwen3.5-397b-a17b",
-        "context": "70",
+        "id": "stepfun-ai-step-3-7-flash",
+        "name": "stepfun-ai/step-3.7-flash",
+        "context": "56",
         "maxOutput": "256K",
-        "modality": "text + image",
+        "modality": "text + image + reasoning",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "minimaxai-minimax-m3",
+        "name": "minimaxai/minimax-m3",
+        "context": "54",
+        "maxOutput": "1.0M",
+        "modality": "text + image + video + reasoning",
         "rateLimit": "Up to 40 RPM"
       },
       {
         "id": "nvidia-nemotron-3-5-content-safety",
         "name": "nvidia/nemotron-3.5-content-safety",
-        "context": "52",
+        "context": "54",
         "maxOutput": "128K",
-        "modality": "text + image",
+        "modality": "text + image + reasoning",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "baai-bge-m3",
+        "name": "baai/bge-m3",
+        "context": "53",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "bigcode-starcoder2-15b",
+        "name": "bigcode/starcoder2-15b",
+        "context": "53",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "databricks-dbrx-instruct",
+        "name": "databricks/dbrx-instruct",
+        "context": "53",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "google-deplot",
+        "name": "google/deplot",
+        "context": "53",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "google-gemma-2b",
+        "name": "google/gemma-2b",
+        "context": "53",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "google-recurrentgemma-2b",
+        "name": "google/recurrentgemma-2b",
+        "context": "53",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "microsoft-kosmos-2",
+        "name": "microsoft/kosmos-2",
+        "context": "53",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "microsoft-phi-3-vision-128k-instruct",
+        "name": "microsoft/phi-3-vision-128k-instruct",
+        "context": "53",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "microsoft-phi-3-5-moe-instruct",
+        "name": "microsoft/phi-3.5-moe-instruct",
+        "context": "53",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "microsoft-phi-4-multimodal-instruct",
+        "name": "microsoft/phi-4-multimodal-instruct",
+        "context": "53",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "mistralai-codestral-22b-instruct-v0-1",
+        "name": "mistralai/codestral-22b-instruct-v0.1",
+        "context": "53",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "mistralai-mixtral-8x22b-v0-1",
+        "name": "mistralai/mixtral-8x22b-v0.1",
+        "context": "53",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "nvidia-llama-3-1-nemotron-51b-instruct",
+        "name": "nvidia/llama-3.1-nemotron-51b-instruct",
+        "context": "53",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "nvidia-nemoretriever-parse",
+        "name": "nvidia/nemoretriever-parse",
+        "context": "53",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "nvidia-nemotron-4-340b-instruct",
+        "name": "nvidia/nemotron-4-340b-instruct",
+        "context": "53",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "nvidia-nemotron-4-340b-reward",
+        "name": "nvidia/nemotron-4-340b-reward",
+        "context": "53",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "nvidia-nemotron-parse",
+        "name": "nvidia/nemotron-parse",
+        "context": "53",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "nvidia-neva-22b",
+        "name": "nvidia/neva-22b",
+        "context": "53",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "nvidia-nvclip",
+        "name": "nvidia/nvclip",
+        "context": "53",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "nvidia-riva-translate-4b-instruct",
+        "name": "nvidia/riva-translate-4b-instruct",
+        "context": "53",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "nvidia-vila",
+        "name": "nvidia/vila",
+        "context": "53",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "writer-palmyra-creative-122b",
+        "name": "writer/palmyra-creative-122b",
+        "context": "53",
+        "maxOutput": "131K",
+        "modality": "text",
         "rateLimit": "Up to 40 RPM"
       },
       {
         "id": "nvidia-llama-3-3-nemotron-super-49b-v1-5",
         "name": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
-        "context": "49",
+        "context": "52",
+        "maxOutput": "131K",
+        "modality": "text + reasoning",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "adept-fuyu-8b",
+        "name": "adept/fuyu-8b",
+        "context": "51",
         "maxOutput": "131K",
         "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "aisingapore-sea-lion-7b-instruct",
+        "name": "aisingapore/sea-lion-7b-instruct",
+        "context": "51",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "deepseek-ai-deepseek-coder-6-7b-instruct",
+        "name": "deepseek-ai/deepseek-coder-6.7b-instruct",
+        "context": "51",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "google-codegemma-1-1-7b",
+        "name": "google/codegemma-1.1-7b",
+        "context": "51",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "google-codegemma-7b",
+        "name": "google/codegemma-7b",
+        "context": "51",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "ibm-granite-3-0-8b-instruct",
+        "name": "ibm/granite-3.0-8b-instruct",
+        "context": "51",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "ibm-granite-8b-code-instruct",
+        "name": "ibm/granite-8b-code-instruct",
+        "context": "51",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "mistralai-mistral-7b-instruct-v0-3",
+        "name": "mistralai/mistral-7b-instruct-v0.3",
+        "context": "51",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "nv-mistralai-mistral-nemo-12b-instruct",
+        "name": "nv-mistralai/mistral-nemo-12b-instruct",
+        "context": "51",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "nvidia-cosmos-reason2-8b",
+        "name": "nvidia/cosmos-reason2-8b",
+        "context": "51",
+        "maxOutput": "131K",
+        "modality": "text + reasoning",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "nvidia-mistral-nemo-minitron-8b-8k-instruct",
+        "name": "nvidia/mistral-nemo-minitron-8b-8k-instruct",
+        "context": "51",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "zyphra-zamba2-7b-instruct",
+        "name": "zyphra/zamba2-7b-instruct",
+        "context": "51",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "ibm-granite-3-0-3b-a800m-instruct",
+        "name": "ibm/granite-3.0-3b-a800m-instruct",
+        "context": "46",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "nvidia-nemotron-nano-3-30b-a3b",
+        "name": "nvidia/nemotron-nano-3-30b-a3b",
+        "context": "46",
+        "maxOutput": "131K",
+        "modality": "text + reasoning",
         "rateLimit": "Up to 40 RPM"
       },
       {
         "id": "meta-llama-3-1-70b-instruct",
         "name": "meta/llama-3.1-70b-instruct",
-        "context": "43",
-        "maxOutput": "131K",
-        "modality": "text",
-        "rateLimit": "Up to 40 RPM"
-      },
-      {
-        "id": "meta-llama-3-2-3b-instruct",
-        "name": "meta/llama-3.2-3b-instruct",
-        "context": "43",
+        "context": "45",
         "maxOutput": "131K",
         "modality": "text",
         "rateLimit": "Up to 40 RPM"
@@ -1971,15 +2297,23 @@
       {
         "id": "meta-llama-3-2-11b-vision-instruct",
         "name": "meta/llama-3.2-11b-vision-instruct",
-        "context": "40",
+        "context": "42",
         "maxOutput": "131K",
         "modality": "text + image",
         "rateLimit": "Up to 40 RPM"
       },
       {
+        "id": "meta-llama-3-2-3b-instruct",
+        "name": "meta/llama-3.2-3b-instruct",
+        "context": "42",
+        "maxOutput": "131K",
+        "modality": "text",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
         "id": "meta-llama-3-2-1b-instruct",
         "name": "meta/llama-3.2-1b-instruct",
-        "context": "38",
+        "context": "40",
         "maxOutput": "131K",
         "modality": "text",
         "rateLimit": "Up to 40 RPM"
@@ -1987,9 +2321,89 @@
       {
         "id": "meta-llama-guard-4-12b",
         "name": "meta/llama-guard-4-12b",
-        "context": "34",
+        "context": "36",
         "maxOutput": "164K",
         "modality": "text + image",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "nvidia-embed-qa-4",
+        "name": "nvidia/embed-qa-4",
+        "context": null,
+        "maxOutput": null,
+        "modality": "text + embedding",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "nvidia-llama-3-2-nemoretriever-1b-vlm-embed-v1",
+        "name": "nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1",
+        "context": null,
+        "maxOutput": null,
+        "modality": "text + embedding",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "nvidia-llama-3-2-nv-embedqa-1b-v1",
+        "name": "nvidia/llama-3.2-nv-embedqa-1b-v1",
+        "context": null,
+        "maxOutput": null,
+        "modality": "text + embedding",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "nvidia-llama-nemotron-embed-1b-v2",
+        "name": "nvidia/llama-nemotron-embed-1b-v2",
+        "context": null,
+        "maxOutput": null,
+        "modality": "text + image + embedding",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "nvidia-llama-nemotron-embed-vl-1b-v2",
+        "name": "nvidia/llama-nemotron-embed-vl-1b-v2",
+        "context": "32K",
+        "maxOutput": "2K",
+        "modality": "text + image + embedding",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "nvidia-nv-embed-v1",
+        "name": "nvidia/nv-embed-v1",
+        "context": "32K",
+        "maxOutput": "2K",
+        "modality": "text + embedding",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "nvidia-nv-embedcode-7b-v1",
+        "name": "nvidia/nv-embedcode-7b-v1",
+        "context": "32K",
+        "maxOutput": "2K",
+        "modality": "text + embedding",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "nvidia-nv-embedqa-e5-v5",
+        "name": "nvidia/nv-embedqa-e5-v5",
+        "context": null,
+        "maxOutput": null,
+        "modality": "text + embedding",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "nvidia-nv-embedqa-mistral-7b-v2",
+        "name": "nvidia/nv-embedqa-mistral-7b-v2",
+        "context": null,
+        "maxOutput": null,
+        "modality": "text + embedding",
+        "rateLimit": "Up to 40 RPM"
+      },
+      {
+        "id": "snowflake-arctic-embed-l",
+        "name": "snowflake/arctic-embed-l",
+        "context": null,
+        "maxOutput": null,
+        "modality": "text + embedding",
         "rateLimit": "Up to 40 RPM"
       }
     ],
@@ -1997,20 +2411,25 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-27T11:00:44.059Z"
+        "syncedAt": "2026-06-27T20:09:59.387Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-27T11:00:44.183Z"
+        "syncedAt": "2026-06-27T20:09:59.492Z"
       },
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources",
-        "syncedAt": "2026-06-27T11:00:44.058Z"
+        "syncedAt": "2026-06-27T20:09:59.365Z"
+      },
+      {
+        "name": "models.dev",
+        "url": "https://models.dev",
+        "syncedAt": "2026-06-27T20:09:59.515Z"
       }
     ],
-    "syncedAt": "2026-06-27T11:00:44.183Z",
+    "syncedAt": "2026-06-27T20:09:59.492Z",
     "sourceUpdatedAt": "2026-06-15"
   },
   {
@@ -2086,15 +2505,15 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-27T11:00:44.059Z"
+        "syncedAt": "2026-06-27T20:09:59.387Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-27T11:00:44.183Z"
+        "syncedAt": "2026-06-27T20:09:59.492Z"
       }
     ],
-    "syncedAt": "2026-06-27T11:00:44.183Z",
+    "syncedAt": "2026-06-27T20:09:59.492Z",
     "sourceUpdatedAt": "2026-06-15"
   },
   {
@@ -2143,15 +2562,15 @@
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources",
-        "syncedAt": "2026-06-27T11:00:44.058Z"
+        "syncedAt": "2026-06-27T20:09:59.365Z"
       },
       {
         "name": "models.dev",
         "url": "https://models.dev",
-        "syncedAt": "2026-06-27T11:00:44.307Z"
+        "syncedAt": "2026-06-27T20:09:59.515Z"
       }
     ],
-    "syncedAt": "2026-06-27T11:00:44.058Z",
+    "syncedAt": "2026-06-27T20:09:59.365Z",
     "sourceUpdatedAt": null
   },
   {
@@ -2358,25 +2777,25 @@
       {
         "name": "openrouter.ai/api/v1/models",
         "url": "https://openrouter.ai/api/v1/models",
-        "syncedAt": "2026-06-27T11:00:44.109Z"
+        "syncedAt": "2026-06-27T20:09:59.398Z"
       },
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-27T11:00:44.059Z"
+        "syncedAt": "2026-06-27T20:09:59.387Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-27T11:00:44.183Z"
+        "syncedAt": "2026-06-27T20:09:59.492Z"
       },
       {
         "name": "cheahjs/free-llm-api-resources",
         "url": "https://github.com/cheahjs/free-llm-api-resources",
-        "syncedAt": "2026-06-27T11:00:44.058Z"
+        "syncedAt": "2026-06-27T20:09:59.365Z"
       }
     ],
-    "syncedAt": "2026-06-27T11:00:44.183Z",
+    "syncedAt": "2026-06-27T20:09:59.492Z",
     "sourceUpdatedAt": "2026-06-15"
   },
   {
@@ -2509,15 +2928,15 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-27T11:00:44.059Z"
+        "syncedAt": "2026-06-27T20:09:59.387Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-27T11:00:44.183Z"
+        "syncedAt": "2026-06-27T20:09:59.492Z"
       }
     ],
-    "syncedAt": "2026-06-27T11:00:44.183Z",
+    "syncedAt": "2026-06-27T20:09:59.492Z",
     "sourceUpdatedAt": "2026-06-15"
   },
   {
@@ -2592,15 +3011,15 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-27T11:00:44.059Z"
+        "syncedAt": "2026-06-27T20:09:59.387Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-27T11:00:44.183Z"
+        "syncedAt": "2026-06-27T20:09:59.492Z"
       }
     ],
-    "syncedAt": "2026-06-27T11:00:44.183Z",
+    "syncedAt": "2026-06-27T20:09:59.492Z",
     "sourceUpdatedAt": "2026-06-15"
   },
   {
@@ -2643,15 +3062,15 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-27T11:00:44.059Z"
+        "syncedAt": "2026-06-27T20:09:59.387Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-27T11:00:44.183Z"
+        "syncedAt": "2026-06-27T20:09:59.492Z"
       }
     ],
-    "syncedAt": "2026-06-27T11:00:44.183Z",
+    "syncedAt": "2026-06-27T20:09:59.492Z",
     "sourceUpdatedAt": "2026-06-15"
   },
   {
@@ -2693,10 +3112,10 @@
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-27T11:00:44.183Z"
+        "syncedAt": "2026-06-27T20:09:59.492Z"
       }
     ],
-    "syncedAt": "2026-06-27T11:00:44.183Z",
+    "syncedAt": "2026-06-27T20:09:59.492Z",
     "sourceUpdatedAt": null
   },
   {
@@ -2740,15 +3159,15 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-06-27T11:00:44.059Z"
+        "syncedAt": "2026-06-27T20:09:59.387Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-06-27T11:00:44.183Z"
+        "syncedAt": "2026-06-27T20:09:59.492Z"
       }
     ],
-    "syncedAt": "2026-06-27T11:00:44.183Z",
+    "syncedAt": "2026-06-27T20:09:59.492Z",
     "sourceUpdatedAt": "2026-06-15"
   }
 ]
