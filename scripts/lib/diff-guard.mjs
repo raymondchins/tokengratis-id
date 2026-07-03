@@ -203,11 +203,34 @@ export function snapshotDiff(prev, next, opts = {}) {
   }
 
   // ── Rule 5: per-provider model id churn (same-count garbage swap) ─────────
+  // A genuine garbage swap (e.g. a column-shift turning every id into a date
+  // string) replaces ids WITHOUT net growth and usually hits several providers
+  // at once. A FEW providers rotating their ids while the catalog OVERALL grows
+  // (no disappearance, no per-provider shrink, more models than before) is normal
+  // upstream churn — some sources rotate their model catalog constantly
+  // (e.g. NVIDIA NIM churning nemotron versions). Demote that to a warning so the
+  // nightly run still ships; keep it a hard error when churn co-occurs with any
+  // shrink/disappearance or when many providers churn at once (corruption signature).
+  const churnIsBenign =
+    churned.length > 0 &&
+    churned.length <= maxDisappeared &&
+    disappeared.length === 0 &&
+    shrunk.length === 0 &&
+    next.length >= prev.length &&
+    nextModels > prevModels;
+
   for (const c of churned) {
-    errors.push(
+    const msg =
       `provider "${c.slug}" model ids churned ${(100 - c.overlapPct).toFixed(1)}% ` +
-        `at same-ish count (overlap ${c.overlapPct.toFixed(1)}%) — possible source corruption`,
-    );
+      `at same-ish count (overlap ${c.overlapPct.toFixed(1)}%, ${c.prevIds}→${c.nextIds} ids)`;
+    if (churnIsBenign) {
+      warnings.push(
+        `${msg}, but catalog grew (${prev.length}→${next.length} providers, ` +
+          `${prevModels}→${nextModels} models) — treating as normal upstream churn`,
+      );
+    } else {
+      errors.push(`${msg} — possible source corruption`);
+    }
   }
 
   return {
@@ -429,6 +452,38 @@ if (process.argv.includes("--selftest")) {
       assert.ok(
         result.errors.some((e) => e.includes("\"a\"") && e.includes("disappeared")),
         `expected disappeared error for "a", got: ${result.errors.join("; ")}`,
+      );
+    });
+
+    // ── (j) 1 provider churns ids but catalog grows → ok=true (benign) ───────────
+    // Real-world: NVIDIA NIM rotates its model catalog (ids churn > 50%) while the
+    // overall catalog grows. Isolated churn + net growth = upstream churn, not
+    // corruption → warning, run still ships.
+    run("(j) id churn + net model growth → ok=true (warning, not error)", () => {
+      const prev = [
+        makeProvider("nvidia-nim", ["m1", "m2", "m3", "m4", "m5"]),
+        makeProvider("other", ["o1", "o2"]),
+      ];
+      // nvidia-nim rotates most ids (overlap 20%), and a new provider adds models
+      // so the total grows (7 → 10).
+      const next = [
+        makeProvider("nvidia-nim", ["m1", "z2", "z3", "z4", "z5"]),
+        makeProvider("other", ["o1", "o2"]),
+        makeProvider("fresh", ["f1", "f2", "f3"]),
+      ];
+      const result = snapshotDiff(prev, next);
+      assert.strictEqual(result.ok, true, "ok should be true (churn on a growing catalog)");
+      assert.ok(
+        result.errors.length === 0,
+        `expected no errors, got: ${result.errors.join("; ")}`,
+      );
+      assert.ok(
+        result.warnings.some((w) => w.includes("nvidia-nim") && w.includes("upstream churn")),
+        `expected benign-churn warning, got: ${result.warnings.join("; ")}`,
+      );
+      assert.ok(
+        result.stats.churned.some((c) => c.slug === "nvidia-nim"),
+        "churned array should still record 'nvidia-nim'",
       );
     });
 
