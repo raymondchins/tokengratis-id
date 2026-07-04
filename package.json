@@ -31,7 +31,7 @@
     "resend": "^6.12.4"
   },
   "devDependencies": {
-    "@raymondchins/agentmap": "^0.7.0",
+    "@raymondchins/agentmap": "^0.14.0",
     "@tailwindcss/postcss": "^4.0.0",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
