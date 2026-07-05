@@ -13,7 +13,7 @@
       "language": "PHP",
       "stars": 1210,
       "forks": 1161,
-      "openIssues": 369,
+      "openIssues": 370,
       "license": null,
       "topics": [
         "opensid",
@@ -34,8 +34,8 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 859,
-      "forks": 268,
+      "stars": 864,
+      "forks": 270,
       "openIssues": 3,
       "license": "MIT",
       "topics": [],
@@ -79,20 +79,23 @@
       "ownerAvatar": "https://avatars.githubusercontent.com/u/116653610?v=4",
       "url": "https://github.com/Drenzzz/ADBKit",
       "homepage": null,
-      "description": "A simple, modern GUI for ADB and Fastboot",
+      "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 320,
+      "stars": 321,
       "forks": 37,
-      "openIssues": 13,
+      "openIssues": 4,
       "license": "MIT",
       "topics": [
-        "astrojs",
+        "adb",
+        "fastboot",
+        "go",
         "react",
+        "scrcpy",
         "wails",
         "wails-app"
       ],
       "archived": false,
-      "pushedAt": "2026-07-04T18:24:58Z",
+      "pushedAt": "2026-07-05T01:18:24Z",
       "createdAt": "2025-11-04T15:37:00Z"
     },
     {
@@ -160,7 +163,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-07-04T16:47:27Z",
+      "pushedAt": "2026-07-05T09:38:54Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -176,7 +179,7 @@
       "language": "TypeScript",
       "stars": 154,
       "forks": 34,
-      "openIssues": 43,
+      "openIssues": 44,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -209,7 +212,7 @@
       "description": null,
       "language": "Python",
       "stars": 145,
-      "forks": 34,
+      "forks": 35,
       "openIssues": 0,
       "license": "MIT",
       "topics": [],
@@ -317,7 +320,7 @@
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": null,
-      "stars": 90,
+      "stars": 91,
       "forks": 6,
       "openIssues": 0,
       "license": "MIT",
@@ -343,34 +346,6 @@
       "createdAt": "2026-02-28T19:45:28Z"
     },
     {
-      "slug": "ddtamn/svelte-audio-ui",
-      "fullName": "ddtamn/svelte-audio-ui",
-      "name": "svelte-audio-ui",
-      "owner": "ddtamn",
-      "ownerUrl": "https://github.com/ddtamn",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/102568893?v=4",
-      "url": "https://github.com/ddtamn/svelte-audio-ui",
-      "homepage": "https://svelte-audio-ui.vercel.app/",
-      "description": "A set of accessible and composable Audio UI components.",
-      "language": "Svelte",
-      "stars": 78,
-      "forks": 4,
-      "openIssues": 8,
-      "license": "MIT",
-      "topics": [
-        "audio",
-        "audio-player",
-        "audio-ui",
-        "shadcn-svelte",
-        "svelte-5",
-        "svelte-components",
-        "sveltekit"
-      ],
-      "archived": false,
-      "pushedAt": "2026-06-23T03:45:48Z",
-      "createdAt": "2026-03-17T12:55:21Z"
-    },
-    {
       "slug": "mydisha/keirouter",
       "fullName": "mydisha/keirouter",
       "name": "keirouter",
@@ -381,7 +356,7 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 76,
+      "stars": 78,
       "forks": 26,
       "openIssues": 4,
       "license": "MIT",
@@ -406,8 +381,36 @@
         "zai"
       ],
       "archived": false,
-      "pushedAt": "2026-07-04T09:07:27Z",
+      "pushedAt": "2026-07-05T12:14:47Z",
       "createdAt": "2026-05-31T09:02:50Z"
+    },
+    {
+      "slug": "ddtamn/svelte-audio-ui",
+      "fullName": "ddtamn/svelte-audio-ui",
+      "name": "svelte-audio-ui",
+      "owner": "ddtamn",
+      "ownerUrl": "https://github.com/ddtamn",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/102568893?v=4",
+      "url": "https://github.com/ddtamn/svelte-audio-ui",
+      "homepage": "https://svelte-audio-ui.vercel.app/",
+      "description": "A set of accessible and composable Audio UI components.",
+      "language": "Svelte",
+      "stars": 77,
+      "forks": 4,
+      "openIssues": 8,
+      "license": "MIT",
+      "topics": [
+        "audio",
+        "audio-player",
+        "audio-ui",
+        "shadcn-svelte",
+        "svelte-5",
+        "svelte-components",
+        "sveltekit"
+      ],
+      "archived": false,
+      "pushedAt": "2026-06-23T03:45:48Z",
+      "createdAt": "2026-03-17T12:55:21Z"
     },
     {
       "slug": "njinlabs/njinattend-backend",
@@ -485,13 +488,13 @@
       "homepage": null,
       "description": "The repo map your coding agent is forced to use — ~98% fewer tokens (up to 99.9% per task) to understand a TS/JS codebase. PageRank hubs, Aider-style symbol ranking, token-budgeted digest, --any router, wired into the agent loop.",
       "language": "JavaScript",
-      "stars": 44,
+      "stars": 45,
       "forks": 10,
-      "openIssues": 8,
+      "openIssues": 2,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-04T13:45:30Z",
+      "pushedAt": "2026-07-05T10:20:45Z",
       "createdAt": "2026-06-13T11:29:36Z"
     },
     {
@@ -574,7 +577,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-04T04:23:57Z",
+      "pushedAt": "2026-07-05T12:24:56Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -701,7 +704,7 @@
       "language": "Rust",
       "stars": 32,
       "forks": 5,
-      "openIssues": 0,
+      "openIssues": 1,
       "license": "Apache-2.0",
       "topics": [
         "ai",
@@ -719,7 +722,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-07-04T14:42:29Z",
+      "pushedAt": "2026-07-05T12:57:20Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -1012,6 +1015,38 @@
       "createdAt": "2026-03-12T09:55:51Z"
     },
     {
+      "slug": "rizukirr/muslimtify",
+      "fullName": "rizukirr/muslimtify",
+      "name": "muslimtify",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/muslimtify",
+      "homepage": null,
+      "description": "A daily prayer notification daemon for Muslims on Windows and Linux, supporting 21 global standard calculation methods, all madzhab, all country.",
+      "language": "C",
+      "stars": 11,
+      "forks": 1,
+      "openIssues": 1,
+      "license": "MIT",
+      "topics": [
+        "c-language",
+        "cross-platform",
+        "daemon",
+        "linux",
+        "muslim-prayer-times",
+        "muslims-prayer",
+        "notification",
+        "systemd",
+        "windows",
+        "windows-app",
+        "windows-desktop"
+      ],
+      "archived": false,
+      "pushedAt": "2026-07-05T09:41:48Z",
+      "createdAt": "2026-02-23T13:59:12Z"
+    },
+    {
       "slug": "rahmanef63/si-coder-agent",
       "fullName": "rahmanef63/si-coder-agent",
       "name": "si-coder-agent",
@@ -1041,40 +1076,8 @@
         "zero-human"
       ],
       "archived": false,
-      "pushedAt": "2026-07-04T13:02:18Z",
+      "pushedAt": "2026-07-05T06:49:56Z",
       "createdAt": "2026-03-18T18:38:41Z"
-    },
-    {
-      "slug": "rizukirr/muslimtify",
-      "fullName": "rizukirr/muslimtify",
-      "name": "muslimtify",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/muslimtify",
-      "homepage": null,
-      "description": "A daily prayer notification daemon for Muslims on Windows and Linux, supporting 21 global standard calculation methods, all madzhab, all country.",
-      "language": "C",
-      "stars": 11,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "c-language",
-        "cross-platform",
-        "daemon",
-        "linux",
-        "muslim-prayer-times",
-        "muslims-prayer",
-        "notification",
-        "systemd",
-        "windows",
-        "windows-app",
-        "windows-desktop"
-      ],
-      "archived": false,
-      "pushedAt": "2026-07-03T12:41:00Z",
-      "createdAt": "2026-02-23T13:59:12Z"
     },
     {
       "slug": "xpajonx/openempiric",
@@ -1341,7 +1344,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-04T14:10:03Z",
+      "pushedAt": "2026-07-04T20:11:25Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1397,7 +1400,7 @@
       "language": "Rust",
       "stars": 5,
       "forks": 2,
-      "openIssues": 0,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "api",
@@ -1409,7 +1412,7 @@
         "rust"
       ],
       "archived": false,
-      "pushedAt": "2026-07-04T16:45:26Z",
+      "pushedAt": "2026-07-05T15:59:09Z",
       "createdAt": "2026-06-04T12:15:07Z"
     },
     {
@@ -1659,14 +1662,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-07-04T20:11:14.961Z"
+      "syncedAt": "2026-07-05T20:16:56.782Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-07-04T20:11:14.961Z"
+      "syncedAt": "2026-07-05T20:16:56.782Z"
     }
   ],
-  "syncedAt": "2026-07-04T20:11:14.961Z",
+  "syncedAt": "2026-07-05T20:16:56.782Z",
   "count": 65
 }
