@@ -11,7 +11,7 @@
       "homepage": null,
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
-      "stars": 1211,
+      "stars": 1212,
       "forks": 1163,
       "openIssues": 363,
       "license": null,
@@ -34,7 +34,7 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 868,
+      "stars": 869,
       "forks": 271,
       "openIssues": 3,
       "license": "MIT",
@@ -82,8 +82,8 @@
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
       "stars": 323,
-      "forks": 37,
-      "openIssues": 5,
+      "forks": 38,
+      "openIssues": 6,
       "license": "MIT",
       "topics": [
         "adb",
@@ -95,7 +95,7 @@
         "wails-app"
       ],
       "archived": false,
-      "pushedAt": "2026-07-08T18:03:18Z",
+      "pushedAt": "2026-07-09T19:10:01Z",
       "createdAt": "2025-11-04T15:37:00Z"
     },
     {
@@ -212,7 +212,7 @@
       "description": null,
       "language": "Python",
       "stars": 145,
-      "forks": 35,
+      "forks": 36,
       "openIssues": 0,
       "license": "MIT",
       "topics": [],
@@ -265,6 +265,26 @@
       "createdAt": "2021-04-21T07:59:57Z"
     },
     {
+      "slug": "jipraks/kasirgratisan",
+      "fullName": "jipraks/kasirgratisan",
+      "name": "kasirgratisan",
+      "owner": "jipraks",
+      "ownerUrl": "https://github.com/jipraks",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/10278519?v=4",
+      "url": "https://github.com/jipraks/kasirgratisan",
+      "homepage": null,
+      "description": "Free, Open Source, Offline Point of Sales Apps",
+      "language": "TypeScript",
+      "stars": 96,
+      "forks": 48,
+      "openIssues": 1,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-07-06T07:13:34Z",
+      "createdAt": "2026-02-12T11:02:43Z"
+    },
+    {
       "slug": "depapp/indogithubers",
       "fullName": "depapp/IndoGitHubers",
       "name": "IndoGitHubers",
@@ -288,26 +308,6 @@
       "archived": false,
       "pushedAt": "2026-06-22T20:43:05Z",
       "createdAt": "2023-09-05T12:35:21Z"
-    },
-    {
-      "slug": "jipraks/kasirgratisan",
-      "fullName": "jipraks/kasirgratisan",
-      "name": "kasirgratisan",
-      "owner": "jipraks",
-      "ownerUrl": "https://github.com/jipraks",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/10278519?v=4",
-      "url": "https://github.com/jipraks/kasirgratisan",
-      "homepage": null,
-      "description": "Free, Open Source, Offline Point of Sales Apps",
-      "language": "TypeScript",
-      "stars": 95,
-      "forks": 46,
-      "openIssues": 1,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-07-06T07:13:34Z",
-      "createdAt": "2026-02-12T11:02:43Z"
     },
     {
       "slug": "adenaufal/anti-slop-writing",
@@ -584,7 +584,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-07-09T13:40:56Z",
+      "pushedAt": "2026-07-09T17:00:55Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -689,7 +689,7 @@
         "web-desktop"
       ],
       "archived": false,
-      "pushedAt": "2026-06-26T09:30:00Z",
+      "pushedAt": "2026-07-09T17:49:36Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -949,7 +949,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-08T09:20:17Z",
+      "pushedAt": "2026-07-09T13:56:46Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1012,7 +1012,7 @@
         "windows-desktop"
       ],
       "archived": false,
-      "pushedAt": "2026-07-09T13:28:12Z",
+      "pushedAt": "2026-07-09T15:16:05Z",
       "createdAt": "2026-02-23T13:59:12Z"
     },
     {
@@ -1328,6 +1328,26 @@
       "createdAt": "2026-06-12T01:36:09Z"
     },
     {
+      "slug": "raymondchins/tokengratis-id",
+      "fullName": "raymondchins/tokengratis-id",
+      "name": "tokengratis-id",
+      "owner": "raymondchins",
+      "ownerUrl": "https://github.com/raymondchins",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
+      "url": "https://github.com/raymondchins/tokengratis-id",
+      "homepage": "https://tokengratis.id",
+      "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
+      "language": "JavaScript",
+      "stars": 6,
+      "forks": 0,
+      "openIssues": 1,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-07-09T13:52:48Z",
+      "createdAt": "2026-06-01T10:04:41Z"
+    },
+    {
       "slug": "aofsnorth/artidor",
       "fullName": "Aofsnorth/Artidor",
       "name": "Artidor",
@@ -1374,26 +1394,6 @@
       "archived": false,
       "pushedAt": "2026-07-07T04:45:12Z",
       "createdAt": "2026-06-04T12:15:07Z"
-    },
-    {
-      "slug": "raymondchins/tokengratis-id",
-      "fullName": "raymondchins/tokengratis-id",
-      "name": "tokengratis-id",
-      "owner": "raymondchins",
-      "ownerUrl": "https://github.com/raymondchins",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
-      "url": "https://github.com/raymondchins/tokengratis-id",
-      "homepage": "https://tokengratis.id",
-      "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
-      "language": "JavaScript",
-      "stars": 6,
-      "forks": 0,
-      "openIssues": 2,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-07-06T20:53:43Z",
-      "createdAt": "2026-06-01T10:04:41Z"
     },
     {
       "slug": "rifqiakrm/code-island",
@@ -1662,14 +1662,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-07-09T13:52:38.878Z"
+      "syncedAt": "2026-07-09T20:49:03.405Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-07-09T13:52:38.878Z"
+      "syncedAt": "2026-07-09T20:49:03.405Z"
     }
   ],
-  "syncedAt": "2026-07-09T13:52:38.878Z",
+  "syncedAt": "2026-07-09T20:49:03.405Z",
   "count": 65
 }
