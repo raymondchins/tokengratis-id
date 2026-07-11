@@ -12,8 +12,8 @@
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
       "stars": 1212,
-      "forks": 1163,
-      "openIssues": 367,
+      "forks": 1162,
+      "openIssues": 368,
       "license": null,
       "topics": [
         "opensid",
@@ -34,7 +34,7 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 869,
+      "stars": 872,
       "forks": 271,
       "openIssues": 3,
       "license": "MIT",
@@ -54,7 +54,7 @@
       "homepage": "https://jokoui.web.id",
       "description": "Free Open Source Tailwind CSS Component for Sat-set Developers with Zero Configuration, Installation, and Setup",
       "language": "TypeScript",
-      "stars": 410,
+      "stars": 411,
       "forks": 27,
       "openIssues": 8,
       "license": "MIT",
@@ -109,7 +109,7 @@
       "homepage": "https://omni.weekndlabs.com",
       "description": "Noise-canceling context and long-term memory for your AI agent. Stop paying Claude to read 10,000 lines of terminal noise like a headphone for AI agent",
       "language": "Rust",
-      "stars": 297,
+      "stars": 298,
       "forks": 29,
       "openIssues": 0,
       "license": "MIT",
@@ -148,8 +148,8 @@
       "homepage": "https://demo.erdbuilderpro.com",
       "description": "ERD Builder Pro is a database design and documentation tool for developers. Build ERDs, flowcharts, notes, and drawings — all in one workspace",
       "language": "TypeScript",
-      "stars": 161,
-      "forks": 31,
+      "stars": 163,
+      "forks": 32,
       "openIssues": 0,
       "license": null,
       "topics": [
@@ -163,7 +163,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-07-10T01:27:29Z",
+      "pushedAt": "2026-07-11T12:33:22Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -177,7 +177,7 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 158,
+      "stars": 160,
       "forks": 34,
       "openIssues": 47,
       "license": "MIT",
@@ -211,7 +211,7 @@
       "homepage": null,
       "description": null,
       "language": "Python",
-      "stars": 146,
+      "stars": 147,
       "forks": 36,
       "openIssues": 0,
       "license": "MIT",
@@ -489,6 +489,40 @@
       "createdAt": "2026-01-11T07:23:01Z"
     },
     {
+      "slug": "codecoradev/uteke",
+      "fullName": "codecoradev/uteke",
+      "name": "uteke",
+      "owner": "codecoradev",
+      "ownerUrl": "https://github.com/codecoradev",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
+      "url": "https://github.com/codecoradev/uteke",
+      "homepage": "https://codecora.dev",
+      "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
+      "language": "Rust",
+      "stars": 46,
+      "forks": 6,
+      "openIssues": 1,
+      "license": "Apache-2.0",
+      "topics": [
+        "ai",
+        "cli",
+        "cli-tool",
+        "embeddings",
+        "hnsw",
+        "local-first",
+        "memory",
+        "onnx",
+        "onnxruntime",
+        "rust",
+        "semantic-search",
+        "sqlite",
+        "vector-database"
+      ],
+      "archived": false,
+      "pushedAt": "2026-07-11T16:45:58Z",
+      "createdAt": "2026-05-29T00:27:31Z"
+    },
+    {
       "slug": "abilfida/omnidrive",
       "fullName": "abilfida/OmniDrive",
       "name": "OmniDrive",
@@ -534,40 +568,6 @@
       "createdAt": "2026-06-18T03:59:11Z"
     },
     {
-      "slug": "codecoradev/uteke",
-      "fullName": "codecoradev/uteke",
-      "name": "uteke",
-      "owner": "codecoradev",
-      "ownerUrl": "https://github.com/codecoradev",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
-      "url": "https://github.com/codecoradev/uteke",
-      "homepage": "https://codecora.dev",
-      "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
-      "language": "Rust",
-      "stars": 44,
-      "forks": 6,
-      "openIssues": 0,
-      "license": "Apache-2.0",
-      "topics": [
-        "ai",
-        "cli",
-        "cli-tool",
-        "embeddings",
-        "hnsw",
-        "local-first",
-        "memory",
-        "onnx",
-        "onnxruntime",
-        "rust",
-        "semantic-search",
-        "sqlite",
-        "vector-database"
-      ],
-      "archived": false,
-      "pushedAt": "2026-07-10T09:37:07Z",
-      "createdAt": "2026-05-29T00:27:31Z"
-    },
-    {
       "slug": "raymondchins/agentmap",
       "fullName": "raymondchins/agentmap",
       "name": "agentmap",
@@ -580,11 +580,11 @@
       "language": "JavaScript",
       "stars": 44,
       "forks": 10,
-      "openIssues": 2,
+      "openIssues": 4,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-05T10:20:45Z",
+      "pushedAt": "2026-07-11T09:32:38Z",
       "createdAt": "2026-06-13T11:29:36Z"
     },
     {
@@ -631,7 +631,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-10T15:36:23Z",
+      "pushedAt": "2026-07-11T10:45:07Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -786,8 +786,8 @@
       "homepage": null,
       "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
       "language": "C#",
-      "stars": 24,
-      "forks": 10,
+      "stars": 28,
+      "forks": 11,
       "openIssues": 0,
       "license": null,
       "topics": [
@@ -798,7 +798,7 @@
         "windows"
       ],
       "archived": false,
-      "pushedAt": "2026-07-10T05:34:18Z",
+      "pushedAt": "2026-07-11T07:00:26Z",
       "createdAt": "2026-05-23T05:37:35Z"
     },
     {
@@ -909,7 +909,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-06-29T10:02:33Z",
+      "pushedAt": "2026-07-11T14:47:42Z",
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
@@ -931,26 +931,6 @@
       "archived": false,
       "pushedAt": "2026-07-07T11:06:01Z",
       "createdAt": "2026-06-15T14:35:14Z"
-    },
-    {
-      "slug": "rudycity/superagent",
-      "fullName": "RudyCity/superagent",
-      "name": "superagent",
-      "owner": "RudyCity",
-      "ownerUrl": "https://github.com/RudyCity",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/82188919?v=4",
-      "url": "https://github.com/RudyCity/superagent",
-      "homepage": null,
-      "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
-      "language": "TypeScript",
-      "stars": 13,
-      "forks": 2,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-07-10T06:45:53Z",
-      "createdAt": "2026-06-09T15:06:10Z"
     },
     {
       "slug": "rahmanef63/open-silong",
@@ -980,8 +960,28 @@
         "workspace"
       ],
       "archived": false,
-      "pushedAt": "2026-07-07T16:26:12Z",
+      "pushedAt": "2026-07-11T15:30:10Z",
       "createdAt": "2026-04-29T18:48:11Z"
+    },
+    {
+      "slug": "rudycity/superagent",
+      "fullName": "RudyCity/superagent",
+      "name": "superagent",
+      "owner": "RudyCity",
+      "ownerUrl": "https://github.com/RudyCity",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/82188919?v=4",
+      "url": "https://github.com/RudyCity/superagent",
+      "homepage": null,
+      "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
+      "language": "TypeScript",
+      "stars": 13,
+      "forks": 2,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-07-11T15:14:57Z",
+      "createdAt": "2026-06-09T15:06:10Z"
     },
     {
       "slug": "rizukirr/muslimtify",
@@ -1012,7 +1012,7 @@
         "windows-desktop"
       ],
       "archived": false,
-      "pushedAt": "2026-07-10T16:54:36Z",
+      "pushedAt": "2026-07-11T08:38:29Z",
       "createdAt": "2026-02-23T13:59:12Z"
     },
     {
@@ -1027,7 +1027,7 @@
       "description": "Zero-human full-stack deployment skill bundle for AI agents — GitHub + Dokploy + Convex (self-hosted & Cloud) + Vercel + Hostinger DNS, via modular /sc-* slash commands.",
       "language": "JavaScript",
       "stars": 12,
-      "forks": 1,
+      "forks": 2,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -1266,15 +1266,17 @@
       "ownerUrl": "https://github.com/semutdev",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/209312156?v=4",
       "url": "https://github.com/semutdev/goigniter",
-      "homepage": "https://goigniter.semutdev.my.id",
-      "description": "Open Source GOLANG Framework with Codeigniter Flavour",
+      "homepage": "https://goigniter.semut.dev",
+      "description": "Open Source GOLANG wbe framework with Codeigniter Flavour",
       "language": "Go",
       "stars": 7,
       "forks": 2,
       "openIssues": 0,
       "license": null,
       "topics": [
+        "ci3",
         "codeigniter",
+        "codeigniter3",
         "goigniter",
         "golang"
       ],
@@ -1344,7 +1346,7 @@
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-10T15:46:03Z",
+      "pushedAt": "2026-07-11T15:23:15Z",
       "createdAt": "2026-06-13T11:24:30Z"
     },
     {
@@ -1364,7 +1366,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-09T20:49:13Z",
+      "pushedAt": "2026-07-10T20:25:53Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1662,14 +1664,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-07-10T20:25:43.309Z"
+      "syncedAt": "2026-07-11T20:06:25.685Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-07-10T20:25:43.309Z"
+      "syncedAt": "2026-07-11T20:06:25.685Z"
     }
   ],
-  "syncedAt": "2026-07-10T20:25:43.309Z",
+  "syncedAt": "2026-07-11T20:06:25.685Z",
   "count": 65
 }
