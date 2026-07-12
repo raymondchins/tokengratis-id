@@ -35,7 +35,7 @@
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
       "stars": 872,
-      "forks": 271,
+      "forks": 272,
       "openIssues": 3,
       "license": "MIT",
       "topics": [],
@@ -81,7 +81,7 @@
       "homepage": null,
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 323,
+      "stars": 324,
       "forks": 38,
       "openIssues": 6,
       "license": "MIT",
@@ -109,7 +109,7 @@
       "homepage": "https://omni.weekndlabs.com",
       "description": "Noise-canceling context and long-term memory for your AI agent. Stop paying Claude to read 10,000 lines of terminal noise like a headphone for AI agent",
       "language": "Rust",
-      "stars": 298,
+      "stars": 300,
       "forks": 29,
       "openIssues": 0,
       "license": "MIT",
@@ -145,10 +145,10 @@
       "ownerUrl": "https://github.com/hadziqmtqn",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/36812793?v=4",
       "url": "https://github.com/hadziqmtqn/erd-builder-pro",
-      "homepage": "https://demo.erdbuilderpro.com",
+      "homepage": "https://www.erdbuilderpro.com",
       "description": "ERD Builder Pro is a database design and documentation tool for developers. Build ERDs, flowcharts, notes, and drawings — all in one workspace",
       "language": "TypeScript",
-      "stars": 163,
+      "stars": 164,
       "forks": 32,
       "openIssues": 0,
       "license": null,
@@ -177,9 +177,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 160,
+      "stars": 161,
       "forks": 34,
-      "openIssues": 47,
+      "openIssues": 49,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -197,7 +197,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-07-01T15:44:48Z",
+      "pushedAt": "2026-07-12T07:09:34Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -275,7 +275,7 @@
       "homepage": null,
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
-      "stars": 99,
+      "stars": 100,
       "forks": 50,
       "openIssues": 1,
       "license": "MIT",
@@ -356,7 +356,7 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 82,
+      "stars": 84,
       "forks": 28,
       "openIssues": 4,
       "license": "MIT",
@@ -433,6 +433,40 @@
       "createdAt": "2023-09-23T21:07:22Z"
     },
     {
+      "slug": "codecoradev/uteke",
+      "fullName": "codecoradev/uteke",
+      "name": "uteke",
+      "owner": "codecoradev",
+      "ownerUrl": "https://github.com/codecoradev",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
+      "url": "https://github.com/codecoradev/uteke",
+      "homepage": "https://codecora.dev",
+      "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
+      "language": "Rust",
+      "stars": 55,
+      "forks": 8,
+      "openIssues": 1,
+      "license": "Apache-2.0",
+      "topics": [
+        "ai",
+        "cli",
+        "cli-tool",
+        "embeddings",
+        "hnsw",
+        "local-first",
+        "memory",
+        "onnx",
+        "onnxruntime",
+        "rust",
+        "semantic-search",
+        "sqlite",
+        "vector-database"
+      ],
+      "archived": false,
+      "pushedAt": "2026-07-11T16:45:58Z",
+      "createdAt": "2026-05-29T00:27:31Z"
+    },
+    {
       "slug": "ilhamrisky/tedi",
       "fullName": "IlhamriSKY/TEDI",
       "name": "TEDI",
@@ -443,7 +477,7 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "One lightweight app. Eight features. Your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 48,
+      "stars": 49,
       "forks": 6,
       "openIssues": 0,
       "license": "Apache-2.0",
@@ -465,7 +499,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-07-08T13:40:46Z",
+      "pushedAt": "2026-07-12T15:05:09Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -487,40 +521,6 @@
       "archived": false,
       "pushedAt": "2026-02-18T08:47:11Z",
       "createdAt": "2026-01-11T07:23:01Z"
-    },
-    {
-      "slug": "codecoradev/uteke",
-      "fullName": "codecoradev/uteke",
-      "name": "uteke",
-      "owner": "codecoradev",
-      "ownerUrl": "https://github.com/codecoradev",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
-      "url": "https://github.com/codecoradev/uteke",
-      "homepage": "https://codecora.dev",
-      "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
-      "language": "Rust",
-      "stars": 46,
-      "forks": 6,
-      "openIssues": 1,
-      "license": "Apache-2.0",
-      "topics": [
-        "ai",
-        "cli",
-        "cli-tool",
-        "embeddings",
-        "hnsw",
-        "local-first",
-        "memory",
-        "onnx",
-        "onnxruntime",
-        "rust",
-        "semantic-search",
-        "sqlite",
-        "vector-database"
-      ],
-      "archived": false,
-      "pushedAt": "2026-07-11T16:45:58Z",
-      "createdAt": "2026-05-29T00:27:31Z"
     },
     {
       "slug": "abilfida/omnidrive",
@@ -578,7 +578,7 @@
       "homepage": null,
       "description": "The repo map your coding agent is forced to use — ~98% fewer tokens (up to 99.9% per task) to understand a TS/JS codebase. PageRank hubs, Aider-style symbol ranking, token-budgeted digest, --any router, wired into the agent loop.",
       "language": "JavaScript",
-      "stars": 44,
+      "stars": 45,
       "forks": 10,
       "openIssues": 4,
       "license": "MIT",
@@ -627,11 +627,11 @@
       "language": "Ruby",
       "stars": 37,
       "forks": 4,
-      "openIssues": 2,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-11T10:45:07Z",
+      "pushedAt": "2026-07-12T12:37:08Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -689,8 +689,67 @@
         "web-desktop"
       ],
       "archived": false,
-      "pushedAt": "2026-07-09T17:49:36Z",
+      "pushedAt": "2026-07-12T19:57:06Z",
       "createdAt": "2026-05-29T17:44:06Z"
+    },
+    {
+      "slug": "rizukirr/no-vibe",
+      "fullName": "rizukirr/no-vibe",
+      "name": "no-vibe",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/no-vibe",
+      "homepage": null,
+      "description": "Turn your AI assistant into a tutor. It plans, shows code, reviews, adapts to how you learn and helps you complete your real project on your own",
+      "language": "Shell",
+      "stars": 34,
+      "forks": 1,
+      "openIssues": 1,
+      "license": "MIT",
+      "topics": [
+        "ai-agents",
+        "claude-code",
+        "codex",
+        "learning",
+        "llm",
+        "mentor",
+        "opencode",
+        "plugin",
+        "study",
+        "tutor",
+        "vibe-coding",
+        "vibecoding"
+      ],
+      "archived": false,
+      "pushedAt": "2026-06-12T15:10:29Z",
+      "createdAt": "2026-04-09T16:08:42Z"
+    },
+    {
+      "slug": "ardli-firman/sha-print",
+      "fullName": "ardli-firman/sha-print",
+      "name": "sha-print",
+      "owner": "ardli-firman",
+      "ownerUrl": "https://github.com/ardli-firman",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/48121202?v=4",
+      "url": "https://github.com/ardli-firman/sha-print",
+      "homepage": null,
+      "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
+      "language": "C#",
+      "stars": 33,
+      "forks": 14,
+      "openIssues": 0,
+      "license": null,
+      "topics": [
+        "desktop-app",
+        "printer",
+        "sharing",
+        "sharing-printer",
+        "windows"
+      ],
+      "archived": false,
+      "pushedAt": "2026-07-12T10:31:04Z",
+      "createdAt": "2026-05-23T05:37:35Z"
     },
     {
       "slug": "pendig/rute-bayar",
@@ -723,39 +782,6 @@
       "createdAt": "2026-05-05T01:16:45Z"
     },
     {
-      "slug": "rizukirr/no-vibe",
-      "fullName": "rizukirr/no-vibe",
-      "name": "no-vibe",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/no-vibe",
-      "homepage": null,
-      "description": "Turn your AI assistant into a tutor. It plans, shows code, reviews, adapts to how you learn and helps you complete your real project on your own",
-      "language": "Shell",
-      "stars": 33,
-      "forks": 1,
-      "openIssues": 1,
-      "license": "MIT",
-      "topics": [
-        "ai-agents",
-        "claude-code",
-        "codex",
-        "learning",
-        "llm",
-        "mentor",
-        "opencode",
-        "plugin",
-        "study",
-        "tutor",
-        "vibe-coding",
-        "vibecoding"
-      ],
-      "archived": false,
-      "pushedAt": "2026-06-12T15:10:29Z",
-      "createdAt": "2026-04-09T16:08:42Z"
-    },
-    {
       "slug": "galpratama/agent-cli",
       "fullName": "galpratama/agent-cli",
       "name": "agent-cli",
@@ -774,32 +800,6 @@
       "archived": false,
       "pushedAt": "2025-12-27T17:13:26Z",
       "createdAt": "2025-12-17T16:19:36Z"
-    },
-    {
-      "slug": "ardli-firman/sha-print",
-      "fullName": "ardli-firman/sha-print",
-      "name": "sha-print",
-      "owner": "ardli-firman",
-      "ownerUrl": "https://github.com/ardli-firman",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/48121202?v=4",
-      "url": "https://github.com/ardli-firman/sha-print",
-      "homepage": null,
-      "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
-      "language": "C#",
-      "stars": 28,
-      "forks": 11,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "desktop-app",
-        "printer",
-        "sharing",
-        "sharing-printer",
-        "windows"
-      ],
-      "archived": false,
-      "pushedAt": "2026-07-11T07:00:26Z",
-      "createdAt": "2026-05-23T05:37:35Z"
     },
     {
       "slug": "rayasabari/yntk-ts",
@@ -838,7 +838,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-06T01:45:55Z",
+      "pushedAt": "2026-07-12T04:20:57Z",
       "createdAt": "2026-03-29T13:58:03Z"
     },
     {
@@ -984,14 +984,14 @@
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
-      "slug": "rizukirr/muslimtify",
-      "fullName": "rizukirr/muslimtify",
+      "slug": "muslimtify-org/muslimtify",
+      "fullName": "muslimtify-org/muslimtify",
       "name": "muslimtify",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/muslimtify",
-      "homepage": null,
+      "owner": "muslimtify-org",
+      "ownerUrl": "https://github.com/muslimtify-org",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/302768915?v=4",
+      "url": "https://github.com/muslimtify-org/muslimtify",
+      "homepage": "https://muslimtify.vercel.app",
       "description": "A daily prayer notification daemon for Muslims on Windows and Linux, supporting 21 global standard calculation methods, all madzhab, all country.",
       "language": "C",
       "stars": 12,
@@ -1346,7 +1346,7 @@
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-11T15:23:15Z",
+      "pushedAt": "2026-07-12T17:11:22Z",
       "createdAt": "2026-06-13T11:24:30Z"
     },
     {
@@ -1366,7 +1366,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-10T20:25:53Z",
+      "pushedAt": "2026-07-11T20:06:35Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1620,13 +1620,13 @@
       "createdAt": "2026-02-10T04:21:08Z"
     },
     {
-      "slug": "rizukirr/libmuslim",
-      "fullName": "rizukirr/libmuslim",
+      "slug": "muslimtify-org/libmuslim",
+      "fullName": "muslimtify-org/libmuslim",
       "name": "libmuslim",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/libmuslim",
+      "owner": "muslimtify-org",
+      "ownerUrl": "https://github.com/muslimtify-org",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/302768915?v=4",
+      "url": "https://github.com/muslimtify-org/libmuslim",
       "homepage": null,
       "description": "A lightweight C library for calculating Islamic prayer times, support 21 calculation method worldwide",
       "language": "C",
@@ -1664,14 +1664,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-07-11T20:06:25.685Z"
+      "syncedAt": "2026-07-12T20:06:36.306Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-07-11T20:06:25.685Z"
+      "syncedAt": "2026-07-12T20:06:36.306Z"
     }
   ],
-  "syncedAt": "2026-07-11T20:06:25.685Z",
+  "syncedAt": "2026-07-12T20:06:36.306Z",
   "count": 65
 }
