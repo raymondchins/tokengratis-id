@@ -12,8 +12,8 @@
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
       "stars": 1213,
-      "forks": 1162,
-      "openIssues": 363,
+      "forks": 1163,
+      "openIssues": 365,
       "license": null,
       "topics": [
         "opensid",
@@ -34,8 +34,8 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 876,
-      "forks": 274,
+      "stars": 883,
+      "forks": 277,
       "openIssues": 3,
       "license": "MIT",
       "topics": [],
@@ -83,7 +83,7 @@
       "language": "TypeScript",
       "stars": 326,
       "forks": 38,
-      "openIssues": 6,
+      "openIssues": 7,
       "license": "MIT",
       "topics": [
         "adb",
@@ -163,7 +163,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-07-13T14:05:13Z",
+      "pushedAt": "2026-07-14T09:08:33Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -179,7 +179,7 @@
       "language": "TypeScript",
       "stars": 162,
       "forks": 34,
-      "openIssues": 50,
+      "openIssues": 49,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -197,7 +197,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-07-13T15:03:31Z",
+      "pushedAt": "2026-07-14T03:44:20Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -241,6 +241,40 @@
       "createdAt": "2018-08-06T13:38:19Z"
     },
     {
+      "slug": "codecoradev/uteke",
+      "fullName": "codecoradev/uteke",
+      "name": "uteke",
+      "owner": "codecoradev",
+      "ownerUrl": "https://github.com/codecoradev",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
+      "url": "https://github.com/codecoradev/uteke",
+      "homepage": "https://codecora.dev",
+      "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
+      "language": "Rust",
+      "stars": 110,
+      "forks": 10,
+      "openIssues": 4,
+      "license": "Apache-2.0",
+      "topics": [
+        "ai",
+        "cli",
+        "cli-tool",
+        "embeddings",
+        "hnsw",
+        "local-first",
+        "memory",
+        "onnx",
+        "onnxruntime",
+        "rust",
+        "semantic-search",
+        "sqlite",
+        "vector-database"
+      ],
+      "archived": false,
+      "pushedAt": "2026-07-14T18:54:58Z",
+      "createdAt": "2026-05-29T00:27:31Z"
+    },
+    {
       "slug": "ilhamrisky/pddikti-kemdikbud-api",
       "fullName": "IlhamriSKY/PDDIKTI-kemdikbud-API",
       "name": "PDDIKTI-kemdikbud-API",
@@ -275,48 +309,14 @@
       "homepage": null,
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
-      "stars": 103,
-      "forks": 53,
+      "stars": 105,
+      "forks": 54,
       "openIssues": 1,
       "license": "MIT",
       "topics": [],
       "archived": false,
       "pushedAt": "2026-07-13T00:57:27Z",
       "createdAt": "2026-02-12T11:02:43Z"
-    },
-    {
-      "slug": "codecoradev/uteke",
-      "fullName": "codecoradev/uteke",
-      "name": "uteke",
-      "owner": "codecoradev",
-      "ownerUrl": "https://github.com/codecoradev",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
-      "url": "https://github.com/codecoradev/uteke",
-      "homepage": "https://codecora.dev",
-      "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
-      "language": "Rust",
-      "stars": 97,
-      "forks": 10,
-      "openIssues": 0,
-      "license": "Apache-2.0",
-      "topics": [
-        "ai",
-        "cli",
-        "cli-tool",
-        "embeddings",
-        "hnsw",
-        "local-first",
-        "memory",
-        "onnx",
-        "onnxruntime",
-        "rust",
-        "semantic-search",
-        "sqlite",
-        "vector-database"
-      ],
-      "archived": false,
-      "pushedAt": "2026-07-13T17:18:43Z",
-      "createdAt": "2026-05-29T00:27:31Z"
     },
     {
       "slug": "depapp/indogithubers",
@@ -390,8 +390,8 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 84,
-      "forks": 28,
+      "stars": 85,
+      "forks": 29,
       "openIssues": 4,
       "license": "MIT",
       "topics": [
@@ -415,7 +415,7 @@
         "zai"
       ],
       "archived": false,
-      "pushedAt": "2026-07-10T19:22:36Z",
+      "pushedAt": "2026-07-14T15:06:18Z",
       "createdAt": "2026-05-31T09:02:50Z"
     },
     {
@@ -477,7 +477,7 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "One lightweight app. Eight features. Your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 49,
+      "stars": 51,
       "forks": 6,
       "openIssues": 0,
       "license": "Apache-2.0",
@@ -499,7 +499,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-07-13T08:41:20Z",
+      "pushedAt": "2026-07-14T04:29:49Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -535,7 +535,7 @@
       "language": "Svelte",
       "stars": 46,
       "forks": 5,
-      "openIssues": 4,
+      "openIssues": 5,
       "license": "MIT",
       "topics": [
         "bansos",
@@ -550,7 +550,7 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-07-13T07:24:38Z",
+      "pushedAt": "2026-07-14T11:37:42Z",
       "createdAt": "2026-06-11T13:28:54Z"
     },
     {
@@ -662,7 +662,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-13T13:58:17Z",
+      "pushedAt": "2026-07-14T05:49:00Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -720,8 +720,34 @@
         "web-desktop"
       ],
       "archived": false,
-      "pushedAt": "2026-07-13T16:58:42Z",
+      "pushedAt": "2026-07-14T17:53:28Z",
       "createdAt": "2026-05-29T17:44:06Z"
+    },
+    {
+      "slug": "ardli-firman/sha-print",
+      "fullName": "ardli-firman/sha-print",
+      "name": "sha-print",
+      "owner": "ardli-firman",
+      "ownerUrl": "https://github.com/ardli-firman",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/48121202?v=4",
+      "url": "https://github.com/ardli-firman/sha-print",
+      "homepage": null,
+      "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
+      "language": "C#",
+      "stars": 34,
+      "forks": 14,
+      "openIssues": 0,
+      "license": null,
+      "topics": [
+        "desktop-app",
+        "printer",
+        "sharing",
+        "sharing-printer",
+        "windows"
+      ],
+      "archived": false,
+      "pushedAt": "2026-07-13T04:53:38Z",
+      "createdAt": "2026-05-23T05:37:35Z"
     },
     {
       "slug": "rizukirr/no-vibe",
@@ -755,32 +781,6 @@
       "archived": false,
       "pushedAt": "2026-06-12T15:10:29Z",
       "createdAt": "2026-04-09T16:08:42Z"
-    },
-    {
-      "slug": "ardli-firman/sha-print",
-      "fullName": "ardli-firman/sha-print",
-      "name": "sha-print",
-      "owner": "ardli-firman",
-      "ownerUrl": "https://github.com/ardli-firman",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/48121202?v=4",
-      "url": "https://github.com/ardli-firman/sha-print",
-      "homepage": null,
-      "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
-      "language": "C#",
-      "stars": 33,
-      "forks": 14,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "desktop-app",
-        "printer",
-        "sharing",
-        "sharing-printer",
-        "windows"
-      ],
-      "archived": false,
-      "pushedAt": "2026-07-13T04:53:38Z",
-      "createdAt": "2026-05-23T05:37:35Z"
     },
     {
       "slug": "pendig/rute-bayar",
@@ -823,8 +823,8 @@
       "homepage": null,
       "description": "A beautiful Terminal UI for launching multiple AI providers from a single command",
       "language": "HTML",
-      "stars": 29,
-      "forks": 6,
+      "stars": 30,
+      "forks": 7,
       "openIssues": 0,
       "license": "MIT",
       "topics": [],
@@ -964,24 +964,35 @@
       "createdAt": "2026-06-15T14:35:14Z"
     },
     {
-      "slug": "rudycity/superagent",
-      "fullName": "RudyCity/superagent",
-      "name": "superagent",
-      "owner": "RudyCity",
-      "ownerUrl": "https://github.com/RudyCity",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/82188919?v=4",
-      "url": "https://github.com/RudyCity/superagent",
-      "homepage": null,
-      "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
+      "slug": "rahmanef63/open-silong",
+      "fullName": "rahmanef63/open-silong",
+      "name": "open-silong",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/open-silong",
+      "homepage": "https://silong-os.vercel.app/",
+      "description": "An open-source Notion-inspired workspace for teams and personal use",
       "language": "TypeScript",
       "stars": 13,
-      "forks": 2,
+      "forks": 3,
       "openIssues": 0,
       "license": "MIT",
-      "topics": [],
+      "topics": [
+        "block-editor",
+        "convex",
+        "indonesia",
+        "nextjs",
+        "notion-alternative",
+        "notion-clone",
+        "open-source",
+        "react",
+        "self-hosted",
+        "workspace"
+      ],
       "archived": false,
-      "pushedAt": "2026-07-13T14:46:34Z",
-      "createdAt": "2026-06-09T15:06:10Z"
+      "pushedAt": "2026-07-14T17:36:51Z",
+      "createdAt": "2026-04-29T18:48:11Z"
     },
     {
       "slug": "muslimtify-org/muslimtify",
@@ -1012,39 +1023,28 @@
         "windows-desktop"
       ],
       "archived": false,
-      "pushedAt": "2026-07-13T13:09:32Z",
+      "pushedAt": "2026-07-14T14:30:46Z",
       "createdAt": "2026-02-23T13:59:12Z"
     },
     {
-      "slug": "rahmanef63/open-silong",
-      "fullName": "rahmanef63/open-silong",
-      "name": "open-silong",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/open-silong",
-      "homepage": "https://silong-os.vercel.app/",
-      "description": "An open-source Notion-inspired workspace for teams and personal use",
+      "slug": "rudycity/superagent",
+      "fullName": "RudyCity/superagent",
+      "name": "superagent",
+      "owner": "RudyCity",
+      "ownerUrl": "https://github.com/RudyCity",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/82188919?v=4",
+      "url": "https://github.com/RudyCity/superagent",
+      "homepage": null,
+      "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
       "language": "TypeScript",
       "stars": 13,
-      "forks": 3,
+      "forks": 2,
       "openIssues": 0,
       "license": "MIT",
-      "topics": [
-        "block-editor",
-        "convex",
-        "indonesia",
-        "nextjs",
-        "notion-alternative",
-        "notion-clone",
-        "open-source",
-        "react",
-        "self-hosted",
-        "workspace"
-      ],
+      "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-11T15:30:10Z",
-      "createdAt": "2026-04-29T18:48:11Z"
+      "pushedAt": "2026-07-14T08:00:04Z",
+      "createdAt": "2026-06-09T15:06:10Z"
     },
     {
       "slug": "rahmanef63/si-coder-agent",
@@ -1170,7 +1170,7 @@
         "semantic-search"
       ],
       "archived": false,
-      "pushedAt": "2026-07-10T09:39:36Z",
+      "pushedAt": "2026-07-14T09:11:34Z",
       "createdAt": "2026-06-02T04:21:59Z"
     },
     {
@@ -1373,11 +1373,11 @@
       "language": "TypeScript",
       "stars": 6,
       "forks": 1,
-      "openIssues": 0,
+      "openIssues": 5,
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-13T16:24:15Z",
+      "pushedAt": "2026-07-14T15:06:12Z",
       "createdAt": "2026-06-13T11:24:30Z"
     },
     {
@@ -1397,7 +1397,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-12T20:06:47Z",
+      "pushedAt": "2026-07-13T20:18:16Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1779,14 +1779,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-07-13T20:18:05.074Z"
+      "syncedAt": "2026-07-14T20:14:54.525Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-07-13T20:18:05.074Z"
+      "syncedAt": "2026-07-14T20:14:54.525Z"
     }
   ],
-  "syncedAt": "2026-07-13T20:18:05.074Z",
+  "syncedAt": "2026-07-14T20:14:54.525Z",
   "count": 69
 }
