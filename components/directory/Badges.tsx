@@ -205,15 +205,12 @@ function fmtDate(iso: string): string {
 
 export function SourceLine({
   sources,
+  sourceUpdatedAt,
 }: {
   sources: SourceRef[];
+  sourceUpdatedAt?: string | null;
 }) {
   if (sources.length === 0) return null;
-
-  const maxSyncedAt = sources.reduce(
-    (max, s) => (s.syncedAt > max ? s.syncedAt : max),
-    sources[0].syncedAt,
-  );
 
   function SourceName({ s }: { s: SourceRef }) {
     return (
@@ -228,26 +225,37 @@ export function SourceLine({
     );
   }
 
+  // "Disinkron [tanggal]" = kapan kita re-fetch (maju tiap malam = bukti
+  // liveness). "sumber diperbarui [tanggal]" = kapan DATANYA di sumber asli
+  // beneran berubah (sourceUpdatedAt, kalau sumber nyediain). Dua sinyal beda —
+  // syncedAt BUKAN bukti data berubah, jadi jangan dipakai buat "update terakhir".
+  const sourceFresh = sourceUpdatedAt ? (
+    <>
+      {" · sumber diperbarui "}
+      {fmtDate(sourceUpdatedAt)}
+    </>
+  ) : null;
+
   if (sources.length === 1) {
     return (
       <span className="text-[11px] leading-relaxed text-mute">
         Disinkron {fmtDate(sources[0].syncedAt)} dari{" "}
         <SourceName s={sources[0]} />
+        {sourceFresh}
       </span>
     );
   }
 
   return (
     <span className="text-[11px] leading-relaxed text-mute">
-      Disinkron dari{" "}
+      Disinkron {fmtDate(sources[0].syncedAt)} dari{" "}
       {sources.map((s, i) => (
         <span key={s.url}>
           <SourceName s={s} />
           {i < sources.length - 1 && <span>, </span>}
         </span>
       ))}
-      {" · update terakhir "}
-      {fmtDate(maxSyncedAt)}
+      {sourceFresh}
     </span>
   );
 }

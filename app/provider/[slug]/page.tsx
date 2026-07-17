@@ -230,7 +230,7 @@ export default async function Page({
                 <p className="mb-1 text-xs font-semibold uppercase tracking-[0.15em] text-mute">
                   Sumber data
                 </p>
-                <SourceLine sources={p.sources} />
+                <SourceLine sources={p.sources} sourceUpdatedAt={p.sourceUpdatedAt} />
                 <p className="mt-2 text-[11px] leading-relaxed text-mute">
                   Kami aggregator — bukan verifier, bukan pemilik datanya. Kalau ada
                   yang ga akurat,{" "}
