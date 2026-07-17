@@ -247,11 +247,23 @@ export async function fetchProviders() {
       rowsByProvider.set(providerName, {
         name: providerName,
         models: [],
+        seenIds: new Set(),
       });
     }
 
-    rowsByProvider.get(providerName).models.push({
-      id: slugify(modelName),
+    const entry = rowsByProvider.get(providerName);
+    const modelId = slugify(modelName);
+    // Dedup by model id within a provider. freellm.net occasionally renders
+    // duplicate <tr> rows (or repeats the table), which used to double/triple
+    // the parsed model count (299→618→885) and ratchet the rolling sanity
+    // baseline up — then a normal-sized parse fell below the inflated floor and
+    // the source got skipped nightly (see docs/log.md INCIDENT 2026-07-17).
+    // First occurrence wins; identical repeats are dropped.
+    if (entry.seenIds.has(modelId)) continue;
+    entry.seenIds.add(modelId);
+
+    entry.models.push({
+      id: modelId,
       name: modelName,
       context,
       maxOutput,
