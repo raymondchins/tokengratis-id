@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js - The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser (client-side) or Node.js (server-side).",
       "language": "JavaScript",
-      "stars": 10165,
+      "stars": 10166,
       "forks": 1220,
       "openIssues": 17,
       "license": "AGPL-3.0",
@@ -97,14 +97,14 @@
       "language": "PHP",
       "stars": 1213,
       "forks": 1165,
-      "openIssues": 358,
+      "openIssues": 355,
       "license": null,
       "topics": [
         "opensid",
         "sistem-informasi-desa"
       ],
       "archived": false,
-      "pushedAt": "2026-07-17T09:27:12Z",
+      "pushedAt": "2026-07-18T13:09:40Z",
       "createdAt": "2016-05-21T10:55:38Z"
     },
     {
@@ -118,13 +118,13 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 889,
-      "forks": 278,
+      "stars": 891,
+      "forks": 279,
       "openIssues": 3,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-04T05:05:52Z",
+      "pushedAt": "2026-07-18T02:05:39Z",
       "createdAt": "2026-01-15T09:55:34Z"
     },
     {
@@ -138,7 +138,7 @@
       "homepage": null,
       "description": "Package Laravel yang berisi data Provinsi, Kabupaten/Kota, dan Kecamatan/Desa di seluruh Indonesia.",
       "language": "PHP",
-      "stars": 670,
+      "stars": 669,
       "forks": 210,
       "openIssues": 2,
       "license": "MIT",
@@ -252,7 +252,7 @@
       "homepage": "https://www.erdbuilderpro.com",
       "description": "ERD Builder Pro is a database design and documentation tool for developers. Build ERDs, flowcharts, notes, and drawings — all in one workspace",
       "language": "TypeScript",
-      "stars": 167,
+      "stars": 168,
       "forks": 32,
       "openIssues": 0,
       "license": null,
@@ -267,7 +267,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-07-17T17:35:46Z",
+      "pushedAt": "2026-07-18T14:27:59Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -281,9 +281,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 162,
+      "stars": 163,
       "forks": 34,
-      "openIssues": 46,
+      "openIssues": 45,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -301,7 +301,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-07-16T01:32:30Z",
+      "pushedAt": "2026-07-18T12:41:49Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -375,8 +375,28 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-07-17T14:35:18Z",
+      "pushedAt": "2026-07-18T14:58:37Z",
       "createdAt": "2026-05-29T00:27:31Z"
+    },
+    {
+      "slug": "jipraks/kasirgratisan",
+      "fullName": "jipraks/kasirgratisan",
+      "name": "kasirgratisan",
+      "owner": "jipraks",
+      "ownerUrl": "https://github.com/jipraks",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/10278519?v=4",
+      "url": "https://github.com/jipraks/kasirgratisan",
+      "homepage": null,
+      "description": "Free, Open Source, Offline Point of Sales Apps",
+      "language": "TypeScript",
+      "stars": 111,
+      "forks": 57,
+      "openIssues": 1,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-07-13T00:57:27Z",
+      "createdAt": "2026-02-12T11:02:43Z"
     },
     {
       "slug": "ilhamrisky/pddikti-kemdikbud-api",
@@ -401,26 +421,6 @@
       "archived": false,
       "pushedAt": "2025-07-30T13:28:14Z",
       "createdAt": "2021-04-21T07:59:57Z"
-    },
-    {
-      "slug": "jipraks/kasirgratisan",
-      "fullName": "jipraks/kasirgratisan",
-      "name": "kasirgratisan",
-      "owner": "jipraks",
-      "ownerUrl": "https://github.com/jipraks",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/10278519?v=4",
-      "url": "https://github.com/jipraks/kasirgratisan",
-      "homepage": null,
-      "description": "Free, Open Source, Offline Point of Sales Apps",
-      "language": "TypeScript",
-      "stars": 109,
-      "forks": 56,
-      "openIssues": 1,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-07-13T00:57:27Z",
-      "createdAt": "2026-02-12T11:02:43Z"
     },
     {
       "slug": "depapp/indogithubers",
@@ -495,7 +495,7 @@
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
       "stars": 88,
-      "forks": 29,
+      "forks": 30,
       "openIssues": 3,
       "license": "MIT",
       "topics": [
@@ -581,9 +581,9 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "One lightweight app. Eight features. Your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 52,
+      "stars": 54,
       "forks": 7,
-      "openIssues": 1,
+      "openIssues": 0,
       "license": "Apache-2.0",
       "topics": [
         "ai",
@@ -603,7 +603,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-07-14T04:29:49Z",
+      "pushedAt": "2026-07-18T16:22:50Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -658,6 +658,26 @@
       "createdAt": "2026-01-11T07:23:01Z"
     },
     {
+      "slug": "mmenghancurkan/dynaqris",
+      "fullName": "mmenghancurkan/dynaQRIS",
+      "name": "dynaQRIS",
+      "owner": "mmenghancurkan",
+      "ownerUrl": "https://github.com/mmenghancurkan",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/68109330?v=4",
+      "url": "https://github.com/mmenghancurkan/dynaQRIS",
+      "homepage": null,
+      "description": "Dynamic QRIS Python-based generator program.",
+      "language": "Python",
+      "stars": 47,
+      "forks": 8,
+      "openIssues": 0,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-06-20T14:24:38Z",
+      "createdAt": "2026-06-18T03:59:11Z"
+    },
+    {
       "slug": "abilfida/omnidrive",
       "fullName": "abilfida/OmniDrive",
       "name": "OmniDrive",
@@ -681,26 +701,6 @@
       "archived": false,
       "pushedAt": "2026-06-24T03:36:32Z",
       "createdAt": "2026-06-07T16:49:12Z"
-    },
-    {
-      "slug": "mmenghancurkan/dynaqris",
-      "fullName": "mmenghancurkan/dynaQRIS",
-      "name": "dynaQRIS",
-      "owner": "mmenghancurkan",
-      "ownerUrl": "https://github.com/mmenghancurkan",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/68109330?v=4",
-      "url": "https://github.com/mmenghancurkan/dynaQRIS",
-      "homepage": null,
-      "description": "Dynamic QRIS Python-based generator program.",
-      "language": "Python",
-      "stars": 46,
-      "forks": 8,
-      "openIssues": 0,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-06-20T14:24:38Z",
-      "createdAt": "2026-06-18T03:59:11Z"
     },
     {
       "slug": "andriawan/andkasir",
@@ -737,13 +737,13 @@
       "homepage": null,
       "description": "The repo map your coding agent is forced to use — ~98% fewer tokens (up to 99.9% per task) to understand a TS/JS codebase. PageRank hubs, Aider-style symbol ranking, token-budgeted digest, --any router, wired into the agent loop.",
       "language": "JavaScript",
-      "stars": 44,
+      "stars": 45,
       "forks": 10,
-      "openIssues": 2,
+      "openIssues": 5,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-16T05:29:05Z",
+      "pushedAt": "2026-07-18T17:14:32Z",
       "createdAt": "2026-06-13T11:29:36Z"
     },
     {
@@ -785,7 +785,7 @@
       "description": "A browser-based graphical shell & control plane for a Linux server you own — terminal, files, metrics & AI in one mobile-first pane.",
       "language": "TypeScript",
       "stars": 39,
-      "forks": 6,
+      "forks": 7,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -810,7 +810,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-07-17T17:27:53Z",
+      "pushedAt": "2026-07-18T00:55:36Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -884,8 +884,8 @@
         "sharing-printer",
         "windows"
       ],
-      "archived": false,
-      "pushedAt": "2026-07-13T04:53:38Z",
+      "archived": true,
+      "pushedAt": "2026-07-18T03:40:27Z",
       "createdAt": "2026-05-23T05:37:35Z"
     },
     {
@@ -934,7 +934,7 @@
       "language": "Go",
       "stars": 33,
       "forks": 7,
-      "openIssues": 20,
+      "openIssues": 22,
       "license": "MIT",
       "topics": [
         "cli",
@@ -948,7 +948,7 @@
         "xendit"
       ],
       "archived": false,
-      "pushedAt": "2026-06-26T22:43:47Z",
+      "pushedAt": "2026-07-17T22:44:07Z",
       "createdAt": "2026-05-05T01:16:45Z"
     },
     {
@@ -982,13 +982,13 @@
       "homepage": "https://maziyank.github.io/nats",
       "description": "NATS | Open Source Business and Accounting Software",
       "language": "TypeScript",
-      "stars": 23,
+      "stars": 24,
       "forks": 2,
       "openIssues": 0,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-17T12:05:55Z",
+      "pushedAt": "2026-07-18T09:58:49Z",
       "createdAt": "2026-03-29T13:58:03Z"
     },
     {
@@ -1042,7 +1042,7 @@
         "wildlife"
       ],
       "archived": false,
-      "pushedAt": "2026-07-17T14:02:29Z",
+      "pushedAt": "2026-07-18T07:28:22Z",
       "createdAt": "2026-06-14T05:07:25Z"
     },
     {
@@ -1056,8 +1056,8 @@
       "homepage": "https://silong-os.vercel.app/",
       "description": "An open-source Notion-inspired workspace for teams and personal use",
       "language": "TypeScript",
-      "stars": 17,
-      "forks": 4,
+      "stars": 18,
+      "forks": 5,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -1075,6 +1075,33 @@
       "archived": false,
       "pushedAt": "2026-07-17T09:32:16Z",
       "createdAt": "2026-04-29T18:48:11Z"
+    },
+    {
+      "slug": "rizukirr/hyprsimple",
+      "fullName": "rizukirr/hyprsimple",
+      "name": "hyprsimple",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/hyprsimple",
+      "homepage": null,
+      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
+      "language": "Shell",
+      "stars": 17,
+      "forks": 0,
+      "openIssues": 0,
+      "license": null,
+      "topics": [
+        "arch-linux",
+        "dotfiles",
+        "hyprland",
+        "hyprland-config",
+        "linux",
+        "omarchy"
+      ],
+      "archived": false,
+      "pushedAt": "2026-07-10T12:37:02Z",
+      "createdAt": "2025-10-04T10:27:45Z"
     },
     {
       "slug": "rahmanef63/control-room",
@@ -1148,33 +1175,6 @@
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
-      "slug": "rizukirr/hyprsimple",
-      "fullName": "rizukirr/hyprsimple",
-      "name": "hyprsimple",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/hyprsimple",
-      "homepage": null,
-      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
-      "language": "Shell",
-      "stars": 16,
-      "forks": 0,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "arch-linux",
-        "dotfiles",
-        "hyprland",
-        "hyprland-config",
-        "linux",
-        "omarchy"
-      ],
-      "archived": false,
-      "pushedAt": "2026-07-10T12:37:02Z",
-      "createdAt": "2025-10-04T10:27:45Z"
-    },
-    {
       "slug": "rudycity/superagent",
       "fullName": "RudyCity/superagent",
       "name": "superagent",
@@ -1191,7 +1191,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-17T14:12:32Z",
+      "pushedAt": "2026-07-18T13:36:56Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1227,7 +1227,7 @@
       "language": "C",
       "stars": 13,
       "forks": 1,
-      "openIssues": 0,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "c-language",
@@ -1243,7 +1243,7 @@
         "windows-desktop"
       ],
       "archived": false,
-      "pushedAt": "2026-07-17T16:37:28Z",
+      "pushedAt": "2026-07-18T16:16:52Z",
       "createdAt": "2026-02-23T13:59:12Z"
     },
     {
@@ -1584,7 +1584,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-17T16:21:17Z",
+      "pushedAt": "2026-07-17T20:07:26Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1986,14 +1986,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-07-17T20:07:15.534Z"
+      "syncedAt": "2026-07-18T20:04:31.470Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-07-17T20:07:15.534Z"
+      "syncedAt": "2026-07-18T20:04:31.470Z"
     }
   ],
-  "syncedAt": "2026-07-17T20:07:15.534Z",
+  "syncedAt": "2026-07-18T20:04:31.470Z",
   "count": 76
 }
