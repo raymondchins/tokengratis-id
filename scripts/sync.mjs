@@ -35,10 +35,20 @@ import { enrichFromModelsDev } from "./lib/enrich.mjs";
 import { llmParseSource, llmBackendAvailable } from "./lib/llm-fallback.mjs";
 import { snapshotDiff } from "./lib/diff-guard.mjs";
 import { checkSourceFloor, updateBaselines } from "./lib/source-sanity.mjs";
+import { GENERIC_MODELS_PATTERN } from "./lib/normalize.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = join(__dirname, "..", "data", "providers.json");
 const LOGO_DIR = join(__dirname, "..", "public", "logos");
+
+/** { providers, models } count buat satu ProviderPartial[]/Provider[] — dipakai
+ * di 3 tempat (LLM fallback rescue, adapter accept loop, sanity floor check). */
+function countOf(list) {
+  return {
+    providers: list.length,
+    models: list.reduce((a, p) => a + (p.models?.length || 0), 0),
+  };
+}
 
 // Tiap adapter: { label, fn }. Adapter yang gagal fetch ga boleh ngejatuhin
 // seluruh pipeline — di-skip dengan warning (sumber lain tetep jalan).
@@ -114,8 +124,7 @@ async function tryLlmFallback(label) {
   if (!partials || partials.length === 0) return null; // null = skip (warn sudah dari llm-fallback)
 
   // 3. Hasil LLM HARUS tetap lolos sanity floor — ga ada bypass guard.
-  const provCount = partials.length;
-  const modelCount = partials.reduce((a, p) => a + (p.models?.length || 0), 0);
+  const { providers: provCount, models: modelCount } = countOf(partials);
   const floor = checkSourceFloor(label, provCount, modelCount);
   if (!floor.ok) {
     console.warn(`  ⚠ LLM fallback ${label} masih di bawah sanity floor: ${floor.message} — skip.`);
@@ -164,9 +173,9 @@ function smokeTest(providers) {
   // Valid category values (null = not sourced, which is fine for cheahjs/freellm-only providers)
   const VALID_CATEGORIES = new Set(["provider_api", "inference_provider", null]);
 
-  // Meta-row pattern: generic descriptor ending in "models" with no version/id signal.
-  // Mirrors GENERIC_MODELS_PATTERN in cheahjs.mjs — catches fake models that slip through merge.
-  const META_MODEL_PATTERN = /\bmodels\s*$/i;
+  // GENERIC_MODELS_PATTERN (from lib/normalize.mjs, shared w/ cheahjs.mjs) —
+  // catches fake models (generic descriptor ending in "models", no version/id
+  // signal) that slip through merge.
 
   for (const p of providers) {
     // ── existing provenance checks ──────────────────────────────────────────
@@ -190,8 +199,8 @@ function smokeTest(providers) {
     if (Array.isArray(p.models)) {
       for (const m of p.models) {
         const suspicious =
-          (META_MODEL_PATTERN.test(m.id || "") && !/[\d\-\/]/.test(m.id || "")) ||
-          (META_MODEL_PATTERN.test(m.name || "") && !/[\d\-\/]/.test(m.name || ""));
+          (GENERIC_MODELS_PATTERN.test(m.id || "") && !/[\d\-\/]/.test(m.id || "")) ||
+          (GENERIC_MODELS_PATTERN.test(m.name || "") && !/[\d\-\/]/.test(m.name || ""));
         if (suspicious)
           errs.push(
             `${p.slug}: model "${m.name}" (id="${m.id}") looks like a section descriptor, not a real model`,
@@ -276,8 +285,7 @@ async function main() {
   settled.forEach((res, i) => {
     const label = ADAPTERS[i].label;
     if (res.status === "fulfilled" && Array.isArray(res.value)) {
-      const provCount = res.value.length;
-      const modelCount = res.value.reduce((a, p) => a + (p.models?.length || 0), 0);
+      const { providers: provCount, models: modelCount } = countOf(res.value);
       // Sanity floor: fetch sukses tapi parse jeblok (markup sumber berubah →
       // regex cuma dapet sedikit row) → skip sumber ini, jangan korup merge.
       // Sumber lain + last-good gap-fill tetep jalan.
@@ -302,8 +310,7 @@ async function main() {
   for (const label of fallbackCandidates) {
     const rescued = await tryLlmFallback(label);
     if (rescued) {
-      const provCount = rescued.length;
-      const modelCount = rescued.reduce((a, p) => a + (p.models?.length || 0), 0);
+      const { providers: provCount, models: modelCount } = countOf(rescued);
       accept(label, rescued, provCount, modelCount);
     }
   }

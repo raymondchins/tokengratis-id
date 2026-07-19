@@ -272,40 +272,33 @@ export function enrichProviders(providers, idx, syncedAt) {
 export async function enrichFromModelsDev(providers) {
   const syncedAt = new Date().toISOString();
 
-  let rawData;
+  // Best-effort: ANY step failing (fetch, index build, enrichment) → skip
+  // enrichment, jangan jatohin pipeline. `step` label bikin error log tetap
+  // nunjuk ke step mana yang gagal, sama kayak dulu waktu masing-masing step
+  // punya try/catch sendiri.
+  let step = "models.dev fetch";
   try {
     const res = await fetch(MODELS_DEV_URL, {
       signal: AbortSignal.timeout(15_000),
     });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    rawData = await res.json();
+    const rawData = await res.json();
+
+    step = "models.dev index build";
+    const idx = buildModelsDevIndex(rawData);
+
+    step = "enrichment";
+    const result = enrichProviders(providers, idx, syncedAt);
+
+    console.log(
+      `[enrich] models.dev: +${result.enrichedCount} field filled di ${result.touched.length} provider (${result.touched.join(", ") || "-"})`,
+    );
+
+    return result;
   } catch (err) {
-    // Fetch/parse gagal — skip enrichment, jangan jatohin pipeline
-    console.error(`[enrich] models.dev fetch gagal: ${err.message} — dilewati`);
+    console.error(`[enrich] ${step} gagal: ${err.message} — dilewati`);
     return { providers, enrichedCount: 0, touched: [] };
   }
-
-  let idx;
-  try {
-    idx = buildModelsDevIndex(rawData);
-  } catch (err) {
-    console.error(`[enrich] models.dev index build gagal: ${err.message} — dilewati`);
-    return { providers, enrichedCount: 0, touched: [] };
-  }
-
-  let result;
-  try {
-    result = enrichProviders(providers, idx, syncedAt);
-  } catch (err) {
-    console.error(`[enrich] enrichment gagal: ${err.message} — dilewati`);
-    return { providers, enrichedCount: 0, touched: [] };
-  }
-
-  console.log(
-    `[enrich] models.dev: +${result.enrichedCount} field filled di ${result.touched.length} provider (${result.touched.join(", ") || "-"})`,
-  );
-
-  return result;
 }
 
 // ─── Self-test (run dengan: node scripts/lib/enrich.mjs) ─────────────────────

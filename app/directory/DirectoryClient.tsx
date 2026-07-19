@@ -15,26 +15,9 @@ import { DIRECTORY_GRID_COLS, DIRECTORY_PAGE_SIZE } from "@/lib/constants";
 import FilterBar from "@/components/directory/FilterBar";
 import { CategoryTag, ModalityTags, MODALITY_ORDER } from "@/components/directory/Badges";
 import ProviderLogo from "@/components/ProviderLogo";
-
-/**
- * Daftar nomor halaman buat pagination. <=7 halaman → tampil semua. >7 → pola
- * ellipsis: first, last, current±1, dengan "…" di gap. Selalu render first+last.
- */
-function pageNumbers(current: number, total: number): (number | "…")[] {
-  if (total <= 7) return Array.from({ length: total }, (_, i) => i + 1);
-
-  const pages = new Set<number>([1, total, current, current - 1, current + 1]);
-  const sorted = [...pages].filter((n) => n >= 1 && n <= total).sort((a, b) => a - b);
-
-  const out: (number | "…")[] = [];
-  let prev = 0;
-  for (const n of sorted) {
-    if (n - prev > 1) out.push("…");
-    out.push(n);
-    prev = n;
-  }
-  return out;
-}
+import Pagination from "@/components/Pagination";
+import EmptyDataPanel from "@/components/EmptyDataPanel";
+import NoResultsPanel from "@/components/NoResultsPanel";
 
 function ProviderRow({ p, priority = false }: { p: ProviderListItem; priority?: boolean }) {
   const ariaLabel = `${p.name} — ${p.modelCount} model${p.freeLimit ? `, gratis ${p.freeLimit}` : ""}`;
@@ -161,13 +144,10 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
 
   if (items.length === 0) {
     return (
-      <div className="flex flex-col items-center justify-center rounded-[8px] border border-ink-line bg-ink-soft px-8 py-20 text-center">
-        <span className="inline-block h-2.5 w-2.5 animate-pulse rounded-full bg-grass-solid" />
-        <p className="mt-4 text-base font-medium text-fog">Direktori lagi dibangun</p>
-        <p className="mt-2 max-w-sm text-sm leading-relaxed text-mute">
-          Pipeline sync nyusul — data dari sumber komunitas lagi diproses.
-        </p>
-      </div>
+      <EmptyDataPanel
+        title="Direktori lagi dibangun"
+        description="Pipeline sync nyusul — data dari sumber komunitas lagi diproses."
+      />
     );
   }
 
@@ -198,21 +178,11 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
       {/* Table (list of links) */}
       <div className="overflow-hidden rounded-[8px] border border-ink-line bg-ink-soft">
         {results.length === 0 ? (
-          <div className="px-5 py-16 text-center">
-            <p className="text-base font-medium text-fog">
-              Ga ada yang cocok sama filter ini.
-            </p>
-            <p className="mt-2 text-sm text-mute">
-              Coba hapus beberapa filter atau ganti kata kunci.
-            </p>
-            <button
-              type="button"
-              onClick={() => setFilter(emptyFilter())}
-              className="mt-6 rounded-full border border-ink-line bg-ink px-5 py-2 text-sm font-medium text-fog transition-colors hover:border-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40"
-            >
-              Reset semua filter
-            </button>
-          </div>
+          <NoResultsPanel
+            message="Ga ada yang cocok sama filter ini."
+            hint="Coba hapus beberapa filter atau ganti kata kunci."
+            onReset={() => setFilter(emptyFilter())}
+          />
         ) : (
           <div className="overflow-x-auto">
             {/* Desktop header row — aria-hidden, hidden below md; tiap row adalah satu link.
@@ -260,57 +230,12 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
           )}
         </p>
 
-        {totalPages > 1 && (
-          <nav
-            aria-label="Navigasi halaman direktori"
-            className="flex items-center gap-1.5"
-          >
-          <button
-            type="button"
-            onClick={() => setPage(current - 1)}
-            disabled={current <= 1}
-            aria-label="Halaman sebelumnya"
-            className="min-h-[40px] rounded-[6px] border border-ink-line bg-ink-soft px-3 py-2 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40 disabled:cursor-not-allowed disabled:opacity-40"
-          >
-            ← Prev
-          </button>
-          {pageNumbers(current, totalPages).map((n, i) =>
-            n === "…" ? (
-              <span
-                key={`gap-${i}`}
-                aria-hidden="true"
-                className="min-h-[40px] px-1.5 py-2 text-sm text-mute"
-              >
-                …
-              </span>
-            ) : (
-              <button
-                key={n}
-                type="button"
-                onClick={() => setPage(n)}
-                aria-label={`Halaman ${n}`}
-                aria-current={n === current ? "page" : undefined}
-                className={`min-h-[40px] min-w-[40px] rounded-[6px] border px-3 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40 ${
-                  n === current
-                    ? "border-ember bg-ember text-white"
-                    : "border-ink-line bg-ink-soft text-mute hover:border-mute hover:text-fog"
-                }`}
-              >
-                {n}
-              </button>
-            ),
-          )}
-          <button
-            type="button"
-            onClick={() => setPage(current + 1)}
-            disabled={current >= totalPages}
-            aria-label="Halaman berikutnya"
-            className="min-h-[40px] rounded-[6px] border border-ink-line bg-ink-soft px-3 py-2 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40 disabled:cursor-not-allowed disabled:opacity-40"
-          >
-            Next →
-          </button>
-        </nav>
-        )}
+        <Pagination
+          current={current}
+          total={totalPages}
+          onChange={setPage}
+          ariaLabel="Navigasi halaman direktori"
+        />
       </div>
     </div>
   );

@@ -24,6 +24,11 @@
 // DIHITUNG di merge stage — adapter ga perlu isi. Tapi kalau adapter punya
 // description bagus, dia boleh ikut nentuin freeLimit lewat merge (otomatis).
 
+// ctxNum: single source of truth ada di ../../lib/ctxnum.mjs (dipakai juga
+// langsung oleh Next.js app lewat lib/ctxnum.ts) — di-import lalu di-re-export
+// di sini biar caller lama (scripts/lib/merge.mjs dkk) ga perlu ganti import path.
+import { ctxNum } from "../../lib/ctxnum.mjs";
+
 // ─── Konstanta sumber (dipakai adapter + merge untuk prioritas) ────────────────
 
 export const SOURCES = {
@@ -116,6 +121,32 @@ export function slugify(s) {
     .replace(/[()]/g, "")
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
+}
+
+// ─── HTML entity decode + tag strip (shared by HTML/markdown adapters) ────────
+// Dipindah dari freellm.mjs (dulu duplikat parsial di cheahjs.mjs — cheahjs
+// cuma nangkep &amp;/&lt;/&gt;, jadi &#39;/&nbsp; di nama model kebawa mentah).
+
+/** Basic HTML entity decoder — covers &amp;/&lt;/&gt;/&quot;/&#39;/&nbsp;/numeric entities. */
+export function decodeEntities(s) {
+  return s
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(Number(code)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, hex) =>
+      String.fromCharCode(parseInt(hex, 16))
+    );
+}
+
+/** Strip all HTML tags and decode entities, returning trimmed plain text. */
+export function textOf(html) {
+  return decodeEntities(html.replace(/<[^>]+>/g, " "))
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 // ─── Canonical slug + alias map (dedup antar sumber) ──────────────────────────
@@ -242,6 +273,29 @@ export function modelKey(nameOrId) {
   return s.replace(/[^a-z0-9]+/g, "").trim();
 }
 
+// ─── Section-descriptor guard (shared: cheahjs adapter + sync.mjs smoke test) ──
+/**
+ * Guard: matches bullets/model rows that are generic section descriptors, not
+ * callable model ids — e.g. "Open and Proprietary Mistral models". Real model
+ * names always contain a version token (number, dash-id, or slash) such as
+ * "mistral-7b", "llama-3.1", "gpt-4o", "meta/llama-3", so they will NOT match
+ * this pattern on their own — callers pair it with a `!/[\d\-\/]/.test(...)`
+ * check to confirm the string carries no such token before rejecting it.
+ *
+ * Rule: the string ends with the word "models" (plural).
+ *
+ * Examples that WILL match (rejected — descriptors, when paired with the
+ * no-digit/dash/slash check above):
+ *   "Open and Proprietary Mistral models"
+ *   "Various open models"
+ *
+ * Examples that will NOT match (kept — real model names):
+ *   "mistral-7b-instruct"     ← has dash
+ *   "meta/llama-3.1-8b"      ← has slash + digit
+ *   "Mistral Large"           ← no "models" suffix
+ */
+export const GENERIC_MODELS_PATTERN = /\bmodels\s*$/i;
+
 // ─── Facet modality ────────────────────────────────────────────────────────────
 
 export const MODALITY_ORDER = [
@@ -296,18 +350,9 @@ export function modalitiesOf(models) {
 
 // ─── Context numeric ─────────────────────────────────────────────────────────
 
-/** "256K"/"1M"/"2B" -> angka, buat nyari context maks. (mirror lib/ctxnum.ts) */
-export function ctxNum(c) {
-  if (!c) return 0;
-  const m = String(c).match(/([\d.]+)\s*([KkMmBb]?)/);
-  if (!m) return 0;
-  let n = parseFloat(m[1]);
-  const u = m[2].toLowerCase();
-  if (u === "k") n *= 1e3;
-  if (u === "m") n *= 1e6;
-  if (u === "b") n *= 1e9;
-  return n;
-}
+// ctxNum itself is imported from ../../lib/ctxnum.mjs (see top of file) and
+// re-exported here so existing callers (scripts/lib/merge.mjs) keep working.
+export { ctxNum };
 
 /**
  * Bersihin FORMAT display string context — TANPA ngubah magnitude.

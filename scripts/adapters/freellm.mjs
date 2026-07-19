@@ -35,7 +35,13 @@
  * Dependencies: NONE (plain Node https + regex, no cheerio).
  */
 
-import { canonicalSlug, slugify, cleanStr, SOURCES } from "../lib/normalize.mjs";
+import {
+  canonicalSlug,
+  slugify,
+  cleanStr,
+  SOURCES,
+  textOf,
+} from "../lib/normalize.mjs";
 
 const SOURCE_URL = "https://freellm.net/models/";
 
@@ -100,32 +106,9 @@ function fetchHtml(url, depth = 0) {
   });
 }
 
-// ─── HTML entity decoder (basic, covers what freellm.net uses) ───────────────
-
-function decodeEntities(s) {
-  return s
-    .replace(/&amp;/g, "&")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&nbsp;/g, " ")
-    .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(Number(code)))
-    .replace(/&#x([0-9a-f]+);/gi, (_, hex) =>
-      String.fromCharCode(parseInt(hex, 16))
-    );
-}
-
-// ─── Tag stripper ─────────────────────────────────────────────────────────────
-
-/** Strip all HTML tags and decode entities, returning trimmed plain text. */
-function textOf(html) {
-  return decodeEntities(html.replace(/<[^>]+>/g, " "))
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
 // ─── Row parser ───────────────────────────────────────────────────────────────
+// decodeEntities/textOf now live in scripts/lib/normalize.mjs (shared with
+// cheahjs.mjs — see that file for why).
 
 /**
  * Parse a single <tr>...</tr> string into a row object.

@@ -29,6 +29,8 @@ import {
   safeUrl,
   cleanStr,
   SOURCES,
+  decodeEntities,
+  GENERIC_MODELS_PATTERN,
 } from "../lib/normalize.mjs";
 
 const README_URL =
@@ -95,26 +97,9 @@ function slugName(displayName) {
 const NOTE_PATTERN =
   /^(currently|requires?|monthly|free tier|various|see |note:?|until |subject to|opting|paid|trial|subscription)/i;
 
-/**
- * Guard: skip bullets that are generic section descriptors, not callable model ids.
- * Matches phrases like "Open and Proprietary Mistral models" — adjective-only
- * prefixes followed by a bare "models" suffix. Real model names always contain
- * a version token (number, dash-id, or slash) such as "mistral-7b", "llama-3.1",
- * "gpt-4o", "meta/llama-3", so they will NOT match this pattern.
- *
- * Rule: the bullet ends with the word "models" (plural) AND the entire string
- * contains no digit, no slash, and no dash — i.e. it is purely descriptive prose.
- *
- * Examples that WILL match (rejected — descriptors):
- *   "Open and Proprietary Mistral models"
- *   "Various open models"
- *
- * Examples that will NOT match (kept — real model names):
- *   "mistral-7b-instruct"     ← has dash
- *   "meta/llama-3.1-8b"      ← has slash + digit
- *   "Mistral Large"           ← no "models" suffix
- */
-const GENERIC_MODELS_PATTERN = /\bmodels\s*$/i;
+// GENERIC_MODELS_PATTERN (guard against section-descriptor rows like "Open and
+// Proprietary Mistral models") lives in scripts/lib/normalize.mjs — shared with
+// sync.mjs's smoke test (was duplicated as META_MODEL_PATTERN there).
 
 function parseHtmlTable(tableHtml) {
   const models = [];
@@ -122,12 +107,9 @@ function parseHtmlTable(tableHtml) {
   const rowRe = /<tr[^>]*>\s*<td[^>]*>([\s\S]*?)<\/td>\s*<td[^>]*>([\s\S]*?)<\/td>\s*<\/tr>/gi;
   let m;
   while ((m = rowRe.exec(tableHtml)) !== null) {
-    const modelName = m[1]
-      .replace(/<[^>]+>/g, "") // strip any inline tags
-      .replace(/&amp;/g, "&")
-      .replace(/&lt;/g, "<")
-      .replace(/&gt;/g, ">")
-      .trim();
+    // decodeEntities (shared w/ freellm.mjs) instead of an inline &amp;/&lt;/&gt;
+    // subset — that subset used to mangle names carrying &#39; or &nbsp;.
+    const modelName = decodeEntities(m[1].replace(/<[^>]+>/g, "")).trim();
     if (!modelName) continue;
     if (NOTE_PATTERN.test(modelName)) continue; // skip disclaimer rows
     if (GENERIC_MODELS_PATTERN.test(modelName) && !/[\d\-\/]/.test(modelName)) continue;

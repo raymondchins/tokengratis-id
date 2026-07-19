@@ -2,6 +2,11 @@
 
 import { useEffect, useMemo, useState } from "react";
 import type { OpenSourceProject } from "@/lib/opensource-types";
+import Chip from "@/components/Chip";
+import SearchIcon from "@/components/SearchIcon";
+import Pagination from "@/components/Pagination";
+import EmptyDataPanel from "@/components/EmptyDataPanel";
+import NoResultsPanel from "@/components/NoResultsPanel";
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 
@@ -17,52 +22,9 @@ const SORT_LABELS: Record<SortKey, string> = {
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
-function pageNumbers(current: number, total: number): (number | "…")[] {
-  if (total <= 7) return Array.from({ length: total }, (_, i) => i + 1);
-
-  const pages = new Set<number>([1, total, current, current - 1, current + 1]);
-  const sorted = [...pages].filter((n) => n >= 1 && n <= total).sort((a, b) => a - b);
-
-  const out: (number | "…")[] = [];
-  let prev = 0;
-  for (const n of sorted) {
-    if (n - prev > 1) out.push("…");
-    out.push(n);
-    prev = n;
-  }
-  return out;
-}
-
 function formatStars(n: number): string {
   if (n >= 1000) return `${(n / 1000).toFixed(1).replace(/\.0$/, "")}k`;
   return String(n);
-}
-
-// ─── Chip ─────────────────────────────────────────────────────────────────────
-
-function Chip({
-  active,
-  onClick,
-  children,
-}: {
-  active: boolean;
-  onClick: () => void;
-  children: React.ReactNode;
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={[
-        "inline-flex shrink-0 items-center gap-1.5 rounded-[6px] border px-4 py-2 text-[13px] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70",
-        active
-          ? "border-mute/60 bg-ink-line/70 text-fog"
-          : "border-ink-line bg-ink-soft text-mute hover:border-mute hover:text-fog",
-      ].join(" ")}
-    >
-      {children}
-    </button>
-  );
 }
 
 // ─── Grid layout ──────────────────────────────────────────────────────────────
@@ -282,13 +244,10 @@ export default function OpensourceClient({
 
   if (projects.length === 0) {
     return (
-      <div className="flex flex-col items-center justify-center rounded-[8px] border border-ink-line bg-ink-soft px-8 py-20 text-center">
-        <span className="inline-block h-2.5 w-2.5 animate-pulse rounded-full bg-grass-solid" />
-        <p className="mt-4 text-base font-medium text-fog">Direktori lagi dibangun</p>
-        <p className="mt-2 max-w-sm text-sm leading-relaxed text-mute">
-          Pipeline sync nyusul — proyek dari sumber komunitas lagi diproses.
-        </p>
-      </div>
+      <EmptyDataPanel
+        title="Direktori lagi dibangun"
+        description="Pipeline sync nyusul — proyek dari sumber komunitas lagi diproses."
+      />
     );
   }
 
@@ -298,19 +257,7 @@ export default function OpensourceClient({
       <div className="flex flex-col gap-4">
         {/* Search */}
         <div className="relative">
-          <svg
-            className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-mute"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth={2}
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            aria-hidden="true"
-          >
-            <circle cx="11" cy="11" r="8" />
-            <path d="M21 21l-4.35-4.35" />
-          </svg>
+          <SearchIcon className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-mute" />
           <input
             type="search"
             value={search}
@@ -397,17 +344,11 @@ export default function OpensourceClient({
       {/* ── Table ── */}
       <div className="overflow-hidden rounded-[8px] border border-ink-line bg-ink-soft">
         {results.length === 0 ? (
-          <div className="px-5 py-16 text-center">
-            <p className="text-base font-medium text-fog">Ga ada yang cocok sama filter ini.</p>
-            <p className="mt-2 text-sm text-mute">Coba hapus beberapa filter atau ganti kata kunci.</p>
-            <button
-              type="button"
-              onClick={() => { setSearch(""); setLang(""); }}
-              className="mt-6 rounded-full border border-ink-line bg-ink px-5 py-2 text-sm font-medium text-fog transition-colors hover:border-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40"
-            >
-              Reset semua filter
-            </button>
-          </div>
+          <NoResultsPanel
+            message="Ga ada yang cocok sama filter ini."
+            hint="Coba hapus beberapa filter atau ganti kata kunci."
+            onReset={() => { setSearch(""); setLang(""); }}
+          />
         ) : (
           <div className="overflow-x-auto">
             {/* Desktop header */}
@@ -462,54 +403,12 @@ export default function OpensourceClient({
           )}
         </p>
 
-        {totalPages > 1 && (
-          <nav aria-label="Navigasi halaman proyek" className="flex items-center gap-1.5">
-            <button
-              type="button"
-              onClick={() => setPage(current - 1)}
-              disabled={current <= 1}
-              aria-label="Halaman sebelumnya"
-              className="min-h-[40px] rounded-[6px] border border-ink-line bg-ink-soft px-3 py-2 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40 disabled:cursor-not-allowed disabled:opacity-40"
-            >
-              ← Prev
-            </button>
-            {pageNumbers(current, totalPages).map((n, i) =>
-              n === "…" ? (
-                <span
-                  key={`gap-${i}`}
-                  aria-hidden="true"
-                  className="min-h-[40px] px-1.5 py-2 text-sm text-mute"
-                >
-                  …
-                </span>
-              ) : (
-                <button
-                  key={n}
-                  type="button"
-                  onClick={() => setPage(n)}
-                  aria-label={`Halaman ${n}`}
-                  aria-current={n === current ? "page" : undefined}
-                  className={`min-h-[40px] min-w-[40px] rounded-[6px] border px-3 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40 ${
-                    n === current
-                      ? "border-ember bg-ember text-white"
-                      : "border-ink-line bg-ink-soft text-mute hover:border-mute hover:text-fog"
-                  }`}
-                >
-                  {n}
-                </button>
-              ),
-            )}
-            <button
-              type="button"
-              onClick={() => setPage(current + 1)}
-              disabled={current >= totalPages}
-              aria-label="Halaman berikutnya"
-              className="min-h-[40px] rounded-[6px] border border-ink-line bg-ink-soft px-3 py-2 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40 disabled:cursor-not-allowed disabled:opacity-40"
-            >
-              Next →
-            </button>
-          </nav>
-        )}
+        <Pagination
+          current={current}
+          total={totalPages}
+          onChange={setPage}
+          ariaLabel="Navigasi halaman proyek"
+        />
       </div>
     </div>
   );

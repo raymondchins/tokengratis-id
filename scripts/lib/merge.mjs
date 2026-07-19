@@ -41,10 +41,19 @@ function sourcePriority(sourceName) {
   return idx === -1 ? SOURCE_PRIORITY.length : idx;
 }
 
-/** Compare two ProviderPartials by their source priority (ascending = higher priority first). */
-function byPriority(a, b) {
-  return sourcePriority(a.source.name) - sourcePriority(b.source.name);
+/**
+ * Factory: build a "by SOURCE_PRIORITY" comparator for any item shape, given
+ * a `keyOf` that extracts its source name. Shared by `byPriority` (items are
+ * ProviderPartials, source name at `.source.name`) and `mergeSources`' sort
+ * (items are SourceRefs, source name at `.name`) — same ordering rule, two
+ * different item shapes.
+ */
+function byPriorityKey(keyOf) {
+  return (a, b) => sourcePriority(keyOf(a)) - sourcePriority(keyOf(b));
 }
+
+/** Compare two ProviderPartials by their source priority (ascending = higher priority first). */
+const byPriority = byPriorityKey((p) => p.source.name);
 
 // ─── Scalar gap-fill ──────────────────────────────────────────────────────────
 
@@ -62,12 +71,23 @@ function gapFill(contributors, field, defaultVal = null) {
 
 // ─── Model merge ─────────────────────────────────────────────────────────────
 
+// Fields gap-filled by gapFillModel(), each with an optional per-field
+// transform. `modality` goes through cleanModality(); the rest copy raw —
+// this split MUST be preserved (cleanModality nulls out ""/whitespace-only).
+const GAP_FILL_MODEL_FIELDS = [
+  ["context", null],
+  ["maxOutput", null],
+  ["modality", cleanModality],
+  ["rateLimit", null],
+];
+
 /** Gap-fill null/empty model fields dari src ke target (id+name target dipertahankan). */
 function gapFillModel(target, src) {
-  if (!target.context && src.context) target.context = src.context;
-  if (!target.maxOutput && src.maxOutput) target.maxOutput = src.maxOutput;
-  if (!target.modality && src.modality) target.modality = cleanModality(src.modality);
-  if (!target.rateLimit && src.rateLimit) target.rateLimit = src.rateLimit;
+  for (const [field, transform] of GAP_FILL_MODEL_FIELDS) {
+    if (!target[field] && src[field]) {
+      target[field] = transform ? transform(src[field]) : src[field];
+    }
+  }
 }
 
 /** Dua kunci dedup per model: modelKey (nama-aware) + slugify(id) (id-aware). */
@@ -170,9 +190,7 @@ function mergeSources(contributors) {
     }
   }
   // Sort by priority
-  return [...seen.values()].sort(
-    (a, b) => sourcePriority(a.name) - sourcePriority(b.name)
-  );
+  return [...seen.values()].sort(byPriorityKey((s) => s.name));
 }
 
 /** Max syncedAt across all source entries (ISO string comparison works because ISO 8601 sorts lexicographically). */

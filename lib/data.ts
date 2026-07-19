@@ -1,18 +1,6 @@
 import type { Provider, ProviderListItem } from "./types";
 import providersData from "@/data/providers.json";
 
-// Re-export filter/sort helpers buat SERVER callers (page.tsx dll) biar import
-// path lama ga break. Client (DirectoryClient/FilterBar) WAJIB import langsung
-// dari "@/lib/filter" — kalau lewat sini, ikut narik JSON di atas ke bundle.
-export {
-  filterProviders,
-  sortProviders,
-  emptyFilter,
-  SORT_LABELS,
-  type FilterState,
-  type SortKey,
-} from "./filter";
-
 const providers = providersData as unknown as Provider[];
 
 /** Semua provider (full) — buat halaman detail + sitemap. */
