@@ -3,8 +3,9 @@ import { notFound } from "next/navigation";
 import { Link } from "next-view-transitions";
 import Navbar from "@/components/Navbar";
 import ProviderLogo from "@/components/ProviderLogo";
-import { CategoryTag, ModalityTags, SourceLine } from "@/components/directory/Badges";
+import { CategoryTag, ModalityTags, SourceLine, modalityLabel } from "@/components/directory/Badges";
 import ModelsTable from "@/components/directory/ModelsTable";
+import ProviderFaq from "@/components/directory/ProviderFaq";
 import type { Provider } from "@/lib/types";
 
 export async function generateStaticParams() {
@@ -19,14 +20,22 @@ export async function generateMetadata({
   const { slug } = await params;
   const p = getProviderBySlug(slug);
   if (!p) return {};
-  const contextClause = p.maxContext ? `, sampai ${p.maxContext} context` : "";
-  const description = `Free tier / free credits API dari ${p.name}. ${p.modelCount} model${contextClause}. Aggregator, bukan verifier.`;
+
+  const title = `${p.name} API Gratis — ${p.modelCount} Model, Limit & Context | tokengratis.id`;
+
+  const contextClause = p.maxContext ? `, context sampai ${p.maxContext}` : "";
+  const modalityText = p.modalities.map(modalityLabel).join("/");
+  const modalityClause = modalityText ? `, modality ${modalityText}` : "";
+  const sourceName = p.sources[0]?.name;
+  const sourceClause = sourceName ? ` Data di-sync otomatis dari ${sourceName}.` : "";
+  const description = `Free tier API ${p.name}: ${p.modelCount} model gratis${contextClause}${modalityClause}.${sourceClause} Aggregator, bukan verifier.`;
+
   return {
-    title: `${p.name} — tokengratis.id`,
+    title,
     description,
     alternates: { canonical: `https://tokengratis.id/provider/${p.slug}` },
     openGraph: {
-      title: `${p.name} — tokengratis.id`,
+      title,
       description,
       url: `https://tokengratis.id/provider/${p.slug}`,
       siteName: "tokengratis.id",
@@ -35,7 +44,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: `${p.name} — tokengratis.id`,
+      title,
       description,
     },
   };
@@ -178,6 +187,9 @@ export default async function Page({
               more={p.moreModels}
               sourceUrl={p.sources[0]?.url}
             />
+
+            {/* FAQ — auto-generated dari field yang ada, matching FAQPage JSON-LD */}
+            <ProviderFaq provider={p} />
           </div>
 
           {/* sidebar */}
@@ -266,6 +278,64 @@ export default async function Page({
               p.description ?? `Free tier API dari ${p.name} — ${p.modelCount} model.`,
           };
           if (providerUrl) jsonLd.url = providerUrl;
+          return (
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+              }}
+            />
+          );
+        })()}
+
+        {/* BreadcrumbList JSON-LD */}
+        {(() => {
+          const jsonLd = {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Beranda",
+                item: "https://tokengratis.id",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: p.name,
+                item: `https://tokengratis.id/provider/${p.slug}`,
+              },
+            ],
+          };
+          return (
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+              }}
+            />
+          );
+        })()}
+
+        {/* CollectionPage + ItemList (model) JSON-LD */}
+        {(() => {
+          const jsonLd = {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            name: `Model gratis ${p.name}`,
+            url: `https://tokengratis.id/provider/${p.slug}`,
+            inLanguage: "id",
+            mainEntity: {
+              "@type": "ItemList",
+              numberOfItems: p.models.length,
+              itemListElement: p.models.map((m, i) => ({
+                "@type": "ListItem",
+                position: i + 1,
+                name: m.name,
+              })),
+            },
+          };
           return (
             <script
               type="application/ld+json"

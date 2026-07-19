@@ -1,6 +1,31 @@
-import { getSources } from "@/lib/data";
+import { Link } from "next-view-transitions";
+import { getAllProviders, getSources } from "@/lib/data";
 import { getOpenSourceSources } from "@/lib/opensource-data";
+import { MODALITY_ORDER, modalityLabel } from "@/components/directory/Badges";
+import type { Modality } from "@/lib/types";
 import SocialIcons from "@/components/SocialIcons";
+
+/**
+ * Facet links surfaced here so crawlers reach /gratis/<modality> from every
+ * page. MUST mirror the identical eligibility check in
+ * app/gratis/[modality]/page.tsx (generateStaticParams) and app/sitemap.ts:
+ * modality needs >=3 providers (provider-level `p.modalities`) AND isn't
+ * "text" (24/24 providers — would just duplicate the homepage directory).
+ * Kept as a separate copy since route/component files can't import from one
+ * another here.
+ */
+const MIN_FACET_PROVIDERS = 3;
+const EXCLUDED_FACETS: Modality[] = ["text"];
+
+function eligibleFacetModalities(providers: ReturnType<typeof getAllProviders>): Modality[] {
+  const counts = new Map<Modality, number>();
+  for (const p of providers) {
+    for (const m of p.modalities) counts.set(m, (counts.get(m) ?? 0) + 1);
+  }
+  return MODALITY_ORDER.filter(
+    (m) => (counts.get(m) ?? 0) >= MIN_FACET_PROVIDERS && !EXCLUDED_FACETS.includes(m),
+  );
+}
 
 /**
  * Footer global (mount di app/layout.tsx → muncul di semua page).
@@ -10,6 +35,7 @@ import SocialIcons from "@/components/SocialIcons";
 export default function Footer() {
   const sources = getSources();
   const osSources = getOpenSourceSources();
+  const facetModalities = eligibleFacetModalities(getAllProviders());
 
   return (
     <footer
@@ -53,6 +79,22 @@ export default function Footer() {
           ))}
           . Kurasi proyek dari komunitas, metadata di-sync live dari GitHub.
         </p>
+        {facetModalities.length > 0 && (
+          <p className="mt-3 max-w-2xl">
+            Jelajah:{" "}
+            {facetModalities.map((m, i) => (
+              <span key={m}>
+                <Link
+                  href={`/gratis/${m}`}
+                  className="underline decoration-ink-line underline-offset-2 hover:text-fog"
+                >
+                  API {modalityLabel(m)} Gratis
+                </Link>
+                {i < facetModalities.length - 1 && <span> · </span>}
+              </span>
+            ))}
+          </p>
+        )}
         <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
           <p className="text-xs text-mute">
             <span className="font-medium text-fog">tokengratis.id</span> — karena

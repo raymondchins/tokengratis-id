@@ -36,10 +36,13 @@ import { llmParseSource, llmBackendAvailable } from "./lib/llm-fallback.mjs";
 import { snapshotDiff } from "./lib/diff-guard.mjs";
 import { checkSourceFloor, updateBaselines } from "./lib/source-sanity.mjs";
 import { GENERIC_MODELS_PATTERN } from "./lib/normalize.mjs";
+import { pingIndexNow } from "./lib/indexnow.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = join(__dirname, "..", "data", "providers.json");
 const LOGO_DIR = join(__dirname, "..", "public", "logos");
+const CHANGELOG_OUT = join(__dirname, "..", "data", "changelog.json");
+const SITE_URL = "https://tokengratis.id";
 
 /** { providers, models } count buat satu ProviderPartial[]/Provider[] — dipakai
  * di 3 tempat (LLM fallback rescue, adapter accept loop, sanity floor check). */
@@ -225,6 +228,83 @@ function smokeTest(providers) {
     process.exit(1);
   }
   console.log("✓ Smoke test passed");
+}
+
+/**
+ * Diff snapshot lama (prevProviders, dari data/providers.json sebelum run ini)
+ * vs providers final run ini → fakta data buat data/changelog.json. Cuma diff
+ * murni (slug/model id presence) — ga ada klaim baru, ga nebak.
+ * Return null kalau ga ada perubahan sama sekali (skip entry).
+ *
+ * @param {Array<Object>} prev
+ * @param {Array<Object>} next
+ * @returns {{providersAdded: Array<{slug:string,name:string}>, providersRemoved: Array<{slug:string,name:string}>, models: Array<{provider:string,added:string[],removed:string[]}>} | null}
+ */
+function computeChangelogDiff(prev, next) {
+  const prevBySlug = new Map(prev.map((p) => [p.slug, p]));
+  const nextBySlug = new Map(next.map((p) => [p.slug, p]));
+
+  const providersAdded = next
+    .filter((p) => !prevBySlug.has(p.slug))
+    .map((p) => ({ slug: p.slug, name: p.name }));
+  const providersRemoved = prev
+    .filter((p) => !nextBySlug.has(p.slug))
+    .map((p) => ({ slug: p.slug, name: p.name }));
+
+  const models = [];
+  for (const p of next) {
+    const prevP = prevBySlug.get(p.slug);
+    if (!prevP) continue; // provider baru — udah kecatat di providersAdded
+    const prevIds = new Set((prevP.models || []).map((m) => m.id));
+    const nextIds = new Set((p.models || []).map((m) => m.id));
+    const added = (p.models || []).filter((m) => !prevIds.has(m.id)).map((m) => m.name);
+    const removed = (prevP.models || []).filter((m) => !nextIds.has(m.id)).map((m) => m.name);
+    if (added.length || removed.length) {
+      models.push({ provider: p.name, added, removed });
+    }
+  }
+
+  if (providersAdded.length === 0 && providersRemoved.length === 0 && models.length === 0) {
+    return null;
+  }
+  return { providersAdded, providersRemoved, models };
+}
+
+/**
+ * Read-modify-write data/changelog.json: append entry hari ini (atau replace
+ * kalau re-run hari yang sama → idempotent), keep max 60 entries (drop oldest).
+ * Best-effort — never throws (caller wraps in try/catch juga, defense-in-depth).
+ *
+ * @param {ReturnType<typeof computeChangelogDiff>} diff
+ * @returns {{wrote: boolean, date?: string, error?: string}}
+ */
+function updateChangelog(diff) {
+  if (!diff) return { wrote: false };
+  try {
+    const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+
+    let entries = [];
+    try {
+      if (existsSync(CHANGELOG_OUT)) {
+        const parsed = JSON.parse(readFileSync(CHANGELOG_OUT, "utf8"));
+        if (Array.isArray(parsed)) entries = parsed;
+      }
+    } catch {
+      entries = [];
+    }
+
+    const entry = { date: today, ...diff };
+    const idx = entries.findIndex((e) => e.date === today);
+    if (idx >= 0) entries[idx] = entry; // re-run hari sama → replace, bukan duplikat
+    else entries.unshift(entry); // newest-first di storage
+
+    if (entries.length > 60) entries = entries.slice(0, 60); // drop oldest
+
+    writeFileSync(CHANGELOG_OUT, JSON.stringify(entries, null, 2) + "\n");
+    return { wrote: true, date: today };
+  } catch (e) {
+    return { wrote: false, error: e.message };
+  }
 }
 
 async function main() {
@@ -416,6 +496,40 @@ async function main() {
     if (pruned > 0) console.log(`  · pruned ${pruned} orphan logo(s)`);
   } catch (e) {
     console.warn(`  ⚠ logo prune skipped: ${e.message}`);
+  }
+
+  // 6. Changelog: diff prevProviders (snapshot lama, step 0) vs providers final
+  //    run ini → append/replace data/changelog.json (fakta diff doang, ga ada
+  //    klaim baru). Best-effort — never jatohin pipeline.
+  try {
+    const diff = computeChangelogDiff(prevProviders, providers);
+    if (diff) {
+      const result = updateChangelog(diff);
+      if (result.wrote) {
+        console.log(
+          `  · changelog: entry ${result.date} (${diff.providersAdded.length} provider baru, ${diff.providersRemoved.length} provider hilang, ${diff.models.length} provider model berubah)`,
+        );
+      } else {
+        console.warn(`  ⚠ changelog: gagal ditulis (${result.error})`);
+      }
+    } else {
+      console.log("  · changelog: ga ada perubahan, skip entry");
+    }
+  } catch (e) {
+    console.warn(`  ⚠ changelog skipped: ${e.message}`);
+  }
+
+  // 7. IndexNow ping — beritahu Bing (feeds Copilot + ChatGPT Search retrieval)
+  //    URL yang berubah biar re-crawl ga nunggu jadwal biasa. Best-effort murni
+  //    — gagal/timeout cuma warn, ga pernah jatohin pipeline (harmless locally too).
+  try {
+    const urls = [SITE_URL, ...providers.map((p) => `${SITE_URL}/provider/${p.slug}`)];
+    const result = await pingIndexNow(urls);
+    console.log(
+      `  · IndexNow ping: ${result.ok ? `ok (${result.status})` : `gagal (${result.error || result.status})`}`,
+    );
+  } catch (e) {
+    console.warn(`  ⚠ IndexNow ping skipped: ${e.message}`);
   }
 }
 
