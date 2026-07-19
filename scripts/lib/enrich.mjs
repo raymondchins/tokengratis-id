@@ -274,7 +274,9 @@ export async function enrichFromModelsDev(providers) {
 
   let rawData;
   try {
-    const res = await fetch(MODELS_DEV_URL);
+    const res = await fetch(MODELS_DEV_URL, {
+      signal: AbortSignal.timeout(15_000),
+    });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     rawData = await res.json();
   } catch (err) {

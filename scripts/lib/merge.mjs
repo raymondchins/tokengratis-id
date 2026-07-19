@@ -66,7 +66,7 @@ function gapFill(contributors, field, defaultVal = null) {
 function gapFillModel(target, src) {
   if (!target.context && src.context) target.context = src.context;
   if (!target.maxOutput && src.maxOutput) target.maxOutput = src.maxOutput;
-  if (!target.modality && src.modality) target.modality = src.modality;
+  if (!target.modality && src.modality) target.modality = cleanModality(src.modality);
   if (!target.rateLimit && src.rateLimit) target.rateLimit = src.rateLimit;
 }
 

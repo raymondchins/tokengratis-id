@@ -18,7 +18,7 @@ const SRC_URL =
  * @returns {Promise<import('../lib/normalize.mjs').ProviderPartial[]>}
  */
 export async function fetchProviders() {
-  const res = await fetch(SRC_URL);
+  const res = await fetch(SRC_URL, { signal: AbortSignal.timeout(15_000) });
   if (!res.ok) throw new Error(`mnfst fetch failed: ${res.status}`);
   const data = await res.json();
 
@@ -38,7 +38,15 @@ export async function fetchProviders() {
     // Sumber kadang nyelipin baris "catatan" (id null), mis. "+ 42 more models".
     // Pisahin: real models = truthy id. Note text disimpan di moreModels (extra
     // field — merge stage reads it) dan di-append ke description sebagai fallback.
-    const models = allModels.filter((m) => m.id);
+    // Real models = truthy id, deduped by id (defensive parity with
+    // freellm/cheahjs — a duplicate row in upstream data.json would otherwise
+    // inflate modelCount → the sanity baseline; see docs/log.md INCIDENT 2026-07-17).
+    const seenIds = new Set();
+    const models = allModels.filter((m) => {
+      if (!m.id || seenIds.has(m.id)) return false;
+      seenIds.add(m.id);
+      return true;
+    });
     const moreEntry = allModels.find((m) => !m.id);
     const moreModels = moreEntry
       ? moreEntry.name.replace(/^\+\s*/, "").trim()

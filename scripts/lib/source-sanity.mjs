@@ -155,6 +155,7 @@ export function checkSourceFloor(sourceName, providerCount, modelCount) {
  */
 export function updateBaselines(countsBySource) {
   const updatedAt = new Date().toISOString();
+  const prev = loadBaselines(); // last-known-good BEFORE this run (cache holds pre-run file)
   const toWrite = {};
 
   for (const [name, counts] of Object.entries(countsBySource)) {
@@ -162,9 +163,19 @@ export function updateBaselines(countsBySource) {
       typeof counts.providers === "number" &&
       typeof counts.models    === "number"
     ) {
+      // Cap per-run baseline GROWTH. An anomalous over-count (e.g. a parser
+      // double-counting rows) must not permanently inflate the floor and make
+      // the NEXT normal-sized run fall below it (see docs/log.md INCIDENT
+      // 2026-07-17). Capping only ever LOWERS the recorded baseline → strictly
+      // safe: it can never block real data, only make the floor more lenient.
+      const prevModels = prev[name]?.models;
+      const models =
+        typeof prevModels === "number" && prevModels > 0
+          ? Math.min(counts.models, Math.ceil(prevModels * 1.5))
+          : counts.models;
       toWrite[name] = {
         providers: counts.providers,
-        models:    counts.models,
+        models,
         updatedAt,
       };
     }

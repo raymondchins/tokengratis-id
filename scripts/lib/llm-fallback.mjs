@@ -233,6 +233,9 @@ async function callApiBackend(systemPrompt, userMessage, sourceName) {
         "content-type":       "application/json",
       },
       body: JSON.stringify(body),
+      // Bound worst-case latency like the CLI backend (CLI_TIMEOUT_MS) — a hung
+      // API connection must not stall the nightly pipeline indefinitely.
+      signal: AbortSignal.timeout(CLI_TIMEOUT_MS),
     });
   } catch (err) {
     console.warn(`[llm-fallback] Network error saat memanggil API untuk "${sourceName}": ${err.message}`);

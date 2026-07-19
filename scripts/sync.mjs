@@ -86,7 +86,17 @@ async function tryLlmFallback(label) {
   // 1. Re-fetch raw source (llm-fallback ga fetch sendiri — kontraknya).
   let raw;
   try {
-    const res = await fetch(reg.url, { signal: AbortSignal.timeout(20_000) });
+    // Mirror the adapter's request headers so the rescue re-fetch sees the same
+    // response the failing adapter did (freellm.net serves different markup to a
+    // bare UA). Without this the LLM could re-parse a blocked/different page.
+    const res = await fetch(reg.url, {
+      signal: AbortSignal.timeout(20_000),
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (compatible; tokengratis-sync/1.0; +https://tokengratis.id)",
+        Accept: "text/html,application/xhtml+xml",
+      },
+    });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     raw = await res.text();
   } catch (e) {
@@ -136,7 +146,11 @@ async function downloadLogos(providers) {
         writeFileSync(join(LOGO_DIR, `${p.slug}.png`), buf);
         p.logo = `/logos/${p.slug}.png`;
       } catch {
-        p.logo = null;
+        // A transient favicon hiccup shouldn't wipe a logo we already have on
+        // disk from a prior successful sync — keep the existing PNG if present.
+        p.logo = existsSync(join(LOGO_DIR, `${p.slug}.png`))
+          ? `/logos/${p.slug}.png`
+          : null;
       }
     }),
   );
@@ -211,7 +225,13 @@ async function main() {
   //    snapshot-diff guard di langkah 4. First run / file korup → [] (guard skip).
   let prevProviders = [];
   try {
-    if (existsSync(OUT)) prevProviders = JSON.parse(readFileSync(OUT, "utf8"));
+    if (existsSync(OUT)) {
+      const parsed = JSON.parse(readFileSync(OUT, "utf8"));
+      // Guard against valid-but-non-array JSON (e.g. {} / null) reaching
+      // snapshotDiff, whose first-run check is `!prev || prev.length===0` — a
+      // truthy non-array slips past it and then crashes on `prev.map(...)`.
+      if (Array.isArray(parsed)) prevProviders = parsed;
+    }
   } catch {
     prevProviders = [];
   }

@@ -93,7 +93,14 @@ export async function fetchProviders() {
     typeof m.id === "string" && m.id.endsWith(":free"),
   );
 
-  const models = freeModels.map((m) => {
+  // Dedup by id (defensive parity with the other adapters — cheap insurance
+  // against a live-API glitch double-listing an id → inflated sanity baseline).
+  const seenIds = new Set();
+  const models = freeModels.filter((m) => {
+    if (seenIds.has(m.id)) return false;
+    seenIds.add(m.id);
+    return true;
+  }).map((m) => {
     const ctxTokens = m.context_length || null;
     // max_completion_tokens dari top_provider — hanya kalau ada & truthy
     const maxOutputTokens =

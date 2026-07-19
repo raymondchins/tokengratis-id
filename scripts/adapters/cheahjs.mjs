@@ -37,7 +37,7 @@ const README_URL =
 // ─── Fetch ─────────────────────────────────────────────────────────────────────
 
 async function fetchReadme() {
-  const res = await fetch(README_URL);
+  const res = await fetch(README_URL, { signal: AbortSignal.timeout(15_000) });
   if (!res.ok)
     throw new Error(
       `cheahjs README fetch failed: ${res.status} ${res.statusText}`,
@@ -287,6 +287,18 @@ function parseProviderBlock(headingText, body) {
     // anti-halusinasi: link generik bukan nama model. Lebih baik 0 model; provider
     // tetap ke-cover sumber lain (mnfst/freellm) via merge kalau emang ada.
     models = parseBulletModels(body, sharedRateLimit);
+  }
+
+  // Dedup by model id within a provider — defensive parity with freellm.mjs.
+  // A duplicated <tr>/bullet row must not inflate modelCount, which feeds the
+  // rolling sanity baseline (see docs/log.md INCIDENT 2026-07-17).
+  {
+    const seenIds = new Set();
+    models = models.filter((m) => {
+      if (seenIds.has(m.id)) return false;
+      seenIds.add(m.id);
+      return true;
+    });
   }
 
   // Description: first non-blank prose line that is clearly descriptive.
