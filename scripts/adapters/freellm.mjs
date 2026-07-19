@@ -61,49 +61,23 @@ const JUNK_MODEL_NAMES = new Set([
   "key",
 ]);
 
-// ─── HTTP fetch with redirect-following ──────────────────────────────────────
+// ─── HTTP fetch ───────────────────────────────────────────────────────────────
+// Built-in fetch (follows redirects sendiri) — dulu hand-rolled https client
+// ~45 baris dengan manual redirect-following; fetch() ngasih behavior yang sama
+// plus timeout, konsisten dengan adapter lain. UA/Accept dipertahankan karena
+// freellm.net bisa serve markup beda ke bare UA (lihat sync.mjs tryLlmFallback).
 
-function fetchHtml(url, depth = 0) {
-  if (depth > 5) return Promise.reject(new Error("Too many redirects"));
-  return new Promise((resolve, reject) => {
-    // Dynamic import of https so the file is still pure ESM
-    import("https").then(({ default: https }) => {
-      const parsed = new URL(url);
-      https.get(
-        {
-          hostname: parsed.hostname,
-          path: parsed.pathname + parsed.search,
-          headers: {
-            "User-Agent":
-              "Mozilla/5.0 (compatible; tokengratis-sync/1.0; +https://tokengratis.id)",
-            Accept: "text/html,application/xhtml+xml",
-          },
-        },
-        (res) => {
-          if (
-            res.statusCode >= 300 &&
-            res.statusCode < 400 &&
-            res.headers.location
-          ) {
-            const loc = res.headers.location.startsWith("http")
-              ? res.headers.location
-              : parsed.origin + res.headers.location;
-            res.resume();
-            fetchHtml(loc, depth + 1).then(resolve).catch(reject);
-            return;
-          }
-          if (res.statusCode !== 200) {
-            res.resume();
-            reject(new Error(`HTTP ${res.statusCode} for ${url}`));
-            return;
-          }
-          let body = "";
-          res.on("data", (chunk) => (body += chunk));
-          res.on("end", () => resolve(body));
-        }
-      ).on("error", reject);
-    });
+async function fetchHtml(url) {
+  const res = await fetch(url, {
+    headers: {
+      "User-Agent":
+        "Mozilla/5.0 (compatible; tokengratis-sync/1.0; +https://tokengratis.id)",
+      Accept: "text/html,application/xhtml+xml",
+    },
+    signal: AbortSignal.timeout(20_000),
   });
+  if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
+  return res.text();
 }
 
 // ─── Row parser ───────────────────────────────────────────────────────────────
