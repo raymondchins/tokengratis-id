@@ -95,9 +95,9 @@
       "homepage": null,
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
-      "stars": 1213,
+      "stars": 1212,
       "forks": 1167,
-      "openIssues": 361,
+      "openIssues": 360,
       "license": null,
       "topics": [
         "opensid",
@@ -215,7 +215,7 @@
       "language": "Rust",
       "stars": 313,
       "forks": 30,
-      "openIssues": 17,
+      "openIssues": 21,
       "license": "MIT",
       "topics": [
         "ai-agents",
@@ -238,7 +238,7 @@
         "token-savings"
       ],
       "archived": false,
-      "pushedAt": "2026-07-21T16:41:20Z",
+      "pushedAt": "2026-07-21T17:47:41Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -357,7 +357,7 @@
       "language": "Rust",
       "stars": 123,
       "forks": 15,
-      "openIssues": 3,
+      "openIssues": 8,
       "license": "Apache-2.0",
       "topics": [
         "ai",
@@ -375,7 +375,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-07-21T16:25:00Z",
+      "pushedAt": "2026-07-21T18:55:04Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -495,7 +495,7 @@
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
       "stars": 89,
-      "forks": 30,
+      "forks": 32,
       "openIssues": 3,
       "license": "MIT",
       "topics": [
@@ -1227,7 +1227,7 @@
       "language": "C",
       "stars": 13,
       "forks": 1,
-      "openIssues": 1,
+      "openIssues": 2,
       "license": "MIT",
       "topics": [
         "c-language",
@@ -1243,7 +1243,7 @@
         "windows-desktop"
       ],
       "archived": false,
-      "pushedAt": "2026-07-21T05:44:30Z",
+      "pushedAt": "2026-07-21T17:29:02Z",
       "createdAt": "2026-02-23T13:59:12Z"
     },
     {
@@ -1580,11 +1580,11 @@
       "language": "JavaScript",
       "stars": 6,
       "forks": 0,
-      "openIssues": 2,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-21T16:53:00Z",
+      "pushedAt": "2026-07-21T16:53:35Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1986,14 +1986,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-07-21T16:53:24.506Z"
+      "syncedAt": "2026-07-21T20:19:45.675Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-07-21T16:53:24.506Z"
+      "syncedAt": "2026-07-21T20:19:45.675Z"
     }
   ],
-  "syncedAt": "2026-07-21T16:53:24.506Z",
+  "syncedAt": "2026-07-21T20:19:45.675Z",
   "count": 76
 }
