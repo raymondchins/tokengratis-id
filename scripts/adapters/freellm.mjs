@@ -61,23 +61,58 @@ const JUNK_MODEL_NAMES = new Set([
   "key",
 ]);
 
-// ─── HTTP fetch ───────────────────────────────────────────────────────────────
-// Built-in fetch (follows redirects sendiri) — dulu hand-rolled https client
-// ~45 baris dengan manual redirect-following; fetch() ngasih behavior yang sama
-// plus timeout, konsisten dengan adapter lain. UA/Accept dipertahankan karena
-// freellm.net bisa serve markup beda ke bare UA (lihat sync.mjs tryLlmFallback).
+// ─── HTTP fetch with redirect-following ──────────────────────────────────────
+// SENGAJA hand-rolled https.get, BUKAN built-in fetch. Pernah diganti fetch()
+// (b46f7d0) → freellm.net langsung 403 dua malam dari GitHub Actions (WAF
+// fingerprint request undici: accept-encoding otomatis + header set beda),
+// padahal client ini terbukti berminggu-minggu dari CI yang sama. Lokal
+// (IP residential) dua-duanya jalan — jadi JANGAN "modernisasi" ini lagi
+// tanpa bukti hijau di CI. Lihat docs/log.md INCIDENT 2026-07-22.
 
-async function fetchHtml(url) {
-  const res = await fetch(url, {
-    headers: {
-      "User-Agent":
-        "Mozilla/5.0 (compatible; tokengratis-sync/1.0; +https://tokengratis.id)",
-      Accept: "text/html,application/xhtml+xml",
-    },
-    signal: AbortSignal.timeout(20_000),
+function fetchHtml(url, depth = 0) {
+  if (depth > 5) return Promise.reject(new Error("Too many redirects"));
+  return new Promise((resolve, reject) => {
+    // Dynamic import of https so the file is still pure ESM
+    import("https").then(({ default: https }) => {
+      const parsed = new URL(url);
+      const req = https.get(
+        {
+          hostname: parsed.hostname,
+          path: parsed.pathname + parsed.search,
+          headers: {
+            "User-Agent":
+              "Mozilla/5.0 (compatible; tokengratis-sync/1.0; +https://tokengratis.id)",
+            Accept: "text/html,application/xhtml+xml",
+          },
+          timeout: 20_000,
+        },
+        (res) => {
+          if (
+            res.statusCode >= 300 &&
+            res.statusCode < 400 &&
+            res.headers.location
+          ) {
+            const loc = res.headers.location.startsWith("http")
+              ? res.headers.location
+              : parsed.origin + res.headers.location;
+            res.resume();
+            fetchHtml(loc, depth + 1).then(resolve).catch(reject);
+            return;
+          }
+          if (res.statusCode !== 200) {
+            res.resume();
+            reject(new Error(`HTTP ${res.statusCode} for ${url}`));
+            return;
+          }
+          let body = "";
+          res.on("data", (chunk) => (body += chunk));
+          res.on("end", () => resolve(body));
+        }
+      );
+      req.on("timeout", () => req.destroy(new Error(`timeout for ${url}`)));
+      req.on("error", reject);
+    });
   });
-  if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
-  return res.text();
 }
 
 // ─── Row parser ───────────────────────────────────────────────────────────────
