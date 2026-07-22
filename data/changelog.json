@@ -1,5 +1,57 @@
 [
   {
+    "date": "2026-07-22",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cerebras",
+        "added": [],
+        "removed": [
+          "Llama 3.1 70B"
+        ]
+      },
+      {
+        "provider": "Cloudflare Workers AI",
+        "added": [],
+        "removed": [
+          "Mistral 7B",
+          "Qwen 1.5 7B"
+        ]
+      },
+      {
+        "provider": "Google Gemini",
+        "added": [
+          "Gemini 3.6 Flash",
+          "Gemini 3.5 Flash Lite"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "Groq",
+        "added": [],
+        "removed": [
+          "Moonshot Kimi K2",
+          "Moonshot Kimi K2 0905"
+        ]
+      },
+      {
+        "provider": "LLM7.io",
+        "added": [
+          "MiniMax-M2.7"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "OpenCode Zen",
+        "added": [],
+        "removed": [
+          "Hy3 preview"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-07-21",
     "providersAdded": [],
     "providersRemoved": [],
