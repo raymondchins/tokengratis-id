@@ -13,7 +13,7 @@
       "language": "JavaScript",
       "stars": 10168,
       "forks": 1219,
-      "openIssues": 14,
+      "openIssues": 15,
       "license": "AGPL-3.0",
       "topics": [
         "analytics",
@@ -26,7 +26,7 @@
         "user-agent-parser"
       ],
       "archived": false,
-      "pushedAt": "2026-07-20T18:03:11Z",
+      "pushedAt": "2026-07-23T06:18:48Z",
       "createdAt": "2012-02-01T01:11:49Z"
     },
     {
@@ -40,7 +40,7 @@
       "homepage": null,
       "description": "Plug n play avatar, turn name, email, and any other string into beautiful avatar (or gravatar), effortless.",
       "language": "PHP",
-      "stars": 1983,
+      "stars": 1984,
       "forks": 186,
       "openIssues": 0,
       "license": "MIT",
@@ -97,14 +97,14 @@
       "language": "PHP",
       "stars": 1213,
       "forks": 1168,
-      "openIssues": 362,
+      "openIssues": 359,
       "license": null,
       "topics": [
         "opensid",
         "sistem-informasi-desa"
       ],
       "archived": false,
-      "pushedAt": "2026-07-18T13:09:40Z",
+      "pushedAt": "2026-07-23T07:09:04Z",
       "createdAt": "2016-05-21T10:55:38Z"
     },
     {
@@ -118,7 +118,7 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 899,
+      "stars": 900,
       "forks": 279,
       "openIssues": 7,
       "license": "MIT",
@@ -138,7 +138,7 @@
       "homepage": null,
       "description": "Package Laravel yang berisi data Provinsi, Kabupaten/Kota, dan Kecamatan/Desa di seluruh Indonesia.",
       "language": "PHP",
-      "stars": 670,
+      "stars": 671,
       "forks": 210,
       "openIssues": 3,
       "license": "MIT",
@@ -185,7 +185,7 @@
       "homepage": null,
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 327,
+      "stars": 329,
       "forks": 38,
       "openIssues": 6,
       "license": "MIT",
@@ -199,7 +199,7 @@
         "wails-app"
       ],
       "archived": false,
-      "pushedAt": "2026-07-15T07:04:13Z",
+      "pushedAt": "2026-07-23T20:12:11Z",
       "createdAt": "2025-11-04T15:37:00Z"
     },
     {
@@ -215,7 +215,7 @@
       "language": "Rust",
       "stars": 314,
       "forks": 30,
-      "openIssues": 23,
+      "openIssues": 22,
       "license": "MIT",
       "topics": [
         "ai-agents",
@@ -238,7 +238,7 @@
         "token-savings"
       ],
       "archived": false,
-      "pushedAt": "2026-07-22T17:58:39Z",
+      "pushedAt": "2026-07-23T18:22:22Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -252,7 +252,7 @@
       "homepage": "https://www.erdbuilderpro.com",
       "description": "ERD Builder Pro is a database design and documentation tool for developers. Build ERDs, flowcharts, notes, and drawings — all in one workspace",
       "language": "TypeScript",
-      "stars": 174,
+      "stars": 175,
       "forks": 33,
       "openIssues": 0,
       "license": null,
@@ -282,8 +282,8 @@
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
       "stars": 166,
-      "forks": 34,
-      "openIssues": 51,
+      "forks": 35,
+      "openIssues": 54,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -316,7 +316,7 @@
       "description": null,
       "language": "Python",
       "stars": 154,
-      "forks": 36,
+      "forks": 37,
       "openIssues": 0,
       "license": "MIT",
       "topics": [],
@@ -355,7 +355,7 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 125,
+      "stars": 129,
       "forks": 15,
       "openIssues": 9,
       "license": "Apache-2.0",
@@ -375,8 +375,28 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-07-21T23:43:24Z",
+      "pushedAt": "2026-07-23T03:39:52Z",
       "createdAt": "2026-05-29T00:27:31Z"
+    },
+    {
+      "slug": "jipraks/kasirgratisan",
+      "fullName": "jipraks/kasirgratisan",
+      "name": "kasirgratisan",
+      "owner": "jipraks",
+      "ownerUrl": "https://github.com/jipraks",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/10278519?v=4",
+      "url": "https://github.com/jipraks/kasirgratisan",
+      "homepage": null,
+      "description": "Free, Open Source, Offline Point of Sales Apps",
+      "language": "TypeScript",
+      "stars": 113,
+      "forks": 56,
+      "openIssues": 1,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-07-13T00:57:27Z",
+      "createdAt": "2026-02-12T11:02:43Z"
     },
     {
       "slug": "ilhamrisky/pddikti-kemdikbud-api",
@@ -401,26 +421,6 @@
       "archived": false,
       "pushedAt": "2025-07-30T13:28:14Z",
       "createdAt": "2021-04-21T07:59:57Z"
-    },
-    {
-      "slug": "jipraks/kasirgratisan",
-      "fullName": "jipraks/kasirgratisan",
-      "name": "kasirgratisan",
-      "owner": "jipraks",
-      "ownerUrl": "https://github.com/jipraks",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/10278519?v=4",
-      "url": "https://github.com/jipraks/kasirgratisan",
-      "homepage": null,
-      "description": "Free, Open Source, Offline Point of Sales Apps",
-      "language": "TypeScript",
-      "stars": 112,
-      "forks": 56,
-      "openIssues": 1,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-07-13T00:57:27Z",
-      "createdAt": "2026-02-12T11:02:43Z"
     },
     {
       "slug": "adenaufal/anti-slop-writing",
@@ -494,9 +494,9 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 92,
+      "stars": 95,
       "forks": 33,
-      "openIssues": 4,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [
         "ai",
@@ -519,7 +519,7 @@
         "zai"
       ],
       "archived": false,
-      "pushedAt": "2026-07-16T08:27:50Z",
+      "pushedAt": "2026-07-23T17:50:10Z",
       "createdAt": "2026-05-31T09:02:50Z"
     },
     {
@@ -603,7 +603,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-07-21T12:58:04Z",
+      "pushedAt": "2026-07-23T01:16:54Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -618,7 +618,7 @@
       "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
       "language": "Svelte",
       "stars": 51,
-      "forks": 8,
+      "forks": 9,
       "openIssues": 4,
       "license": "MIT",
       "topics": [
@@ -634,7 +634,7 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-07-22T12:01:43Z",
+      "pushedAt": "2026-07-23T17:36:56Z",
       "createdAt": "2026-06-11T13:28:54Z"
     },
     {
@@ -658,6 +658,31 @@
       "createdAt": "2026-01-11T07:23:01Z"
     },
     {
+      "slug": "abilfida/omnidrive",
+      "fullName": "abilfida/OmniDrive",
+      "name": "OmniDrive",
+      "owner": "abilfida",
+      "ownerUrl": "https://github.com/abilfida",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/38366329?v=4",
+      "url": "https://github.com/abilfida/OmniDrive",
+      "homepage": null,
+      "description": "Omnidrive lets you connect multiple Google Drive accounts and manage all your files from a single dashboard. It runs entirely on Cloudflare's edge network — Workers for the API, D1 for the database, and KV for session storage — so there's no traditional server to maintain.",
+      "language": "TypeScript",
+      "stars": 47,
+      "forks": 10,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "cloudflare",
+        "google-drive",
+        "reactjs",
+        "vitejs"
+      ],
+      "archived": false,
+      "pushedAt": "2026-06-24T03:36:32Z",
+      "createdAt": "2026-06-07T16:49:12Z"
+    },
+    {
       "slug": "mmenghancurkan/dynaqris",
       "fullName": "mmenghancurkan/dynaQRIS",
       "name": "dynaQRIS",
@@ -676,31 +701,6 @@
       "archived": false,
       "pushedAt": "2026-06-20T14:24:38Z",
       "createdAt": "2026-06-18T03:59:11Z"
-    },
-    {
-      "slug": "abilfida/omnidrive",
-      "fullName": "abilfida/OmniDrive",
-      "name": "OmniDrive",
-      "owner": "abilfida",
-      "ownerUrl": "https://github.com/abilfida",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/38366329?v=4",
-      "url": "https://github.com/abilfida/OmniDrive",
-      "homepage": null,
-      "description": "Omnidrive lets you connect multiple Google Drive accounts and manage all your files from a single dashboard. It runs entirely on Cloudflare's edge network — Workers for the API, D1 for the database, and KV for session storage — so there's no traditional server to maintain.",
-      "language": "TypeScript",
-      "stars": 46,
-      "forks": 10,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "cloudflare",
-        "google-drive",
-        "reactjs",
-        "vitejs"
-      ],
-      "archived": false,
-      "pushedAt": "2026-06-24T03:36:32Z",
-      "createdAt": "2026-06-07T16:49:12Z"
     },
     {
       "slug": "andriawan/andkasir",
@@ -824,13 +824,13 @@
       "homepage": null,
       "description": "Its Factorio for coding agents",
       "language": "Ruby",
-      "stars": 39,
+      "stars": 40,
       "forks": 4,
       "openIssues": 2,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-21T12:52:14Z",
+      "pushedAt": "2026-07-23T13:03:15Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -988,7 +988,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-19T05:48:46Z",
+      "pushedAt": "2026-07-23T03:47:25Z",
       "createdAt": "2026-03-29T13:58:03Z"
     },
     {
@@ -1002,7 +1002,7 @@
       "homepage": "https://www.mandumrimba.org",
       "description": "Mandum Rimba is an independent, nonprofit public-interest observatory. We do not sell data, carry advertising, or take sides. We consolidate satellite data and credible public sources into a single open map, auditable by anyone, fully open source, and with every figure traceable to its origin.",
       "language": "TypeScript",
-      "stars": 21,
+      "stars": 22,
       "forks": 5,
       "openIssues": 0,
       "license": "AGPL-3.0",
@@ -1069,7 +1069,7 @@
         "omarchy"
       ],
       "archived": false,
-      "pushedAt": "2026-07-21T12:06:23Z",
+      "pushedAt": "2026-07-23T12:16:35Z",
       "createdAt": "2025-10-04T10:27:45Z"
     },
     {
@@ -1083,7 +1083,7 @@
       "homepage": "https://silong-os.vercel.app/",
       "description": "An open-source Notion-inspired workspace for teams and personal use",
       "language": "TypeScript",
-      "stars": 18,
+      "stars": 19,
       "forks": 4,
       "openIssues": 0,
       "license": "MIT",
@@ -1211,7 +1211,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-22T12:26:04Z",
+      "pushedAt": "2026-07-23T05:56:45Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1343,7 +1343,7 @@
         "semantic-search"
       ],
       "archived": false,
-      "pushedAt": "2026-07-14T09:11:34Z",
+      "pushedAt": "2026-07-23T06:41:37Z",
       "createdAt": "2026-06-02T04:21:59Z"
     },
     {
@@ -1584,7 +1584,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-21T20:19:56Z",
+      "pushedAt": "2026-07-22T20:12:36Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1752,7 +1752,7 @@
       "language": "Python",
       "stars": 4,
       "forks": 1,
-      "openIssues": 2,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "ai-agent",
@@ -1769,7 +1769,7 @@
         "tailscale"
       ],
       "archived": false,
-      "pushedAt": "2026-07-22T18:04:09Z",
+      "pushedAt": "2026-07-23T02:37:49Z",
       "createdAt": "2026-06-06T16:32:11Z"
     },
     {
@@ -1986,14 +1986,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-07-22T20:12:25.857Z"
+      "syncedAt": "2026-07-23T20:15:24.931Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-07-22T20:12:25.857Z"
+      "syncedAt": "2026-07-23T20:15:24.931Z"
     }
   ],
-  "syncedAt": "2026-07-22T20:12:25.857Z",
+  "syncedAt": "2026-07-23T20:15:24.931Z",
   "count": 76
 }
