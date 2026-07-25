@@ -52,3 +52,6 @@ Thumbs.db
 
 # Generated code maps (not hand-authored)
 graphify-out/
+
+# Serena MCP per-project state (LSP cache + agent memories) — machine-local
+.serena/
