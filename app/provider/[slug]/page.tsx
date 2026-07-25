@@ -6,6 +6,7 @@ import ProviderLogo from "@/components/ProviderLogo";
 import { CategoryTag, ModalityTags, SourceLine, modalityLabel } from "@/components/directory/Badges";
 import ModelsTable from "@/components/directory/ModelsTable";
 import ProviderFaq from "@/components/directory/ProviderFaq";
+import SetupPanel from "@/components/setup/SetupPanel";
 import type { Provider } from "@/lib/types";
 
 export async function generateStaticParams() {
@@ -127,6 +128,18 @@ export default async function Page({
                 </p>
               </section>
             )}
+
+            {/* setup dalam 5 menit — snippet siap pakai dari data yang ada
+                (baseUrl + models[]). Client component, ga ada base URL/model
+                yang dikarang (lihat lib/snippets.ts). */}
+            <section>
+              <h2 className="font-serif text-xl font-semibold tracking-tight text-fog sm:text-2xl">
+                Setup dalam 5 menit
+              </h2>
+              <div className="mt-3">
+                <SetupPanel provider={p} />
+              </div>
+            </section>
 
             {/* cara claim — alur umum (pakai field sumber: url + baseUrl). Bukan
                 instruksi terverifikasi per-provider; detail pasti di halaman resmi. */}

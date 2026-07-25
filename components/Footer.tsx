@@ -95,6 +95,46 @@ export default function Footer() {
             ))}
           </p>
         )}
+        <p className="mt-3 max-w-2xl">
+          Alat:{" "}
+          {[
+            { href: "/pilih", label: "Pilih model" },
+            { href: "/fallback", label: "Rantai fallback" },
+            { href: "/modal-gratis", label: "Modal gratis" },
+            { href: "/changelog", label: "Perubahan data" },
+            { href: "/#cara-kerja", label: "Cara kerja" },
+          ].map((l, i, arr) => (
+            <span key={l.href}>
+              <Link
+                href={l.href}
+                className="underline decoration-ink-line underline-offset-2 hover:text-fog"
+              >
+                {l.label}
+              </Link>
+              {i < arr.length - 1 && <span> · </span>}
+            </span>
+          ))}
+        </p>
+        <p className="mt-3 max-w-2xl">
+          Buat mesin:{" "}
+          {[
+            { href: "/feed.xml", label: "RSS perubahan" },
+            { href: "/api/providers", label: "API provider (JSON)" },
+            { href: "/api/models", label: "API model (JSON)" },
+            { href: "/llms.txt", label: "llms.txt" },
+          ].map((l, i, arr) => (
+            <span key={l.href}>
+              <a
+                href={l.href}
+                className="underline decoration-ink-line underline-offset-2 hover:text-fog"
+              >
+                {l.label}
+              </a>
+              {i < arr.length - 1 && <span> · </span>}
+            </span>
+          ))}
+          . Bebas dipakai, atribusi ke sumber aslinya tetap wajib.
+        </p>
         <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
           <p className="text-xs text-mute">
             <span className="font-medium text-fog">tokengratis.id</span> — karena
