@@ -1,5 +1,57 @@
 [
   {
+    "date": "2026-07-25",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cerebras",
+        "added": [],
+        "removed": [
+          "Llama 3.1 70B"
+        ]
+      },
+      {
+        "provider": "Cloudflare Workers AI",
+        "added": [],
+        "removed": [
+          "Mistral 7B",
+          "Qwen 1.5 7B"
+        ]
+      },
+      {
+        "provider": "Groq",
+        "added": [],
+        "removed": [
+          "Moonshot Kimi K2",
+          "Moonshot Kimi K2 0905"
+        ]
+      },
+      {
+        "provider": "LLM7.io",
+        "added": [
+          "grok-3-mini"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "NVIDIA NIM",
+        "added": [
+          "nvidia/ising-calibration-1.5-31b"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "OpenCode Zen",
+        "added": [
+          "Laguna S 2.1",
+          "ling-3.0-flash-free"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-07-23",
     "providersAdded": [],
     "providersRemoved": [],

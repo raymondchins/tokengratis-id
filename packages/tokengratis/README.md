@@ -80,11 +80,15 @@ Once published to npm:
   "mcpServers": {
     "tokengratis": {
       "command": "npx",
-      "args": ["-y", "tokengratis-mcp"]
+      "args": ["-y", "-p", "tokengratis", "tokengratis-mcp"]
     }
   }
 }
 ```
+
+> `tokengratis-mcp` is a **bin inside** the `tokengratis` package, not a package
+> of its own — hence `-p tokengratis`. Plain `npx -y tokengratis-mcp` would try
+> to fetch a package by that name and fail.
 
 ### Running from source (works today, package isn't published yet)
 

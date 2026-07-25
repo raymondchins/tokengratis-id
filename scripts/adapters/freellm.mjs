@@ -4,24 +4,44 @@
  * Scrapes https://freellm.net/models/ (server-rendered static HTML table).
  * No browser / JS execution needed — all data is in the raw HTML response.
  *
- * HTML structure (verified 2026-06-01, 170 rows, 27 providers):
+ * KOLOM DI-MAP BY NAMA HEADER, BUKAN BY INDEKS. Jangan pernah balik ke indeks
+ * hardcoded — itu sudah pernah bikin data salah diam-diam:
+ *
+ *   INCIDENT 2026-07-25. freellm.net nyisipin kolom "Score" di indeks 2 dan
+ *   ngebuang kolom "Max Output". Jumlah kolom tetap sama (9), jumlah baris
+ *   normal, jadi sanity floor + diff guard SEMUA lolos — yang berubah cuma
+ *   ARTI tiap kolom. Akibatnya `context` keisi skor (81, 40, 45…) dan
+ *   `maxOutput` keisi context. 216 dari 398 model kena. Ketahuan cuma karena
+ *   ada yang ngeliat "context=81" di output CLI.
+ *
+ *   Layout LAMA  : Provider │ Model │ Context │ Max Output │ Modality │ Rate Limit │ …
+ *   Layout BARU  : Provider │ Model │ Score   │ Context    │ Modality │ Rate Limit │ …
+ *
+ *   Pelajaran: parse yang SUKSES tapi salah kolom itu lebih bahaya daripada
+ *   parse yang gagal — guard berbasis jumlah ga akan pernah nangkep. Makanya
+ *   sekarang: (a) header dibaca dan dipetakan by nama, (b) kolom "Context"
+ *   hilang = throw (bukan diam-diam null), (c) ada plausibility guard yang
+ *   nolak nilai context yang kelihatan kayak skor.
+ *
+ * Struktur HTML (verified 2026-07-25, 670 baris):
+ *   <thead><tr><th>Provider</th><th>Model</th><th>Score</th><th>Context</th>
+ *              <th>Modality</th><th>Rate Limit</th><th>Released</th>
+ *              <th>Weekly Tokens</th><th>Status</th></tr></thead>
  *   <tbody id="modelsBody">
  *     <tr data-provider="ProviderName" data-modality="text,vision" data-free="1" ...>
- *       <td> <a>ProviderName</a> </td>           col 0 — Provider
- *       <td> <a>ModelName</a> [badges] </td>     col 1 — Model
- *       <td class="mono">256K</td>               col 2 — Context
- *       <td class="mono hide-mobile">64K</td>    col 3 — Max Output
- *       <td> <span class="modality-tags">        col 4 — Modality (badges)
- *              <span class="badge">text</span>
- *              <span class="badge">vision</span>
- *            </span> </td>
- *       <td class="mono small">See provider page</td>  col 5 — Rate Limit
- *       <td class="mono small hide-mobile">Apr 1, 2026</td>  col 6 — Released
- *       <td class="mono small hide-mobile">1.7T</td>   col 7 — Weekly Tokens
- *       <td> <span class="status-badge">Online</span> </td>  col 8 — Status
- *       <td> <a class="btn">Details</a> </td>    col 9 — (ignored, UI only)
+ *       <td> <a>ProviderName</a> </td>
+ *       <td> <a class="model-link">ModelName</a> [badges] </td>
+ *       <td class="mono">81</td>                 ← Score (DIABAIKAN, bukan data kita)
+ *       <td class="mono">256K</td>               ← Context
+ *       <td> <span class="modality-tags">…</span> </td>
+ *       <td class="mono small">30 RPM</td>       ← Rate Limit
+ *       …Released / Weekly Tokens / Status / Details (diabaikan)
  *     </tr>
  *   </tbody>
+ *
+ * Catatan: layout sekarang TIDAK punya kolom Max Output sama sekali, jadi
+ * `maxOutput` dari sumber ini selalu null. Itu benar — bukan data hilang.
+ * enrich.mjs (models.dev) yang nambal maxOutput belakangan.
  *
  * Modality: extracted from data-modality attribute on <tr> (comma-separated,
  * e.g. "text,vision") — cleaner than parsing inner badges.
@@ -119,12 +139,67 @@ function fetchHtml(url, depth = 0) {
 // decodeEntities/textOf now live in scripts/lib/normalize.mjs (shared with
 // cheahjs.mjs — see that file for why).
 
+/** Normalisasi label header jadi key: "Rate Limit" -> "ratelimit". */
+function headerKey(s) {
+  return s.toLowerCase().replace(/[^a-z0-9]/g, "");
+}
+
+/**
+ * Baca <thead> dan petakan nama kolom -> indeks.
+ *
+ * Ini jantung fix INCIDENT 2026-07-25 (lihat komentar di atas file). Kalau
+ * freellm geser/sisipin/buang kolom lagi, mapping ikut sendiri; kalau kolom
+ * yang kita ANDALKAN hilang, kita throw — sengaja gagal berisik, karena
+ * diam-diam null jauh lebih mahal daripada sync yang skip semalam.
+ *
+ * @returns {{context:number, maxOutput:number|null, rateLimit:number|null}}
+ */
+export function parseHeaderMap(html) {
+  const theadM = html.match(/<thead[\s>][\s\S]*?<\/thead>/i);
+  if (!theadM) {
+    throw new Error("freellm.mjs: <thead> ga ketemu — struktur tabel berubah total");
+  }
+  const labels = (theadM[0].match(/<th(?:\s[^>]*)?>[\s\S]*?<\/th>/gi) || []).map((c) =>
+    headerKey(textOf(c))
+  );
+  if (!labels.length) {
+    throw new Error("freellm.mjs: <thead> ada tapi nol <th>");
+  }
+
+  const idx = (...aliases) => {
+    for (const a of aliases) {
+      const i = labels.indexOf(a);
+      if (i !== -1) return i;
+    }
+    return null;
+  };
+
+  const context = idx("context", "contextwindow", "ctx");
+  if (context === null) {
+    throw new Error(
+      `freellm.mjs: kolom "Context" ga ada di header [${labels.join(", ")}] — ` +
+        `JANGAN tebak indeks, benerin mapping-nya dulu (lihat INCIDENT 2026-07-25)`
+    );
+  }
+
+  return {
+    context,
+    // Layout sekarang ga punya kolom ini. null = sumber emang ga nyediain,
+    // BUKAN "belum keparse". Anti-halusinasi: jangan diisi dari kolom sebelah.
+    maxOutput: idx("maxoutput", "maxout", "output"),
+    rateLimit: idx("ratelimit", "limits", "limit"),
+  };
+}
+
 /**
  * Parse a single <tr>...</tr> string into a row object.
  * Uses data-* attributes on <tr> where available (faster + more reliable than
  * parsing inner cells for provider name and modality).
+ *
+ * @param {string} trHtml
+ * @param {{context:number, maxOutput:number|null, rateLimit:number|null}} col
  */
-function parseRow(trHtml) {
+function parseRow(trHtml, col) {
   // ── Pull data-* attrs from <tr> opening tag ───────────────────────────────
   const attrStr = trHtml.slice(0, trHtml.indexOf(">"));
 
@@ -142,8 +217,8 @@ function parseRow(trHtml) {
     cells.push(m[0]);
   }
 
-  // col indices: 0=Provider 1=Model 2=Context 3=MaxOutput 4=Modality
-  //              5=RateLimit 6=Released 7=WeeklyTokens 8=Status 9=Details(skip)
+  // Indeks kolom TIDAK di-hardcode — datang dari parseHeaderMap(). Lihat
+  // komentar INCIDENT 2026-07-25 di atas file sebelum mengubah ini.
 
   // ── Model name: prefer <a class="model-link"> text ────────────────────────
   let modelName = "";
@@ -169,12 +244,16 @@ function parseRow(trHtml) {
   };
 
   // ── Context ───────────────────────────────────────────────────────────────
-  const contextRaw = cells[2] ? textOf(cells[2]) : "";
-  const context = numCell(contextRaw);
+  const contextCell = cells[col.context];
+  const context = contextCell ? numCell(textOf(contextCell)) : null;
 
   // ── Max Output ────────────────────────────────────────────────────────────
-  const maxOutputRaw = cells[3] ? textOf(cells[3]) : "";
-  const maxOutput = numCell(maxOutputRaw);
+  // col.maxOutput === null berarti tabelnya emang ga punya kolom ini (layout
+  // sejak 2026-07-25). Jangan ambil dari kolom tetangga.
+  const maxOutput =
+    col.maxOutput !== null && cells[col.maxOutput]
+      ? numCell(textOf(cells[col.maxOutput]))
+      : null;
 
   // ── Modality: use data-modality attr, join badges with " + " for readability
   // data-modality is comma-separated e.g. "text,vision" — map to display string
@@ -187,7 +266,8 @@ function parseRow(trHtml) {
     : "";
 
   // ── Rate limit ────────────────────────────────────────────────────────────
-  const rateLimitRaw = cells[5] ? textOf(cells[5]) : "";
+  const rateLimitCell = col.rateLimit !== null ? cells[col.rateLimit] : null;
+  const rateLimitRaw = rateLimitCell ? textOf(rateLimitCell) : "";
   // Explicitly null out "See provider page" (case-insensitive) BEFORE cleanStr
   const rateLimit =
     /^see\s+provider\s+page$/i.test(rateLimitRaw.trim())
@@ -215,6 +295,9 @@ function parseRow(trHtml) {
 export async function fetchProviders() {
   const html = await fetchHtml(SOURCE_URL);
 
+  // Petakan kolom by nama header DULU — throw kalau "Context" ilang.
+  const col = parseHeaderMap(html);
+
   // Isolate <tbody> to avoid false matches in <thead> or scripts
   const tbodyStart = html.indexOf("<tbody");
   const tbodyEnd = html.lastIndexOf("</tbody>");
@@ -229,7 +312,7 @@ export async function fetchProviders() {
 
   let trMatch;
   while ((trMatch = trRe.exec(tbody)) !== null) {
-    const row = parseRow(trMatch[0]);
+    const row = parseRow(trMatch[0], col);
     if (!row) continue;
 
     const { providerName, modelName, context, maxOutput, modality, rateLimit } =
@@ -262,6 +345,24 @@ export async function fetchProviders() {
       modality: modality || "",
       rateLimit,
     });
+  }
+
+  // ── Plausibility guard (jaring kedua untuk INCIDENT 2026-07-25) ───────────
+  // Kalau mapping header entah gimana masih nunjuk kolom yang salah, nilai
+  // "context" bakal kelihatan kayak skor: bilangan bulat telanjang yang kecil,
+  // tanpa satuan K/M. Context asli hampir selalu ditulis "128K"/"1M"/"256K".
+  // Guard berbasis JUMLAH baris ga akan pernah nangkep ini — makanya guard di
+  // sini berbasis BENTUK nilai.
+  const ctxVals = [...rowsByProvider.values()]
+    .flatMap((p) => p.models.map((m) => m.context))
+    .filter(Boolean);
+  const scoreLike = ctxVals.filter((v) => /^\d{1,3}$/.test(v)).length;
+  if (ctxVals.length >= 20 && scoreLike / ctxVals.length > 0.5) {
+    throw new Error(
+      `freellm.mjs: ${scoreLike}/${ctxVals.length} nilai context berupa angka ` +
+        `telanjang <1000 — ini pola kolom ketuker (skor kebaca sebagai context). ` +
+        `Cek header tabel freellm.net, lihat INCIDENT 2026-07-25.`
+    );
   }
 
   const syncedAt = new Date().toISOString();
