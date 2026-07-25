@@ -1,11 +1,14 @@
 import { Link } from "next-view-transitions";
 import Spark from "./Spark";
 
+// Nav cuma muat ~4 link (md:flex, ga ada menu mobile). Anchor homepage
+// "Cara kerja"/"Sumber" pindah ke baris "Alat & jelajah" di Footer — masih
+// ke-crawl dari semua halaman, tapi slot nav kepake buat halaman beneran.
 const NAV_LINKS: { label: string; href: string; badge?: string }[] = [
   { label: "Direktori", href: "/#direktori" },
-  { label: "Cara kerja", href: "/#cara-kerja" },
-  { label: "Sumber", href: "/#sumber" },
-  { label: "Open source", href: "/opensource", badge: "NEW" },
+  { label: "Pilih model", href: "/pilih" },
+  { label: "Modal gratis", href: "/modal-gratis", badge: "NEW" },
+  { label: "Open source", href: "/opensource" },
 ];
 
 export default function Navbar() {

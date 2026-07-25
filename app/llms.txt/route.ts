@@ -32,6 +32,18 @@ export function GET() {
   lines.push("");
   lines.push(`- [Beranda](${BASE}): daftar lengkap provider API LLM gratis.`);
   lines.push(
+    `- [Pilih model](${BASE}/pilih): wizard buat nyaring provider+model sesuai kebutuhan (modalitas, context minimum, rate limit).`
+  );
+  lines.push(
+    `- [Rantai fallback](${BASE}/fallback): generator konfigurasi multi-provider (Vercel AI SDK / LiteLLM / TypeScript) biar aplikasi otomatis pindah provider pas kena rate limit.`
+  );
+  lines.push(
+    `- [Modal gratis](${BASE}/modal-gratis): free tier & kredit di luar token LLM — hosting, database, storage, email, auth, monitoring, paket mahasiswa, kredit startup. Kurasi manual dengan tanggal pengecekan per entri, bukan hasil sync otomatis.`
+  );
+  lines.push(
+    `- [Perubahan data](${BASE}/changelog): diff harian model & provider dari hasil sync.`
+  );
+  lines.push(
     `- [Proyek Open Source](${BASE}/opensource): direktori proyek open-source buatan developer Indonesia.`
   );
 
@@ -46,6 +58,21 @@ export function GET() {
   lines.push("");
   lines.push(
     `- [llms-full.txt](${BASE}/llms-full.txt): dump lengkap semua provider + model (deskripsi, modalitas, tabel model, sumber) dalam markdown, buat konsumsi LLM/agent.`
+  );
+  lines.push(
+    `- [API provider (JSON)](${BASE}/api/providers): array Provider lengkap, CORS terbuka. Ini sumber yang sama dengan yang dipakai situs.`
+  );
+  lines.push(
+    `- [API model (JSON)](${BASE}/api/models): daftar model rata (flat) lintas provider, CORS terbuka.`
+  );
+  lines.push(
+    `- [RSS perubahan](${BASE}/feed.xml): feed model/provider baru & yang hilang, di-update tiap sync malam.`
+  );
+  lines.push("");
+  lines.push("## MCP & CLI");
+  lines.push("");
+  lines.push(
+    "Direktori ini bisa diakses langsung dari editor lewat MCP server (`tokengratis-mcp`) atau CLI (`tokengratis`) — keduanya tanpa dependency, baca dari API JSON di atas. Kode di `packages/tokengratis/` pada repo GitHub."
   );
   lines.push("");
 

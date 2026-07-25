@@ -1,0 +1,44 @@
+{
+  "name": "tokengratis",
+  "version": "0.1.0",
+  "description": "CLI + MCP server for tokengratis.id, the aggregator directory of free-tier & free-credit LLM APIs for Indonesian developers. Zero runtime dependencies.",
+  "keywords": [
+    "tokengratis",
+    "llm",
+    "free-tier",
+    "free-llm",
+    "mcp",
+    "model-context-protocol",
+    "cli",
+    "openrouter",
+    "indonesia"
+  ],
+  "license": "MIT",
+  "author": "Raymond Chin",
+  "homepage": "https://tokengratis.id",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raymondchins/tokengratis-id",
+    "directory": "packages/tokengratis"
+  },
+  "bugs": {
+    "url": "https://github.com/raymondchins/tokengratis-id/issues"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "tokengratis": "./src/cli.mjs",
+    "tokengratis-mcp": "./src/mcp-server.mjs"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {},
+  "publishConfig": {
+    "access": "public"
+  }
+}

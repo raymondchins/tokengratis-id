@@ -2,7 +2,7 @@
 
 > **Auto-read on demand** — when prompt asks "current state", "what phase", "what's deployed", "what's blocked". Update on every meaningful push.
 >
-> **Last updated:** 2026-07-17
+> **Last updated:** 2026-07-25
 
 ## Project Summary
 
@@ -12,7 +12,19 @@
 
 ## Current phase
 
-**Phase 4+ — Directory live, 4-source + enrichment + LLM fallback + rolling baselines.** App jalan: homepage (hero serif + tabel), `/provider/[slug]`. Data dari pipeline `npm run sync` (4 sumber paralel + enrichment models.dev + LLM fallback Claude Haiku + rolling baselines, 24 provider). Nightly cron live via GitHub Actions. Domain attach ke Vercel sudah dilakukan. LLM fallback (Haiku) aktif kalau `ANTHROPIC_API_KEY` di-set (raw API) ATAU `CLAUDE_CODE_OAUTH_TOKEN` ada (headless CLI).
+**Phase 6 — dari direktori jadi alat (Pilih → Pasang → Jaga).** Data layer tetap sama (pipeline nightly 4 sumber, 24 provider / 398 model). Yang baru: situs ga cuma nampilin daftar, tapi ngebantu user milih, masang, dan tau kalau berubah.
+
+Roadmap + skip-list lengkap (dengan alasan & sumber) di **`docs/PRODUCT-ROADMAP.md`** — disusun 2026-07-25 dari riset 5-arah. Fase 1/2/4/5 dieksekusi; Fase 3 ditunda.
+
+Surface baru:
+- `/pilih` — wizard nyaring provider+model (modalitas, context minimum, rate limit)
+- `/fallback` — generator rantai multi-provider (Vercel AI SDK / LiteLLM / TypeScript / `.env`)
+- Panel "Setup dalam 5 menit" di tiap `/provider/[slug]` — snippet 5 target + `.env`
+- `/modal-gratis` + 54 halaman detail — free tier & kredit **di luar** token LLM
+- `/feed.xml` (RSS perubahan), `/api/providers` + `/api/models` (JSON, CORS terbuka)
+- `packages/tokengratis/` — CLI + MCP server, **zero dependency**, belum di-publish ke npm
+
+Halaman ke-index: 87 → **143 URL sitemap**.
 
 ## Architecture
 
@@ -21,7 +33,17 @@
 - **Pipeline:** `scripts/sync.mjs` (`npm run sync`) → fetch **4 sumber paralel** via `scripts/adapters/mnfst.mjs` + `scripts/adapters/freellm.mjs` + `scripts/adapters/cheahjs.mjs` + `scripts/adapters/openrouter.mjs` → merge/gap-fill by priority di `scripts/lib/merge.mjs` → enrich context/maxOutput dari models.dev (`scripts/lib/enrich.mjs`) → smoke test → tulis `data/providers.json`. LLM fallback (`scripts/lib/llm-fallback.mjs`, Claude Haiku) re-parse sumber unstructured yang drift kalau `ANTHROPIC_API_KEY` ada (raw API) ATAU `CLAUDE_CODE_OAUTH_TOKEN` di-set (headless Claude Code, subscription Max). Idempotent.
 - **Nightly cron:** `.github/workflows/nightly-sync.yml` (cron `0 19 * * *`) — auto-commit data + trigger Vercel rebuild.
 
-## Data model (canonical = `lib/types.ts`)
+## Data model — "modal gratis" (canonical = `lib/offer-types.ts`)
+
+Entity **terpisah** dari Provider/Model, sengaja. Skema LLM (context/modality/rateLimit) ga muat buat "10 GB storage" atau "$10.000 credit" — dipaksa jadi satu = kolom kosong bertaburan, persis yang dilarang aturan #1.
+
+- **Offer:** slug · name · vendor · domain · category (10 kategori) · kind (`free_tier`/`credit`/`trial`/`program`) · url · description · limits[] · creditValue · requirements[] · **traps[]** · facets[] · idIndie (`bisa`/`tidak`/`belum_jelas`) · sources[] (tiap OfferSource: name/url/**checkedAt**).
+- **`facets` itu TURUNAN**, bukan penilaian — cuma boleh nempel kalau ada baris di limits/requirements/traps yang mendukung. Pola sama kayak `Provider.modalities` yang di-derive dari string modality sumber.
+- **`sources[].url` WAJIB halaman resmi vendor.** Situs agregator DILARANG — riset nemu agregator saling bertentangan (tier Cloudflare versi agregator $5K/$25K/$100K vs halaman resmi $10K/$100K/$350K).
+- **Kurasi manual, kadens mingguan** — BUKAN adapter nightly. Alasannya: nol sumber machine-readable di domain ini (free-for-dev pun ga encode angka kuota). Ini bukan kemalasan, ini temuan riset.
+- `checkedAt` = kapan halaman dibaca. Provenance, BUKAN klaim "masih benar sekarang". Tetap dilarang pakai kata "Verified".
+
+## Data model — LLM (canonical = `lib/types.ts`)
 
 - **Provider:** slug, name, category (`provider_api`/`inference_provider`), country+flag, domain+logo (favicon, fallback flag), url, baseUrl, description (prosa apa adanya), modalities[] (facet), modelCount, maxContext, freeLimit (derived dari description), models[], sources[] (provenance array — tiap SourceRef: name/url/syncedAt), syncedAt, sourceUpdatedAt.
 - **Model:** id, name, context, maxOutput, modality, rateLimit.
@@ -67,16 +89,27 @@ Light / paper / neutral ala getaiperks.com. bg `#f1f0e8`, card putih, text `#111
 | 4b | Multi-source (freellm.net + cheahjs) + 3-way merge | ✅ Done (~26 provider) |
 | 4c | Sumber ke-4 (openrouter live API) + enrichment models.dev + LLM fallback + rolling baselines | ✅ Done (2026-06-10) |
 | 5 (opt) | Tambah sumber (amardeeplakshkar/aicredits) | ⏸️ v2 maybe |
+| 6a | PASANG — `/pilih`, `/fallback`, panel setup per-provider | ✅ Done (2026-07-25) |
+| 6b | JAGA — RSS `/feed.xml` dari diff nightly | ✅ Done (2026-07-25) |
+| 6c | Distribusi — `/api/providers`, `/api/models`, CLI + MCP zero-dep | ✅ Done (2026-07-25), belum publish npm |
+| 6d | Ekspansi — `/modal-gratis`, 54 offer terkurasi | ✅ Done (2026-07-25) |
+| 6e | JAGA — status ping 8–10 provider | ⏸️ Blocked: butuh 8–10 API key atas nama Ray |
+| 6f | JAGA — Telegram channel + email digest | ⏸️ Di-skip atas permintaan Ray |
 
 Legend: ✅ Complete · 🚧 In dev · ⏸️ Pending · 🗄️ N/A
 
 ## Open Questions / Blockers
 
-- None blocking. Akses-Indonesia descoped permanently (no structured source); info itu kalau ada tetap di teks `description`.
+- Akses-Indonesia descoped permanently (no structured source); info itu kalau ada tetap di teks `description`.
+- **Monetisasi masih TUTUP.** `CLAUDE.md` bilang "BUKAN dimonetisasi" — belum diubah. Ladder rekomendasi (affiliate → API data → jembatan bayar IDR brand terpisah) ada di `docs/PRODUCT-ROADMAP.md` §6, termasuk checklist regulasi (PT Perorangan Rp50rb, nebeng PJP berlisensi, closed-loop < Rp1 M/bln float, PSE Komdigi).
+- **Gateway/proxy free-tier DITOLAK PERMANEN** — bukan abu-abu. OpenRouter ToS §7.4, Groq SA §3.2/§6.3, Mistral, Gemini Terms melarang eksplisit; plus rate limit Groq per-organisasi bikin shared key 429 berjamaah. Jangan dibuka lagi tanpa data baru. Detail di `docs/PRODUCT-ROADMAP.md` §5.
+- **`/modal-gratis` butuh refresh manual** (~mingguan). Ini satu-satunya bagian situs yang ga self-maintaining — konsekuensi sadar dari nol sumber machine-readable.
 
 ## Next Up
 
-**Backlog:** Tambah sumber amardeeplakshkar/aicredits.dev (butuh parser). Analytics: matiin Vercel analytics setelah angka Cloudflare stabil (banding 2-3 minggu).
+**Butuh Ray:** (1) `npm login` biar `packages/tokengratis` bisa di-publish — sebelum itu MCP/CLI cuma jalan dari repo; (2) 8–10 API key provider kalau mau Fase 6e (status ping); (3) bikin bot Telegram (~5 menit) kalau mau Fase 6f dibuka lagi.
+
+**Backlog:** Tambah sumber amardeeplakshkar/aicredits.dev (butuh parser). Analytics: matiin Vercel analytics setelah angka Cloudflare stabil (banding 2-3 minggu). Refresh `data/offers.json` mingguan.
 
 ## Definition of Done (v1)
 

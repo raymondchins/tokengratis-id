@@ -1,0 +1,1699 @@
+[
+  {
+    "slug": "auth0-free",
+    "name": "Free",
+    "vendor": "Auth0",
+    "domain": "auth0.com",
+    "category": "auth",
+    "kind": "free_tier",
+    "url": "https://auth0.com/pricing",
+    "description": "Auth-as-a-service dari Okta buat login, SSO, dan MFA. Paket gratis permanen dengan kuota MAU cukup besar buat proyek awal.",
+    "limits": [
+      "25.000 monthly active user",
+      "5 Organizations",
+      "1 Custom Domain",
+      "1.000 Machine-to-Machine Authentication",
+      "3 Admin/Contributor",
+      "Log retention 1 hari"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [
+      "Log activity cuma disimpan 1 hari — kalau butuh audit trail lebih lama, wajib upgrade."
+    ],
+    "facets": ["permanen", "tanpa_kartu"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Auth0 — Pricing",
+        "url": "https://auth0.com/pricing",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "clerk-free",
+    "name": "Free",
+    "vendor": "Clerk",
+    "domain": "clerk.com",
+    "category": "auth",
+    "kind": "free_tier",
+    "url": "https://clerk.com/pricing",
+    "description": "Auth + manajemen user drop-in buat aplikasi modern. Dihitung pakai MRU (monthly retained user), bukan MAU biasa — user baru yang ga balik dalam 24 jam ga kehitung.",
+    "limits": [
+      "50.000 MRU (monthly retained user)",
+      "100 MRO (monthly retained organization)",
+      "3 dashboard seat",
+      "5 user impersonation",
+      "1.000 API key creation + 100.000 verifikasi/bulan",
+      "Session lifetime tetap 7 hari",
+      "Application log retention 1 hari"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [],
+    "facets": ["permanen", "tanpa_kartu"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Clerk — Pricing",
+        "url": "https://clerk.com/pricing",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "appwrite-cloud-free",
+    "name": "Free",
+    "vendor": "Appwrite",
+    "domain": "appwrite.io",
+    "category": "database",
+    "kind": "free_tier",
+    "url": "https://appwrite.io/pricing",
+    "description": "Backend-as-a-service open-source: auth, database, storage, function, dan messaging dalam satu platform terkelola.",
+    "limits": [
+      "2 GB storage",
+      "5 GB bandwidth/bulan",
+      "500.000 database read/bulan",
+      "250.000 database write/bulan",
+      "2 proyek",
+      "75.000 monthly active user",
+      "750.000 function execution"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [
+      "Jaminan 'tanpa kartu kredit' resmi cuma berlaku selama Appwrite Cloud masih status public beta — bisa berubah begitu keluar beta."
+    ],
+    "facets": ["permanen", "tanpa_kartu"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Appwrite — Pricing",
+        "url": "https://appwrite.io/pricing",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "cloudflare-d1-free",
+    "name": "D1 Free",
+    "vendor": "Cloudflare",
+    "domain": "cloudflare.com",
+    "category": "database",
+    "kind": "free_tier",
+    "url": "https://developers.cloudflare.com/d1/platform/pricing/",
+    "description": "Database SQLite serverless yang jalan di edge Cloudflare, terintegrasi sama Workers.",
+    "limits": [
+      "5 juta rows read/hari",
+      "100.000 rows written/hari",
+      "5 GB storage total",
+      "10 database per akun (maksimum 500 MB per database)",
+      "50 query per invocation Worker"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [],
+    "facets": ["permanen", "tanpa_kartu"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Cloudflare — D1 Pricing",
+        "url": "https://developers.cloudflare.com/d1/platform/pricing/",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "cloudflare-kv-free",
+    "name": "Workers KV Free",
+    "vendor": "Cloudflare",
+    "domain": "cloudflare.com",
+    "category": "database",
+    "kind": "free_tier",
+    "url": "https://developers.cloudflare.com/kv/platform/pricing/",
+    "description": "Key-value store latensi rendah di edge Cloudflare, biasa dipakai buat cache atau config.",
+    "limits": [
+      "1 GB storage",
+      "100.000 baca/hari",
+      "1.000 tulis/hari",
+      "1.000 hapus/hari",
+      "1.000 list request/hari"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [
+      "Semua limit reset harian jam 00:00 UTC — kalau kelewat, operasi jenis itu gagal sampai reset berikutnya."
+    ],
+    "facets": ["permanen", "tanpa_kartu"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Cloudflare — Workers KV Pricing",
+        "url": "https://developers.cloudflare.com/kv/platform/pricing/",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "firebase-spark",
+    "name": "Spark",
+    "vendor": "Firebase",
+    "domain": "firebase.google.com",
+    "category": "database",
+    "kind": "free_tier",
+    "url": "https://firebase.google.com/pricing",
+    "description": "Paket gratis Firebase (Google) — Firestore, Realtime Database, Hosting, Auth, dan Cloud Functions tanpa perlu billing account.",
+    "limits": [
+      "Firestore: 50.000 read/hari, 20.000 write/hari, 20.000 delete/hari, 1 GiB storage",
+      "Realtime Database: 100 koneksi simultan, 1 GB storage, 10 GB/bulan download",
+      "Hosting: 10 GB storage, 360 MB/hari transfer",
+      "Auth: 50.000 monthly active user (50 buat SAML/OIDC)",
+      "Cloud Functions: 2 juta invocation/bulan, 5 GB/bulan networking keluar, 120 menit/hari build"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [
+      "Upgrade ke paket Blaze (pay-as-you-go) tetap wajib nyambungin kartu meski tagihan bisa $0 selama masih dalam kuota gratis."
+    ],
+    "facets": ["permanen", "tanpa_kartu"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Firebase — Pricing",
+        "url": "https://firebase.google.com/pricing",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "mongodb-atlas-m0",
+    "name": "M0",
+    "vendor": "MongoDB Atlas",
+    "domain": "mongodb.com",
+    "category": "database",
+    "kind": "free_tier",
+    "url": "https://www.mongodb.com/pricing",
+    "description": "Cluster MongoDB gratis permanen buat belajar/prototyping, resource shared.",
+    "limits": [
+      "512 MB storage",
+      "32 MB sort memory",
+      "maksimum ±100 operasi/detik",
+      "maksimum 500 koneksi",
+      "1 cluster Free per project"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [
+      "Cluster di-pause otomatis setelah 30 hari tanpa koneksi aktif sama sekali — data tetap ada tapi harus di-resume manual."
+    ],
+    "facets": ["permanen", "tanpa_kartu", "auto_pause"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "MongoDB — Pricing",
+        "url": "https://www.mongodb.com/pricing",
+        "checkedAt": "2026-07-25"
+      },
+      {
+        "name": "MongoDB — Free & Shared Cluster Limitations",
+        "url": "https://www.mongodb.com/docs/atlas/reference/free-shared-limitations/",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "neon-free",
+    "name": "Free",
+    "vendor": "Neon",
+    "domain": "neon.tech",
+    "category": "database",
+    "kind": "free_tier",
+    "url": "https://neon.com/pricing",
+    "description": "Postgres serverless dengan compute autoscaling dan database yang bisa di-branch, scale-to-zero saat nganggur.",
+    "limits": [
+      "0.5 GB storage/project",
+      "100 CU-hours compute/bulan/project",
+      "10 branch/project",
+      "100 project",
+      "5 GB egress/bulan/project"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [
+      "Compute otomatis scale-to-zero setelah 5 menit nganggur — di paket Free setting ini fixed, ga bisa dimatiin (beda dari paket berbayar). Query berikutnya bangunin lagi dalam hitungan ratusan milidetik."
+    ],
+    "facets": ["permanen", "auto_pause"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Neon — Pricing",
+        "url": "https://neon.com/pricing",
+        "checkedAt": "2026-07-25"
+      },
+      {
+        "name": "Neon — Scale to Zero",
+        "url": "https://neon.com/docs/introduction/scale-to-zero",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "supabase-free",
+    "name": "Free",
+    "vendor": "Supabase",
+    "domain": "supabase.com",
+    "category": "database",
+    "kind": "free_tier",
+    "url": "https://supabase.com/pricing",
+    "description": "Postgres terkelola plus auth, storage, dan edge function. Paket gratis buat dua proyek aktif.",
+    "limits": [
+      "500 MB database size",
+      "1 GB file storage",
+      "5 GB egress",
+      "5 GB cached egress",
+      "50.000 monthly active user",
+      "2 proyek aktif"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [
+      "Proyek di-pause otomatis setelah 1 minggu tanpa aktivitas — harus di-restore manual dari dashboard."
+    ],
+    "facets": ["permanen", "auto_pause"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Supabase — Pricing",
+        "url": "https://supabase.com/pricing",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "turso-free",
+    "name": "Free",
+    "vendor": "Turso",
+    "domain": "turso.tech",
+    "category": "database",
+    "kind": "free_tier",
+    "url": "https://turso.tech/pricing",
+    "description": "Database SQLite/libSQL terdistribusi, didesain buat deploy di edge.",
+    "limits": [
+      "5 GB storage",
+      "100 database",
+      "500 juta row read/bulan",
+      "10 juta row written/bulan",
+      "3 GB sync/bulan",
+      "Point-in-time restore 1 hari"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [],
+    "facets": ["permanen", "tanpa_kartu"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Turso — Pricing",
+        "url": "https://turso.tech/pricing",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "upstash-redis-free",
+    "name": "Redis Free",
+    "vendor": "Upstash",
+    "domain": "upstash.com",
+    "category": "database",
+    "kind": "free_tier",
+    "url": "https://upstash.com/pricing",
+    "description": "Redis serverless pay-per-request. Upstash juga punya produk Vector dan QStash dengan paket gratis terpisah.",
+    "limits": [
+      "256 MB storage",
+      "500 ribu command/bulan",
+      "10 GB bandwidth/bulan",
+      "Maksimum 1 database Free"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [],
+    "facets": ["permanen"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Upstash — Pricing",
+        "url": "https://upstash.com/pricing",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "algolia-free",
+    "name": "Build",
+    "vendor": "Algolia",
+    "domain": "algolia.com",
+    "category": "devtool",
+    "kind": "free_tier",
+    "url": "https://www.algolia.com/pricing/",
+    "description": "Search-as-a-service buat instant search. Paket 'Build' (dulu disebut 'Community') ditujukan buat dev/testing.",
+    "limits": [
+      "10.000 search request/bulan",
+      "1 juta record",
+      "10.000 AI recommendation request/bulan",
+      "10.000 crawl/bulan"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [
+      "Paket Build resmi ditujukan buat dev/testing — buat production disarankan upgrade ke Grow (berbayar, tapi tetap ada kuota gratis di dalamnya)."
+    ],
+    "facets": ["tanpa_kartu"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Algolia — Pricing",
+        "url": "https://www.algolia.com/pricing/",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "midtrans-sandbox",
+    "name": "Sandbox",
+    "vendor": "Midtrans",
+    "domain": "midtrans.com",
+    "category": "devtool",
+    "kind": "free_tier",
+    "url": "https://docs.midtrans.com/docs/testing-payment-on-sandbox",
+    "description": "Payment gateway Indonesia (GoTo). Environment sandbox dibuat otomatis pas daftar, gratis dipakai buat testing integrasi — bukan transaksi real.",
+    "limits": [
+      "Sandbox dibuat otomatis saat signup, gratis dipakai"
+    ],
+    "creditValue": null,
+    "requirements": [
+      "Buat naik ke mode produksi (transaksi real) wajib verifikasi dokumen legal — KTP+NPWP buat individu, atau akta perusahaan+NPWP direktur+NPWP perusahaan+NIB/SIUP/TDP buat PT/CV/PMA."
+    ],
+    "traps": [
+      "Halaman resmi ga nyebut angka kuota transaksi gratis buat sandbox — cuma bilang environment-nya gratis dipakai, jumlah request/transaksi ga dibatasi eksplisit di dokumentasi."
+    ],
+    "facets": [],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Midtrans Docs — Testing Payment on Sandbox",
+        "url": "https://docs.midtrans.com/docs/testing-payment-on-sandbox",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "xendit-sandbox",
+    "name": "Test Mode",
+    "vendor": "Xendit",
+    "domain": "xendit.co",
+    "category": "devtool",
+    "kind": "free_tier",
+    "url": "https://docs.xendit.co/docs/create-account",
+    "description": "Payment gateway Asia Tenggara (fokus Indonesia + Filipina). Test Mode aktif otomatis begitu daftar, gratis buat eksplorasi API dan simulasi transaksi pakai dana virtual.",
+    "limits": [
+      "Akses dashboard Test Mode langsung tersedia setelah signup"
+    ],
+    "creditValue": null,
+    "requirements": [
+      "Buat Live Mode (transaksi real) wajib verifikasi bisnis: dokumen bisnis, dokumen identitas, dan bukti bisnis — proses verifikasi resmi disebut selesai dalam 14 hari kerja."
+    ],
+    "traps": [
+      "Halaman resmi ga nyebut angka saldo/kuota test balance spesifik — klaim 'saldo test Rp1 miliar' yang beredar di beberapa blog TIDAK berasal dari halaman resmi Xendit, jadi sengaja ga dicantumin di sini."
+    ],
+    "facets": [],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Xendit Docs — Create Account",
+        "url": "https://docs.xendit.co/docs/create-account",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "namecheap-domain-student",
+    "name": "Domain .me Gratis 1 Tahun (via GitHub Student Pack)",
+    "vendor": "Namecheap",
+    "domain": "namecheap.com",
+    "category": "domain",
+    "kind": "program",
+    "url": "https://education.github.com/pack",
+    "description": "Benefit domain gratis di dalam GitHub Student Developer Pack — bukan penawaran mandiri dari Namecheap, cuma bisa diklaim lewat pack.",
+    "limits": [
+      "Registrasi domain TLD .me gratis 1 tahun",
+      "1 sertifikat SSL gratis 1 tahun"
+    ],
+    "creditValue": null,
+    "requirements": [
+      "Harus verified student dan sudah unlock GitHub Student Developer Pack."
+    ],
+    "traps": [
+      "Cuma buat TLD .me — kalau butuh TLD lain (.com, .id, dll) ga ke-cover."
+    ],
+    "facets": ["mahasiswa"],
+    "idIndie": "belum_jelas",
+    "sources": [
+      {
+        "name": "GitHub Education — Student Developer Pack",
+        "url": "https://education.github.com/pack",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "brevo-free",
+    "name": "Free",
+    "vendor": "Brevo",
+    "domain": "brevo.com",
+    "category": "email",
+    "kind": "free_tier",
+    "url": "https://www.brevo.com/pricing/",
+    "description": "Platform email/SMS/WhatsApp marketing + transactional + CRM ringan, gratis selamanya.",
+    "limits": [
+      "300 email/hari",
+      "Storage sampai 100.000 kontak",
+      "Marketing automation sampai 2.000 kontak",
+      "1 user seat"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [
+      "Sisa kuota harian yang ga kepake TIDAK carry-over ke hari berikutnya.",
+      "Email dari paket Free ada branding Brevo — buat hapus branding-nya wajib upgrade ke paket Starter."
+    ],
+    "facets": ["permanen", "tanpa_kartu"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Brevo — Help Center: About Brevo's Pricing Plans",
+        "url": "https://help.brevo.com/hc/en-us/articles/208589409-About-Brevo-s-pricing-plans",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "resend-free",
+    "name": "Free",
+    "vendor": "Resend",
+    "domain": "resend.com",
+    "category": "email",
+    "kind": "free_tier",
+    "url": "https://resend.com/pricing",
+    "description": "API email transactional buat developer — kirim email langsung dari kode.",
+    "limits": [
+      "3.000 email/bulan",
+      "Dibatasi 100 email/hari",
+      "1 domain",
+      "1.000 kontak/bulan (marketing email)",
+      "Data retention 30 hari"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [
+      "Limit harian (100 email/hari) yang jadi pembatas nyata, bukan angka bulanan 3.000-nya."
+    ],
+    "facets": ["permanen"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Resend — Pricing",
+        "url": "https://resend.com/pricing",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "aws-free-tier",
+    "name": "Free Tier",
+    "vendor": "AWS",
+    "domain": "aws.amazon.com",
+    "category": "hosting",
+    "kind": "credit",
+    "url": "https://aws.amazon.com/free/",
+    "description": "Struktur baru AWS Free Tier per 15 Juli 2025: akun baru dapet kredit + 'Free Plan' 6 bulan, ditambah daftar layanan 'Always Free' permanen yang berjalan terpisah dari kredit itu.",
+    "limits": [
+      "$100 kredit AWS buat akun baru",
+      "Bisa nambah sampai $100 lagi lewat 5 onboarding task ($20/task)",
+      "Free Plan berakhir 6 bulan sejak signup ATAU kredit habis, mana yang lebih dulu",
+      "AWS Lambda 'Always Free' (permanen, terpisah dari kredit di atas): 1 juta request/bulan + 400.000 GB-detik compute/bulan"
+    ],
+    "creditValue": "$100 (bisa sampai $200)",
+    "requirements": [],
+    "traps": [
+      "Wajib kasih metode pembayaran valid buat verifikasi identitas walau milih paket gratis — bukan berarti langsung ditagih.",
+      "Restrukturisasi Juli 2025 ini ganti total model lama '12 bulan gratis + always-free list' — banyak artikel lama masih ngerujuk struktur lama yang udah ga berlaku."
+    ],
+    "facets": ["kartu_wajib", "ada_kedaluwarsa"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "AWS — Free Tier",
+        "url": "https://aws.amazon.com/free/",
+        "checkedAt": "2026-07-25"
+      },
+      {
+        "name": "AWS — What's New: Free Tier Restructure",
+        "url": "https://aws.amazon.com/about-aws/whats-new/2025/07/aws-free-tier-credits-month-free-plan/",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "cloudflare-pages-free",
+    "name": "Pages Free",
+    "vendor": "Cloudflare",
+    "domain": "cloudflare.com",
+    "category": "hosting",
+    "kind": "free_tier",
+    "url": "https://developers.cloudflare.com/pages/platform/limits/",
+    "description": "Hosting static site/frontend Cloudflare. Compute-nya (Pages Functions) sekarang ditagih pakai skema Workers, tapi build/project/domain masih punya limit sendiri.",
+    "limits": [
+      "500 build/bulan",
+      "100 proyek/akun",
+      "100 custom domain/proyek",
+      "25 MiB per file aset, 20.000 file/situs"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [
+      "Semua Pages Functions ditagih sebagai Workers — jadi compute-nya ikutan limit Workers Free (100.000 request/hari), bukan limit terpisah."
+    ],
+    "facets": ["permanen", "tanpa_kartu"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Cloudflare — Pages Limits",
+        "url": "https://developers.cloudflare.com/pages/platform/limits/",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "cloudflare-workers-free",
+    "name": "Workers Free",
+    "vendor": "Cloudflare",
+    "domain": "cloudflare.com",
+    "category": "hosting",
+    "kind": "free_tier",
+    "url": "https://developers.cloudflare.com/workers/platform/pricing/",
+    "description": "Jalanin function di edge Cloudflare tanpa server. Gratis permanen selama dalam kuota harian.",
+    "limits": ["100.000 request/hari", "10 ms CPU time per invocation"],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [],
+    "facets": ["permanen", "tanpa_kartu"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Cloudflare — Workers Pricing",
+        "url": "https://developers.cloudflare.com/workers/platform/pricing/",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "deno-deploy-free",
+    "name": "Free",
+    "vendor": "Deno Deploy",
+    "domain": "deno.com",
+    "category": "hosting",
+    "kind": "free_tier",
+    "url": "https://deno.com/deploy/pricing",
+    "description": "Runtime edge serverless buat deploy app/API JavaScript & TypeScript.",
+    "limits": [
+      "1 juta request/bulan",
+      "15 jam CPU time/bulan",
+      "20 GB data transfer keluar/bulan",
+      "20 deployment aktif/organisasi",
+      "1 GiB volume storage",
+      "1 GiB KV storage (450.000 read unit + 300.000 write unit/bulan)"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [],
+    "facets": ["permanen"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Deno Deploy — Pricing",
+        "url": "https://deno.com/deploy/pricing",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "google-cloud-run-free",
+    "name": "Always Free",
+    "vendor": "Google Cloud Run",
+    "domain": "cloud.google.com",
+    "category": "hosting",
+    "kind": "free_tier",
+    "url": "https://cloud.google.com/free/docs/free-cloud-features",
+    "description": "Kuota bulanan permanen ('Always Free') buat hosting container serverless di Google Cloud Run — scale-to-zero bawaan.",
+    "limits": [
+      "2 juta request/bulan",
+      "360.000 GB-detik memory",
+      "180.000 vCPU-detik compute",
+      "1 GB egress keluar dari Amerika Utara/bulan"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [],
+    "facets": ["permanen"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Google Cloud — Free Cloud Features",
+        "url": "https://cloud.google.com/free/docs/free-cloud-features",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "koyeb-free",
+    "name": "Free",
+    "vendor": "Koyeb",
+    "domain": "koyeb.com",
+    "category": "hosting",
+    "kind": "free_tier",
+    "url": "https://www.koyeb.com/pricing",
+    "description": "Platform serverless global buat deploy web service, database, dan API.",
+    "limits": [
+      "1 web service gratis per organisasi",
+      "512 MB RAM, 0.1 vCPU, 2 GB SSD",
+      "Cuma region Frankfurt atau Washington D.C."
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [
+      "Wajib kasih kartu kredit dari awal — kutipan resmi: 'We require a credit card to prevent fraud and abuse.' Beda dari kebanyakan kompetitor yang ga minta kartu buat paket gratis."
+    ],
+    "facets": ["kartu_wajib"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Koyeb — Pricing",
+        "url": "https://www.koyeb.com/pricing",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "netlify-free",
+    "name": "Free",
+    "vendor": "Netlify",
+    "domain": "netlify.com",
+    "category": "hosting",
+    "kind": "free_tier",
+    "url": "https://www.netlify.com/pricing/",
+    "description": "Hosting + CI buat static site dan serverless function. Sejak sekitar September 2025, paket Free pindah dari model GB/menit ke sistem 300 credit/bulan.",
+    "limits": [
+      "300 credit/bulan, hard limit, ga bisa nambah/auto-recharge",
+      "1 GB bandwidth = 20 credit (efektif ±15 GB gratis/bulan kalau semua credit dipakai buat bandwidth)",
+      "10.000 request = 2 credit",
+      "1 GB-jam function/compute = 10 credit",
+      "1 deployment produksi = 15 credit",
+      "Concurrent build dibatasi 1",
+      "Form submission unlimited, ga makan credit"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [
+      "Begitu 300 credit bulanan abis, proyek DI-PAUSE sampai siklus billing berikutnya — bukan sekadar 'lebih lambat'.",
+      "Sistem credit ini efektif menurunkan kuota bandwidth gratis dibanding model lama (100 GB) jadi cuma ±15 GB kalau semua credit dipakai buat bandwidth doang."
+    ],
+    "facets": ["auto_pause"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Netlify — Pricing",
+        "url": "https://www.netlify.com/pricing/",
+        "checkedAt": "2026-07-25"
+      },
+      {
+        "name": "Netlify Docs — Credit-Based Pricing Plans",
+        "url": "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/credit-based-pricing-plans/",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "oracle-cloud-always-free",
+    "name": "Always Free",
+    "vendor": "Oracle Cloud",
+    "domain": "oracle.com",
+    "category": "hosting",
+    "kind": "free_tier",
+    "url": "https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm",
+    "description": "Tier compute VM permanen dari Oracle Cloud Infrastructure — kuota compute permanennya paling gede dibanding hyperscaler lain, terpisah dari kredit trial 30 hari/$300.",
+    "limits": [
+      "VM AMD Micro: sampai 2 instance, masing-masing 1/8 OCPU + 1 GB memory",
+      "VM Ampere A1 Flex: 1.500 OCPU-jam + 9.000 GB-jam/bulan (setara 2 OCPU + 12 GB memory permanen)",
+      "Block Volume: 200 GB total (boot+block), 5 volume backup",
+      "Object Storage: 20 GB total, 50.000 API request/bulan",
+      "1 Load Balancer Flexible (10 Mbps)",
+      "Autonomous Database: 2 instance, 1 OCPU + 20 GB storage masing-masing",
+      "Outbound data transfer: 10 TB/bulan"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [
+      "Jatah Ampere A1 Flex DIPOTONG SETENGAH per 15 Juni 2026 (dari 4 OCPU/24 GB jadi 2 OCPU/12 GB) tanpa pengumuman resmi — kalau nemu artikel lama nyebut 4 OCPU/24GB, itu udah ga berlaku."
+    ],
+    "facets": ["permanen"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Oracle Cloud — Always Free Resources",
+        "url": "https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "railway-trial",
+    "name": "Free Trial",
+    "vendor": "Railway",
+    "domain": "railway.com",
+    "category": "hosting",
+    "kind": "trial",
+    "url": "https://railway.com/pricing",
+    "description": "Railway udah ga punya paket gratis permanen — yang tersisa cuma kredit trial satu kali $5 buat nyoba platform.",
+    "limits": ["Kredit trial sekali pakai: $5"],
+    "creditValue": "$5 (sekali, bukan bulanan)",
+    "requirements": [],
+    "traps": [
+      "Ini BUKAN paket gratis berulang — begitu $5 abis, wajib pasang kartu buat lanjut pakai Railway sama sekali."
+    ],
+    "facets": ["tanpa_kartu", "ada_kedaluwarsa"],
+    "idIndie": "belum_jelas",
+    "sources": [
+      {
+        "name": "Railway — Pricing",
+        "url": "https://railway.com/pricing",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "render-free",
+    "name": "Free",
+    "vendor": "Render",
+    "domain": "render.com",
+    "category": "hosting",
+    "kind": "free_tier",
+    "url": "https://render.com/docs/free",
+    "description": "PaaS buat web service, static site, dan datastore terkelola. Paket gratis cuma tersedia buat web service + datastore, ga buat private service/worker/cron.",
+    "limits": [
+      "Web service: 512 MB RAM, 0.1 CPU",
+      "750 jam instance/workspace/bulan",
+      "Postgres Free: 256 MB RAM, 1 GB storage, expire 30 hari (grace period 14 hari)",
+      "Key-Value (Redis-compatible) Free: 25 MB RAM"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [
+      "Web service free di-spin-down otomatis kalau ga ada traffic masuk selama 15 menit — cold start berikutnya butuh ±1 menit buat bangun lagi.",
+      "Database Postgres Free expire 30 hari setelah dibuat, ada grace period 14 hari buat upgrade sebelum kehapus permanen."
+    ],
+    "facets": ["auto_pause", "ada_kedaluwarsa"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Render — Free Instance Types",
+        "url": "https://render.com/docs/free",
+        "checkedAt": "2026-07-25"
+      },
+      {
+        "name": "Render — Compute Plans",
+        "url": "https://render.com/docs/compute-plans",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "val-town-free",
+    "name": "Free",
+    "vendor": "Val Town",
+    "domain": "val.town",
+    "category": "hosting",
+    "kind": "free_tier",
+    "url": "https://www.val.town/pricing",
+    "description": "Platform berbasis web buat nulis dan langsung deploy fungsi JS/TypeScript kecil ('val') sebagai API, cron, atau script terjadwal.",
+    "limits": [
+      "Val publik unlimited",
+      "Interval cron minimum 15 menit",
+      "1 menit waktu eksekusi/run",
+      "100.000 run/hari",
+      "Log retention 3 hari"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [],
+    "facets": ["permanen"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Val Town — Pricing",
+        "url": "https://www.val.town/pricing",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "vercel-hobby",
+    "name": "Hobby",
+    "vendor": "Vercel",
+    "domain": "vercel.com",
+    "category": "hosting",
+    "kind": "free_tier",
+    "url": "https://vercel.com/pricing",
+    "description": "Paket gratis Vercel buat proyek pribadi. Deploy dari Git, domain kustom, HTTPS otomatis.",
+    "limits": [
+      "100 GB Fast Data Transfer/bulan",
+      "Sampai 1.000.000 Edge Request/bulan",
+      "1.000.000 Function Invocation/bulan",
+      "4 CPU-jam Active CPU/bulan",
+      "360 GB-jam Provisioned Memory/bulan",
+      "Build time maksimum 45 menit per deployment",
+      "100 deployment/hari",
+      "200 proyek"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [
+      "Fair Use Guidelines resmi Vercel: paket Hobby cuma buat penggunaan non-komersial/pribadi — begitu proyeknya menghasilkan uang, wajib naik ke Pro.",
+      "Runtime log cuma disimpan 1 jam di Hobby (Pro 1 hari) — susah buat debug insiden yang lewat dari itu."
+    ],
+    "facets": ["permanen", "nonkomersial"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Vercel — Limits",
+        "url": "https://vercel.com/docs/limits",
+        "checkedAt": "2026-07-25"
+      },
+      {
+        "name": "Vercel — Hobby Plan",
+        "url": "https://vercel.com/docs/plans/hobby",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "axiom-free",
+    "name": "Personal",
+    "vendor": "Axiom",
+    "domain": "axiom.co",
+    "category": "monitoring",
+    "kind": "free_tier",
+    "url": "https://axiom.co/pricing",
+    "description": "Platform log/event data buat ingest, simpan, dan query telemetry dengan APL.",
+    "limits": [
+      "500 GB/bulan data loading",
+      "10 GB-jam query compute",
+      "25 GB storage",
+      "Retention 30 hari"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [],
+    "facets": ["permanen", "tanpa_kartu"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Axiom — Pricing",
+        "url": "https://axiom.co/pricing",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "betterstack-free",
+    "name": "Free",
+    "vendor": "Better Stack",
+    "domain": "betterstack.com",
+    "category": "monitoring",
+    "kind": "free_tier",
+    "url": "https://betterstack.com/pricing",
+    "description": "Uptime monitoring + observability (log, metric, trace) dalam satu platform.",
+    "limits": [
+      "10 monitor & heartbeat",
+      "3 GB log/bulan, retention 3 hari",
+      "30 GB metrics",
+      "3 GB traces, retention 3 hari",
+      "3 GB web events, retention 3 hari"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [
+      "Retention data log/traces/web-events cuma 3 hari di paket Free — jauh lebih pendek dari paket berbayar."
+    ],
+    "facets": ["permanen"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Better Stack — Pricing",
+        "url": "https://betterstack.com/pricing",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "posthog-free",
+    "name": "Free",
+    "vendor": "PostHog",
+    "domain": "posthog.com",
+    "category": "monitoring",
+    "kind": "free_tier",
+    "url": "https://posthog.com/pricing",
+    "description": "Product analytics all-in-one: event tracking, session replay, feature flag, survey.",
+    "limits": [
+      "1 juta event (product analytics)",
+      "5.000 session replay recording",
+      "1 juta feature flag request",
+      "1.500 survey response",
+      "1 proyek, retention data 1 tahun"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [],
+    "facets": ["permanen", "tanpa_kartu"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "PostHog — Pricing",
+        "url": "https://posthog.com/pricing",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "sentry-free",
+    "name": "Developer",
+    "vendor": "Sentry",
+    "domain": "sentry.io",
+    "category": "monitoring",
+    "kind": "free_tier",
+    "url": "https://sentry.io/pricing/",
+    "description": "Error tracking dan performance/trace monitoring buat aplikasi.",
+    "limits": [
+      "5.000 error/bulan",
+      "5 juta span/bulan",
+      "50 session replay/bulan",
+      "Dibatasi 1 user",
+      "Lookback data 30 hari"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [
+      "Paket Developer dibatasi cuma 1 user — ga cocok kalau tim udah lebih dari satu orang."
+    ],
+    "facets": ["permanen"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Sentry — Pricing",
+        "url": "https://sentry.io/pricing/",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "anthropic-for-startups",
+    "name": "Claude for Startups",
+    "vendor": "Anthropic",
+    "domain": "anthropic.com",
+    "category": "startup_credit",
+    "kind": "program",
+    "url": "https://claude.com/programs/startups",
+    "description": "Program buat founder startup tahap awal yang bangun produk pakai Claude — keanggotaan komunitas kebuka luas, tapi kredit API-nya sendiri butuh syarat pendanaan.",
+    "limits": [],
+    "creditValue": null,
+    "requirements": [
+      "Keanggotaan program (komunitas, bukan kredit): terbuka buat founder early-stage apapun, dengan atau tanpa dukungan VC",
+      "Buat dapet kredit: perusahaan wajib udah dapet pendanaan ekuitas dari investor institusional, didirikan dalam 4 tahun terakhir, dan belum pernah dapet kredit startup Anthropic sebelumnya"
+    ],
+    "traps": [
+      "Gabung program-nya terbuka buat siapa aja (dengan/tanpa VC), tapi kredit API gratis-nya spesifik cuma buat yang udah dapet pendanaan institusional. Solo dev bootstrapped Indonesia bisa join komunitasnya tapi kemungkinan besar TIDAK eligible buat kredit API gratis."
+    ],
+    "facets": ["butuh_vc"],
+    "idIndie": "belum_jelas",
+    "sources": [
+      {
+        "name": "Claude for Startups",
+        "url": "https://claude.com/programs/startups",
+        "checkedAt": "2026-07-25"
+      },
+      {
+        "name": "Anthropic — Startup Program Official Terms",
+        "url": "https://www.anthropic.com/startup-program-official-terms",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "aws-activate",
+    "name": "Activate Founders",
+    "vendor": "AWS",
+    "domain": "aws.amazon.com",
+    "category": "startup_credit",
+    "kind": "credit",
+    "url": "https://aws.amazon.com/startups/credits/",
+    "description": "Kredit AWS buat startup, dengan jalur khusus 'Activate Founders' buat yang self-funded/bootstrapped tanpa perlu dukungan VC — walau plafonnya jauh lebih kecil dari jalur yang didukung VC.",
+    "limits": [
+      "Activate Founders (self-funded): mulai $1.000, sebagian peserta bisa dapet sampai $5.000",
+      "Activate Portfolio (pre-Series B, butuh Org ID dari akselerator/VC/angel): sampai $200.000",
+      "AWS Credits for AI Startups (invite-only): $200.000+"
+    ],
+    "creditValue": "$1.000–$5.000 (jalur self-funded)",
+    "requirements": [
+      "Perusahaan didirikan dalam 10 tahun terakhir, tahap pre-Series B",
+      "Punya akun AWS di paket berbayar",
+      "Belum pernah dapet Activate Credits sebelumnya, atau minta tambahan dari yang udah diterima"
+    ],
+    "traps": [
+      "Jalur self-funded (Activate Founders) plafonnya cuma $1.000–$5.000 — jauh di bawah jalur Portfolio yang $200.000, dan jalur Portfolio itu wajib punya Org ID dari partner akselerator/VC/angel yang diakui AWS."
+    ],
+    "facets": ["tanpa_vc"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "AWS — Activate Credits",
+        "url": "https://aws.amazon.com/startups/credits/",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "cloudflare-for-startups",
+    "name": "Cloudflare for Startups",
+    "vendor": "Cloudflare",
+    "domain": "cloudflare.com",
+    "category": "startup_credit",
+    "kind": "credit",
+    "url": "https://www.cloudflare.com/forstartups/",
+    "description": "Kredit Cloudflare bertingkat, dengan Tier 3 eksplisit terbuka buat startup bootstrapped/self-funded tanpa perlu VC.",
+    "limits": [
+      "Tier 3: $10.000 (bootstrapped/self-funded, dana terkumpul di bawah $1 juta)",
+      "Tier 2: $100.000 (dana di bawah $5 juta, didanai partner afiliasi Cloudflare)",
+      "Tier 1: $350.000 (dana $5 juta+, didanai partner afiliasi Cloudflare)"
+    ],
+    "creditValue": "$10.000 (Tier 3, tanpa VC)",
+    "requirements": [
+      "Didirikan dalam 10 tahun terakhir dan dapat pendanaan dalam 12 bulan terakhir",
+      "Bangun produk teknologi",
+      "Punya website publik yang live",
+      "Aktif di LinkedIn, X, atau GitHub",
+      "Belum pernah diterima di program ini sebelumnya",
+      "Perusahaan for-profit dengan email bisnis sesuai domain sendiri"
+    ],
+    "traps": [],
+    "facets": ["tanpa_vc"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Cloudflare for Startups",
+        "url": "https://www.cloudflare.com/forstartups/",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "digitalocean-hatch",
+    "name": "DigitalOcean Startups (Hatch)",
+    "vendor": "DigitalOcean",
+    "domain": "digitalocean.com",
+    "category": "startup_credit",
+    "kind": "credit",
+    "url": "https://www.digitalocean.com/hatch",
+    "description": "Kredit cloud DigitalOcean buat startup — terbuka juga buat founder independen yang ga terafiliasi akselerator/VC manapun.",
+    "limits": [
+      "Limit penggunaan bulanan tipikal disebut $10.000 (bukan total kredit tetap — nominal pasti tergantung partner)"
+    ],
+    "creditValue": null,
+    "requirements": [
+      "Total dana yang terkumpul $10 juta atau kurang",
+      "Punya website perusahaan + email yang match domain perusahaan",
+      "Bikin akun tim DigitalOcean pakai email bisnis (bukan pribadi)"
+    ],
+    "traps": [
+      "Ga wajib terafiliasi akselerator — di form aplikasi ada opsi 'Other' buat yang daftar independen tanpa partner."
+    ],
+    "facets": ["tanpa_vc"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "DigitalOcean — Hatch / Startups",
+        "url": "https://www.digitalocean.com/hatch",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "google-for-startups-cloud",
+    "name": "Google for Startups Cloud — Start",
+    "vendor": "Google Cloud",
+    "domain": "cloud.google.com",
+    "category": "startup_credit",
+    "kind": "credit",
+    "url": "https://cloud.google.com/startup/pre-funded",
+    "description": "Tier awal Google for Startups Cloud yang ga butuh pendanaan buat masuk — tapi plafonnya jauh lebih kecil dari tier Scale yang butuh pendanaan institusional.",
+    "limits": [
+      "Tier Start (pra-pendanaan): $2.000 kredit Cloud",
+      "Tier Scale (didanai institusional, pre-seed s/d Series A dalam 12 bulan terakhir): $200.000 kredit",
+      "Tier Scale khusus startup AI (pakai Vertex AI/Gemini): sampai $350.000 kredit"
+    ],
+    "creditValue": "$2.000 (tier Start, tanpa pendanaan)",
+    "requirements": [
+      "Tier Start: startup tahap awal dengan MVP jalan, model bisnis jelas, 'berencana cari pendanaan venture segera'",
+      "Tier Scale: harus udah dapet pendanaan ekuitas institusional pre-seed s/d Series A, didirikan dalam 10 tahun terakhir, belum pernah dapet kredit Google Cloud lebih dari $5.000"
+    ],
+    "traps": [
+      "Gap-nya gede banget: tier tanpa-pendanaan cuma $2.000, sementara tier yang butuh pendanaan institusional dapet $200.000–$350.000 — 100x lipat lebih gede."
+    ],
+    "facets": ["tanpa_vc"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Google Cloud — Start (Pre-funded)",
+        "url": "https://cloud.google.com/startup/pre-funded",
+        "checkedAt": "2026-07-25"
+      },
+      {
+        "name": "Google Cloud — Scale (Seed to Series A)",
+        "url": "https://cloud.google.com/startup/seed-series-a",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "hubspot-for-startups",
+    "name": "HubSpot for Startups",
+    "vendor": "HubSpot",
+    "domain": "hubspot.com",
+    "category": "startup_credit",
+    "kind": "program",
+    "url": "https://www.hubspot.com/startups",
+    "description": "Diskon CRM HubSpot buat startup awal — kedua tingkat diskonnya sama-sama butuh pendanaan terverifikasi atau afiliasi organisasi partner, ga ada jalur bebas syarat.",
+    "limits": [
+      "Tier 1: diskon 90% tahun pertama, 50% tahun kedua, 25% tahun ketiga",
+      "Tier 2: diskon 30% tahun pertama, 15% tahun kedua"
+    ],
+    "creditValue": null,
+    "requirements": [
+      "Tier 1: udah dapet pendanaan Pre-seed/Seed/Series A (bukan Series B ke atas) DAN terafiliasi partner resmi HubSpot for Startups atau pendanaan venture terverifikasi",
+      "Tier 2: terafiliasi salah satu 'entrepreneurial organization' yang disetujui HubSpot"
+    ],
+    "traps": [
+      "Solo founder bootstrapped tanpa pendanaan dan tanpa relasi akselerator kemungkinan besar ga punya jalur masuk langsung ke tier manapun — bahkan tier 30% sekalipun butuh afiliasi organisasi yang disetujui."
+    ],
+    "facets": ["butuh_vc"],
+    "idIndie": "belum_jelas",
+    "sources": [
+      {
+        "name": "HubSpot for Startups",
+        "url": "https://www.hubspot.com/startups",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "linear-startup-discount",
+    "name": "Linear for Startups",
+    "vendor": "Linear",
+    "domain": "linear.app",
+    "category": "startup_credit",
+    "kind": "program",
+    "url": "https://linear.app/startups",
+    "description": "Diskon Linear buat startup — tapi TIDAK ADA jalur daftar langsung sama sekali, wajib pakai kode referral dari partner resmi Linear.",
+    "limits": ["Sampai 6 bulan gratis paket Basic atau Business"],
+    "creditValue": null,
+    "requirements": [
+      "Halaman resmi, verbatim: 'To redeem the offer you must be affiliated with an official Linear partner.'",
+      "Wajib masukin kode partner atau ikutin link dari partner buat klaim",
+      "Belum pernah bayar Linear sebelumnya",
+      "Perusahaan kurang dari 50 karyawan"
+    ],
+    "traps": [
+      "Tidak ada cara daftar langsung tanpa kode referral — solo dev bootstrapped Indonesia tanpa relasi akselerator/VC dari 900+ jaringan partner Linear (a16z, YC, Techstars, dll) ga punya jalur masuk resmi ke penawaran ini sama sekali."
+    ],
+    "facets": ["butuh_vc"],
+    "idIndie": "tidak",
+    "sources": [
+      {
+        "name": "Linear — Startups",
+        "url": "https://linear.app/startups",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "microsoft-founders-hub",
+    "name": "Founders Hub",
+    "vendor": "Microsoft for Startups",
+    "domain": "microsoft.com",
+    "category": "startup_credit",
+    "kind": "credit",
+    "url": "https://www.microsoft.com/en-us/startups",
+    "description": "Program startup Microsoft yang eksplisit ga wajib punya dukungan investor buat daftar dan dapet kredit Azure di tier awal.",
+    "limits": [
+      "Ideate: $1.000 (berlaku 1 tahun)",
+      "Develop: $5.000 (berlaku 1 tahun)",
+      "Grow: $25.000",
+      "Scale: sampai $150.000"
+    ],
+    "creditValue": "$1.000 (tier awal, tanpa syarat pendanaan)",
+    "requirements": [],
+    "traps": [],
+    "facets": ["tanpa_vc"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Microsoft for Startups — Founders Hub",
+        "url": "https://www.microsoft.com/en-us/startups",
+        "checkedAt": "2026-07-25"
+      },
+      {
+        "name": "Microsoft Blog — Founders Hub Now Open to All, No Funding Needed",
+        "url": "https://blogs.microsoft.com/blog/2022/03/08/microsoft-for-startups-founders-hub-now-open-to-all-no-funding-needed/",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "mongodb-for-startups",
+    "name": "MongoDB for Startups — Inspire",
+    "vendor": "MongoDB",
+    "domain": "mongodb.com",
+    "category": "startup_credit",
+    "kind": "program",
+    "url": "https://www.mongodb.com/startups",
+    "description": "Kredit Atlas buat startup, dengan tier 'Inspire' yang secara eksplisit ditujukan buat startup bootstrapped.",
+    "limits": [],
+    "creditValue": null,
+    "requirements": [
+      "Perusahaan kurang dari 7 tahun, tahap Series A atau lebih awal",
+      "Fokus di satu produk/layanan berbasis software (agency/dev shop ga eligible)",
+      "Belum pernah diterima di program ini sebelumnya",
+      "Punya website perusahaan aktif dan profil LinkedIn"
+    ],
+    "traps": [
+      "Nominal kredit per tier ga disebutkan angkanya di halaman resmi — cuma nama tier (Inspire/Grow/Innovate/Scale) yang ke-confirm.",
+      "FAQ resmi negasin kalau harus baru kenal MongoDB: 'You do not have to be new to MongoDB to be eligible.'"
+    ],
+    "facets": ["tanpa_vc"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "MongoDB for Startups",
+        "url": "https://www.mongodb.com/startups",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "notion-for-startups",
+    "name": "Notion for Startups",
+    "vendor": "Notion",
+    "domain": "notion.com",
+    "category": "startup_credit",
+    "kind": "program",
+    "url": "https://www.notion.com/startups",
+    "description": "Paket Business + AI gratis buat startup, dengan jalur daftar langsung tanpa perlu afiliasi partner (walau durasinya lebih pendek dari jalur partner).",
+    "limits": [
+      "6 bulan gratis (kalau terafiliasi partner resmi Notion)",
+      "3 bulan gratis (cukup punya website bisnis + domain perusahaan sendiri, tanpa partner)",
+      "1 bulan gratis (usaha kecil di bawah 10 karyawan atau info bisnis belum lengkap)",
+      "Nilai maksimum disebut $12.000 (di skala 100 karyawan)"
+    ],
+    "creditValue": null,
+    "requirements": [
+      "Belum pernah jadi pelanggan berbayar Notion",
+      "Wajib pakai email kerja (bukan Gmail/Outlook dkk)",
+      "Kurang dari 100 karyawan",
+      "Satu klaim per perusahaan, ga bisa digabung promo lain"
+    ],
+    "traps": [],
+    "facets": ["tanpa_vc"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Notion for Startups",
+        "url": "https://www.notion.com/startups",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "nvidia-inception",
+    "name": "NVIDIA Inception",
+    "vendor": "NVIDIA",
+    "domain": "nvidia.com",
+    "category": "startup_credit",
+    "kind": "program",
+    "url": "https://www.nvidia.com/en-us/startups/",
+    "description": "Program gratis buat startup AI — bukan kredit tunai, tapi akses kursus teknis, harga preferensial hardware/software NVIDIA, kredit cloud dari partner, dan exposure ke investor.",
+    "limits": [
+      "Kursus teknis self-paced gratis",
+      "Harga preferensial hardware/software NVIDIA terpilih",
+      "Kredit cloud gratis dari NVIDIA dan partner",
+      "Akses NVIDIA Developer Forum"
+    ],
+    "creditValue": null,
+    "requirements": [
+      "Punya minimal 1 developer",
+      "Punya website yang aktif",
+      "Sudah berbadan hukum resmi",
+      "Umur perusahaan di bawah 10 tahun",
+      "TIDAK eligible: perusahaan konsultan/outsourcing dev, terkait cryptocurrency, cloud service provider, reseller/distributor, perusahaan publik"
+    ],
+    "traps": [
+      "Ini bukan program kredit tunai kayak kebanyakan di kategori ini — nilainya di diskon hardware/software dan network, bukan nominal dolar."
+    ],
+    "facets": ["tanpa_vc"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "NVIDIA — Inception Program for Startups",
+        "url": "https://www.nvidia.com/en-us/startups/",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "vercel-for-startups",
+    "name": "Vercel for Startups",
+    "vendor": "Vercel",
+    "domain": "vercel.com",
+    "category": "startup_credit",
+    "kind": "credit",
+    "url": "https://vercel.com/startups/credits",
+    "description": "Kredit Vercel buat startup — tapi wajib terafiliasi partner resmi (akselerator/VC), tidak ada jalur daftar langsung buat founder independen.",
+    "limits": [
+      "Sampai $30.000 kredit, dicairkan rata per bulan selama 12 bulan (±$2.500/bulan)"
+    ],
+    "creditValue": "$30.000 (butuh afiliasi partner)",
+    "requirements": [
+      "Wajib terafiliasi 'Startups Partner' resmi Vercel",
+      "Sudah raise Series A atau lebih awal, apply dalam 12 bulan dari putaran pendanaan terakhir",
+      "Punya website perusahaan + email sesuai domain",
+      "Baru pertama kali apply — belum pernah dapet kredit ini"
+    ],
+    "traps": [
+      "Klaim umum yang beredar bilang program ini ga butuh referral VC — itu salah. Halaman resmi vercel.com/startups/credits eksplisit nulis wajib terafiliasi partner resmi Vercel, dan buktinya harus screenshot dashboard partner. Solo dev bootstrapped tanpa relasi akselerator/VC ga punya jalur masuk langsung."
+    ],
+    "facets": ["butuh_vc"],
+    "idIndie": "tidak",
+    "sources": [
+      {
+        "name": "Vercel for Startups — Credits",
+        "url": "https://vercel.com/startups/credits",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "backblaze-b2-free",
+    "name": "B2 Free",
+    "vendor": "Backblaze",
+    "domain": "backblaze.com",
+    "category": "storage",
+    "kind": "free_tier",
+    "url": "https://www.backblaze.com/cloud-storage/pricing",
+    "description": "Object storage kompatibel S3, murah, dengan kuota gratis permanen buat storage dan sebagian egress.",
+    "limits": [
+      "10 GB storage gratis permanen",
+      "Egress gratis sampai 3x rata-rata data yang disimpan/bulan",
+      "Egress unlimited gratis via Bandwidth Alliance (Cloudflare, Fastly, bunny.net, dll)"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [],
+    "facets": ["permanen", "tanpa_kartu"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Backblaze — B2 Cloud Storage Pricing",
+        "url": "https://www.backblaze.com/cloud-storage/pricing",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "cloudflare-r2-free",
+    "name": "R2 Free",
+    "vendor": "Cloudflare",
+    "domain": "cloudflare.com",
+    "category": "storage",
+    "kind": "free_tier",
+    "url": "https://developers.cloudflare.com/r2/pricing/",
+    "description": "Object storage kompatibel S3 dengan fitur andalan: egress gratis, ga kena biaya transfer keluar.",
+    "limits": [
+      "10 GB-bulan storage/bulan",
+      "1 juta Class A operation/bulan",
+      "10 juta Class B operation/bulan",
+      "Egress gratis lewat Workers API, S3 API, dan r2.dev domain"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [
+      "Kuota gratis cuma berlaku buat Standard storage — kelas Infrequent Access ga termasuk."
+    ],
+    "facets": ["permanen", "tanpa_kartu"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Cloudflare — R2 Pricing",
+        "url": "https://developers.cloudflare.com/r2/pricing/",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "cloudinary-free",
+    "name": "Free",
+    "vendor": "Cloudinary",
+    "domain": "cloudinary.com",
+    "category": "storage",
+    "kind": "free_tier",
+    "url": "https://cloudinary.com/pricing",
+    "description": "CDN + transformasi gambar/video. Paket gratis pakai satu pool 'credit' bersama buat storage, bandwidth, dan transformasi.",
+    "limits": [
+      "25 credit/bulan (1 credit = 1.000 transformasi, ATAU 1 GB storage, ATAU 1 GB bandwidth gambar, ATAU 1 GB bandwidth video)",
+      "3 user / 1 akun"
+    ],
+    "creditValue": null,
+    "requirements": [],
+    "traps": [
+      "25 credit itu pool bersama buat storage+bandwidth+transformasi — bukan tiga kuota terpisah, jadi pemakaian berat di satu sisi (mis. transformasi) makan jatah sisi lain juga."
+    ],
+    "facets": ["permanen", "tanpa_kartu"],
+    "idIndie": "bisa",
+    "sources": [
+      {
+        "name": "Cloudinary — Pricing",
+        "url": "https://cloudinary.com/pricing",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "aws-educate",
+    "name": "AWS Educate",
+    "vendor": "AWS",
+    "domain": "aws.amazon.com",
+    "category": "student_pack",
+    "kind": "program",
+    "url": "https://aws.amazon.com/education/awseducate/",
+    "description": "Program skill cloud gratis dari AWS buat pelajar — komponen kredit dolar yang dulu terkenal ($100+) udah dihapus dari halaman resmi. Yang tersisa sekarang cuma training, lab, dan badge, tanpa kredit AWS.",
+    "limits": [
+      "Training self-paced gratis: Storage, Compute, Networking, Database, Cloud Operations",
+      "Hands-on lab gratis",
+      "Digital badge",
+      "Job Board (khusus 18+)"
+    ],
+    "creditValue": null,
+    "requirements": [
+      "Pelajar 13 tahun ke atas bisa daftar cukup pakai email",
+      "Job Board khusus 18+"
+    ],
+    "traps": [
+      "Banyak blog/aggregator masih nyebut 'AWS Educate kasih $100–150 kredit' — itu udah ga bener. Halaman resmi aws.amazon.com/education/awseducate/ sama sekali ga nyebut kredit dolar, cuma 'No credit card needed' buat akses training. GitHub Student Developer Pack sendiri juga udah ga nyantumin AWS/AWS Educate sebagai partner kredit cloud."
+    ],
+    "facets": ["mahasiswa", "tanpa_kartu"],
+    "idIndie": "belum_jelas",
+    "sources": [
+      {
+        "name": "AWS Educate",
+        "url": "https://aws.amazon.com/education/awseducate/",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "figma-education",
+    "name": "Education",
+    "vendor": "Figma",
+    "domain": "figma.com",
+    "category": "student_pack",
+    "kind": "program",
+    "url": "https://www.figma.com/education/",
+    "description": "Akses Figma dan FigJam tingkat profesional gratis buat pelajar dan pengajar terverifikasi, termasuk Dev Mode.",
+    "limits": ["Figma (design tool) + FigJam (whiteboard) + Dev Mode"],
+    "creditValue": null,
+    "requirements": [
+      "Daftar pakai email student/teacher",
+      "Verifikasi status pelajar/pengajar lewat portal Figma"
+    ],
+    "traps": [],
+    "facets": ["mahasiswa"],
+    "idIndie": "belum_jelas",
+    "sources": [
+      {
+        "name": "Figma — Education",
+        "url": "https://www.figma.com/education/",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "github-student-pack",
+    "name": "Student Developer Pack",
+    "vendor": "GitHub",
+    "domain": "github.com",
+    "category": "student_pack",
+    "kind": "program",
+    "url": "https://education.github.com/pack",
+    "description": "Bundel tool dan kredit cloud gratis dari puluhan partner GitHub, dibuka buat pelajar terverifikasi.",
+    "limits": [
+      "GitHub Pro gratis selama jadi mahasiswa",
+      "Microsoft Azure: akses gratis 25+ layanan + $100 kredit (umur 18+; di bawah itu cuma dapet daftar layanan gratis terbatas tanpa kredit dolar)",
+      "DigitalOcean: $200 kredit platform (berlaku sampai 31 Juli 2026)",
+      "JetBrains: langganan gratis, diperpanjang tahunan",
+      "Namecheap: 1 tahun domain .me + 1 tahun SSL",
+      "MongoDB: $50 kredit Atlas + akses Compass & MongoDB University",
+      "Heroku: kredit $13/bulan selama 24 bulan",
+      "LocalStack: lisensi gratis buat emulator AWS-nya",
+      "Appwrite: paket Education gratis (2 proyek setara Appwrite Pro, senilai $40/bulan)"
+    ],
+    "creditValue": null,
+    "requirements": [
+      "Verifikasi status pelajar terafiliasi institusi pendidikan."
+    ],
+    "traps": [
+      "AWS/AWS Educate TIDAK ADA di daftar partner cloud pack ini per pengecekan terakhir — cuma LocalStack (emulator AWS, bukan kredit AWS beneran) yang nyenggol AWS."
+    ],
+    "facets": ["mahasiswa"],
+    "idIndie": "belum_jelas",
+    "sources": [
+      {
+        "name": "GitHub Education — Student Developer Pack",
+        "url": "https://education.github.com/pack",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "jetbrains-student",
+    "name": "Student License (All Products Pack)",
+    "vendor": "JetBrains",
+    "domain": "jetbrains.com",
+    "category": "student_pack",
+    "kind": "program",
+    "url": "https://www.jetbrains.com/academy/student-pack/",
+    "description": "Akses gratis ke seluruh lineup IDE JetBrains (All Products Pack) buat pelajar terverifikasi, diperpanjang tahunan.",
+    "limits": [
+      "IntelliJ IDEA Ultimate, PyCharm, WebStorm, CLion, Rider, PhpStorm, DataGrip, RubyMine, RustRover, DataSpell, GoLand, ReSharper, dan tool .NET lainnya",
+      "Plugin JetBrains Academy (100+ kursus programming)",
+      "JetBrains AI Assistant (trial, lanjut opsi gratis/berbayar)"
+    ],
+    "creditValue": null,
+    "requirements": [
+      "Pelajar di institusi pendidikan terakreditasi",
+      "Verifikasi via email universitas resmi, kartu ISIC/ITIC, akun GitHub Student Developer Pack, atau dokumen bukti pendaftaran"
+    ],
+    "traps": [
+      "Lisensi edukasi eksplisit dilarang dipakai buat kerja komersial.",
+      "Akses tetap aktif selama masih mahasiswa tapi wajib diperpanjang tiap tahun."
+    ],
+    "facets": ["mahasiswa", "nonkomersial"],
+    "idIndie": "belum_jelas",
+    "sources": [
+      {
+        "name": "JetBrains — Student Pack",
+        "url": "https://www.jetbrains.com/academy/student-pack/",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "azure-for-students",
+    "name": "Azure for Students",
+    "vendor": "Microsoft Azure",
+    "domain": "azure.microsoft.com",
+    "category": "student_pack",
+    "kind": "program",
+    "url": "https://azure.microsoft.com/en-us/free/students",
+    "description": "Kredit Azure buat mahasiswa terverifikasi, tanpa perlu kartu kredit.",
+    "limits": [
+      "$100 kredit, berlaku 12 bulan buat sebagian besar produk Azure",
+      "Bisa diperpanjang tiap tahun selama masih berstatus mahasiswa"
+    ],
+    "creditValue": "$100",
+    "requirements": [
+      "Mahasiswa full-time di universitas",
+      "Daftar pakai email sekolah"
+    ],
+    "traps": [],
+    "facets": ["mahasiswa", "tanpa_kartu", "ada_kedaluwarsa"],
+    "idIndie": "belum_jelas",
+    "sources": [
+      {
+        "name": "Azure — Free Account for Students",
+        "url": "https://azure.microsoft.com/en-us/free/students",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  },
+  {
+    "slug": "notion-education",
+    "name": "Education",
+    "vendor": "Notion",
+    "domain": "notion.com",
+    "category": "student_pack",
+    "kind": "program",
+    "url": "https://www.notion.com/product/notion-for-education",
+    "description": "Workspace Notion setara paket Plus gratis buat mahasiswa dan pengajar perguruan tinggi terverifikasi — K-12 ga termasuk.",
+    "limits": [
+      "Halaman & block unlimited",
+      "File upload unlimited",
+      "Version history 30 hari",
+      "Organisasi pelajar: sampai 100 guest"
+    ],
+    "creditValue": null,
+    "requirements": [
+      "Mahasiswa/pengajar di perguruan tinggi terakreditasi (bukan K-12)",
+      "Wajib pakai email sekolah — student ID atau dokumen lain tidak diterima",
+      "Email pribadi (Gmail dkk) tidak eligible"
+    ],
+    "traps": [
+      "Kalau institusi/universitas belum dikenali sistem Notion (dicek lewat database WHED), approval-nya ga otomatis — harus email support manual buat whitelist domain kampus. Kampus Indonesia yang belum terdaftar bakal kena proses manual ini."
+    ],
+    "facets": ["mahasiswa"],
+    "idIndie": "belum_jelas",
+    "sources": [
+      {
+        "name": "Notion — Notion for Education",
+        "url": "https://www.notion.com/product/notion-for-education",
+        "checkedAt": "2026-07-25"
+      }
+    ]
+  }
+]
