@@ -1,6 +1,6 @@
 {
   "name": "tokengratis",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CLI + MCP server for tokengratis.id, the aggregator directory of free-tier & free-credit LLM APIs for Indonesian developers. Zero runtime dependencies.",
   "keywords": [
     "tokengratis",

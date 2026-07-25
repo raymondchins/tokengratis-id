@@ -54,6 +54,9 @@ tokengratis search llama
 tokengratis models --provider groq
 ```
 
+- `--refresh` (alias `--no-cache`) pada perintah apa pun akan mengabaikan cache
+  lokal dan mengambil ulang dari server. Output teks selalu menampilkan umur
+  datanya, jadi cache basi tidak pernah tersaji diam-diam.
 - Plain text output by default; add `--json` to any command for
   machine-readable output.
 - Color is auto-disabled when stdout isn't a TTY, or when `NO_COLOR` is set.

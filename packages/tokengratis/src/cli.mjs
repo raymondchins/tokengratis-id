@@ -29,6 +29,10 @@ Usage:
   tokengratis --help
   tokengratis --version
 
+Flag global:
+  --json        output machine-readable
+  --refresh     abaikan cache, ambil ulang dari server (alias: --no-cache)
+
 Contoh:
   tokengratis list
   tokengratis list --modality vision
@@ -38,10 +42,28 @@ Contoh:
   tokengratis models --provider groq
 
 Data live dari https://tokengratis.id/api/providers
-(fallback otomatis ke GitHub raw kalau API down). Cached lokal ~1 jam.
+(fallback otomatis ke GitHub raw kalau API down). Cached lokal ~1 jam —
+umur data selalu ditulis di bawah output; pakai --refresh buat maksa segar.
 
 Ini AGGREGATOR, bukan verifier — tiap provider bawa provenance
 (sources[] + syncedAt), transparan apa adanya dari sumber.`;
+
+/**
+ * Baris umur data. Sengaja SELALU ditampilkan di output teks.
+ *
+ * Kenapa: data di-cache 1 jam di temp dir. Pas data upstream diperbaiki
+ * (INCIDENT 2026-07-25), siapa pun yang sempat jalanin CLI sebelum perbaikan
+ * bakal terus ngeliat angka lama sampai satu jam — dan sebelumnya ga ada satu
+ * pun petunjuk bahwa yang dia liat itu cache. Diam-diam nyajiin data basi itu
+ * pelanggaran prinsip proyek ini (selalu tunjukin KAPAN datanya). Sekarang
+ * umurnya kelihatan, dan --refresh kasih jalan keluar.
+ */
+function ageNote(fetchedAt, color) {
+  const mins = Math.max(0, Math.round((Date.now() - fetchedAt) / 60000));
+  const when = mins < 1 ? "barusan" : mins === 1 ? "1 menit lalu" : `${mins} menit lalu`;
+  const hint = mins >= 1 ? " · paksa segarkan: --refresh" : "";
+  return color.dim(`Data diambil ${when}${hint}`);
+}
 
 function getFlagValue(args, name) {
   const idx = args.indexOf(name);
@@ -65,10 +87,10 @@ function positionals(args, valueFlags) {
   return out;
 }
 
-async function cmdList(args, { json, color }) {
+async function cmdList(args, { json, color, refresh }) {
   const modality = getFlagValue(args, "--modality");
   const minContext = getFlagValue(args, "--min-context");
-  const { providers } = await getProviders();
+  const { providers, fetchedAt } = await getProviders({ forceRefresh: refresh });
 
   let list = providers;
   list = filterByModality(list, modality);
@@ -85,16 +107,17 @@ async function cmdList(args, { json, color }) {
   console.log(formatProviderListText(list, { color }));
   console.log("");
   console.log(color.dim(`${list.length} provider. Detail: tokengratis show <slug>`));
+  console.log(ageNote(fetchedAt, color));
 }
 
-async function cmdShow(args, { json, color }) {
+async function cmdShow(args, { json, color, refresh }) {
   const [slug] = positionals(args, ["--modality", "--min-context", "--provider"]);
   if (!slug) {
     console.error("Error: slug wajib diisi. Contoh: tokengratis show openrouter");
     process.exitCode = 1;
     return;
   }
-  const { providers } = await getProviders();
+  const { providers, fetchedAt } = await getProviders({ forceRefresh: refresh });
   const p = providers.find((x) => x.slug === slug);
   if (!p) {
     console.error(`Error: provider dengan slug "${slug}" tidak ditemukan. Coba: tokengratis list`);
@@ -106,16 +129,18 @@ async function cmdShow(args, { json, color }) {
     return;
   }
   console.log(formatProviderText(p, { color }));
+  console.log("");
+  console.log(ageNote(fetchedAt, color));
 }
 
-async function cmdSearch(args, { json, color }) {
+async function cmdSearch(args, { json, color, refresh }) {
   const query = positionals(args, ["--modality", "--min-context", "--provider"]).join(" ").trim();
   if (!query) {
     console.error('Error: query wajib diisi. Contoh: tokengratis search "llama"');
     process.exitCode = 1;
     return;
   }
-  const { providers } = await getProviders();
+  const { providers, fetchedAt } = await getProviders({ forceRefresh: refresh });
   const results = searchProviders(providers, query);
   if (json) {
     console.log(
@@ -133,11 +158,13 @@ async function cmdSearch(args, { json, color }) {
     return;
   }
   console.log(formatSearchResultsText(results, query, { color }));
+  console.log("");
+  console.log(ageNote(fetchedAt, color));
 }
 
-async function cmdModels(args, { json, color }) {
+async function cmdModels(args, { json, color, refresh }) {
   const providerSlug = getFlagValue(args, "--provider");
-  const { providers } = await getProviders();
+  const { providers, fetchedAt } = await getProviders({ forceRefresh: refresh });
   const rows = listModels(providers, providerSlug);
   if (json) {
     console.log(JSON.stringify(rows, null, 2));
@@ -146,6 +173,7 @@ async function cmdModels(args, { json, color }) {
   console.log(formatModelListText(rows, { color }));
   console.log("");
   console.log(color.dim(`${rows.length} model.`));
+  console.log(ageNote(fetchedAt, color));
 }
 
 async function main(argv) {
@@ -162,20 +190,21 @@ async function main(argv) {
 
   const [command, ...rest] = args;
   const json = args.includes("--json");
+  const refresh = args.includes("--refresh") || args.includes("--no-cache");
   const color = createColorizer();
 
   switch (command) {
     case "list":
-      await cmdList(rest, { json, color });
+      await cmdList(rest, { json, color, refresh });
       break;
     case "show":
-      await cmdShow(rest, { json, color });
+      await cmdShow(rest, { json, color, refresh });
       break;
     case "search":
-      await cmdSearch(rest, { json, color });
+      await cmdSearch(rest, { json, color, refresh });
       break;
     case "models":
-      await cmdModels(rest, { json, color });
+      await cmdModels(rest, { json, color, refresh });
       break;
     default:
       console.error(`Perintah tidak dikenal: "${command}"\n`);
