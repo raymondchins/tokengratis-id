@@ -5,6 +5,13 @@
 > regulasi). Semua klaim di sini punya sumber; yang nggak terverifikasi ditandai
 > `⚠️ unverified`.
 >
+> **Update 2026-07-25 (sore, sama hari):** Fase 1/2/4/5 dieksekusi (commit
+> `c95ee6d`), lalu pipeline-nya sendiri kena insiden data-shape dan dapet
+> hardening (commit `2f04f70`/`bfd35ed`). Halaman ke-index naik **87 → 144 URL
+> sitemap**. Dokumen ini sekarang plan + realita — tiap fase ditandai status
+> eksekusi, dan §3.5 baru mencatat insiden itu karena dia mengubah kesimpulan
+> strategis roadmap ini sendiri (lihat catatan Fase 3).
+>
 > Pelengkap `docs/TRAFFIC-ROADMAP.md` (itu soal **traffic**, ini soal **produk**).
 > Prinsip lama tetap mengikat: static SSG, aggregator-bukan-verifier,
 > anti-halusinasi, maintenance mendekati nol. Item yang melanggar itu masuk
@@ -36,6 +43,12 @@
   jembatan bayar** (top-up saldo AI pakai QRIS/IDR) — dan itu harus jadi produk
   terpisah, jangan nempel di brand direktori yang nilainya justru dari
   non-komersial.
+- **Update sama hari:** Fase 1/2(sebagian)/4/5 ke-ship (§3), lalu satu insiden
+  data (§3.5) membuktikan poin di atas ("kompetitor update manual, kita
+  otomatis") **bukan otomatis berarti benar** — pipeline otomatis sempat salah
+  216/398 model selama berminggu-minggu, tanpa ketahuan sampai manusia
+  kebetulan liat. Itu mengangkat status ping (Fase 3) dari "nice to have yang
+  ditunda" jadi item yang paling langsung ngejaga klaim "fresh dan jujur" ini.
 
 ---
 
@@ -60,7 +73,7 @@ Reposisi dari **"direktori free LLM API"** jadi:
 
 Tiga pekerjaan yang harus dikerjain situs:
 
-1. **PILIH** — bukan tabel 398 model, tapi jawaban. "Butuh vision + 128k + gratis
+1. **PILIH** — bukan tabel 397 model, tapi jawaban. "Butuh vision + 128k + gratis
    + masih nyala" → 3 kandidat, alasannya, trade-off-nya.
 2. **PASANG** — keluar dari situs dengan `.env` + snippet yang beneran jalan,
    plus rantai fallback, bukan cuma link ke halaman signup.
@@ -82,6 +95,7 @@ Effort = hari-kerja solo. Nilai = dampak ke user. Risiko = ToS/maintenance/brand
 
 ### Fase 1 — PASANG: dari list jadi kode jalan
 **Effort 4–6 hari · Nilai tinggi · Risiko nol · Rasio value/effort terbaik di seluruh roadmap**
+**✅ SHIPPED 2026-07-25 (commit `c95ee6d`)**
 
 Nol data baru. Murni presentasi di atas `data/providers.json` yang sudah ada
 (19 dari 24 provider sudah punya `baseUrl`, mayoritas OpenAI-compatible).
@@ -89,18 +103,33 @@ Nol data baru. Murni presentasi di atas `data/providers.json` yang sudah ada
 - **Generator setup per provider** — pilih provider → dapat `.env` + snippet
   siap-tempel untuk: OpenAI SDK (Node/Python), Vercel AI SDK, LangChain, `curl`.
   Karena baca data live, otomatis ikut fresh tiap sync.
+  ✅ **Shipped** sebagai panel **"Setup dalam 5 menit"** di tiap
+  `/provider/[slug]` (`components/setup/SetupPanel.tsx` + `lib/snippets.ts`).
 - **Wizard "model apa buat gw"** — filter client-side atas field yang sudah ada
   (`modalities`, `maxContext`, `rateLimit`). Aman anti-halusinasi karena cuma
   memotong field riil, nggak nambah klaim.
+  ✅ **Shipped** sebagai **`/pilih`** (`app/pilih/PilihClient.tsx`).
 - **Resep rantai fallback** — generate konfigurasi fallback (array Vercel AI SDK
   / `config.yaml` LiteLLM) dari 3 provider teratas per kebutuhan. Ini jawaban
   jujur atas keluhan rate-limit: bukan "pake yang ini", tapi "pake tiga ini
   berurutan". *(Generate config-nya boleh; hosting proxy-nya nggak — lihat §5.)*
+  ✅ **Shipped** sebagai **`/fallback`** (`app/fallback/FallbackClient.tsx`).
 - **Halaman "5 menit dari nol ke token pertama"** — satu alur, satu provider
-  rekomendasi, dalam Bahasa Indonesia.
+  rekomendasi, dalam Bahasa Indonesia. ✅ Digabung ke panel Setup di atas
+  (bukan halaman terpisah — ternyata lebih pas nempel di tiap provider).
+
+**Konstrain jujur yang ketahuan pas eksekusi (bukan pas riset):** dari 24
+provider, **5 punya `baseUrl: null`** di `data/providers.json` — sumbernya
+sendiri nggak nyediain base URL terstruktur. Panel setup buat kelima provider
+itu **nolak generate snippet** dan nunjukin pesan "sumber nggak nyediain ini"
+apa adanya, bukan ngarang base URL yang kelihatan masuk akal. Provider yang
+sama **di-exclude dari picker `/fallback`** (nggak bisa masuk rantai kalau
+setup-nya sendiri nggak bisa digenerate). Ini disiplin anti-halusinasi §2
+diterapkan ke fitur baru, bukan cuma ke data provider.
 
 ### Fase 2 — JAGA: loop retensi
 **Effort 2–3 hari · Nilai tinggi · Risiko nol · Whitespace kompetitif paling bersih**
+**🟡 SEBAGIAN — RSS shipped, Telegram + email SENGAJA di-skip (keputusan Ray)**
 
 Diff nightly sudah ada (`/changelog` + `scripts/lib/diff-guard.mjs`). Yang kurang
 cuma saluran keluarnya.
@@ -109,11 +138,16 @@ cuma saluran keluarnya.
   kuota berubah. **Tanpa DB sama sekali**: Telegram yang nyimpen daftar
   subscriber, kita cuma pegang bot token + chat_id. Bot API gratis tanpa batas
   praktis. Ini mekanisme paling murah yang ada.
+  ⏸️ **Belum dibangun — keputusan Ray, bukan blocker teknis.** Butuh 1 langkah
+  manual ~5 menit (bikin bot lewat @BotFather, simpan token) yang cuma Ray bisa
+  lakuin. Tinggal dibuka lagi kapan aja begitu token itu ada.
 - **RSS/Atom** — artefak statis dari diff yang sama. Sekalian ke-index feed
-  reader + agen AI.
+  reader + agen AI. ✅ **Shipped** sebagai **`/feed.xml`** (`app/feed.xml/route.ts`).
 - **Email digest via Resend** — route `app/api/subscribe` sudah ada tapi dormant.
   Daftar kontak disimpan di Audiences-nya Resend, jadi aturan no-DB tetap utuh.
   Free tier 3.000 email/bulan, cukup jauh.
+  ⏸️ **Belum dibangun — sama, keputusan Ray.** Route-nya udah ada dan dormant
+  dari sebelumnya, cuma belum di-mount ke UI / dipicu dari diff nightly.
 
 > Alasan ini prioritas tinggi: perubahan free tier terjadi diam-diam dan sering
 > (Gemini −50–80%, Cerebras, Z.ai kasih expiry, Qwen mati, PlanetScale mati).
@@ -122,6 +156,7 @@ cuma saluran keluarnya.
 
 ### Fase 3 — JAGA: status hidup (jujur, bukan "Verified")
 **Effort 4–6 hari · Nilai tinggi · Risiko: maintenance, bukan legal**
+**⏸️ BELUM DIBANGUN — blocked di 8–10 API key milik Ray, bukan bisa didelegasikan**
 
 Ping 8–10 provider terpopuler tiap 30–60 menit dari GitHub Actions (pola Upptime,
 16k★, biaya $0 di repo publik), tampilkan status + latency + waktu ukur.
@@ -137,16 +172,37 @@ Ping 8–10 provider terpopuler tiap 30–60 menit dari GitHub Actions (pola Upp
   US/EU). Kalau mau angka latency dari Indonesia beneran, perlu self-hosted
   runner di VPS Singapura (~$5/bln) — **tunda dulu**, jangan jadi blocker.
 
+> **Re-ranking pasca-insiden (lihat §3.5):** hari yang sama fase ini ditulis,
+> pipeline-nya sendiri kena bug column-swap yang bikin 216/398 model salah
+> selama berminggu-minggu tanpa satu pun guard yang teriak — ketahuan murni
+> karena manusia kebetulan liat angka aneh. Itu bukti langsung bahwa "parse
+> berhasil" ≠ "data benar". Fase 3 **naik prioritas**: dia satu-satunya fitur
+> di roadmap ini yang memverifikasi data terhadap realita (provider itu beneran
+> nyala sekarang), bukan cuma memverifikasi bahwa parser jalan tanpa error.
+> Semua fase lain (1/2/4/5) mempercayai `data/providers.json` apa adanya.
+
 ### Fase 4 — PASANG: masuk ke tool-nya user
 **Effort 5–6 hari · Nilai menengah-tinggi · Risiko nol · Efek distribusi majemuk**
+**✅ SHIPPED 2026-07-25 (commit `c95ee6d`), npm publish menyusul sore itu juga**
 
 - **MCP server** (`npx tokengratis-mcp`) — Claude Code / Cursor bisa nanya
   direktori langsung dari editor. Jalan di mesin user, fetch JSON statis kita,
   nol backend, nol permukaan ToS baru. Direktori MCP (glama.ai, awesome-mcp)
   lagi jadi kanal discovery aktif — distribusi gratis.
+  ✅ **Shipped** di `packages/tokengratis/src/mcp-server.mjs` — stdio JSON-RPC
+  ditulis tangan, **zero runtime dependency**.
 - **CLI** `npx tokengratis` — client tipis atas JSON yang sama.
+  ✅ **Shipped** di `packages/tokengratis/src/cli.mjs`.
 - **API JSON publik + `llms.txt`** — `llms.txt` sudah ada; formalkan endpoint
   JSON-nya biar builder lain bisa konsumsi (ini juga fondasi buat Tesis B di §6).
+  ✅ **Shipped**: `/api/providers` (`app/api/providers/route.ts`) + `/api/models`
+  (`app/api/models/route.ts`), JSON statis, CORS terbuka.
+
+**Publish:** commit `c95ee6d` sendiri masih bilang "belum di-publish ke npm" —
+tapi paket `tokengratis@0.1.1` **sudah live di npm registry** (published sore
+itu juga, setelah commit, begitu `npm login` kelar). `npm view tokengratis`
+mengonfirmasi: zero deps, bin `tokengratis` + `tokengratis-mcp`, maintainer
+raymondchins.
 
 Precedent: `mnfst` sudah ngirim **Claude Skill** di repo-nya, `models.dev`
 tumbuh justru karena dikonsumsi tool lain (opencode), bukan karena orang datang
@@ -154,6 +210,7 @@ ke situsnya. Distribusi lewat integrasi > distribusi lewat kunjungan.
 
 ### Fase 5 — Ekspansi: dari "token gratis" ke "modal gratis"
 **Effort 8–12 hari · Nilai tinggi buat misi · Risiko: beban kurasi — ini yang harus diakui di depan**
+**✅ SHIPPED 2026-07-25 (commit `c95ee6d`) — 54 offer, kadens mingguan mulai jalan**
 
 Ini bagian dari permintaan Ray soal deployment/product/app. Temuan riset yang
 menentukan desainnya:
@@ -203,8 +260,115 @@ institusional atau kode referral akselerator. Linear malah **nggak punya jalur
 apply langsung sama sekali**. Ini justru info berharga: hemat waktu orang dari
 ngelamar sesuatu yang mustahil.
 
+**Yang beneran ke-ship, dan apa yang berubah pas eksekusi:**
+
+`/modal-gratis` + 54 halaman detail (`app/modal-gratis/`), entity `Offer`
+resmi di `lib/offer-types.ts` + `data/offers.json` (bukan 40–60 dugaan awal —
+final 54, campuran hosting/DB/kredit startup/paket mahasiswa/dll). Setiap
+prediksi riset di atas terbukti benar begitu dijalankan beneran:
+
+- **Nol sumber machine-readable — dikonfirmasi, bukan cuma diduga.** Kurasi
+  manual, kadens mingguan berjalan persis seperti didesain. Ini **satu-satunya
+  bagian situs yang nggak self-maintaining** — satu konsekuensi sadar, dicatat
+  di `docs/STATE.md`.
+- **Kandidat DI-DROP karena nggak bisa diverifikasi di halaman resmi vendor**
+  (bukan cuma "males cari", tapi eksplisit gagal aturan §2 "sumber wajib
+  resmi"): **Fly.io, PlanetScale, OpenAI for Startups, Supabase Startup.**
+  Nggak masuk `data/offers.json` sama sekali — lebih baik nggak ada entrinya
+  daripada entri dari sumber yang nggak bisa dipertanggungjawabkan.
+- **Koreksi yang ketemu pas nulis entri beneran** (bukan cuma disebut di riset,
+  tapi divalidasi ulang tiap `sources[].checkedAt`):
+  - **Cloudflare for Startups** — tier resmi memang $10.000 (Tier 3, tanpa VC) /
+    $100.000 (Tier 2) / $350.000 (Tier 1), persis kayak yang diprediksi riset,
+    beda dari angka agregator $5K/$25K/$100K yang beredar. `data/offers.json`
+    entri `cloudflare-for-startups` nyimpen tiga tier + syarat lengkap.
+  - **Vercel for Startups** dan **Linear for Startups** — **dua-duanya tetap
+    dimasukkan** (bukan di-drop kayak 4 kandidat di atas, karena programnya
+    nyata dan halamannya resmi), tapi `idIndie: "tidak"` + field `traps[]`
+    eksplisit nyatet: Vercel wajib terafiliasi partner resmi (bukti screenshot
+    dashboard partner), Linear literal nggak punya jalur daftar langsung sama
+    sekali ("must be affiliated with an official Linear partner", verbatim
+    dari halaman resmi). Solo dev bootstrapped Indonesia tanpa relasi
+    akselerator/VC nggak punya jalur masuk ke keduanya — persis dugaan awal,
+    sekarang dengan kutipan sumber buat buktiin.
+
 ### Fase 6 — (Opsional, terpisah) Jembatan bayar IDR
 Lihat §6. **Jangan dibangun sebelum Fase 1–4 jalan dan ada audiens terukur.**
+
+---
+
+## 3.5. INCIDENT 2026-07-25 — pipeline sendiri kena bug yang Fase 3 mestinya nangkep
+
+Sore ketika Fase 1/2/4/5 (`c95ee6d`) baru saja ke-ship, ketauan sesuatu yang
+lebih penting buat roadmap ini daripada fitur baru mana pun: **pipeline data
+sendiri udah salah selama berminggu-minggu, dan nggak satu pun guard yang ada
+ketahuan.**
+
+**Apa yang terjadi.** `freellm.net` (salah satu dari 4 sumber) nyisipin kolom
+baru **"Score"** ke tabel HTML-nya dan **ngilangin kolom "Max Output"** —
+tapi *jumlah* kolom nggak berubah. Adapter `scripts/adapters/freellm.mjs`
+(yang mapping-nya dulu **posisional**, bukan by-nama-header) terus baca kolom
+di posisi yang sama seperti sebelumnya — cuma sekarang posisi itu isinya angka
+Score (skala 0–100), bukan context window. Akibatnya **`context` diam-diam
+keisi nilai Score** buat semua model dari sumber ini.
+
+- **Skala kerusakan: 216 dari 398 model salah** selama berminggu-minggu.
+- **Semua guard lama LOLOS** — karena semuanya ngukur *kuantitas* (jumlah
+  baris, jumlah kolom, sanity floor per-count, id churn), sementara yang
+  berubah cuma *arti* satu kolom. Row count sama, column count sama, semua
+  hijau.
+- **Ketahuan bukan karena guard — karena manusia** kebetulan liat `context=81`
+  yang janggal di output CLI pas ngecek hal lain sama sekali. Kalau nggak
+  keliatan hari itu, bisa lolos berbulan-bulan lagi.
+
+**Respons (di-ship hari yang sama, commit `2f04f70` → `bfd35ed`):**
+
+- **`scripts/lib/shape-guard.mjs`** — 8 aturan berbasis **rasio/bentuk nilai**
+  (bukan hitungan): `column-swap-identical`, `column-swap-context-looks-like-
+  ratelimit`, `ratelimit-is-bare-context-token` (nangkep signature "bare
+  int < 1000" = kolom Score/skor), `leftover-markup-entity`, `empty-id`,
+  `empty-name`, `duplicate-id-in-provider`, `invalid-url`, `all-null-collapse`.
+  Fatal cuma kalau sistemik (>50% dengan sampel ≥20) — guard yang teriak di
+  data bagus bakal dimatiin orang, dan itu lebih buruk daripada nggak ada guard.
+- **`scripts/lib/diff-guard.mjs` Rule 6 (field-value churn)** — bandingin nilai
+  field spesifik antar run (`context`/`maxOutput`/`modality`/`rateLimit` di
+  level model, `description`/`baseUrl`/`freeLimit`/`maxContext` di level
+  provider), sengaja ngecualiin field provenance/timestamp yang emang selalu
+  berubah (`syncedAt`, `sources[]`) biar nggak flap.
+- **Header-name column mapping** — `cheahjs.mjs` (dan adapter unstructured
+  lain) sekarang map kolom **by nama header**, bukan posisi ke-N. Ini fix akar
+  masalahnya, bukan cuma nambah guard di atasnya. (Commit `2f04f70`.)
+- **`checkShape()` wired di `sync.mjs`** — jalan per-sumber (fatal = skip
+  sumber itu doang) **dan** di hasil merge (fatal = abort tulis, exit 1).
+- **Alerting nol-setup** — `.github/workflows/nightly-sync.yml` udah punya
+  step buka/update GitHub issue on failure (di-reuse, bukan dibikin baru),
+  sekarang isinya baca `data/sync-report.json` buat detail konkret
+  (source/rule/ratio/sample), bukan cuma "cek log run".
+- **94 self-test**, semua masuk `npm test` (`shape-guard.mjs --selftest`,
+  `diff-guard.mjs --selftest`, `source-sanity.mjs --selftest`, tiap adapter
+  `--selftest`, `merge.mjs`, `audit-dupes.mjs`).
+- **Bukti end-to-end** (data asli, pra-fix `c95ee6d` vs pasca-fix `2f04f70`):
+  shape-guard FATAL dengan ratio 0.63, sampel `[81, 55, 52]`; diff-guard
+  memblokir 62,4% churn `context` + 41,7% churn `maxContext`; data pasca-fix
+  bersih, nol false-positive baru.
+
+**Kesimpulan strategis — ini yang mengubah roadmap ini sendiri:** seluruh
+proposisi nilai proyek ini adalah **"fresh dan jujur"** (§0 TL;DR, §2). Insiden
+ini membuktikan pipeline bisa **diam-diam salah** dan satu-satunya alasan
+ketahuan adalah keberuntungan (satu orang kebetulan liat satu angka janggal).
+Itu bukan proses, itu untung-untungan. Konsekuensinya dua:
+
+1. **Fase 3 (status ping) naik prioritas** dari "nilai tinggi, ditunda karena
+   maintenance" jadi **satu-satunya fitur di roadmap yang memverifikasi data
+   terhadap realita** (provider itu beneran nyala/nolak sekarang), bukan cuma
+   memverifikasi bahwa parser jalan tanpa exception. Fase 1/2/4/5 semuanya
+   mempercayai `data/providers.json` apa adanya — kalau parse-nya salah,
+   semua fitur di atasnya ikut salah dengan percaya diri yang sama.
+2. **Data-correctness bukan lagi kerja maintenance latar belakang, tapi item
+   roadmap kelas satu.** Sebelum insiden ini, shape-guard/diff-guard nggak
+   ada satu baris pun di roadmap — itu dianggap "sudah beres" karena sanity
+   floor + smoke test ada. Ternyata "ada guard" dan "guard-nya ngukur hal yang
+   benar" adalah dua klaim yang beda, dan cuma yang kedua yang berarti.
 
 ---
 
@@ -218,6 +382,14 @@ Fase 2 (2-3h) → Fase 1 (4-6h) → Fase 4 (5-6h) → Fase 3 (4-6h) → Fase 5 (
 Fase 2 duluan walau nilainya setara Fase 1: paling murah, dan tiap hari tanpa
 loop retensi = traffic yang bocor permanen. Fase 5 paling belakang karena dia
 satu-satunya yang nambah beban maintenance berulang.
+
+**Realita eksekusi 2026-07-25:** urutan yang beneran kejadian = Fase 1, 2
+(sebagian), 4, 5 semua dieksekusi **paralel** dalam satu batch (7 agen, file
+disjoint), bukan sekuensial seperti urutan di atas — makanya semua status
+"SHIPPED" di §3 pakai tanggal & commit yang sama (`c95ee6d`). Fase 3 tetap
+paling belakang, tapi bukan lagi karena "kesegaran" adalah nilai rendah —
+lihat §3.5: insiden hari yang sama membuktikan Fase 3 justru yang paling
+langsung ngejaga janji inti proyek ini. Ini masuk daftar keputusan Ray di §8.
 
 ---
 
@@ -330,13 +502,24 @@ Satu post di kanal utama > 10 halaman SEO baru. Ini konsisten sama kesimpulan
 1. **Perluas ke "modal gratis" (Fase 5) atau tetap fokus token?** Konsekuensi:
    nama domain "tokengratis" jadi lebih sempit dari produknya, dan ini
    satu-satunya fase yang nambah beban kurasi manual berulang.
+   **✅ DIJAWAB 2026-07-25 — ya:** Fase 5 di-ship (§3), 54 offer live. Beban
+   kurasi mingguan yang diprediksi di sini sekarang beneran jalan, dicatat di
+   `docs/STATE.md` sebagai "satu-satunya bagian situs yang nggak self-maintaining".
 2. **Monetisasi: buka atau tetap tutup?** Kalau dibuka, rekomendasi urutannya
    affiliate → API data → (jauh nanti, brand terpisah) jembatan bayar.
    `CLAUDE.md` sekarang bilang "BUKAN dimonetisasi" — kalau berubah, file itu
    harus diupdate biar nggak jadi aturan basi.
+   **⏸️ Masih terbuka** — belum berubah per hari ini, `CLAUDE.md` tetap "BUKAN
+   dimonetisasi".
 3. **Fase 3 (status ping) — terima pajak maintenance-nya?** Butuh 8–10 akun +
    key milik sendiri yang harus dirawat. Ini satu-satunya item BUILD yang
    beneran menambah kerja rutin.
+   **⏸️ Masih terbuka, tapi bobot pertanyaannya berubah** — sebelum §3.5 ini
+   soal "mau nambah kerja rutin demi nilai tambahan"; sekarang lebih ke arah
+   "mau nambah kerja rutin demi satu-satunya guard yang beneran mengecek
+   provider masih hidup, setelah insiden hari ini membuktikan parser-lolos
+   ≠ data-benar". Keputusannya sama (butuh 8–10 API key Ray), tapi taruhannya
+   udah beda.
 
 ---
 

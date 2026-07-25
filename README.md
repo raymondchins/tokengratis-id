@@ -1,10 +1,41 @@
 # tokengratis.id
 
-Direktori **free tier & free credits API LLM**, di-aggregate otomatis dari sumber komunitas. Audience Indonesia (antarmuka Bahasa Indonesia). Aggregator transparan — **bukan verifier**.
+Direktori **free tier & free credits API LLM**, di-aggregate otomatis dari sumber komunitas — plus alat buat milih, masang, dan mantau pilihan itu. Audience Indonesia (antarmuka Bahasa Indonesia). Aggregator transparan — **bukan verifier**.
 
 > Live: **https://tokengratis.id** · Spec: [`docs/PRD.md`](docs/PRD.md) · State terkini: [`docs/STATE.md`](docs/STATE.md)
 
 Tiap data nampilin **dari mana** + **di-sync kapan** + link ke sumber aslinya. Ga ada klaim "verified" — trust dari transparansi, bukan klaim.
+
+Angka saat ini: **24 provider · 397 model · 54 penawaran modal gratis · 144 URL sitemap.**
+
+## Fitur
+
+- **Direktori** — homepage: 24 provider free-tier LLM, filter modalitas, link `/provider/[slug]` per provider.
+- **[`/pilih`](https://tokengratis.id/pilih)** — wizard: saring provider+model by modalitas / context minimum / preferensi rate limit → kandidat provider+model ranked dengan alasan yang di-generate dari data yang beneran ada (bukan skor buatan).
+- **[`/fallback`](https://tokengratis.id/fallback)** — susun 2–4 provider jadi rantai fallback, generate config siap pakai: Vercel AI SDK, LiteLLM (`config.yaml`), TypeScript polos, atau `.env`.
+- **Panel "Setup dalam 5 menit"** di tiap `/provider/[slug]` — generate `.env` + snippet kerja: OpenAI SDK (Node/Python), Vercel AI SDK, LangChain, curl.
+- **[`/modal-gratis`](https://tokengratis.id/modal-gratis)** + 54 halaman detail — free tier & kredit **di luar** token LLM (hosting, database, storage, email, auth, monitoring, devtool, domain, paket mahasiswa, kredit startup). Entity terpisah (`lib/offer-types.ts`), **di-kurasi manual tiap minggu** — bukan bagian sync nightly, karena riset (`docs/PRODUCT-ROADMAP.md` §3 Fase 5) nemu nol sumber machine-readable di domain ini.
+- **`/opensource`** — direktori open source Indonesia (sync terpisah, `npm run sync:opensource`).
+
+## Machine-readable
+
+- **[`/api/providers`](https://tokengratis.id/api/providers)** · **[`/api/models`](https://tokengratis.id/api/models)** — JSON statis, CORS terbuka.
+- **[`/feed.xml`](https://tokengratis.id/feed.xml)** — RSS perubahan data (model/provider baru & hilang), di-generate tiap sync.
+- **[`/llms.txt`](https://tokengratis.id/llms.txt)** / **[`/llms-full.txt`](https://tokengratis.id/llms-full.txt)** — ringkasan buat LLM crawler.
+
+## `packages/tokengratis` — CLI + MCP server
+
+Package npm zero-dependency, published sebagai **`tokengratis`**: dua binary, `tokengratis` (CLI — `list`/`show`/`search`/`models`, `--json`, `--refresh`) dan `tokengratis-mcp` (MCP server via stdio, JSON-RPC hand-rolled, no SDK). Detail lengkap + config: [`packages/tokengratis/README.md`](packages/tokengratis/README.md).
+
+```bash
+npx -y tokengratis list --modality vision --json
+```
+
+MCP config — **`tokengratis-mcp` itu bin DI DALAM package `tokengratis`, bukan package sendiri**, jadi wajib `-p tokengratis`:
+
+```json
+{ "mcpServers": { "tokengratis": { "command": "npx", "args": ["-y", "-p", "tokengratis", "tokengratis-mcp"] } } }
+```
 
 ## Stack
 
@@ -48,6 +79,17 @@ npm run agentmap -- --find <symbol>    # reuse-before-rebuild
 
 Direktori open-source Indonesia di-refresh terpisah via `npm run sync:opensource` (`scripts/sync-opensource.mjs`).
 
+### Guard berbasis bentuk, bukan cuma kuantitas
+
+2026-07-25, `freellm.net` nyisipin kolom baru **"Score"** dan ngebuang kolom **"Max Output"**. Jumlah kolom tetap sama, jumlah baris tetap normal — cuma ARTI tiap kolom yang berubah. Akibatnya: sanity floor (count-based), diff guard, dan smoke test **semua lolos**, sementara `context` diam-diam keisi nilai Score. **216 dari 398 model** kena data salah selama berminggu-minggu. Ketahuan cuma karena ada manusia yang notice `context=81` di output CLI — bukan karena ada guard yang nangkep.
+
+Perbaikannya nambah axis yang ilang: guard berbasis **bentuk (shape)** nilai, bukan cuma kuantitas.
+
+- **`scripts/lib/shape-guard.mjs`** — 8 rule berbasis ratio (fatal cuma kalau sistemik: >50% dari sample ≥20; satu-dua baris aneh tetap dianggap noise wajar buat data komunitas).
+- **`scripts/lib/diff-guard.mjs` Rule 6** — churn nilai-field antar run (bukan cuma churn jumlah).
+- Keempat adapter di-perkeras: mapping kolom by nama header (bukan indeks), validasi shape upstream + fill-rate.
+- `npm test` jalanin **94 self-test lintas 6 modul**, full offline, no creds.
+
 ## Prinsip non-negotiable
 
 - **Jangan pakai kata "Verified".** Pakai "Synced [tanggal] dari [sumber]".
@@ -59,16 +101,21 @@ Detail lengkap: [`CLAUDE.md`](CLAUDE.md) + [`docs/PRD.md`](docs/PRD.md).
 ## Struktur
 
 ```
-app/                        ← App Router (homepage · /provider/[slug] · /opensource)
+app/                        ← App Router — homepage · /provider/[slug] · /pilih · /fallback ·
+                               /modal-gratis(/[slug]) · /model/[slug] · /gratis/[modality] ·
+                               /opensource · /changelog · /api/providers · /api/models · /feed.xml
 app/api/subscribe/          ← Resend newsletter route (dormant, belum di-mount di UI)
-components/                 ← UI components
+packages/tokengratis/       ← CLI + MCP server, zero-dep, published sebagai "tokengratis" di npm
+components/                 ← UI components (incl. components/setup/SetupPanel.tsx)
 lib/types.ts               ← schema Provider + Model
+lib/offer-types.ts          ← schema Offer ("modal gratis", entity terpisah)
+lib/wizard.ts · lib/fallback.ts · lib/model-clusters.ts ← logic /pilih, /fallback, /model/[slug]
 scripts/sync.mjs           ← pipeline aggregator (npm run sync)
 scripts/adapters/          ← mnfst · freellm · cheahjs · openrouter (4 sumber paralel)
-scripts/lib/               ← merge · enrich · llm-fallback · diff-guard · source-sanity
+scripts/lib/               ← merge · enrich · llm-fallback · shape-guard · diff-guard · source-sanity
 scripts/sync-opensource.mjs ← direktori open source Indonesia
-data/                      ← providers.json · opensource.json · source-baselines.json (di-generate; read-only)
-docs/                      ← PRD, STATE, log, CHANGELOG
+data/                      ← providers.json · offers.json · opensource.json · source-baselines.json (di-generate; read-only)
+docs/                      ← PRD, STATE, PRODUCT-ROADMAP, log, CHANGELOG
 ```
 
 ## Attribution / Sumber data

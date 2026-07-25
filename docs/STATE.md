@@ -12,7 +12,7 @@
 
 ## Current phase
 
-**Phase 6 — dari direktori jadi alat (Pilih → Pasang → Jaga).** Data layer tetap sama (pipeline nightly 4 sumber, 24 provider / 398 model). Yang baru: situs ga cuma nampilin daftar, tapi ngebantu user milih, masang, dan tau kalau berubah.
+**Phase 6 — dari direktori jadi alat (Pilih → Pasang → Jaga).** Data layer tetap sama (pipeline nightly 4 sumber, **24 provider / 397 model**, dihitung ulang dari `data/providers.json` 2026-07-25). Yang baru: situs ga cuma nampilin daftar, tapi ngebantu user milih, masang, dan tau kalau berubah.
 
 Roadmap + skip-list lengkap (dengan alasan & sumber) di **`docs/PRODUCT-ROADMAP.md`** — disusun 2026-07-25 dari riset 5-arah. Fase 1/2/4/5 dieksekusi; Fase 3 ditunda.
 
@@ -22,16 +22,38 @@ Surface baru:
 - Panel "Setup dalam 5 menit" di tiap `/provider/[slug]` — snippet 5 target + `.env`
 - `/modal-gratis` + 54 halaman detail — free tier & kredit **di luar** token LLM
 - `/feed.xml` (RSS perubahan), `/api/providers` + `/api/models` (JSON, CORS terbuka)
-- `packages/tokengratis/` — CLI + MCP server, **zero dependency**, belum di-publish ke npm
+- `packages/tokengratis/` — CLI + MCP server, **zero dependency** — **npm publish DONE** (lihat §Pipeline & npm di bawah, bukan lagi item pending)
 
-Halaman ke-index: 87 → **143 URL sitemap**.
+Halaman ke-index: 87 → **144 URL sitemap** (hitung ulang dari `app/sitemap.ts`: 2 statis + 24 provider + 5 facet modalitas + 55 model-cluster + 1 changelog + 2 alat + 1 `/modal-gratis` + 54 offer).
 
 ## Architecture
 
 - **NO database, NO auth.** Satu-satunya server surface: route Resend newsletter dormant di `app/api/subscribe/route.ts` (belum di-mount di UI). Data = `data/providers.json` (read-only, di-generate `scripts/sync.mjs`).
 - Static / SSG (Next.js 16 + Turbopack). `/provider/[slug]` prerendered via `generateStaticParams`. Route `/directory` sudah dihapus (duplikat homepage).
-- **Pipeline:** `scripts/sync.mjs` (`npm run sync`) → fetch **4 sumber paralel** via `scripts/adapters/mnfst.mjs` + `scripts/adapters/freellm.mjs` + `scripts/adapters/cheahjs.mjs` + `scripts/adapters/openrouter.mjs` → merge/gap-fill by priority di `scripts/lib/merge.mjs` → enrich context/maxOutput dari models.dev (`scripts/lib/enrich.mjs`) → smoke test → tulis `data/providers.json`. LLM fallback (`scripts/lib/llm-fallback.mjs`, Claude Haiku) re-parse sumber unstructured yang drift kalau `ANTHROPIC_API_KEY` ada (raw API) ATAU `CLAUDE_CODE_OAUTH_TOKEN` di-set (headless Claude Code, subscription Max). Idempotent.
-- **Nightly cron:** `.github/workflows/nightly-sync.yml` (cron `0 19 * * *`) — auto-commit data + trigger Vercel rebuild.
+- **Pipeline:** `scripts/sync.mjs` (`npm run sync`) → fetch **4 sumber paralel** via `scripts/adapters/mnfst.mjs` + `scripts/adapters/freellm.mjs` + `scripts/adapters/cheahjs.mjs` + `scripts/adapters/openrouter.mjs` → **shape-guard per-source** (`scripts/lib/shape-guard.mjs`) → merge/gap-fill by priority di `scripts/lib/merge.mjs` → **shape-guard on merged output** → enrich context/maxOutput dari models.dev (`scripts/lib/enrich.mjs`) → **diff-guard vs last-known-good** (`scripts/lib/diff-guard.mjs`) → smoke test → tulis `data/providers.json` + `data/sync-report.json`. LLM fallback (`scripts/lib/llm-fallback.mjs`, Claude Haiku) re-parse sumber unstructured yang drift kalau `ANTHROPIC_API_KEY` ada (raw API) ATAU `CLAUDE_CODE_OAUTH_TOKEN` di-set (headless Claude Code, subscription Max). Idempotent.
+- **Nightly cron:** `.github/workflows/nightly-sync.yml` (cron `0 19 * * *`) — auto-commit data + trigger Vercel rebuild. Run gagal → buka/update GitHub issue (isi dari `sync-report.json`) — zero-setup alert, GitHub email owner otomatis.
+
+## Pipeline guards — bentuk nilai, bukan cuma kuantitas (2026-07-25)
+
+**INCIDENT 2026-07-25:** freellm.net nyisipin kolom "Score" baru dan ngilangin "Max Output" di layout-nya. Jumlah kolom & jumlah baris ga berubah → sanity floor (kuantitas provider/model), diff guard lama (id churn), dan smoke test SEMUA lolos, sementara `context` diam-diam kebaca dari kolom Score. **216 dari 398 model salah selama berminggu-minggu** — ketahuan bukan dari guard, tapi manusia ngeliat `context=81` ganjil di output CLI. Root fix di `2f04f70` (adapter map kolom by nama header, bukan posisi); guard baru di `bfd35ed` biar kelas bug ini ga bisa lolos lagi.
+
+Yang sekarang ada:
+- **`scripts/lib/shape-guard.mjs`** — 8 aturan ratio-based ngukur BENTUK nilai (context/maxOutput bukan bilangan bulat telanjang <1000, bukan currency/tanggal/persentase, dst). Fatal **cuma kalau sistemik** (>50% dgn sampel ≥20) — satu baris ganjil ga pernah jatohin nightly run. Export: `checkShape`, `assertShape`, `looksLikeContext`, `looksLikeRateLimit`, `ShapeGuardError`.
+- **`scripts/lib/diff-guard.mjs` Rule 6** — field-value churn antar run (bukan cuma id/count churn). `null → value` dari enrichment sengaja dikecualiin, biar gap-fill models.dev ga bikin nightly flap.
+- **4 adapter di-harden:** `freellm` + `cheahjs` map kolom by NAMA header (throw kalau kolom yang di-depend ilang); `mnfst` + `openrouter` validasi shape upstream + isi rate — openrouter paling kritis karena dia ga punya baseline di `source-sanity.mjs`, jadi 0-model result diam-diam bisa lolos sebelum ini.
+- **`scripts/sync.mjs`** jalanin `checkShape` per-source DAN di output merged. Fatal per-source → skip sumber itu doang; fatal di merged → abort write, exit 1. Warning selalu print, ga pernah blocking.
+- **`data/sync-report.json`** — laporan run machine-readable, di-commit sebagai audit trail.
+- **`npm test`** — **94 self-test lintas 6 modul, full offline** (shape-guard 30, diff-guard 16, source-sanity 18, cheahjs 13, mnfst 8, openrouter 9).
+
+**Bukti end-to-end (diverifikasi ulang manual saat nulis STATE.md ini, bukan cuma diklaim):**
+
+| Cek | Pre-fix `c95ee6d` | Post-fix `2f04f70` |
+|---|---|---|
+| `checkShape` (`source: "freellm.net"`) | **FATAL** — `context`: 216/343 (63.0%), sample `["81","55","52"]` | `ok: true`, 0 issue |
+| `snapshotDiff` pre→post (kalau ini kejadian nightly beneran) | — | **BLOCKED**: `context` model-level churn 62.4% (211/338), `maxContext` provider-level churn 41.7% (10/24) — di atas ambang error 35% |
+| `snapshotDiff` nightly normal (`e137dc6`→`681de9a`, no incident) | `ok: true`, churn 0–0.6% semua field | tanpa false positive |
+
+Kesimpulan: guard baru nangkep incident lama secara retroaktif (fatal + blocked) DAN ga bunyi di data sehat (zero false positive di 2 sample independen).
 
 ## Data model — "modal gratis" (canonical = `lib/offer-types.ts`)
 
@@ -61,19 +83,22 @@ Light / paper / neutral ala getaiperks.com. bg `#f1f0e8`, card putih, text `#111
 | Vercel project | ✅ Live | tokengratis-id.vercel.app |
 | Custom domain `tokengratis.id` | ✅ Live | attached di Vercel |
 | Nightly cron | ✅ Live | `.github/workflows/nightly-sync.yml` |
+| npm package `tokengratis` | ✅ **Live, v0.1.1 published** | registry.npmjs.org/tokengratis — CLI + MCP server, zero-dep, `--refresh`/`--no-cache` + data-age print |
 | Supabase / Auth | 🗄️ N/A | no DB / no auth by design |
 
 ## Data sources wired
 
 | Source | Format | Adapter | Status |
 |---|---|---|---|
-| mnfst/awesome-free-llm-apis | JSON (`data.json`) | `scripts/adapters/mnfst.mjs` | ✅ **Live, prioritas #1** (non-openrouter) |
-| freellm.net | HTML table (server-rendered) | `scripts/adapters/freellm.mjs` | ✅ Live |
-| cheahjs/free-llm-api-resources | README markdown | `scripts/adapters/cheahjs.mjs` | ✅ Live |
-| openrouter.ai/api/v1/models | JSON live API (no auth) | `scripts/adapters/openrouter.mjs` | ✅ Live (authoritative buat provider `openrouter`, filter `:free`) |
+| mnfst/awesome-free-llm-apis | JSON (`data.json`) | `scripts/adapters/mnfst.mjs` | ✅ **Live, prioritas #1** (non-openrouter) — shape-validated |
+| freellm.net | HTML table (server-rendered) | `scripts/adapters/freellm.mjs` | ✅ Live — kolom di-map by NAMA header (post-INCIDENT 2026-07-25 hardening), throw kalau kolom "Context" ilang |
+| cheahjs/free-llm-api-resources | README markdown | `scripts/adapters/cheahjs.mjs` | ✅ Live — kolom di-map by NAMA header, throw kalau kolom nama model ilang |
+| openrouter.ai/api/v1/models | JSON live API (no auth) | `scripts/adapters/openrouter.mjs` | ✅ Live (authoritative buat provider `openrouter`, filter `:free`) — shape-validated, no baseline di source-sanity jadi ini lapisan pelindung utamanya |
 | models.dev | JSON (`api.json`) — enrichment | `scripts/lib/enrich.mjs` | ✅ Live (gap-fill context/maxOutput post-merge, exact match doang) |
 | amardeeplakshkar/awesome-free-llm-apis | GitHub MD | — | ⏸️ Belum di-ingest |
 | aicredits.dev | llms.txt | — | ⏸️ Belum di-ingest (scope luas) |
+
+Guard tambahan (bukan sumber, lapisan validasi): `scripts/lib/shape-guard.mjs` (bentuk nilai, per-source + merged) + `scripts/lib/diff-guard.mjs` Rule 6 (field-value churn antar run). Detail incident + bukti di §"Pipeline guards" di atas.
 
 **LLM fallback:** `scripts/lib/llm-fallback.mjs` (Claude Haiku) re-parse freellm/cheahjs kalau regex drift di bawah sanity floor — aktif kalau `ANTHROPIC_API_KEY` di-set (repo secret di CI, raw API) ATAU `CLAUDE_CODE_OAUTH_TOKEN` di-set (headless Claude Code, subscription Max). Hasil tetap lewat semua guard.
 
@@ -91,10 +116,11 @@ Light / paper / neutral ala getaiperks.com. bg `#f1f0e8`, card putih, text `#111
 | 5 (opt) | Tambah sumber (amardeeplakshkar/aicredits) | ⏸️ v2 maybe |
 | 6a | PASANG — `/pilih`, `/fallback`, panel setup per-provider | ✅ Done (2026-07-25) |
 | 6b | JAGA — RSS `/feed.xml` dari diff nightly | ✅ Done (2026-07-25) |
-| 6c | Distribusi — `/api/providers`, `/api/models`, CLI + MCP zero-dep | ✅ Done (2026-07-25), belum publish npm |
+| 6c | Distribusi — `/api/providers`, `/api/models`, CLI + MCP zero-dep | ✅ Done, **npm publish 0.1.1 SELESAI** (2026-07-25 — CLI `--refresh`/data-age fix landed lalu di-publish) |
 | 6d | Ekspansi — `/modal-gratis`, 54 offer terkurasi | ✅ Done (2026-07-25) |
 | 6e | JAGA — status ping 8–10 provider | ⏸️ Blocked: butuh 8–10 API key atas nama Ray |
 | 6f | JAGA — Telegram channel + email digest | ⏸️ Di-skip atas permintaan Ray |
+| — | Pipeline hardening — shape-guard + diff-guard Rule 6 | ✅ Done (2026-07-25), lihat §Pipeline guards |
 
 Legend: ✅ Complete · 🚧 In dev · ⏸️ Pending · 🗄️ N/A
 
@@ -107,7 +133,7 @@ Legend: ✅ Complete · 🚧 In dev · ⏸️ Pending · 🗄️ N/A
 
 ## Next Up
 
-**Butuh Ray:** (1) `npm login` biar `packages/tokengratis` bisa di-publish — sebelum itu MCP/CLI cuma jalan dari repo; (2) 8–10 API key provider kalau mau Fase 6e (status ping); (3) bikin bot Telegram (~5 menit) kalau mau Fase 6f dibuka lagi.
+**Butuh Ray:** (1) 8–10 API key provider kalau mau Fase 6e (status ping); (2) bikin bot Telegram (~5 menit) kalau mau Fase 6f dibuka lagi; (3) **distribusi** — proyek belum di-post ke kanal komunitas manapun (Dicoding, YouTube dev ID, grup FB PHP/Java Indonesia, Telegram dev ID) — `docs/PRODUCT-ROADMAP.md` §7 bilang ini nentuin traffic lebih dari 10 halaman SEO baru, murni butuh Ray posting, bukan kode. *(npm publish `packages/tokengratis` v0.1.1 — SELESAI 2026-07-25, dihapus dari daftar ini.)*
 
 **Backlog:** Tambah sumber amardeeplakshkar/aicredits.dev (butuh parser). Analytics: matiin Vercel analytics setelah angka Cloudflare stabil (banding 2-3 minggu). Refresh `data/offers.json` mingguan.
 
