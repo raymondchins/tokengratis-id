@@ -18,6 +18,64 @@ function modelCount(p) {
   return p.models?.length ?? p.modelCount ?? 0;
 }
 
+// ── Rule 6 (field-value churn) constants + helpers ─────────────────────────
+// Field list SENGAJA fixed, bukan "semua key provider/model" — ini subset
+// yang (a) beneran bisa beda antar sumber dan (b) sengaja NGECUALIIN field
+// yang di-restamp tiap run (syncedAt, sourceUpdatedAt, sources[]) atau
+// derived (modelCount, modalities[] summary). List eksplisit → field
+// provenance/timestamp baru ga bakal ke-flag "berubah" secara ga sengaja.
+const MODEL_CHURN_FIELDS = ["context", "maxOutput", "modality", "rateLimit"];
+const PROVIDER_CHURN_FIELDS = ["description", "baseUrl", "freeLimit", "maxContext"];
+
+/**
+ * Potong string panjang biar pesan guard tetep ringkas dibaca.
+ * @param {*} v
+ * @param {number} [n=48]
+ * @returns {string}
+ */
+function short(v, n = 48) {
+  const s = String(v);
+  return s.length > n ? `${s.slice(0, n)}…` : s;
+}
+
+/**
+ * Hitung churn nilai satu field lintas sekumpulan pasangan (prev, next) yang
+ * SUDAH match identity (provider slug sama, dan buat field model-level, model
+ * id sama juga — matching identity dilakukan di caller SEBELUM manggil ini).
+ *
+ * Anti-halusinasi buat guard ini sendiri:
+ *   - null/""/undefined → value  : DIKECUALIIN (enrich.mjs ngisi gap yang
+ *     sebelumnya null — itu normal, bukan mutasi).
+ *   - value → null/""/undefined  : DIKECUALIIN dari numerator "changed" (field
+ *     jadi absen itu beda kelas masalah dari "value ketuker jadi value lain";
+ *     kalau itu yang mau ditangkep, itu ranah rule count/shrink lain, bukan
+ *     rule ini — biar precision tinggi, ga false-positive tiap kali sumber
+ *     legitimately berhenti nyediain suatu field).
+ *   - value → VALUE LAIN         : ini doang yang dihitung "changed".
+ *
+ * @param {Array<{label: string, prevVal: *, nextVal: *}>} entries
+ * @returns {{eligible: number, changed: number, ratioPct: number, examples: Array<{label: string, from: *, to: *}>}}
+ */
+function computeChurn(entries) {
+  let eligible = 0;
+  let changed = 0;
+  const examples = [];
+  for (const { label, prevVal, nextVal } of entries) {
+    if (prevVal === undefined || prevVal === null || prevVal === "") continue;
+    eligible++;
+    if (nextVal !== undefined && nextVal !== null && nextVal !== "" && nextVal !== prevVal) {
+      changed++;
+      if (examples.length < 3) examples.push({ label, from: prevVal, to: nextVal });
+    }
+  }
+  return {
+    eligible,
+    changed,
+    ratioPct: eligible > 0 ? (changed / eligible) * 100 : 0,
+    examples,
+  };
+}
+
 /**
  * Detect silent data loss between two pipeline runs.
  *
@@ -36,6 +94,24 @@ function modelCount(p) {
  *                                               total model count within maxTotalDropPct) — normal upstream
  *                                               churn (a provider renamed/removed, others added). Above this,
  *                                               or alongside any net shrink, disappearance stays a hard error.
+ * @param {number}  [opts.maxFieldChurnPct=35]        Error if a field's VALUE-mutation ratio — across rows
+ *                                                     matched by identity (same provider slug, and for
+ *                                                     model-level fields same model id, present in BOTH prev
+ *                                                     and next) — exceeds this %. Catches mass value
+ *                                                     corruption (e.g. an upstream column-shift) that Rules
+ *                                                     2/3/5 are blind to because ids and counts never move,
+ *                                                     only the values inside do (see INCIDENT 2026-07-25 in
+ *                                                     scripts/adapters/freellm.mjs).
+ * @param {number}  [opts.warnFieldChurnPct=15]       Warn (don't block) when a field's mutation ratio is
+ *                                                     above this % but at/below maxFieldChurnPct.
+ * @param {number}  [opts.minFieldSample=20]          Minimum eligible (prev-non-null) sample size before a
+ *                                                     MODEL-level field churn check (context/maxOutput/
+ *                                                     modality/rateLimit) runs at all — small samples are
+ *                                                     noise, not signal; skip rather than false-alarm.
+ * @param {number}  [opts.minProviderFieldSample=10]  Same idea as minFieldSample but for PROVIDER-level
+ *                                                     fields (description/baseUrl/freeLimit/maxContext) —
+ *                                                     lower floor because provider catalogs are naturally
+ *                                                     much smaller than model catalogs.
  *
  * @returns {{
  *   ok: boolean,
@@ -49,7 +125,11 @@ function modelCount(p) {
  *     totalDropPct: number|null,
  *     disappeared: string[],
  *     shrunk: Array<{slug: string, prev: number, next: number, dropPct: number}>,
- *     churned: Array<{slug: string, overlapPct: number, prevIds: number, nextIds: number}>
+ *     churned: Array<{slug: string, overlapPct: number, prevIds: number, nextIds: number}>,
+ *     fieldChurn: {
+ *       model: Record<"context"|"maxOutput"|"modality"|"rateLimit", {eligible: number, changed: number, ratioPct: number, examples: Array<{label: string, from: *, to: *}>}>,
+ *       provider: Record<"description"|"baseUrl"|"freeLimit"|"maxContext", {eligible: number, changed: number, ratioPct: number, examples: Array<{label: string, from: *, to: *}>}>
+ *     }
  *   }
  * }}
  */
@@ -60,6 +140,10 @@ export function snapshotDiff(prev, next, opts = {}) {
     maxIdChurnPct = 50,
     minProviders = null,
     maxDisappeared = 1,
+    maxFieldChurnPct = 35,
+    warnFieldChurnPct = 15,
+    minFieldSample = 20,
+    minProviderFieldSample = 10,
   } = opts;
 
   const errors = [];
@@ -233,6 +317,104 @@ export function snapshotDiff(prev, next, opts = {}) {
     }
   }
 
+  // ── Rule 6: field-value churn across matched rows (mass mutation) ─────────
+  // Rules 1-5 di atas semuanya berbasis ADA/GA-ADA (provider ada/hilang, count
+  // naik/turun, id overlap) — buta total kalau row-nya SAMA PERSIS (provider
+  // slug sama, model id sama, jumlah sama) tapi ISI-nya diam-diam berubah
+  // semua. Itu persis INCIDENT 2026-07-25 (header comment
+  // scripts/adapters/freellm.mjs): freellm.net nyisipin kolom "Score", adapter
+  // masih pakai index kolom lama, `context` keisi angka skor buat 216/398
+  // model — provider sama, id sama, count sama, cuma NILAI yang ketuker.
+  // snapshotDiff lolos total waktu itu karena semua rule di atas cuma liat
+  // identitas/jumlah, ga pernah liat ISI.
+  //
+  // Guard ini nangkep pola itu: match row by IDENTITY dulu (provider slug utk
+  // level provider, +model id utk level model) — provider/model yang hilang
+  // atau ganti id udah ditangkep Rule 1/3/5, jadi di sini cuma row yang
+  // BENERAN "row yang sama" di prev & next yang dibandingin isinya. Buat
+  // tiap field, hitung berapa persen dari row match yang nilainya berubah
+  // jadi value lain (lihat computeChurn buat kenapa null↔value dikecualiin —
+  // itu enrich.mjs gap-fill / field jadi absen, bukan mutasi).
+  //
+  // syncedAt / sourceUpdatedAt / sources[] TIDAK pernah masuk MODEL_CHURN_FIELDS
+  // atau PROVIDER_CHURN_FIELDS (di-restamp tiap run by design) — jadi ga perlu
+  // di-exclude manual, mereka emang ga pernah dicek di sini.
+  const prevProviderBySlug = new Map(prev.map((p) => [p.slug, p]));
+  const nextProviderBySlug = new Map(next.map((p) => [p.slug, p]));
+
+  const modelFieldEntries = Object.fromEntries(MODEL_CHURN_FIELDS.map((f) => [f, []]));
+  for (const [slug, prevProvider] of prevProviderBySlug.entries()) {
+    const nextProvider = nextProviderBySlug.get(slug);
+    if (!nextProvider) continue; // provider hilang — udah ranah Rule 1
+    const nextModelsInner = new Map((nextProvider.models ?? []).map((m) => [m.id, m]));
+    for (const prevModel of prevProvider.models ?? []) {
+      if (!prevModel?.id) continue;
+      const nextModel = nextModelsInner.get(prevModel.id);
+      if (!nextModel) continue; // id churned away — udah ranah Rule 5
+      for (const f of MODEL_CHURN_FIELDS) {
+        modelFieldEntries[f].push({
+          label: `${slug}/${prevModel.id}`,
+          prevVal: prevModel[f],
+          nextVal: nextModel[f],
+        });
+      }
+    }
+  }
+
+  const providerFieldEntries = Object.fromEntries(PROVIDER_CHURN_FIELDS.map((f) => [f, []]));
+  for (const [slug, prevProvider] of prevProviderBySlug.entries()) {
+    const nextProvider = nextProviderBySlug.get(slug);
+    if (!nextProvider) continue; // udah ranah Rule 1
+    for (const f of PROVIDER_CHURN_FIELDS) {
+      providerFieldEntries[f].push({
+        label: slug,
+        prevVal: prevProvider[f],
+        nextVal: nextProvider[f],
+      });
+    }
+  }
+
+  const modelFieldChurn = {};
+  for (const f of MODEL_CHURN_FIELDS) modelFieldChurn[f] = computeChurn(modelFieldEntries[f]);
+
+  const providerFieldChurn = {};
+  for (const f of PROVIDER_CHURN_FIELDS) providerFieldChurn[f] = computeChurn(providerFieldEntries[f]);
+
+  // minSample dulu (sample kekecilan = noise, skip diem-diem), baru evaluasi
+  // ambang warning/error. Cuma push SATU pesan per field (error kalau di atas
+  // maxFieldChurnPct, else warning kalau di atas warnFieldChurnPct) — bukan dua.
+  function reportFieldChurn(scopeLabel, field, stat, minSample) {
+    if (stat.eligible < minSample) return;
+    if (stat.ratioPct <= warnFieldChurnPct) return;
+
+    const exStr = stat.examples
+      .map((e) => `${e.label}: "${short(e.from)}"→"${short(e.to)}"`)
+      .join(", ");
+    const base =
+      `field "${field}" (level ${scopeLabel}) berubah nilai di ${stat.changed}/${stat.eligible} ` +
+      `entri yang match (${stat.ratioPct.toFixed(1)}%). Contoh: ${exStr}.`;
+
+    if (stat.ratioPct > maxFieldChurnPct) {
+      errors.push(
+        `${base} Ambang error ${maxFieldChurnPct}% — pola ini khas upstream ganti struktur ` +
+          `(kolom kesisip/kegeser, parser masih pakai index/kunci lama), bukan update data wajar. ` +
+          `Kalau perubahan ini genuine, re-run workflow dengan ALLOW_DATA_SHRINK=1 buat override.`,
+      );
+    } else {
+      warnings.push(
+        `${base} Ambang warning ${warnFieldChurnPct}% (di bawah ambang error ${maxFieldChurnPct}%) ` +
+          `— lolos, tapi worth dicek manual.`,
+      );
+    }
+  }
+
+  for (const f of MODEL_CHURN_FIELDS) {
+    reportFieldChurn("model", f, modelFieldChurn[f], minFieldSample);
+  }
+  for (const f of PROVIDER_CHURN_FIELDS) {
+    reportFieldChurn("provider", f, providerFieldChurn[f], minProviderFieldSample);
+  }
+
   return {
     ok: errors.length === 0,
     errors,
@@ -246,6 +428,7 @@ export function snapshotDiff(prev, next, opts = {}) {
       disappeared,
       shrunk,
       churned,
+      fieldChurn: { model: modelFieldChurn, provider: providerFieldChurn },
     },
   };
 }
@@ -276,6 +459,28 @@ if (process.argv.includes("--selftest")) {
       modelCount: models.length,
       syncedAt: new Date().toISOString(),
       sourceUpdatedAt: null,
+    });
+
+    // Rule 6 (field-value churn) tests need real field VALUES, not the
+    // hardcoded nulls makeProvider() above uses (it's built for count/id
+    // tests). models: [{id, context?, maxOutput?, modality?, rateLimit?}].
+    // providerFields: overrides merged onto the provider object (description/
+    // baseUrl/freeLimit/maxContext).
+    const makeProviderFields = (slug, models, providerFields = {}) => ({
+      slug,
+      name: slug,
+      models: models.map((m) => ({
+        id: m.id,
+        name: m.id,
+        context: m.context ?? null,
+        maxOutput: m.maxOutput ?? null,
+        modality: m.modality ?? null,
+        rateLimit: m.rateLimit ?? null,
+      })),
+      modelCount: models.length,
+      syncedAt: new Date().toISOString(),
+      sourceUpdatedAt: null,
+      ...providerFields,
     });
 
     console.log("\nRunning diff-guard self-tests...\n");
@@ -484,6 +689,127 @@ if (process.argv.includes("--selftest")) {
       assert.ok(
         result.stats.churned.some((c) => c.slug === "nvidia-nim"),
         "churned array should still record 'nvidia-nim'",
+      );
+    });
+
+    // ── (k) INCIDENT repro — mass value mutation, same ids/count → ok=false ──
+    // Mirrors INCIDENT 2026-07-25 (scripts/adapters/freellm.mjs): same provider,
+    // same model ids, same count — only `context` VALUES silently swapped for
+    // score-like numbers. Rules 1-5 all pass this (nothing about identity or
+    // count moved); this is exactly the gap Rule 6 exists to close.
+    run("(k) INCIDENT repro — mass context mutation on matched models → ok=false", () => {
+      const N = 30; // > default minFieldSample (20)
+      const models = Array.from({ length: N }, (_, i) => ({ id: `m${i}`, context: "256K" }));
+      const prev = [makeProviderFields("freellm-victim", models)];
+      // Same ids, same count — context replaced by "score"-shaped numbers.
+      const corrupted = Array.from({ length: N }, (_, i) => ({ id: `m${i}`, context: String(40 + i) }));
+      const next = [makeProviderFields("freellm-victim", corrupted)];
+      const result = snapshotDiff(prev, next);
+      assert.strictEqual(result.ok, false, `ok should be false, errors: ${result.errors.join("; ")}`);
+      assert.ok(
+        result.errors.some((e) => e.includes('field "context"') && e.includes("ALLOW_DATA_SHRINK")),
+        `expected field-churn error mentioning context + override, got: ${result.errors.join("; ")}`,
+      );
+      assert.strictEqual(
+        result.stats.fieldChurn.model.context.changed,
+        N,
+        "all N models should be counted as changed",
+      );
+    });
+
+    // ── (l) False positive — only syncedAt differs, values identical → green ─
+    run("(l) false-positive — only syncedAt differs (values identical) → stays green", () => {
+      const N = 25;
+      const models = Array.from({ length: N }, (_, i) => ({
+        id: `m${i}`,
+        context: "128K",
+        maxOutput: "4K",
+        modality: "text",
+        rateLimit: "30 RPM",
+      }));
+      // Two independent builds from the same field values — each call re-stamps
+      // its own syncedAt (see makeProviderFields), so only the timestamp moves.
+      const prev = [makeProviderFields("stable-provider", models)];
+      const next = [makeProviderFields("stable-provider", models)];
+      const result = snapshotDiff(prev, next);
+      assert.strictEqual(result.ok, true, `ok should be true, errors: ${result.errors.join("; ")}`);
+      assert.strictEqual(result.stats.fieldChurn.model.context.changed, 0, "no context churn expected");
+      assert.ok(
+        !result.warnings.some((w) => w.includes('field "context"')),
+        "no field-churn warning expected when values are identical",
+      );
+    });
+
+    // ── (m) False positive — enrichment null→value gap-fill → green ─────────
+    // enrich.mjs fills previously-null context/maxOutput from models.dev after
+    // every merge. That's normal gap-filling, not corruption — must not trip.
+    run("(m) false-positive — enrichment null→value gap-fill → stays green", () => {
+      const N = 25;
+      const bare = Array.from({ length: N }, (_, i) => ({ id: `m${i}` })); // context null
+      const prev = [makeProviderFields("gappy-provider", bare)];
+      const filled = Array.from({ length: N }, (_, i) => ({ id: `m${i}`, context: "128K" }));
+      const next = [makeProviderFields("gappy-provider", filled)];
+      const result = snapshotDiff(prev, next);
+      assert.strictEqual(result.ok, true, `ok should be true, errors: ${result.errors.join("; ")}`);
+      assert.strictEqual(
+        result.stats.fieldChurn.model.context.eligible,
+        0,
+        "null prev values must not count as eligible",
+      );
+      assert.strictEqual(result.stats.fieldChurn.model.context.changed, 0, "null→value must not count as changed");
+    });
+
+    // ── (n) False positive — a few genuinely-changed models → green ─────────
+    run("(n) false-positive — a few genuinely-changed models (8%, under warn floor) → stays green", () => {
+      const N = 25;
+      const models = Array.from({ length: N }, (_, i) => ({ id: `m${i}`, context: "128K" }));
+      const prev = [makeProviderFields("mostly-stable", models)];
+      const nextModels = models.map((m, i) => (i < 2 ? { ...m, context: "64K" } : m)); // 2/25 = 8%
+      const next = [makeProviderFields("mostly-stable", nextModels)];
+      const result = snapshotDiff(prev, next);
+      assert.strictEqual(result.ok, true, `ok should be true, errors: ${result.errors.join("; ")}`);
+      assert.strictEqual(result.stats.fieldChurn.model.context.changed, 2, "exactly 2 genuine changes expected");
+      assert.ok(
+        !result.warnings.some((w) => w.includes('field "context"')),
+        "8% churn should be under the warn floor — silent",
+      );
+    });
+
+    // ── (o) Moderate churn (between warn and error floors) → warning only ───
+    run("(o) moderate churn (20%, between warn and error) → ok=true with warning", () => {
+      const N = 30;
+      const models = Array.from({ length: N }, (_, i) => ({ id: `m${i}`, context: "128K" }));
+      const prev = [makeProviderFields("wobbly-provider", models)];
+      const nextModels = models.map((m, i) => (i < 6 ? { ...m, context: "64K" } : m)); // 6/30 = 20%
+      const next = [makeProviderFields("wobbly-provider", nextModels)];
+      const result = snapshotDiff(prev, next);
+      assert.strictEqual(
+        result.ok,
+        true,
+        `ok should be true (warning tier doesn't block), errors: ${result.errors.join("; ")}`,
+      );
+      assert.ok(
+        result.warnings.some((w) => w.includes('field "context"') && w.includes("20.0%")),
+        `expected a moderate-churn warning, got: ${result.warnings.join("; ")}`,
+      );
+    });
+
+    // ── (p) Provider-level mass mutation (description) → ok=false ───────────
+    run("(p) provider-level mass description mutation → ok=false", () => {
+      const N = 12; // > default minProviderFieldSample (10)
+      const prev = Array.from({ length: N }, (_, i) =>
+        makeProviderFields(`prov-${i}`, [{ id: "m1", context: "128K" }], {
+          description: `Free tier untuk prov-${i}, tanpa CC.`,
+        }),
+      );
+      const next = prev.map((p, i) =>
+        makeProviderFields(p.slug, [{ id: "m1", context: "128K" }], { description: `SCRAPED-JUNK-${i}` }),
+      );
+      const result = snapshotDiff(prev, next);
+      assert.strictEqual(result.ok, false, `ok should be false, errors: ${result.errors.join("; ")}`);
+      assert.ok(
+        result.errors.some((e) => e.includes('field "description"') && e.includes("level provider")),
+        `expected provider-level description churn error, got: ${result.errors.join("; ")}`,
       );
     });
 

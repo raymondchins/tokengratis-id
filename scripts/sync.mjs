@@ -19,10 +19,33 @@
 // (scripts/lib/llm-fallback.mjs). Hasil LLM tetap lewat sanity floor + smoke +
 // diff guard. mnfst & openrouter (JSON bersih) ga butuh fallback.
 //
+// Shape guard (scripts/lib/shape-guard.mjs): sanity floor + diff guard di atas
+// CUMA ngukur KUANTITAS (jumlah row/kolom/churn) — INCIDENT 2026-07-25 (freellm
+// nyisipin kolom "Score", context keisi 81/45/40) lolos SEMUA guard itu karena
+// jumlah baris/kolom ga berubah, cuma ARTI kolom yang geser. checkShape() ngukur
+// BENTUK nilai tiap field, jalan di tiap output adapter (sebelum merge) DAN di
+// output merged final (sebelum tulis). Fatal → skip source (adapter) / abort
+// write (merged), persis kayak jalur skip/abort yang udah ada. Warn → selalu
+// ditampilin, ga pernah nge-block.
+//
+// Reporting: tiap run nulis data/sync-report.json (counts + issues per source +
+// apa yang di-skip) + append $GITHUB_STEP_SUMMARY kalau di CI. Workflow nightly
+// baca sync-report.json buat isi body issue GitHub pas run gagal — supaya bukan
+// cuma "cek log run", tapi source/rule/ratio/sample kelihatan langsung di email
+// notifikasi issue (repo owner ga perlu Telegram/email digest terpisah).
+//
 // Anti-halusinasi: tiap adapter cuma mindahin field yang EKSPLISIT ada di
 // sumbernya. Merge = gap-fill by priority (scripts/lib/merge.mjs). Ga nebak.
 
-import { writeFileSync, mkdirSync, readFileSync, existsSync, readdirSync, unlinkSync } from "node:fs";
+import {
+  writeFileSync,
+  mkdirSync,
+  readFileSync,
+  existsSync,
+  readdirSync,
+  unlinkSync,
+  appendFileSync,
+} from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -37,12 +60,20 @@ import { snapshotDiff } from "./lib/diff-guard.mjs";
 import { checkSourceFloor, updateBaselines } from "./lib/source-sanity.mjs";
 import { GENERIC_MODELS_PATTERN } from "./lib/normalize.mjs";
 import { pingIndexNow } from "./lib/indexnow.mjs";
+import { checkShape } from "./lib/shape-guard.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = join(__dirname, "..", "data", "providers.json");
 const LOGO_DIR = join(__dirname, "..", "public", "logos");
 const CHANGELOG_OUT = join(__dirname, "..", "data", "changelog.json");
+const REPORT_OUT = join(__dirname, "..", "data", "sync-report.json");
 const SITE_URL = "https://tokengratis.id";
+
+// Report run yang lagi jalan — di-set di awal main(), dibaca ulang oleh
+// top-level catch handler kalau ada exception yang GA lewat exit point yang
+// udah nge-handle report sendiri (lihat bawah file). Module-scope karena
+// catch handler di luar main().
+let currentReport = null;
 
 /** { providers, models } count buat satu ProviderPartial[]/Provider[] — dipakai
  * di 3 tempat (LLM fallback rescue, adapter accept loop, sanity floor check). */
@@ -51,6 +82,142 @@ function countOf(list) {
     providers: list.length,
     models: list.reduce((a, p) => a + (p.models?.length || 0), 0),
   };
+}
+
+/**
+ * Ringkas satu ShapeGuardResult (dari checkShape(), scripts/lib/shape-guard.mjs)
+ * jadi { hasFatal, fatal, warn }. Pure — no I/O, ga bergantung ke shape-guard.mjs
+ * selain BENTUK objectnya — jadi testable standalone pakai object literal
+ * sintetis (lihat catatan verifikasi di laporan agent / komentar bawah file).
+ *
+ * @param {{ok:boolean, issues:Array<Object>, stats:Object}|null|undefined} result
+ * @returns {{ hasFatal: boolean, fatal: Array<Object>, warn: Array<Object> }}
+ */
+export function splitShapeIssues(result) {
+  const issues = Array.isArray(result?.issues) ? result.issues : [];
+  const fatal = issues.filter((i) => i.severity === "fatal");
+  const warn = issues.filter((i) => i.severity === "warn");
+  return { hasFatal: fatal.length > 0, fatal, warn };
+}
+
+/** Print warn-level shape issues — selalu ditampilin, ga pernah nge-block (bukan gate). */
+function logShapeWarnings(label, warnIssues) {
+  for (const w of warnIssues) {
+    console.warn(`  ⚠ shape-guard [${label}] ${w.rule}: ${w.message}`);
+  }
+}
+
+/** Print fatal-level shape issues — dipanggil pas mau skip source / abort write. */
+function logShapeFatal(label, fatalIssues) {
+  for (const f of fatalIssues) {
+    console.error(`  ✗ shape-guard [${label}] ${f.rule}: ${f.message}`);
+  }
+}
+
+/**
+ * Report run ini — accumulate sepanjang main(), ditulis (finish()) di TIAP exit
+ * point (sukses ATAU gagal). Konsumen:
+ *   1. data/sync-report.json — historical record, ke-commit bareng providers.json
+ *      pas run sukses (git add data/ di workflow udah nyakup file ini).
+ *   2. Step "Buka/update issue" di workflow nightly — baca file ini dari disk
+ *      DALAM job yang sama (belum tentu ke-commit kalau run gagal sebelum commit
+ *      step) buat isi body issue GitHub dengan detail source/rule/ratio/sample,
+ *      bukan cuma "cek log run".
+ *   3. $GITHUB_STEP_SUMMARY — ringkasan Markdown di halaman run, human ga perlu
+ *      buka raw log buat liat apa yang kejadian.
+ */
+export function createSyncReport() {
+  return {
+    generatedAt: new Date().toISOString(),
+    outcome: "running",
+    sources: {}, // { [label]: { status, reason?, providers?, models?, shapeIssues?, detail? } }
+    skipped: [], // label sumber yang di-skip run ini (alasan apapun)
+    merged: null, // { providers, models, shapeIssues }
+    smokeTest: null, // { errors, warnings }
+    diffGuard: null, // { ok, errors, warnings, stats, bypassed? }
+    fatalIssues: [], // flattened ShapeIssue[] fatal (per-source + merged) — buat issue body
+    warnIssues: [], // flattened ShapeIssue[] warn
+  };
+}
+
+/**
+ * Tulis data/sync-report.json. Best-effort — never throws (report gagal ditulis
+ * ga boleh jatohin pipeline).
+ * @param {ReturnType<typeof createSyncReport>} report
+ */
+export function writeSyncReport(report) {
+  try {
+    mkdirSync(join(__dirname, "..", "data"), { recursive: true });
+    writeFileSync(REPORT_OUT, JSON.stringify(report, null, 2) + "\n");
+  } catch (e) {
+    console.warn(`  ⚠ sync-report.json gagal ditulis: ${e.message}`);
+  }
+}
+
+/**
+ * Append ringkasan Markdown ke $GITHUB_STEP_SUMMARY (cuma ke-set di GitHub
+ * Actions — no-op diam-diam di lokal, ga perlu setup apa-apa). Best-effort —
+ * never throws.
+ * @param {ReturnType<typeof createSyncReport>} report
+ */
+export function appendJobSummary(report) {
+  const path = process.env.GITHUB_STEP_SUMMARY;
+  if (!path) return;
+  try {
+    const ok = report.outcome.startsWith("ok");
+    const lines = [`## Sync report — ${ok ? "✓" : "✗"} ${report.outcome}`, ""];
+
+    lines.push("| Source | Status | Providers | Models |", "|---|---|---|---|");
+    for (const [label, s] of Object.entries(report.sources)) {
+      lines.push(
+        `| ${label} | ${s.status}${s.reason ? ` (${s.reason})` : ""} | ${s.providers ?? "—"} | ${s.models ?? "—"} |`,
+      );
+    }
+
+    if (report.merged) {
+      lines.push("", `**Merged:** ${report.merged.providers} providers, ${report.merged.models} models`);
+    }
+
+    if (report.fatalIssues.length) {
+      lines.push("", "### Fatal shape issues", "");
+      for (const f of report.fatalIssues) {
+        lines.push(
+          `- \`${f.source}\` · rule \`${f.rule}\` · field \`${f.field}\` — ${f.count}/${f.total} ` +
+            `(${((f.ratio ?? 0) * 100).toFixed(1)}%): ${f.message}`,
+        );
+        if (f.samples?.length) lines.push(`  - samples: ${JSON.stringify(f.samples)}`);
+      }
+    }
+
+    if (report.warnIssues.length) {
+      lines.push("", `### Warnings (${report.warnIssues.length})`, "");
+      for (const w of report.warnIssues.slice(0, 20)) {
+        lines.push(`- \`${w.source}\` · ${w.rule}: ${w.message}`);
+      }
+    }
+
+    if (report.smokeTest?.errors?.length) {
+      lines.push("", "### Smoke test errors", "", ...report.smokeTest.errors.map((e) => `- ${e}`));
+    }
+
+    if (report.diffGuard && !report.diffGuard.ok) {
+      lines.push("", "### Snapshot guard errors", "", ...report.diffGuard.errors.map((e) => `- ${e}`));
+    }
+
+    if (report.crash) {
+      lines.push("", "### Crash", "", `\`${report.crash.message}\``);
+    }
+
+    appendFileSync(path, lines.join("\n") + "\n");
+  } catch (e) {
+    console.warn(`  ⚠ job summary gagal ditulis: ${e.message}`);
+  }
+}
+
+/** Tulis report JSON + job summary sekaligus — dipanggil di tiap exit point. */
+function finish(report) {
+  writeSyncReport(report);
+  appendJobSummary(report);
 }
 
 // Tiap adapter: { label, fn }. Adapter yang gagal fetch ga boleh ngejatuhin
@@ -169,7 +336,7 @@ async function downloadLogos(providers) {
 }
 
 /** Smoke test (PRD): tiap entry wajib punya source+syncedAt, ga ada sentinel nyangkut. */
-function smokeTest(providers) {
+function smokeTest(providers, report) {
   const errs = [];
   const warns = [];
 
@@ -220,11 +387,17 @@ function smokeTest(providers) {
     }
   }
 
+  if (report) report.smokeTest = { errors: errs, warnings: warns };
+
   if (warns.length) {
     console.warn("⚠ Smoke test warnings:\n" + warns.join("\n"));
   }
   if (errs.length) {
     console.error("✗ Smoke test FAILED:\n" + errs.join("\n"));
+    if (report) {
+      report.outcome = "aborted-smoke-test";
+      finish(report);
+    }
     process.exit(1);
   }
   console.log("✓ Smoke test passed");
@@ -309,6 +482,8 @@ function updateChangelog(diff) {
 
 async function main() {
   const mergeRunAt = new Date().toISOString();
+  const report = createSyncReport();
+  currentReport = report;
 
   // 0. Baca snapshot lama (data/providers.json yang udah ke-commit) buat
   //    snapshot-diff guard di langkah 4. First run / file korup → [] (guard skip).
@@ -372,13 +547,49 @@ async function main() {
       const floor = checkSourceFloor(label, provCount, modelCount);
       if (!floor.ok) {
         console.warn(`  ⚠ ${label} di-SKIP (sanity floor): ${floor.message}`);
+        report.sources[label] = {
+          status: "skipped",
+          reason: "sanity-floor",
+          providers: provCount,
+          models: modelCount,
+          detail: floor.message,
+        };
+        report.skipped.push(label);
         if (SOURCE_REGISTRY[label] && hasLlmKey) fallbackCandidates.push(label);
         return;
       }
+
+      // Shape guard: sanity floor di atas CUMA liat COUNT. INCIDENT 2026-07-25
+      // (freellm nyisipin kolom "Score") lolos floor karena jumlah baris/kolom
+      // TETAP sama — cuma ARTI kolom yang geser. checkShape() liat BENTUK nilai
+      // tiap field (lihat scripts/adapters/freellm.mjs header buat kronologi).
+      const shape = checkShape(res.value, { source: label });
+      const { hasFatal, fatal, warn } = splitShapeIssues(shape);
+      logShapeWarnings(label, warn);
+      report.warnIssues.push(...warn);
+      if (hasFatal) {
+        logShapeFatal(label, fatal);
+        console.warn(`  ⚠ ${label} di-SKIP (shape guard): ${fatal.map((f) => f.rule).join(", ")}`);
+        report.fatalIssues.push(...fatal.map((f) => ({ ...f, source: f.source || label })));
+        report.sources[label] = {
+          status: "skipped",
+          reason: "shape-fatal",
+          providers: provCount,
+          models: modelCount,
+          shapeIssues: fatal,
+        };
+        report.skipped.push(label);
+        if (SOURCE_REGISTRY[label] && hasLlmKey) fallbackCandidates.push(label);
+        return;
+      }
+
       accept(label, res.value, provCount, modelCount);
+      report.sources[label] = { status: "ok", providers: provCount, models: modelCount, shapeIssues: warn };
     } else {
       const reason = res.status === "rejected" ? res.reason : "bukan array";
       console.warn(`  ⚠ ${label} di-SKIP: ${reason?.message || reason}`);
+      report.sources[label] = { status: "skipped", reason: "fetch-error", detail: reason?.message || String(reason) };
+      report.skipped.push(label);
       if (SOURCE_REGISTRY[label] && hasLlmKey) fallbackCandidates.push(label);
     }
   });
@@ -389,13 +600,43 @@ async function main() {
   //     waktu ngumpulin fallbackCandidates).
   for (const label of fallbackCandidates) {
     const rescued = await tryLlmFallback(label);
-    if (rescued) {
-      const { providers: provCount, models: modelCount } = countOf(rescued);
-      accept(label, rescued, provCount, modelCount);
+    if (!rescued) continue; // tryLlmFallback udah warn — report.sources[label] tetep "skipped"
+
+    const { providers: provCount, models: modelCount } = countOf(rescued);
+
+    // Shape guard jalan lagi di hasil LLM juga — re-parse via LLM ga otomatis
+    // imun dari salah baca struktur (prompt bisa aja salah paham layout baru).
+    const shape = checkShape(rescued, { source: label });
+    const { hasFatal, fatal, warn } = splitShapeIssues(shape);
+    logShapeWarnings(`${label} (llm fallback)`, warn);
+    report.warnIssues.push(...warn);
+    if (hasFatal) {
+      logShapeFatal(`${label} (llm fallback)`, fatal);
+      console.warn(`  ⚠ ${label} (llm fallback) di-SKIP (shape guard): ${fatal.map((f) => f.rule).join(", ")}`);
+      report.fatalIssues.push(...fatal.map((f) => ({ ...f, source: f.source || label })));
+      report.sources[label] = {
+        status: "skipped",
+        reason: "shape-fatal-llm-fallback",
+        providers: provCount,
+        models: modelCount,
+        shapeIssues: fatal,
+      };
+      continue;
     }
+
+    accept(label, rescued, provCount, modelCount);
+    report.sources[label] = {
+      status: "ok",
+      reason: "llm-fallback-rescued",
+      providers: provCount,
+      models: modelCount,
+      shapeIssues: warn,
+    };
+    report.skipped = report.skipped.filter((l) => l !== label);
   }
 
   if (partialGroups.length === 0) {
+    report.outcome = "aborted-all-sources-failed";
     throw new Error("Semua sumber gagal — ga ada data buat ditulis.");
   }
 
@@ -440,27 +681,59 @@ async function main() {
 
   // 3. Logo (favicon self-host) + smoke test.
   await downloadLogos(providers);
-  smokeTest(providers);
+  smokeTest(providers, report);
 
-  // 3b. Snapshot-diff guard: bandingin vs data lama. Provider hilang / total
+  // 3b. Shape guard pada output MERGED final — kali ini di data yang beneran
+  //     mau ditulis ke providers.json. Ini axis yang sanity floor + diff guard
+  //     (keduanya count-based) GA BISA nangkep: INCIDENT 2026-07-25 (kolom
+  //     "Score" freellm kebaca context) lolos count-based guard karena jumlah
+  //     baris/kolom TETAP sama. Fatal di sini → ABORT write, last-known-good
+  //     tetep live (persis semantik diff-guard di bawah).
+  const totalModelsMerged = providers.reduce((a, p) => a + p.modelCount, 0);
+  const mergedShape = checkShape(providers, { source: "merged" });
+  const { hasFatal: mergedHasFatal, fatal: mergedFatal, warn: mergedWarn } = splitShapeIssues(mergedShape);
+  logShapeWarnings("merged", mergedWarn);
+  report.warnIssues.push(...mergedWarn);
+  report.merged = {
+    providers: providers.length,
+    models: totalModelsMerged,
+    shapeIssues: [...mergedFatal, ...mergedWarn],
+  };
+  if (mergedHasFatal) {
+    logShapeFatal("merged", mergedFatal);
+    report.fatalIssues.push(...mergedFatal.map((f) => ({ ...f, source: f.source || "merged" })));
+    report.outcome = "aborted-shape-fatal-merged";
+    finish(report);
+    console.error(
+      "✗ Shape guard FAILED pada output merged — kemungkinan korupsi kolom/parse " +
+        "(lihat INCIDENT scripts/adapters/freellm.mjs). Last-known-good tetep live, write di-abort.",
+    );
+    process.exit(1);
+  }
+
+  // 3c. Snapshot-diff guard: bandingin vs data lama. Provider hilang / total
   //     model anjlok / 1 provider nyusut drastis → FAIL → push step di CI ga
   //     jalan → last-known-good tetep live. ALLOW_DATA_SHRINK=1 buat override
   //     (mis. sumber emang sengaja ngebuang provider).
   const diff = snapshotDiff(prevProviders, providers, { minProviders: prevProviders.length ? Math.floor(prevProviders.length * 0.8) : null });
   if (diff.warnings.length)
     console.warn("⚠ Snapshot guard:\n" + diff.warnings.join("\n"));
+  report.diffGuard = { ok: diff.ok, errors: diff.errors, warnings: diff.warnings, stats: diff.stats };
   if (!diff.ok) {
     if (process.env.ALLOW_DATA_SHRINK === "1") {
       console.warn(
         "⚠ Snapshot guard tripped, ALLOW_DATA_SHRINK=1 → bypass:\n" +
           diff.errors.join("\n"),
       );
+      report.diffGuard.bypassed = true;
     } else {
       console.error(
         "✗ Snapshot guard FAILED (data shrink/disappear). Last-known-good tetep live. Set ALLOW_DATA_SHRINK=1 buat force.\n" +
           diff.errors.join("\n"),
       );
       console.error("stats: " + JSON.stringify(diff.stats));
+      report.outcome = "aborted-diff-guard";
+      finish(report);
       process.exit(1);
     }
   }
@@ -531,9 +804,39 @@ async function main() {
   } catch (e) {
     console.warn(`  ⚠ IndexNow ping skipped: ${e.message}`);
   }
+
+  // 8. Report run ini — sukses ATAU sukses-dengan-warning (source di-skip /
+  //    diff-guard bypass / shape-guard warn). Selalu ditulis biar sync-report.json
+  //    + job summary ada bahkan pas run mulus (baseline buat compare run
+  //    berikutnya, bukan cuma muncul pas gagal).
+  report.outcome =
+    report.skipped.length > 0 || report.warnIssues.length > 0 || report.diffGuard?.bypassed
+      ? "ok-with-warnings"
+      : "ok";
+  finish(report);
 }
 
-main().catch((e) => {
-  console.error(e);
-  process.exit(1);
-});
+// Guard: cuma auto-run main() kalau file ini dieksekusi langsung (`node
+// scripts/sync.mjs` / `npm run sync`), BUKAN pas di-import sebagai module.
+// Ini yang bikin splitShapeIssues/createSyncReport/writeSyncReport/
+// appendJobSummary bisa di-import + di-test standalone (mis. test harness
+// yang ngirim synthetic fatal ShapeIssue) TANPA ke-trigger main() yang manggil
+// 4 adapter live network.
+const isDirectRun = import.meta.url === `file://${process.argv[1]}`;
+if (isDirectRun) {
+  main().catch((e) => {
+    console.error(e);
+    // Exception yang GA lewat salah satu exit point di atas (smoke test /
+    // shape guard merged / diff guard — yang udah masing-masing manggil
+    // finish() sendiri sebelum exit) → ini crash ga terduga. Tetep tulis
+    // report + job summary biar "npm test gagal diam-diam" ga pernah kejadian.
+    if (currentReport) {
+      if (currentReport.outcome === "running") {
+        currentReport.outcome = "crashed";
+        currentReport.crash = { message: e?.message || String(e) };
+      }
+      finish(currentReport);
+    }
+    process.exit(1);
+  });
+}

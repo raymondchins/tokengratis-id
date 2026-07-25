@@ -22,6 +22,18 @@ name: nightly-data-sync
 # Manual override: kalau sumber memang sengaja hapus provider / shrink data,
 # trigger "Run workflow" dengan `allow_data_shrink = true` buat bypass guard.
 # Cron run (scheduled) SELALU pakai guard ON — default aman.
+#
+# Shape guard (scripts/lib/shape-guard.mjs, INCIDENT 2026-07-25 — freellm
+# nyisipin kolom "Score", context keisi 81/45/40, lolos SEMUA guard count-based
+# di atas): sync.mjs sekarang juga ngukur BENTUK nilai tiap field, bukan cuma
+# jumlah baris/kolom. Fatal → skip source / abort write, sama exit-code-1
+# semantics kayak guard lain. Reporting: tiap run nulis data/sync-report.json
+# (source/rule/ratio/sample) + nulis $GITHUB_STEP_SUMMARY (otomatis ke-render
+# di halaman run — GITHUB_STEP_SUMMARY udah tersedia ke tiap step tanpa setup
+# tambahan di YAML ini). Step "Buka/update issue" di bawah baca sync-report.json
+# buat isi body issue GitHub dengan detail konkret, bukan cuma "cek log run" —
+# GitHub otomatis email repo owner pas ada aktivitas issue, jadi ini alert
+# zero-setup (ga butuh Telegram/webhook/email digest terpisah).
 
 on:
   schedule:
@@ -107,10 +119,59 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
+            const fs = require('fs');
             const label = 'sync-failure';
             const title = '⚠️ Nightly data sync failed';
             const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
-            const body = `Run gagal: ${runUrl}\n\nLast-known-good masih live — data lama belum ke-overwrite.\nCek output guard di log run untuk detail (provider hilang / model count collapse).\n\nTutup issue ini setelah root cause diatasi.`;
+
+            // data/sync-report.json ditulis oleh scripts/sync.mjs SEBELUM tiap
+            // exit point (guard fatal ATAU crash ga terduga lewat top-level
+            // catch) — masih ada di disk runner walau run gagal SEBELUM commit
+            // step (jadi belum tentu ke-commit ke repo). Kalau step "Sync data
+            // dari sumber komunitas" sendiri ga sempet jalan (mis. checkout/
+            // install gagal), atau step yang gagal itu "Test pipeline
+            // self-tests"/"Build" (bukan sync.mjs), file ini bisa ga ada atau
+            // masih dari commit lama — makanya best-effort, ada fallback text.
+            let reportSection = '_(data/sync-report.json tidak ditemukan di workspace run ini — cek raw log job untuk detail.)_';
+            try {
+              const report = JSON.parse(fs.readFileSync('data/sync-report.json', 'utf8'));
+              const lines = [];
+              lines.push(`**Outcome:** \`${report.outcome}\` (generated ${report.generatedAt})`);
+
+              if (report.skipped && report.skipped.length) {
+                lines.push('', `**Sumber di-skip:** ${report.skipped.join(', ')}`);
+              }
+
+              if (report.fatalIssues && report.fatalIssues.length) {
+                lines.push('', '**Fatal shape issues:**');
+                for (const f of report.fatalIssues.slice(0, 10)) {
+                  const ratioPct = ((f.ratio || 0) * 100).toFixed(1);
+                  lines.push(`- \`${f.source}\` — rule \`${f.rule}\`, field \`${f.field}\`: ${f.count}/${f.total} (${ratioPct}%)`);
+                  if (f.samples && f.samples.length) lines.push(`  - samples: \`${JSON.stringify(f.samples)}\``);
+                  lines.push(`  - ${f.message}`);
+                }
+              }
+
+              if (report.smokeTest && report.smokeTest.errors && report.smokeTest.errors.length) {
+                lines.push('', '**Smoke test errors:**');
+                for (const e of report.smokeTest.errors.slice(0, 10)) lines.push(`- ${e}`);
+              }
+
+              if (report.diffGuard && report.diffGuard.ok === false) {
+                lines.push('', '**Snapshot guard errors:**');
+                for (const e of report.diffGuard.errors.slice(0, 10)) lines.push(`- ${e}`);
+              }
+
+              if (report.crash) {
+                lines.push('', `**Crash:** \`${report.crash.message}\``);
+              }
+
+              reportSection = lines.join('\n');
+            } catch (e) {
+              // File ga ada / korup — fallback text di atas tetep dipakai.
+            }
+
+            const body = `Run gagal: ${runUrl}\n\nLast-known-good masih live — data lama belum ke-overwrite.\n\n${reportSection}\n\nTutup issue ini setelah root cause diatasi.`;
 
             // Pastikan label ada dulu
             try {
@@ -134,7 +195,7 @@ jobs:
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: existing.data[0].number,
-                body: `Run baru juga gagal: ${runUrl}`,
+                body: `Run baru juga gagal: ${runUrl}\n\n${reportSection}`,
               });
               console.log(`Komentar ditambahkan ke issue #${existing.data[0].number}`);
             } else {
