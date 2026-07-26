@@ -161,38 +161,45 @@ export default function Navbar() {
           The pill is rounded-full + backdrop-blur (its own stacking context),
           so an absolutely-positioned child risks getting clipped by the
           rounding. Rendering it here, below the pill, sidesteps that. */}
-      <div
-        id={menuId}
-        ref={panelRef}
-        className={`mx-auto mt-2 max-w-5xl overflow-hidden rounded-[8px] border border-ink-line bg-ink-soft shadow-[0_8px_30px_rgba(17,24,28,0.06)] transition-all duration-200 ease-out motion-reduce:transition-none md:hidden ${
-          open ? "visible max-h-96 opacity-100" : "invisible max-h-0 opacity-0"
-        }`}
-      >
-        <ul className="divide-y divide-ink-line p-2 text-sm font-medium text-mute">
-          {NAV_LINKS.map((l) => {
-            const active = isNavLinkActive(pathname, l.href);
-            return (
-              <li key={l.href}>
-                <Link
-                  href={l.href}
-                  aria-current={active ? "page" : undefined}
-                  onClick={() => setOpen(false)}
-                  className={`flex min-h-[44px] items-center justify-between gap-1.5 rounded-sm px-3 transition-colors hover:text-fog ${FOCUS_RING} ${
-                    active ? "text-fog" : ""
-                  }`}
-                >
-                  {l.label}
-                  {l.badge && (
-                    <span className="inline-flex items-center rounded-full border border-grass-line bg-grass-bg px-1.5 py-0.5 text-[9px] font-semibold uppercase leading-none tracking-wide text-grass">
-                      {l.badge}
-                    </span>
-                  )}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
+      {/* Di-MOUNT/UNMOUNT, bukan di-toggle lewat class visibility/max-height.
+          Versi sebelumnya pakai `invisible max-h-0 opacity-0` ↔ `visible
+          max-h-96 opacity-100`: class-nya kebalik dengan bener tapi computed
+          style-nya nyangkut di ketutup, jadi menu-nya GA PERNAH kebuka di
+          production. Gating konten di balik transisi class emang rapuh —
+          mount langsung ga bisa gagal kayak gitu, plus pas ketutup panel-nya
+          beneran ilang dari a11y tree & urutan tab (bukan cuma ke-hide). */}
+      {open && (
+        <div
+          id={menuId}
+          ref={panelRef}
+          className="mx-auto mt-2 max-w-5xl overflow-hidden rounded-[8px] border border-ink-line bg-ink-soft shadow-[0_8px_30px_rgba(17,24,28,0.06)] md:hidden"
+        >
+          <ul className="divide-y divide-ink-line p-2 text-sm font-medium text-mute">
+            {NAV_LINKS.map((l) => {
+              const active = isNavLinkActive(pathname, l.href);
+              return (
+                <li key={l.href}>
+                  <Link
+                    href={l.href}
+                    aria-current={active ? "page" : undefined}
+                    onClick={() => setOpen(false)}
+                    className={`flex min-h-[44px] items-center justify-between gap-1.5 rounded-sm px-3 transition-colors hover:text-fog ${FOCUS_RING} ${
+                      active ? "text-fog" : ""
+                    }`}
+                  >
+                    {l.label}
+                    {l.badge && (
+                      <span className="inline-flex items-center rounded-full border border-grass-line bg-grass-bg px-1.5 py-0.5 text-[9px] font-semibold uppercase leading-none tracking-wide text-grass">
+                        {l.badge}
+                      </span>
+                    )}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      )}
     </header>
   );
 }
