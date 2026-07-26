@@ -14,7 +14,7 @@ export default function ModelsTable({
 }: {
   models: Model[];
   more?: string | null;
-  /** URL sumber utama — bikin "di sumber" clickable. */
+  /** URL sumber utama — bikin "lihat daftar lengkap di sumber" clickable. */
   sourceUrl?: string | null;
 }) {
   const [q, setQ] = useState("");
@@ -53,7 +53,7 @@ export default function ModelsTable({
               }}
               placeholder="Cari model…"
               aria-label="Cari model"
-              className="w-full rounded-[4px] border border-ink-line bg-ink py-1.5 pl-8 pr-3 text-xs text-fog placeholder:text-mute focus:border-fog/40 focus:outline-none focus:ring-2 focus:ring-fog/70 sm:w-44"
+              className="w-full min-h-[44px] rounded-[4px] border border-ink-line bg-ink py-1.5 pl-8 pr-3 text-xs text-fog placeholder:text-mute focus-visible:border-fog/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70 sm:w-44"
             />
           </div>
         )}
@@ -62,9 +62,19 @@ export default function ModelsTable({
       {/* mobile cards (hidden on md+) */}
       <div className="divide-y divide-ink-line md:hidden">
         {slice.length === 0 ? (
-          <p className="px-5 py-10 text-center text-sm text-mute">
-            Ga ada model yang cocok sama &ldquo;{q}&rdquo;.
-          </p>
+          <div className="px-5 py-10 text-center text-sm text-mute">
+            <p>Ga ada model yang cocok sama &ldquo;{q}&rdquo;.</p>
+            <button
+              type="button"
+              onClick={() => {
+                setQ("");
+                setPage(1);
+              }}
+              className="mt-3 min-h-[44px] rounded-full border border-ink-line bg-ink px-4 text-xs font-medium text-fog transition-colors hover:border-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70 active:bg-ink-line/60"
+            >
+              Hapus pencarian
+            </button>
+          </div>
         ) : (
           slice.map((m) => (
             <div key={m.id} className="px-4 py-3.5">
@@ -113,7 +123,17 @@ export default function ModelsTable({
             {slice.length === 0 ? (
               <tr>
                 <td colSpan={5} className="px-5 py-10 text-center text-sm text-mute">
-                  Ga ada model yang cocok sama &ldquo;{q}&rdquo;.
+                  <p>Ga ada model yang cocok sama &ldquo;{q}&rdquo;.</p>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setQ("");
+                      setPage(1);
+                    }}
+                    className="mt-3 min-h-[44px] rounded-full border border-ink-line bg-ink px-4 text-xs font-medium text-fog transition-colors hover:border-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70 active:bg-ink-line/60"
+                  >
+                    Hapus pencarian
+                  </button>
                 </td>
               </tr>
             ) : (
@@ -121,7 +141,7 @@ export default function ModelsTable({
                 <tr key={m.id} className="align-top transition-colors hover:bg-ink/50">
                   <td className="px-5 py-3">
                     <div className="font-medium text-fog">{m.name}</div>
-                    <div className="font-mono text-[11px] text-mute">{m.id}</div>
+                    <div className="break-all font-mono text-[11px] text-mute">{m.id}</div>
                   </td>
                   <td className="px-3 py-3 text-mute">{m.modality ?? "—"}</td>
                   <td className="px-3 py-3 font-medium text-fog">{m.context ?? "—"}</td>
@@ -137,7 +157,7 @@ export default function ModelsTable({
       {/* note: model lain dari sumber (bukan entri detail) */}
       {more && (
         <p className="border-t border-ink-line px-5 py-3 text-xs text-mute">
-          + {more} — daftar lengkapnya ada{" "}
+          + {more} model lainnya —{" "}
           {sourceUrl ? (
             <a
               href={sourceUrl}
@@ -145,10 +165,10 @@ export default function ModelsTable({
               rel="noopener noreferrer"
               className="underline decoration-ink-line underline-offset-2 hover:text-fog"
             >
-              di sumber
+              lihat daftar lengkap di sumber
             </a>
           ) : (
-            "di sumber"
+            "lihat daftar lengkap di sumber"
           )}
           .
         </p>
@@ -169,18 +189,18 @@ export default function ModelsTable({
               onClick={() => setPage(current - 1)}
               disabled={current <= 1}
               aria-label="Halaman model sebelumnya"
-              className="min-h-[40px] min-w-[40px] rounded-[4px] border border-ink-line bg-ink px-3 py-1.5 font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40 disabled:cursor-not-allowed disabled:opacity-40"
+              className="min-h-[44px] min-w-[44px] rounded-[4px] border border-ink-line bg-ink px-3 py-1.5 font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70 active:bg-ink-line/60 disabled:cursor-not-allowed disabled:opacity-40"
             >
-              ← Prev
+              ← Sebelumnya
             </button>
             <button
               type="button"
               onClick={() => setPage(current + 1)}
               disabled={current >= pages}
               aria-label="Halaman model berikutnya"
-              className="min-h-[40px] min-w-[40px] rounded-[4px] border border-ink-line bg-ink px-3 py-1.5 font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40 disabled:cursor-not-allowed disabled:opacity-40"
+              className="min-h-[44px] min-w-[44px] rounded-[4px] border border-ink-line bg-ink px-3 py-1.5 font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70 active:bg-ink-line/60 disabled:cursor-not-allowed disabled:opacity-40"
             >
-              Next →
+              Berikutnya →
             </button>
           </div>
         </nav>

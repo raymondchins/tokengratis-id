@@ -52,7 +52,7 @@ export default function Footer() {
                 href={s.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline decoration-ink-line underline-offset-2 hover:text-fog"
+                className="underline decoration-ink-line underline-offset-2 hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
               >
                 {s.name}
               </a>
@@ -71,7 +71,7 @@ export default function Footer() {
                 href={s.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline decoration-ink-line underline-offset-2 hover:text-fog"
+                className="underline decoration-ink-line underline-offset-2 hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
               >
                 {s.name}
               </a>
@@ -86,7 +86,7 @@ export default function Footer() {
               <span key={m}>
                 <Link
                   href={`/gratis/${m}`}
-                  className="underline decoration-ink-line underline-offset-2 hover:text-fog"
+                  className="underline decoration-ink-line underline-offset-2 hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
                 >
                   API {modalityLabel(m)} Gratis
                 </Link>
@@ -107,7 +107,7 @@ export default function Footer() {
             <span key={l.href}>
               <Link
                 href={l.href}
-                className="underline decoration-ink-line underline-offset-2 hover:text-fog"
+                className="underline decoration-ink-line underline-offset-2 hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
               >
                 {l.label}
               </Link>
@@ -126,7 +126,7 @@ export default function Footer() {
             <span key={l.href}>
               <a
                 href={l.href}
-                className="underline decoration-ink-line underline-offset-2 hover:text-fog"
+                className="underline decoration-ink-line underline-offset-2 hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
               >
                 {l.label}
               </a>
@@ -140,7 +140,7 @@ export default function Footer() {
             <span className="font-medium text-fog">tokengratis.id</span> — karena
             raymond boros token.
           </p>
-          <div className="[&_a]:p-1.5 [&_a]:-m-1.5">
+          <div className="[&_a]:p-3.5 [&_a]:-m-3.5">
             <SocialIcons />
           </div>
         </div>

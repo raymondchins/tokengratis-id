@@ -35,7 +35,7 @@ export default function FallbackPage() {
   return (
     <div className="min-h-dvh pb-24">
       <Navbar />
-      <main id="main-content" className="mx-auto max-w-4xl px-4 pt-16 sm:px-6 sm:pt-24">
+      <main id="main-content" className="mx-auto max-w-5xl px-4 pt-16 sm:px-6 sm:pt-24">
         {/* ── Hero ── */}
         <section className="mx-auto max-w-2xl text-center">
           <h1 className="font-serif text-4xl font-medium leading-[1.04] tracking-tight text-fog sm:text-5xl">

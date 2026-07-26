@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "next-view-transitions";
 import {
   filterProviders,
@@ -119,13 +119,76 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
   const [sort, setSort] = useState<SortKey>("popular");
   const [page, setPage] = useState(1);
 
+  // ── URL sync: filter/sort/page shareable + tahan refresh ───────────────────
+  // Situs ini 100% static (SSG) — useSearchParams/useRouter maksa dynamic render
+  // + Suspense, jadi kita main langsung ke window.history. State awal SENGAJA
+  // tetap default biar HTML server & render client pertama identik (zero
+  // hydration mismatch); nilai dari URL baru di-apply SETELAH mount.
+  const urlRead = useRef(false);
+
+  // Mount sekali: baca URL, validasi tiap param. Param ga dikenal / invalid
+  // di-abaikan diem-diem (ga bikin error, ga bikin state aneh).
+  useEffect(() => {
+    const sp = new URLSearchParams(window.location.search);
+
+    const q = sp.get("q") ?? "";
+    const mods = (sp.get("m") ?? "")
+      .split(",")
+      .filter((m): m is Modality => MODALITY_ORDER.includes(m as Modality))
+      .filter((m, i, arr) => arr.indexOf(m) === i);
+    if (q || mods.length > 0) setFilter({ search: q, modalities: mods });
+
+    const s = sp.get("sort");
+    if (s && (Object.keys(SORT_LABELS) as string[]).includes(s)) {
+      setSort(s as SortKey);
+    }
+
+    const p = Number(sp.get("page"));
+    if (Number.isInteger(p) && p > 1) setPage(p);
+
+    urlRead.current = true;
+  }, []);
+
+  // Tulis state balik ke URL. replaceState, BUKAN pushState — ganti filter
+  // jangan numpuk history bikin tombol back mampet. Param yang masih default
+  // di-omit biar URL bersih tetap bersih ("/" bukan "/?sort=popular&page=1").
+  // Debounce 200ms: ngetik di search bisa manggil replaceState puluhan kali
+  // (Safari throttle ~100 call / 30 detik).
+  useEffect(() => {
+    if (!urlRead.current) return; // jangan nimpa URL sebelum mount-read kelar
+    const t = setTimeout(() => {
+      const sp = new URLSearchParams();
+      const q = filter.search.trim();
+      if (q) sp.set("q", q);
+      if (filter.modalities.length > 0) sp.set("m", filter.modalities.join(","));
+      if (sort !== "popular") sp.set("sort", sort);
+      if (page > 1) sp.set("page", String(page));
+      const qs = sp.toString();
+      window.history.replaceState(
+        null,
+        "",
+        `${window.location.pathname}${qs ? `?${qs}` : ""}${window.location.hash}`,
+      );
+    }, 200);
+    return () => clearTimeout(t);
+  }, [filter, sort, page]);
+
   const results = useMemo(
     () => sortProviders(filterProviders(items, filter), sort),
     [items, filter, sort],
   );
 
-  // Reset ke hal 1 tiap filter/sort berubah.
-  useEffect(() => setPage(1), [filter, sort]);
+  // Reset ke hal 1 tiap filter/sort berubah. Sengaja di handler, BUKAN
+  // useEffect([filter, sort]) — effect bakal ikut nyala pas URL di-apply waktu
+  // mount dan langsung ngebuang ?page= yang barusan dibaca.
+  function changeFilter(next: FilterState) {
+    setFilter(next);
+    setPage(1);
+  }
+  function changeSort(next: SortKey) {
+    setSort(next);
+    setPage(1);
+  }
 
   const availableModalities = useMemo<Modality[]>(() => {
     const present = new Set(items.flatMap((p) => p.modalities));
@@ -155,15 +218,15 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
     <div className="flex flex-col gap-6">
       <FilterBar
         state={filter}
-        onChange={setFilter}
+        onChange={changeFilter}
         availableModalities={availableModalities}
         rightSlot={
           <label className="flex items-center gap-2 text-sm text-mute">
             Urutkan
             <select
               value={sort}
-              onChange={(e) => setSort(e.target.value as SortKey)}
-              className="rounded-[4px] border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:border-fog/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40"
+              onChange={(e) => changeSort(e.target.value as SortKey)}
+              className="min-h-[44px] rounded-[4px] border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:border-fog/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
             >
               {(Object.keys(SORT_LABELS) as SortKey[]).map((k) => (
                 <option key={k} value={k}>
@@ -181,7 +244,7 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
           <NoResultsPanel
             message="Ga ada yang cocok sama filter ini."
             hint="Coba hapus beberapa filter atau ganti kata kunci."
-            onReset={() => setFilter(emptyFilter())}
+            onReset={() => changeFilter(emptyFilter())}
           />
         ) : (
           <div className="overflow-x-auto">
@@ -206,7 +269,10 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
 
       {/* Count (kiri) + pagination (kanan) — 1 baris */}
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <p className="text-sm text-mute">
+        {/* aria-live: jumlah hasil berubah tiap filter/sort/page — tanpa ini
+            screen reader ga dikasih tau apa-apa pas user ngetik/klik chip.
+            aria-atomic biar kalimatnya dibacain utuh, bukan angkanya doang. */}
+        <p aria-live="polite" aria-atomic="true" className="text-sm text-mute">
           {results.length === 0 ? (
             <>
               Menampilkan <span className="font-semibold text-fog">0</span> dari{" "}

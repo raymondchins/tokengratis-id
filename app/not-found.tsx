@@ -11,7 +11,7 @@ export default function NotFound() {
       >
         <div className="flex flex-col items-center text-center">
           <p className="font-mono text-sm text-mute">404</p>
-          <h1 className="mt-3 font-serif text-4xl font-semibold tracking-tight text-fog sm:text-5xl">
+          <h1 className="mt-3 font-serif text-3xl font-semibold tracking-tight text-fog sm:text-4xl">
             Halaman ga ketemu
           </h1>
           <p className="mt-5 max-w-md text-base leading-relaxed text-mute">
@@ -21,7 +21,7 @@ export default function NotFound() {
           </p>
           <Link
             href="/#direktori"
-            className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-ember px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-ember-soft"
+            className="mt-8 inline-flex min-h-[44px] items-center justify-center gap-2 rounded-[6px] bg-ember px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-ember-soft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70 focus-visible:ring-offset-2 focus-visible:ring-offset-ink"
           >
             Kembali ke direktori
           </Link>

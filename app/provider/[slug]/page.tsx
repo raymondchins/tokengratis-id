@@ -76,7 +76,7 @@ export default async function Page({
         {/* back */}
         <Link
           href="/#direktori"
-          className="group mb-8 inline-flex items-center gap-1.5 text-sm text-mute transition-colors hover:text-fog"
+          className="group -mx-2 mb-8 inline-flex items-center gap-1.5 px-2 py-3 text-sm text-mute transition-colors hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
         >
           <span aria-hidden className="transition-transform group-hover:-translate-x-0.5">
             ←
@@ -124,9 +124,9 @@ export default async function Page({
             {/* catatan */}
             {p.description && (
               <section className="rounded-[8px] border border-ink-line bg-ink-soft px-5 py-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.15em] text-mute">
+                <h2 className="font-sans text-xs font-semibold uppercase tracking-[0.15em] text-mute">
                   Catatan dari sumber
-                </p>
+                </h2>
                 <p className="mt-2 text-sm leading-relaxed text-fog">
                   {p.description}
                 </p>
@@ -149,9 +149,9 @@ export default async function Page({
                 instruksi terverifikasi per-provider; detail pasti di halaman resmi. */}
             {p.url && (
               <section className="rounded-[8px] border border-ink-line bg-ink-soft px-5 py-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.15em] text-mute">
+                <h2 className="font-sans text-xs font-semibold uppercase tracking-[0.15em] text-mute">
                   Cara claim API key gratis
-                </p>
+                </h2>
                 <p className="mt-1 text-[11px] text-mute">
                   Langkah umum — detail pastinya ikutin halaman resmi {p.name}.
                 </p>
@@ -164,7 +164,7 @@ export default async function Page({
                         href={p.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="underline decoration-ink-line underline-offset-2 hover:text-fog"
+                        className="underline decoration-ink-line underline-offset-2 hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
                       >
                         halaman API key {p.name} ↗
                       </a>
@@ -227,7 +227,7 @@ export default async function Page({
               {p.baseUrl && (
                 <div>
                   <p className="mb-1.5 text-xs font-medium text-mute">Base URL</p>
-                  <code className="block overflow-x-auto whitespace-nowrap rounded-[4px] border border-ink-line bg-ink px-3 py-2 font-mono text-[12px] text-fog">
+                  <code className="block overflow-x-auto whitespace-nowrap rounded-[4px] bg-ink px-3 py-2 font-mono text-[12px] text-fog">
                     {p.baseUrl}
                   </code>
                 </div>
@@ -249,7 +249,7 @@ export default async function Page({
                       href={`https://${p.domain}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-mono text-xs text-fog underline decoration-ink-line underline-offset-2 transition-colors hover:decoration-mute"
+                      className="font-mono text-xs text-fog underline decoration-ink-line underline-offset-2 transition-colors hover:decoration-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
                     >
                       {p.domain}
                     </a>
@@ -258,9 +258,9 @@ export default async function Page({
               </div>
 
               <div className="border-t border-ink-line pt-4">
-                <p className="mb-1 text-xs font-semibold uppercase tracking-[0.15em] text-mute">
+                <h2 className="font-sans mb-1 text-xs font-semibold uppercase tracking-[0.15em] text-mute">
                   Sumber data
-                </p>
+                </h2>
                 <SourceLine sources={p.sources} sourceUpdatedAt={p.sourceUpdatedAt} />
                 <p className="mt-2 text-[11px] leading-relaxed text-mute">
                   Kami aggregator — bukan verifier, bukan pemilik datanya. Kalau ada
@@ -269,7 +269,7 @@ export default async function Page({
                     href={p.sources[0]?.url ?? "#"}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="underline decoration-ink-line underline-offset-2 hover:text-fog"
+                    className="underline decoration-ink-line underline-offset-2 hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
                   >
                     {p.sources.length > 1
                       ? "perbaiki di sumber masing-masing"

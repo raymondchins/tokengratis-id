@@ -27,7 +27,7 @@ export default function Error({
     >
       <div className="flex flex-col items-center text-center">
         <p className="font-mono text-sm text-mute">Error</p>
-        <h1 className="mt-3 font-serif text-4xl font-semibold tracking-tight text-fog sm:text-5xl">
+        <h1 className="mt-3 font-serif text-3xl font-semibold tracking-tight text-fog sm:text-4xl">
           Ada yang error di halaman ini
         </h1>
         <p className="mt-5 max-w-md text-base leading-relaxed text-mute">
@@ -43,13 +43,13 @@ export default function Error({
           <button
             type="button"
             onClick={reset}
-            className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full bg-ember px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-ember-soft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70 focus-visible:ring-offset-2 focus-visible:ring-offset-ink"
+            className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-[6px] bg-ember px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-ember-soft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70 focus-visible:ring-offset-2 focus-visible:ring-offset-ink"
           >
             Coba lagi
           </button>
           <Link
             href="/#direktori"
-            className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full border border-ink-line bg-ink-soft px-6 py-3 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40"
+            className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-[6px] border border-ink-line bg-ink-soft px-5 py-3 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
           >
             Kembali ke direktori
           </Link>

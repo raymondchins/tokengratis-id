@@ -115,7 +115,7 @@ export default async function Page({
         {/* back */}
         <Link
           href="/modal-gratis"
-          className="group mb-8 inline-flex items-center gap-1.5 text-sm text-mute transition-colors hover:text-fog"
+          className="group -mx-2 mb-8 inline-flex items-center gap-1.5 px-2 py-3 text-sm text-mute transition-colors hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
         >
           <span aria-hidden className="transition-transform group-hover:-translate-x-0.5">
             ←
@@ -165,9 +165,9 @@ export default async function Page({
             {/* deskripsi apa adanya */}
             {o.description && (
               <section className="rounded-[8px] border border-ink-line bg-ink-soft px-5 py-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.15em] text-mute">
+                <h2 className="font-sans text-xs font-semibold uppercase tracking-[0.15em] text-mute">
                   Apa ini
-                </p>
+                </h2>
                 <p className="mt-2 text-sm leading-relaxed text-fog">{o.description}</p>
               </section>
             )}
@@ -175,9 +175,9 @@ export default async function Page({
             {/* limits — cuma dirender kalau ada, angka apa adanya */}
             {o.limits.length > 0 && (
               <section className="rounded-[8px] border border-ink-line bg-ink-soft px-5 py-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.15em] text-mute">
+                <h2 className="font-sans text-xs font-semibold uppercase tracking-[0.15em] text-mute">
                   Batas & kuota
-                </p>
+                </h2>
                 <ul className="mt-3 space-y-2 text-sm leading-relaxed text-fog">
                   {o.limits.map((l) => (
                     <li key={l} className="flex gap-2.5">
@@ -194,9 +194,9 @@ export default async function Page({
             {/* requirements — cuma dirender kalau ada */}
             {o.requirements.length > 0 && (
               <section className="rounded-[8px] border border-ink-line bg-ink-soft px-5 py-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.15em] text-mute">
+                <h2 className="font-sans text-xs font-semibold uppercase tracking-[0.15em] text-mute">
                   Syarat
-                </p>
+                </h2>
                 <ul className="mt-3 space-y-2 text-sm leading-relaxed text-fog">
                   {o.requirements.map((r) => (
                     <li key={r} className="flex gap-2.5">
@@ -213,9 +213,9 @@ export default async function Page({
             {/* traps — nilai utama halaman ini, treatment visually distinct */}
             {o.traps.length > 0 && (
               <section className="rounded-[8px] border-l-[3px] border-ember bg-ink-soft px-5 py-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.15em] text-mute">
+                <h2 className="font-sans text-xs font-semibold uppercase tracking-[0.15em] text-mute">
                   <span aria-hidden="true">⚠</span> Jebakan yang perlu diwaspadai
-                </p>
+                </h2>
                 <ul className="mt-3 space-y-2.5 text-sm font-medium leading-relaxed text-fog">
                   {o.traps.map((t) => (
                     <li key={t} className="flex gap-2.5">
@@ -232,9 +232,9 @@ export default async function Page({
             {/* facets — turunan, cuma dirender kalau ada */}
             {o.facets.length > 0 && (
               <section className="rounded-[8px] border border-ink-line bg-ink-soft px-5 py-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.15em] text-mute">
+                <h2 className="font-sans text-xs font-semibold uppercase tracking-[0.15em] text-mute">
                   Ciri-ciri
-                </p>
+                </h2>
                 <div className="mt-3 flex flex-wrap gap-1.5">
                   {o.facets.map((f) => (
                     <span
@@ -256,7 +256,7 @@ export default async function Page({
                 href={o.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex w-full items-center justify-center gap-2 rounded-[6px] bg-ember px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-ember-soft"
+                className="flex w-full items-center justify-center gap-2 rounded-[6px] bg-ember px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-ember-soft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
               >
                 Buka halaman resmi
                 <span aria-hidden>↗</span>
@@ -276,7 +276,7 @@ export default async function Page({
                       href={`https://${o.domain}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="font-mono text-xs text-fog underline decoration-ink-line underline-offset-2 transition-colors hover:decoration-mute"
+                      className="font-mono text-xs text-fog underline decoration-ink-line underline-offset-2 transition-colors hover:decoration-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
                     >
                       {o.domain}
                     </a>
@@ -296,7 +296,7 @@ export default async function Page({
                         href={s.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="font-medium text-fog underline decoration-ink-line underline-offset-2 transition-colors hover:decoration-mute"
+                        className="font-medium text-fog underline decoration-ink-line underline-offset-2 transition-colors hover:decoration-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
                       >
                         {s.name}
                       </a>
@@ -310,7 +310,7 @@ export default async function Page({
                     href={o.sources[0]?.url ?? o.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="underline decoration-ink-line underline-offset-2 hover:text-fog"
+                    className="underline decoration-ink-line underline-offset-2 hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
                   >
                     halaman resminya
                   </a>{" "}

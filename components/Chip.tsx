@@ -16,10 +16,10 @@ export default function Chip({
       onClick={onClick}
       aria-pressed={active}
       className={[
-        "inline-flex shrink-0 items-center gap-1.5 rounded-[6px] border px-4 py-2 text-[13px] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70",
+        "inline-flex min-h-[44px] shrink-0 items-center gap-1.5 rounded-[6px] border px-4 py-2 text-[13px] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70",
         active
-          ? "border-mute/60 bg-ink-line/70 text-fog"
-          : "border-ink-line bg-ink-soft text-mute hover:border-mute hover:text-fog",
+          ? "border-mute/60 bg-ink-line/70 text-fog active:bg-ink-line"
+          : "border-ink-line bg-ink-soft text-mute hover:border-mute hover:text-fog active:bg-ink-line/60",
       ].join(" ")}
     >
       {children}

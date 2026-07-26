@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { Offer, OfferCategory, OfferFacet, OfferKind } from "@/lib/offer-types";
 import {
   OFFER_CATEGORY_LABEL,
@@ -55,6 +55,17 @@ export default function ModalGratisClient({ offers }: { offers: Offer[] }) {
     setFacets((cur) => (cur.includes(f) ? cur.filter((x) => x !== f) : [...cur, f]));
   }
 
+  // ── URL state (shareable + refresh-safe) ──────────────────────────────────
+  // Statis (SSG) — sengaja BUKAN useSearchParams/useRouter (itu maksa dynamic
+  // rendering). Baca window.location manual sekali pas mount, tulis balik via
+  // replaceState. skipNextPageResetRef nyegah efek "reset ke halaman 1 pas
+  // filter berubah" (di bawah) nge-overwrite halaman yang baru di-restore dari
+  // URL, TAPI cuma kalau hydration ini emang ngubah filter juga (kalau cuma
+  // page doang yang di-restore, efek reset itu ga bakal ke-trigger sama
+  // sekali, jadi ga butuh di-skip).
+  const skipNextPageResetRef = useRef(false);
+  const isFirstUrlSyncRef = useRef(true);
+
   // Filter — facets pakai AND (tiap facet aktif WAJIB ada), biar kombinasi
   // "tanpa kartu" + "bootstrapped boleh" beneran mempersempit, bukan melebar.
   const results = useMemo(() => {
@@ -71,7 +82,80 @@ export default function ModalGratisClient({ offers }: { offers: Offer[] }) {
   }, [indexed, search, category, kind, facets]);
 
   // Reset ke halaman 1 tiap filter berubah
-  useEffect(() => setPage(1), [search, category, kind, facets]);
+  useEffect(() => {
+    if (skipNextPageResetRef.current) {
+      skipNextPageResetRef.current = false;
+      return;
+    }
+    setPage(1);
+  }, [search, category, kind, facets]);
+
+  // Hydrate dari query string sekali pas mount. Tiap value divalidasi ke
+  // known-valid values — link basi (facet/kategori yang udah ga ada) di-drop
+  // diam-diam, ga pernah nge-crash.
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    let filtersChanged = false;
+
+    const qParam = params.get("q");
+    if (qParam) {
+      setSearch(qParam);
+      filtersChanged = true;
+    }
+
+    const catParam = params.get("cat");
+    if (catParam && (Object.keys(OFFER_CATEGORY_LABEL) as string[]).includes(catParam)) {
+      setCategory(catParam as OfferCategory);
+      filtersChanged = true;
+    }
+
+    const kindParam = params.get("kind");
+    if (kindParam && (Object.keys(OFFER_KIND_LABEL) as string[]).includes(kindParam)) {
+      setKind(kindParam as OfferKind);
+      filtersChanged = true;
+    }
+
+    const facetsParam = params.get("f");
+    if (facetsParam) {
+      const validFacets = facetsParam
+        .split(",")
+        .filter((f): f is OfferFacet => (Object.keys(OFFER_FACET_LABEL) as string[]).includes(f));
+      if (validFacets.length > 0) {
+        setFacets(validFacets);
+        filtersChanged = true;
+      }
+    }
+
+    const pageParam = params.get("page");
+    if (pageParam) {
+      const n = Number(pageParam);
+      if (Number.isInteger(n) && n > 0) {
+        setPage(n);
+        if (filtersChanged) skipNextPageResetRef.current = true;
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Sinkronin state balik ke URL — replaceState (BUKAN pushState, ga nambah
+  // history entry per klik filter). Ref-guard biar invocation pertama (yang
+  // masih state default, sebelum efek hydrate di atas kelar) ga nge-clobber
+  // URL yang baru masuk.
+  useEffect(() => {
+    if (isFirstUrlSyncRef.current) {
+      isFirstUrlSyncRef.current = false;
+      return;
+    }
+    const qs = new URLSearchParams();
+    if (search) qs.set("q", search);
+    if (category) qs.set("cat", category);
+    if (kind) qs.set("kind", kind);
+    if (facets.length > 0) qs.set("f", facets.join(","));
+    if (page > 1) qs.set("page", String(page));
+    const query = qs.toString();
+    const url = query ? `${window.location.pathname}?${query}` : window.location.pathname;
+    window.history.replaceState(null, "", url);
+  }, [search, category, kind, facets, page]);
 
   const totalPages = Math.max(1, Math.ceil(results.length / PAGE_SIZE));
   const current = Math.min(page, totalPages);
@@ -93,6 +177,7 @@ export default function ModalGratisClient({ offers }: { offers: Offer[] }) {
       <EmptyDataPanel
         title="Direktori modal gratis lagi disusun"
         description="Kurasi manual belum ke-publish — nyusul minggu ini."
+        action={{ href: "/#direktori", label: "Kembali ke direktori" }}
       />
     );
   }
@@ -179,7 +264,7 @@ export default function ModalGratisClient({ offers }: { offers: Offer[] }) {
 
       {/* ── Footer: count + pagination ── */}
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <p className="text-sm text-mute">
+        <p className="text-sm text-mute" aria-live="polite">
           {results.length === 0 ? (
             <>
               Menampilkan <span className="font-semibold text-fog">0</span> dari{" "}

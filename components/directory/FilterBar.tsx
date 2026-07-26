@@ -46,11 +46,19 @@ export default function FilterBar({
       </div>
 
       {/* Modality facets + slot kanan (sort)
-           mobile: dua dropdown sebaris (Filter modality kiri, Urutkan kanan)
-           sm+:    chip pills kiri, sort kanan */}
+           mobile: chip row 1 baris (scroll horizontal), sort di bawahnya
+           sm+:    chip pills kiri wrap, sort kanan */}
       <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
-        {/* Desktop: chip pills */}
-        <div className="-mx-1 hidden flex-wrap items-center gap-2 px-1 sm:flex">
+        {/* Chip pills — tampil di SEMUA ukuran. Dulu mobile pakai <select> yang
+            cuma bisa single-select (downgrade fungsi); chip = multi-select +
+            udah bener keyboard/a11y-nya.
+            Mobile kelebihan chip → scroll di DALAM baris ini doang, ga bikin
+            halaman ikut scroll horizontal (dulu dua label dropdown sebaris ga
+            muat di 375px dan bikin seluruh halaman geser).
+            -m-1/p-1: overflow-x-auto bikin sumbu Y jadi auto juga, tanpa padding
+            ini focus ring chip ke-clip. Margin negatifnya cuma makan padding
+            <main> (px-4), jadi aman dari overflow. */}
+        <div className="-m-1 flex items-center gap-2 overflow-x-auto p-1 sm:flex-wrap sm:overflow-visible">
           <Chip active={isAll} onClick={() => onChange(emptyFilter())}>
             Semua
           </Chip>
@@ -66,40 +74,9 @@ export default function FilterBar({
           ))}
         </div>
 
-        {/* Mobile: dropdown modality (single-select) + sort sebaris */}
-        {/* flex-wrap wajib: Filter (171px) + Urutkan (219px) + gap ga muat di
-            343px (viewport 375). Tanpa wrap, dua label ini bikin SELURUH
-            halaman scroll horizontal di HP. */}
-        <div className="flex flex-wrap items-center justify-between gap-3 sm:hidden">
-          <label className="flex items-center gap-2 text-sm text-mute">
-            Filter
-            <select
-              value={state.modalities[0] ?? ""}
-              onChange={(e) =>
-                onChange({
-                  ...state,
-                  modalities: e.target.value
-                    ? [e.target.value as Modality]
-                    : [],
-                })
-              }
-              aria-label="Filter modality"
-              className="rounded-[4px] border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:border-fog/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40"
-            >
-              <option value="">Semua</option>
-              {availableModalities.map((m) => (
-                <option key={m} value={m}>
-                  {modalityLabel(m)}
-                </option>
-              ))}
-            </select>
-          </label>
-          {rightSlot}
-        </div>
-
-        {/* Desktop: sort */}
+        {/* Sort — mobile: baris sendiri di bawah chip; sm+: pojok kanan */}
         {rightSlot && (
-          <div className="hidden shrink-0 justify-end sm:flex">{rightSlot}</div>
+          <div className="flex shrink-0 sm:justify-end">{rightSlot}</div>
         )}
       </div>
     </div>

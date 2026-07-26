@@ -10,7 +10,10 @@ const SOCIALS = [
 
 export default function SocialIcons() {
   return (
-    <div className="flex items-center gap-3.5">
+    // gap-7 (28px), bukan gap-3.5: Footer ngasih tiap <a> p-3.5/-m-3.5 biar
+    // hit area-nya 44px. Kalau gap-nya cuma 14px, kotak tap dua ikon
+    // sebelahan overlap 14px — tap di antara dua ikon jadi ambigu.
+    <div className="flex items-center gap-7">
       {SOCIALS.map((s) => (
         <a
           key={s.name}

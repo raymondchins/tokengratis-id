@@ -18,7 +18,7 @@ export default function NoResultsPanel({
       <button
         type="button"
         onClick={onReset}
-        className="mt-6 rounded-full border border-ink-line bg-ink px-5 py-2 text-sm font-medium text-fog transition-colors hover:border-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40"
+        className="mt-6 min-h-[44px] rounded-full border border-ink-line bg-ink px-5 py-2 text-sm font-medium text-fog transition-colors hover:border-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70 active:bg-ink-line/60"
       >
         Reset semua filter
       </button>

@@ -140,7 +140,7 @@ export default async function Page({
         {/* back */}
         <Link
           href="/"
-          className="group mb-8 inline-flex items-center gap-1.5 text-sm text-mute transition-colors hover:text-fog"
+          className="group -mx-2 mb-8 inline-flex items-center gap-1.5 px-2 py-3 text-sm text-mute transition-colors hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
         >
           <span aria-hidden className="transition-transform group-hover:-translate-x-0.5">
             ←
@@ -164,7 +164,7 @@ export default async function Page({
                 <Link
                   key={m}
                   href={`/gratis/${m}`}
-                  className="inline-flex items-center rounded-full border border-ink-line bg-ink-soft px-3 py-1 text-xs font-medium text-mute transition-colors hover:border-mute hover:text-fog"
+                  className="inline-flex items-center rounded-full border border-ink-line bg-ink-soft px-3 py-3.5 text-xs font-medium text-mute transition-colors hover:border-mute hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
                 >
                   Model {modalityLabel(m)} gratis lainnya →
                 </Link>
@@ -175,9 +175,9 @@ export default async function Page({
 
         {/* disclaimer anti-halusinasi (WAJIB) */}
         <section className="mt-6 rounded-[8px] border border-ink-line bg-ink-soft px-5 py-4">
-          <p className="text-xs font-semibold uppercase tracking-[0.15em] text-mute">
+          <h2 className="font-sans text-xs font-semibold uppercase tracking-[0.15em] text-mute">
             Catatan
-          </p>
+          </h2>
           <p className="mt-2 text-sm leading-relaxed text-fog">
             Provider di bawah nyantumin model dengan nama yang sama menurut sumber
             masing-masing — versi/kuantisasi bisa beda antar provider. Cek detail di
@@ -188,9 +188,9 @@ export default async function Page({
         {/* tabel provider */}
         <section className="mt-6 overflow-hidden rounded-[8px] border border-ink-line bg-ink-soft">
           <div className="border-b border-ink-line px-5 py-3.5">
-            <p className="text-xs font-semibold uppercase tracking-[0.15em] text-mute">
+            <h2 className="font-sans text-xs font-semibold uppercase tracking-[0.15em] text-mute">
               {providerCount} provider nyediain {cluster.displayName}
-            </p>
+            </h2>
           </div>
 
           {/* mobile cards */}
@@ -199,7 +199,7 @@ export default async function Page({
               <div key={e.provider.slug} className="px-4 py-3.5">
                 <Link
                   href={`/provider/${e.provider.slug}`}
-                  className="font-medium text-fog underline decoration-ink-line underline-offset-2 hover:text-fog"
+                  className="font-medium text-fog underline decoration-ink-line underline-offset-2 hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
                 >
                   {e.provider.name}
                 </Link>
@@ -207,20 +207,20 @@ export default async function Page({
                   {e.model.id}
                 </div>
                 <dl className="mt-2 grid grid-cols-2 gap-x-4 gap-y-1.5 text-xs">
-                  {showContext && (
+                  {showContext && e.model.context && (
                     <div>
                       <dt className="font-semibold uppercase tracking-wider text-mute">
                         Context
                       </dt>
-                      <dd className="font-medium text-fog">{e.model.context ?? "—"}</dd>
+                      <dd className="font-medium text-fog">{e.model.context}</dd>
                     </div>
                   )}
-                  {showMaxOutput && (
+                  {showMaxOutput && e.model.maxOutput && (
                     <div>
                       <dt className="font-semibold uppercase tracking-wider text-mute">
                         Output
                       </dt>
-                      <dd className="text-fog">{e.model.maxOutput ?? "—"}</dd>
+                      <dd className="text-fog">{e.model.maxOutput}</dd>
                     </div>
                   )}
                   {showRateLimit && e.model.rateLimit && (
@@ -258,7 +258,7 @@ export default async function Page({
                     <td className="px-5 py-3">
                       <Link
                         href={`/provider/${e.provider.slug}`}
-                        className="font-medium text-fog underline decoration-ink-line underline-offset-2 hover:text-fog"
+                        className="font-medium text-fog underline decoration-ink-line underline-offset-2 hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
                       >
                         {e.provider.name}
                       </Link>
@@ -268,16 +268,28 @@ export default async function Page({
                         {e.model.id}
                       </code>
                     </td>
+                    {/* Kolomnya udah di-gate showX (cuma muncul kalau minimal
+                        satu entry punya field itu). Buat baris yang fieldnya
+                        kosong, <td> ga bisa di-drop — nanti kolom melenceng.
+                        Jadi tulis "tidak disebutkan": itu pernyataan soal
+                        SUMBER-nya, bukan nilai karangan kayak "Unknown"/"—".
+                        Pola yang sama dipakai di app/pilih (MatchCard). */}
                     {showContext && (
                       <td className="px-3 py-3 font-medium text-fog">
-                        {e.model.context ?? "—"}
+                        {e.model.context ?? (
+                          <span className="font-normal text-mute">tidak disebutkan</span>
+                        )}
                       </td>
                     )}
                     {showMaxOutput && (
-                      <td className="px-3 py-3 text-mute">{e.model.maxOutput ?? "—"}</td>
+                      <td className="px-3 py-3 text-mute">
+                        {e.model.maxOutput ?? "tidak disebutkan"}
+                      </td>
                     )}
                     {showRateLimit && (
-                      <td className="px-3 py-3 text-mute">{e.model.rateLimit ?? "—"}</td>
+                      <td className="px-3 py-3 text-mute">
+                        {e.model.rateLimit ?? "tidak disebutkan"}
+                      </td>
                     )}
                     <td className="px-5 py-3">
                       <SourceLine sources={[e.source]} />

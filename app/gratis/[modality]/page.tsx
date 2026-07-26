@@ -171,7 +171,7 @@ export default async function GratisModalityPage({
         {/* back */}
         <Link
           href="/#direktori"
-          className="group mb-8 inline-flex items-center gap-1.5 text-sm text-mute transition-colors hover:text-fog"
+          className="group -mx-2 mb-8 inline-flex items-center gap-1.5 px-2 py-3 text-sm text-mute transition-colors hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
         >
           <span aria-hidden className="transition-transform group-hover:-translate-x-0.5">
             ←
@@ -194,6 +194,10 @@ export default async function GratisModalityPage({
         {/* table */}
         <section className="mt-8 overflow-hidden rounded-[8px] border border-ink-line bg-ink-soft">
           <div className="overflow-x-auto">
+            {/* Baris label kolom, BUKAN heading — sengaja <div aria-hidden>.
+                Tiap baris di bawahnya udah punya aria-label sendiri, jadi
+                label kolom ini murni visual. (Pernah dijadiin <h2 aria-hidden>:
+                heading yang di-hide ga nolong siapa-siapa + ini bukan heading.) */}
             <div
               aria-hidden="true"
               className="hidden min-w-[640px] grid-cols-[minmax(190px,1.8fr)_minmax(140px,1fr)_minmax(140px,1fr)_108px] items-center gap-4 px-5 py-3 text-[11px] font-semibold uppercase tracking-wider text-mute md:grid"
@@ -212,7 +216,7 @@ export default async function GratisModalityPage({
                   key={r.provider.slug}
                   href={`/provider/${r.provider.slug}`}
                   aria-label={`${r.provider.name} — ${r.modelCount} model ${label}`}
-                  className="group flex flex-col gap-3 border-t border-ink-line px-4 py-4 transition-colors first:border-t-0 hover:bg-ink/40 focus-visible:bg-ink/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog focus-visible:ring-inset sm:px-5 md:grid md:grid-cols-[minmax(190px,1.8fr)_minmax(140px,1fr)_minmax(140px,1fr)_108px] md:items-center md:gap-4"
+                  className="group flex flex-col gap-3 border-t border-ink-line px-4 py-4 transition-colors first:border-t-0 hover:bg-ink/40 focus-visible:bg-ink/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70 focus-visible:ring-inset sm:px-5 md:grid md:grid-cols-[minmax(190px,1.8fr)_minmax(140px,1fr)_minmax(140px,1fr)_108px] md:items-center md:gap-4"
                 >
                   <div className="flex min-w-0 items-center gap-3">
                     <ProviderLogo

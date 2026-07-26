@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "next-view-transitions";
 import Chip from "@/components/Chip";
 import ProviderLogo from "@/components/ProviderLogo";
@@ -91,6 +91,54 @@ function MatchCard({ match, rank }: { match: WizardMatch; rank: number }) {
 
 export default function PilihClient({ providers }: { providers: WizardProvider[] }) {
   const [criteria, setCriteria] = useState<WizardCriteria>(emptyWizardCriteria());
+
+  // Shareable/refresh-safe URL state — param `m` (modality), `ctx` (minContext).
+  // State di atas tetap start dari default kosong biar server & client render
+  // sama persis (no hydration mismatch); URL baru dibaca di effect ini pas
+  // mount. Param invalid (modality/ctx yang ga dikenal) di-drop diam-diam —
+  // link basi ga boleh bikin crash.
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const mParam = params.get("m");
+    const ctxParam = params.get("ctx");
+
+    setCriteria((prev) => {
+      let next = prev;
+
+      if (mParam && (MODALITY_ORDER as readonly string[]).includes(mParam)) {
+        next = { ...next, modality: mParam as Modality };
+      }
+
+      if (ctxParam) {
+        const parsed = Number(ctxParam);
+        const validThreshold = CONTEXT_THRESHOLDS.find((t) => t.value === parsed);
+        if (validThreshold) {
+          next = { ...next, minContext: validThreshold.value };
+        }
+      }
+
+      return next;
+    });
+  }, []);
+
+  // Tulis balik kriteria ke URL (replaceState — ga nambah history entry tiap
+  // klik chip). Skip run pertama biar ga nimpa hasil baca di effect di atas
+  // sebelum state ke-hydrate dari URL.
+  const skipFirstUrlWrite = useRef(true);
+  useEffect(() => {
+    if (skipFirstUrlWrite.current) {
+      skipFirstUrlWrite.current = false;
+      return;
+    }
+
+    const params = new URLSearchParams();
+    if (criteria.modality) params.set("m", criteria.modality);
+    if (criteria.minContext) params.set("ctx", String(criteria.minContext));
+
+    const qs = params.toString();
+    const url = qs ? `${window.location.pathname}?${qs}` : window.location.pathname;
+    window.history.replaceState(null, "", url);
+  }, [criteria]);
 
   const matches = useMemo(() => findWizardMatches(providers, criteria, 5), [providers, criteria]);
 
@@ -191,7 +239,7 @@ export default function PilihClient({ providers }: { providers: WizardProvider[]
           <button
             type="button"
             onClick={reset}
-            className="mt-6 text-sm font-medium text-mute underline decoration-ink-line underline-offset-2 transition-colors hover:text-fog"
+            className="mt-6 inline-flex min-h-[44px] items-center rounded-[6px] px-3 text-sm font-medium text-mute underline decoration-ink-line underline-offset-2 transition-colors hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
           >
             Reset semua filter
           </button>

@@ -124,10 +124,10 @@ export default function OfferCard({
       )}
 
       {/* Traps — nilai utama halaman ini, dibikin visually distinct (bukan cuma teks
-          biasa) pakai border tebal + label uppercase, tanpa nambah warna baru di
-          globals.css. */}
+          biasa) pakai bg beda + border + ikon ⚠ + label uppercase (bukan stripe
+          samping — anti-pattern), tanpa nambah warna baru di globals.css. */}
       {offer.traps.length > 0 && (
-        <div className="rounded-[6px] border-l-[3px] border-ember bg-ink px-3 py-2">
+        <div className="rounded-[6px] border border-ink-line bg-ink px-3 py-2">
           <p className="text-[10px] font-semibold uppercase tracking-wider text-mute">
             <span aria-hidden="true">⚠</span> Jebakan
           </p>

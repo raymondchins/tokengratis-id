@@ -89,7 +89,7 @@ export default function SetupPanel({ provider }: { provider: Provider }) {
                 id="setup-model"
                 value={modelId}
                 onChange={(e) => setModelId(e.target.value)}
-                className="w-full rounded-[4px] border border-ink-line bg-ink px-3 py-1.5 text-xs text-fog focus:border-fog/40 focus:outline-none focus:ring-2 focus:ring-fog/70 sm:w-auto sm:min-w-[240px]"
+                className="w-full min-h-[44px] rounded-[4px] border border-ink-line bg-ink px-3 py-1.5 text-xs text-fog focus-visible:border-fog/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70 sm:w-auto sm:min-w-[240px]"
               >
                 {provider.models.map((m) => (
                   <option key={m.id} value={m.id}>
@@ -108,10 +108,10 @@ export default function SetupPanel({ provider }: { provider: Provider }) {
                 type="button"
                 aria-pressed={target === s.id}
                 onClick={() => setTarget(s.id)}
-                className={`rounded-[4px] border px-2.5 py-1.5 text-xs font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40 ${
+                className={`min-h-[44px] rounded-[4px] border px-2.5 py-1.5 text-xs font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70 ${
                   target === s.id
-                    ? "border-ember bg-ember text-white"
-                    : "border-ink-line bg-ink text-fog hover:border-mute"
+                    ? "border-ember bg-ember text-white active:bg-ember-soft"
+                    : "border-ink-line bg-ink text-fog hover:border-mute active:bg-ink-line/60"
                 }`}
               >
                 {s.label}
@@ -125,13 +125,13 @@ export default function SetupPanel({ provider }: { provider: Provider }) {
               setup.snippets.find((s) => s.id === target) ?? setup.snippets[0];
             return (
               <div className="relative">
-                <pre className="overflow-x-auto rounded-[6px] border border-ink-line bg-ink px-4 py-3.5 pr-16 font-mono text-[12px] leading-relaxed text-fog">
+                <pre className="overflow-x-auto rounded-[6px] border border-ink-line bg-ink px-4 py-3.5 pr-20 font-mono text-[12px] leading-relaxed text-fog">
                   <code>{active.code}</code>
                 </pre>
                 <button
                   type="button"
                   onClick={() => handleCopy("code", active.code)}
-                  className="absolute right-2 top-2 min-h-[32px] rounded-[4px] border border-ink-line bg-ink-soft px-2.5 text-[11px] font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40"
+                  className="absolute right-2 top-2 min-h-[44px] rounded-[4px] border border-ink-line bg-ink-soft px-2.5 text-[11px] font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70 active:bg-ink-line/60"
                 >
                   <span role="status">
                     {copied === "code"
@@ -154,7 +154,7 @@ export default function SetupPanel({ provider }: { provider: Provider }) {
               <button
                 type="button"
                 onClick={() => handleCopy("env", setup.envSnippet)}
-                className="min-h-[28px] rounded-[4px] border border-ink-line bg-ink-soft px-2.5 text-[11px] font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40"
+                className="min-h-[44px] rounded-[4px] border border-ink-line bg-ink-soft px-2.5 text-[11px] font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70 active:bg-ink-line/60"
               >
                 <span role="status">
                   {copied === "env"

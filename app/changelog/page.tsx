@@ -84,10 +84,13 @@ export default function ChangelogPage() {
   return (
     <div className="min-h-dvh pb-24">
       <Navbar />
+      {/* max-w-3xl sengaja BEDA dari max-w-5xl standar halaman lain — ini prose
+          timeline (baca vertikal), bukan direktori/tabel, jadi lebar bacanya
+          emang harus lebih sempit. JANGAN "disamain" ke max-w-5xl. */}
       <main id="main-content" className="mx-auto max-w-3xl px-4 pt-16 sm:px-6 sm:pt-24">
         {/* ── Hero ── */}
         <section className="text-center">
-          <h1 className="font-serif text-4xl font-medium leading-[1.04] tracking-tight text-fog sm:text-5xl">
+          <h1 className="font-serif text-4xl font-medium leading-[1.04] tracking-tight text-fog sm:text-5xl md:text-6xl">
             Perubahan data
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-pretty text-base leading-relaxed text-mute sm:text-lg">
@@ -162,13 +165,19 @@ export default function ChangelogPage() {
                     <h2 className="font-serif text-xl font-medium text-fog sm:text-2xl">
                       {formatDate(entry.date)}
                     </h2>
-                    <ul className="mt-4 space-y-1.5 text-sm leading-relaxed">
-                      {lines.map((line) => (
-                        <li key={line.key} className={line.className}>
-                          {line.node}
-                        </li>
-                      ))}
-                    </ul>
+                    {lines.length === 0 ? (
+                      <p className="mt-4 text-sm leading-relaxed text-mute">
+                        Ga ada perubahan malam ini.
+                      </p>
+                    ) : (
+                      <ul className="mt-4 space-y-1.5 text-sm leading-relaxed">
+                        {lines.map((line) => (
+                          <li key={line.key} className={line.className}>
+                            {line.node}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </li>
                 );
               })}

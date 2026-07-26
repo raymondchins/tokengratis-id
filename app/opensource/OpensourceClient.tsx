@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { OpenSourceProject } from "@/lib/opensource-types";
 import Chip from "@/components/Chip";
 import SearchIcon from "@/components/SearchIcon";
@@ -83,6 +83,8 @@ function ProjectRow({ p, priority = false }: { p: OpenSourceProject; priority?: 
               width={36}
               height={36}
               loading={priority ? "eager" : "lazy"}
+              decoding="async"
+              fetchPriority={priority ? "high" : undefined}
               className="h-9 w-9 shrink-0 rounded-full border border-ink-line object-cover"
             />
           )}
@@ -138,6 +140,8 @@ function ProjectRow({ p, priority = false }: { p: OpenSourceProject; priority?: 
               width={32}
               height={32}
               loading={priority ? "eager" : "lazy"}
+              decoding="async"
+              fetchPriority={priority ? "high" : undefined}
               className="h-8 w-8 shrink-0 rounded-full border border-ink-line object-cover"
             />
           ) : (
@@ -208,6 +212,17 @@ export default function OpensourceClient({
   const [sort, setSort] = useState<SortKey>("stars");
   const [page, setPage] = useState(1);
 
+  // ── URL state (shareable + refresh-safe) ──────────────────────────────────
+  // Statis (SSG) — sengaja BUKAN useSearchParams/useRouter (itu maksa dynamic
+  // rendering). Baca window.location manual sekali pas mount, tulis balik via
+  // replaceState. skipNextPageResetRef nyegah efek "reset ke halaman 1 pas
+  // filter/sort berubah" (di bawah) nge-overwrite halaman yang baru di-restore
+  // dari URL, TAPI cuma kalau hydration ini emang ngubah filter/sort juga
+  // (kalau cuma page doang yang di-restore, efek reset itu ga bakal
+  // ke-trigger sama sekali, jadi ga butuh di-skip).
+  const skipNextPageResetRef = useRef(false);
+  const isFirstUrlSyncRef = useRef(true);
+
   // Filter + sort
   const results = useMemo(() => {
     const q = search.trim().toLowerCase();
@@ -232,7 +247,68 @@ export default function OpensourceClient({
   }, [projects, search, lang, sort]);
 
   // Reset to page 1 on filter/sort change
-  useEffect(() => setPage(1), [search, lang, sort]);
+  useEffect(() => {
+    if (skipNextPageResetRef.current) {
+      skipNextPageResetRef.current = false;
+      return;
+    }
+    setPage(1);
+  }, [search, lang, sort]);
+
+  // Hydrate dari query string sekali pas mount. Tiap value divalidasi ke
+  // known-valid values — link basi (bahasa/sort yang udah ga ada) di-drop
+  // diam-diam, ga pernah nge-crash.
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    let filtersChanged = false;
+
+    const qParam = params.get("q");
+    if (qParam) {
+      setSearch(qParam);
+      filtersChanged = true;
+    }
+
+    const langParam = params.get("lang");
+    if (langParam && languages.includes(langParam)) {
+      setLang(langParam);
+      filtersChanged = true;
+    }
+
+    const sortParam = params.get("sort");
+    if (sortParam && (Object.keys(SORT_LABELS) as string[]).includes(sortParam)) {
+      setSort(sortParam as SortKey);
+      filtersChanged = true;
+    }
+
+    const pageParam = params.get("page");
+    if (pageParam) {
+      const n = Number(pageParam);
+      if (Number.isInteger(n) && n > 0) {
+        setPage(n);
+        if (filtersChanged) skipNextPageResetRef.current = true;
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Sinkronin state balik ke URL — replaceState (BUKAN pushState, ga nambah
+  // history entry per klik filter). Ref-guard biar invocation pertama (yang
+  // masih state default, sebelum efek hydrate di atas kelar) ga nge-clobber
+  // URL yang baru masuk.
+  useEffect(() => {
+    if (isFirstUrlSyncRef.current) {
+      isFirstUrlSyncRef.current = false;
+      return;
+    }
+    const qs = new URLSearchParams();
+    if (search) qs.set("q", search);
+    if (lang) qs.set("lang", lang);
+    if (sort !== "stars") qs.set("sort", sort);
+    if (page > 1) qs.set("page", String(page));
+    const query = qs.toString();
+    const url = query ? `${window.location.pathname}?${query}` : window.location.pathname;
+    window.history.replaceState(null, "", url);
+  }, [search, lang, sort, page]);
 
   const totalPages = Math.max(1, Math.ceil(results.length / PAGE_SIZE));
   const current = Math.min(page, totalPages);
@@ -247,6 +323,7 @@ export default function OpensourceClient({
       <EmptyDataPanel
         title="Direktori lagi dibangun"
         description="Pipeline sync nyusul — proyek dari sumber komunitas lagi diproses."
+        action={{ href: "/#direktori", label: "Kembali ke direktori" }}
       />
     );
   }
@@ -293,7 +370,7 @@ export default function OpensourceClient({
                   value={lang}
                   onChange={(e) => setLang(e.target.value)}
                   aria-label="Filter bahasa"
-                  className="rounded-[4px] border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:border-fog/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40"
+                  className="min-h-[44px] rounded-[4px] border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:border-fog/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
                 >
                   <option value="">Semua</option>
                   {languages.map((l) => (
@@ -310,7 +387,7 @@ export default function OpensourceClient({
               <select
                 value={sort}
                 onChange={(e) => setSort(e.target.value as SortKey)}
-                className="rounded-[4px] border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:border-fog/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40"
+                className="min-h-[44px] rounded-[4px] border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:border-fog/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
               >
                 {(Object.keys(SORT_LABELS) as SortKey[]).map((k) => (
                   <option key={k} value={k}>
@@ -328,7 +405,7 @@ export default function OpensourceClient({
               <select
                 value={sort}
                 onChange={(e) => setSort(e.target.value as SortKey)}
-                className="rounded-[4px] border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:border-fog/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40"
+                className="min-h-[44px] rounded-[4px] border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:border-fog/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
               >
                 {(Object.keys(SORT_LABELS) as SortKey[]).map((k) => (
                   <option key={k} value={k}>
@@ -371,7 +448,7 @@ export default function OpensourceClient({
 
       {/* ── Footer row: count + pagination ── */}
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <p className="text-sm text-mute">
+        <p className="text-sm text-mute" aria-live="polite">
           {results.length === 0 ? (
             <>
               Menampilkan <span className="font-semibold text-fog">0</span> dari{" "}
