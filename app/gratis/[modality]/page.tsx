@@ -203,7 +203,10 @@ export default async function GratisModalityPage({
               <span>Context maks</span>
               <span className="text-right">Aksi</span>
             </div>
-            <div className="min-w-[640px] md:min-w-0">
+            {/* min-w cuma dari md ke atas — di HP baris-nya flex-col (ga butuh
+                640px), dan min-w-[640px] tanpa gate bikin tombol "Lihat"
+                kedorong ke luar layar di viewport 375. */}
+            <div className="md:min-w-[640px]">
               {rows.map((r) => (
                 <Link
                   key={r.provider.slug}

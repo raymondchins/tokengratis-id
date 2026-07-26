@@ -88,4 +88,11 @@ body {
   ::view-transition-new(root) {
     animation: none;
   }
+
+  /* Tailwind animate-pulse (EmptyDataPanel, /changelog) keyframes-nya
+     unconditional — tanpa ini titik indikator kedip terus buat user yang
+     minta reduced motion. */
+  .animate-pulse {
+    animation: none;
+  }
 }

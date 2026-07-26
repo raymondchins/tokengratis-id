@@ -46,6 +46,7 @@ export default function FallbackClient({ providers }: { providers: FallbackProvi
   );
   const [activeTab, setActiveTab] = useState<TabKey>("sdk");
   const [copiedTab, setCopiedTab] = useState<TabKey | null>(null);
+  const [copyFailedTab, setCopyFailedTab] = useState<TabKey | null>(null);
 
   const chain: ChainStep[] = useMemo(
     () =>
@@ -106,12 +107,18 @@ export default function FallbackClient({ providers }: { providers: FallbackProvi
     try {
       await navigator.clipboard.writeText(text);
       setCopiedTab(tab);
+      setCopyFailedTab(null);
       window.setTimeout(() => {
         setCopiedTab((t) => (t === tab ? null : t));
       }, 1600);
     } catch {
-      // Clipboard permission ditolak / API ga tersedia di context ini —
-      // diemin aja, tombol balik ke label default, ga ada state stuck.
+      // Clipboard permission ditolak / API ga tersedia. Dulu di-diemin —
+      // tombol keliatan ga ngapa-ngapain, user ga tau harus copy manual.
+      setCopiedTab(null);
+      setCopyFailedTab(tab);
+      window.setTimeout(() => {
+        setCopyFailedTab((t) => (t === tab ? null : t));
+      }, 4000);
     }
   }
 
@@ -269,7 +276,13 @@ export default function FallbackClient({ providers }: { providers: FallbackProvi
             disabled={!isValidChain}
             className="shrink-0 rounded-[6px] bg-ember px-3.5 py-1.5 text-[13px] font-semibold text-white transition-colors hover:bg-ember-soft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70 disabled:cursor-not-allowed disabled:opacity-40"
           >
-            {copiedTab === activeTab ? "Tersalin" : "Salin"}
+            <span role="status">
+              {copiedTab === activeTab
+                ? "Tersalin"
+                : copyFailedTab === activeTab
+                  ? "Gagal — salin manual"
+                  : "Salin"}
+            </span>
           </button>
         </div>
 

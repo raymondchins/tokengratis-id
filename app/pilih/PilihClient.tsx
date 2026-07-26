@@ -176,7 +176,10 @@ export default function PilihClient({ providers }: { providers: WizardProvider[]
               />
             </div>
           ) : (
-            <ul className="grid gap-4 sm:grid-cols-2">
+            // grid-cols-[minmax(0,1fr)] wajib di base: grid item default
+            // min-width:auto, jadi track ke-resolve ke min-content kartu
+            // (379px) di container 343px → halaman scroll horizontal di HP.
+            <ul className="grid grid-cols-[minmax(0,1fr)] gap-4 sm:grid-cols-2">
               {matches.map((match, i) => (
                 <MatchCard key={`${match.provider.slug}-${match.model.id}`} match={match} rank={i + 1} />
               ))}

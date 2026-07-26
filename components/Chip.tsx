@@ -14,6 +14,7 @@ export default function Chip({
     <button
       type="button"
       onClick={onClick}
+      aria-pressed={active}
       className={[
         "inline-flex shrink-0 items-center gap-1.5 rounded-[6px] border px-4 py-2 text-[13px] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70",
         active

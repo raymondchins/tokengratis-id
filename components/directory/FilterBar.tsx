@@ -67,7 +67,10 @@ export default function FilterBar({
         </div>
 
         {/* Mobile: dropdown modality (single-select) + sort sebaris */}
-        <div className="flex items-center justify-between gap-3 sm:hidden">
+        {/* flex-wrap wajib: Filter (171px) + Urutkan (219px) + gap ga muat di
+            343px (viewport 375). Tanpa wrap, dua label ini bikin SELURUH
+            halaman scroll horizontal di HP. */}
+        <div className="flex flex-wrap items-center justify-between gap-3 sm:hidden">
           <label className="flex items-center gap-2 text-sm text-mute">
             Filter
             <select

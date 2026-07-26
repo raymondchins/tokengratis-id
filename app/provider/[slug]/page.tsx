@@ -99,8 +99,12 @@ export default async function Page({
             <div className="mt-3 flex flex-wrap items-center gap-2 text-xs text-mute">
               <CategoryTag category={p.category} />
               <span>{p.modelCount} model</span>
-              <span aria-hidden>·</span>
-              <span>context maks {p.maxContext ?? "—"}</span>
+              {p.maxContext && (
+                <>
+                  <span aria-hidden>·</span>
+                  <span>context maks {p.maxContext}</span>
+                </>
+              )}
               {p.freeLimit && (
                 <span className="inline-flex items-center rounded-full border border-grass-line bg-grass-bg px-2.5 py-0.5 font-medium text-grass">
                   Gratis: {p.freeLimit}
@@ -213,7 +217,7 @@ export default async function Page({
                   href={p.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex w-full items-center justify-center gap-2 rounded-[6px] bg-ember px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-ember-soft"
+                  className="flex w-full items-center justify-center gap-2 rounded-[6px] bg-ember px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-ember-soft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-soft"
                 >
                   Dapatkan API key
                   <span aria-hidden>↗</span>
@@ -235,7 +239,9 @@ export default async function Page({
                     <span className="text-grass">{p.freeLimit}</span>
                   </Fact>
                 )}
-                <Fact label="Context maks">{p.maxContext ?? "—"}</Fact>
+                {p.maxContext && (
+                  <Fact label="Context maks">{p.maxContext}</Fact>
+                )}
                 <Fact label="Jumlah model">{p.modelCount}</Fact>
                 {p.domain && (
                   <Fact label="Domain">

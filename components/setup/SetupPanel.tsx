@@ -18,6 +18,7 @@ export default function SetupPanel({ provider }: { provider: Provider }) {
   const [modelId, setModelId] = useState(firstModelId);
   const [target, setTarget] = useState<SnippetTargetId>("openai-node");
   const [copied, setCopied] = useState<CopyTarget | null>(null);
+  const [copyFailed, setCopyFailed] = useState<CopyTarget | null>(null);
   const copyTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
@@ -30,13 +31,17 @@ export default function SetupPanel({ provider }: { provider: Provider }) {
     navigator.clipboard.writeText(text).then(
       () => {
         setCopied(which);
+        setCopyFailed(null);
         if (copyTimeout.current) clearTimeout(copyTimeout.current);
         copyTimeout.current = setTimeout(() => setCopied(null), 1600);
       },
       () => {
-        // Clipboard bisa ditolak browser/permission — diemin aja, tombol
-        // ga boleh nyangkut di state "Tersalin" palsu.
+        // Clipboard ditolak browser/permission. Dulu di-diemin — tombol
+        // keliatan "ga ngapa-ngapain" dan user ga tau harus copy manual.
         setCopied(null);
+        setCopyFailed(which);
+        if (copyTimeout.current) clearTimeout(copyTimeout.current);
+        copyTimeout.current = setTimeout(() => setCopyFailed(null), 4000);
       },
     );
   }
@@ -128,7 +133,13 @@ export default function SetupPanel({ provider }: { provider: Provider }) {
                   onClick={() => handleCopy("code", active.code)}
                   className="absolute right-2 top-2 min-h-[32px] rounded-[4px] border border-ink-line bg-ink-soft px-2.5 text-[11px] font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40"
                 >
-                  {copied === "code" ? "Tersalin" : "Salin"}
+                  <span role="status">
+                    {copied === "code"
+                      ? "Tersalin"
+                      : copyFailed === "code"
+                        ? "Gagal — salin manual"
+                        : "Salin"}
+                  </span>
                 </button>
               </div>
             );
@@ -145,7 +156,13 @@ export default function SetupPanel({ provider }: { provider: Provider }) {
                 onClick={() => handleCopy("env", setup.envSnippet)}
                 className="min-h-[28px] rounded-[4px] border border-ink-line bg-ink-soft px-2.5 text-[11px] font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/40"
               >
-                {copied === "env" ? "Tersalin" : "Salin"}
+                <span role="status">
+                  {copied === "env"
+                    ? "Tersalin"
+                    : copyFailed === "env"
+                      ? "Gagal — salin manual"
+                      : "Salin"}
+                </span>
               </button>
             </div>
             <pre className="mt-1.5 overflow-x-auto font-mono text-[12px] text-fog">
