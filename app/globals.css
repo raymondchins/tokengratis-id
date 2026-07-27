@@ -20,6 +20,11 @@
   --color-ember-soft: #1a1a1a; /* black hover */
   --color-mute: #5f6a70;       /* secondary text */
   --color-fog: #11181c;        /* primary text */
+  /* Fill state TERPILIH buat kontrol multi-select (chip filter). Lebih gelap
+     dari ink-line biar keliatan sekilas — tapi fill SENDIRIAN ga akan pernah
+     nyampe 3:1 tanpa jadi chip hitam, jadi WCAG 1.4.11 dibawa sama
+     border mute solid + glyph ✓. Fill = penguat, bukan satu-satunya penanda. */
+  --color-ink-sel: #dedbcb;    /* chip/filter selected */
 
   /* Green accent — free tier / positif / "bisa diakses" */
   --color-grass: #0e793c;

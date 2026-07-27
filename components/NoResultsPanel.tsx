@@ -1,20 +1,34 @@
 /**
  * Panel "ga ada yang cocok sama filter" — beda sama EmptyDataPanel (itu buat
  * data kosong total). Copy + reset handler dilempar via props per-caller.
+ *
+ * `activeLabels` opsional: label filter yang lagi aktif (mis. ["Vision", "openai"]).
+ * Kalau dikasih, copy nyebutin filter yang bikin hasil kosong — biar user bisa
+ * lepas satu filter, ga wajib reset semua. Tanpa prop ini output byte-identik
+ * ke versi lama (dipakai OpensourceClient.tsx tanpa perubahan).
  */
 export default function NoResultsPanel({
   message,
   hint,
   onReset,
+  activeLabels,
 }: {
   message: string;
   hint: string;
   onReset: () => void;
+  activeLabels?: string[];
 }) {
+  const hasLabels = activeLabels && activeLabels.length > 0;
   return (
     <div className="px-5 py-16 text-center">
       <p className="text-base font-medium text-fog">{message}</p>
       <p className="mt-2 text-sm text-mute">{hint}</p>
+      {hasLabels && (
+        <p className="mt-1 text-sm text-mute">
+          Filter aktif: <span className="text-fog">{activeLabels.join(", ")}</span> — coba lepas
+          salah satu.
+        </p>
+      )}
       <button
         type="button"
         onClick={onReset}

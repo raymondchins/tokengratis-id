@@ -30,6 +30,12 @@ function isNavLinkActive(pathname: string, href: string): boolean {
 
 export default function Navbar() {
   const pathname = usePathname();
+  // Di "/" tombol cuma scroll ke #direktori yang udah di layar — CTA hitam
+  // di situ jadi elemen paling kontras buat aksi yang paling ga penting
+  // (One Black Rule kepake buat row directory, bukan buat no-op ini).
+  // Di route lain klik ini beneran mindahin ke halaman lain, jadi hitam
+  // masih layak dipertahanin.
+  const isHome = pathname === "/";
   const menuId = useId();
   const [open, setOpen] = useState(false);
   const panelRef = useRef<HTMLDivElement>(null);
@@ -72,10 +78,10 @@ export default function Navbar() {
     <header className="sticky top-3 z-50 px-4">
       <nav
         aria-label="Navigasi utama"
-        className="mx-auto flex max-w-5xl items-center justify-between gap-2 rounded-full border border-ink-line bg-ink-soft/90 px-2 py-2 pl-3 shadow-[0_8px_30px_rgba(17,24,28,0.06)] backdrop-blur sm:gap-4 sm:px-3 sm:pl-5"
+        className="mx-auto flex max-w-5xl items-center justify-between gap-2 rounded-full border border-ink-line bg-ink-soft/95 px-2 py-2 pl-3 shadow-[0_8px_30px_rgba(17,24,28,0.06)] backdrop-blur sm:gap-4 sm:px-3 sm:pl-5"
       >
         {/* Logo */}
-        <Link href="/" className="flex min-h-[40px] items-center gap-2">
+        <Link href="/" className="flex min-h-[44px] items-center gap-2">
           <Spark className="h-4 w-4 text-fog" />
           <span className="font-serif text-base font-medium tracking-tight text-fog sm:text-lg">
             tokengratis<span className="text-mute">.id</span>
@@ -113,7 +119,11 @@ export default function Navbar() {
           </span>
           <Link
             href="/#direktori"
-            className={`flex min-h-[40px] items-center rounded-full bg-ember px-3 py-1.5 text-sm font-semibold text-white transition-colors hover:bg-ember-soft sm:px-4 ${FOCUS_RING}`}
+            className={`flex min-h-[44px] items-center rounded-full px-3 py-1.5 text-sm font-semibold transition-colors sm:px-4 ${FOCUS_RING} ${
+              isHome
+                ? "border border-ink-line bg-ink-soft text-fog hover:border-mute"
+                : "bg-ember text-white hover:bg-ember-soft"
+            }`}
           >
             Lihat direktori
           </Link>
@@ -126,7 +136,7 @@ export default function Navbar() {
             aria-expanded={open}
             aria-controls={menuId}
             aria-label={open ? "Tutup menu" : "Buka menu"}
-            className={`inline-flex h-10 w-10 items-center justify-center rounded-full text-fog transition-colors hover:bg-ink md:hidden ${FOCUS_RING}`}
+            className={`inline-flex h-11 w-11 items-center justify-center rounded-full text-fog transition-colors hover:bg-ink md:hidden ${FOCUS_RING}`}
           >
             {open ? (
               <svg

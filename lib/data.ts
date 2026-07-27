@@ -22,6 +22,7 @@ export function getListItems(): ProviderListItem[] {
     maxContext: p.maxContext,
     freeLimit: p.freeLimit,
     description: p.description,
+    sources: p.sources,
     searchText: `${p.name} ${p.models
       .map((m) => `${m.name} ${m.id}`)
       .join(" ")}`.toLowerCase(),

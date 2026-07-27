@@ -70,13 +70,14 @@ const POPULARITY: string[] = [
   "ai21-labs",
 ];
 
-export type SortKey = "popular" | "context" | "models" | "name";
+export type SortKey = "popular" | "context" | "models" | "name" | "freeinfo";
 
 export const SORT_LABELS: Record<SortKey, string> = {
   popular: "Paling populer",
   context: "Context terbesar",
   models: "Model terbanyak",
   name: "Nama (A–Z)",
+  freeinfo: "Ada info gratis",
 };
 
 export function sortProviders(
@@ -97,5 +98,19 @@ export function sortProviders(
       return arr.sort((a, b) => b.modelCount - a.modelCount);
     case "name":
       return arr.sort((a, b) => a.name.localeCompare(b.name));
+    case "freeinfo":
+      // "Sort by biggest free allowance" ga bisa — freeLimit itu teks bebas
+      // ("1M token/hari" vs "$10 credit" vs "10,000 Neurons/hari"), ranking
+      // itu = nebak. Yang honest cuma ADA/GA-nya info gratis terstruktur.
+      // Tie-break pinjem urutan POPULARITY yang sama, biar ga ada 2 sort
+      // "kasar" yang independen — reuse, bukan array baru.
+      return arr.sort((a, b) => {
+        const aHas = a.freeLimit ? 0 : 1;
+        const bHas = b.freeLimit ? 0 : 1;
+        if (aHas !== bHas) return aHas - bHas;
+        const ai = POPULARITY.indexOf(a.slug);
+        const bi = POPULARITY.indexOf(b.slug);
+        return (ai < 0 ? 999 : ai) - (bi < 0 ? 999 : bi);
+      });
   }
 }

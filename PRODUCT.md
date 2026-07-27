@@ -61,9 +61,25 @@ and telling you where they got them, not a vendor pitching you.
 
 ## Accessibility & Inclusion
 
-Target WCAG 2.1 AA. Site language is `lang="id"`. Known commitments already in place: skip-to-
-content link, labeled inputs, alt text on all images, no `outline:none` without a replacement
-ring, and a `prefers-reduced-motion` block gating the view-transition crossfade. Open gaps as of
-this audit: touch targets below 44px on several controls, missing `aria-pressed` on filter chips,
-missing `aria-current` on nav, missing `aria-live` on filter result counts, and `animate-pulse`
-not covered by the reduced-motion query.
+Target WCAG 2.1 AA. Site language is `lang="id"`.
+
+**Verified in place** (measured against production 2026-07-27, not asserted): skip-to-content
+link, labeled inputs, 0 of 38 images missing alt, no `outline:none` without a replacement ring,
+`prefers-reduced-motion` handled in *both* directions (a `no-preference` gate on the
+view-transition crossfade *and* a `reduce` override that also kills Tailwind's `animate-pulse`,
+whose keyframes are otherwise unconditional), `aria-pressed` on filter chips, `aria-current` on
+nav, `aria-live`/`aria-atomic` on the filter result count, clean heading outline with no skipped
+levels, and no keyboard traps. Every measured text pair clears AA with margin — near-black on
+paper is 15.68:1, the muted secondary is 4.86:1 on paper and 5.55:1 on white, which is why 11px
+source lines and placeholders are legitimately safe rather than "elegant gray".
+
+**Touch targets.** 44px minimum on standalone controls (buttons, chips, inputs, nav links,
+pagination). Inline links inside running prose are deliberately exempt — WCAG 2.5.8 exempts them,
+and padding a link mid-sentence wrecks line rhythm for zero conformance gain. Link *lists*
+formatted as prose (the footer's `Jelajah:` / `Alat:` / `Buat mesin:` rows) are not sentences and
+do get extra vertical padding.
+
+**Open gaps as of 2026-07-27:** none known at AA. The prior gap list was resolved and re-measured;
+the live audit found the remaining a11y issues to be state-contrast on the multi-select chips
+(WCAG 1.4.11, since fixed via border + `✓` glyph rather than fill alone) and a missing
+`role="group"` label on the filter chip set.

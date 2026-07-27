@@ -86,8 +86,13 @@ export interface Provider {
 
 /**
  * Versi ramping buat tabel direktori (client). Sengaja TANPA models[]/baseUrl/
- * sources/url biar payload yang dikirim ke client kecil. `searchText` =
+ * url biar payload yang dikirim ke client kecil. `searchText` =
  * name + nama/id model (di-precompute) biar search tetep jalan.
+ *
+ * `sources` SENGAJA dibawa walau nambah payload (~4KB buat 24 provider):
+ * prinsip #1 PRODUCT.md bilang TIAP data render sumbernya, dan direktori =
+ * permukaan yang paling banyak dilihat. Tanpa ini homepage cuma bisa ngeklaim
+ * "aggregator, bukan verifier" tanpa nunjukin satu kuitansi pun.
  */
 export interface ProviderListItem {
   slug: string;
@@ -101,4 +106,6 @@ export interface ProviderListItem {
   freeLimit: string | null;
   description?: string;
   searchText: string;
+  /** Atribusi sumber (>=1, urutan = prioritas merge; [0] = sumber utama). */
+  sources: SourceRef[];
 }

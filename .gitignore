@@ -55,3 +55,7 @@ graphify-out/
 
 # Serena MCP per-project state (LSP cache + agent memories) — machine-local
 .serena/
+
+# Impeccable critique snapshots (session archive, regenerated per run).
+# DESIGN.md + .impeccable/design.json SENGAJA di-track — itu design system, bukan output sesi.
+.impeccable/critique/

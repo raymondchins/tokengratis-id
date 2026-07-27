@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-27T00:00:00Z",
+  "title": "Design System: tokengratis.id",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "oklch(95.4% 0.012 95)",
+        "tonalRamp": [
+          "oklch(15% 0.012 95)",
+          "oklch(26% 0.012 95)",
+          "oklch(37% 0.012 95)",
+          "oklch(48% 0.012 95)",
+          "oklch(59% 0.012 95)",
+          "oklch(70% 0.012 95)",
+          "oklch(84% 0.012 95)",
+          "oklch(95.4% 0.012 95)"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Card White",
+        "canonical": "oklch(100% 0 0)",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(37% 0 0)",
+          "oklch(48% 0 0)",
+          "oklch(59% 0 0)",
+          "oklch(70% 0 0)",
+          "oklch(85% 0 0)",
+          "oklch(100% 0 0)"
+        ]
+      },
+      "ink-line": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "canonical": "oklch(90.5% 0.015 95)",
+        "tonalRamp": [
+          "oklch(15% 0.015 95)",
+          "oklch(26% 0.015 95)",
+          "oklch(37% 0.015 95)",
+          "oklch(48% 0.015 95)",
+          "oklch(59% 0.015 95)",
+          "oklch(70% 0.015 95)",
+          "oklch(81% 0.015 95)",
+          "oklch(90.5% 0.015 95)"
+        ]
+      },
+      "ink-sel": {
+        "role": "neutral",
+        "displayName": "Selected",
+        "canonical": "oklch(88.5% 0.021 95)",
+        "tonalRamp": [
+          "oklch(15% 0.021 95)",
+          "oklch(26% 0.021 95)",
+          "oklch(37% 0.021 95)",
+          "oklch(48% 0.021 95)",
+          "oklch(59% 0.021 95)",
+          "oklch(70% 0.021 95)",
+          "oklch(79% 0.021 95)",
+          "oklch(88.5% 0.021 95)"
+        ]
+      },
+      "fog": {
+        "role": "neutral",
+        "displayName": "Fog Ink",
+        "canonical": "oklch(19.5% 0.012 230)",
+        "tonalRamp": [
+          "oklch(19.5% 0.012 230)",
+          "oklch(30% 0.012 230)",
+          "oklch(41% 0.012 230)",
+          "oklch(52% 0.012 230)",
+          "oklch(63% 0.012 230)",
+          "oklch(74% 0.012 230)",
+          "oklch(85% 0.012 230)",
+          "oklch(95% 0.012 230)"
+        ]
+      },
+      "mute": {
+        "role": "neutral",
+        "displayName": "Mute",
+        "canonical": "oklch(51.5% 0.017 225)",
+        "tonalRamp": [
+          "oklch(15% 0.017 225)",
+          "oklch(26% 0.017 225)",
+          "oklch(37% 0.017 225)",
+          "oklch(51.5% 0.017 225)",
+          "oklch(62% 0.017 225)",
+          "oklch(73% 0.017 225)",
+          "oklch(84% 0.017 225)",
+          "oklch(95% 0.017 225)"
+        ]
+      },
+      "ember": {
+        "role": "primary",
+        "displayName": "Ink Black",
+        "canonical": "oklch(0% 0 0)",
+        "tonalRamp": [
+          "oklch(0% 0 0)",
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(37% 0 0)",
+          "oklch(48% 0 0)",
+          "oklch(62% 0 0)",
+          "oklch(78% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "grass": {
+        "role": "secondary",
+        "displayName": "Grass Green",
+        "canonical": "oklch(50% 0.13 150)",
+        "tonalRamp": [
+          "oklch(20% 0.13 150)",
+          "oklch(31% 0.13 150)",
+          "oklch(42% 0.13 150)",
+          "oklch(50% 0.13 150)",
+          "oklch(61% 0.13 150)",
+          "oklch(72% 0.13 150)",
+          "oklch(84% 0.13 150)",
+          "oklch(95% 0.05 150)"
+        ]
+      },
+      "grape": {
+        "role": "tertiary",
+        "displayName": "Grape Violet",
+        "canonical": "oklch(53.5% 0.25 293)",
+        "tonalRamp": [
+          "oklch(20% 0.25 293)",
+          "oklch(31% 0.25 293)",
+          "oklch(42% 0.25 293)",
+          "oklch(53.5% 0.25 293)",
+          "oklch(64% 0.22 293)",
+          "oklch(75% 0.16 293)",
+          "oklch(86% 0.09 293)",
+          "oklch(95% 0.04 293)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Page h1 only. Breakpoint-stepped 2.25rem → 3rem @640px → 3.75rem @768px. Never clamp()."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings and secondary page titles. Georgia 600 at 1.875rem."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Card and panel headings. Small serif — voice, not display."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All prose, descriptions, table cells. Prose caps at ~65ch; tables run the full 1024px."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Table column headers, panel headers, dt terms. Uppercase is licensed here and nowhere else — never above a section heading."
+      },
+      "mono": {
+        "displayName": "Mono",
+        "purpose": "Anything the user will copy: model IDs, base URLs, env keys, code snippets."
+      }
+    },
+    "shadows": [
+      {
+        "name": "floating-chrome",
+        "value": "0 8px 30px rgba(17, 24, 28, 0.06)",
+        "purpose": "The only shadow in the system. Sticky navbar pill and mobile menu panel exclusively. Tinted to Fog Ink at 6% so it never reads gray-on-warm."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state-transition",
+        "value": "150ms cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Tailwind default, applied via transition-colors on every interactive element. Color and border only — the system never animates layout."
+      },
+      {
+        "name": "view-transition-crossfade",
+        "value": "200ms ease",
+        "purpose": "Root crossfade on page navigation via next-view-transitions. Gated behind prefers-reduced-motion: no-preference; disabled entirely under reduce."
+      },
+      {
+        "name": "nudge",
+        "value": "translateX(2px) over 150ms",
+        "purpose": "The one transform in the system: the → arrow on an offer card's Detail affordance shifts on group-hover."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "container", "value": "1024px (max-w-5xl)" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single black action per screen region. Directory row CTA, navbar CTA, selected snippet tab.",
+      "html": "<button class=\"ds-btn-primary\">Lihat direktori</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 8px 16px; border: none; border-radius: 6px; background: var(--color-ember, #000000); color: #ffffff; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-btn-primary:hover { background: var(--color-ember-soft, #1a1a1a); } .ds-btn-primary:focus-visible { outline: none; box-shadow: 0 0 0 2px rgba(17, 24, 28, 0.7); }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Outlined escape hatch — pagination, reset filter, empty-state action. Hover moves the border, never the fill.",
+      "html": "<button class=\"ds-btn-secondary\">← Sebelumnya</button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 8px 12px; border: 1px solid var(--color-ink-line, #e4e2d8); border-radius: 6px; background: var(--color-ink-soft, #ffffff); color: var(--color-fog, #11181c); font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 14px; font-weight: 500; cursor: pointer; transition: border-color 150ms cubic-bezier(0.4, 0, 0.2, 1), background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-btn-secondary:hover { border-color: var(--color-mute, #5f6a70); } .ds-btn-secondary:active { background: rgba(228, 226, 216, 0.6); } .ds-btn-secondary:focus-visible { outline: none; box-shadow: 0 0 0 2px rgba(17, 24, 28, 0.7); } .ds-btn-secondary:disabled { opacity: 0.4; cursor: not-allowed; }"
+    },
+    {
+      "name": "Filter Chip",
+      "kind": "chip",
+      "refersTo": "chip-filter",
+      "description": "Multi-select modality facet with a result count. Selected state is tonal (not black) because several can be on at once; WCAG 1.4.11 is carried by the solid Mute border plus the check glyph, not by the fill.",
+      "html": "<button class=\"ds-chip-filter\" aria-pressed=\"false\">Vision <span class=\"ds-chip-filter__count\">6</span></button>\n<button class=\"ds-chip-filter ds-chip-filter--active\" aria-pressed=\"true\"><span aria-hidden=\"true\">✓</span> Code <span class=\"ds-chip-filter__count\">4</span></button>",
+      "css": ".ds-chip-filter { display: inline-flex; align-items: center; gap: 6px; flex-shrink: 0; max-width: 100%; min-height: 44px; padding: 8px 16px; border: 1px solid var(--color-ink-line, #e4e2d8); border-radius: 6px; background: var(--color-ink-soft, #ffffff); color: var(--color-mute, #5f6a70); font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 13px; font-weight: 500; cursor: pointer; transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1), border-color 150ms cubic-bezier(0.4, 0, 0.2, 1), background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-chip-filter:hover { border-color: var(--color-mute, #5f6a70); color: var(--color-fog, #11181c); } .ds-chip-filter:active { background: rgba(228, 226, 216, 0.6); } .ds-chip-filter:focus-visible { outline: none; box-shadow: 0 0 0 2px rgba(17, 24, 28, 0.7); } .ds-chip-filter__count { flex-shrink: 0; font-variant-numeric: tabular-nums; color: var(--color-mute, #5f6a70); } .ds-chip-filter--active { border-color: var(--color-mute, #5f6a70); background: var(--color-ink-sel, #dedbcb); color: var(--color-fog, #11181c); font-weight: 600; } .ds-chip-filter--active .ds-chip-filter__count { color: rgba(17, 24, 28, 0.7); }"
+    },
+    {
+      "name": "Search Input",
+      "kind": "input",
+      "refersTo": "input-search",
+      "description": "Primary directory search. Focus shifts the border AND adds the ring — both, not either. Placeholder is Mute because it clears 4.5:1.",
+      "html": "<div class=\"ds-input-search-wrap\"><svg class=\"ds-input-search-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"/><path d=\"M20 20l-3.5-3.5\"/></svg><input class=\"ds-input-search\" type=\"search\" placeholder=\"Cari provider atau model — Gemini, Groq, DeepSeek…\" aria-label=\"Cari provider atau model\"></div>",
+      "css": ".ds-input-search-wrap { position: relative; width: 100%; } .ds-input-search-icon { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; color: var(--color-mute, #5f6a70); pointer-events: none; } .ds-input-search { width: 100%; padding: 14px 16px 14px 44px; border: 1px solid var(--color-ink-line, #e4e2d8); border-radius: 8px; background: var(--color-ink-soft, #ffffff); color: var(--color-fog, #11181c); font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 14px; transition: border-color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-input-search::placeholder { color: var(--color-mute, #5f6a70); } .ds-input-search:focus { outline: none; border-color: rgba(17, 24, 28, 0.4); box-shadow: 0 0 0 2px rgba(17, 24, 28, 0.7); }"
+    },
+    {
+      "name": "Free-Tier Badge",
+      "kind": "chip",
+      "refersTo": "badge-free",
+      "description": "Green means free, and only free. Wash fill + hairline outline; text-on-wash measures 5.07:1.",
+      "html": "<span class=\"ds-badge-free\">Free tier</span>\n<span class=\"ds-badge-credit\">Kredit $10.000</span>",
+      "css": ".ds-badge-free { display: inline-flex; align-items: center; flex-shrink: 0; padding: 2px 8px; border: 1px solid var(--color-grass-line, #a2e9c1); border-radius: 4px; background: var(--color-grass-bg, #e8faf0); color: var(--color-grass, #0e793c); font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 11px; font-weight: 600; } .ds-badge-credit { display: inline-flex; align-items: center; flex-shrink: 0; padding: 2px 8px; border: 1px solid var(--color-grape-line, #d8cef2); border-radius: 4px; background: var(--color-grape-bg, #f4f3fb); color: var(--color-grape, #7c3aed); font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 11px; font-weight: 600; }"
+    },
+    {
+      "name": "Card Surface",
+      "kind": "card",
+      "refersTo": "card-surface",
+      "description": "White on paper, 8px, 1px rule, no shadow. Interactive cards shift the border to Mute on hover — they do not lift or scale.",
+      "html": "<a class=\"ds-card-surface\" href=\"#\"><h3 class=\"ds-card-surface__title\">Google AI Studio</h3><p class=\"ds-card-surface__body\">Free tier Gemini via API key, tanpa kartu kredit buat tier gratisnya.</p><span class=\"ds-card-surface__receipt\">Disinkron 27 Jul 2026 dari mnfst/awesome-free-llm-apis</span></a>",
+      "css": ".ds-card-surface { display: flex; flex-direction: column; gap: 14px; padding: 20px; border: 1px solid var(--color-ink-line, #e4e2d8); border-radius: 8px; background: var(--color-ink-soft, #ffffff); text-decoration: none; transition: border-color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-card-surface:hover { border-color: var(--color-mute, #5f6a70); } .ds-card-surface:focus-visible { outline: none; box-shadow: inset 0 0 0 2px var(--color-fog, #11181c); } .ds-card-surface__title { margin: 0; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 16px; font-weight: 600; letter-spacing: -0.02em; color: var(--color-fog, #11181c); } .ds-card-surface__body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 13px; line-height: 1.625; color: var(--color-mute, #5f6a70); } .ds-card-surface__receipt { font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 11px; line-height: 1.625; color: var(--color-mute, #5f6a70); }"
+    },
+    {
+      "name": "Navbar Pill",
+      "kind": "nav",
+      "refersTo": "nav-pill",
+      "description": "Sticky floating chrome — the only element in the system carrying a shadow. Active route marked with aria-current.",
+      "html": "<nav class=\"ds-nav-pill\" aria-label=\"Navigasi utama\"><a class=\"ds-nav-pill__brand\" href=\"#\">tokengratis<span>.id</span></a><div class=\"ds-nav-pill__links\"><a href=\"#\" aria-current=\"page\">Direktori</a><a href=\"#\">Pilih model</a><a href=\"#\">Open source</a></div><a class=\"ds-nav-pill__cta\" href=\"#\">Lihat direktori</a></nav>",
+      "css": ".ds-nav-pill { display: flex; align-items: center; justify-content: space-between; gap: 16px; max-width: 1024px; padding: 8px 12px 8px 20px; border: 1px solid var(--color-ink-line, #e4e2d8); border-radius: 9999px; background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(8px); box-shadow: 0 8px 30px rgba(17, 24, 28, 0.06); } .ds-nav-pill__brand { font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px; font-weight: 500; letter-spacing: -0.02em; color: var(--color-fog, #11181c); text-decoration: none; } .ds-nav-pill__brand span { color: var(--color-mute, #5f6a70); } .ds-nav-pill__links { display: flex; align-items: center; gap: 24px; } .ds-nav-pill__links a { display: inline-flex; align-items: center; min-height: 44px; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 14px; font-weight: 500; color: var(--color-mute, #5f6a70); text-decoration: none; border-radius: 4px; transition: color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-nav-pill__links a:hover, .ds-nav-pill__links a[aria-current=\"page\"] { color: var(--color-fog, #11181c); } .ds-nav-pill__links a:focus-visible { outline: none; box-shadow: 0 0 0 2px rgba(17, 24, 28, 0.7); } .ds-nav-pill__cta { display: inline-flex; align-items: center; min-height: 40px; padding: 6px 16px; border-radius: 9999px; background: var(--color-ember, #000000); color: #ffffff; font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 14px; font-weight: 600; text-decoration: none; transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-nav-pill__cta:hover { background: var(--color-ember-soft, #1a1a1a); }"
+    },
+    {
+      "name": "Code Block",
+      "kind": "custom",
+      "refersTo": "code-block",
+      "description": "Paper-recessed inside a white card. The copy button reports all three states in a role=status span — a copy button that silently does nothing is a broken affordance.",
+      "html": "<div class=\"ds-code-block\"><pre><code>import OpenAI from \"openai\";\n\nconst client = new OpenAI({\n  baseURL: \"https://api.groq.com/openai/v1\",\n  apiKey: process.env.GROQ_API_KEY,\n});</code></pre><button class=\"ds-code-block__copy\" type=\"button\"><span role=\"status\">Salin</span></button></div>",
+      "css": ".ds-code-block { position: relative; } .ds-code-block pre { margin: 0; overflow-x: auto; padding: 14px 80px 14px 16px; border: 1px solid var(--color-ink-line, #e4e2d8); border-radius: 6px; background: var(--color-ink, #f1f0e8); color: var(--color-fog, #11181c); font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; line-height: 1.625; } .ds-code-block__copy { position: absolute; right: 8px; top: 8px; min-height: 44px; padding: 0 10px; border: 1px solid var(--color-ink-line, #e4e2d8); border-radius: 4px; background: var(--color-ink-soft, #ffffff); color: var(--color-fog, #11181c); font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 11px; font-weight: 500; cursor: pointer; transition: border-color 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-code-block__copy:hover { border-color: var(--color-mute, #5f6a70); } .ds-code-block__copy:active { background: rgba(228, 226, 216, 0.6); } .ds-code-block__copy:focus-visible { outline: none; box-shadow: 0 0 0 2px rgba(17, 24, 28, 0.7); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Field Notebook",
+    "overview": "This is the notebook of someone who actually went and checked. Warm paper stock (#f1f0e8), Georgia set tight, ruled lines instead of drop shadows, and a marginal note under every single entry telling you where it came from and when. The page never claims authority — it shows its sources and lets you follow them. That is the whole aesthetic argument: a directory that earns trust by exposing its own paper trail rather than by looking expensive.\n\nDensity is deliberately high. The audience is a developer on a phone, mid-task, comparing free tiers — they want a page of rows, not a page of hero sections. So the system runs on one wide content column (max-w-5xl, 1024px), 1px rules in #e4e2d8 doing all the structural work, and a single pure-black accent reserved for the one thing on screen you're supposed to click. There are exactly two decorative gestures in the entire system: the floating navbar pill and the green freshness dot. Everything else is information.\n\nWhat this explicitly rejects: the word \"Verified\" anywhere on the surface, and the whole SaaS landing-page grammar — gradient hero text, glassmorphism, big-number hero metrics, an uppercase tracked eyebrow above every section, 01/02/03 section scaffolding. It also rejects fake completeness: a field with no source data is removed from the DOM, never rendered as a hollow cell. The serif is a bet that a directory can read like an editorial page and still be a tool.",
+    "keyCharacteristics": [
+      "Paper-warm neutral surface with pure-white cards floating on it — two-layer, never three",
+      "Georgia serif for every heading; Inter for every piece of UI text, data, and label",
+      "Flat by construction: 1px borders and surface swaps carry depth, not shadows",
+      "Pure black (#000000) is the only action color, used on ~1 element per screen region",
+      "Green means \"free\", purple means \"credit\" — semantic, never decorative",
+      "Every datum carries a visible `Disinkron [tanggal] dari [sumber]` receipt",
+      "44px minimum touch target on every standalone control; inline prose links exempt",
+      "Mobile and desktop are separate renders of the same row, not one layout squeezed"
+    ],
+    "rules": [
+      {
+        "name": "The One Black Rule",
+        "body": "#000000 marks the primary action and nothing else. If a screen region has two black elements competing, one of them is decoration and must be demoted to the outlined secondary button. Black is never a background, never a heading color, never a border.",
+        "section": "colors"
+      },
+      {
+        "name": "The Semantic Accent Rule",
+        "body": "Green means free. Purple means credit. Neither color may be used because a section \"needed some color.\" A page with no free tiers on it shows no green, and that is correct.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two-Layer Rule",
+        "body": "Paper ground, white surface. That's the entire depth model. A white card inside a white card is forbidden; recess with Paper (#f1f0e8) instead — which is exactly what code blocks and .env panes do.",
+        "section": "colors"
+      },
+      {
+        "name": "The Serif-Is-Voice Rule",
+        "body": "Georgia appears on h1–h4 and on the two first-person asides on the homepage (\"Kenapa gw bikin ini…\"). It is forbidden in buttons, labels, table cells, data, form controls, and any UI chrome. The moment a serif shows up on a button, the page stops being a tool.",
+        "section": "typography"
+      },
+      {
+        "name": "The Uppercase Budget Rule",
+        "body": "Uppercase tracked text is permitted for table column headers, panel headers, and definition-list terms. It is forbidden above a section heading. An uppercase kicker over every section is the AI tell this project exists to avoid.",
+        "section": "typography"
+      },
+      {
+        "name": "The Copyable-Is-Mono Rule",
+        "body": "If the user is meant to select it and paste it somewhere, it renders mono — model IDs, base URLs, env keys, snippets. No exceptions in either direction.",
+        "section": "typography"
+      },
+      {
+        "name": "The One-Shadow Rule",
+        "body": "0 8px 30px rgba(17,24,28,0.06) is used on floating chrome and nothing else. A card, panel, badge, button, or dropdown that reaches for a shadow is wrong — give it a #e4e2d8 border or swap its surface instead. Audit test: if two elements on the same screen cast shadows, one is decoration.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Hairline Rule",
+        "body": "All borders are exactly 1px #e4e2d8. A thicker or colored border is only permitted where it is a semantic badge outline (#a2e9c1 grass, #d8cef2 grape) or the fill-matched outline of an active black control. Colored side-stripes are forbidden outright.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do render the SourceLine receipt on every surface that displays synced data — `Disinkron [tanggal] dari [sumber]` with the source name as a live external link.",
+      "Do give every standalone control min-h-[44px] and a focus-visible:ring-2 ring-fog/70. Links inline in running prose are exempt from the size rule (WCAG 2.5.8 exempts them, and padding a link mid-sentence wrecks line rhythm for zero conformance gain) — but link lists formatted as prose, like the footer's Jelajah: / Alat: rows, are not sentences and do get padded. The focus ring has no exemptions.",
+      "Do carry selected-state contrast on a border and a glyph, not on a fill. A tonal fill cannot reach WCAG 1.4.11's 3:1 without becoming a black control; check the border against both adjacent surfaces instead.",
+      "Do carry depth with a 1px #e4e2d8 border or a surface swap. Reach for #f1f0e8 to recess and #ffffff to raise.",
+      "Do keep Georgia on h1–h4 and Inter on everything a user operates.",
+      "Do gate min-w-[...] behind a md: breakpoint whenever the row has its own mobile layout, and give grid items an explicit min-w-0 — an unshrinkable child is the single cause of every horizontal-scroll bug this project has shipped.",
+      "Do mount and unmount conditional UI. Never gate content visibility behind a class transition; transitions don't fire in background tabs or headless renders and the feature ships dead.",
+      "Do pair every animation with a prefers-reduced-motion: reduce alternative, including Tailwind's animate-pulse, whose keyframes are unconditional.",
+      "Do verify a responsive change by measuring the DOM at 375px. tsc and next build are structurally blind to layout."
+    ],
+    "donts": [
+      "Don't use the word \"Verified\", or any phrasing that claims this site checked something. The line is always \"Synced [tanggal] dari [sumber]\". This is the project's hard ban.",
+      "Don't render \"Unknown\", \"N/A\", \"—\", or a guessed boolean in place of a missing field. If a source doesn't provide the field in structured form, the field must not render at all. In a flow layout, omit the element entirely; in a grid or table where the track must stay aligned, render the cell empty. An empty cell reads \"not provided\"; an em dash reads \"we checked, it's nothing.\" Where the absence is itself interesting — a free-tier amount the source never published — the strongest move is to replace the hole with the receipt: a quiet \"Ga ada di sumber\" linking to that provider's source.",
+      "Don't import SaaS landing-page grammar: no gradient hero text, no glassmorphism, no big-number hero metrics, no uppercase tracked eyebrow above every section, no 01/02/03 scaffolding.",
+      "Don't add a box-shadow to a card, badge, button, or panel. The system has one shadow and it belongs to floating chrome.",
+      "Don't use border-left or border-right above 1px as a colored accent stripe. The \"Jebakan\" callout on /modal-gratis shows the correct pattern: recessed background + border + icon + label.",
+      "Don't spend green or purple on decoration. Green is free-tier, purple is credits; a section that needs \"some color\" doesn't get any.",
+      "Don't put a second black element in a screen region. One primary action, one black.",
+      "Don't introduce a display font, a second sans, or a new hue without deleting something first. The palette is 14 tokens and the type system is 2 families, on purpose.",
+      "Don't build for a community that doesn't exist: no voting, comments, submission forms, user accounts, or admin panels.",
+      "Don't use clamp() for headings. This is a tool; the type scale steps at breakpoints."
+    ]
+  }
+}

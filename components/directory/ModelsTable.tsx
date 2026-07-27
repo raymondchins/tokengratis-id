@@ -83,18 +83,24 @@ export default function ModelsTable({
                 <div className="break-all font-mono text-[11px] text-mute">{m.id}</div>
               </div>
               <dl className="grid grid-cols-2 gap-x-4 gap-y-1.5 text-xs">
-                <div>
-                  <dt className="font-semibold uppercase tracking-wider text-mute">Modality</dt>
-                  <dd className="text-fog">{m.modality ?? "—"}</dd>
-                </div>
-                <div>
-                  <dt className="font-semibold uppercase tracking-wider text-mute">Context</dt>
-                  <dd className="font-medium text-fog">{m.context ?? "—"}</dd>
-                </div>
-                <div>
-                  <dt className="font-semibold uppercase tracking-wider text-mute">Output</dt>
-                  <dd className="text-fog">{m.maxOutput ?? "—"}</dd>
-                </div>
+                {m.modality && (
+                  <div>
+                    <dt className="font-semibold uppercase tracking-wider text-mute">Modality</dt>
+                    <dd className="text-fog">{m.modality}</dd>
+                  </div>
+                )}
+                {m.context && (
+                  <div>
+                    <dt className="font-semibold uppercase tracking-wider text-mute">Context</dt>
+                    <dd className="font-medium text-fog">{m.context}</dd>
+                  </div>
+                )}
+                {m.maxOutput && (
+                  <div>
+                    <dt className="font-semibold uppercase tracking-wider text-mute">Output</dt>
+                    <dd className="text-fog">{m.maxOutput}</dd>
+                  </div>
+                )}
                 {m.rateLimit && (
                   <div className="col-span-2">
                     <dt className="font-semibold uppercase tracking-wider text-mute">Rate limit</dt>
@@ -143,10 +149,11 @@ export default function ModelsTable({
                     <div className="font-medium text-fog">{m.name}</div>
                     <div className="break-all font-mono text-[11px] text-mute">{m.id}</div>
                   </td>
-                  <td className="px-3 py-3 text-mute">{m.modality ?? "—"}</td>
-                  <td className="px-3 py-3 font-medium text-fog">{m.context ?? "—"}</td>
-                  <td className="px-3 py-3 text-mute">{m.maxOutput ?? "—"}</td>
-                  <td className="px-5 py-3 text-mute">{m.rateLimit ?? "—"}</td>
+                  {/* null = sel kosong, BUKAN em dash — dash klaim "dicek, kosong", cell kosong = "ga disediain sumber". */}
+                  <td className="px-3 py-3 text-mute">{m.modality}</td>
+                  <td className="px-3 py-3 font-medium text-fog">{m.context}</td>
+                  <td className="px-3 py-3 text-mute">{m.maxOutput}</td>
+                  <td className="px-5 py-3 text-mute">{m.rateLimit}</td>
                 </tr>
               ))
             )}

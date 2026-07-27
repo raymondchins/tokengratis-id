@@ -86,7 +86,7 @@ export default function Footer() {
               <span key={m}>
                 <Link
                   href={`/gratis/${m}`}
-                  className="underline decoration-ink-line underline-offset-2 hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
+                  className="inline-block py-1.5 underline decoration-ink-line underline-offset-2 hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
                 >
                   API {modalityLabel(m)} Gratis
                 </Link>
@@ -107,7 +107,7 @@ export default function Footer() {
             <span key={l.href}>
               <Link
                 href={l.href}
-                className="underline decoration-ink-line underline-offset-2 hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
+                className="inline-block py-1.5 underline decoration-ink-line underline-offset-2 hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
               >
                 {l.label}
               </Link>
@@ -126,7 +126,7 @@ export default function Footer() {
             <span key={l.href}>
               <a
                 href={l.href}
-                className="underline decoration-ink-line underline-offset-2 hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
+                className="inline-block py-1.5 underline decoration-ink-line underline-offset-2 hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
               >
                 {l.label}
               </a>

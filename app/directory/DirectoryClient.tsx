@@ -13,36 +13,73 @@ import {
 import type { Modality, ProviderListItem } from "@/lib/types";
 import { DIRECTORY_GRID_COLS, DIRECTORY_PAGE_SIZE } from "@/lib/constants";
 import FilterBar from "@/components/directory/FilterBar";
-import { CategoryTag, ModalityTags, MODALITY_ORDER } from "@/components/directory/Badges";
+import {
+  CategoryTag,
+  ModalityTags,
+  SourceLine,
+  MODALITY_ORDER,
+  modalityLabel,
+} from "@/components/directory/Badges";
 import ProviderLogo from "@/components/ProviderLogo";
 import Pagination from "@/components/Pagination";
 import EmptyDataPanel from "@/components/EmptyDataPanel";
 import NoResultsPanel from "@/components/NoResultsPanel";
 
+// Kelas dipakai bareng mobile & desktop biar dua render tetap satu treatment.
+const NAME_LINK =
+  "group/name flex min-h-[44px] min-w-0 items-center gap-3 rounded-[4px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70";
+// CTA sekunder: putih + garis, BUKAN hitam. 49 tombol hitam di satu halaman
+// bikin "satu aksi = satu hitam" (DESIGN.md) ga ada artinya. Affordance-nya
+// tetap kebawa row hover (bg-ink/40) + border yang gelap pas hover.
+const CTA_SECONDARY =
+  "inline-flex min-h-[44px] shrink-0 items-center rounded-[6px] border border-ink-line bg-ink-soft px-4 text-sm font-semibold text-fog transition-colors group-hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70";
+
 function ProviderRow({ p, priority = false }: { p: ProviderListItem; priority?: boolean }) {
   const ariaLabel = `${p.name} — ${p.modelCount} model${p.freeLimit ? `, gratis ${p.freeLimit}` : ""}`;
+  const href = `/provider/${p.slug}`;
+
+  // Kuitansi buat sel GRATIS yang kosong. JANGAN em dash: "—" kebaca "kita udah
+  // cek, hasilnya nihil" — padahal pipeline cuma ngisi freeLimit kalau sumber
+  // nulis eksplisit. Kita aggregator, bukan verifier, jadi tunjuk sumbernya.
+  const noFreeInfo =
+    p.sources.length > 0 ? (
+      <a
+        href={p.sources[0].url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex min-h-[44px] items-center rounded-[2px] text-[11px] font-normal text-mute no-underline decoration-ink-line underline-offset-2 transition-colors hover:text-fog hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
+      >
+        Ga ada di sumber
+      </a>
+    ) : null;
 
   return (
     <>
       {/* ── Mobile card (hidden on md+) ── */}
-      <Link
-        href={`/provider/${p.slug}`}
-        aria-label={ariaLabel}
-        className="group flex flex-col gap-3 border-t border-ink-line px-4 py-4 transition-colors hover:bg-ink/40 focus-visible:bg-ink/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog focus-visible:ring-inset md:hidden"
-      >
-        {/* Logo + name + meta */}
-        <div className="flex items-center gap-3 min-w-0">
+      {/* Row-nya <div>, BUKAN <a>. SourceLine bawa anchor sumber, dan <a> di
+          dalam <a> itu HTML invalid — browser diem-diem nge-unnest dan link
+          row-nya mati. Jadi link dipindah ke blok identitas provider + tombol
+          "Lihat"; ring-inset row diganti ring per-link + focus-within biar
+          highlight barisnya tetap kelihatan pas keyboard. */}
+      <div className="group flex flex-col gap-3 border-t border-ink-line px-4 py-4 transition-colors hover:bg-ink/40 focus-within:bg-ink/40 md:hidden">
+        {/* Logo + name + meta (target navigasi utama di mobile) */}
+        <Link href={href} aria-label={ariaLabel} className={NAME_LINK}>
           <ProviderLogo logo={p.logo} flag={p.flag} name={p.name} className="h-10 w-10 shrink-0" priority={priority} />
           <div className="min-w-0">
-            <span className="block truncate font-semibold text-fog">{p.name}</span>
+            <span className="block truncate font-semibold text-fog underline-offset-2 decoration-ink-line group-hover/name:underline">
+              {p.name}
+            </span>
             <div className="mt-1 flex flex-wrap items-center gap-2">
               <span className="text-[11px] text-mute">{p.modelCount} model</span>
               <CategoryTag category={p.category} />
             </div>
           </div>
-        </div>
+        </Link>
 
-        {/* Gratis (free-tier amount) */}
+        {/* Gratis (free-tier amount) — absen = ga dirender sama sekali.
+            Di mobile ga ada kolom bergaris, jadi absennya udah kebaca bener;
+            kuitansi "Ga ada di sumber" cukup di desktop biar ga dobel sama
+            SourceLine yang tepat di bawahnya. */}
         {p.freeLimit && (
           <div className="flex items-center gap-2 text-sm">
             <span className="text-mute">Gratis:</span>
@@ -55,61 +92,79 @@ function ProviderRow({ p, priority = false }: { p: ProviderListItem; priority?: 
           <p className="line-clamp-2 text-[13px] leading-snug text-mute">{p.description}</p>
         )}
 
+        {/* Kuitansi sumber — prinsip #1: tiap data nunjukin dari mana & kapan.
+            Di-guard biar ga nyisain elemen kosong yang makan gap flex. */}
+        {p.sources.length > 0 && (
+          <span className="block break-words">
+            <SourceLine sources={p.sources} />
+          </span>
+        )}
+
         {/* Modality icons + Lihat button */}
         <div className="flex items-center justify-between gap-3">
           <ModalityTags modalities={p.modalities} />
-          <span className="inline-flex shrink-0 items-center rounded-[6px] bg-ember px-4 py-2 text-sm font-semibold text-white transition-colors group-hover:bg-ember-soft">
+          <Link href={href} aria-label={`Lihat ${p.name}`} className={CTA_SECONDARY}>
             Lihat
-          </span>
+          </Link>
         </div>
-      </Link>
+      </div>
 
       {/* ── Desktop grid row (hidden below md) ── */}
-      <Link
-        href={`/provider/${p.slug}`}
-        aria-label={ariaLabel}
-        className={`group hidden border-t border-ink-line py-4 transition-colors hover:bg-ink/40 focus-visible:bg-ink/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog focus-visible:ring-inset md:grid ${DIRECTORY_GRID_COLS}`}
+      <div
+        className={`group hidden border-t border-ink-line py-4 transition-colors hover:bg-ink/40 focus-within:bg-ink/40 md:grid ${DIRECTORY_GRID_COLS}`}
       >
         {/* Provider */}
-        <div className="flex items-center gap-3 min-w-0">
-          <ProviderLogo logo={p.logo} flag={p.flag} name={p.name} className="h-9 w-9" priority={priority} />
+        <Link href={href} aria-label={ariaLabel} className={NAME_LINK}>
+          <ProviderLogo logo={p.logo} flag={p.flag} name={p.name} className="h-9 w-9 shrink-0" priority={priority} />
           <div className="min-w-0">
-            <span className="block truncate font-semibold text-fog">{p.name}</span>
+            <span className="block truncate font-semibold text-fog underline-offset-2 decoration-ink-line group-hover/name:underline">
+              {p.name}
+            </span>
             <div className="mt-1 flex items-center gap-2">
               <span className="text-[11px] text-mute">{p.modelCount} model</span>
               <CategoryTag category={p.category} />
             </div>
           </div>
-        </div>
+        </Link>
 
         {/* Kemampuan */}
-        <div>
+        <div className="min-w-0">
           <ModalityTags modalities={p.modalities} />
         </div>
 
         {/* Gratis (free-tier amount) */}
-        <div className="text-sm font-semibold">
+        <div className="min-w-0 text-sm font-semibold">
           {p.freeLimit ? (
             <span className="text-grass"><span className="sr-only">Gratis: </span>{p.freeLimit}</span>
           ) : (
-            <span className="text-mute">—</span>
+            noFreeInfo
           )}
         </div>
 
-        {/* Catatan */}
-        <div>
-          <p className="line-clamp-2 text-[13px] leading-snug text-mute">
-            {p.description || "—"}
-          </p>
+        {/* Catatan + kuitansi sumber. description absen = sel dibiarin kosong;
+            di tabel bergaris sel kosong udah kebaca "ga disediain sumber". */}
+        <div className="min-w-0">
+          {p.description && (
+            <p className="mb-1.5 line-clamp-2 text-[13px] leading-snug text-mute">
+              {p.description}
+            </p>
+          )}
+          {/* break-words: nama sumber ("mnfst/awesome-free-llm-apis") satu token
+              panjang — tanpa ini dia maksa track grid melar / overflow. */}
+          {p.sources.length > 0 && (
+            <span className="block break-words">
+              <SourceLine sources={p.sources} />
+            </span>
+          )}
         </div>
 
         {/* Aksi */}
-        <div className="flex justify-end">
-          <span className="inline-flex items-center rounded-[6px] bg-ember px-4 py-2 text-sm font-semibold text-white transition-colors group-hover:bg-ember-soft">
+        <div className="flex min-w-0 justify-end">
+          <Link href={href} aria-label={`Lihat ${p.name}`} className={CTA_SECONDARY}>
             Lihat
-          </span>
+          </Link>
         </div>
-      </Link>
+      </div>
     </>
   );
 }
@@ -195,6 +250,33 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
     return MODALITY_ORDER.filter((m) => present.has(m));
   }, [items]);
 
+  // Angka di chip = jumlah provider di HASIL SEKARANG yang punya modality itu.
+  // Karena filter modality-nya AND, angka itu persis "kalau chip ini gw klik,
+  // sisanya berapa" — jadi perilaku AND-nya kejelasan sendiri tanpa tooltip.
+  // Dihitung dari `results` (post-filter, pre-pagination), bukan `pageItems`.
+  const modalityCounts = useMemo<Partial<Record<Modality, number>>>(() => {
+    const counts: Partial<Record<Modality, number>> = {};
+    for (const m of availableModalities) counts[m] = 0;
+    for (const p of results) {
+      for (const m of p.modalities) {
+        if (counts[m] !== undefined) counts[m] = (counts[m] ?? 0) + 1;
+      }
+    }
+    return counts;
+  }, [results, availableModalities]);
+
+  // Search dihitung 1 filter (bukan per-kata) — angkanya buat badge "reset".
+  const activeCount = filter.modalities.length + (filter.search.trim() ? 1 : 0);
+
+  // Label filter aktif buat NoResultsPanel: nyebut PENYEBABNYA biar user bisa
+  // lepas satu, bukan cuma dikasih tombol nuke-semua. Search dikutip biar
+  // kebedain dari nama modality.
+  const activeLabels = useMemo<string[]>(() => {
+    const labels = filter.modalities.map(modalityLabel);
+    const q = filter.search.trim();
+    return q ? [...labels, `"${q}"`] : labels;
+  }, [filter]);
+
   const totalPages = Math.max(1, Math.ceil(results.length / DIRECTORY_PAGE_SIZE));
   const current = Math.min(page, totalPages);
   const pageItems = results.slice(
@@ -220,6 +302,9 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
         state={filter}
         onChange={changeFilter}
         availableModalities={availableModalities}
+        modalityCounts={modalityCounts}
+        activeCount={activeCount}
+        onReset={() => changeFilter(emptyFilter())}
         rightSlot={
           <label className="flex items-center gap-2 text-sm text-mute">
             Urutkan
@@ -245,6 +330,7 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
             message="Ga ada yang cocok sama filter ini."
             hint="Coba hapus beberapa filter atau ganti kata kunci."
             onReset={() => changeFilter(emptyFilter())}
+            activeLabels={activeLabels}
           />
         ) : (
           <div className="overflow-x-auto">

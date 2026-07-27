@@ -77,7 +77,10 @@ export default function Home() {
         </section>
 
         {/* ── Directory table ── */}
-        <section id="direktori" className="mt-12 scroll-mt-20 sm:mt-16">
+        {/* scroll-mt-24 (96px), bukan 20 (80px): navbar sticky berhenti di 70px,
+            80px cuma nyisain 10px — ganti tinggi navbar dikit langsung bikin
+            anchor mendarat ketutupan. 96px nyisain ruang napas. */}
+        <section id="direktori" className="mt-12 scroll-mt-24 sm:mt-16">
           <h2 className="sr-only">Direktori provider</h2>
           {lastUpdated && (
             <p className="mb-3 text-balance text-right text-xs text-mute">
@@ -97,7 +100,7 @@ export default function Home() {
         </section>
 
         {/* ── How it works ── */}
-        <section id="cara-kerja" className="mt-16 scroll-mt-20 sm:mt-24">
+        <section id="cara-kerja" className="mt-16 scroll-mt-24 sm:mt-24">
           <h2 className="font-serif text-3xl font-semibold tracking-tight text-fog">
             Cara kerja
           </h2>
