@@ -305,6 +305,8 @@ async function tryLlmFallback(label) {
   return partials;
 }
 
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
 /** Download favicon tiap provider ke public/logos/<slug>.png. Gagal → logo null (UI fallback flag/globe). */
 async function downloadLogos(providers) {
   mkdirSync(LOGO_DIR, { recursive: true });
@@ -315,13 +317,29 @@ async function downloadLogos(providers) {
         return;
       }
       try {
-        const r = await fetch(
-          `https://www.google.com/s2/favicons?sz=128&domain=${p.domain}`,
-          { signal: AbortSignal.timeout(5000) },
-        );
-        if (!r.ok) throw new Error(String(r.status));
-        const buf = Buffer.from(await r.arrayBuffer());
-        if (buf.length < 100) throw new Error("empty favicon");
+        // 3 percobaan + backoff. 24 request bareng ke satu layanan favicon
+        // gampang kena throttle/timeout, dan sekali gagal logonya ilang sampai
+        // sync berikutnya KEBETULAN berhasil (persis yang kejadian ke aion-labs:
+        // domain ke-derive bener, PNG-nya ga pernah nyampe disk).
+        let buf = null;
+        let lastErr = null;
+        for (let attempt = 0; attempt < 3; attempt++) {
+          if (attempt > 0) await sleep(400 * attempt);
+          try {
+            const r = await fetch(
+              `https://www.google.com/s2/favicons?sz=128&domain=${p.domain}`,
+              { signal: AbortSignal.timeout(8000) },
+            );
+            if (!r.ok) throw new Error(String(r.status));
+            const b = Buffer.from(await r.arrayBuffer());
+            if (b.length < 100) throw new Error("empty favicon");
+            buf = b;
+            break;
+          } catch (e) {
+            lastErr = e;
+          }
+        }
+        if (!buf) throw lastErr ?? new Error("favicon unavailable");
         writeFileSync(join(LOGO_DIR, `${p.slug}.png`), buf);
         p.logo = `/logos/${p.slug}.png`;
       } catch {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-25T15:21:21.563Z",
+  "generatedAt": "2026-07-27T04:34:57.880Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -11,18 +11,18 @@
     "freellm.net": {
       "status": "ok",
       "providers": 23,
-      "models": 621,
+      "models": 337,
       "shapeIssues": [
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "maxOutput",
           "rule": "all-null-collapse",
-          "count": 621,
-          "total": 621,
+          "count": 337,
+          "total": 337,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"maxOutput\": 100% null di 621 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+          "message": "Field \"maxOutput\": 100% null di 337 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
         },
         {
           "severity": "warn",
@@ -51,40 +51,40 @@
     "cheahjs/free-llm-api-resources": {
       "status": "ok",
       "providers": 13,
-      "models": 128,
+      "models": 108,
       "shapeIssues": [
         {
           "severity": "warn",
           "source": "cheahjs/free-llm-api-resources",
           "field": "context",
           "rule": "all-null-collapse",
-          "count": 128,
-          "total": 128,
+          "count": 108,
+          "total": 108,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"context\": 100% null di 128 model dari sumber \"cheahjs/free-llm-api-resources\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"cheahjs/free-llm-api-resources\" langsung untuk mutusin."
+          "message": "Field \"context\": 100% null di 108 model dari sumber \"cheahjs/free-llm-api-resources\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"cheahjs/free-llm-api-resources\" langsung untuk mutusin."
         },
         {
           "severity": "warn",
           "source": "cheahjs/free-llm-api-resources",
           "field": "maxOutput",
           "rule": "all-null-collapse",
-          "count": 128,
-          "total": 128,
+          "count": 108,
+          "total": 108,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"maxOutput\": 100% null di 128 model dari sumber \"cheahjs/free-llm-api-resources\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"cheahjs/free-llm-api-resources\" langsung untuk mutusin."
+          "message": "Field \"maxOutput\": 100% null di 108 model dari sumber \"cheahjs/free-llm-api-resources\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"cheahjs/free-llm-api-resources\" langsung untuk mutusin."
         },
         {
           "severity": "warn",
           "source": "cheahjs/free-llm-api-resources",
           "field": "modality",
           "rule": "all-null-collapse",
-          "count": 128,
-          "total": 128,
+          "count": 108,
+          "total": 108,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"modality\": 100% null di 128 model dari sumber \"cheahjs/free-llm-api-resources\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"cheahjs/free-llm-api-resources\" langsung untuk mutusin."
+          "message": "Field \"modality\": 100% null di 108 model dari sumber \"cheahjs/free-llm-api-resources\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"cheahjs/free-llm-api-resources\" langsung untuk mutusin."
         }
       ]
     },
@@ -97,8 +97,8 @@
   },
   "skipped": [],
   "merged": {
-    "providers": 24,
-    "models": 397,
+    "providers": 25,
+    "models": 375,
     "shapeIssues": []
   },
   "smokeTest": {
@@ -106,40 +106,57 @@
     "warnings": []
   },
   "diffGuard": {
-    "ok": true,
-    "errors": [],
+    "ok": false,
+    "errors": [
+      "provider \"github-models\" model count dropped 66.7% (39 → 13), threshold is 40%",
+      "provider \"github-models\" model ids churned 66.7% at same-ish count (overlap 33.3%, 39→13 ids) — possible source corruption"
+    ],
     "warnings": [],
     "stats": {
       "prevProviders": 24,
-      "nextProviders": 24,
+      "nextProviders": 25,
       "prevModels": 397,
-      "nextModels": 397,
-      "totalDropPct": 0,
+      "nextModels": 375,
+      "totalDropPct": 5.541561712846348,
       "disappeared": [],
-      "shrunk": [],
-      "churned": [],
+      "shrunk": [
+        {
+          "slug": "github-models",
+          "prev": 39,
+          "next": 13,
+          "dropPct": 66.66666666666666
+        }
+      ],
+      "churned": [
+        {
+          "slug": "github-models",
+          "overlapPct": 33.33333333333333,
+          "prevIds": 39,
+          "nextIds": 13
+        }
+      ],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 344,
+            "eligible": 318,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "maxOutput": {
-            "eligible": 167,
+            "eligible": 150,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "modality": {
-            "eligible": 249,
+            "eligible": 247,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "rateLimit": {
-            "eligible": 272,
+            "eligible": 243,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -166,13 +183,20 @@
           },
           "maxContext": {
             "eligible": 24,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "changed": 1,
+            "ratioPct": 4.166666666666666,
+            "examples": [
+              {
+                "label": "openrouter",
+                "from": "1.1M",
+                "to": "1M"
+              }
+            ]
           }
         }
       }
-    }
+    },
+    "bypassed": true
   },
   "fatalIssues": [],
   "warnIssues": [
@@ -181,11 +205,11 @@
       "source": "freellm.net",
       "field": "maxOutput",
       "rule": "all-null-collapse",
-      "count": 621,
-      "total": 621,
+      "count": 337,
+      "total": 337,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"maxOutput\": 100% null di 621 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+      "message": "Field \"maxOutput\": 100% null di 337 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
     },
     {
       "severity": "warn",
@@ -214,33 +238,33 @@
       "source": "cheahjs/free-llm-api-resources",
       "field": "context",
       "rule": "all-null-collapse",
-      "count": 128,
-      "total": 128,
+      "count": 108,
+      "total": 108,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"context\": 100% null di 128 model dari sumber \"cheahjs/free-llm-api-resources\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"cheahjs/free-llm-api-resources\" langsung untuk mutusin."
+      "message": "Field \"context\": 100% null di 108 model dari sumber \"cheahjs/free-llm-api-resources\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"cheahjs/free-llm-api-resources\" langsung untuk mutusin."
     },
     {
       "severity": "warn",
       "source": "cheahjs/free-llm-api-resources",
       "field": "maxOutput",
       "rule": "all-null-collapse",
-      "count": 128,
-      "total": 128,
+      "count": 108,
+      "total": 108,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"maxOutput\": 100% null di 128 model dari sumber \"cheahjs/free-llm-api-resources\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"cheahjs/free-llm-api-resources\" langsung untuk mutusin."
+      "message": "Field \"maxOutput\": 100% null di 108 model dari sumber \"cheahjs/free-llm-api-resources\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"cheahjs/free-llm-api-resources\" langsung untuk mutusin."
     },
     {
       "severity": "warn",
       "source": "cheahjs/free-llm-api-resources",
       "field": "modality",
       "rule": "all-null-collapse",
-      "count": 128,
-      "total": 128,
+      "count": 108,
+      "total": 108,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"modality\": 100% null di 128 model dari sumber \"cheahjs/free-llm-api-resources\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"cheahjs/free-llm-api-resources\" langsung untuk mutusin."
+      "message": "Field \"modality\": 100% null di 108 model dari sumber \"cheahjs/free-llm-api-resources\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"cheahjs/free-llm-api-resources\" langsung untuk mutusin."
     }
   ]
 }

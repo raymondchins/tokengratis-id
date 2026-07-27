@@ -24,7 +24,7 @@ import {
   modalitiesOf,
   maxContextOf,
   noTokenContext,
-  domainOf,
+  domainFor,
   freeLimitOf,
   modelKey,
   slugify,
@@ -265,7 +265,7 @@ export function mergeProviders(partialGroups, mergeRunAt) {
       }
     }
     const maxContext = maxContextOf(models);
-    const domain     = domainOf(url, baseUrl);
+    const domain     = domainFor({ slug, name, url, baseUrl });
     const logo       = domain ? `/logos/${slug}.png` : null;
     const freeLimit  = freeLimitOf(description);
 

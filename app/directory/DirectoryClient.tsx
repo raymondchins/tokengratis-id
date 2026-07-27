@@ -16,7 +16,6 @@ import FilterBar from "@/components/directory/FilterBar";
 import {
   CategoryTag,
   ModalityTags,
-  SourceLine,
   MODALITY_ORDER,
   modalityLabel,
 } from "@/components/directory/Badges";
@@ -56,11 +55,12 @@ function ProviderRow({ p, priority = false }: { p: ProviderListItem; priority?: 
   return (
     <>
       {/* ── Mobile card (hidden on md+) ── */}
-      {/* Row-nya <div>, BUKAN <a>. SourceLine bawa anchor sumber, dan <a> di
-          dalam <a> itu HTML invalid — browser diem-diem nge-unnest dan link
-          row-nya mati. Jadi link dipindah ke blok identitas provider + tombol
-          "Lihat"; ring-inset row diganti ring per-link + focus-within biar
-          highlight barisnya tetap kelihatan pas keyboard. */}
+      {/* Row-nya <div>, BUKAN <a>. Kuitansi "Ga ada di sumber" itu anchor ke
+          sumber aslinya, dan <a> di dalam <a> itu HTML invalid — browser
+          diem-diem nge-unnest dan link row-nya mati. Jadi link dipindah ke blok
+          identitas provider + tombol "Lihat"; ring-inset row diganti ring
+          per-link + focus-within biar highlight barisnya tetap kelihatan pas
+          keyboard. */}
       <div className="group flex flex-col gap-3 border-t border-ink-line px-4 py-4 transition-colors hover:bg-ink/40 focus-within:bg-ink/40 md:hidden">
         {/* Logo + name + meta (target navigasi utama di mobile) */}
         <Link href={href} aria-label={ariaLabel} className={NAME_LINK}>
@@ -77,9 +77,8 @@ function ProviderRow({ p, priority = false }: { p: ProviderListItem; priority?: 
         </Link>
 
         {/* Gratis (free-tier amount) — absen = ga dirender sama sekali.
-            Di mobile ga ada kolom bergaris, jadi absennya udah kebaca bener;
-            kuitansi "Ga ada di sumber" cukup di desktop biar ga dobel sama
-            SourceLine yang tepat di bawahnya. */}
+            Di mobile ga ada kolom bergaris, jadi absennya udah kebaca bener
+            tanpa perlu kuitansi "Ga ada di sumber" kayak di desktop. */}
         {p.freeLimit && (
           <div className="flex items-center gap-2 text-sm">
             <span className="text-mute">Gratis:</span>
@@ -90,14 +89,6 @@ function ProviderRow({ p, priority = false }: { p: ProviderListItem; priority?: 
         {/* Description */}
         {p.description && (
           <p className="line-clamp-2 text-[13px] leading-snug text-mute">{p.description}</p>
-        )}
-
-        {/* Kuitansi sumber — prinsip #1: tiap data nunjukin dari mana & kapan.
-            Di-guard biar ga nyisain elemen kosong yang makan gap flex. */}
-        {p.sources.length > 0 && (
-          <span className="block break-words">
-            <SourceLine sources={p.sources} />
-          </span>
         )}
 
         {/* Modality icons + Lihat button */}
@@ -141,20 +132,17 @@ function ProviderRow({ p, priority = false }: { p: ProviderListItem; priority?: 
           )}
         </div>
 
-        {/* Catatan + kuitansi sumber. description absen = sel dibiarin kosong;
-            di tabel bergaris sel kosong udah kebaca "ga disediain sumber". */}
+        {/* Catatan. description absen = sel dibiarin kosong; di tabel bergaris
+            sel kosong udah kebaca "ga disediain sumber".
+            SENGAJA tanpa SourceLine: 24 baris × 3-4 nama sumber bikin tiap row
+            ~3x lebih tinggi dan atribusinya identik di hampir semua baris —
+            kuitansi lengkap ada di /provider/[slug], plus "Last update" di atas
+            tabel & daftar sumber di footer. */}
         <div className="min-w-0">
           {p.description && (
-            <p className="mb-1.5 line-clamp-2 text-[13px] leading-snug text-mute">
+            <p className="line-clamp-2 text-[13px] leading-snug text-mute">
               {p.description}
             </p>
-          )}
-          {/* break-words: nama sumber ("mnfst/awesome-free-llm-apis") satu token
-              panjang — tanpa ini dia maksa track grid melar / overflow. */}
-          {p.sources.length > 0 && (
-            <span className="block break-words">
-              <SourceLine sources={p.sources} />
-            </span>
           )}
         </div>
 

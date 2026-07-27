@@ -413,6 +413,37 @@ export function domainOf(...urls) {
   return null;
 }
 
+/**
+ * Nama provider yang HARFIAH sebuah hostname ("Chutes.ai", "Glhf.chat") itu
+ * di-PARSE, bukan ditebak — string-nya emang udah domain. Nama biasa yang ada
+ * spasi/kurung ("Agnes AI", "Aion Labs", "Grok (xAI)") sengaja GA match.
+ */
+export function domainFromName(name) {
+  const s = (name || "").trim().toLowerCase();
+  return /^[a-z0-9][a-z0-9-]*(?:\.[a-z0-9-]+)*\.[a-z]{2,24}$/.test(s) ? s : null;
+}
+
+/**
+ * Alias domain MANUAL. Editorial — kelasnya sama kayak POPULARITY di
+ * lib/filter.ts, dan sengaja dibatasin CUMA buat logo/favicon: ini bukan field
+ * data yang dipakai user buat mutusin apa-apa, jadi ga kena aturan
+ * extract-or-null. Isi cuma provider yang sumbernya NOL url tapi domainnya ga
+ * ambigu. Ragu sedikit → jangan ditambahin, biarin fallback ke globe.
+ */
+const DOMAIN_ALIASES = {
+  xai: "x.ai",
+};
+
+/** Domain buat favicon: url/baseUrl sumber → nama-yang-emang-hostname → alias. */
+export function domainFor({ slug, name, url, baseUrl }) {
+  return (
+    domainOf(url, baseUrl) ??
+    domainFromName(name) ??
+    DOMAIN_ALIASES[slug] ??
+    null
+  );
+}
+
 // ─── Free limit (derive dari description) ──────────────────────────────────────
 
 /**
