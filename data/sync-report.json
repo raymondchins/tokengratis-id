@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-27T04:34:57.880Z",
+  "generatedAt": "2026-07-27T20:24:12.538Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -106,57 +106,40 @@
     "warnings": []
   },
   "diffGuard": {
-    "ok": false,
-    "errors": [
-      "provider \"github-models\" model count dropped 66.7% (39 → 13), threshold is 40%",
-      "provider \"github-models\" model ids churned 66.7% at same-ish count (overlap 33.3%, 39→13 ids) — possible source corruption"
-    ],
+    "ok": true,
+    "errors": [],
     "warnings": [],
     "stats": {
-      "prevProviders": 24,
+      "prevProviders": 25,
       "nextProviders": 25,
-      "prevModels": 397,
+      "prevModels": 375,
       "nextModels": 375,
-      "totalDropPct": 5.541561712846348,
+      "totalDropPct": 0,
       "disappeared": [],
-      "shrunk": [
-        {
-          "slug": "github-models",
-          "prev": 39,
-          "next": 13,
-          "dropPct": 66.66666666666666
-        }
-      ],
-      "churned": [
-        {
-          "slug": "github-models",
-          "overlapPct": 33.33333333333333,
-          "prevIds": 39,
-          "nextIds": 13
-        }
-      ],
+      "shrunk": [],
+      "churned": [],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 318,
+            "eligible": 322,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "maxOutput": {
-            "eligible": 150,
+            "eligible": 151,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "modality": {
-            "eligible": 247,
+            "eligible": 252,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "rateLimit": {
-            "eligible": 243,
+            "eligible": 260,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -164,7 +147,7 @@
         },
         "provider": {
           "description": {
-            "eligible": 20,
+            "eligible": 21,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -183,20 +166,13 @@
           },
           "maxContext": {
             "eligible": 24,
-            "changed": 1,
-            "ratioPct": 4.166666666666666,
-            "examples": [
-              {
-                "label": "openrouter",
-                "from": "1.1M",
-                "to": "1M"
-              }
-            ]
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           }
         }
       }
-    },
-    "bypassed": true
+    }
   },
   "fatalIssues": [],
   "warnIssues": [
@@ -266,5 +242,11 @@
       "samples": [],
       "message": "Field \"modality\": 100% null di 108 model dari sumber \"cheahjs/free-llm-api-resources\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"cheahjs/free-llm-api-resources\" langsung untuk mutusin."
     }
-  ]
+  ],
+  "quarantine": {
+    "heldProviders": [],
+    "accepted": [],
+    "cleared": [],
+    "confirmRuns": 3
+  }
 }

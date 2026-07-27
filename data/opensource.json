@@ -13,7 +13,7 @@
       "language": "JavaScript",
       "stars": 10168,
       "forks": 1219,
-      "openIssues": 15,
+      "openIssues": 14,
       "license": "AGPL-3.0",
       "topics": [
         "analytics",
@@ -26,7 +26,7 @@
         "user-agent-parser"
       ],
       "archived": false,
-      "pushedAt": "2026-07-23T06:18:48Z",
+      "pushedAt": "2026-07-27T15:52:17Z",
       "createdAt": "2012-02-01T01:11:49Z"
     },
     {
@@ -68,7 +68,7 @@
       "language": "PHP",
       "stars": 1349,
       "forks": 305,
-      "openIssues": 49,
+      "openIssues": 50,
       "license": "GPL-2.0",
       "topics": [
         "blog",
@@ -95,16 +95,16 @@
       "homepage": null,
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
-      "stars": 1216,
+      "stars": 1218,
       "forks": 1169,
-      "openIssues": 358,
+      "openIssues": 355,
       "license": null,
       "topics": [
         "opensid",
         "sistem-informasi-desa"
       ],
       "archived": false,
-      "pushedAt": "2026-07-24T08:42:15Z",
+      "pushedAt": "2026-07-26T05:21:39Z",
       "createdAt": "2016-05-21T10:55:38Z"
     },
     {
@@ -118,8 +118,8 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 902,
-      "forks": 279,
+      "stars": 909,
+      "forks": 280,
       "openIssues": 7,
       "license": "MIT",
       "topics": [],
@@ -138,7 +138,7 @@
       "homepage": null,
       "description": "Package Laravel yang berisi data Provinsi, Kabupaten/Kota, dan Kecamatan/Desa di seluruh Indonesia.",
       "language": "PHP",
-      "stars": 673,
+      "stars": 674,
       "forks": 210,
       "openIssues": 3,
       "license": "MIT",
@@ -158,8 +158,8 @@
       "homepage": "https://jokoui.web.id",
       "description": "Free Open Source Tailwind CSS Component for Sat-set Developers with Zero Configuration, Installation, and Setup",
       "language": "TypeScript",
-      "stars": 416,
-      "forks": 27,
+      "stars": 415,
+      "forks": 26,
       "openIssues": 8,
       "license": "MIT",
       "topics": [
@@ -213,9 +213,9 @@
       "homepage": "https://omni.weekndlabs.com",
       "description": "Noise-canceling context and long-term memory for your AI agent. Stop paying Claude to read 10,000 lines of terminal noise like a headphone for AI agent",
       "language": "Rust",
-      "stars": 315,
+      "stars": 317,
       "forks": 30,
-      "openIssues": 22,
+      "openIssues": 26,
       "license": "MIT",
       "topics": [
         "ai-agents",
@@ -238,7 +238,7 @@
         "token-savings"
       ],
       "archived": false,
-      "pushedAt": "2026-07-24T04:59:46Z",
+      "pushedAt": "2026-07-27T11:58:33Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -252,9 +252,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 182,
-      "forks": 36,
-      "openIssues": 51,
+      "stars": 202,
+      "forks": 38,
+      "openIssues": 47,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -272,7 +272,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-07-24T13:29:12Z",
+      "pushedAt": "2026-07-27T15:32:41Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -286,7 +286,7 @@
       "homepage": "https://www.erdbuilderpro.com",
       "description": "ERD Builder Pro is a database design and documentation tool for developers. Build ERDs, flowcharts, notes, and drawings — all in one workspace",
       "language": "TypeScript",
-      "stars": 175,
+      "stars": 177,
       "forks": 33,
       "openIssues": 0,
       "license": null,
@@ -301,7 +301,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-07-22T07:01:42Z",
+      "pushedAt": "2026-07-27T11:41:06Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -315,7 +315,7 @@
       "homepage": null,
       "description": null,
       "language": "Python",
-      "stars": 155,
+      "stars": 156,
       "forks": 37,
       "openIssues": 0,
       "license": "MIT",
@@ -323,6 +323,40 @@
       "archived": false,
       "pushedAt": "2026-06-26T05:38:51Z",
       "createdAt": "2026-06-20T09:48:06Z"
+    },
+    {
+      "slug": "codecoradev/uteke",
+      "fullName": "codecoradev/uteke",
+      "name": "uteke",
+      "owner": "codecoradev",
+      "ownerUrl": "https://github.com/codecoradev",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
+      "url": "https://github.com/codecoradev/uteke",
+      "homepage": "https://codecora.dev",
+      "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
+      "language": "Rust",
+      "stars": 150,
+      "forks": 17,
+      "openIssues": 11,
+      "license": "Apache-2.0",
+      "topics": [
+        "ai",
+        "cli",
+        "cli-tool",
+        "embeddings",
+        "hnsw",
+        "local-first",
+        "memory",
+        "onnx",
+        "onnxruntime",
+        "rust",
+        "semantic-search",
+        "sqlite",
+        "vector-database"
+      ],
+      "archived": false,
+      "pushedAt": "2026-07-26T17:35:29Z",
+      "createdAt": "2026-05-29T00:27:31Z"
     },
     {
       "slug": "hendisantika/online-banking-angular-springboot-mysql",
@@ -345,40 +379,6 @@
       "createdAt": "2018-08-06T13:38:19Z"
     },
     {
-      "slug": "codecoradev/uteke",
-      "fullName": "codecoradev/uteke",
-      "name": "uteke",
-      "owner": "codecoradev",
-      "ownerUrl": "https://github.com/codecoradev",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
-      "url": "https://github.com/codecoradev/uteke",
-      "homepage": "https://codecora.dev",
-      "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
-      "language": "Rust",
-      "stars": 128,
-      "forks": 15,
-      "openIssues": 11,
-      "license": "Apache-2.0",
-      "topics": [
-        "ai",
-        "cli",
-        "cli-tool",
-        "embeddings",
-        "hnsw",
-        "local-first",
-        "memory",
-        "onnx",
-        "onnxruntime",
-        "rust",
-        "semantic-search",
-        "sqlite",
-        "vector-database"
-      ],
-      "archived": false,
-      "pushedAt": "2026-07-24T12:17:46Z",
-      "createdAt": "2026-05-29T00:27:31Z"
-    },
-    {
       "slug": "jipraks/kasirgratisan",
       "fullName": "jipraks/kasirgratisan",
       "name": "kasirgratisan",
@@ -389,13 +389,13 @@
       "homepage": null,
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
-      "stars": 113,
-      "forks": 57,
-      "openIssues": 1,
+      "stars": 114,
+      "forks": 58,
+      "openIssues": 2,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-13T00:57:27Z",
+      "pushedAt": "2026-07-25T09:55:56Z",
       "createdAt": "2026-02-12T11:02:43Z"
     },
     {
@@ -409,7 +409,7 @@
       "homepage": "https://pddikti.kemdiktisaintek.go.id/",
       "description": "Unofficial Python 3 API wrapper to retrieve data from PDDIKTI Kemdikbudristek.",
       "language": "Python",
-      "stars": 113,
+      "stars": 114,
       "forks": 25,
       "openIssues": 0,
       "license": null,
@@ -433,9 +433,9 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 100,
-      "forks": 36,
-      "openIssues": 4,
+      "stars": 106,
+      "forks": 38,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [
         "ai",
@@ -458,7 +458,7 @@
         "zai"
       ],
       "archived": false,
-      "pushedAt": "2026-07-24T01:33:45Z",
+      "pushedAt": "2026-07-26T16:04:45Z",
       "createdAt": "2026-05-31T09:02:50Z"
     },
     {
@@ -472,7 +472,7 @@
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": null,
-      "stars": 100,
+      "stars": 101,
       "forks": 7,
       "openIssues": 0,
       "license": "MIT",
@@ -547,7 +547,7 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-07-24T14:41:49Z",
+      "pushedAt": "2026-07-26T20:37:05Z",
       "createdAt": "2026-03-17T12:55:21Z"
     },
     {
@@ -581,7 +581,7 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "One lightweight app. Eight features. Your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 53,
+      "stars": 54,
       "forks": 7,
       "openIssues": 0,
       "license": "Apache-2.0",
@@ -617,8 +617,8 @@
       "homepage": "https://bansos.dev",
       "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
       "language": "Svelte",
-      "stars": 52,
-      "forks": 9,
+      "stars": 53,
+      "forks": 10,
       "openIssues": 4,
       "license": "MIT",
       "topics": [
@@ -634,8 +634,28 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-07-23T17:36:56Z",
+      "pushedAt": "2026-07-25T05:36:11Z",
       "createdAt": "2026-06-11T13:28:54Z"
+    },
+    {
+      "slug": "maziyank/nats",
+      "fullName": "maziyank/nats",
+      "name": "nats",
+      "owner": "maziyank",
+      "ownerUrl": "https://github.com/maziyank",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/3317904?v=4",
+      "url": "https://github.com/maziyank/nats",
+      "homepage": "https://maziyank.github.io/nats",
+      "description": "NATS | Open Source Business and Accounting Software",
+      "language": "TypeScript",
+      "stars": 49,
+      "forks": 16,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-07-25T14:58:07Z",
+      "createdAt": "2026-03-29T13:58:03Z"
     },
     {
       "slug": "giosakti/duragent",
@@ -735,15 +755,36 @@
       "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
       "url": "https://github.com/raymondchins/agentmap",
       "homepage": null,
-      "description": "The repo map your coding agent is forced to use — ~98% fewer tokens (up to 99.9% per task) to understand a TS/JS codebase. PageRank hubs, Aider-style symbol ranking, token-budgeted digest, --any router, wired into the agent loop.",
+      "description": "Stop your coding agent reading the wrong files. Compiler-grade TS/JS repo map — 100% precision on blast radius vs grep's 60%, measured on public repos. CLI + MCP server, fully local, no vector DB.",
       "language": "JavaScript",
       "stars": 45,
       "forks": 10,
-      "openIssues": 4,
+      "openIssues": 3,
       "license": "MIT",
-      "topics": [],
+      "topics": [
+        "ai-agents",
+        "ai-coding",
+        "claude-code",
+        "cli",
+        "code-context",
+        "code-graph",
+        "code-intelligence",
+        "code-map",
+        "coding-agent",
+        "context-engineering",
+        "dependency-graph",
+        "developer-tools",
+        "javascript",
+        "mcp",
+        "mcp-server",
+        "pagerank",
+        "repo-map",
+        "static-analysis",
+        "ts-morph",
+        "typescript"
+      ],
       "archived": false,
-      "pushedAt": "2026-07-22T09:59:29Z",
+      "pushedAt": "2026-07-27T16:32:23Z",
       "createdAt": "2026-06-13T11:29:36Z"
     },
     {
@@ -757,7 +798,7 @@
       "homepage": null,
       "description": "A browser-based graphical shell & control plane for a Linux server you own — terminal, files, metrics & AI in one mobile-first pane.",
       "language": "TypeScript",
-      "stars": 41,
+      "stars": 42,
       "forks": 6,
       "openIssues": 0,
       "license": "MIT",
@@ -783,7 +824,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-07-24T16:55:30Z",
+      "pushedAt": "2026-07-27T11:55:26Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -803,7 +844,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-24T03:38:06Z",
+      "pushedAt": "2026-07-26T08:07:24Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -906,7 +947,7 @@
       "homepage": null,
       "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
       "language": "C#",
-      "stars": 34,
+      "stars": 33,
       "forks": 13,
       "openIssues": 0,
       "license": null,
@@ -972,26 +1013,6 @@
       "createdAt": "2025-12-17T16:19:36Z"
     },
     {
-      "slug": "maziyank/nats",
-      "fullName": "maziyank/nats",
-      "name": "nats",
-      "owner": "maziyank",
-      "ownerUrl": "https://github.com/maziyank",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/3317904?v=4",
-      "url": "https://github.com/maziyank/nats",
-      "homepage": "https://maziyank.github.io/nats",
-      "description": "NATS | Open Source Business and Accounting Software",
-      "language": "TypeScript",
-      "stars": 24,
-      "forks": 2,
-      "openIssues": 1,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-07-23T03:47:25Z",
-      "createdAt": "2026-03-29T13:58:03Z"
-    },
-    {
       "slug": "ammar-rasyidi/mandum-rimba",
       "fullName": "ammar-rasyidi/mandum-rimba",
       "name": "mandum-rimba",
@@ -1002,7 +1023,7 @@
       "homepage": "https://www.mandumrimba.org",
       "description": "Mandum Rimba is an independent, nonprofit public-interest observatory. We do not sell data, carry advertising, or take sides. We consolidate satellite data and credible public sources into a single open map, auditable by anyone, fully open source, and with every figure traceable to its origin.",
       "language": "TypeScript",
-      "stars": 23,
+      "stars": 24,
       "forks": 5,
       "openIssues": 0,
       "license": "AGPL-3.0",
@@ -1022,7 +1043,7 @@
         "wildlife"
       ],
       "archived": false,
-      "pushedAt": "2026-07-20T10:31:33Z",
+      "pushedAt": "2026-07-26T04:24:38Z",
       "createdAt": "2026-06-14T05:07:25Z"
     },
     {
@@ -1057,7 +1078,7 @@
       "description": "Minimal aesthetic arch linux + hyprland dotfiles",
       "language": "Shell",
       "stars": 19,
-      "forks": 2,
+      "forks": 3,
       "openIssues": 0,
       "license": null,
       "topics": [
@@ -1069,7 +1090,7 @@
         "omarchy"
       ],
       "archived": false,
-      "pushedAt": "2026-07-23T12:16:35Z",
+      "pushedAt": "2026-07-25T16:12:01Z",
       "createdAt": "2025-10-04T10:27:45Z"
     },
     {
@@ -1120,7 +1141,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-06-24T04:28:39Z",
+      "pushedAt": "2026-07-26T13:00:08Z",
       "createdAt": "2026-03-20T14:25:48Z"
     },
     {
@@ -1175,6 +1196,26 @@
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
+      "slug": "rudycity/superagent",
+      "fullName": "RudyCity/superagent",
+      "name": "superagent",
+      "owner": "RudyCity",
+      "ownerUrl": "https://github.com/RudyCity",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/82188919?v=4",
+      "url": "https://github.com/RudyCity/superagent",
+      "homepage": null,
+      "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
+      "language": "TypeScript",
+      "stars": 15,
+      "forks": 2,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-07-27T05:02:44Z",
+      "createdAt": "2026-06-09T15:06:10Z"
+    },
+    {
       "slug": "muhammadhasbiashshiddieqy/openclawn",
       "fullName": "MuhammadHasbiAshshiddieqy/OpenClawn",
       "name": "OpenClawn",
@@ -1193,26 +1234,6 @@
       "archived": false,
       "pushedAt": "2026-07-17T08:29:41Z",
       "createdAt": "2026-06-15T14:35:14Z"
-    },
-    {
-      "slug": "rudycity/superagent",
-      "fullName": "RudyCity/superagent",
-      "name": "superagent",
-      "owner": "RudyCity",
-      "ownerUrl": "https://github.com/RudyCity",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/82188919?v=4",
-      "url": "https://github.com/RudyCity/superagent",
-      "homepage": null,
-      "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
-      "language": "TypeScript",
-      "stars": 14,
-      "forks": 2,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-07-24T14:35:31Z",
-      "createdAt": "2026-06-09T15:06:10Z"
     },
     {
       "slug": "muslimtify-org/muslimtify",
@@ -1243,7 +1264,7 @@
         "windows-desktop"
       ],
       "archived": false,
-      "pushedAt": "2026-07-22T08:09:40Z",
+      "pushedAt": "2026-07-27T10:31:38Z",
       "createdAt": "2026-02-23T13:59:12Z"
     },
     {
@@ -1418,6 +1439,26 @@
       "createdAt": "2026-03-25T12:38:25Z"
     },
     {
+      "slug": "muhfauziazhar/nusakit-api",
+      "fullName": "muhfauziazhar/nusakit-api",
+      "name": "nusakit-api",
+      "owner": "muhfauziazhar",
+      "ownerUrl": "https://github.com/muhfauziazhar",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/72305833?v=4",
+      "url": "https://github.com/muhfauziazhar/nusakit-api",
+      "homepage": "https://nusakit.my.id",
+      "description": "🇮🇩 Indonesian Data Validation API — NIK, NPWP, Phone, Rupiah, Bank, Wilayah. Live: nusakit.my.id",
+      "language": "TypeScript",
+      "stars": 9,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-06-13T16:18:08Z",
+      "createdAt": "2026-06-12T01:36:09Z"
+    },
+    {
       "slug": "rahmanef63/framepilot",
       "fullName": "rahmanef63/framepilot",
       "name": "framepilot",
@@ -1450,26 +1491,6 @@
       "archived": false,
       "pushedAt": "2026-07-16T15:18:45Z",
       "createdAt": "2026-07-10T13:57:01Z"
-    },
-    {
-      "slug": "muhfauziazhar/nusakit-api",
-      "fullName": "muhfauziazhar/nusakit-api",
-      "name": "nusakit-api",
-      "owner": "muhfauziazhar",
-      "ownerUrl": "https://github.com/muhfauziazhar",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/72305833?v=4",
-      "url": "https://github.com/muhfauziazhar/nusakit-api",
-      "homepage": "https://nusakit.my.id",
-      "description": "🇮🇩 Indonesian Data Validation API — NIK, NPWP, Phone, Rupiah, Bank, Wilayah. Live: nusakit.my.id",
-      "language": "TypeScript",
-      "stars": 8,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-06-13T16:18:08Z",
-      "createdAt": "2026-06-12T01:36:09Z"
     },
     {
       "slug": "rrndev/app-permission-analyzer",
@@ -1568,6 +1589,46 @@
       "createdAt": "2026-06-04T12:49:01Z"
     },
     {
+      "slug": "rifqiakrm/code-island",
+      "fullName": "rifqiakrm/code-island",
+      "name": "code-island",
+      "owner": "rifqiakrm",
+      "ownerUrl": "https://github.com/rifqiakrm",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/35358522?v=4",
+      "url": "https://github.com/rifqiakrm/code-island",
+      "homepage": "https://rifqiakrm.github.io/code-island/",
+      "description": "macOS app that turns your MacBook's notch into a live dashboard for Claude Code, Codex, etc",
+      "language": "Swift",
+      "stars": 7,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "GPL-3.0",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-06-19T05:46:32Z",
+      "createdAt": "2026-04-23T06:17:57Z"
+    },
+    {
+      "slug": "raymondchins/tokengratis-id",
+      "fullName": "raymondchins/tokengratis-id",
+      "name": "tokengratis-id",
+      "owner": "raymondchins",
+      "ownerUrl": "https://github.com/raymondchins",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
+      "url": "https://github.com/raymondchins/tokengratis-id",
+      "homepage": "https://tokengratis.id",
+      "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
+      "language": "JavaScript",
+      "stars": 6,
+      "forks": 0,
+      "openIssues": 2,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-07-27T15:43:44Z",
+      "createdAt": "2026-06-01T10:04:41Z"
+    },
+    {
       "slug": "rizukirr/apic",
       "fullName": "rizukirr/apic",
       "name": "apic",
@@ -1596,26 +1657,6 @@
       "createdAt": "2026-06-04T12:15:07Z"
     },
     {
-      "slug": "raymondchins/tokengratis-id",
-      "fullName": "raymondchins/tokengratis-id",
-      "name": "tokengratis-id",
-      "owner": "raymondchins",
-      "ownerUrl": "https://github.com/raymondchins",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
-      "url": "https://github.com/raymondchins/tokengratis-id",
-      "homepage": "https://tokengratis.id",
-      "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
-      "language": "JavaScript",
-      "stars": 6,
-      "forks": 0,
-      "openIssues": 1,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-07-23T20:15:36Z",
-      "createdAt": "2026-06-01T10:04:41Z"
-    },
-    {
       "slug": "aofsnorth/artidor",
       "fullName": "Aofsnorth/Artidor",
       "name": "Artidor",
@@ -1634,26 +1675,6 @@
       "archived": false,
       "pushedAt": "2026-07-21T15:06:18Z",
       "createdAt": "2026-06-13T11:24:30Z"
-    },
-    {
-      "slug": "rifqiakrm/code-island",
-      "fullName": "rifqiakrm/code-island",
-      "name": "code-island",
-      "owner": "rifqiakrm",
-      "ownerUrl": "https://github.com/rifqiakrm",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/35358522?v=4",
-      "url": "https://github.com/rifqiakrm/code-island",
-      "homepage": "https://rifqiakrm.github.io/code-island/",
-      "description": "macOS app that turns your MacBook's notch into a live dashboard for Claude Code, Codex, etc",
-      "language": "Swift",
-      "stars": 6,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "GPL-3.0",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-06-19T05:46:32Z",
-      "createdAt": "2026-04-23T06:17:57Z"
     },
     {
       "slug": "wauputr4/skill-bansos",
@@ -1773,6 +1794,40 @@
       "createdAt": "2026-06-06T16:32:11Z"
     },
     {
+      "slug": "codecoradev/trapfall",
+      "fullName": "codecoradev/trapfall",
+      "name": "trapfall",
+      "owner": "codecoradev",
+      "ownerUrl": "https://github.com/codecoradev",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
+      "url": "https://github.com/codecoradev/trapfall",
+      "homepage": "https://codecora.dev",
+      "description": "TrapFall — Lightweight self-hosted error capture engine. Sentry-compatible, Rust + SvelteKit 5.",
+      "language": "Rust",
+      "stars": 4,
+      "forks": 0,
+      "openIssues": 0,
+      "license": "Apache-2.0",
+      "topics": [
+        "axum",
+        "blake3",
+        "crash-reporting",
+        "error-capture",
+        "error-tracking",
+        "flutter",
+        "mcp",
+        "observability",
+        "rust",
+        "self-hosted",
+        "sentry",
+        "sentry-alternative",
+        "sveltekit"
+      ],
+      "archived": false,
+      "pushedAt": "2026-07-17T01:01:42Z",
+      "createdAt": "2026-06-06T00:23:26Z"
+    },
+    {
       "slug": "faisalaffan/ragi-instant",
       "fullName": "faisalaffan/ragi-instant",
       "name": "ragi-instant",
@@ -1836,7 +1891,7 @@
       "ownerAvatar": "https://avatars.githubusercontent.com/u/302768915?v=4",
       "url": "https://github.com/muslimtify-org/libmuslim",
       "homepage": "https://muslimtify.vercel.app",
-      "description": "A lightweight C library for calculating Islamic prayer times, support 21 calculation method worldwide",
+      "description": "Collection of islamic tools and utilities implemented in stb-style header only library",
       "language": "C",
       "stars": 2,
       "forks": 0,
@@ -1844,7 +1899,7 @@
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-22T05:52:52Z",
+      "pushedAt": "2026-07-27T15:52:56Z",
       "createdAt": "2025-11-22T11:52:35Z"
     },
     {
@@ -1908,40 +1963,6 @@
       "createdAt": "2026-05-31T08:23:44Z"
     },
     {
-      "slug": "codecoradev/trapfall",
-      "fullName": "codecoradev/trapfall",
-      "name": "trapfall",
-      "owner": "codecoradev",
-      "ownerUrl": "https://github.com/codecoradev",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
-      "url": "https://github.com/codecoradev/trapfall",
-      "homepage": "https://codecora.dev",
-      "description": "TrapFall — Lightweight self-hosted error capture engine. Sentry-compatible, Rust + SvelteKit 5.",
-      "language": "Rust",
-      "stars": 1,
-      "forks": 0,
-      "openIssues": 0,
-      "license": "Apache-2.0",
-      "topics": [
-        "axum",
-        "blake3",
-        "crash-reporting",
-        "error-capture",
-        "error-tracking",
-        "flutter",
-        "mcp",
-        "observability",
-        "rust",
-        "self-hosted",
-        "sentry",
-        "sentry-alternative",
-        "sveltekit"
-      ],
-      "archived": false,
-      "pushedAt": "2026-07-17T01:01:42Z",
-      "createdAt": "2026-06-06T00:23:26Z"
-    },
-    {
       "slug": "bimoalfarrabi/pantau-bbm",
       "fullName": "bimoalfarrabi/pantau-bbm",
       "name": "pantau-bbm",
@@ -1986,14 +2007,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-07-24T20:22:00.018Z"
+      "syncedAt": "2026-07-27T20:24:17.943Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-07-24T20:22:00.018Z"
+      "syncedAt": "2026-07-27T20:24:17.943Z"
     }
   ],
-  "syncedAt": "2026-07-24T20:22:00.018Z",
+  "syncedAt": "2026-07-27T20:24:17.943Z",
   "count": 76
 }
