@@ -337,9 +337,31 @@ treatment: `focus-visible` only, `ring-2` in Fog Ink at 70% opacity — full-ble
   Under this project's AND filter semantics that count *is* the explanation of the semantics, which
   is why there is no helper text. Count color is Mute when inactive, but `text-fog/70` when active
   (Mute over the Selected fill measures 3.99:1 and fails AA at that size).
-- **Overflow:** The chip row **wraps at every breakpoint**. It must never scroll horizontally: a
-  scrolling row hides facets and lets the reset control slide off-screen, and `overflow-x-auto`
-  forces `overflow-y: auto`, which clips the focus ring. Extra rows on mobile are the accepted cost.
+- **Overflow:** Inside the panel the chip row **wraps at every breakpoint**. It must never scroll
+  horizontally: a scrolling row hides facets and lets the reset control slide off-screen, and
+  `overflow-x-auto` forces `overflow-y: auto`, which clips the focus ring.
+- **Chips live inside a closed panel, not on the page.** See the Filter Bar below.
+
+### Filter Bar (signature component)
+One component for every list surface (`/`, `/pilih`, `/modal-gratis`, `/opensource`), because five
+surfaces with five interaction grammars means nothing a user learns on one page transfers to the
+next. Locked order: search → control row → active pills → panel.
+
+**At rest it shows one control.** Search, a single `Filter` button, and sort. Nothing else. An
+earlier version rendered every chip up front — grouped and labelled — and that was wrong: grouping
+*tidies* a wall of 23 buttons, it doesn't reduce it. The real defect was inverted emphasis —
+*unselected* options shouted (23 bordered, filled boxes) while *selected* ones whispered.
+
+**Selected state is the loud one.** Active filters render as removable pills (`Vision ✕`) plus
+`Reset`, always visible without opening anything. The panel carries the full grouped chip set and
+opens only on request.
+
+**The panel is a disclosure in normal flow, never a popover** — no position math, and it cannot be
+clipped by an `overflow: hidden` ancestor. It is **mounted and unmounted**, never class-toggled.
+
+**The Rest-Is-Quiet Rule.** A filter surface at rest shows the count of *active* filters, never the
+menu of available ones. Audit test: count the buttons visible before the user has done anything —
+if it's more than search + filter + sort, the emphasis is inverted.
 
 ### Cards / Containers
 - **Corner Style:** 8px for cards and panels. This is the largest radius in the system that isn't a pill.

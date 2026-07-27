@@ -1,21 +1,39 @@
 "use client";
 
-import { useId } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import SearchIcon from "@/components/SearchIcon";
 import Chip from "@/components/Chip";
 
 /**
  * SATU filter bar buat SEMUA permukaan list (`/`, `/pilih`, `/modal-gratis`,
  * `/opensource`). Sebelumnya tiap halaman punya tata bahasa interaksinya
- * sendiri — search di 3 dari 5, sort di 2 dari 5, chip 0-25 biji, reset cuma di
- * 1 — jadi apa pun yang user pelajarin di satu halaman ga kebawa ke halaman
- * berikutnya. Itu sumber rasa "ribet"-nya, bukan kepadatan datanya.
+ * sendiri, jadi apa pun yang user pelajarin di satu halaman ga kebawa.
  *
- * Urutan render DIKUNCI: search -> grup chip -> sort -> "N filter aktif ·
- * Reset". Permukaan boleh ga punya sebagian (props opsional), TAPI ga boleh
- * nuker urutannya — posisi kontrol yang konsisten itu justru inti komponen ini.
+ * ── Kenapa default-nya TERTUTUP (revisi 2026-07-27) ──────────────────────────
+ * Versi sebelumnya nampilin SEMUA chip sekaligus, dikelompokin + dikasih label.
+ * Itu salah, dan salahnya ketahuan begitu diliat: /modal-gratis jadi 23 kotak
+ * putih bergaris sekaligus, / jadi 10. Ngelompokin cuma NGERAPIHIN tembok,
+ * bukan ngurangin bebannya.
  *
- * Gantiin `components/directory/FilterBar.tsx` yang lama (udah dihapus).
+ * Cacat aslinya: desainnya KEBALIK. Chip yang BELUM dipilih teriak paling
+ * kenceng (23 kotak dengan garis + fill), sementara yang UDAH dipilih justru
+ * kalem. Praktik faceted search yang mapan kebalikannya — keadaan istirahat
+ * tenang, keadaan terpilih tegas.
+ *
+ * Jadi sekarang:
+ *   - istirahat  = search + satu tombol `Filter` + sort. Itu aja.
+ *   - aktif      = pil filter yang bisa dicopot satu-satu + `Reset`, SELALU
+ *                  keliatan tanpa perlu buka panel.
+ *   - panel      = grup chip lengkap, cuma pas diminta.
+ *
+ * Panel-nya DISCLOSURE di alur normal, BUKAN popover: nol perhitungan posisi,
+ * dan ga bisa ke-clip sama ancestor `overflow-hidden` (jebakan yang ditulis di
+ * DESIGN.md). Di-MOUNT/UNMOUNT, bukan di-toggle lewat class — lihat INCIDENT
+ * 2026-07-27 di docs/log.md, menu yang disembunyiin lewat transisi class pernah
+ * ship dalam keadaan mati total dan semua sinyal build tetep hijau.
+ *
+ * Urutan render DIKUNCI: search -> baris kontrol (Filter + sort) -> pil aktif
+ * -> panel. Permukaan boleh ga punya sebagian, TAPI ga boleh nuker urutannya.
  */
 
 export type FilterChipOption = {
@@ -29,7 +47,7 @@ export type FilterChipGroup = {
   id: string;
   /** WAJIB — dipakai buat aria-label role="group". */
   label: string;
-  /** true = label grup dirender visual (buat surface >1 grup). Default false. */
+  /** true = label grup dirender visual di dalam panel. Default false. */
   showLabel?: boolean;
   options: FilterChipOption[];
   selected: string[];
@@ -54,10 +72,10 @@ export type FilterBarProps = {
     /** Label visual di sebelah select. Default "Urutkan". */
     label?: string;
   };
-  /** Jumlah filter aktif. >0 → render baris "N filter aktif · Reset". */
+  /** Jumlah filter aktif — dipakai di badge tombol Filter. */
   activeCount: number;
   onReset: () => void;
-  /** Slot opsional di ujung kanan baris chip. */
+  /** Slot opsional di ujung kanan baris kontrol. */
   rightSlot?: React.ReactNode;
 };
 
@@ -70,31 +88,41 @@ export default function FilterBar({
   rightSlot,
 }: FilterBarProps) {
   const uid = useId();
-  // Reset global. Pas cuma ada 1 grup dia duduk di awal baris chip (persis
-  // tampilan direktori yang udah jalan); pas ada >1 grup dia dinaikin ke
-  // barisnya sendiri — tombol yang nge-reset SEMUA grup ga boleh keliatan
-  // (dan ke-announce) sebagai anggota salah satu grup.
-  const singleGroup = chipGroups.length === 1;
+  const panelId = `${uid}-panel`;
+  const [open, setOpen] = useState(false);
+  const panelRef = useRef<HTMLDivElement>(null);
+  const triggerRef = useRef<HTMLButtonElement>(null);
 
-  // "Semua" = aksi RESET, bukan facet. Dulu dia <Chip aria-pressed>, alias
-  // tombol reset nyamar jadi toggle dan bohong ke assistive tech soal punya
-  // state on/off. Sekarang tombol biasa: no aria-pressed, bentuknya pill bulat
-  // + fill paper (pola "escape hatch" di DESIGN.md) biar jelas beda spesies
-  // dari chip multi-select yang kotak + putih. Sengaja GA di-disable pas nol
-  // filter — reset idempoten, kontrol mati cuma nambah bingung.
-  const resetButton = (
-    <button
-      type="button"
-      onClick={onReset}
-      aria-label="Hapus semua filter"
-      className="inline-flex min-h-[44px] shrink-0 items-center self-start rounded-full border border-ink-line bg-ink px-4 py-2 text-[13px] font-medium text-mute transition-colors hover:border-mute hover:text-fog active:bg-ink-line/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
-    >
-      Semua
-    </button>
+  // Escape nutup panel + balikin fokus ke tombolnya. Listener cuma nempel
+  // selama panel kebuka. SENGAJA ga nutup pas klik di luar: ini disclosure di
+  // alur normal (bukan overlay), dan nutup pas user ngeklik hasil di bawahnya
+  // itu bikin kaget, bukan ngebantu.
+  useEffect(() => {
+    if (!open) return;
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "Escape") {
+        setOpen(false);
+        triggerRef.current?.focus();
+      }
+    }
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [open]);
+
+  const totalOptions = chipGroups.reduce((n, g) => n + g.options.length, 0);
+
+  /** Pil filter aktif — diturunin dari chipGroups, bukan state kedua. */
+  const activePills = chipGroups.flatMap((group) =>
+    group.selected
+      .map((id) => {
+        const opt = group.options.find((o) => o.id === id);
+        return opt ? { groupId: group.id, opt, onToggle: group.onToggle } : null;
+      })
+      .filter((x): x is NonNullable<typeof x> => x !== null),
   );
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-3">
       {/* 1. Search */}
       {search && (
         <div className="relative">
@@ -110,71 +138,50 @@ export default function FilterBar({
         </div>
       )}
 
-      {/* 2. Grup chip + 3. sort (kanan di sm+, baris sendiri di mobile) */}
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
-        {/* min-w-0 wajib: tanpa ini flex item bisa nolak ngecil dan ngedorong
-            baris (persis bug 402px-di-343px yang dulu). */}
-        <div className="flex min-w-0 flex-col gap-3">
-          {!singleGroup && resetButton}
-
-          {chipGroups.map((group) => {
-            const labelId = `${uid}-${group.id}`;
-            return (
-              <div key={group.id} className="flex min-w-0 flex-col gap-1.5">
-                {/* Label grup = jawaban buat masalah kepadatan. /modal-gratis
-                    ngirim 25 chip dalam 3 grup; tanpa label itu satu gumpalan
-                    25 chip yang ga bisa di-skim. Dipecah + dikasih judul, dia
-                    jadi 3 himpunan ~8. Sengaja pakai peran Label DESIGN.md
-                    (11px, mute, uppercase tracked) — ini header panel yang
-                    STRUKTURAL, bukan eyebrow; ga boleh naik jadi heading.
-                    Kalau labelnya keliatan, grup pakai aria-labelledby ke teks
-                    itu (bukan aria-label) biar screen reader ga baca judul yang
-                    sama dua kali. */}
-                {group.showLabel && (
-                  <span
-                    id={labelId}
-                    className="text-[11px] font-semibold uppercase tracking-[0.05em] text-mute"
-                  >
-                    {group.label}
-                  </span>
-                )}
-                {/* WRAP di SEMUA breakpoint, bukan scroll horizontal.
-                    overflow-x-auto pernah dicoba dan diukur di production: 769px
-                    chip dijejelin ke box 351px, 5 dari 9 facet ilang dan tombol
-                    reset nyangkut di left:-402px — escape hatch yang ga bisa
-                    dijangkau. Wrap makan beberapa baris vertikal di 375px, dan
-                    itu trade-off yang sengaja diambil. Efek samping bagusnya:
-                    tanpa overflow-x, sumbu Y ga jadi `auto` → focus ring chip ga
-                    ke-clip → ga butuh kompensasi `-m-1 p-1` (margin negatif =
-                    satu lagi sumber overflow yang ga jadi ada).
-                    role=group + label: tanpa ini user screen reader keluar dari
-                    field search langsung nyemplung ke tombol pertama tanpa
-                    dikasih tau lagi masuk grup filter yang mana. */}
-                <div
-                  role="group"
-                  aria-label={group.showLabel ? undefined : group.label}
-                  aria-labelledby={group.showLabel ? labelId : undefined}
-                  className="flex min-w-0 flex-wrap items-center gap-2"
-                >
-                  {singleGroup && resetButton}
-                  {group.options.map((opt) => (
-                    <Chip
-                      key={opt.id}
-                      active={group.selected.includes(opt.id)}
-                      count={opt.count}
-                      onClick={() => group.onToggle(opt.id)}
-                    >
-                      {opt.label}
-                    </Chip>
-                  ))}
-                </div>
-              </div>
-            );
-          })}
-        </div>
+      {/* 2. Baris kontrol — SATU tombol Filter + sort. Ini yang keliatan pas
+             istirahat, dan cuma ini. */}
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        {totalOptions > 0 && (
+          <button
+            ref={triggerRef}
+            type="button"
+            onClick={() => setOpen((o) => !o)}
+            aria-expanded={open}
+            aria-controls={open ? panelId : undefined}
+            className={`inline-flex min-h-[44px] shrink-0 items-center gap-2 rounded-[6px] border px-4 text-[13px] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70 ${
+              open || activeCount > 0
+                ? "border-mute bg-ink-sel font-semibold text-fog"
+                : "border-ink-line bg-ink-soft text-mute hover:border-mute hover:text-fog"
+            }`}
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              className="h-4 w-4"
+              aria-hidden="true"
+            >
+              <path d="M3 6h18M7 12h10M11 18h2" />
+            </svg>
+            Filter
+            {activeCount > 0 && (
+              <span className="inline-flex min-w-[1.25rem] items-center justify-center rounded-full bg-fog px-1.5 py-0.5 text-[11px] font-semibold leading-none text-white tabular-nums">
+                {activeCount}
+              </span>
+            )}
+            <span
+              aria-hidden="true"
+              className={`text-[10px] transition-transform ${open ? "rotate-180" : ""}`}
+            >
+              ▾
+            </span>
+          </button>
+        )}
 
         {(sort || rightSlot) && (
-          <div className="flex shrink-0 flex-wrap items-center gap-3 sm:justify-end">
+          <div className="flex min-w-0 shrink-0 flex-wrap items-center gap-3">
             {sort && (
               <label className="flex items-center gap-2 text-sm text-mute">
                 {sort.label ?? "Urutkan"}
@@ -196,26 +203,108 @@ export default function FilterBar({
         )}
       </div>
 
-      {/* 4. Ringkasan + reset yang SELALU keliatan pas ada filter nyala. Ini
-          escape hatch yang sebenernya: posisinya ga tergantung scroll dan ga
-          ikut ketutup baris chip. Sengaja kalem (12px, mute) — baris utilitas,
-          bukan banner. Ga dikasih aria-live: tiap permukaan udah punya live
-          region sendiri buat jumlah hasil, dua-duanya nyala = screen reader
-          nyerocos dobel tiap klik chip. */}
-      {activeCount > 0 && (
-        <div className="flex flex-wrap items-center gap-x-2 text-[12px] text-mute">
-          <span>
-            <span className="font-semibold text-fog">{activeCount}</span> filter
-            aktif
-          </span>
-          <span aria-hidden="true">·</span>
+      {/* 3. Pil filter AKTIF. Ini pembalikan yang bikin desainnya bener: yang
+             kepilih itu yang tegas dan bisa dicopot satu-satu, bukan yang belum
+             kepilih. User ga perlu buka panel cuma buat tau lagi nyaring apa.
+             Ga dikasih aria-live: tiap permukaan udah punya live region sendiri
+             buat jumlah hasil; dua-duanya nyala = screen reader nyerocos dobel. */}
+      {activePills.length > 0 && (
+        <div className="flex flex-wrap items-center gap-2">
+          {activePills.map(({ groupId, opt, onToggle }) => (
+            <button
+              key={`${groupId}-${opt.id}`}
+              type="button"
+              onClick={() => onToggle(opt.id)}
+              aria-label={`Hapus filter ${opt.label}`}
+              className="inline-flex min-h-[44px] max-w-full items-center gap-1.5 rounded-full border border-mute bg-ink-sel px-3.5 text-[13px] font-medium text-fog transition-colors hover:border-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
+            >
+              <span className="min-w-0 truncate">{opt.label}</span>
+              <span aria-hidden="true" className="text-mute">
+                ✕
+              </span>
+            </button>
+          ))}
           <button
             type="button"
             onClick={onReset}
-            className="inline-flex min-h-[44px] items-center rounded-[4px] px-1 font-medium text-fog underline decoration-ink-line underline-offset-4 transition-colors hover:decoration-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
+            className="inline-flex min-h-[44px] items-center rounded-[4px] px-1 text-[12px] font-medium text-mute underline decoration-ink-line underline-offset-4 transition-colors hover:text-fog hover:decoration-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
           >
             Reset
           </button>
+        </div>
+      )}
+
+      {/* 4. Panel — cuma pas diminta. Di-MOUNT/UNMOUNT (bukan class toggle):
+             pas ketutup dia beneran ilang dari a11y tree & urutan tab, dan ga
+             bisa nyangkut di computed style kayak INCIDENT menu mobile. */}
+      {open && (
+        <div
+          id={panelId}
+          ref={panelRef}
+          className="flex flex-col gap-4 rounded-[8px] border border-ink-line bg-ink-soft p-4"
+        >
+          {chipGroups.map((group) => {
+            const labelId = `${uid}-${group.id}`;
+            return (
+              <div key={group.id} className="flex min-w-0 flex-col gap-1.5">
+                {/* Peran Label DESIGN.md (11px, mute, uppercase tracked) — ini
+                    header panel yang STRUKTURAL, bukan eyebrow. Kalau labelnya
+                    keliatan, grup pakai aria-labelledby ke teks itu biar screen
+                    reader ga baca judul yang sama dua kali. */}
+                {group.showLabel && (
+                  <span
+                    id={labelId}
+                    className="text-[11px] font-semibold uppercase tracking-[0.05em] text-mute"
+                  >
+                    {group.label}
+                  </span>
+                )}
+                {/* WRAP, bukan scroll horizontal. overflow-x-auto pernah diukur
+                    di production: 769px chip dijejelin ke box 351px, 5 dari 9
+                    facet ilang. Di dalam panel, wrap aman — panel-nya emang
+                    tempat semuanya boleh keliatan. */}
+                <div
+                  role="group"
+                  aria-label={group.showLabel ? undefined : group.label}
+                  aria-labelledby={group.showLabel ? labelId : undefined}
+                  className="flex min-w-0 flex-wrap items-center gap-2"
+                >
+                  {group.options.map((opt) => (
+                    <Chip
+                      key={opt.id}
+                      active={group.selected.includes(opt.id)}
+                      count={opt.count}
+                      onClick={() => group.onToggle(opt.id)}
+                    >
+                      {opt.label}
+                    </Chip>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
+
+          <div className="flex flex-wrap items-center gap-3 border-t border-ink-line pt-3">
+            <button
+              type="button"
+              onClick={() => {
+                setOpen(false);
+                triggerRef.current?.focus();
+              }}
+              className="inline-flex min-h-[44px] items-center rounded-[6px] border border-ink-line bg-ink px-4 text-[13px] font-medium text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
+            >
+              Tutup
+            </button>
+            {activeCount > 0 && (
+              <button
+                type="button"
+                onClick={onReset}
+                className="inline-flex min-h-[44px] items-center rounded-[4px] px-1 text-[12px] font-medium text-mute underline decoration-ink-line underline-offset-4 transition-colors hover:text-fog hover:decoration-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
+              >
+                Hapus semua filter
+              </button>
+            )}
+          </div>
         </div>
       )}
     </div>
