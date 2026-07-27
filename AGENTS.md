@@ -33,6 +33,7 @@ Directory **free tier & free credits API LLM**, di-aggregate otomatis dari sumbe
 | Data | **`data/providers.json`** (di-generate `scripts/sync.mjs`). **NO database** untuk v1. |
 | Backend | **NONE** — no server actions, no API yang nyimpen state, no auth. Kecuali 1 route dormant: Resend newsletter (`app/api/subscribe`) — no DB, no auth, no state-storing backend. |
 | Pipeline | `scripts/sync.mjs` (`npm run sync`) → fetch **4 sumber paralel** (JSON + HTML + markdown + live API) via `scripts/adapters/*.mjs` → parse + normalize ke satu schema → merge/dedup gap-fill by priority (`lib/merge.mjs`) → enrich context/maxOutput dari models.dev (`lib/enrich.mjs`) → smoke test → tulis `data/providers.json`. LLM fallback (`lib/llm-fallback.mjs`, Claude Haiku) re-parse sumber unstructured yang drift kalau `ANTHROPIC_API_KEY` ada. Idempotent. |
+| Guard | Berlapis: `source-sanity` (floor per-sumber) → `shape-guard` (BENTUK nilai, nangkep kolom ketuker) → `diff-guard` (snapshot vs last-known-good) → **`quarantine`** (ingatan lintas-run: anomali per-provider ditahan pakai data last-known-good & run tetep HIJAU; anomali sama 3 run berturut = kenyataan, diterima otomatis; flapping >7 hari = fatal). Error global & shape-fatal SENGAJA ga bisa dikarantina. |
 | Scheduling | GitHub Actions (cron nightly) ATAU Vercel Cron — trigger sync + rebuild |
 | Deploy | Vercel auto-deploy on `main` push |
 

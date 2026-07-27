@@ -14,13 +14,39 @@ name: nightly-data-sync
 # sinyal liveness/fresh (PRD §2 trust dari transparansi). Saat sumber mnfst
 # memang berubah, perubahan kontennya ikut ke-commit di run yang sama.
 #
-# Safety: snapshot-diff guard di sync.mjs exit 1 kalau provider hilang atau
-# model count collapse vs data terakhir yang di-commit → step push ga jalan,
-# last-known-good tetap live. Guard `git diff --cached` cuma nge-skip kasus
-# byte-identik yang langka.
+# Safety: snapshot-diff guard di sync.mjs bandingin hasil run vs data terakhir
+# yang ke-commit. TAPI sejak 2026-07-27 dia GA LAGI abort semua-atau-nol.
 #
-# Manual override: kalau sumber memang sengaja hapus provider / shrink data,
-# trigger "Run workflow" dengan `allow_data_shrink = true` buat bypass guard.
+# Kenapa diubah: 8 dari 25 run terakhir GAGAL, semuanya sebab yang sama — guard
+# trip lalu ngebuang seluruh write, jadi 24 provider yang datanya segar ikut
+# hangus gara-gara 1 provider goyang. 6 dari 8 itu cuma sumber ngadat semalam
+# (freellm render ga utuh → 3 provider sole-source-nya lenyap), yang besoknya
+# balik sendiri. Sisanya perubahan sumber beneran (github-models pensiun) yang
+# nyangkut MERAH terus sampai ada manusia yang nge-force manual.
+#
+# Sekarang (scripts/lib/quarantine.mjs) — prinsipnya: korupsi itu SEMENTARA,
+# kenyataan itu MENETAP, dan yang mbedain cuma waktu:
+#   - Anomali PER-PROVIDER (provider hilang / model nyusut / id churn) →
+#     provider itu pakai record last-known-good, provider lain tetep ditulis
+#     segar, run HIJAU. Record lama dibawa apa adanya jadi `syncedAt`-nya ga
+#     maju → situs nampilin "Disinkron [tanggal lama]", jujur sendiri.
+#   - Anomali SAMA muncul 3 run berturut-turut → itu kenyataan, diterima
+#     otomatis, tanpa perlu ada yang turun tangan.
+#   - Sumber pulih sebelum 3 run → karantina dibersihin, ga ada jejak.
+#   - Anomali flapping > 7 hari tanpa pernah stabil → FATAL (biar ga basi
+#     diam-diam), state-nya di data/quarantine.json.
+#
+# Yang SENGAJA tetep fatal (karantina ga boleh nutupin korupsi masif):
+#   - error GLOBAL: total model anjlok, minProviders floor, dan field-value
+#     churn (Rule 6 = detektor kolom-ketuker dari INCIDENT 2026-07-25)
+#   - > 30% provider kena anomali sekaligus
+#   - shape-guard fatal (jalur terpisah, ga disentuh karantina)
+#
+# Efeknya ke alert: run yang gagal sekarang beneran butuh mata manusia, bukan
+# noise. Provider yang lagi dikarantina dilaporin di $GITHUB_STEP_SUMMARY.
+#
+# Manual override: kalau sumber memang sengaja hapus provider / shrink data dan
+# ga mau nunggu 3 malam, trigger "Run workflow" dengan `allow_data_shrink = true`.
 # Cron run (scheduled) SELALU pakai guard ON — default aman.
 #
 # Shape guard (scripts/lib/shape-guard.mjs, INCIDENT 2026-07-25 — freellm

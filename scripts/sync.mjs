@@ -57,6 +57,13 @@ import { mergeProviders } from "./lib/merge.mjs";
 import { enrichFromModelsDev } from "./lib/enrich.mjs";
 import { llmParseSource, llmBackendAvailable } from "./lib/llm-fallback.mjs";
 import { snapshotDiff } from "./lib/diff-guard.mjs";
+import {
+  CONFIRM_RUNS,
+  anomaliesFromStats,
+  applyCarryForward,
+  parseState as parseQuarantine,
+  reconcile as reconcileQuarantine,
+} from "./lib/quarantine.mjs";
 import { checkSourceFloor, updateBaselines } from "./lib/source-sanity.mjs";
 import { GENERIC_MODELS_PATTERN } from "./lib/normalize.mjs";
 import { pingIndexNow } from "./lib/indexnow.mjs";
@@ -67,6 +74,7 @@ const OUT = join(__dirname, "..", "data", "providers.json");
 const LOGO_DIR = join(__dirname, "..", "public", "logos");
 const CHANGELOG_OUT = join(__dirname, "..", "data", "changelog.json");
 const REPORT_OUT = join(__dirname, "..", "data", "sync-report.json");
+const QUARANTINE_OUT = join(__dirname, "..", "data", "quarantine.json");
 const SITE_URL = "https://tokengratis.id";
 
 // Report run yang lagi jalan — di-set di awal main(), dibaca ulang oleh
@@ -202,6 +210,25 @@ export function appendJobSummary(report) {
 
     if (report.diffGuard && !report.diffGuard.ok) {
       lines.push("", "### Snapshot guard errors", "", ...report.diffGuard.errors.map((e) => `- ${e}`));
+    }
+
+    // Karantina: run-nya HIJAU, tapi ini yang paling penting dibaca manusia —
+    // provider mana yang lagi ditahan dan berapa malam lagi sebelum diterima.
+    const q = report.quarantine;
+    if (q && (q.heldProviders?.length || q.accepted?.length || q.cleared?.length)) {
+      lines.push("", "### Karantina provider", "");
+      for (const h of q.heldProviders ?? []) {
+        lines.push(
+          `- ⚠ \`${h.slug}\` — ${h.detail}. Pakai data last-known-good ` +
+            `(run **${h.streak}/${h.needs}**). Kalau tetap begini sampai ${h.needs} run, diterima otomatis.`,
+        );
+      }
+      for (const a of q.accepted ?? []) {
+        lines.push(`- ✓ \`${a.slug}\` — ${a.detail}. Konsisten ${q.confirmRuns} run → diterima sebagai perubahan sumber beneran.`);
+      }
+      for (const slug of q.cleared ?? []) {
+        lines.push(`- · \`${slug}\` — sumber pulih, keluar karantina.`);
+      }
     }
 
     if (report.crash) {
@@ -518,6 +545,17 @@ async function main() {
     prevProviders = [];
   }
 
+  // 0b. State karantina (ingatan lintas-run buat guard). Ga ada / korup →
+  //     kosong; ini cuma memori bantu, jangan sampe ngejatuhin sync.
+  let quarantineState;
+  try {
+    quarantineState = parseQuarantine(
+      existsSync(QUARANTINE_OUT) ? readFileSync(QUARANTINE_OUT, "utf8") : null,
+    );
+  } catch {
+    quarantineState = parseQuarantine(null);
+  }
+
   // 1. Fetch semua sumber paralel. Sumber gagal → skip (jangan jatohin pipeline).
   //    `acceptedCounts` nyimpen count per-source yang LOLOS (buat updateBaselines
   //    di langkah 5). `okLabels` = set label yang masuk merge (buat authoritative
@@ -688,7 +726,9 @@ async function main() {
 
   // Buang provider tanpa model (card kosong = useless).
   const dropped = merged.filter((p) => p.modelCount === 0).map((p) => p.slug);
-  const providers = merged.filter((p) => p.modelCount > 0);
+  // `let`, bukan `const`: karantina bisa nyisipin record last-known-good buat
+  // provider yang lagi ditahan (lihat langkah 3c).
+  let providers = merged.filter((p) => p.modelCount > 0);
   if (dropped.length) console.log(`  · drop ${dropped.length} provider 0-model: ${dropped.join(", ")}`);
 
   // 2b. Enrich: gap-fill context/maxOutput dari models.dev (best-effort, never
@@ -737,24 +777,100 @@ async function main() {
   if (diff.warnings.length)
     console.warn("⚠ Snapshot guard:\n" + diff.warnings.join("\n"));
   report.diffGuard = { ok: diff.ok, errors: diff.errors, warnings: diff.warnings, stats: diff.stats };
-  if (!diff.ok) {
-    if (process.env.ALLOW_DATA_SHRINK === "1") {
-      console.warn(
-        "⚠ Snapshot guard tripped, ALLOW_DATA_SHRINK=1 → bypass:\n" +
-          diff.errors.join("\n"),
-      );
-      report.diffGuard.bypassed = true;
-    } else {
+  // Karantina (scripts/lib/quarantine.mjs) — guard-nya dikasih INGATAN.
+  // Dulu blok ini abort SELURUH write kalau satu provider aja goyang: 8 dari 25
+  // run nightly mati gara-gara ini, dan 6 di antaranya cuma sumber goyang
+  // semalam-dua-malam. Sekarang anomali PER-PROVIDER ditahan (pakai record
+  // last-known-good provider itu doang, sisanya tetep ditulis segar) dan baru
+  // diterima kalau muncul konsisten CONFIRM_RUNS run berturut-turut.
+  // Error GLOBAL tetep fatal — lihat pemisahan di bawah.
+  let quarantineOutcome = null;
+  if (!diff.ok && process.env.ALLOW_DATA_SHRINK === "1") {
+    console.warn(
+      "⚠ Snapshot guard tripped, ALLOW_DATA_SHRINK=1 → bypass:\n" +
+        diff.errors.join("\n"),
+    );
+    report.diffGuard.bypassed = true;
+  } else {
+    const anomalies = diff.ok ? [] : anomaliesFromStats(diff.stats);
+    const anomalySlugs = anomalies.map((a) => a.slug);
+
+    // Error yang GA nyebut `provider "<slug>"` itu GLOBAL: total model anjlok
+    // (Rule 2), minProviders floor (Rule 4), dan field-value churn (Rule 6 —
+    // detektor kolom-ketuker dari INCIDENT 2026-07-25). Tiga itu nandain
+    // korupsi seluruh dataset, bukan satu provider goyang, jadi SENGAJA ga
+    // boleh dikarantina dan tetep abort kayak dulu.
+    const globalErrors = diff.errors.filter(
+      (e) => !anomalySlugs.some((s) => e.includes(`provider "${s}"`)),
+    );
+
+    const q = reconcileQuarantine({
+      state: quarantineState,
+      anomalies,
+      totalProviders: prevProviders.length,
+      now: mergeRunAt,
+    });
+
+    if (globalErrors.length || q.fatal) {
       console.error(
-        "✗ Snapshot guard FAILED (data shrink/disappear). Last-known-good tetep live. Set ALLOW_DATA_SHRINK=1 buat force.\n" +
-          diff.errors.join("\n"),
+        "✗ Snapshot guard FAILED — bukan kasus yang boleh dikarantina. " +
+          "Last-known-good tetep live. Set ALLOW_DATA_SHRINK=1 buat force.\n" +
+          [...globalErrors, ...(q.fatal ? [q.fatal] : [])].join("\n"),
       );
       console.error("stats: " + JSON.stringify(diff.stats));
       report.outcome = "aborted-diff-guard";
+      report.diffGuard.globalErrors = globalErrors;
+      if (q.fatal) report.diffGuard.quarantineFatal = q.fatal;
       finish(report);
       process.exit(1);
     }
+
+    if (q.carryForward.length) {
+      const { providers: patched, restored } = applyCarryForward(
+        providers,
+        prevProviders,
+        q.carryForward,
+      );
+      providers = patched;
+      for (const h of q.held) {
+        console.warn(
+          `  ⚠ karantina [${h.slug}] ${h.detail} — pakai data last-known-good ` +
+            `(run ${h.streak}/${h.needs}; kalau tetap begini sampai ${h.needs} run, diterima otomatis)`,
+        );
+      }
+      // syncedAt record lama SENGAJA ga di-refresh: situs bakal nampilin
+      // "Disinkron [tanggal lama]" buat provider ini, jadi carry-forward-nya
+      // jujur sendiri — ga ada klaim kesegaran palsu.
+      console.warn(
+        `  ⚠ ${restored.length} provider pakai data last-known-good; ${providers.length - restored.length} provider ditulis segar.`,
+      );
+    }
+
+    for (const a of q.accepted) {
+      console.log(
+        `  · karantina [${a.slug}] ${a.detail} konsisten ${a.streak} run — ` +
+          `dianggap perubahan sumber beneran, diterima.`,
+      );
+    }
+    for (const slug of q.cleared) {
+      console.log(`  · karantina [${slug}] sumber pulih — keluar karantina.`);
+    }
+
+    quarantineState = q.state;
+    quarantineOutcome = {
+      heldProviders: q.held.map((h) => ({ slug: h.slug, kind: h.kind, detail: h.detail, streak: h.streak, needs: h.needs })),
+      accepted: q.accepted.map((a) => ({ slug: a.slug, kind: a.kind, detail: a.detail })),
+      cleared: q.cleared,
+      confirmRuns: CONFIRM_RUNS,
+    };
+    report.quarantine = quarantineOutcome;
+
+    // Carry-forward nyisipin record lama ke set final — smoke test diulang biar
+    // yang beneran ditulis tetep kena cek "wajib punya source + syncedAt".
+    if (q.carryForward.length) smokeTest(providers, report);
   }
+
+  writeFileSync(QUARANTINE_OUT, JSON.stringify(quarantineState, null, 2) + "\n");
 
   // 4. Tulis output.
   const withLogo = providers.filter((p) => p.logo).length;
