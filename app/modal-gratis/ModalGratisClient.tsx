@@ -7,8 +7,7 @@ import {
   OFFER_FACET_LABEL,
   OFFER_KIND_LABEL,
 } from "@/lib/offer-types";
-import Chip from "@/components/Chip";
-import SearchIcon from "@/components/SearchIcon";
+import FilterBar, { type FilterChipGroup } from "@/components/FilterBar";
 import Pagination from "@/components/Pagination";
 import EmptyDataPanel from "@/components/EmptyDataPanel";
 import NoResultsPanel from "@/components/NoResultsPanel";
@@ -80,6 +79,55 @@ export default function ModalGratisClient({ offers }: { offers: Offer[] }) {
       })
       .map(({ offer }) => offer);
   }, [indexed, search, category, kind, facets]);
+
+  // ── Angka di chip = "kalau chip ini gw klik, hasilnya berapa" ──────────────
+  // Konvensi sama persis kayak direktori (/): dihitung dari hasil post-filter
+  // pre-pagination, dan buat chip yang LAGI aktif angkanya = total hasil
+  // sekarang. Hitungannya beda per grup, SENGAJA, ngikutin semantik grupnya:
+  // kategori & bentuk itu single-select (klik = GANTI nilai, jadi filter grup
+  // itu sendiri dikeluarin dari hitungan), facet itu AND multi-select (klik =
+  // NAMBAH syarat, jadi cukup ngitung dari `results` apa adanya). Dataset-nya
+  // kurasi manual (puluhan entri), jadi 3 pass lagi murah banget.
+  const categoryCounts = useMemo(() => {
+    const q = search.trim().toLowerCase();
+    const counts: Partial<Record<OfferCategory, number>> = {};
+    for (const c of availableCategories) counts[c] = 0;
+    for (const { offer, searchText } of indexed) {
+      if (kind && offer.kind !== kind) continue;
+      if (facets.length > 0 && !facets.every((f) => offer.facets.includes(f))) continue;
+      if (q && !searchText.includes(q)) continue;
+      if (counts[offer.category] !== undefined) {
+        counts[offer.category] = (counts[offer.category] ?? 0) + 1;
+      }
+    }
+    return counts;
+  }, [indexed, availableCategories, search, kind, facets]);
+
+  const kindCounts = useMemo(() => {
+    const q = search.trim().toLowerCase();
+    const counts: Partial<Record<OfferKind, number>> = {};
+    for (const k of availableKinds) counts[k] = 0;
+    for (const { offer, searchText } of indexed) {
+      if (category && offer.category !== category) continue;
+      if (facets.length > 0 && !facets.every((f) => offer.facets.includes(f))) continue;
+      if (q && !searchText.includes(q)) continue;
+      if (counts[offer.kind] !== undefined) {
+        counts[offer.kind] = (counts[offer.kind] ?? 0) + 1;
+      }
+    }
+    return counts;
+  }, [indexed, availableKinds, search, category, facets]);
+
+  const facetCounts = useMemo(() => {
+    const counts: Partial<Record<OfferFacet, number>> = {};
+    for (const f of availableFacets) counts[f] = 0;
+    for (const offer of results) {
+      for (const f of offer.facets) {
+        if (counts[f] !== undefined) counts[f] = (counts[f] ?? 0) + 1;
+      }
+    }
+    return counts;
+  }, [results, availableFacets]);
 
   // Reset ke halaman 1 tiap filter berubah
   useEffect(() => {
@@ -163,7 +211,10 @@ export default function ModalGratisClient({ offers }: { offers: Offer[] }) {
   const rangeFrom = (current - 1) * PAGE_SIZE + 1;
   const rangeTo = (current - 1) * PAGE_SIZE + pageItems.length;
 
-  const isFiltered = search !== "" || category !== "" || kind !== "" || facets.length > 0;
+  // Search dihitung 1 filter (bukan per-kata) — sama kayak direktori.
+  const activeCount =
+    (category ? 1 : 0) + (kind ? 1 : 0) + facets.length + (search.trim() ? 1 : 0);
+  const isFiltered = activeCount > 0;
 
   function resetFilters() {
     setSearch("");
@@ -171,6 +222,52 @@ export default function ModalGratisClient({ offers }: { offers: Offer[] }) {
     setKind("");
     setFacets([]);
   }
+
+  // Dipisah dari JSX (bukan literal inline) supaya array-nya beneran ke-anotasi
+  // FilterChipGroup[] — kalau `.filter()` nempel langsung di literal, contextual
+  // typing-nya putus dan param `onToggle` jatuh ke implicit any.
+  const allChipGroups: FilterChipGroup[] = [
+    // Single-select: klik chip lain = GANTI, klik chip yang aktif = lepas.
+    {
+      id: "kategori",
+      label: "Jenis layanan",
+      showLabel: true,
+      options: availableCategories.map((c) => ({
+        id: c,
+        label: OFFER_CATEGORY_LABEL[c],
+        count: categoryCounts[c],
+      })),
+      selected: category ? [category] : [],
+      onToggle: (id) => setCategory(category === id ? "" : (id as OfferCategory)),
+    },
+    {
+      id: "bentuk",
+      label: "Bentuk penawaran",
+      showLabel: true,
+      options: availableKinds.map((k) => ({
+        id: k,
+        label: OFFER_KIND_LABEL[k],
+        count: kindCounts[k],
+      })),
+      selected: kind ? [kind] : [],
+      onToggle: (id) => setKind(kind === id ? "" : (id as OfferKind)),
+    },
+    // Multi-select AND — beda spesies dari dua grup di atas, dan justru itu yang
+    // bikin label grup wajib ada.
+    {
+      id: "syarat",
+      label: "Syarat & jebakan",
+      showLabel: true,
+      options: availableFacets.map((f) => ({
+        id: f,
+        label: OFFER_FACET_LABEL[f],
+        count: facetCounts[f],
+      })),
+      selected: facets,
+      onToggle: (id) => toggleFacet(id as OfferFacet),
+    },
+  ];
+  const chipGroups = allChipGroups.filter((g) => g.options.length > 0);
 
   if (offers.length === 0) {
     return (
@@ -184,66 +281,26 @@ export default function ModalGratisClient({ offers }: { offers: Offer[] }) {
 
   return (
     <div className="flex flex-col gap-6">
-      {/* ── Search ── */}
-      <div className="relative">
-        <SearchIcon className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-mute" />
-        <input
-          type="search"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          placeholder="Cari penawaran, vendor, atau kuota — Vercel, database, domain…"
-          aria-label="Cari modal gratis"
-          className="w-full rounded-[8px] border border-ink-line bg-ink-soft py-3.5 pl-11 pr-4 text-sm text-fog placeholder:text-mute focus:border-fog/40 focus:outline-none focus:ring-2 focus:ring-fog/70 transition-colors"
-        />
-      </div>
-
-      {/* ── Category chips ── */}
-      {availableCategories.length > 0 && (
-        <div className="-mx-1 flex flex-wrap items-center gap-2 px-1">
-          <Chip active={category === ""} onClick={() => setCategory("")}>
-            Semua kategori
-          </Chip>
-          {availableCategories.map((c) => (
-            <Chip
-              key={c}
-              active={category === c}
-              onClick={() => setCategory(category === c ? "" : c)}
-            >
-              {OFFER_CATEGORY_LABEL[c]}
-            </Chip>
-          ))}
-        </div>
-      )}
-
-      {/* ── Kind chips ── */}
-      {availableKinds.length > 0 && (
-        <div className="-mx-1 flex flex-wrap items-center gap-2 px-1">
-          <Chip active={kind === ""} onClick={() => setKind("")}>
-            Semua bentuk
-          </Chip>
-          {availableKinds.map((k) => (
-            <Chip key={k} active={kind === k} onClick={() => setKind(kind === k ? "" : k)}>
-              {OFFER_KIND_LABEL[k]}
-            </Chip>
-          ))}
-        </div>
-      )}
-
-      {/* ── Facet chips — fitur andalan: kombinasi filter cepat ── */}
-      {availableFacets.length > 0 && (
-        <div className="-mx-1 px-1">
-          <p className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-mute">
-            Filter cepat
-          </p>
-          <div className="flex flex-wrap items-center gap-2">
-            {availableFacets.map((f) => (
-              <Chip key={f} active={facets.includes(f)} onClick={() => toggleFacet(f)}>
-                {OFFER_FACET_LABEL[f]}
-              </Chip>
-            ))}
-          </div>
-        </div>
-      )}
+      {/* ── Filter ────────────────────────────────────────────────────────────
+          FilterBar bareng — sama kayak /, /pilih, /opensource. Ini permukaan
+          paling padat di situs (25 chip), dan dulu ketiganya nempel jadi satu
+          gumpalan tanpa judul: user ga bisa nebak "Database" dan "Kredit
+          sekali" itu dua sumbu yang beda. Makanya `showLabel` nyala di sini —
+          25 chip jadi 3 himpunan bernama, bukan 25 pilihan sejajar.
+          Chip "Semua kategori"/"Semua bentuk" per-grup DIBUANG: tombol reset
+          global punya FilterBar udah nge-cover, dan ngedeselect satu grup tetep
+          bisa lewat klik ulang chip yang aktif (toggle). */}
+      <FilterBar
+        search={{
+          value: search,
+          onChange: setSearch,
+          placeholder: "Cari penawaran, vendor, atau kuota — Vercel, database, domain…",
+          label: "Cari modal gratis",
+        }}
+        chipGroups={chipGroups}
+        activeCount={activeCount}
+        onReset={resetFilters}
+      />
 
       {/* ── Grid / empty state ── */}
       {results.length === 0 ? (

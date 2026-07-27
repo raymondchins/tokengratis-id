@@ -1,6 +1,12 @@
+import { Link } from "next-view-transitions";
 import Navbar from "@/components/Navbar";
 import DirectoryClient from "./directory/DirectoryClient";
 import { getListItems, getLastUpdated } from "@/lib/data";
+
+// ring-INSET, bukan ring biasa: tiga baris ini full-bleed di dalam container
+// `overflow-hidden`, jadi ring di luar border bakal ke-clip separo.
+const TASK_ROW =
+  "group flex min-h-[44px] min-w-0 flex-col justify-center bg-ink-soft px-5 py-4 transition-colors hover:bg-ink/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-fog/70";
 
 const principles = [
   {
@@ -74,6 +80,72 @@ export default function Home() {
           <span className="mt-6 inline-flex items-center gap-1.5 rounded-full border border-grass-line bg-grass-bg px-3 py-1 text-xs font-medium text-grass">
             <span aria-hidden="true" className="inline-block h-2 w-2 rounded-full bg-grass-solid" /> {count} provider · {totalModels} model gratis
           </span>
+
+          {/* ── Tiga jalan masuk ──
+              Ditaruh di HERO, bukan cuma di navbar/footer. Diukur di HP:
+              dokumen 7.272px (9 layar), semua link header ke /pilih,
+              /modal-gratis, /opensource `visible: false` (ketutup hamburger),
+              /fallback nol di header, dan link pertama yang KEBACA ke tool
+              mana pun nangkring di y≈7.019px alias 8,6 layar ke bawah. Efeknya
+              situs ini kebaca sebagai satu tabel doang — /fallback, yang justru
+              jawab keluhan inti audiens ("kepentok token"), ga pernah ketemu.
+
+              BUKAN grid 3 kartu kembar (ikon+judul+teks diulang 3x = persis
+              anti-pattern DESIGN.md). Asimetrinya bawa arti: baris 1 = aksi
+              default (tabelnya emang isi halaman ini) — full-width, judul dulu
+              baru keterangan, dan satu-satunya yang bawa ANGKA. Baris 2 & 3 =
+              kondisi "kalau lagi X", cuma relevan buat sebagian orang — setengah
+              lebar, dan hierarkinya DIBALIK: pertanyaan mute dulu, aksi fog
+              belakangan.
+
+              Nol elemen hitam di sini. Dua dari tiga tujuan cuma scroll/pindah
+              ringan, dan hitam di hero "/" udah ditolak sekali waktu CTA navbar
+              di-demote (lihat Navbar.tsx) — bobotnya dibawa border + swap
+              permukaan, bukan warna aksi. */}
+          <div className="mt-10 grid gap-px overflow-hidden rounded-[8px] border border-ink-line bg-ink-line text-left sm:mt-12 sm:grid-cols-2">
+            <a href="#direktori" className={`${TASK_ROW} sm:col-span-2`}>
+              <span className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
+                <span className="font-serif text-base font-semibold tracking-tight text-fog">
+                  Cari sendiri
+                </span>
+                {/* Bukan ngulang angka di pill hijau persis di atasnya —
+                    yang dibawa di sini justru bedanya baris 1 dari dua
+                    baris lain: ini lompat di halaman yang sama, bukan
+                    pindah halaman. */}
+                <span className="text-xs text-mute">
+                  <span aria-hidden="true">↓</span> langsung di bawah
+                </span>
+              </span>
+              <span className="mt-1 text-sm leading-relaxed text-mute">
+                Tabel lengkapnya: model, context window, rate limit, modality.
+                Filter sendiri, semua apa adanya dari sumber.
+              </span>
+            </a>
+
+            <Link href="/pilih" className={TASK_ROW}>
+              <span className="text-sm leading-relaxed text-mute">
+                Bingung mau pakai yang mana?
+              </span>
+              <span className="mt-1 text-sm font-semibold text-fog">
+                Biar gw pilihin{" "}
+                <span aria-hidden="true" className="text-mute">
+                  →
+                </span>
+              </span>
+            </Link>
+
+            <Link href="/fallback" className={TASK_ROW}>
+              <span className="text-sm leading-relaxed text-mute">
+                Kepentok limit tiap beberapa prompt?
+              </span>
+              <span className="mt-1 text-sm font-semibold text-fog">
+                Bikin rantai fallback{" "}
+                <span aria-hidden="true" className="text-mute">
+                  →
+                </span>
+              </span>
+            </Link>
+          </div>
         </section>
 
         {/* ── Directory table ── */}

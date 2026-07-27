@@ -3,12 +3,18 @@ import { notFound } from "next/navigation";
 import { Link } from "next-view-transitions";
 import Navbar from "@/components/Navbar";
 import ProviderLogo from "@/components/ProviderLogo";
-import { MODALITY_ORDER, modalityLabel } from "@/components/directory/Badges";
+import { MODALITY_ORDER, modalityLabel, SourceLine } from "@/components/directory/Badges";
 import { getAllProviders, getLastUpdated } from "@/lib/data";
 import { ctxNum } from "@/lib/ctxnum";
-import type { Modality, Model, Provider } from "@/lib/types";
+import type { Modality, Model, Provider, SourceRef } from "@/lib/types";
 
 const BASE = "https://tokengratis.id";
+
+// CTA sekunder — SAMA persis sama treatment ProviderRow di DirectoryClient.tsx
+// (putih + garis, bukan hitam). Row ini juga cuma satu screen region punya CTA
+// hitam; 11 tombol "Lihat" hitam ditumpuk ngelanggar One Black Rule (DESIGN.md).
+const CTA_SECONDARY =
+  "inline-flex min-h-[44px] shrink-0 items-center rounded-[6px] border border-ink-line bg-ink-soft px-4 text-sm font-semibold text-fog transition-colors group-hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70";
 
 /**
  * Facet pages only exist for modalities that clear a thin-content floor:
@@ -147,6 +153,24 @@ export default async function GratisModalityPage({
   const label = modalityLabel(facet);
   const syncedLabel = fmtDate(getLastUpdated());
 
+  // Kuitansi level-facet, BUKAN per-row — 24 baris x 3-4 nama sumber nyaris
+  // identik cuma numpukin tinggi row buat sinyal yang sama (WHY 2026-07-27,
+  // docs/log.md, kenapa SourceLine dicabut dari ProviderRow di /). Di sini
+  // rownya cuma 3 kolom data (bukan 4+ kayak direktori), tapi prinsipnya sama:
+  // satu kuitansi yang nutupin facet secara keseluruhan, bukan diulang 11x.
+  // Diambil dari sumber-sumber provider yang BENERAN nyumbang facet ini (bukan
+  // getSources() global yang ngitung semua provider di seluruh situs).
+  const facetSources: SourceRef[] = (() => {
+    const map = new Map<string, SourceRef>();
+    for (const r of rows) {
+      for (const s of r.provider.sources) {
+        const cur = map.get(s.name);
+        if (!cur || s.syncedAt > cur.syncedAt) map.set(s.name, s);
+      }
+    }
+    return [...map.values()].sort((a, b) => b.syncedAt.localeCompare(a.syncedAt));
+  })();
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
@@ -189,6 +213,11 @@ export default async function GratisModalityPage({
             nampilin model {label} di free tier-nya — {totalModels} model per{" "}
             {syncedLabel}.
           </p>
+          {facetSources.length > 0 && (
+            <div className="mt-3">
+              <SourceLine sources={facetSources} />
+            </div>
+          )}
         </header>
 
         {/* table */}
@@ -232,11 +261,21 @@ export default async function GratisModalityPage({
                   <div className="text-sm text-fog">
                     {r.modelCount} model
                   </div>
-                  <div className="text-sm text-fog">{r.maxContext ?? "—"}</div>
+                  {/* maxContext absen = sel dibiarin kosong, BUKAN em dash —
+                      "—" kebaca "kita udah cek, hasilnya nihil" padahal kita
+                      cuma aggregator (PRODUCT.md anti-halusinasi). Label
+                      "Context maks:" cuma nongol di bawah md karena header
+                      kolom desktop ilang di mobile (flex-col, bukan grid). */}
+                  <div className="text-sm text-fog">
+                    {r.maxContext && (
+                      <>
+                        <span className="text-mute md:hidden">Context maks: </span>
+                        {r.maxContext}
+                      </>
+                    )}
+                  </div>
                   <div className="flex md:justify-end">
-                    <span className="inline-flex items-center rounded-[6px] bg-ember px-4 py-2 text-sm font-semibold text-white transition-colors group-hover:bg-ember-soft">
-                      Lihat
-                    </span>
+                    <span className={CTA_SECONDARY}>Lihat</span>
                   </div>
                 </Link>
               ))}

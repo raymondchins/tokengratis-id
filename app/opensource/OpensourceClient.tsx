@@ -2,8 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { OpenSourceProject } from "@/lib/opensource-types";
-import Chip from "@/components/Chip";
-import SearchIcon from "@/components/SearchIcon";
+import FilterBar from "@/components/FilterBar";
 import Pagination from "@/components/Pagination";
 import EmptyDataPanel from "@/components/EmptyDataPanel";
 import NoResultsPanel from "@/components/NoResultsPanel";
@@ -25,6 +24,18 @@ const SORT_LABELS: Record<SortKey, string> = {
 function formatStars(n: number): string {
   if (n >= 1000) return `${(n / 1000).toFixed(1).replace(/\.0$/, "")}k`;
   return String(n);
+}
+
+// Dipisah dari `results` biar bisa dipakai ulang buat hitung chip count
+// (lihat languageCounts) tanpa duplikasi logic match.
+function matchesSearch(p: OpenSourceProject, q: string): boolean {
+  if (!q) return true;
+  return (
+    p.name.toLowerCase().includes(q) ||
+    p.owner.toLowerCase().includes(q) ||
+    (p.description?.toLowerCase().includes(q) ?? false) ||
+    p.topics.some((t) => t.toLowerCase().includes(q))
+  );
 }
 
 // ─── Grid layout ──────────────────────────────────────────────────────────────
@@ -226,16 +237,7 @@ export default function OpensourceClient({
   // Filter + sort
   const results = useMemo(() => {
     const q = search.trim().toLowerCase();
-    let list = projects.filter((p) => {
-      if (lang && p.language !== lang) return false;
-      if (!q) return true;
-      return (
-        p.name.toLowerCase().includes(q) ||
-        p.owner.toLowerCase().includes(q) ||
-        (p.description?.toLowerCase().includes(q) ?? false) ||
-        p.topics.some((t) => t.toLowerCase().includes(q))
-      );
-    });
+    let list = projects.filter((p) => (!lang || p.language === lang) && matchesSearch(p, q));
 
     list = list.slice().sort((a, b) => {
       if (sort === "stars") return b.stars - a.stars;
@@ -245,6 +247,23 @@ export default function OpensourceClient({
 
     return list;
   }, [projects, search, lang, sort]);
+
+  // Chip count = hasil kalau chip ITU diklik. Bahasa di sini single-select
+  // (radio — klik chip lain GANTI `lang`, bukan nambah kayak modality di /),
+  // jadi angkanya dihitung dari search doang (TANPA `lang` yang lagi aktif).
+  // Kalau dihitung dari `results` (yang udah kena filter `lang` sekarang),
+  // angka buat chip lain bakal keliru — makanya bukan sekadar reuse `results`.
+  const languageCounts = useMemo(() => {
+    const q = search.trim().toLowerCase();
+    const counts: Record<string, number> = {};
+    for (const l of languages) counts[l] = 0;
+    for (const p of projects) {
+      if (p.language && counts[p.language] !== undefined && matchesSearch(p, q)) {
+        counts[p.language]++;
+      }
+    }
+    return counts;
+  }, [projects, languages, search]);
 
   // Reset to page 1 on filter/sort change
   useEffect(() => {
@@ -318,6 +337,23 @@ export default function OpensourceClient({
 
   const isFiltered = search !== "" || lang !== "";
 
+  function resetFilters() {
+    setSearch("");
+    setLang("");
+  }
+
+  const activeCount = (lang ? 1 : 0) + (search.trim() ? 1 : 0);
+
+  // Label filter aktif buat NoResultsPanel — nyebut penyebabnya biar user
+  // bisa lepas satu, bukan cuma nuke-semua. Pola sama kayak DirectoryClient.
+  const activeLabels = useMemo<string[]>(() => {
+    const labels: string[] = [];
+    if (lang) labels.push(lang);
+    const q = search.trim();
+    if (q) labels.push(`"${q}"`);
+    return labels;
+  }, [lang, search]);
+
   if (projects.length === 0) {
     return (
       <EmptyDataPanel
@@ -331,92 +367,41 @@ export default function OpensourceClient({
   return (
     <div className="flex flex-col gap-6">
       {/* ── Controls ── */}
-      <div className="flex flex-col gap-4">
-        {/* Search */}
-        <div className="relative">
-          <SearchIcon className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-mute" />
-          <input
-            type="search"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            placeholder="Cari proyek, owner, atau topik — OpenSID, laravel, CLI…"
-            aria-label="Cari proyek open source"
-            className="w-full rounded-[8px] border border-ink-line bg-ink-soft py-3.5 pl-11 pr-4 text-sm text-fog placeholder:text-mute focus:border-fog/40 focus:outline-none focus:ring-2 focus:ring-fog/70 transition-colors"
-          />
-        </div>
-
-        {/* Language chips + sort */}
-        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
-          {/* Desktop: chip pills */}
-          {languages.length > 0 && (
-            <div className="-mx-1 hidden flex-wrap items-center gap-2 px-1 sm:flex">
-              <Chip active={lang === ""} onClick={() => setLang("")}>
-                Semua bahasa
-              </Chip>
-              {languages.map((l) => (
-                <Chip key={l} active={lang === l} onClick={() => setLang(lang === l ? "" : l)}>
-                  {l}
-                </Chip>
-              ))}
-            </div>
-          )}
-
-          {/* Mobile: language select + sort sebaris */}
-          <div className="flex items-center justify-between gap-3 sm:hidden">
-            {languages.length > 0 && (
-              <label className="flex items-center gap-2 text-sm text-mute">
-                Bahasa
-                <select
-                  value={lang}
-                  onChange={(e) => setLang(e.target.value)}
-                  aria-label="Filter bahasa"
-                  className="min-h-[44px] rounded-[4px] border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:border-fog/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
-                >
-                  <option value="">Semua</option>
-                  {languages.map((l) => (
-                    <option key={l} value={l}>
-                      {l}
-                    </option>
-                  ))}
-                </select>
-              </label>
-            )}
-            {/* Sort on mobile */}
-            <label className="flex items-center gap-2 text-sm text-mute">
-              Urut
-              <select
-                value={sort}
-                onChange={(e) => setSort(e.target.value as SortKey)}
-                className="min-h-[44px] rounded-[4px] border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:border-fog/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
-              >
-                {(Object.keys(SORT_LABELS) as SortKey[]).map((k) => (
-                  <option key={k} value={k}>
-                    {SORT_LABELS[k]}
-                  </option>
-                ))}
-              </select>
-            </label>
-          </div>
-
-          {/* Desktop: sort */}
-          <div className="hidden shrink-0 justify-end sm:flex">
-            <label className="flex items-center gap-2 text-sm text-mute">
-              Urutkan
-              <select
-                value={sort}
-                onChange={(e) => setSort(e.target.value as SortKey)}
-                className="min-h-[44px] rounded-[4px] border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:border-fog/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
-              >
-                {(Object.keys(SORT_LABELS) as SortKey[]).map((k) => (
-                  <option key={k} value={k}>
-                    {SORT_LABELS[k]}
-                  </option>
-                ))}
-              </select>
-            </label>
-          </div>
-        </div>
-      </div>
+      <FilterBar
+        search={{
+          value: search,
+          onChange: setSearch,
+          placeholder: "Cari proyek, owner, atau topik — OpenSID, laravel, CLI…",
+          label: "Cari proyek open source",
+        }}
+        chipGroups={
+          languages.length > 0
+            ? [
+                {
+                  id: "language",
+                  label: "Bahasa",
+                  // showLabel: false (default) — cuma 1 grup di sini, judul
+                  // "Bahasa" ga nambah info yang belum jelas dari chip-nya sendiri.
+                  options: languages.map((l) => ({
+                    id: l,
+                    label: l,
+                    count: languageCounts[l],
+                  })),
+                  selected: lang ? [lang] : [],
+                  // Single-select: klik chip lain GANTI `lang`, bukan nambah ke array.
+                  onToggle: (id) => setLang((prev) => (prev === id ? "" : id)),
+                },
+              ]
+            : []
+        }
+        sort={{
+          value: sort,
+          options: SORT_LABELS,
+          onChange: (v) => setSort(v as SortKey),
+        }}
+        activeCount={activeCount}
+        onReset={resetFilters}
+      />
 
       {/* ── Table ── */}
       <div className="overflow-hidden rounded-[8px] border border-ink-line bg-ink-soft">
@@ -424,7 +409,8 @@ export default function OpensourceClient({
           <NoResultsPanel
             message="Ga ada yang cocok sama filter ini."
             hint="Coba hapus beberapa filter atau ganti kata kunci."
-            onReset={() => { setSearch(""); setLang(""); }}
+            onReset={resetFilters}
+            activeLabels={activeLabels}
           />
         ) : (
           <div className="overflow-x-auto">

@@ -149,8 +149,13 @@ export default function OfferCard({
         <span className="truncate text-[11px] text-mute">
           {primarySource ? `Dicek ${fmtDate(primarySource.checkedAt)}` : null}
         </span>
+        {/* "Lihat", bukan "Detail". Audit nemu 3 label buat SATU aksi di situs
+            ini (Lihat / Detail → / Lihat provider ↗) — nol yang dipelajari di
+            satu halaman kepake di halaman lain. Panah tetep: aturannya CTA di
+            KARTU bawa panah (dia affordance yang berdiri sendiri), CTA di BARIS
+            tabel nggak (barisnya sendiri udah nandain bisa diklik). */}
         <span className="inline-flex shrink-0 items-center gap-1 text-sm font-semibold text-fog transition-colors group-hover:text-mute">
-          Detail
+          Lihat
           <span aria-hidden="true" className="transition-transform group-hover:translate-x-0.5">
             →
           </span>

@@ -12,7 +12,7 @@ import {
 } from "@/lib/filter";
 import type { Modality, ProviderListItem } from "@/lib/types";
 import { DIRECTORY_GRID_COLS, DIRECTORY_PAGE_SIZE } from "@/lib/constants";
-import FilterBar from "@/components/directory/FilterBar";
+import FilterBar from "@/components/FilterBar";
 import {
   CategoryTag,
   ModalityTags,
@@ -159,6 +159,12 @@ function ProviderRow({ p, priority = false }: { p: ProviderListItem; priority?: 
 
 export default function DirectoryClient({ items }: { items: ProviderListItem[] }) {
   const [filter, setFilter] = useState<FilterState>(emptyFilter());
+  // Kolom GRATIS kosong di 13 dari 25 provider (google-gemini & groq termasuk,
+  // dua baris teratas sort default) dan yang keisi pakai 8 satuan yang ga
+  // sebanding. Tanpa toggle ini user ga punya cara motong ke "yang sumbernya
+  // beneran nyebut jatah". Predikatnya SENGAJA persis punya sort `freeinfo`
+  // (Boolean(freeLimit)) — bukan bikin notion "ada info gratis" versi kedua.
+  const [onlyFree, setOnlyFree] = useState(false);
   const [sort, setSort] = useState<SortKey>("popular");
   const [page, setPage] = useState(1);
 
@@ -180,6 +186,10 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
       .filter((m): m is Modality => MODALITY_ORDER.includes(m as Modality))
       .filter((m, i, arr) => arr.indexOf(m) === i);
     if (q || mods.length > 0) setFilter({ search: q, modalities: mods });
+
+    // `g` = gratis. Boolean, jadi cuma "1" yang dianggap nyala — nilai lain
+    // (termasuk "0"/"true") diabaikan diem-diem, sama kayak param lain.
+    if (sp.get("g") === "1") setOnlyFree(true);
 
     const s = sp.get("sort");
     if (s && (Object.keys(SORT_LABELS) as string[]).includes(s)) {
@@ -204,6 +214,7 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
       const q = filter.search.trim();
       if (q) sp.set("q", q);
       if (filter.modalities.length > 0) sp.set("m", filter.modalities.join(","));
+      if (onlyFree) sp.set("g", "1");
       if (sort !== "popular") sp.set("sort", sort);
       if (page > 1) sp.set("page", String(page));
       const qs = sp.toString();
@@ -214,12 +225,17 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
       );
     }, 200);
     return () => clearTimeout(t);
-  }, [filter, sort, page]);
+  }, [filter, onlyFree, sort, page]);
 
-  const results = useMemo(
-    () => sortProviders(filterProviders(items, filter), sort),
-    [items, filter, sort],
-  );
+  // onlyFree di-apply DI SINI, bukan di lib/filter.ts — filterProviders itu
+  // helper bareng lintas permukaan dan cuma dia yang boleh tau FilterState.
+  // Predikatnya sama persis sama tie-break sort `freeinfo`: punya freeLimit
+  // atau nggak. Ga ada parsing angka — "Free (permanen)" & "Free, no signup"
+  // itu info gratis yang valid walau tanpa digit, ngerangkingnya = nebak.
+  const results = useMemo(() => {
+    const base = filterProviders(items, filter);
+    return sortProviders(onlyFree ? base.filter((p) => p.freeLimit) : base, sort);
+  }, [items, filter, onlyFree, sort]);
 
   // Reset ke hal 1 tiap filter/sort berubah. Sengaja di handler, BUKAN
   // useEffect([filter, sort]) — effect bakal ikut nyala pas URL di-apply waktu
@@ -228,9 +244,25 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
     setFilter(next);
     setPage(1);
   }
+  function changeOnlyFree(next: boolean) {
+    setOnlyFree(next);
+    setPage(1);
+  }
   function changeSort(next: SortKey) {
     setSort(next);
     setPage(1);
+  }
+  function resetAll() {
+    changeFilter(emptyFilter());
+    setOnlyFree(false);
+  }
+  function toggleModality(m: Modality) {
+    changeFilter({
+      ...filter,
+      modalities: filter.modalities.includes(m)
+        ? filter.modalities.filter((x) => x !== m)
+        : [...filter.modalities, m],
+    });
   }
 
   const availableModalities = useMemo<Modality[]>(() => {
@@ -253,17 +285,30 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
     return counts;
   }, [results, availableModalities]);
 
+  // Angka chip gratis dihitung dari `results` juga, jadi semantiknya identik
+  // sama chip modality: "kalau chip ini gw klik, sisanya berapa".
+  const freeInfoCount = useMemo(
+    () => results.filter((p) => p.freeLimit).length,
+    [results],
+  );
+
   // Search dihitung 1 filter (bukan per-kata) — angkanya buat badge "reset".
-  const activeCount = filter.modalities.length + (filter.search.trim() ? 1 : 0);
+  const activeCount =
+    filter.modalities.length +
+    (filter.search.trim() ? 1 : 0) +
+    (onlyFree ? 1 : 0);
 
   // Label filter aktif buat NoResultsPanel: nyebut PENYEBABNYA biar user bisa
   // lepas satu, bukan cuma dikasih tombol nuke-semua. Search dikutip biar
   // kebedain dari nama modality.
+  // Label chip gratis di-panjangin di sini ("Gratis: …") — di filter bar dia
+  // udah dinaungi judul grup GRATIS, di panel kosong dia berdiri sendiri.
   const activeLabels = useMemo<string[]>(() => {
     const labels = filter.modalities.map(modalityLabel);
+    if (onlyFree) labels.push("Gratis: ada info gratis");
     const q = filter.search.trim();
     return q ? [...labels, `"${q}"`] : labels;
-  }, [filter]);
+  }, [filter, onlyFree]);
 
   const totalPages = Math.max(1, Math.ceil(results.length / DIRECTORY_PAGE_SIZE));
   const current = Math.min(page, totalPages);
@@ -286,29 +331,56 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
 
   return (
     <div className="flex flex-col gap-6">
+      {/* Judul grup SENGAJA nyontek header kolom tabel ("Gratis", "Kemampuan")
+          — filternya jadi kebaca sebagai "potong kolom ini", bukan sebagai
+          kotak kontrol terpisah yang kebetulan nempel di atas tabel.
+          Chip gratis dipisah jadi grup SENDIRI, bukan ditempel jadi chip ke-10
+          di grup modality, karena dua alasan: (a) grupnya diumumkan sebagai
+          "Kemampuan model" ke screen reader — nyelipin filter jatah gratis ke
+          situ itu kelas kebohongan yang sama kayak tombol reset ber-aria-pressed
+          yang baru aja dibuang; (b) ini temuan P0, dan chip ke-10 di gulungan
+          9 chip sama terkuburnya kayak opsi ke-5 di dalem <select>. Ongkosnya
+          ~95px vertikal di 375px (tombol Semua naik ke barisnya sendiri + 2
+          baris judul) dan itu sengaja dibayar. */}
       <FilterBar
-        state={filter}
-        onChange={changeFilter}
-        availableModalities={availableModalities}
-        modalityCounts={modalityCounts}
+        search={{
+          value: filter.search,
+          onChange: (v) => changeFilter({ ...filter, search: v }),
+          placeholder:
+            "Cari provider atau model — Gemini, Groq, DeepSeek, Llama, Qwen…",
+          label: "Cari provider atau model",
+        }}
+        chipGroups={[
+          {
+            id: "gratis",
+            label: "Gratis",
+            showLabel: true,
+            options: [
+              { id: "ada", label: "Ada info gratis", count: freeInfoCount },
+            ],
+            selected: onlyFree ? ["ada"] : [],
+            onToggle: () => changeOnlyFree(!onlyFree),
+          },
+          {
+            id: "modality",
+            label: "Kemampuan",
+            showLabel: true,
+            options: availableModalities.map((m) => ({
+              id: m,
+              label: modalityLabel(m),
+              count: modalityCounts[m],
+            })),
+            selected: filter.modalities,
+            onToggle: (id) => toggleModality(id as Modality),
+          },
+        ]}
+        sort={{
+          value: sort,
+          options: SORT_LABELS,
+          onChange: (v) => changeSort(v as SortKey),
+        }}
         activeCount={activeCount}
-        onReset={() => changeFilter(emptyFilter())}
-        rightSlot={
-          <label className="flex items-center gap-2 text-sm text-mute">
-            Urutkan
-            <select
-              value={sort}
-              onChange={(e) => changeSort(e.target.value as SortKey)}
-              className="min-h-[44px] rounded-[4px] border border-ink-line bg-ink-soft px-3 py-1.5 text-sm font-medium text-fog transition-colors hover:border-mute focus-visible:border-fog/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
-            >
-              {(Object.keys(SORT_LABELS) as SortKey[]).map((k) => (
-                <option key={k} value={k}>
-                  {SORT_LABELS[k]}
-                </option>
-              ))}
-            </select>
-          </label>
-        }
+        onReset={resetAll}
       />
 
       {/* Table (list of links) */}
@@ -317,7 +389,7 @@ export default function DirectoryClient({ items }: { items: ProviderListItem[] }
           <NoResultsPanel
             message="Ga ada yang cocok sama filter ini."
             hint="Coba hapus beberapa filter atau ganti kata kunci."
-            onReset={() => changeFilter(emptyFilter())}
+            onReset={resetAll}
             activeLabels={activeLabels}
           />
         ) : (

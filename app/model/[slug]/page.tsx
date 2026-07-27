@@ -2,6 +2,7 @@ import { getModelClusters, getClusterBySlug } from "@/lib/model-clusters";
 import { notFound } from "next/navigation";
 import { Link } from "next-view-transitions";
 import Navbar from "@/components/Navbar";
+import DetailBreadcrumb from "@/components/nav/DetailBreadcrumb";
 import { modalityLabel, SourceLine } from "@/components/directory/Badges";
 import type { Modality } from "@/lib/types";
 import type { ModelCluster } from "@/lib/model-clusters";
@@ -102,6 +103,8 @@ export default async function Page({
   const showMaxOutput = cluster.entries.some((e) => e.model.maxOutput);
   const showRateLimit = cluster.entries.some((e) => e.model.rateLimit);
 
+  // Nama crumb SENGAJA sama persis sama breadcrumb yang keliatan di halaman
+  // (Google minta cocok) — makanya "Direktori", bukan "tokengratis.id".
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -109,13 +112,13 @@ export default async function Page({
       {
         "@type": "ListItem",
         position: 1,
-        name: "tokengratis.id",
+        name: "Direktori",
         item: "https://tokengratis.id",
       },
       {
         "@type": "ListItem",
         position: 2,
-        name: `${cluster.displayName} Gratis`,
+        name: cluster.displayName,
         item: canonical,
       },
     ],
@@ -137,16 +140,7 @@ export default async function Page({
     <div className="min-h-dvh pb-24">
       <Navbar />
       <main id="main-content" className="mx-auto max-w-5xl px-4 pt-8 sm:px-6 sm:pt-12">
-        {/* back */}
-        <Link
-          href="/"
-          className="group -mx-2 mb-8 inline-flex items-center gap-1.5 px-2 py-3 text-sm text-mute transition-colors hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
-        >
-          <span aria-hidden className="transition-transform group-hover:-translate-x-0.5">
-            ←
-          </span>
-          Kembali ke beranda
-        </Link>
+        <DetailBreadcrumb current={cluster.displayName} />
 
         {/* hero header */}
         <header className="border-b border-ink-line pb-8">

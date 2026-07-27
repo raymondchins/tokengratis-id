@@ -5,15 +5,34 @@ import { usePathname } from "next/navigation";
 import { Link } from "next-view-transitions";
 import Spark from "./Spark";
 
-// Nav muat 4 link: di >=md tampil langsung di pill (md:flex), di bawah itu
-// disembunyikan ke belakang tombol hamburger biar ga ada link (khususnya
-// /opensource) yang jadi dead-end di mobile. Anchor homepage "Cara
-// kerja"/"Sumber" pindah ke baris "Alat & jelajah" di Footer — masih
+// Nav muat 5 link — /fallback masuk karena sebelumnya NOL kali muncul di
+// header di viewport mana pun (cuma di footer), padahal dia yang paling
+// langsung jawab keluhan inti audiens: "kepentok token". Anchor homepage
+// "Cara kerja"/"Sumber" tetep di baris "Alat & jelajah" di Footer — masih
 // ke-crawl dari semua halaman, tapi slot nav kepake buat halaman beneran.
-const NAV_LINKS: { label: string; href: string; badge?: string }[] = [
+//
+// BARIS LINK PINDAH md: -> lg:, jadi 768–1023px ikut pakai hamburger.
+// Itungannya di 768px: pill = 768 − 32 (px-4 header) = 736; − pl-5 (20) −
+// px-3 (12) = 704; − 2× gap-4 (32) = 672px buat isi. Logo ≈144px (ikon 16 +
+// gap 8 + "tokengratis.id" Georgia 18px ≈120), blok kanan ≈168px (bendera ~20
+// + gap 8 + CTA "Lihat direktori" ≈140). Sisa buat baris link cuma ≈360px —
+// sementara 5 label ≈392px TEKS DOANG plus 4 gap. Lewat jauh; bahkan 4 link
+// yang sekarang (≈291 + 72 gap + 38 badge = 401px) udah nombok di 768px,
+// cuma ketutupan karena flex diem-diem naksir-naksir. Di 1024px: 992 − 32 −
+// 32 = 928; − 312 (logo + kanan) = 616px sisa, sedangkan 5 link @ gap-5 =
+// 392 + 80 = 472px. Sisa ruang ~30%, aman walau taksiran lebar karakter
+// meleset seperlima.
+//
+// Badge "NEW" DIBUANG, bukan dipindah. Dua alasan: (1) badge-nya hijau,
+// sedangkan grass di sistem ini artinya "free tier" — "baru" itu pemakaian
+// dekoratif yang dilarang Semantic Accent Rule; (2) di project yang sengaja
+// maintenance-nol, badge "NEW" itu utang yang ga ada yang inget nyabut.
+// Bonusnya dia balikin ~38px ke budget lebar yang justru lagi mepet.
+const NAV_LINKS: { label: string; href: string }[] = [
   { label: "Direktori", href: "/#direktori" },
   { label: "Pilih model", href: "/pilih" },
-  { label: "Modal gratis", href: "/modal-gratis", badge: "NEW" },
+  { label: "Rantai fallback", href: "/fallback" },
+  { label: "Modal gratis", href: "/modal-gratis" },
   { label: "Open source", href: "/opensource" },
 ];
 
@@ -89,7 +108,12 @@ export default function Navbar() {
         </Link>
 
         {/* Center links */}
-        <div className="hidden items-center gap-6 text-sm font-medium text-mute md:flex">
+        {/* gap-5 (bukan 6) di lg biar 5 link muat dengan sisa ruang; balik ke
+            gap-6 di xl di mana ruangnya emang berlebih. `lg:min-h-0 lg:py-1`
+            dibuang: dulu itu cuma kepake di desktop lebar, tapi sekarang baris
+            ini SATU-SATUNYA render link nav yang keliatan, jadi 44px-nya wajib
+            berlaku selalu. Ga nambah tinggi pill — logo & CTA udah 44px. */}
+        <div className="hidden items-center gap-5 text-sm font-medium text-mute lg:flex xl:gap-6">
           {NAV_LINKS.map((l) => {
             const active = isNavLinkActive(pathname, l.href);
             return (
@@ -97,16 +121,11 @@ export default function Navbar() {
                 key={l.href}
                 href={l.href}
                 aria-current={active ? "page" : undefined}
-                className={`inline-flex min-h-[44px] items-center gap-1.5 rounded-sm transition-colors hover:text-fog lg:min-h-0 lg:py-1 ${FOCUS_RING} ${
+                className={`inline-flex min-h-[44px] min-w-0 items-center whitespace-nowrap rounded-sm transition-colors hover:text-fog ${FOCUS_RING} ${
                   active ? "text-fog" : ""
                 }`}
               >
                 {l.label}
-                {l.badge && (
-                  <span className="inline-flex items-center rounded-full border border-grass-line bg-grass-bg px-1.5 py-0.5 text-[9px] font-semibold uppercase leading-none tracking-wide text-grass">
-                    {l.badge}
-                  </span>
-                )}
               </Link>
             );
           })}
@@ -128,7 +147,7 @@ export default function Navbar() {
             Lihat direktori
           </Link>
 
-          {/* Hamburger — cuma tampil di bawah md, di mana center links ke-hidden */}
+          {/* Hamburger — cuma tampil di bawah lg, di mana center links ke-hidden */}
           <button
             ref={buttonRef}
             type="button"
@@ -136,7 +155,7 @@ export default function Navbar() {
             aria-expanded={open}
             aria-controls={menuId}
             aria-label={open ? "Tutup menu" : "Buka menu"}
-            className={`inline-flex h-11 w-11 items-center justify-center rounded-full text-fog transition-colors hover:bg-ink md:hidden ${FOCUS_RING}`}
+            className={`inline-flex h-11 w-11 items-center justify-center rounded-full text-fog transition-colors hover:bg-ink lg:hidden ${FOCUS_RING}`}
           >
             {open ? (
               <svg
@@ -182,7 +201,7 @@ export default function Navbar() {
         <div
           id={menuId}
           ref={panelRef}
-          className="mx-auto mt-2 max-w-5xl overflow-hidden rounded-[8px] border border-ink-line bg-ink-soft shadow-[0_8px_30px_rgba(17,24,28,0.06)] md:hidden"
+          className="mx-auto mt-2 max-w-5xl overflow-hidden rounded-[8px] border border-ink-line bg-ink-soft shadow-[0_8px_30px_rgba(17,24,28,0.06)] lg:hidden"
         >
           <ul className="divide-y divide-ink-line p-2 text-sm font-medium text-mute">
             {NAV_LINKS.map((l) => {
@@ -193,16 +212,11 @@ export default function Navbar() {
                     href={l.href}
                     aria-current={active ? "page" : undefined}
                     onClick={() => setOpen(false)}
-                    className={`flex min-h-[44px] items-center justify-between gap-1.5 rounded-sm px-3 transition-colors hover:text-fog ${FOCUS_RING} ${
+                    className={`flex min-h-[44px] min-w-0 items-center rounded-sm px-3 transition-colors hover:text-fog ${FOCUS_RING} ${
                       active ? "text-fog" : ""
                     }`}
                   >
                     {l.label}
-                    {l.badge && (
-                      <span className="inline-flex items-center rounded-full border border-grass-line bg-grass-bg px-1.5 py-0.5 text-[9px] font-semibold uppercase leading-none tracking-wide text-grass">
-                        {l.badge}
-                      </span>
-                    )}
                   </Link>
                 </li>
               );

@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "next-view-transitions";
-import Chip from "@/components/Chip";
+import FilterBar from "@/components/FilterBar";
 import ProviderLogo from "@/components/ProviderLogo";
 import NoResultsPanel from "@/components/NoResultsPanel";
 import EmptyDataPanel from "@/components/EmptyDataPanel";
@@ -76,12 +76,19 @@ function MatchCard({ match, rank }: { match: WizardMatch; rank: number }) {
         </ul>
       )}
 
+      {/* Sekunder, BUKAN hitam: 5 kartu = 5 tombol hitam ditumpuk, dan "satu
+          aksi = satu hitam" (DESIGN.md) langsung ilang artinya. Sama persis
+          sama treatment baris direktori.
+          Label "Lihat" (bukan "Lihat provider") biar satu aksi = satu label di
+          seluruh situs. Glyph "↗" DIBUANG — itu artinya keluar situs, padahal
+          ini navigasi internal; diganti "→". */}
       <Link
         href={`/provider/${match.provider.slug}`}
-        className="mt-1 inline-flex w-fit items-center gap-1.5 rounded-[6px] bg-ember px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-ember-soft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
+        aria-label={`Lihat ${match.provider.name}`}
+        className="mt-1 inline-flex min-h-[44px] w-fit items-center gap-1.5 rounded-[6px] border border-ink-line bg-ink-soft px-4 text-sm font-semibold text-fog transition-colors hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
       >
-        Lihat provider
-        <span aria-hidden>↗</span>
+        Lihat
+        <span aria-hidden>→</span>
       </Link>
     </li>
   );
@@ -140,9 +147,19 @@ export default function PilihClient({ providers }: { providers: WizardProvider[]
     window.history.replaceState(null, "", url);
   }, [criteria]);
 
-  const matches = useMemo(() => findWizardMatches(providers, criteria, 5), [providers, criteria]);
+  /** SEMUA yang cocok (buat angka jujur), bukan yang udah kepotong. */
+  const allMatches = useMemo(
+    () => findWizardMatches(providers, criteria),
+    [providers, criteria],
+  );
+  const SHOWN = 5;
+  const matches = allMatches.slice(0, SHOWN);
 
-  const isFiltered = criteria.modality !== null || criteria.minContext !== null;
+  /** Link ke direktori dengan filter yang setara — biar sisa hasilnya kegapai. */
+  const directoryHref = criteria.modality
+    ? `/?m=${criteria.modality}#direktori`
+    : "/#direktori";
+
 
   function setModality(m: Modality) {
     setCriteria((c) => ({ ...c, modality: c.modality === m ? null : m }));
@@ -167,52 +184,66 @@ export default function PilihClient({ providers }: { providers: WizardProvider[]
 
   return (
     <div className="flex flex-col gap-8">
-      {/* ── Kriteria ── */}
-      <div className="flex flex-col gap-6">
-        <div>
-          <h2 className="text-xs font-semibold uppercase tracking-[0.15em] text-mute">
-            Kebutuhan kamu apa?
-          </h2>
-          <div className="mt-3 flex flex-wrap gap-2" role="group" aria-label="Filter modality">
-            <Chip active={criteria.modality === null} onClick={() => setCriteria((c) => ({ ...c, modality: null }))}>
-              Semua
-            </Chip>
-            {MODALITY_ORDER.map((m) => (
-              <Chip key={m} active={criteria.modality === m} onClick={() => setModality(m)}>
-                {modalityLabel(m)}
-              </Chip>
-            ))}
-          </div>
-        </div>
-
-        <div>
-          <h2 className="text-xs font-semibold uppercase tracking-[0.15em] text-mute">
-            Context window minimum?
-          </h2>
-          <div className="mt-3 flex flex-wrap gap-2" role="group" aria-label="Filter context minimum">
-            <Chip
-              active={criteria.minContext === null}
-              onClick={() => setCriteria((c) => ({ ...c, minContext: null }))}
-            >
-              Semua
-            </Chip>
-            {CONTEXT_THRESHOLDS.map((t) => (
-              <Chip key={t.value} active={criteria.minContext === t.value} onClick={() => setMinContext(t.value)}>
-                {t.label}
-              </Chip>
-            ))}
-          </div>
-        </div>
-      </div>
+      {/* ── Kriteria ──
+          Pakai <FilterBar> bareng, sama kayak /, /modal-gratis, /opensource:
+          urutan render, label grup, dan baris "N filter aktif · Reset" identik
+          di semua permukaan. Audit nemu 5 daftar dengan 5 tata bahasa beda —
+          nol yang dipelajari di satu halaman kepake di halaman lain.
+          Dua grup di sini SINGLE-select (pilih modality lain = ganti, bukan
+          nambah), jadi `selected` isinya 0 atau 1 id. */}
+      <FilterBar
+        chipGroups={[
+          {
+            id: "modality",
+            label: "Kebutuhan kamu apa?",
+            showLabel: true,
+            options: MODALITY_ORDER.map((m) => ({ id: m, label: modalityLabel(m) })),
+            selected: criteria.modality ? [criteria.modality] : [],
+            onToggle: (id) => setModality(id as Modality),
+          },
+          {
+            id: "context",
+            label: "Context window minimum?",
+            showLabel: true,
+            options: CONTEXT_THRESHOLDS.map((t) => ({
+              id: String(t.value),
+              label: t.label,
+            })),
+            selected: criteria.minContext !== null ? [String(criteria.minContext)] : [],
+            onToggle: (id) => setMinContext(Number(id) as ContextThreshold),
+          },
+        ]}
+        activeCount={
+          (criteria.modality ? 1 : 0) + (criteria.minContext !== null ? 1 : 0)
+        }
+        onReset={reset}
+      />
 
       {/* ── Hasil ── */}
       <div aria-live="polite">
-        <div className="flex items-center justify-between gap-3">
+        <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1">
           <h2 className="font-serif text-lg font-medium text-fog sm:text-xl">Rekomendasi</h2>
-          {matches.length > 0 && (
-            <span className="text-xs text-mute">{matches.length} provider cocok</span>
+          {/* Angka JUJUR: yang ditampilin vs yang beneran cocok. Dulu di sini
+              `matches.length` yang udah kepotong 5 dirender sebagai "N provider
+              cocok" — jadi halaman bilang "5 provider cocok" padahal 11. */}
+          {allMatches.length > 0 && (
+            <span className="text-xs text-mute">
+              {allMatches.length > SHOWN
+                ? `Menampilkan ${SHOWN} teratas dari ${allMatches.length} yang cocok`
+                : `${allMatches.length} provider cocok`}
+            </span>
           )}
         </div>
+
+        {/* Kriteria urutannya ditulis. Nomor #1 tanpa alasan itu KLAIM, dan
+            situs ini jualannya kuitansi — bukan klaim. */}
+        {allMatches.length > 0 && (
+          <p className="mt-1 text-xs leading-relaxed text-mute">
+            Diurutkan dari rate limit paling longgar &amp; context terbesar{" "}
+            <span className="text-fog">menurut yang ditulis sumber</span> — bukan
+            hasil tes kita.
+          </p>
+        )}
 
         <div className="mt-4">
           {matches.length === 0 ? (
@@ -235,15 +266,21 @@ export default function PilihClient({ providers }: { providers: WizardProvider[]
           )}
         </div>
 
-        {isFiltered && matches.length > 0 && (
-          <button
-            type="button"
-            onClick={reset}
-            className="mt-6 inline-flex min-h-[44px] items-center rounded-[6px] px-3 text-sm font-medium text-mute underline decoration-ink-line underline-offset-2 transition-colors hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
+        {/* Jalan keluar ke sisa hasil. Tanpa ini cap 5 itu jadi jalan buntu:
+            user ga tau ada 6 lagi, apalagi cara nyampe ke sana. */}
+        {allMatches.length > SHOWN && (
+          <Link
+            href={directoryHref}
+            className="mt-6 inline-flex min-h-[44px] items-center gap-1.5 rounded-[6px] px-3 text-sm font-medium text-fog underline decoration-ink-line underline-offset-2 transition-colors hover:decoration-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
           >
-            Reset semua filter
-          </button>
+            Lihat semua {allMatches.length} di direktori
+            <span aria-hidden>→</span>
+          </Link>
         )}
+
+        {/* Tombol "Reset semua filter" yang dulu di sini DIBUANG — FilterBar
+            bareng udah render "N filter aktif · Reset" di atas, dan dua kontrol
+            reset buat satu kerjaan itu persis inkonsistensi yang lagi dibenerin. */}
       </div>
     </div>
   );

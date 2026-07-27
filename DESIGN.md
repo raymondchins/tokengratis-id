@@ -369,7 +369,9 @@ treatment: `focus-visible` only, `ring-2` in Fog Ink at 70% opacity — full-ble
   spending the region's single black on a near-no-op is exactly what the One Black Rule forbids.
 - **Typography:** 14px Inter 500 in Mute; active and hover resolve to Fog Ink. `aria-current="page"`
   marks the active route.
-- **Mobile:** Below `md` the center links collapse behind a 40px hamburger. The panel is
+- **Mobile:** Below `lg` the center links collapse behind a 44px hamburger — `lg`, not `md`,
+  because five labels plus logo, flag and CTA need ~392px of text alone and only ~360px exists
+  at 768px. (The previous four labels didn't fit either; flex was silently squeezing them.) The panel is
   **mounted and unmounted**, never toggled via visibility/max-height classes, and renders as a
   *sibling* of the pill rather than a child — the pill's `rounded-full` + `backdrop-blur` creates a
   stacking context that clips absolutely-positioned children. Closes on route change, outside

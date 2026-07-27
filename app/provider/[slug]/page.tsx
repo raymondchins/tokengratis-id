@@ -1,7 +1,9 @@
 import { getAllProviders, getProviderBySlug } from "@/lib/data";
+import { getModelClusters } from "@/lib/model-clusters";
 import { notFound } from "next/navigation";
 import { Link } from "next-view-transitions";
 import Navbar from "@/components/Navbar";
+import DetailBreadcrumb from "@/components/nav/DetailBreadcrumb";
 import ProviderLogo from "@/components/ProviderLogo";
 import { CategoryTag, ModalityTags, SourceLine, modalityLabel } from "@/components/directory/Badges";
 import ModelsTable from "@/components/directory/ModelsTable";
@@ -69,20 +71,29 @@ export default async function Page({
   const p: Provider | undefined = getProviderBySlug(slug);
   if (!p) notFound();
 
+  // Model provider ini yang PUNYA halaman /model/[slug]. Diambil dari
+  // getModelClusters() — sumber yang SAMA persis dipake generateStaticParams
+  // di /model/[slug] (cluster = nama model yang sama di >=2 provider), jadi
+  // mustahil nge-link slug yang halamannya ga di-generate. Nama modelnya
+  // verbatim punya provider ini, bukan displayName cluster: itu string yang
+  // barusan user baca di tabel di atas.
+  const crossProvider = getModelClusters().flatMap((c) => {
+    const mine = c.entries.find((e) => e.provider.slug === p.slug);
+    if (!mine) return [];
+    return [
+      {
+        slug: c.slug,
+        name: mine.model.name,
+        providerCount: new Set(c.entries.map((e) => e.provider.slug)).size,
+      },
+    ];
+  });
+
   return (
     <div className="min-h-dvh pb-24">
       <Navbar />
       <main id="main-content" className="mx-auto max-w-5xl px-4 pt-8 sm:px-6 sm:pt-12">
-        {/* back */}
-        <Link
-          href="/#direktori"
-          className="group -mx-2 mb-8 inline-flex items-center gap-1.5 px-2 py-3 text-sm text-mute transition-colors hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
-        >
-          <span aria-hidden className="transition-transform group-hover:-translate-x-0.5">
-            ←
-          </span>
-          Kembali ke direktori
-        </Link>
+        <DetailBreadcrumb current={p.name} />
 
         {/* hero header */}
         <header className="flex flex-col gap-5 border-b border-ink-line pb-8 sm:flex-row sm:items-start">
@@ -205,6 +216,41 @@ export default async function Page({
               sourceUrl={p.sources[0]?.url}
             />
 
+            {/* Nutup graf link: sebelum ini 0 halaman /model/[slug] ke-link dari
+                mana pun di situs (cuma dari Google), padahal arah baliknya
+                model -> provider udah jalan. Sengaja seksi sendiri, BUKAN baris
+                tabel di atas: ModelsTable dipake bareng permukaan lain. */}
+            {crossProvider.length > 0 && (
+              <section className="overflow-hidden rounded-[8px] border border-ink-line bg-ink-soft">
+                <div className="border-b border-ink-line px-5 py-3.5">
+                  <h2 className="font-sans text-xs font-semibold uppercase tracking-[0.15em] text-mute">
+                    Model ini di provider lain ({crossProvider.length})
+                  </h2>
+                </div>
+                <div className="px-5 py-4">
+                  <p className="text-[11px] leading-relaxed text-mute">
+                    Nama model yang sama juga muncul di provider lain menurut sumber
+                    masing-masing — versi/kuantisasi bisa beda.
+                  </p>
+                  <ul className="mt-3 flex flex-wrap gap-2">
+                    {crossProvider.map((m) => (
+                      <li key={m.slug} className="min-w-0">
+                        <Link
+                          href={`/model/${m.slug}`}
+                          className="inline-flex min-h-[44px] max-w-full items-center gap-1.5 rounded-full border border-ink-line bg-ink px-3 text-xs text-mute transition-colors hover:border-mute hover:text-fog focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70"
+                        >
+                          <span className="min-w-0 truncate font-medium text-fog">
+                            {m.name}
+                          </span>
+                          <span className="shrink-0">· {m.providerCount} provider</span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </section>
+            )}
+
             {/* FAQ — auto-generated dari field yang ada, matching FAQPage JSON-LD */}
             <ProviderFaq provider={p} />
           </div>
@@ -307,7 +353,8 @@ export default async function Page({
           );
         })()}
 
-        {/* BreadcrumbList JSON-LD */}
+        {/* BreadcrumbList JSON-LD — nama crumb-nya SENGAJA sama persis sama
+            breadcrumb yang keliatan di halaman (Google minta cocok). */}
         {(() => {
           const jsonLd = {
             "@context": "https://schema.org",
@@ -316,7 +363,7 @@ export default async function Page({
               {
                 "@type": "ListItem",
                 position: 1,
-                name: "Beranda",
+                name: "Direktori",
                 item: "https://tokengratis.id",
               },
               {

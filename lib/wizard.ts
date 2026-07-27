@@ -254,14 +254,19 @@ function scoreModel(m: Model, rateLimit: ParsedRateLimit, criteria: WizardCriter
 }
 
 /**
- * Cari top match buat criteria user. PURE — no side effect, no I/O.
- * Satu provider cuma nyumbang model TERBAIK-nya (biar hasil ga didominasi 1
- * provider yang modelnya banyak) — hasil = top N provider+model, default 5.
+ * Cari SEMUA provider yang cocok sama criteria, udah diurut dari skor terbaik.
+ * PURE — no side effect, no I/O. Satu provider cuma nyumbang model TERBAIK-nya
+ * (biar hasil ga didominasi 1 provider yang modelnya banyak).
+ *
+ * SENGAJA ga motong di sini (dulu `limit = 5` di dalem). Pemanggil yang motong,
+ * biar dia tau JUMLAH COCOK SEBENERNYA sekaligus jumlah yang ditampilin — dulu
+ * `matches.length` yang udah kepotong dirender sebagai "N provider cocok", jadi
+ * halaman bilang "5 provider cocok" padahal yang cocok 11. Itu pernyataan salah
+ * di situs yang jualannya "kuitansi, bukan klaim".
  */
 export function findWizardMatches(
   providers: WizardProvider[],
   criteria: WizardCriteria,
-  limit = 5,
 ): WizardMatch[] {
   const bestPerProvider: WizardMatch[] = [];
 
@@ -300,5 +305,5 @@ export function findWizardMatches(
   }
 
   bestPerProvider.sort((a, b) => b.score - a.score);
-  return bestPerProvider.slice(0, limit);
+  return bestPerProvider;
 }
