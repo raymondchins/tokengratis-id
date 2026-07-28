@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js - The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser (client-side) or Node.js (server-side).",
       "language": "JavaScript",
-      "stars": 10168,
+      "stars": 10171,
       "forks": 1219,
       "openIssues": 14,
       "license": "AGPL-3.0",
@@ -66,7 +66,7 @@
       "homepage": "https://www.htmly.com",
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
-      "stars": 1349,
+      "stars": 1350,
       "forks": 305,
       "openIssues": 50,
       "license": "GPL-2.0",
@@ -96,8 +96,8 @@
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
       "stars": 1218,
-      "forks": 1169,
-      "openIssues": 355,
+      "forks": 1170,
+      "openIssues": 361,
       "license": null,
       "topics": [
         "opensid",
@@ -118,8 +118,8 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 909,
-      "forks": 280,
+      "stars": 910,
+      "forks": 282,
       "openIssues": 7,
       "license": "MIT",
       "topics": [],
@@ -158,7 +158,7 @@
       "homepage": "https://jokoui.web.id",
       "description": "Free Open Source Tailwind CSS Component for Sat-set Developers with Zero Configuration, Installation, and Setup",
       "language": "TypeScript",
-      "stars": 415,
+      "stars": 414,
       "forks": 26,
       "openIssues": 8,
       "license": "MIT",
@@ -185,7 +185,7 @@
       "homepage": null,
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 329,
+      "stars": 330,
       "forks": 38,
       "openIssues": 6,
       "license": "MIT",
@@ -215,7 +215,7 @@
       "language": "Rust",
       "stars": 317,
       "forks": 30,
-      "openIssues": 26,
+      "openIssues": 23,
       "license": "MIT",
       "topics": [
         "ai-agents",
@@ -238,7 +238,7 @@
         "token-savings"
       ],
       "archived": false,
-      "pushedAt": "2026-07-27T11:58:33Z",
+      "pushedAt": "2026-07-28T17:47:28Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -254,7 +254,7 @@
       "language": "TypeScript",
       "stars": 202,
       "forks": 38,
-      "openIssues": 47,
+      "openIssues": 38,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -272,7 +272,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-07-27T15:32:41Z",
+      "pushedAt": "2026-07-28T14:05:09Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -286,8 +286,8 @@
       "homepage": "https://www.erdbuilderpro.com",
       "description": "ERD Builder Pro is a database design and documentation tool for developers. Build ERDs, flowcharts, notes, and drawings — all in one workspace",
       "language": "TypeScript",
-      "stars": 177,
-      "forks": 33,
+      "stars": 180,
+      "forks": 34,
       "openIssues": 0,
       "license": null,
       "topics": [
@@ -301,7 +301,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-07-27T11:41:06Z",
+      "pushedAt": "2026-07-28T10:37:28Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -315,7 +315,7 @@
       "homepage": null,
       "description": null,
       "language": "Python",
-      "stars": 156,
+      "stars": 157,
       "forks": 37,
       "openIssues": 0,
       "license": "MIT",
@@ -335,9 +335,9 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 150,
+      "stars": 154,
       "forks": 17,
-      "openIssues": 11,
+      "openIssues": 7,
       "license": "Apache-2.0",
       "topics": [
         "ai",
@@ -355,7 +355,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-07-26T17:35:29Z",
+      "pushedAt": "2026-07-28T18:53:54Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -389,13 +389,13 @@
       "homepage": null,
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
-      "stars": 114,
-      "forks": 58,
-      "openIssues": 2,
+      "stars": 115,
+      "forks": 59,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-25T09:55:56Z",
+      "pushedAt": "2026-07-28T08:19:21Z",
       "createdAt": "2026-02-12T11:02:43Z"
     },
     {
@@ -433,7 +433,7 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 106,
+      "stars": 109,
       "forks": 38,
       "openIssues": 3,
       "license": "MIT",
@@ -472,7 +472,7 @@
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": null,
-      "stars": 101,
+      "stars": 102,
       "forks": 7,
       "openIssues": 0,
       "license": "MIT",
@@ -547,8 +547,44 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-07-26T20:37:05Z",
+      "pushedAt": "2026-07-28T06:25:09Z",
       "createdAt": "2026-03-17T12:55:21Z"
+    },
+    {
+      "slug": "ilhamrisky/tedi",
+      "fullName": "IlhamriSKY/TEDI",
+      "name": "TEDI",
+      "owner": "IlhamriSKY",
+      "ownerUrl": "https://github.com/IlhamriSKY",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/18723904?v=4",
+      "url": "https://github.com/IlhamriSKY/TEDI",
+      "homepage": "https://tedi.ilhamriski.com",
+      "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
+      "language": "TypeScript",
+      "stars": 73,
+      "forks": 8,
+      "openIssues": 1,
+      "license": "Apache-2.0",
+      "topics": [
+        "ai",
+        "ai-agent",
+        "claude-code",
+        "cmd",
+        "code-editor",
+        "codex",
+        "open-source",
+        "opencode",
+        "powershell",
+        "rust",
+        "sftp",
+        "source-control",
+        "ssh",
+        "tauri",
+        "terminal"
+      ],
+      "archived": false,
+      "pushedAt": "2026-07-28T03:52:02Z",
+      "createdAt": "2026-05-13T00:00:22Z"
     },
     {
       "slug": "njinlabs/njinattend-backend",
@@ -569,42 +605,6 @@
       "archived": false,
       "pushedAt": "2023-10-04T21:50:13Z",
       "createdAt": "2023-09-23T21:07:22Z"
-    },
-    {
-      "slug": "ilhamrisky/tedi",
-      "fullName": "IlhamriSKY/TEDI",
-      "name": "TEDI",
-      "owner": "IlhamriSKY",
-      "ownerUrl": "https://github.com/IlhamriSKY",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/18723904?v=4",
-      "url": "https://github.com/IlhamriSKY/TEDI",
-      "homepage": "https://tedi.ilhamriski.com",
-      "description": "One lightweight app. Eight features. Your whole dev workflow in a single window.",
-      "language": "TypeScript",
-      "stars": 54,
-      "forks": 7,
-      "openIssues": 0,
-      "license": "Apache-2.0",
-      "topics": [
-        "ai",
-        "ai-agent",
-        "claude-code",
-        "cmd",
-        "code-editor",
-        "codex",
-        "open-source",
-        "opencode",
-        "powershell",
-        "rust",
-        "sftp",
-        "source-control",
-        "ssh",
-        "tauri",
-        "terminal"
-      ],
-      "archived": false,
-      "pushedAt": "2026-07-23T01:16:54Z",
-      "createdAt": "2026-05-13T00:00:22Z"
     },
     {
       "slug": "wauputr4/bansos",
@@ -824,7 +824,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-07-27T11:55:26Z",
+      "pushedAt": "2026-07-28T15:03:55Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -914,7 +914,7 @@
       "homepage": null,
       "description": "Turn your AI assistant into a tutor. It plans, shows code, reviews, adapts to how you learn and helps you complete your real project on your own",
       "language": "Shell",
-      "stars": 35,
+      "stars": 36,
       "forks": 1,
       "openIssues": 0,
       "license": "MIT",
@@ -1043,7 +1043,7 @@
         "wildlife"
       ],
       "archived": false,
-      "pushedAt": "2026-07-26T04:24:38Z",
+      "pushedAt": "2026-07-28T07:09:55Z",
       "createdAt": "2026-06-14T05:07:25Z"
     },
     {
@@ -1192,7 +1192,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-07-11T14:47:42Z",
+      "pushedAt": "2026-07-28T13:57:03Z",
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
@@ -1212,7 +1212,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-27T05:02:44Z",
+      "pushedAt": "2026-07-28T09:24:29Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1232,7 +1232,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-17T08:29:41Z",
+      "pushedAt": "2026-07-28T08:16:30Z",
       "createdAt": "2026-06-15T14:35:14Z"
     },
     {
@@ -1609,6 +1609,26 @@
       "createdAt": "2026-04-23T06:17:57Z"
     },
     {
+      "slug": "aofsnorth/artidor",
+      "fullName": "Aofsnorth/Artidor",
+      "name": "Artidor",
+      "owner": "Aofsnorth",
+      "ownerUrl": "https://github.com/Aofsnorth",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/108259309?v=4",
+      "url": "https://github.com/Aofsnorth/Artidor",
+      "homepage": "https://artidor.vercel.app",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 6,
+      "forks": 1,
+      "openIssues": 15,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-07-28T15:08:20Z",
+      "createdAt": "2026-06-13T11:24:30Z"
+    },
+    {
       "slug": "raymondchins/tokengratis-id",
       "fullName": "raymondchins/tokengratis-id",
       "name": "tokengratis-id",
@@ -1625,7 +1645,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-27T15:43:44Z",
+      "pushedAt": "2026-07-27T20:24:28Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1655,26 +1675,6 @@
       "archived": false,
       "pushedAt": "2026-07-24T10:07:22Z",
       "createdAt": "2026-06-04T12:15:07Z"
-    },
-    {
-      "slug": "aofsnorth/artidor",
-      "fullName": "Aofsnorth/Artidor",
-      "name": "Artidor",
-      "owner": "Aofsnorth",
-      "ownerUrl": "https://github.com/Aofsnorth",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/108259309?v=4",
-      "url": "https://github.com/Aofsnorth/Artidor",
-      "homepage": "https://artidor.vercel.app",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 6,
-      "forks": 1,
-      "openIssues": 12,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-07-21T15:06:18Z",
-      "createdAt": "2026-06-13T11:24:30Z"
     },
     {
       "slug": "wauputr4/skill-bansos",
@@ -1761,6 +1761,26 @@
       "createdAt": "2026-06-09T15:29:44Z"
     },
     {
+      "slug": "muslimtify-org/libmuslim",
+      "fullName": "muslimtify-org/libmuslim",
+      "name": "libmuslim",
+      "owner": "muslimtify-org",
+      "ownerUrl": "https://github.com/muslimtify-org",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/302768915?v=4",
+      "url": "https://github.com/muslimtify-org/libmuslim",
+      "homepage": "https://muslimtify.vercel.app",
+      "description": "Collection of islamic tools and utilities implemented in stb-style header only library",
+      "language": "C",
+      "stars": 4,
+      "forks": 1,
+      "openIssues": 0,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-07-27T15:52:56Z",
+      "createdAt": "2025-11-22T11:52:35Z"
+    },
+    {
       "slug": "wauputr4/agent-proxmox",
       "fullName": "wauputr4/agent-proxmox",
       "name": "agent-proxmox",
@@ -1840,7 +1860,7 @@
       "language": "TypeScript",
       "stars": 3,
       "forks": 0,
-      "openIssues": 6,
+      "openIssues": 7,
       "license": "MIT",
       "topics": [
         "document-processing",
@@ -1859,7 +1879,7 @@
         "vector-sesarch"
       ],
       "archived": false,
-      "pushedAt": "2026-06-29T10:41:32Z",
+      "pushedAt": "2026-07-28T10:24:34Z",
       "createdAt": "2026-05-16T13:54:21Z"
     },
     {
@@ -1883,26 +1903,6 @@
       "createdAt": "2026-05-28T12:17:41Z"
     },
     {
-      "slug": "muslimtify-org/libmuslim",
-      "fullName": "muslimtify-org/libmuslim",
-      "name": "libmuslim",
-      "owner": "muslimtify-org",
-      "ownerUrl": "https://github.com/muslimtify-org",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/302768915?v=4",
-      "url": "https://github.com/muslimtify-org/libmuslim",
-      "homepage": "https://muslimtify.vercel.app",
-      "description": "Collection of islamic tools and utilities implemented in stb-style header only library",
-      "language": "C",
-      "stars": 2,
-      "forks": 0,
-      "openIssues": 0,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-07-27T15:52:56Z",
-      "createdAt": "2025-11-22T11:52:35Z"
-    },
-    {
       "slug": "jutionck/tahlil-tracker",
       "fullName": "jutionck/tahlil-tracker",
       "name": "tahlil-tracker",
@@ -1923,6 +1923,26 @@
       "createdAt": "2025-12-10T04:16:53Z"
     },
     {
+      "slug": "dayartcrew-web/masday-workflow-rust",
+      "fullName": "dayartcrew-web/masday-workflow-rust",
+      "name": "masday-workflow-rust",
+      "owner": "dayartcrew-web",
+      "ownerUrl": "https://github.com/dayartcrew-web",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/245359298?v=4",
+      "url": "https://github.com/dayartcrew-web/masday-workflow-rust",
+      "homepage": null,
+      "description": "Rust MVC MCP Server — Unified AI coding agent platform built with Axum, SQLx, and tokio. 90 MCP tools, 4-layer memory, PostgreSQL.",
+      "language": "Rust",
+      "stars": 1,
+      "forks": 0,
+      "openIssues": 13,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-07-28T09:58:19Z",
+      "createdAt": "2026-05-31T08:23:44Z"
+    },
+    {
       "slug": "adityazxxx/sheltermark",
       "fullName": "AdityaZxxx/sheltermark",
       "name": "sheltermark",
@@ -1941,26 +1961,6 @@
       "archived": false,
       "pushedAt": "2026-07-22T02:39:48Z",
       "createdAt": "2026-02-10T04:21:08Z"
-    },
-    {
-      "slug": "dayartcrew-web/masday-workflow-rust",
-      "fullName": "dayartcrew-web/masday-workflow-rust",
-      "name": "masday-workflow-rust",
-      "owner": "dayartcrew-web",
-      "ownerUrl": "https://github.com/dayartcrew-web",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/245359298?v=4",
-      "url": "https://github.com/dayartcrew-web/masday-workflow-rust",
-      "homepage": null,
-      "description": "Rust MVC MCP Server — Unified AI coding agent platform built with Axum, SQLx, and tokio. 90 MCP tools, 4-layer memory, PostgreSQL.",
-      "language": "Rust",
-      "stars": 1,
-      "forks": 0,
-      "openIssues": 12,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-07-20T05:54:59Z",
-      "createdAt": "2026-05-31T08:23:44Z"
     },
     {
       "slug": "bimoalfarrabi/pantau-bbm",
@@ -2007,14 +2007,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-07-27T20:24:17.943Z"
+      "syncedAt": "2026-07-28T20:17:22.607Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-07-27T20:24:17.943Z"
+      "syncedAt": "2026-07-28T20:17:22.607Z"
     }
   ],
-  "syncedAt": "2026-07-27T20:24:17.943Z",
+  "syncedAt": "2026-07-28T20:17:22.607Z",
   "count": 76
 }

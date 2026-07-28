@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-07-28",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "LLM7.io",
+        "added": [
+          "Gemini 3.1 Flash Lite"
+        ],
+        "removed": [
+          "MiniMax-M2.7",
+          "grok-3-mini"
+        ]
+      },
+      {
+        "provider": "NVIDIA NIM",
+        "added": [
+          "nvidia/riva-translate-4b-instruct-v2"
+        ],
+        "removed": [
+          "nvidia/ising-calibration-1-35b-a3b"
+        ]
+      },
+      {
+        "provider": "OpenRouter",
+        "added": [],
+        "removed": [
+          "Poolside: Laguna M.1 (free)"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-07-27",
     "providersAdded": [
       {
