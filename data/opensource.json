@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js - The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser (client-side) or Node.js (server-side).",
       "language": "JavaScript",
-      "stars": 10171,
+      "stars": 10173,
       "forks": 1219,
       "openIssues": 14,
       "license": "AGPL-3.0",
@@ -96,8 +96,8 @@
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
       "stars": 1218,
-      "forks": 1170,
-      "openIssues": 361,
+      "forks": 1173,
+      "openIssues": 355,
       "license": null,
       "topics": [
         "opensid",
@@ -118,7 +118,7 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 910,
+      "stars": 911,
       "forks": 282,
       "openIssues": 7,
       "license": "MIT",
@@ -158,7 +158,7 @@
       "homepage": "https://jokoui.web.id",
       "description": "Free Open Source Tailwind CSS Component for Sat-set Developers with Zero Configuration, Installation, and Setup",
       "language": "TypeScript",
-      "stars": 414,
+      "stars": 415,
       "forks": 26,
       "openIssues": 8,
       "license": "MIT",
@@ -185,7 +185,7 @@
       "homepage": null,
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 330,
+      "stars": 329,
       "forks": 38,
       "openIssues": 6,
       "license": "MIT",
@@ -213,9 +213,9 @@
       "homepage": "https://omni.weekndlabs.com",
       "description": "Noise-canceling context and long-term memory for your AI agent. Stop paying Claude to read 10,000 lines of terminal noise like a headphone for AI agent",
       "language": "Rust",
-      "stars": 317,
-      "forks": 30,
-      "openIssues": 23,
+      "stars": 315,
+      "forks": 31,
+      "openIssues": 29,
       "license": "MIT",
       "topics": [
         "ai-agents",
@@ -238,7 +238,7 @@
         "token-savings"
       ],
       "archived": false,
-      "pushedAt": "2026-07-28T17:47:28Z",
+      "pushedAt": "2026-07-29T15:28:52Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -253,8 +253,8 @@
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
       "stars": 202,
-      "forks": 38,
-      "openIssues": 38,
+      "forks": 39,
+      "openIssues": 41,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -272,7 +272,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-07-28T14:05:09Z",
+      "pushedAt": "2026-07-29T15:33:54Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -286,8 +286,8 @@
       "homepage": "https://www.erdbuilderpro.com",
       "description": "ERD Builder Pro is a database design and documentation tool for developers. Build ERDs, flowcharts, notes, and drawings — all in one workspace",
       "language": "TypeScript",
-      "stars": 180,
-      "forks": 34,
+      "stars": 188,
+      "forks": 37,
       "openIssues": 0,
       "license": null,
       "topics": [
@@ -335,7 +335,7 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 154,
+      "stars": 155,
       "forks": 17,
       "openIssues": 7,
       "license": "Apache-2.0",
@@ -371,11 +371,11 @@
       "language": "Java",
       "stars": 132,
       "forks": 97,
-      "openIssues": 0,
+      "openIssues": 1,
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-01T22:57:27Z",
+      "pushedAt": "2026-07-29T11:22:50Z",
       "createdAt": "2018-08-06T13:38:19Z"
     },
     {
@@ -433,7 +433,7 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 109,
+      "stars": 110,
       "forks": 38,
       "openIssues": 3,
       "license": "MIT",
@@ -458,7 +458,7 @@
         "zai"
       ],
       "archived": false,
-      "pushedAt": "2026-07-26T16:04:45Z",
+      "pushedAt": "2026-07-29T14:44:06Z",
       "createdAt": "2026-05-31T09:02:50Z"
     },
     {
@@ -561,8 +561,8 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 73,
-      "forks": 8,
+      "stars": 76,
+      "forks": 10,
       "openIssues": 1,
       "license": "Apache-2.0",
       "topics": [
@@ -583,7 +583,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-07-28T03:52:02Z",
+      "pushedAt": "2026-07-29T03:02:32Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -618,8 +618,8 @@
       "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
       "language": "Svelte",
       "stars": 53,
-      "forks": 10,
-      "openIssues": 4,
+      "forks": 11,
+      "openIssues": 5,
       "license": "MIT",
       "topics": [
         "bansos",
@@ -649,7 +649,7 @@
       "description": "NATS | Open Source Business and Accounting Software",
       "language": "TypeScript",
       "stars": 49,
-      "forks": 16,
+      "forks": 15,
       "openIssues": 0,
       "license": "MIT",
       "topics": [],
@@ -824,7 +824,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-07-28T15:03:55Z",
+      "pushedAt": "2026-07-29T19:49:23Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -844,7 +844,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-26T08:07:24Z",
+      "pushedAt": "2026-07-29T06:17:23Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -1125,6 +1125,26 @@
       "createdAt": "2026-04-29T18:48:11Z"
     },
     {
+      "slug": "rudycity/superagent",
+      "fullName": "RudyCity/superagent",
+      "name": "superagent",
+      "owner": "RudyCity",
+      "ownerUrl": "https://github.com/RudyCity",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/82188919?v=4",
+      "url": "https://github.com/RudyCity/superagent",
+      "homepage": null,
+      "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
+      "language": "TypeScript",
+      "stars": 17,
+      "forks": 2,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-07-29T12:00:54Z",
+      "createdAt": "2026-06-09T15:06:10Z"
+    },
+    {
       "slug": "rahmanef63/control-room",
       "fullName": "rahmanef63/control-room",
       "name": "control-room",
@@ -1194,26 +1214,6 @@
       "archived": false,
       "pushedAt": "2026-07-28T13:57:03Z",
       "createdAt": "2026-04-21T15:17:02Z"
-    },
-    {
-      "slug": "rudycity/superagent",
-      "fullName": "RudyCity/superagent",
-      "name": "superagent",
-      "owner": "RudyCity",
-      "ownerUrl": "https://github.com/RudyCity",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/82188919?v=4",
-      "url": "https://github.com/RudyCity/superagent",
-      "homepage": null,
-      "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
-      "language": "TypeScript",
-      "stars": 15,
-      "forks": 2,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-07-28T09:24:29Z",
-      "createdAt": "2026-06-09T15:06:10Z"
     },
     {
       "slug": "muhammadhasbiashshiddieqy/openclawn",
@@ -1609,6 +1609,26 @@
       "createdAt": "2026-04-23T06:17:57Z"
     },
     {
+      "slug": "raymondchins/tokengratis-id",
+      "fullName": "raymondchins/tokengratis-id",
+      "name": "tokengratis-id",
+      "owner": "raymondchins",
+      "ownerUrl": "https://github.com/raymondchins",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
+      "url": "https://github.com/raymondchins/tokengratis-id",
+      "homepage": "https://tokengratis.id",
+      "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
+      "language": "JavaScript",
+      "stars": 6,
+      "forks": 0,
+      "openIssues": 2,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-07-28T20:17:35Z",
+      "createdAt": "2026-06-01T10:04:41Z"
+    },
+    {
       "slug": "aofsnorth/artidor",
       "fullName": "Aofsnorth/Artidor",
       "name": "Artidor",
@@ -1627,26 +1647,6 @@
       "archived": false,
       "pushedAt": "2026-07-28T15:08:20Z",
       "createdAt": "2026-06-13T11:24:30Z"
-    },
-    {
-      "slug": "raymondchins/tokengratis-id",
-      "fullName": "raymondchins/tokengratis-id",
-      "name": "tokengratis-id",
-      "owner": "raymondchins",
-      "ownerUrl": "https://github.com/raymondchins",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
-      "url": "https://github.com/raymondchins/tokengratis-id",
-      "homepage": "https://tokengratis.id",
-      "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
-      "language": "JavaScript",
-      "stars": 6,
-      "forks": 0,
-      "openIssues": 2,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-07-27T20:24:28Z",
-      "createdAt": "2026-06-01T10:04:41Z"
     },
     {
       "slug": "rizukirr/apic",
@@ -1777,7 +1777,7 @@
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-27T15:52:56Z",
+      "pushedAt": "2026-07-29T11:47:35Z",
       "createdAt": "2025-11-22T11:52:35Z"
     },
     {
@@ -2007,14 +2007,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-07-28T20:17:22.607Z"
+      "syncedAt": "2026-07-29T20:13:43.326Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-07-28T20:17:22.607Z"
+      "syncedAt": "2026-07-29T20:13:43.326Z"
     }
   ],
-  "syncedAt": "2026-07-28T20:17:22.607Z",
+  "syncedAt": "2026-07-29T20:13:43.326Z",
   "count": 76
 }

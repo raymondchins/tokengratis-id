@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-07-29",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Kilo Gateway",
+        "added": [],
+        "removed": [
+          "Kwaipilot KAT-Coder-Pro V2.5",
+          "Poolside Laguna M.1"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-07-28",
     "providersAdded": [],
     "providersRemoved": [],
