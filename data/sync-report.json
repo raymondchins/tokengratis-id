@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-29T20:13:37.007Z",
+  "generatedAt": "2026-07-30T20:16:13.049Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
       "status": "ok",
       "providers": 19,
-      "models": 110,
+      "models": 137,
       "shapeIssues": []
     },
     "freellm.net": {
@@ -98,7 +98,7 @@
   "skipped": [],
   "merged": {
     "providers": 25,
-    "models": 371,
+    "models": 384,
     "shapeIssues": []
   },
   "smokeTest": {
@@ -106,51 +106,156 @@
     "warnings": []
   },
   "diffGuard": {
-    "ok": true,
-    "errors": [],
-    "warnings": [],
+    "ok": false,
+    "errors": [
+      "provider \"hugging-face\" model ids churned 80.0% at same-ish count (overlap 20.0%, 5→8 ids) — possible source corruption",
+      "provider \"kilo-code\" model ids churned 66.7% at same-ish count (overlap 33.3%, 6→13 ids) — possible source corruption",
+      "provider \"ollama-cloud\" model ids churned 100.0% at same-ish count (overlap 0.0%, 6→9 ids) — possible source corruption"
+    ],
+    "warnings": [
+      "field \"maxContext\" (level provider) berubah nilai di 4/24 entri yang match (16.7%). Contoh: cohere: \"256K\"→\"436K\", google-gemini: \"2M\"→\"1M\", kilo-code: \"262K\"→\"1M\". Ambang warning 15% (di bawah ambang error 35%) — lolos, tapi worth dicek manual."
+    ],
     "stats": {
       "prevProviders": 25,
       "nextProviders": 25,
-      "prevModels": 373,
-      "nextModels": 371,
-      "totalDropPct": 0.5361930294906166,
+      "prevModels": 371,
+      "nextModels": 384,
+      "totalDropPct": -3.5040431266846364,
       "disappeared": [],
       "shrunk": [],
-      "churned": [],
+      "churned": [
+        {
+          "slug": "hugging-face",
+          "overlapPct": 20,
+          "prevIds": 5,
+          "nextIds": 8
+        },
+        {
+          "slug": "kilo-code",
+          "overlapPct": 33.33333333333333,
+          "prevIds": 6,
+          "nextIds": 13
+        },
+        {
+          "slug": "ollama-cloud",
+          "overlapPct": 0,
+          "prevIds": 6,
+          "nextIds": 9
+        }
+      ],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 322,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "eligible": 271,
+            "changed": 7,
+            "ratioPct": 2.5830258302583027,
+            "examples": [
+              {
+                "label": "cerebras/gpt-oss-120b",
+                "from": "128K (8K on free)",
+                "to": "131K (65K on free)"
+              },
+              {
+                "label": "cerebras/zai-glm-4.7",
+                "from": "128K (8K on free)",
+                "to": "131K (64K on free)"
+              },
+              {
+                "label": "cohere/command-a-03-2025",
+                "from": "256K",
+                "to": "288K"
+              }
+            ]
           },
           "maxOutput": {
-            "eligible": 155,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "eligible": 120,
+            "changed": 16,
+            "ratioPct": 13.333333333333334,
+            "examples": [
+              {
+                "label": "aion-labs/aion-rp-llama-3.1-8b",
+                "from": "~8K",
+                "to": "32K"
+              },
+              {
+                "label": "cerebras/gpt-oss-120b",
+                "from": "8K",
+                "to": "32K (free) / 40K (paid)"
+              },
+              {
+                "label": "cerebras/zai-glm-4.7",
+                "from": "8K",
+                "to": "40K"
+              }
+            ]
           },
           "modality": {
-            "eligible": 251,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "eligible": 207,
+            "changed": 3,
+            "ratioPct": 1.4492753623188406,
+            "examples": [
+              {
+                "label": "cohere/command-a-plus-05-2026",
+                "from": "Text",
+                "to": "Text + Image"
+              },
+              {
+                "label": "sambanova/gemma-4-31B-it",
+                "from": "Text",
+                "to": "Text + Image + Video"
+              },
+              {
+                "label": "z-ai-zhipu-ai/glm-4.7-flash",
+                "from": "Text",
+                "to": "Text (reasoning)"
+              }
+            ]
           },
           "rateLimit": {
-            "eligible": 257,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "eligible": 215,
+            "changed": 22,
+            "ratioPct": 10.232558139534884,
+            "examples": [
+              {
+                "label": "cerebras/gpt-oss-120b",
+                "from": "30 RPM, 14,400 RPD, 1M TPD",
+                "to": "5 RPM, 30K TPM, 1M TPD"
+              },
+              {
+                "label": "cerebras/zai-glm-4.7",
+                "from": "10 RPM, 100 RPD, 1M TPD",
+                "to": "5 RPM, 30K TPM, 1M TPD"
+              },
+              {
+                "label": "cerebras/gemma-4-31b",
+                "from": "5 requests/minute, 30,000 tokens/minute, 1,000,000 tokens/hour, 1,000,000 tokens/day",
+                "to": "15 RPM, 30K TPM, 1M TPD"
+              }
+            ]
           }
         },
         "provider": {
           "description": {
             "eligible": 21,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "changed": 3,
+            "ratioPct": 14.285714285714285,
+            "examples": [
+              {
+                "label": "cerebras",
+                "from": "Free tier, no credit card. Ultra-fast inference (~2,600 tok/s). 1M tokens/day cap. 8K context cap on free tier.",
+                "to": "Free tier with payment method required. Ultra-fast inference. 1M tokens/day cap. 64K context on free tier."
+              },
+              {
+                "label": "hugging-face",
+                "from": "100K monthly Inference Provider credits for free users. Routes to Fireworks, Together, Hyperbolic, Nebius, Novita, DeepInfra and others. Thousands of models.",
+                "to": "$0.10/month in Inference Provider credits for free users (subject to change). Routes to Fireworks, Together, Hyperbolic, Nebius, Novita, DeepInfra and others. Thousands of models."
+              },
+              {
+                "label": "kilo-code",
+                "from": "Free models with no credit card required. kilo-auto/free auto-router routes to minimax/minimax-m2.5:free (80%) and stepfun/step-3.5-flash:free (20%).",
+                "to": "Free models with no credit card required. kilo-auto/free auto-router dynamically routes to models in the free pool."
+              }
+            ]
           },
           "baseUrl": {
             "eligible": 19,
@@ -160,15 +265,37 @@
           },
           "freeLimit": {
             "eligible": 12,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "changed": 1,
+            "ratioPct": 8.333333333333332,
+            "examples": [
+              {
+                "label": "hugging-face",
+                "from": "100K kredit/bln",
+                "to": "$0.10 kredit"
+              }
+            ]
           },
           "maxContext": {
             "eligible": 24,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "changed": 4,
+            "ratioPct": 16.666666666666664,
+            "examples": [
+              {
+                "label": "cohere",
+                "from": "256K",
+                "to": "436K"
+              },
+              {
+                "label": "google-gemini",
+                "from": "2M",
+                "to": "1M"
+              },
+              {
+                "label": "kilo-code",
+                "from": "262K",
+                "to": "1M"
+              }
+            ]
           }
         }
       }
@@ -244,7 +371,29 @@
     }
   ],
   "quarantine": {
-    "heldProviders": [],
+    "heldProviders": [
+      {
+        "slug": "hugging-face",
+        "kind": "churned",
+        "detail": "id churn, overlap 20% (5 -> 8 id)",
+        "streak": 1,
+        "needs": 3
+      },
+      {
+        "slug": "kilo-code",
+        "kind": "churned",
+        "detail": "id churn, overlap 33% (6 -> 13 id)",
+        "streak": 1,
+        "needs": 3
+      },
+      {
+        "slug": "ollama-cloud",
+        "kind": "churned",
+        "detail": "id churn, overlap 0% (6 -> 9 id)",
+        "streak": 1,
+        "needs": 3
+      }
+    ],
     "accepted": [],
     "cleared": [],
     "confirmRuns": 3

@@ -66,7 +66,7 @@
       "homepage": "https://www.htmly.com",
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
-      "stars": 1350,
+      "stars": 1351,
       "forks": 305,
       "openIssues": 50,
       "license": "GPL-2.0",
@@ -95,9 +95,9 @@
       "homepage": null,
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
-      "stars": 1218,
-      "forks": 1173,
-      "openIssues": 355,
+      "stars": 1219,
+      "forks": 1174,
+      "openIssues": 357,
       "license": null,
       "topics": [
         "opensid",
@@ -118,7 +118,7 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 911,
+      "stars": 912,
       "forks": 282,
       "openIssues": 7,
       "license": "MIT",
@@ -238,7 +238,7 @@
         "token-savings"
       ],
       "archived": false,
-      "pushedAt": "2026-07-29T15:28:52Z",
+      "pushedAt": "2026-07-29T22:39:08Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -254,7 +254,7 @@
       "language": "TypeScript",
       "stars": 202,
       "forks": 39,
-      "openIssues": 41,
+      "openIssues": 38,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -272,7 +272,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-07-29T15:33:54Z",
+      "pushedAt": "2026-07-30T17:39:44Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -286,7 +286,7 @@
       "homepage": "https://www.erdbuilderpro.com",
       "description": "ERD Builder Pro is a database design and documentation tool for developers. Build ERDs, flowcharts, notes, and drawings — all in one workspace",
       "language": "TypeScript",
-      "stars": 188,
+      "stars": 190,
       "forks": 37,
       "openIssues": 0,
       "license": null,
@@ -315,7 +315,7 @@
       "homepage": null,
       "description": null,
       "language": "Python",
-      "stars": 157,
+      "stars": 156,
       "forks": 37,
       "openIssues": 0,
       "license": "MIT",
@@ -371,11 +371,11 @@
       "language": "Java",
       "stars": 132,
       "forks": 97,
-      "openIssues": 1,
+      "openIssues": 0,
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-29T11:22:50Z",
+      "pushedAt": "2026-07-30T02:30:19Z",
       "createdAt": "2018-08-06T13:38:19Z"
     },
     {
@@ -434,7 +434,7 @@
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
       "stars": 110,
-      "forks": 38,
+      "forks": 39,
       "openIssues": 3,
       "license": "MIT",
       "topics": [
@@ -458,7 +458,7 @@
         "zai"
       ],
       "archived": false,
-      "pushedAt": "2026-07-29T14:44:06Z",
+      "pushedAt": "2026-07-30T10:08:38Z",
       "createdAt": "2026-05-31T09:02:50Z"
     },
     {
@@ -523,6 +523,42 @@
       "createdAt": "2023-09-05T12:35:21Z"
     },
     {
+      "slug": "ilhamrisky/tedi",
+      "fullName": "IlhamriSKY/TEDI",
+      "name": "TEDI",
+      "owner": "IlhamriSKY",
+      "ownerUrl": "https://github.com/IlhamriSKY",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/18723904?v=4",
+      "url": "https://github.com/IlhamriSKY/TEDI",
+      "homepage": "https://tedi.ilhamriski.com",
+      "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
+      "language": "TypeScript",
+      "stars": 81,
+      "forks": 11,
+      "openIssues": 1,
+      "license": "Apache-2.0",
+      "topics": [
+        "ai",
+        "ai-agent",
+        "claude-code",
+        "cmd",
+        "code-editor",
+        "codex",
+        "open-source",
+        "opencode",
+        "powershell",
+        "rust",
+        "sftp",
+        "source-control",
+        "ssh",
+        "tauri",
+        "terminal"
+      ],
+      "archived": false,
+      "pushedAt": "2026-07-30T04:20:39Z",
+      "createdAt": "2026-05-13T00:00:22Z"
+    },
+    {
       "slug": "ddtamn/svelte-audio-ui",
       "fullName": "ddtamn/svelte-audio-ui",
       "name": "svelte-audio-ui",
@@ -549,42 +585,6 @@
       "archived": false,
       "pushedAt": "2026-07-28T06:25:09Z",
       "createdAt": "2026-03-17T12:55:21Z"
-    },
-    {
-      "slug": "ilhamrisky/tedi",
-      "fullName": "IlhamriSKY/TEDI",
-      "name": "TEDI",
-      "owner": "IlhamriSKY",
-      "ownerUrl": "https://github.com/IlhamriSKY",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/18723904?v=4",
-      "url": "https://github.com/IlhamriSKY/TEDI",
-      "homepage": "https://tedi.ilhamriski.com",
-      "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
-      "language": "TypeScript",
-      "stars": 76,
-      "forks": 10,
-      "openIssues": 1,
-      "license": "Apache-2.0",
-      "topics": [
-        "ai",
-        "ai-agent",
-        "claude-code",
-        "cmd",
-        "code-editor",
-        "codex",
-        "open-source",
-        "opencode",
-        "powershell",
-        "rust",
-        "sftp",
-        "source-control",
-        "ssh",
-        "tauri",
-        "terminal"
-      ],
-      "archived": false,
-      "pushedAt": "2026-07-29T03:02:32Z",
-      "createdAt": "2026-05-13T00:00:22Z"
     },
     {
       "slug": "njinlabs/njinattend-backend",
@@ -619,7 +619,7 @@
       "language": "Svelte",
       "stars": 53,
       "forks": 11,
-      "openIssues": 5,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [
         "bansos",
@@ -634,7 +634,7 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-07-25T05:36:11Z",
+      "pushedAt": "2026-07-30T08:04:40Z",
       "createdAt": "2026-06-11T13:28:54Z"
     },
     {
@@ -648,7 +648,7 @@
       "homepage": "https://maziyank.github.io/nats",
       "description": "NATS | Open Source Business and Accounting Software",
       "language": "TypeScript",
-      "stars": 49,
+      "stars": 50,
       "forks": 15,
       "openIssues": 0,
       "license": "MIT",
@@ -824,7 +824,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-07-29T19:49:23Z",
+      "pushedAt": "2026-07-30T17:41:29Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -844,7 +844,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-29T06:17:23Z",
+      "pushedAt": "2026-07-30T09:16:55Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -1141,7 +1141,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-29T12:00:54Z",
+      "pushedAt": "2026-07-30T15:12:24Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1232,7 +1232,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-28T08:16:30Z",
+      "pushedAt": "2026-07-30T02:54:20Z",
       "createdAt": "2026-06-15T14:35:14Z"
     },
     {
@@ -1264,7 +1264,7 @@
         "windows-desktop"
       ],
       "archived": false,
-      "pushedAt": "2026-07-27T10:31:38Z",
+      "pushedAt": "2026-07-30T09:50:37Z",
       "createdAt": "2026-02-23T13:59:12Z"
     },
     {
@@ -1364,8 +1364,28 @@
         "semantic-search"
       ],
       "archived": false,
-      "pushedAt": "2026-07-23T06:41:37Z",
+      "pushedAt": "2026-07-30T08:58:54Z",
       "createdAt": "2026-06-02T04:21:59Z"
+    },
+    {
+      "slug": "muhfauziazhar/nusakit-api",
+      "fullName": "muhfauziazhar/nusakit-api",
+      "name": "nusakit-api",
+      "owner": "muhfauziazhar",
+      "ownerUrl": "https://github.com/muhfauziazhar",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/72305833?v=4",
+      "url": "https://github.com/muhfauziazhar/nusakit-api",
+      "homepage": "https://nusakit.my.id",
+      "description": "🇮🇩 Indonesian Data Validation API — NIK, NPWP, Phone, Rupiah, Bank, Wilayah. Live: nusakit.my.id",
+      "language": "TypeScript",
+      "stars": 10,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-06-13T16:18:08Z",
+      "createdAt": "2026-06-12T01:36:09Z"
     },
     {
       "slug": "ahmadghaisanfad2/absen-kelas",
@@ -1437,26 +1457,6 @@
       "archived": false,
       "pushedAt": "2026-05-03T11:25:37Z",
       "createdAt": "2026-03-25T12:38:25Z"
-    },
-    {
-      "slug": "muhfauziazhar/nusakit-api",
-      "fullName": "muhfauziazhar/nusakit-api",
-      "name": "nusakit-api",
-      "owner": "muhfauziazhar",
-      "ownerUrl": "https://github.com/muhfauziazhar",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/72305833?v=4",
-      "url": "https://github.com/muhfauziazhar/nusakit-api",
-      "homepage": "https://nusakit.my.id",
-      "description": "🇮🇩 Indonesian Data Validation API — NIK, NPWP, Phone, Rupiah, Bank, Wilayah. Live: nusakit.my.id",
-      "language": "TypeScript",
-      "stars": 9,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-06-13T16:18:08Z",
-      "createdAt": "2026-06-12T01:36:09Z"
     },
     {
       "slug": "rahmanef63/framepilot",
@@ -1538,6 +1538,26 @@
       "createdAt": "2026-01-09T17:20:39Z"
     },
     {
+      "slug": "rifqiakrm/code-island",
+      "fullName": "rifqiakrm/code-island",
+      "name": "code-island",
+      "owner": "rifqiakrm",
+      "ownerUrl": "https://github.com/rifqiakrm",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/35358522?v=4",
+      "url": "https://github.com/rifqiakrm/code-island",
+      "homepage": "https://rifqiakrm.github.io/code-island/",
+      "description": "macOS app that turns your MacBook's notch into a live dashboard for Claude Code, Codex, etc",
+      "language": "Swift",
+      "stars": 7,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "GPL-3.0",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-07-30T12:28:13Z",
+      "createdAt": "2026-04-23T06:17:57Z"
+    },
+    {
       "slug": "semutdev/goigniter",
       "fullName": "semutdev/goigniter",
       "name": "goigniter",
@@ -1589,66 +1609,6 @@
       "createdAt": "2026-06-04T12:49:01Z"
     },
     {
-      "slug": "rifqiakrm/code-island",
-      "fullName": "rifqiakrm/code-island",
-      "name": "code-island",
-      "owner": "rifqiakrm",
-      "ownerUrl": "https://github.com/rifqiakrm",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/35358522?v=4",
-      "url": "https://github.com/rifqiakrm/code-island",
-      "homepage": "https://rifqiakrm.github.io/code-island/",
-      "description": "macOS app that turns your MacBook's notch into a live dashboard for Claude Code, Codex, etc",
-      "language": "Swift",
-      "stars": 7,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "GPL-3.0",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-06-19T05:46:32Z",
-      "createdAt": "2026-04-23T06:17:57Z"
-    },
-    {
-      "slug": "raymondchins/tokengratis-id",
-      "fullName": "raymondchins/tokengratis-id",
-      "name": "tokengratis-id",
-      "owner": "raymondchins",
-      "ownerUrl": "https://github.com/raymondchins",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
-      "url": "https://github.com/raymondchins/tokengratis-id",
-      "homepage": "https://tokengratis.id",
-      "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
-      "language": "JavaScript",
-      "stars": 6,
-      "forks": 0,
-      "openIssues": 2,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-07-28T20:17:35Z",
-      "createdAt": "2026-06-01T10:04:41Z"
-    },
-    {
-      "slug": "aofsnorth/artidor",
-      "fullName": "Aofsnorth/Artidor",
-      "name": "Artidor",
-      "owner": "Aofsnorth",
-      "ownerUrl": "https://github.com/Aofsnorth",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/108259309?v=4",
-      "url": "https://github.com/Aofsnorth/Artidor",
-      "homepage": "https://artidor.vercel.app",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 6,
-      "forks": 1,
-      "openIssues": 15,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-07-28T15:08:20Z",
-      "createdAt": "2026-06-13T11:24:30Z"
-    },
-    {
       "slug": "rizukirr/apic",
       "fullName": "rizukirr/apic",
       "name": "apic",
@@ -1673,8 +1633,48 @@
         "rust"
       ],
       "archived": false,
-      "pushedAt": "2026-07-24T10:07:22Z",
+      "pushedAt": "2026-07-30T10:50:39Z",
       "createdAt": "2026-06-04T12:15:07Z"
+    },
+    {
+      "slug": "raymondchins/tokengratis-id",
+      "fullName": "raymondchins/tokengratis-id",
+      "name": "tokengratis-id",
+      "owner": "raymondchins",
+      "ownerUrl": "https://github.com/raymondchins",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
+      "url": "https://github.com/raymondchins/tokengratis-id",
+      "homepage": "https://tokengratis.id",
+      "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
+      "language": "JavaScript",
+      "stars": 6,
+      "forks": 0,
+      "openIssues": 2,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-07-29T20:13:56Z",
+      "createdAt": "2026-06-01T10:04:41Z"
+    },
+    {
+      "slug": "aofsnorth/artidor",
+      "fullName": "Aofsnorth/Artidor",
+      "name": "Artidor",
+      "owner": "Aofsnorth",
+      "ownerUrl": "https://github.com/Aofsnorth",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/108259309?v=4",
+      "url": "https://github.com/Aofsnorth/Artidor",
+      "homepage": "https://artidor.vercel.app",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 6,
+      "forks": 1,
+      "openIssues": 15,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-07-28T15:08:20Z",
+      "createdAt": "2026-06-13T11:24:30Z"
     },
     {
       "slug": "wauputr4/skill-bansos",
@@ -1777,7 +1777,7 @@
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-29T11:47:35Z",
+      "pushedAt": "2026-07-30T16:10:53Z",
       "createdAt": "2025-11-22T11:52:35Z"
     },
     {
@@ -2007,14 +2007,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-07-29T20:13:43.326Z"
+      "syncedAt": "2026-07-30T20:16:18.178Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-07-29T20:13:43.326Z"
+      "syncedAt": "2026-07-30T20:16:18.178Z"
     }
   ],
-  "syncedAt": "2026-07-29T20:13:43.326Z",
+  "syncedAt": "2026-07-30T20:16:18.178Z",
   "count": 76
 }

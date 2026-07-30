@@ -1,5 +1,137 @@
 [
   {
+    "date": "2026-07-30",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Aion Labs",
+        "added": [
+          "Aion 3.0",
+          "Aion 3.0 Mini"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "GitHub Models",
+        "added": [
+          "Llama-4-Scout-17B-16E-Instruct",
+          "Llama-4-Maverick-17B-128E",
+          "Llama-4-Maverick-17B-128E-Instruct-FP8",
+          "Llama-3.3-70B-Instruct",
+          "Meta-Llama-3.3-70B",
+          "Mistral-Small-3.1"
+        ],
+        "removed": [
+          "Llama-4-Scout-17B-16E",
+          "Llama-4-Maverick-17B-128E",
+          "Meta-Llama-3.3-70B",
+          "Mistral-Small-3.1"
+        ]
+      },
+      {
+        "provider": "Google Gemini",
+        "added": [
+          "Gemini 2.5 Flash-Lite",
+          "Gemini 3.5 Flash-Lite",
+          "Gemini 3.6 Flash"
+        ],
+        "removed": [
+          "Gemini 2.5 Flash-Lite",
+          "Gemini 3.5 Flash Lite",
+          "Gemini 3.6 Flash"
+        ]
+      },
+      {
+        "provider": "Groq",
+        "added": [
+          "groq/compound",
+          "groq/compound-mini",
+          "openai/gpt-oss-120b",
+          "openai/gpt-oss-20b",
+          "qwen/qwen3.6-27b"
+        ],
+        "removed": [
+          "GPT OSS 20B",
+          "gpt-oss-120b",
+          "llama-4-scout-17b-16e-instruct",
+          "qwen3-32b",
+          "groq/compound",
+          "groq/compound-mini",
+          "qwen/qwen3.6-27b"
+        ]
+      },
+      {
+        "provider": "Mistral AI",
+        "added": [
+          "Codestral",
+          "Ministral 14B",
+          "Ministral 8B",
+          "Mistral Large 3",
+          "Ministral 3B",
+          "Mistral Nemo (12B)",
+          "Pixtral Large"
+        ],
+        "removed": [
+          "Codestral",
+          "Mistral Large 3",
+          "Mistral Nemo (12B)",
+          "Pixtral Large"
+        ]
+      },
+      {
+        "provider": "NVIDIA NIM",
+        "added": [
+          "deepseek-ai/deepseek-v4-flash",
+          "minimaxai/minimax-m3",
+          "mistralai/mistral-medium-3.5-128b",
+          "nvidia/nemotron-3-ultra-550b-a55b",
+          "openai/gpt-oss-120b",
+          "openai/gpt-oss-20b",
+          "deepseek-ai/deepseek-v4-pro",
+          "google/gemma-4-31b-it",
+          "meta/llama-3.3-70b-instruct",
+          "mistralai/mistral-nemotron"
+        ],
+        "removed": [
+          "deepseek-ai/deepseek-v4-flash",
+          "deepseek-ai/deepseek-v4-pro",
+          "minimaxai/minimax-m3",
+          "Nemotron 3 Ultra 550B A55B",
+          "Gemma 4 31B IT",
+          "GPT OSS 120B",
+          "GPT OSS 20B",
+          "deepseek-ai/deepseek-r1",
+          "google/gemma-4-31b",
+          "Llama-3.3-70B-Instruct",
+          "meta/llama-3.1-405b-instruct",
+          "minimax/minimax-m2.7",
+          "qwen/qwen2.5-72b-instruct",
+          "mistralai/mistral-medium-3.5-128b",
+          "mistralai/mistral-nemotron"
+        ]
+      },
+      {
+        "provider": "OVHcloud AI Endpoints",
+        "added": [
+          "Llama-3.1-8B-Instruct"
+        ],
+        "removed": [
+          "Llama-3.1-8B-Instruct"
+        ]
+      },
+      {
+        "provider": "Z AI (Zhipu AI)",
+        "added": [
+          "GLM-4.5-Flash"
+        ],
+        "removed": [
+          "GLM-4.5-Flash"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-07-29",
     "providersAdded": [],
     "providersRemoved": [],
