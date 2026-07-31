@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T20:16:13.049Z",
+  "generatedAt": "2026-07-31T20:21:14.985Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -10,41 +10,41 @@
     },
     "freellm.net": {
       "status": "ok",
-      "providers": 23,
-      "models": 335,
+      "providers": 24,
+      "models": 355,
       "shapeIssues": [
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "maxOutput",
           "rule": "all-null-collapse",
-          "count": 335,
-          "total": 335,
+          "count": 355,
+          "total": 355,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"maxOutput\": 100% null di 335 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+          "message": "Field \"maxOutput\": 100% null di 355 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
         },
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "url",
           "rule": "all-null-collapse",
-          "count": 23,
-          "total": 23,
+          "count": 24,
+          "total": 24,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"url\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+          "message": "Field \"url\": 100% null di 24 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
         },
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "baseUrl",
           "rule": "all-null-collapse",
-          "count": 23,
-          "total": 23,
+          "count": 24,
+          "total": 24,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"baseUrl\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+          "message": "Field \"baseUrl\": 100% null di 24 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
         }
       ]
     },
@@ -98,7 +98,7 @@
   "skipped": [],
   "merged": {
     "providers": 25,
-    "models": 384,
+    "models": 372,
     "shapeIssues": []
   },
   "smokeTest": {
@@ -108,19 +108,17 @@
   "diffGuard": {
     "ok": false,
     "errors": [
-      "provider \"hugging-face\" model ids churned 80.0% at same-ish count (overlap 20.0%, 5→8 ids) — possible source corruption",
-      "provider \"kilo-code\" model ids churned 66.7% at same-ish count (overlap 33.3%, 6→13 ids) — possible source corruption",
+      "provider \"hugging-face\" model ids churned 80.0% at same-ish count (overlap 20.0%, 5→5 ids) — possible source corruption",
+      "provider \"kilo-code\" model ids churned 66.7% at same-ish count (overlap 33.3%, 6→9 ids) — possible source corruption",
       "provider \"ollama-cloud\" model ids churned 100.0% at same-ish count (overlap 0.0%, 6→9 ids) — possible source corruption"
     ],
-    "warnings": [
-      "field \"maxContext\" (level provider) berubah nilai di 4/24 entri yang match (16.7%). Contoh: cohere: \"256K\"→\"436K\", google-gemini: \"2M\"→\"1M\", kilo-code: \"262K\"→\"1M\". Ambang warning 15% (di bawah ambang error 35%) — lolos, tapi worth dicek manual."
-    ],
+    "warnings": [],
     "stats": {
       "prevProviders": 25,
       "nextProviders": 25,
       "prevModels": 371,
-      "nextModels": 384,
-      "totalDropPct": -3.5040431266846364,
+      "nextModels": 372,
+      "totalDropPct": -0.2695417789757413,
       "disappeared": [],
       "shrunk": [],
       "churned": [
@@ -128,13 +126,13 @@
           "slug": "hugging-face",
           "overlapPct": 20,
           "prevIds": 5,
-          "nextIds": 8
+          "nextIds": 5
         },
         {
           "slug": "kilo-code",
           "overlapPct": 33.33333333333333,
           "prevIds": 6,
-          "nextIds": 13
+          "nextIds": 9
         },
         {
           "slug": "ollama-cloud",
@@ -146,105 +144,42 @@
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 271,
-            "changed": 7,
-            "ratioPct": 2.5830258302583027,
-            "examples": [
-              {
-                "label": "cerebras/gpt-oss-120b",
-                "from": "128K (8K on free)",
-                "to": "131K (65K on free)"
-              },
-              {
-                "label": "cerebras/zai-glm-4.7",
-                "from": "128K (8K on free)",
-                "to": "131K (64K on free)"
-              },
-              {
-                "label": "cohere/command-a-03-2025",
-                "from": "256K",
-                "to": "288K"
-              }
-            ]
+            "eligible": 301,
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           },
           "maxOutput": {
-            "eligible": 120,
-            "changed": 16,
-            "ratioPct": 13.333333333333334,
+            "eligible": 152,
+            "changed": 1,
+            "ratioPct": 0.6578947368421052,
             "examples": [
               {
-                "label": "aion-labs/aion-rp-llama-3.1-8b",
-                "from": "~8K",
-                "to": "32K"
-              },
-              {
-                "label": "cerebras/gpt-oss-120b",
-                "from": "8K",
-                "to": "32K (free) / 40K (paid)"
-              },
-              {
-                "label": "cerebras/zai-glm-4.7",
-                "from": "8K",
-                "to": "40K"
+                "label": "kilo-code/nvidia/nemotron-3-super-120b-a12b:free",
+                "from": "32K",
+                "to": "262K"
               }
             ]
           },
           "modality": {
-            "eligible": 207,
-            "changed": 3,
-            "ratioPct": 1.4492753623188406,
-            "examples": [
-              {
-                "label": "cohere/command-a-plus-05-2026",
-                "from": "Text",
-                "to": "Text + Image"
-              },
-              {
-                "label": "sambanova/gemma-4-31B-it",
-                "from": "Text",
-                "to": "Text + Image + Video"
-              },
-              {
-                "label": "z-ai-zhipu-ai/glm-4.7-flash",
-                "from": "Text",
-                "to": "Text (reasoning)"
-              }
-            ]
+            "eligible": 243,
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           },
           "rateLimit": {
-            "eligible": 215,
-            "changed": 22,
-            "ratioPct": 10.232558139534884,
-            "examples": [
-              {
-                "label": "cerebras/gpt-oss-120b",
-                "from": "30 RPM, 14,400 RPD, 1M TPD",
-                "to": "5 RPM, 30K TPM, 1M TPD"
-              },
-              {
-                "label": "cerebras/zai-glm-4.7",
-                "from": "10 RPM, 100 RPD, 1M TPD",
-                "to": "5 RPM, 30K TPM, 1M TPD"
-              },
-              {
-                "label": "cerebras/gemma-4-31b",
-                "from": "5 requests/minute, 30,000 tokens/minute, 1,000,000 tokens/hour, 1,000,000 tokens/day",
-                "to": "15 RPM, 30K TPM, 1M TPD"
-              }
-            ]
+            "eligible": 245,
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           }
         },
         "provider": {
           "description": {
             "eligible": 21,
-            "changed": 3,
-            "ratioPct": 14.285714285714285,
+            "changed": 2,
+            "ratioPct": 9.523809523809524,
             "examples": [
-              {
-                "label": "cerebras",
-                "from": "Free tier, no credit card. Ultra-fast inference (~2,600 tok/s). 1M tokens/day cap. 8K context cap on free tier.",
-                "to": "Free tier with payment method required. Ultra-fast inference. 1M tokens/day cap. 64K context on free tier."
-              },
               {
                 "label": "hugging-face",
                 "from": "100K monthly Inference Provider credits for free users. Routes to Fireworks, Together, Hyperbolic, Nebius, Novita, DeepInfra and others. Thousands of models.",
@@ -277,21 +212,21 @@
           },
           "maxContext": {
             "eligible": 24,
-            "changed": 4,
-            "ratioPct": 16.666666666666664,
+            "changed": 3,
+            "ratioPct": 12.5,
             "examples": [
               {
-                "label": "cohere",
-                "from": "256K",
-                "to": "436K"
-              },
-              {
-                "label": "google-gemini",
-                "from": "2M",
-                "to": "1M"
+                "label": "cerebras",
+                "from": "262K",
+                "to": "131K (65K on free)"
               },
               {
                 "label": "kilo-code",
+                "from": "262K",
+                "to": "1M"
+              },
+              {
+                "label": "ollama-cloud",
                 "from": "262K",
                 "to": "1M"
               }
@@ -308,33 +243,33 @@
       "source": "freellm.net",
       "field": "maxOutput",
       "rule": "all-null-collapse",
-      "count": 335,
-      "total": 335,
+      "count": 355,
+      "total": 355,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"maxOutput\": 100% null di 335 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+      "message": "Field \"maxOutput\": 100% null di 355 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
     },
     {
       "severity": "warn",
       "source": "freellm.net",
       "field": "url",
       "rule": "all-null-collapse",
-      "count": 23,
-      "total": 23,
+      "count": 24,
+      "total": 24,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"url\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+      "message": "Field \"url\": 100% null di 24 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
     },
     {
       "severity": "warn",
       "source": "freellm.net",
       "field": "baseUrl",
       "rule": "all-null-collapse",
-      "count": 23,
-      "total": 23,
+      "count": 24,
+      "total": 24,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"baseUrl\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+      "message": "Field \"baseUrl\": 100% null di 24 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
     },
     {
       "severity": "warn",
@@ -375,14 +310,14 @@
       {
         "slug": "hugging-face",
         "kind": "churned",
-        "detail": "id churn, overlap 20% (5 -> 8 id)",
+        "detail": "id churn, overlap 20% (5 -> 5 id)",
         "streak": 1,
         "needs": 3
       },
       {
         "slug": "kilo-code",
         "kind": "churned",
-        "detail": "id churn, overlap 33% (6 -> 13 id)",
+        "detail": "id churn, overlap 33% (6 -> 9 id)",
         "streak": 1,
         "needs": 3
       },
@@ -390,7 +325,7 @@
         "slug": "ollama-cloud",
         "kind": "churned",
         "detail": "id churn, overlap 0% (6 -> 9 id)",
-        "streak": 1,
+        "streak": 2,
         "needs": 3
       }
     ],

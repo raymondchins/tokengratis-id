@@ -1,5 +1,49 @@
 [
   {
+    "date": "2026-07-31",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cerebras",
+        "added": [],
+        "removed": [
+          "Gemma 4 31B IT"
+        ]
+      },
+      {
+        "provider": "GitHub Models",
+        "added": [],
+        "removed": [
+          "Llama-4-Maverick-17B-128E",
+          "Meta-Llama-3.3-70B"
+        ]
+      },
+      {
+        "provider": "LLM7.io",
+        "added": [
+          "MiniMax-M2.7"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "Mistral AI",
+        "added": [],
+        "removed": [
+          "Mistral Nemo (12B)",
+          "Pixtral Large"
+        ]
+      },
+      {
+        "provider": "OVHcloud AI Endpoints",
+        "added": [],
+        "removed": [
+          "Llama-3.1-8B-Instruct"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-07-30",
     "providersAdded": [],
     "providersRemoved": [],

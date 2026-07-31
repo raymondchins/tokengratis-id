@@ -40,7 +40,7 @@
       "homepage": null,
       "description": "Plug n play avatar, turn name, email, and any other string into beautiful avatar (or gravatar), effortless.",
       "language": "PHP",
-      "stars": 1983,
+      "stars": 1984,
       "forks": 186,
       "openIssues": 0,
       "license": "MIT",
@@ -97,14 +97,14 @@
       "language": "PHP",
       "stars": 1219,
       "forks": 1174,
-      "openIssues": 357,
+      "openIssues": 358,
       "license": null,
       "topics": [
         "opensid",
         "sistem-informasi-desa"
       ],
       "archived": false,
-      "pushedAt": "2026-07-26T05:21:39Z",
+      "pushedAt": "2026-07-31T03:42:52Z",
       "createdAt": "2016-05-21T10:55:38Z"
     },
     {
@@ -118,8 +118,8 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 912,
-      "forks": 282,
+      "stars": 916,
+      "forks": 283,
       "openIssues": 7,
       "license": "MIT",
       "topics": [],
@@ -213,9 +213,9 @@
       "homepage": "https://omni.weekndlabs.com",
       "description": "Noise-canceling context and long-term memory for your AI agent. Stop paying Claude to read 10,000 lines of terminal noise like a headphone for AI agent",
       "language": "Rust",
-      "stars": 315,
+      "stars": 316,
       "forks": 31,
-      "openIssues": 29,
+      "openIssues": 32,
       "license": "MIT",
       "topics": [
         "ai-agents",
@@ -252,9 +252,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 202,
+      "stars": 203,
       "forks": 39,
-      "openIssues": 38,
+      "openIssues": 41,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -272,7 +272,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-07-30T17:39:44Z",
+      "pushedAt": "2026-07-31T17:05:43Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -301,7 +301,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-07-28T10:37:28Z",
+      "pushedAt": "2026-07-31T16:01:34Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -316,7 +316,7 @@
       "description": null,
       "language": "Python",
       "stars": 156,
-      "forks": 37,
+      "forks": 39,
       "openIssues": 0,
       "license": "MIT",
       "topics": [],
@@ -337,7 +337,7 @@
       "language": "Rust",
       "stars": 155,
       "forks": 17,
-      "openIssues": 7,
+      "openIssues": 10,
       "license": "Apache-2.0",
       "topics": [
         "ai",
@@ -435,7 +435,7 @@
       "language": "Go",
       "stars": 110,
       "forks": 39,
-      "openIssues": 3,
+      "openIssues": 4,
       "license": "MIT",
       "topics": [
         "ai",
@@ -533,7 +533,7 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 81,
+      "stars": 84,
       "forks": 11,
       "openIssues": 1,
       "license": "Apache-2.0",
@@ -555,7 +555,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-07-30T04:20:39Z",
+      "pushedAt": "2026-07-31T11:00:01Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -571,7 +571,7 @@
       "language": "Svelte",
       "stars": 78,
       "forks": 4,
-      "openIssues": 9,
+      "openIssues": 10,
       "license": "MIT",
       "topics": [
         "audio",
@@ -583,7 +583,7 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-07-28T06:25:09Z",
+      "pushedAt": "2026-07-31T19:33:53Z",
       "createdAt": "2026-03-17T12:55:21Z"
     },
     {
@@ -844,7 +844,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-30T09:16:55Z",
+      "pushedAt": "2026-07-31T13:46:52Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -1047,6 +1047,33 @@
       "createdAt": "2026-06-14T05:07:25Z"
     },
     {
+      "slug": "rizukirr/hyprsimple",
+      "fullName": "rizukirr/hyprsimple",
+      "name": "hyprsimple",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/hyprsimple",
+      "homepage": null,
+      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
+      "language": "Shell",
+      "stars": 20,
+      "forks": 3,
+      "openIssues": 0,
+      "license": null,
+      "topics": [
+        "arch-linux",
+        "dotfiles",
+        "hyprland",
+        "hyprland-config",
+        "linux",
+        "omarchy"
+      ],
+      "archived": false,
+      "pushedAt": "2026-07-25T16:12:01Z",
+      "createdAt": "2025-10-04T10:27:45Z"
+    },
+    {
       "slug": "rayasabari/yntk-ts",
       "fullName": "rayasabari/yntk-ts",
       "name": "yntk-ts",
@@ -1065,33 +1092,6 @@
       "archived": false,
       "pushedAt": "2026-04-08T09:29:42Z",
       "createdAt": "2026-04-08T09:27:49Z"
-    },
-    {
-      "slug": "rizukirr/hyprsimple",
-      "fullName": "rizukirr/hyprsimple",
-      "name": "hyprsimple",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/hyprsimple",
-      "homepage": null,
-      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
-      "language": "Shell",
-      "stars": 19,
-      "forks": 3,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "arch-linux",
-        "dotfiles",
-        "hyprland",
-        "hyprland-config",
-        "linux",
-        "omarchy"
-      ],
-      "archived": false,
-      "pushedAt": "2026-07-25T16:12:01Z",
-      "createdAt": "2025-10-04T10:27:45Z"
     },
     {
       "slug": "rahmanef63/open-silong",
@@ -1135,13 +1135,13 @@
       "homepage": null,
       "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
       "language": "TypeScript",
-      "stars": 17,
+      "stars": 18,
       "forks": 2,
       "openIssues": 0,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-30T15:12:24Z",
+      "pushedAt": "2026-07-31T06:53:28Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1212,7 +1212,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-07-28T13:57:03Z",
+      "pushedAt": "2026-07-31T16:51:32Z",
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
@@ -1332,6 +1332,26 @@
       "createdAt": "2026-03-12T09:55:51Z"
     },
     {
+      "slug": "muhfauziazhar/nusakit-api",
+      "fullName": "muhfauziazhar/nusakit-api",
+      "name": "nusakit-api",
+      "owner": "muhfauziazhar",
+      "ownerUrl": "https://github.com/muhfauziazhar",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/72305833?v=4",
+      "url": "https://github.com/muhfauziazhar/nusakit-api",
+      "homepage": "https://nusakit.my.id",
+      "description": "🇮🇩 Indonesian Data Validation API — NIK, NPWP, Phone, Rupiah, Bank, Wilayah. Live: nusakit.my.id",
+      "language": "TypeScript",
+      "stars": 11,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-06-13T16:18:08Z",
+      "createdAt": "2026-06-12T01:36:09Z"
+    },
+    {
       "slug": "xpajonx/openempiric",
       "fullName": "xpajonx/openempiric",
       "name": "openempiric",
@@ -1364,28 +1384,8 @@
         "semantic-search"
       ],
       "archived": false,
-      "pushedAt": "2026-07-30T08:58:54Z",
+      "pushedAt": "2026-07-31T11:45:16Z",
       "createdAt": "2026-06-02T04:21:59Z"
-    },
-    {
-      "slug": "muhfauziazhar/nusakit-api",
-      "fullName": "muhfauziazhar/nusakit-api",
-      "name": "nusakit-api",
-      "owner": "muhfauziazhar",
-      "ownerUrl": "https://github.com/muhfauziazhar",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/72305833?v=4",
-      "url": "https://github.com/muhfauziazhar/nusakit-api",
-      "homepage": "https://nusakit.my.id",
-      "description": "🇮🇩 Indonesian Data Validation API — NIK, NPWP, Phone, Rupiah, Bank, Wilayah. Live: nusakit.my.id",
-      "language": "TypeScript",
-      "stars": 10,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-06-13T16:18:08Z",
-      "createdAt": "2026-06-12T01:36:09Z"
     },
     {
       "slug": "ahmadghaisanfad2/absen-kelas",
@@ -1633,7 +1633,7 @@
         "rust"
       ],
       "archived": false,
-      "pushedAt": "2026-07-30T10:50:39Z",
+      "pushedAt": "2026-07-31T15:51:15Z",
       "createdAt": "2026-06-04T12:15:07Z"
     },
     {
@@ -1653,7 +1653,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-29T20:13:56Z",
+      "pushedAt": "2026-07-30T20:16:31Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -2007,14 +2007,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-07-30T20:16:18.178Z"
+      "syncedAt": "2026-07-31T20:21:21.416Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-07-30T20:16:18.178Z"
+      "syncedAt": "2026-07-31T20:21:21.416Z"
     }
   ],
-  "syncedAt": "2026-07-30T20:16:18.178Z",
+  "syncedAt": "2026-07-31T20:21:21.416Z",
   "count": 76
 }

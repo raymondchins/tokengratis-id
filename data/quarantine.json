@@ -3,27 +3,27 @@
   "entries": {
     "hugging-face": {
       "kind": "churned",
-      "magnitude": 8,
-      "detail": "id churn, overlap 20% (5 -> 8 id)",
+      "magnitude": 5,
+      "detail": "id churn, overlap 20% (5 -> 5 id)",
       "streak": 1,
       "firstSeen": "2026-07-30T20:16:13.049Z",
-      "lastSeen": "2026-07-30T20:16:13.049Z"
+      "lastSeen": "2026-07-31T20:21:14.985Z"
     },
     "kilo-code": {
       "kind": "churned",
-      "magnitude": 13,
-      "detail": "id churn, overlap 33% (6 -> 13 id)",
+      "magnitude": 9,
+      "detail": "id churn, overlap 33% (6 -> 9 id)",
       "streak": 1,
       "firstSeen": "2026-07-30T20:16:13.049Z",
-      "lastSeen": "2026-07-30T20:16:13.049Z"
+      "lastSeen": "2026-07-31T20:21:14.985Z"
     },
     "ollama-cloud": {
       "kind": "churned",
       "magnitude": 9,
       "detail": "id churn, overlap 0% (6 -> 9 id)",
-      "streak": 1,
+      "streak": 2,
       "firstSeen": "2026-07-30T20:16:13.049Z",
-      "lastSeen": "2026-07-30T20:16:13.049Z"
+      "lastSeen": "2026-07-31T20:21:14.985Z"
     }
   }
 }
