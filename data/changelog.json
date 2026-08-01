@@ -1,5 +1,41 @@
 [
   {
+    "date": "2026-08-01",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Google Gemini",
+        "added": [
+          "gemini-robotics-er-2-preview"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "Ollama Cloud",
+        "added": [
+          "deepseek-v4-flash",
+          "minimax-m3",
+          "nemotron-3-ultra",
+          "gpt-oss:20b",
+          "qwen3.5:397b",
+          "deepseek-v4-pro",
+          "gpt-oss:120b",
+          "kimi-k3",
+          "mistral-large-3:675b"
+        ],
+        "removed": [
+          "kimi-k2:1t-cloud",
+          "deepseek-r1:cloud",
+          "deepseek-v3.1:671b-cloud",
+          "glm-4.6:cloud",
+          "gpt-oss:120b-cloud",
+          "qwen3-coder:480b-cloud"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-07-31",
     "providersAdded": [],
     "providersRemoved": [],

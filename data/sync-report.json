@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T20:21:14.985Z",
+  "generatedAt": "2026-08-01T20:10:58.905Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -11,18 +11,18 @@
     "freellm.net": {
       "status": "ok",
       "providers": 24,
-      "models": 355,
+      "models": 359,
       "shapeIssues": [
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "maxOutput",
           "rule": "all-null-collapse",
-          "count": 355,
-          "total": 355,
+          "count": 359,
+          "total": 359,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"maxOutput\": 100% null di 355 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+          "message": "Field \"maxOutput\": 100% null di 359 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
         },
         {
           "severity": "warn",
@@ -98,7 +98,7 @@
   "skipped": [],
   "merged": {
     "providers": 25,
-    "models": 372,
+    "models": 373,
     "shapeIssues": []
   },
   "smokeTest": {
@@ -116,9 +116,9 @@
     "stats": {
       "prevProviders": 25,
       "nextProviders": 25,
-      "prevModels": 371,
-      "nextModels": 372,
-      "totalDropPct": -0.2695417789757413,
+      "prevModels": 366,
+      "nextModels": 373,
+      "totalDropPct": -1.912568306010929,
       "disappeared": [],
       "shrunk": [],
       "churned": [
@@ -144,7 +144,7 @@
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 301,
+            "eligible": 302,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -162,7 +162,7 @@
             ]
           },
           "modality": {
-            "eligible": 243,
+            "eligible": 244,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -212,14 +212,9 @@
           },
           "maxContext": {
             "eligible": 24,
-            "changed": 3,
-            "ratioPct": 12.5,
+            "changed": 2,
+            "ratioPct": 8.333333333333332,
             "examples": [
-              {
-                "label": "cerebras",
-                "from": "262K",
-                "to": "131K (65K on free)"
-              },
               {
                 "label": "kilo-code",
                 "from": "262K",
@@ -243,11 +238,11 @@
       "source": "freellm.net",
       "field": "maxOutput",
       "rule": "all-null-collapse",
-      "count": 355,
-      "total": 355,
+      "count": 359,
+      "total": 359,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"maxOutput\": 100% null di 355 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+      "message": "Field \"maxOutput\": 100% null di 359 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
     },
     {
       "severity": "warn",
@@ -311,25 +306,24 @@
         "slug": "hugging-face",
         "kind": "churned",
         "detail": "id churn, overlap 20% (5 -> 5 id)",
-        "streak": 1,
+        "streak": 2,
         "needs": 3
       },
       {
         "slug": "kilo-code",
         "kind": "churned",
         "detail": "id churn, overlap 33% (6 -> 9 id)",
-        "streak": 1,
-        "needs": 3
-      },
-      {
-        "slug": "ollama-cloud",
-        "kind": "churned",
-        "detail": "id churn, overlap 0% (6 -> 9 id)",
         "streak": 2,
         "needs": 3
       }
     ],
-    "accepted": [],
+    "accepted": [
+      {
+        "slug": "ollama-cloud",
+        "kind": "churned",
+        "detail": "id churn, overlap 0% (6 -> 9 id)"
+      }
+    ],
     "cleared": [],
     "confirmRuns": 3
   }

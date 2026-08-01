@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js - The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser (client-side) or Node.js (server-side).",
       "language": "JavaScript",
-      "stars": 10173,
+      "stars": 10172,
       "forks": 1219,
       "openIssues": 14,
       "license": "AGPL-3.0",
@@ -66,7 +66,7 @@
       "homepage": "https://www.htmly.com",
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
-      "stars": 1351,
+      "stars": 1352,
       "forks": 305,
       "openIssues": 50,
       "license": "GPL-2.0",
@@ -97,14 +97,14 @@
       "language": "PHP",
       "stars": 1219,
       "forks": 1174,
-      "openIssues": 358,
+      "openIssues": 361,
       "license": null,
       "topics": [
         "opensid",
         "sistem-informasi-desa"
       ],
       "archived": false,
-      "pushedAt": "2026-07-31T03:42:52Z",
+      "pushedAt": "2026-07-31T21:23:02Z",
       "createdAt": "2016-05-21T10:55:38Z"
     },
     {
@@ -118,8 +118,8 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 916,
-      "forks": 283,
+      "stars": 919,
+      "forks": 284,
       "openIssues": 7,
       "license": "MIT",
       "topics": [],
@@ -215,7 +215,7 @@
       "language": "Rust",
       "stars": 316,
       "forks": 31,
-      "openIssues": 32,
+      "openIssues": 33,
       "license": "MIT",
       "topics": [
         "ai-agents",
@@ -254,7 +254,7 @@
       "language": "TypeScript",
       "stars": 203,
       "forks": 39,
-      "openIssues": 41,
+      "openIssues": 36,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -272,7 +272,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-07-31T17:05:43Z",
+      "pushedAt": "2026-08-01T16:23:42Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -301,7 +301,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-07-31T16:01:34Z",
+      "pushedAt": "2026-08-01T16:29:11Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -315,7 +315,7 @@
       "homepage": null,
       "description": null,
       "language": "Python",
-      "stars": 156,
+      "stars": 157,
       "forks": 39,
       "openIssues": 0,
       "license": "MIT",
@@ -335,9 +335,9 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 155,
-      "forks": 17,
-      "openIssues": 10,
+      "stars": 156,
+      "forks": 18,
+      "openIssues": 3,
       "license": "Apache-2.0",
       "topics": [
         "ai",
@@ -355,7 +355,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-07-28T18:53:54Z",
+      "pushedAt": "2026-08-01T15:46:11Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -472,7 +472,7 @@
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": null,
-      "stars": 102,
+      "stars": 103,
       "forks": 7,
       "openIssues": 0,
       "license": "MIT",
@@ -533,7 +533,7 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 84,
+      "stars": 88,
       "forks": 11,
       "openIssues": 1,
       "license": "Apache-2.0",
@@ -555,7 +555,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-07-31T11:00:01Z",
+      "pushedAt": "2026-08-01T02:11:17Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -569,7 +569,7 @@
       "homepage": "https://svelte-audio-ui.vercel.app/",
       "description": "A set of accessible and composable Audio UI components.",
       "language": "Svelte",
-      "stars": 78,
+      "stars": 79,
       "forks": 4,
       "openIssues": 10,
       "license": "MIT",
@@ -654,7 +654,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-25T14:58:07Z",
+      "pushedAt": "2026-08-01T02:51:59Z",
       "createdAt": "2026-03-29T13:58:03Z"
     },
     {
@@ -784,7 +784,7 @@
         "typescript"
       ],
       "archived": false,
-      "pushedAt": "2026-07-27T16:32:23Z",
+      "pushedAt": "2026-08-01T11:38:56Z",
       "createdAt": "2026-06-13T11:29:36Z"
     },
     {
@@ -798,7 +798,7 @@
       "homepage": null,
       "description": "A browser-based graphical shell & control plane for a Linux server you own — terminal, files, metrics & AI in one mobile-first pane.",
       "language": "TypeScript",
-      "stars": 42,
+      "stars": 43,
       "forks": 6,
       "openIssues": 0,
       "license": "MIT",
@@ -844,7 +844,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-31T13:46:52Z",
+      "pushedAt": "2026-08-01T02:19:26Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -937,32 +937,6 @@
       "createdAt": "2026-04-09T16:08:42Z"
     },
     {
-      "slug": "ardli-firman/sha-print",
-      "fullName": "ardli-firman/sha-print",
-      "name": "sha-print",
-      "owner": "ardli-firman",
-      "ownerUrl": "https://github.com/ardli-firman",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/48121202?v=4",
-      "url": "https://github.com/ardli-firman/sha-print",
-      "homepage": null,
-      "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
-      "language": "C#",
-      "stars": 33,
-      "forks": 13,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "desktop-app",
-        "printer",
-        "sharing",
-        "sharing-printer",
-        "windows"
-      ],
-      "archived": true,
-      "pushedAt": "2026-07-18T03:40:27Z",
-      "createdAt": "2026-05-23T05:37:35Z"
-    },
-    {
       "slug": "pendig/rute-bayar",
       "fullName": "pendig/rute-bayar",
       "name": "rute-bayar",
@@ -989,8 +963,34 @@
         "xendit"
       ],
       "archived": false,
-      "pushedAt": "2026-07-17T22:44:07Z",
+      "pushedAt": "2026-07-31T22:43:55Z",
       "createdAt": "2026-05-05T01:16:45Z"
+    },
+    {
+      "slug": "ardli-firman/sha-print",
+      "fullName": "ardli-firman/sha-print",
+      "name": "sha-print",
+      "owner": "ardli-firman",
+      "ownerUrl": "https://github.com/ardli-firman",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/48121202?v=4",
+      "url": "https://github.com/ardli-firman/sha-print",
+      "homepage": null,
+      "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
+      "language": "C#",
+      "stars": 33,
+      "forks": 13,
+      "openIssues": 0,
+      "license": null,
+      "topics": [
+        "desktop-app",
+        "printer",
+        "sharing",
+        "sharing-printer",
+        "windows"
+      ],
+      "archived": true,
+      "pushedAt": "2026-07-18T03:40:27Z",
+      "createdAt": "2026-05-23T05:37:35Z"
     },
     {
       "slug": "galpratama/agent-cli",
@@ -1121,7 +1121,7 @@
         "workspace"
       ],
       "archived": false,
-      "pushedAt": "2026-07-17T09:32:16Z",
+      "pushedAt": "2026-08-01T15:35:59Z",
       "createdAt": "2026-04-29T18:48:11Z"
     },
     {
@@ -1141,8 +1141,39 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-31T06:53:28Z",
+      "pushedAt": "2026-08-01T15:13:28Z",
       "createdAt": "2026-06-09T15:06:10Z"
+    },
+    {
+      "slug": "rizukirr/vibekit",
+      "fullName": "rizukirr/vibekit",
+      "name": "vibekit",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/vibekit",
+      "homepage": null,
+      "description": "Vibe-coding pipeline with halt-on-defect guardrails. RTCO-compressed briefs, evidence-based verification, bounded autonomous re-runs. CC / Pi / Codex / OpenCode / Gemini CLI.",
+      "language": "JavaScript",
+      "stars": 17,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "claude-code",
+        "claude-plugin",
+        "codex",
+        "codex-plugin",
+        "opencode",
+        "opencode-plugin",
+        "pi-mono",
+        "plugin",
+        "vibe-coding",
+        "vibecoding"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-01T07:47:35Z",
+      "createdAt": "2026-04-21T15:17:02Z"
     },
     {
       "slug": "rahmanef63/control-room",
@@ -1183,37 +1214,6 @@
       "archived": false,
       "pushedAt": "2026-05-21T16:51:06Z",
       "createdAt": "2026-03-28T09:34:42Z"
-    },
-    {
-      "slug": "rizukirr/vibekit",
-      "fullName": "rizukirr/vibekit",
-      "name": "vibekit",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/vibekit",
-      "homepage": null,
-      "description": "Vibe-coding pipeline with halt-on-defect guardrails. RTCO-compressed briefs, evidence-based verification, bounded autonomous re-runs. CC / Pi / Codex / OpenCode / Gemini CLI.",
-      "language": "JavaScript",
-      "stars": 16,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "claude-code",
-        "claude-plugin",
-        "codex",
-        "codex-plugin",
-        "opencode",
-        "opencode-plugin",
-        "pi-mono",
-        "plugin",
-        "vibe-coding",
-        "vibecoding"
-      ],
-      "archived": false,
-      "pushedAt": "2026-07-31T16:51:32Z",
-      "createdAt": "2026-04-21T15:17:02Z"
     },
     {
       "slug": "muhammadhasbiashshiddieqy/openclawn",
@@ -1609,6 +1609,26 @@
       "createdAt": "2026-06-04T12:49:01Z"
     },
     {
+      "slug": "raymondchins/tokengratis-id",
+      "fullName": "raymondchins/tokengratis-id",
+      "name": "tokengratis-id",
+      "owner": "raymondchins",
+      "ownerUrl": "https://github.com/raymondchins",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
+      "url": "https://github.com/raymondchins/tokengratis-id",
+      "homepage": "https://tokengratis.id",
+      "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
+      "language": "JavaScript",
+      "stars": 6,
+      "forks": 0,
+      "openIssues": 2,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-07-31T20:21:35Z",
+      "createdAt": "2026-06-01T10:04:41Z"
+    },
+    {
       "slug": "rizukirr/apic",
       "fullName": "rizukirr/apic",
       "name": "apic",
@@ -1635,26 +1655,6 @@
       "archived": false,
       "pushedAt": "2026-07-31T15:51:15Z",
       "createdAt": "2026-06-04T12:15:07Z"
-    },
-    {
-      "slug": "raymondchins/tokengratis-id",
-      "fullName": "raymondchins/tokengratis-id",
-      "name": "tokengratis-id",
-      "owner": "raymondchins",
-      "ownerUrl": "https://github.com/raymondchins",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
-      "url": "https://github.com/raymondchins/tokengratis-id",
-      "homepage": "https://tokengratis.id",
-      "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
-      "language": "JavaScript",
-      "stars": 6,
-      "forks": 0,
-      "openIssues": 2,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-07-30T20:16:31Z",
-      "createdAt": "2026-06-01T10:04:41Z"
     },
     {
       "slug": "aofsnorth/artidor",
@@ -1719,8 +1719,8 @@
       "description": "Next.js security middleware with Redis-backed threat scoring, honeypot decoy routing, and Python ML engine for advanced detection.",
       "language": "TypeScript",
       "stars": 5,
-      "forks": 0,
-      "openIssues": 0,
+      "forks": 1,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "ai-security",
@@ -1777,7 +1777,7 @@
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-30T16:10:53Z",
+      "pushedAt": "2026-08-01T16:55:16Z",
       "createdAt": "2025-11-22T11:52:35Z"
     },
     {
@@ -1848,6 +1848,26 @@
       "createdAt": "2026-06-06T00:23:26Z"
     },
     {
+      "slug": "wauputr4/hermex",
+      "fullName": "wauputr4/hermex",
+      "name": "hermex",
+      "owner": "wauputr4",
+      "ownerUrl": "https://github.com/wauputr4",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/103489788?v=4",
+      "url": "https://github.com/wauputr4/hermex",
+      "homepage": "https://hermex.fun",
+      "description": "Astrology learning game and reflective Hermes AI MVP for hermex.fun",
+      "language": "Python",
+      "stars": 3,
+      "forks": 0,
+      "openIssues": 1,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-08-01T12:42:11Z",
+      "createdAt": "2026-05-28T12:17:41Z"
+    },
+    {
       "slug": "faisalaffan/ragi-instant",
       "fullName": "faisalaffan/ragi-instant",
       "name": "ragi-instant",
@@ -1881,26 +1901,6 @@
       "archived": false,
       "pushedAt": "2026-07-28T10:24:34Z",
       "createdAt": "2026-05-16T13:54:21Z"
-    },
-    {
-      "slug": "wauputr4/hermex",
-      "fullName": "wauputr4/hermex",
-      "name": "hermex",
-      "owner": "wauputr4",
-      "ownerUrl": "https://github.com/wauputr4",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/103489788?v=4",
-      "url": "https://github.com/wauputr4/hermex",
-      "homepage": "https://hermex.fun",
-      "description": "Astrology learning game and reflective Hermes AI MVP for hermex.fun",
-      "language": "Python",
-      "stars": 3,
-      "forks": 0,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-06-06T19:03:01Z",
-      "createdAt": "2026-05-28T12:17:41Z"
     },
     {
       "slug": "jutionck/tahlil-tracker",
@@ -2007,14 +2007,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-07-31T20:21:21.416Z"
+      "syncedAt": "2026-08-01T20:11:03.832Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-07-31T20:21:21.416Z"
+      "syncedAt": "2026-08-01T20:11:03.832Z"
     }
   ],
-  "syncedAt": "2026-07-31T20:21:21.416Z",
+  "syncedAt": "2026-08-01T20:11:03.832Z",
   "count": 76
 }
