@@ -1,21 +1,4 @@
 {
   "version": 1,
-  "entries": {
-    "hugging-face": {
-      "kind": "churned",
-      "magnitude": 5,
-      "detail": "id churn, overlap 20% (5 -> 5 id)",
-      "streak": 2,
-      "firstSeen": "2026-07-30T20:16:13.049Z",
-      "lastSeen": "2026-08-01T20:10:58.905Z"
-    },
-    "kilo-code": {
-      "kind": "churned",
-      "magnitude": 9,
-      "detail": "id churn, overlap 33% (6 -> 9 id)",
-      "streak": 2,
-      "firstSeen": "2026-07-30T20:16:13.049Z",
-      "lastSeen": "2026-08-01T20:10:58.905Z"
-    }
-  }
+  "entries": {}
 }

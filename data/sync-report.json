@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-01T20:10:58.905Z",
+  "generatedAt": "2026-08-02T20:11:09.975Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -109,16 +109,15 @@
     "ok": false,
     "errors": [
       "provider \"hugging-face\" model ids churned 80.0% at same-ish count (overlap 20.0%, 5→5 ids) — possible source corruption",
-      "provider \"kilo-code\" model ids churned 66.7% at same-ish count (overlap 33.3%, 6→9 ids) — possible source corruption",
-      "provider \"ollama-cloud\" model ids churned 100.0% at same-ish count (overlap 0.0%, 6→9 ids) — possible source corruption"
+      "provider \"kilo-code\" model ids churned 66.7% at same-ish count (overlap 33.3%, 6→9 ids) — possible source corruption"
     ],
     "warnings": [],
     "stats": {
       "prevProviders": 25,
       "nextProviders": 25,
-      "prevModels": 366,
+      "prevModels": 370,
       "nextModels": 373,
-      "totalDropPct": -1.912568306010929,
+      "totalDropPct": -0.8108108108108109,
       "disappeared": [],
       "shrunk": [],
       "churned": [
@@ -133,26 +132,20 @@
           "overlapPct": 33.33333333333333,
           "prevIds": 6,
           "nextIds": 9
-        },
-        {
-          "slug": "ollama-cloud",
-          "overlapPct": 0,
-          "prevIds": 6,
-          "nextIds": 9
         }
       ],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 302,
+            "eligible": 314,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "maxOutput": {
-            "eligible": 152,
+            "eligible": 161,
             "changed": 1,
-            "ratioPct": 0.6578947368421052,
+            "ratioPct": 0.6211180124223602,
             "examples": [
               {
                 "label": "kilo-code/nvidia/nemotron-3-super-120b-a12b:free",
@@ -162,13 +155,13 @@
             ]
           },
           "modality": {
-            "eligible": 244,
+            "eligible": 253,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "rateLimit": {
-            "eligible": 245,
+            "eligible": 254,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -212,16 +205,11 @@
           },
           "maxContext": {
             "eligible": 24,
-            "changed": 2,
-            "ratioPct": 8.333333333333332,
+            "changed": 1,
+            "ratioPct": 4.166666666666666,
             "examples": [
               {
                 "label": "kilo-code",
-                "from": "262K",
-                "to": "1M"
-              },
-              {
-                "label": "ollama-cloud",
                 "from": "262K",
                 "to": "1M"
               }
@@ -301,27 +289,17 @@
     }
   ],
   "quarantine": {
-    "heldProviders": [
+    "heldProviders": [],
+    "accepted": [
       {
         "slug": "hugging-face",
         "kind": "churned",
-        "detail": "id churn, overlap 20% (5 -> 5 id)",
-        "streak": 2,
-        "needs": 3
+        "detail": "id churn, overlap 20% (5 -> 5 id)"
       },
       {
         "slug": "kilo-code",
         "kind": "churned",
-        "detail": "id churn, overlap 33% (6 -> 9 id)",
-        "streak": 2,
-        "needs": 3
-      }
-    ],
-    "accepted": [
-      {
-        "slug": "ollama-cloud",
-        "kind": "churned",
-        "detail": "id churn, overlap 0% (6 -> 9 id)"
+        "detail": "id churn, overlap 33% (6 -> 9 id)"
       }
     ],
     "cleared": [],

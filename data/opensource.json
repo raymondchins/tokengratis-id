@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js - The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser (client-side) or Node.js (server-side).",
       "language": "JavaScript",
-      "stars": 10172,
+      "stars": 10173,
       "forks": 1219,
       "openIssues": 14,
       "license": "AGPL-3.0",
@@ -66,7 +66,7 @@
       "homepage": "https://www.htmly.com",
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
-      "stars": 1352,
+      "stars": 1353,
       "forks": 305,
       "openIssues": 50,
       "license": "GPL-2.0",
@@ -96,8 +96,8 @@
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
       "stars": 1219,
-      "forks": 1174,
-      "openIssues": 361,
+      "forks": 1175,
+      "openIssues": 362,
       "license": null,
       "topics": [
         "opensid",
@@ -118,8 +118,8 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 919,
-      "forks": 284,
+      "stars": 921,
+      "forks": 285,
       "openIssues": 7,
       "license": "MIT",
       "topics": [],
@@ -138,7 +138,7 @@
       "homepage": null,
       "description": "Package Laravel yang berisi data Provinsi, Kabupaten/Kota, dan Kecamatan/Desa di seluruh Indonesia.",
       "language": "PHP",
-      "stars": 674,
+      "stars": 675,
       "forks": 210,
       "openIssues": 3,
       "license": "MIT",
@@ -213,9 +213,9 @@
       "homepage": "https://omni.weekndlabs.com",
       "description": "Noise-canceling context and long-term memory for your AI agent. Stop paying Claude to read 10,000 lines of terminal noise like a headphone for AI agent",
       "language": "Rust",
-      "stars": 316,
+      "stars": 317,
       "forks": 31,
-      "openIssues": 33,
+      "openIssues": 18,
       "license": "MIT",
       "topics": [
         "ai-agents",
@@ -238,7 +238,7 @@
         "token-savings"
       ],
       "archived": false,
-      "pushedAt": "2026-07-29T22:39:08Z",
+      "pushedAt": "2026-08-02T19:04:08Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -254,7 +254,7 @@
       "language": "TypeScript",
       "stars": 203,
       "forks": 39,
-      "openIssues": 36,
+      "openIssues": 34,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -272,7 +272,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-08-01T16:23:42Z",
+      "pushedAt": "2026-08-02T17:50:36Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -286,7 +286,7 @@
       "homepage": "https://www.erdbuilderpro.com",
       "description": "ERD Builder Pro is a database design and documentation tool for developers. Build ERDs, flowcharts, notes, and drawings — all in one workspace",
       "language": "TypeScript",
-      "stars": 190,
+      "stars": 191,
       "forks": 37,
       "openIssues": 0,
       "license": null,
@@ -301,28 +301,8 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-08-01T16:29:11Z",
+      "pushedAt": "2026-08-02T16:45:03Z",
       "createdAt": "2026-03-30T00:18:38Z"
-    },
-    {
-      "slug": "mallexibra-dev/clipforge",
-      "fullName": "mallexibra-dev/clipforge",
-      "name": "clipforge",
-      "owner": "mallexibra-dev",
-      "ownerUrl": "https://github.com/mallexibra-dev",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/210313485?v=4",
-      "url": "https://github.com/mallexibra-dev/clipforge",
-      "homepage": null,
-      "description": null,
-      "language": "Python",
-      "stars": 157,
-      "forks": 39,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-06-26T05:38:51Z",
-      "createdAt": "2026-06-20T09:48:06Z"
     },
     {
       "slug": "codecoradev/uteke",
@@ -335,8 +315,8 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 156,
-      "forks": 18,
+      "stars": 167,
+      "forks": 19,
       "openIssues": 3,
       "license": "Apache-2.0",
       "topics": [
@@ -359,6 +339,26 @@
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
+      "slug": "mallexibra-dev/clipforge",
+      "fullName": "mallexibra-dev/clipforge",
+      "name": "clipforge",
+      "owner": "mallexibra-dev",
+      "ownerUrl": "https://github.com/mallexibra-dev",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/210313485?v=4",
+      "url": "https://github.com/mallexibra-dev/clipforge",
+      "homepage": null,
+      "description": null,
+      "language": "Python",
+      "stars": 158,
+      "forks": 39,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-06-26T05:38:51Z",
+      "createdAt": "2026-06-20T09:48:06Z"
+    },
+    {
       "slug": "hendisantika/online-banking-angular-springboot-mysql",
       "fullName": "hendisantika/Online-banking-angular-springboot-mysql",
       "name": "Online-banking-angular-springboot-mysql",
@@ -370,13 +370,37 @@
       "description": "Online banking angular springboot mysql",
       "language": "Java",
       "stars": 132,
-      "forks": 97,
+      "forks": 98,
       "openIssues": 0,
       "license": null,
       "topics": [],
       "archived": false,
       "pushedAt": "2026-07-30T02:30:19Z",
       "createdAt": "2018-08-06T13:38:19Z"
+    },
+    {
+      "slug": "ilhamrisky/pddikti-kemdikbud-api",
+      "fullName": "IlhamriSKY/PDDIKTI-kemdikbud-API",
+      "name": "PDDIKTI-kemdikbud-API",
+      "owner": "IlhamriSKY",
+      "ownerUrl": "https://github.com/IlhamriSKY",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/18723904?v=4",
+      "url": "https://github.com/IlhamriSKY/PDDIKTI-kemdikbud-API",
+      "homepage": "https://pddikti.kemdiktisaintek.go.id/",
+      "description": "Unofficial Python 3 API wrapper to retrieve data from PDDIKTI Kemdikbudristek.",
+      "language": "Python",
+      "stars": 115,
+      "forks": 25,
+      "openIssues": 0,
+      "license": null,
+      "topics": [
+        "api-wrapper",
+        "package",
+        "python3"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-02T14:59:26Z",
+      "createdAt": "2021-04-21T07:59:57Z"
     },
     {
       "slug": "jipraks/kasirgratisan",
@@ -391,36 +415,12 @@
       "language": "TypeScript",
       "stars": 115,
       "forks": 59,
-      "openIssues": 3,
+      "openIssues": 4,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-28T08:19:21Z",
+      "pushedAt": "2026-08-01T23:44:05Z",
       "createdAt": "2026-02-12T11:02:43Z"
-    },
-    {
-      "slug": "ilhamrisky/pddikti-kemdikbud-api",
-      "fullName": "IlhamriSKY/PDDIKTI-kemdikbud-API",
-      "name": "PDDIKTI-kemdikbud-API",
-      "owner": "IlhamriSKY",
-      "ownerUrl": "https://github.com/IlhamriSKY",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/18723904?v=4",
-      "url": "https://github.com/IlhamriSKY/PDDIKTI-kemdikbud-API",
-      "homepage": "https://pddikti.kemdiktisaintek.go.id/",
-      "description": "Unofficial Python 3 API wrapper to retrieve data from PDDIKTI Kemdikbudristek.",
-      "language": "Python",
-      "stars": 114,
-      "forks": 25,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "api-wrapper",
-        "package",
-        "python3"
-      ],
-      "archived": false,
-      "pushedAt": "2025-07-30T13:28:14Z",
-      "createdAt": "2021-04-21T07:59:57Z"
     },
     {
       "slug": "mydisha/keirouter",
@@ -435,7 +435,7 @@
       "language": "Go",
       "stars": 110,
       "forks": 39,
-      "openIssues": 4,
+      "openIssues": 5,
       "license": "MIT",
       "topics": [
         "ai",
@@ -458,7 +458,7 @@
         "zai"
       ],
       "archived": false,
-      "pushedAt": "2026-07-30T10:08:38Z",
+      "pushedAt": "2026-08-02T09:20:55Z",
       "createdAt": "2026-05-31T09:02:50Z"
     },
     {
@@ -472,7 +472,7 @@
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": null,
-      "stars": 103,
+      "stars": 105,
       "forks": 7,
       "openIssues": 0,
       "license": "MIT",
@@ -533,7 +533,7 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 88,
+      "stars": 89,
       "forks": 11,
       "openIssues": 1,
       "license": "Apache-2.0",
@@ -555,7 +555,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-08-01T02:11:17Z",
+      "pushedAt": "2026-08-02T18:07:35Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -617,8 +617,8 @@
       "homepage": "https://bansos.dev",
       "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
       "language": "Svelte",
-      "stars": 53,
-      "forks": 11,
+      "stars": 56,
+      "forks": 13,
       "openIssues": 3,
       "license": "MIT",
       "topics": [
@@ -634,7 +634,7 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-07-30T08:04:40Z",
+      "pushedAt": "2026-08-02T12:22:53Z",
       "createdAt": "2026-06-11T13:28:54Z"
     },
     {
@@ -654,7 +654,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-01T02:51:59Z",
+      "pushedAt": "2026-08-02T06:47:23Z",
       "createdAt": "2026-03-29T13:58:03Z"
     },
     {
@@ -723,6 +723,46 @@
       "createdAt": "2026-06-18T03:59:11Z"
     },
     {
+      "slug": "rahmanef63/os-vps",
+      "fullName": "rahmanef63/os-vps",
+      "name": "os-vps",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/os-vps",
+      "homepage": "https://os.rahmanef.com",
+      "description": "A browser-based graphical shell & control plane for a Linux server you own — terminal, files, metrics & AI in one mobile-first pane.",
+      "language": "TypeScript",
+      "stars": 46,
+      "forks": 7,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "browser-shell",
+        "control-plane",
+        "file-manager",
+        "homelab",
+        "mobile-first",
+        "nextjs",
+        "playwright",
+        "pty",
+        "react",
+        "self-hosted",
+        "server-management",
+        "shadcn-ui",
+        "sysadmin",
+        "tailwindcss",
+        "terminal",
+        "typescript",
+        "vps",
+        "web-desktop",
+        "web-terminal"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-02T10:09:16Z",
+      "createdAt": "2026-05-29T17:44:06Z"
+    },
+    {
       "slug": "andriawan/andkasir",
       "fullName": "andriawan/AndKasir",
       "name": "AndKasir",
@@ -788,46 +828,6 @@
       "createdAt": "2026-06-13T11:29:36Z"
     },
     {
-      "slug": "rahmanef63/os-vps",
-      "fullName": "rahmanef63/os-vps",
-      "name": "os-vps",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/os-vps",
-      "homepage": null,
-      "description": "A browser-based graphical shell & control plane for a Linux server you own — terminal, files, metrics & AI in one mobile-first pane.",
-      "language": "TypeScript",
-      "stars": 43,
-      "forks": 6,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "browser-shell",
-        "control-plane",
-        "file-manager",
-        "homelab",
-        "mobile-first",
-        "nextjs",
-        "playwright",
-        "pty",
-        "react",
-        "self-hosted",
-        "server-management",
-        "shadcn-ui",
-        "sysadmin",
-        "tailwindcss",
-        "terminal",
-        "typescript",
-        "vps",
-        "web-desktop",
-        "web-terminal"
-      ],
-      "archived": false,
-      "pushedAt": "2026-07-30T17:41:29Z",
-      "createdAt": "2026-05-29T17:44:06Z"
-    },
-    {
       "slug": "firewalker06/tycho",
       "fullName": "firewalker06/tycho",
       "name": "tycho",
@@ -844,7 +844,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-01T02:19:26Z",
+      "pushedAt": "2026-08-02T15:09:56Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -1057,7 +1057,7 @@
       "homepage": null,
       "description": "Minimal aesthetic arch linux + hyprland dotfiles",
       "language": "Shell",
-      "stars": 20,
+      "stars": 21,
       "forks": 3,
       "openIssues": 0,
       "license": null,
@@ -1072,6 +1072,37 @@
       "archived": false,
       "pushedAt": "2026-07-25T16:12:01Z",
       "createdAt": "2025-10-04T10:27:45Z"
+    },
+    {
+      "slug": "rahmanef63/open-silong",
+      "fullName": "rahmanef63/open-silong",
+      "name": "open-silong",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/open-silong",
+      "homepage": "https://silong-os.vercel.app/",
+      "description": "An open-source Notion-inspired workspace for teams and personal use",
+      "language": "TypeScript",
+      "stars": 20,
+      "forks": 4,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "block-editor",
+        "convex",
+        "indonesia",
+        "nextjs",
+        "notion-alternative",
+        "notion-clone",
+        "open-source",
+        "react",
+        "self-hosted",
+        "workspace"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-02T10:09:12Z",
+      "createdAt": "2026-04-29T18:48:11Z"
     },
     {
       "slug": "rayasabari/yntk-ts",
@@ -1094,37 +1125,6 @@
       "createdAt": "2026-04-08T09:27:49Z"
     },
     {
-      "slug": "rahmanef63/open-silong",
-      "fullName": "rahmanef63/open-silong",
-      "name": "open-silong",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/open-silong",
-      "homepage": "https://silong-os.vercel.app/",
-      "description": "An open-source Notion-inspired workspace for teams and personal use",
-      "language": "TypeScript",
-      "stars": 19,
-      "forks": 4,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "block-editor",
-        "convex",
-        "indonesia",
-        "nextjs",
-        "notion-alternative",
-        "notion-clone",
-        "open-source",
-        "react",
-        "self-hosted",
-        "workspace"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-01T15:35:59Z",
-      "createdAt": "2026-04-29T18:48:11Z"
-    },
-    {
       "slug": "rudycity/superagent",
       "fullName": "RudyCity/superagent",
       "name": "superagent",
@@ -1141,8 +1141,41 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-01T15:13:28Z",
+      "pushedAt": "2026-08-02T14:29:11Z",
       "createdAt": "2026-06-09T15:06:10Z"
+    },
+    {
+      "slug": "rahmanef63/control-room",
+      "fullName": "rahmanef63/control-room",
+      "name": "control-room",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/control-room",
+      "homepage": null,
+      "description": "Mobile-first PWA for driving a single VPS from the browser — up to 16 concurrent terminals, AI agent launchers, host ops and audit. A tmux alternative for vibe coders.",
+      "language": "TypeScript",
+      "stars": 17,
+      "forks": 3,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "ai-agents",
+        "devops",
+        "mobile-first",
+        "nextjs",
+        "nodejs",
+        "pty",
+        "pwa",
+        "self-hosted",
+        "terminal",
+        "tmux-alternative",
+        "vps",
+        "xterm"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-02T10:08:46Z",
+      "createdAt": "2026-03-20T14:25:48Z"
     },
     {
       "slug": "rizukirr/vibekit",
@@ -1174,26 +1207,6 @@
       "archived": false,
       "pushedAt": "2026-08-01T07:47:35Z",
       "createdAt": "2026-04-21T15:17:02Z"
-    },
-    {
-      "slug": "rahmanef63/control-room",
-      "fullName": "rahmanef63/control-room",
-      "name": "control-room",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/control-room",
-      "homepage": null,
-      "description": "terminals vps for vibe coders, tmux alternative",
-      "language": "TypeScript",
-      "stars": 17,
-      "forks": 3,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-07-26T13:00:08Z",
-      "createdAt": "2026-03-20T14:25:48Z"
     },
     {
       "slug": "rafiulm/warungos",
@@ -1232,8 +1245,41 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-30T02:54:20Z",
+      "pushedAt": "2026-08-02T18:52:32Z",
       "createdAt": "2026-06-15T14:35:14Z"
+    },
+    {
+      "slug": "rahmanef63/si-coder-agent",
+      "fullName": "rahmanef63/si-coder-agent",
+      "name": "si-coder-agent",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/si-coder-agent",
+      "homepage": null,
+      "description": "Zero-human full-stack deployment skill bundle for AI agents — GitHub + Dokploy + Convex (self-hosted & Cloud) + Vercel + Hostinger DNS, via modular /sc-* slash commands.",
+      "language": "JavaScript",
+      "stars": 13,
+      "forks": 2,
+      "openIssues": 1,
+      "license": "MIT",
+      "topics": [
+        "ai-agent",
+        "claude-code",
+        "claude-skills",
+        "convex",
+        "deployment-automation",
+        "devops",
+        "dokploy",
+        "hostinger",
+        "nextjs",
+        "self-hosted",
+        "vercel",
+        "zero-human"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-02T10:09:14Z",
+      "createdAt": "2026-03-18T18:38:41Z"
     },
     {
       "slug": "muslimtify-org/muslimtify",
@@ -1266,39 +1312,6 @@
       "archived": false,
       "pushedAt": "2026-07-30T09:50:37Z",
       "createdAt": "2026-02-23T13:59:12Z"
-    },
-    {
-      "slug": "rahmanef63/si-coder-agent",
-      "fullName": "rahmanef63/si-coder-agent",
-      "name": "si-coder-agent",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/si-coder-agent",
-      "homepage": null,
-      "description": "Zero-human full-stack deployment skill bundle for AI agents — GitHub + Dokploy + Convex (self-hosted & Cloud) + Vercel + Hostinger DNS, via modular /sc-* slash commands.",
-      "language": "JavaScript",
-      "stars": 13,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "ai-agent",
-        "claude-code",
-        "claude-skills",
-        "convex",
-        "deployment-automation",
-        "devops",
-        "dokploy",
-        "hostinger",
-        "nextjs",
-        "self-hosted",
-        "vercel",
-        "zero-human"
-      ],
-      "archived": false,
-      "pushedAt": "2026-07-10T14:41:07Z",
-      "createdAt": "2026-03-18T18:38:41Z"
     },
     {
       "slug": "rizukirr/numc",
@@ -1352,6 +1365,26 @@
       "createdAt": "2026-06-12T01:36:09Z"
     },
     {
+      "slug": "ahmadghaisanfad2/absen-kelas",
+      "fullName": "ahmadghaisanfad2/absen-kelas",
+      "name": "absen-kelas",
+      "owner": "ahmadghaisanfad2",
+      "ownerUrl": "https://github.com/ahmadghaisanfad2",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/82021575?v=4",
+      "url": "https://github.com/ahmadghaisanfad2/absen-kelas",
+      "homepage": null,
+      "description": null,
+      "language": "TypeScript",
+      "stars": 11,
+      "forks": 4,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-06-11T16:34:43Z",
+      "createdAt": "2026-05-31T14:34:04Z"
+    },
+    {
       "slug": "xpajonx/openempiric",
       "fullName": "xpajonx/openempiric",
       "name": "openempiric",
@@ -1364,7 +1397,7 @@
       "language": "Python",
       "stars": 10,
       "forks": 1,
-      "openIssues": 0,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "agent-memory",
@@ -1384,28 +1417,8 @@
         "semantic-search"
       ],
       "archived": false,
-      "pushedAt": "2026-07-31T11:45:16Z",
+      "pushedAt": "2026-08-01T23:39:44Z",
       "createdAt": "2026-06-02T04:21:59Z"
-    },
-    {
-      "slug": "ahmadghaisanfad2/absen-kelas",
-      "fullName": "ahmadghaisanfad2/absen-kelas",
-      "name": "absen-kelas",
-      "owner": "ahmadghaisanfad2",
-      "ownerUrl": "https://github.com/ahmadghaisanfad2",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/82021575?v=4",
-      "url": "https://github.com/ahmadghaisanfad2/absen-kelas",
-      "homepage": null,
-      "description": null,
-      "language": "TypeScript",
-      "stars": 10,
-      "forks": 4,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-06-11T16:34:43Z",
-      "createdAt": "2026-05-31T14:34:04Z"
     },
     {
       "slug": "hellodit/openmasjid",
@@ -1489,7 +1502,7 @@
         "webgl"
       ],
       "archived": false,
-      "pushedAt": "2026-07-16T15:18:45Z",
+      "pushedAt": "2026-08-02T10:08:50Z",
       "createdAt": "2026-07-10T13:57:01Z"
     },
     {
@@ -1621,11 +1634,11 @@
       "language": "JavaScript",
       "stars": 6,
       "forks": 0,
-      "openIssues": 2,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-31T20:21:35Z",
+      "pushedAt": "2026-08-02T09:39:57Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1773,11 +1786,11 @@
       "language": "C",
       "stars": 4,
       "forks": 1,
-      "openIssues": 0,
-      "license": null,
+      "openIssues": 11,
+      "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-01T16:55:16Z",
+      "pushedAt": "2026-08-02T14:54:02Z",
       "createdAt": "2025-11-22T11:52:35Z"
     },
     {
@@ -1860,11 +1873,11 @@
       "language": "Python",
       "stars": 3,
       "forks": 0,
-      "openIssues": 1,
+      "openIssues": 2,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-01T12:42:11Z",
+      "pushedAt": "2026-08-02T17:31:44Z",
       "createdAt": "2026-05-28T12:17:41Z"
     },
     {
@@ -1935,11 +1948,11 @@
       "language": "Rust",
       "stars": 1,
       "forks": 0,
-      "openIssues": 13,
+      "openIssues": 14,
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-07-28T09:58:19Z",
+      "pushedAt": "2026-08-02T07:58:39Z",
       "createdAt": "2026-05-31T08:23:44Z"
     },
     {
@@ -2007,14 +2020,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-08-01T20:11:03.832Z"
+      "syncedAt": "2026-08-02T20:11:16.135Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-08-01T20:11:03.832Z"
+      "syncedAt": "2026-08-02T20:11:16.135Z"
     }
   ],
-  "syncedAt": "2026-08-01T20:11:03.832Z",
+  "syncedAt": "2026-08-02T20:11:16.135Z",
   "count": 76
 }
