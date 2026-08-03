@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T20:11:09.975Z",
+  "generatedAt": "2026-08-03T20:27:36.275Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -11,18 +11,18 @@
     "freellm.net": {
       "status": "ok",
       "providers": 24,
-      "models": 359,
+      "models": 356,
       "shapeIssues": [
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "maxOutput",
           "rule": "all-null-collapse",
-          "count": 359,
-          "total": 359,
+          "count": 356,
+          "total": 356,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"maxOutput\": 100% null di 359 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+          "message": "Field \"maxOutput\": 100% null di 356 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
         },
         {
           "severity": "warn",
@@ -106,62 +106,40 @@
     "warnings": []
   },
   "diffGuard": {
-    "ok": false,
-    "errors": [
-      "provider \"hugging-face\" model ids churned 80.0% at same-ish count (overlap 20.0%, 5→5 ids) — possible source corruption",
-      "provider \"kilo-code\" model ids churned 66.7% at same-ish count (overlap 33.3%, 6→9 ids) — possible source corruption"
-    ],
+    "ok": true,
+    "errors": [],
     "warnings": [],
     "stats": {
       "prevProviders": 25,
       "nextProviders": 25,
-      "prevModels": 370,
+      "prevModels": 373,
       "nextModels": 373,
-      "totalDropPct": -0.8108108108108109,
+      "totalDropPct": 0,
       "disappeared": [],
       "shrunk": [],
-      "churned": [
-        {
-          "slug": "hugging-face",
-          "overlapPct": 20,
-          "prevIds": 5,
-          "nextIds": 5
-        },
-        {
-          "slug": "kilo-code",
-          "overlapPct": 33.33333333333333,
-          "prevIds": 6,
-          "nextIds": 9
-        }
-      ],
+      "churned": [],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 314,
+            "eligible": 325,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "maxOutput": {
-            "eligible": 161,
-            "changed": 1,
-            "ratioPct": 0.6211180124223602,
-            "examples": [
-              {
-                "label": "kilo-code/nvidia/nemotron-3-super-120b-a12b:free",
-                "from": "32K",
-                "to": "262K"
-              }
-            ]
+            "eligible": 172,
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           },
           "modality": {
-            "eligible": 253,
+            "eligible": 264,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "rateLimit": {
-            "eligible": 254,
+            "eligible": 265,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -170,20 +148,9 @@
         "provider": {
           "description": {
             "eligible": 21,
-            "changed": 2,
-            "ratioPct": 9.523809523809524,
-            "examples": [
-              {
-                "label": "hugging-face",
-                "from": "100K monthly Inference Provider credits for free users. Routes to Fireworks, Together, Hyperbolic, Nebius, Novita, DeepInfra and others. Thousands of models.",
-                "to": "$0.10/month in Inference Provider credits for free users (subject to change). Routes to Fireworks, Together, Hyperbolic, Nebius, Novita, DeepInfra and others. Thousands of models."
-              },
-              {
-                "label": "kilo-code",
-                "from": "Free models with no credit card required. kilo-auto/free auto-router routes to minimax/minimax-m2.5:free (80%) and stepfun/step-3.5-flash:free (20%).",
-                "to": "Free models with no credit card required. kilo-auto/free auto-router dynamically routes to models in the free pool."
-              }
-            ]
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           },
           "baseUrl": {
             "eligible": 19,
@@ -193,27 +160,15 @@
           },
           "freeLimit": {
             "eligible": 12,
-            "changed": 1,
-            "ratioPct": 8.333333333333332,
-            "examples": [
-              {
-                "label": "hugging-face",
-                "from": "100K kredit/bln",
-                "to": "$0.10 kredit"
-              }
-            ]
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           },
           "maxContext": {
             "eligible": 24,
-            "changed": 1,
-            "ratioPct": 4.166666666666666,
-            "examples": [
-              {
-                "label": "kilo-code",
-                "from": "262K",
-                "to": "1M"
-              }
-            ]
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           }
         }
       }
@@ -226,11 +181,11 @@
       "source": "freellm.net",
       "field": "maxOutput",
       "rule": "all-null-collapse",
-      "count": 359,
-      "total": 359,
+      "count": 356,
+      "total": 356,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"maxOutput\": 100% null di 359 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+      "message": "Field \"maxOutput\": 100% null di 356 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
     },
     {
       "severity": "warn",
@@ -290,18 +245,7 @@
   ],
   "quarantine": {
     "heldProviders": [],
-    "accepted": [
-      {
-        "slug": "hugging-face",
-        "kind": "churned",
-        "detail": "id churn, overlap 20% (5 -> 5 id)"
-      },
-      {
-        "slug": "kilo-code",
-        "kind": "churned",
-        "detail": "id churn, overlap 33% (6 -> 9 id)"
-      }
-    ],
+    "accepted": [],
     "cleared": [],
     "confirmRuns": 3
   }

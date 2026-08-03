@@ -40,7 +40,7 @@
       "homepage": null,
       "description": "Plug n play avatar, turn name, email, and any other string into beautiful avatar (or gravatar), effortless.",
       "language": "PHP",
-      "stars": 1984,
+      "stars": 1983,
       "forks": 186,
       "openIssues": 0,
       "license": "MIT",
@@ -68,7 +68,7 @@
       "language": "PHP",
       "stars": 1353,
       "forks": 305,
-      "openIssues": 50,
+      "openIssues": 51,
       "license": "GPL-2.0",
       "topics": [
         "blog",
@@ -96,15 +96,15 @@
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
       "stars": 1219,
-      "forks": 1175,
-      "openIssues": 362,
+      "forks": 1176,
+      "openIssues": 354,
       "license": null,
       "topics": [
         "opensid",
         "sistem-informasi-desa"
       ],
       "archived": false,
-      "pushedAt": "2026-07-31T21:23:02Z",
+      "pushedAt": "2026-08-03T13:05:57Z",
       "createdAt": "2016-05-21T10:55:38Z"
     },
     {
@@ -118,7 +118,7 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 921,
+      "stars": 923,
       "forks": 285,
       "openIssues": 7,
       "license": "MIT",
@@ -211,34 +211,34 @@
       "ownerAvatar": "https://avatars.githubusercontent.com/u/4769529?v=4",
       "url": "https://github.com/fajarhide/omni",
       "homepage": "https://omni.weekndlabs.com",
-      "description": "Noise-canceling context and long-term memory for your AI agent. Stop paying Claude to read 10,000 lines of terminal noise like a headphone for AI agent",
+      "description": "Cuts terminal noise 89% before your AI coding agent reads it. Fewer tokens, nothing ever lost, and it never invents a result.",
       "language": "Rust",
-      "stars": 317,
+      "stars": 318,
       "forks": 31,
-      "openIssues": 18,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [
+        "agentic-ai",
         "ai-agents",
         "antigravity",
         "claude-code",
         "cli",
         "context-distillation",
+        "context-engineering",
         "cost-reduction",
-        "efficiency-tools",
+        "cursor",
+        "developer-tools",
         "homebrew",
         "hooks",
+        "llm",
         "mcp",
         "memory",
-        "memory-management",
-        "memory-system",
         "rust",
         "token-efficiency",
-        "token-optimization",
-        "token-reduction",
-        "token-savings"
+        "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-08-02T19:04:08Z",
+      "pushedAt": "2026-08-03T15:46:35Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -252,9 +252,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 203,
-      "forks": 39,
-      "openIssues": 34,
+      "stars": 204,
+      "forks": 40,
+      "openIssues": 35,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -272,7 +272,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-08-02T17:50:36Z",
+      "pushedAt": "2026-08-03T14:24:01Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -301,7 +301,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-08-02T16:45:03Z",
+      "pushedAt": "2026-08-03T14:28:28Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -315,9 +315,9 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 167,
-      "forks": 19,
-      "openIssues": 3,
+      "stars": 177,
+      "forks": 20,
+      "openIssues": 1,
       "license": "Apache-2.0",
       "topics": [
         "ai",
@@ -335,7 +335,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-08-01T15:46:11Z",
+      "pushedAt": "2026-08-03T11:10:34Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -349,7 +349,7 @@
       "homepage": null,
       "description": null,
       "language": "Python",
-      "stars": 158,
+      "stars": 162,
       "forks": 39,
       "openIssues": 0,
       "license": "MIT",
@@ -433,7 +433,7 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 110,
+      "stars": 111,
       "forks": 39,
       "openIssues": 5,
       "license": "MIT",
@@ -498,6 +498,42 @@
       "createdAt": "2026-02-28T19:45:28Z"
     },
     {
+      "slug": "ilhamrisky/tedi",
+      "fullName": "IlhamriSKY/TEDI",
+      "name": "TEDI",
+      "owner": "IlhamriSKY",
+      "ownerUrl": "https://github.com/IlhamriSKY",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/18723904?v=4",
+      "url": "https://github.com/IlhamriSKY/TEDI",
+      "homepage": "https://tedi.ilhamriski.com",
+      "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
+      "language": "TypeScript",
+      "stars": 99,
+      "forks": 11,
+      "openIssues": 1,
+      "license": "Apache-2.0",
+      "topics": [
+        "ai",
+        "ai-agent",
+        "claude-code",
+        "cmd",
+        "code-editor",
+        "codex",
+        "open-source",
+        "opencode",
+        "powershell",
+        "rust",
+        "sftp",
+        "source-control",
+        "ssh",
+        "tauri",
+        "terminal"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-03T08:34:35Z",
+      "createdAt": "2026-05-13T00:00:22Z"
+    },
+    {
       "slug": "depapp/indogithubers",
       "fullName": "depapp/IndoGitHubers",
       "name": "IndoGitHubers",
@@ -521,42 +557,6 @@
       "archived": false,
       "pushedAt": "2026-07-20T20:43:27Z",
       "createdAt": "2023-09-05T12:35:21Z"
-    },
-    {
-      "slug": "ilhamrisky/tedi",
-      "fullName": "IlhamriSKY/TEDI",
-      "name": "TEDI",
-      "owner": "IlhamriSKY",
-      "ownerUrl": "https://github.com/IlhamriSKY",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/18723904?v=4",
-      "url": "https://github.com/IlhamriSKY/TEDI",
-      "homepage": "https://tedi.ilhamriski.com",
-      "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
-      "language": "TypeScript",
-      "stars": 89,
-      "forks": 11,
-      "openIssues": 1,
-      "license": "Apache-2.0",
-      "topics": [
-        "ai",
-        "ai-agent",
-        "claude-code",
-        "cmd",
-        "code-editor",
-        "codex",
-        "open-source",
-        "opencode",
-        "powershell",
-        "rust",
-        "sftp",
-        "source-control",
-        "ssh",
-        "tauri",
-        "terminal"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-02T18:07:35Z",
-      "createdAt": "2026-05-13T00:00:22Z"
     },
     {
       "slug": "ddtamn/svelte-audio-ui",
@@ -617,7 +617,7 @@
       "homepage": "https://bansos.dev",
       "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
       "language": "Svelte",
-      "stars": 56,
+      "stars": 57,
       "forks": 13,
       "openIssues": 3,
       "license": "MIT",
@@ -634,7 +634,7 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-08-02T12:22:53Z",
+      "pushedAt": "2026-08-03T13:01:12Z",
       "createdAt": "2026-06-11T13:28:54Z"
     },
     {
@@ -656,6 +656,46 @@
       "archived": false,
       "pushedAt": "2026-08-02T06:47:23Z",
       "createdAt": "2026-03-29T13:58:03Z"
+    },
+    {
+      "slug": "rahmanef63/mso",
+      "fullName": "rahmanef63/mso",
+      "name": "mso",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/mso",
+      "homepage": "https://os.rahmanef.com",
+      "description": "A browser-based graphical shell & control plane for a Linux server you own — terminal, files, metrics & AI in one mobile-first pane.",
+      "language": "TypeScript",
+      "stars": 49,
+      "forks": 7,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "browser-shell",
+        "control-plane",
+        "file-manager",
+        "homelab",
+        "mobile-first",
+        "nextjs",
+        "playwright",
+        "pty",
+        "react",
+        "self-hosted",
+        "server-management",
+        "shadcn-ui",
+        "sysadmin",
+        "tailwindcss",
+        "terminal",
+        "typescript",
+        "vps",
+        "web-desktop",
+        "web-terminal"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-03T20:24:17Z",
+      "createdAt": "2026-05-29T17:44:06Z"
     },
     {
       "slug": "giosakti/duragent",
@@ -721,46 +761,6 @@
       "archived": false,
       "pushedAt": "2026-06-20T14:24:38Z",
       "createdAt": "2026-06-18T03:59:11Z"
-    },
-    {
-      "slug": "rahmanef63/os-vps",
-      "fullName": "rahmanef63/os-vps",
-      "name": "os-vps",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/os-vps",
-      "homepage": "https://os.rahmanef.com",
-      "description": "A browser-based graphical shell & control plane for a Linux server you own — terminal, files, metrics & AI in one mobile-first pane.",
-      "language": "TypeScript",
-      "stars": 46,
-      "forks": 7,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "browser-shell",
-        "control-plane",
-        "file-manager",
-        "homelab",
-        "mobile-first",
-        "nextjs",
-        "playwright",
-        "pty",
-        "react",
-        "self-hosted",
-        "server-management",
-        "shadcn-ui",
-        "sysadmin",
-        "tailwindcss",
-        "terminal",
-        "typescript",
-        "vps",
-        "web-desktop",
-        "web-terminal"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-02T10:09:16Z",
-      "createdAt": "2026-05-29T17:44:06Z"
     },
     {
       "slug": "andriawan/andkasir",
@@ -844,7 +844,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-02T15:09:56Z",
+      "pushedAt": "2026-08-03T09:52:45Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -937,6 +937,32 @@
       "createdAt": "2026-04-09T16:08:42Z"
     },
     {
+      "slug": "ardli-firman/sha-print",
+      "fullName": "ardli-firman/sha-print",
+      "name": "sha-print",
+      "owner": "ardli-firman",
+      "ownerUrl": "https://github.com/ardli-firman",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/48121202?v=4",
+      "url": "https://github.com/ardli-firman/sha-print",
+      "homepage": null,
+      "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
+      "language": "C#",
+      "stars": 33,
+      "forks": 13,
+      "openIssues": 1,
+      "license": null,
+      "topics": [
+        "desktop-app",
+        "printer",
+        "sharing",
+        "sharing-printer",
+        "windows"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-03T12:28:02Z",
+      "createdAt": "2026-05-23T05:37:35Z"
+    },
+    {
       "slug": "pendig/rute-bayar",
       "fullName": "pendig/rute-bayar",
       "name": "rute-bayar",
@@ -965,32 +991,6 @@
       "archived": false,
       "pushedAt": "2026-07-31T22:43:55Z",
       "createdAt": "2026-05-05T01:16:45Z"
-    },
-    {
-      "slug": "ardli-firman/sha-print",
-      "fullName": "ardli-firman/sha-print",
-      "name": "sha-print",
-      "owner": "ardli-firman",
-      "ownerUrl": "https://github.com/ardli-firman",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/48121202?v=4",
-      "url": "https://github.com/ardli-firman/sha-print",
-      "homepage": null,
-      "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
-      "language": "C#",
-      "stars": 33,
-      "forks": 13,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "desktop-app",
-        "printer",
-        "sharing",
-        "sharing-printer",
-        "windows"
-      ],
-      "archived": true,
-      "pushedAt": "2026-07-18T03:40:27Z",
-      "createdAt": "2026-05-23T05:37:35Z"
     },
     {
       "slug": "galpratama/agent-cli",
@@ -1043,8 +1043,39 @@
         "wildlife"
       ],
       "archived": false,
-      "pushedAt": "2026-07-28T07:09:55Z",
+      "pushedAt": "2026-08-03T12:01:14Z",
       "createdAt": "2026-06-14T05:07:25Z"
+    },
+    {
+      "slug": "rahmanef63/open-silong",
+      "fullName": "rahmanef63/open-silong",
+      "name": "open-silong",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/open-silong",
+      "homepage": "https://silong-os.vercel.app/",
+      "description": "An open-source Notion-inspired workspace for teams and personal use",
+      "language": "TypeScript",
+      "stars": 21,
+      "forks": 4,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "block-editor",
+        "convex",
+        "indonesia",
+        "nextjs",
+        "notion-alternative",
+        "notion-clone",
+        "open-source",
+        "react",
+        "self-hosted",
+        "workspace"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-02T10:09:12Z",
+      "createdAt": "2026-04-29T18:48:11Z"
     },
     {
       "slug": "rizukirr/hyprsimple",
@@ -1072,37 +1103,6 @@
       "archived": false,
       "pushedAt": "2026-07-25T16:12:01Z",
       "createdAt": "2025-10-04T10:27:45Z"
-    },
-    {
-      "slug": "rahmanef63/open-silong",
-      "fullName": "rahmanef63/open-silong",
-      "name": "open-silong",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/open-silong",
-      "homepage": "https://silong-os.vercel.app/",
-      "description": "An open-source Notion-inspired workspace for teams and personal use",
-      "language": "TypeScript",
-      "stars": 20,
-      "forks": 4,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "block-editor",
-        "convex",
-        "indonesia",
-        "nextjs",
-        "notion-alternative",
-        "notion-clone",
-        "open-source",
-        "react",
-        "self-hosted",
-        "workspace"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-02T10:09:12Z",
-      "createdAt": "2026-04-29T18:48:11Z"
     },
     {
       "slug": "rayasabari/yntk-ts",
@@ -1141,8 +1141,59 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-02T14:29:11Z",
+      "pushedAt": "2026-08-03T01:49:25Z",
       "createdAt": "2026-06-09T15:06:10Z"
+    },
+    {
+      "slug": "rafiulm/warungos",
+      "fullName": "RafiulM/warungos",
+      "name": "warungos",
+      "owner": "RafiulM",
+      "ownerUrl": "https://github.com/RafiulM",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/39544732?v=4",
+      "url": "https://github.com/RafiulM/warungos",
+      "homepage": "https://warungos.vercel.app",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 18,
+      "forks": 6,
+      "openIssues": 1,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-05-21T16:51:06Z",
+      "createdAt": "2026-03-28T09:34:42Z"
+    },
+    {
+      "slug": "rizukirr/vibekit",
+      "fullName": "rizukirr/vibekit",
+      "name": "vibekit",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/vibekit",
+      "homepage": null,
+      "description": "Vibe-coding pipeline with halt-on-defect guardrails. RTCO-compressed briefs, evidence-based verification, bounded autonomous re-runs. CC / Pi / Codex / OpenCode / Gemini CLI.",
+      "language": "JavaScript",
+      "stars": 17,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "claude-code",
+        "claude-plugin",
+        "codex",
+        "codex-plugin",
+        "opencode",
+        "opencode-plugin",
+        "pi-mono",
+        "plugin",
+        "vibe-coding",
+        "vibecoding"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-03T10:35:10Z",
+      "createdAt": "2026-04-21T15:17:02Z"
     },
     {
       "slug": "rahmanef63/control-room",
@@ -1178,57 +1229,6 @@
       "createdAt": "2026-03-20T14:25:48Z"
     },
     {
-      "slug": "rizukirr/vibekit",
-      "fullName": "rizukirr/vibekit",
-      "name": "vibekit",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/vibekit",
-      "homepage": null,
-      "description": "Vibe-coding pipeline with halt-on-defect guardrails. RTCO-compressed briefs, evidence-based verification, bounded autonomous re-runs. CC / Pi / Codex / OpenCode / Gemini CLI.",
-      "language": "JavaScript",
-      "stars": 17,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "claude-code",
-        "claude-plugin",
-        "codex",
-        "codex-plugin",
-        "opencode",
-        "opencode-plugin",
-        "pi-mono",
-        "plugin",
-        "vibe-coding",
-        "vibecoding"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-01T07:47:35Z",
-      "createdAt": "2026-04-21T15:17:02Z"
-    },
-    {
-      "slug": "rafiulm/warungos",
-      "fullName": "RafiulM/warungos",
-      "name": "warungos",
-      "owner": "RafiulM",
-      "ownerUrl": "https://github.com/RafiulM",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/39544732?v=4",
-      "url": "https://github.com/RafiulM/warungos",
-      "homepage": "https://warungos.vercel.app",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 17,
-      "forks": 6,
-      "openIssues": 1,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-05-21T16:51:06Z",
-      "createdAt": "2026-03-28T09:34:42Z"
-    },
-    {
       "slug": "muhammadhasbiashshiddieqy/openclawn",
       "fullName": "MuhammadHasbiAshshiddieqy/OpenClawn",
       "name": "OpenClawn",
@@ -1239,13 +1239,13 @@
       "homepage": null,
       "description": "Lightweight, safe, self-improving multi-role AI agent framework. Hybrid local + cloud LLMs with self-calibrating routing, decaying skills, and confidence-gated learning — 25 sandboxed tools for code, data, docs, git, and the web.",
       "language": "Python",
-      "stars": 15,
+      "stars": 16,
       "forks": 1,
       "openIssues": 0,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-02T18:52:32Z",
+      "pushedAt": "2026-08-03T01:36:44Z",
       "createdAt": "2026-06-15T14:35:14Z"
     },
     {
@@ -1397,7 +1397,7 @@
       "language": "Python",
       "stars": 10,
       "forks": 1,
-      "openIssues": 1,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [
         "agent-memory",
@@ -1417,7 +1417,7 @@
         "semantic-search"
       ],
       "archived": false,
-      "pushedAt": "2026-08-01T23:39:44Z",
+      "pushedAt": "2026-08-02T20:14:15Z",
       "createdAt": "2026-06-02T04:21:59Z"
     },
     {
@@ -1634,11 +1634,11 @@
       "language": "JavaScript",
       "stars": 6,
       "forks": 0,
-      "openIssues": 1,
+      "openIssues": 2,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-02T09:39:57Z",
+      "pushedAt": "2026-08-03T03:16:31Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1869,15 +1869,15 @@
       "ownerAvatar": "https://avatars.githubusercontent.com/u/103489788?v=4",
       "url": "https://github.com/wauputr4/hermex",
       "homepage": "https://hermex.fun",
-      "description": "Astrology learning game and reflective Hermes AI MVP for hermex.fun",
+      "description": "Open-source AI personality analysis based on birth place, date, and time for reflective self-discovery.",
       "language": "Python",
       "stars": 3,
       "forks": 0,
-      "openIssues": 2,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-02T17:31:44Z",
+      "pushedAt": "2026-08-03T16:21:24Z",
       "createdAt": "2026-05-28T12:17:41Z"
     },
     {
@@ -1912,7 +1912,7 @@
         "vector-sesarch"
       ],
       "archived": false,
-      "pushedAt": "2026-07-28T10:24:34Z",
+      "pushedAt": "2026-08-03T01:36:16Z",
       "createdAt": "2026-05-16T13:54:21Z"
     },
     {
@@ -2020,14 +2020,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-08-02T20:11:16.135Z"
+      "syncedAt": "2026-08-03T20:27:41.942Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-08-02T20:11:16.135Z"
+      "syncedAt": "2026-08-03T20:27:41.942Z"
     }
   ],
-  "syncedAt": "2026-08-02T20:11:16.135Z",
+  "syncedAt": "2026-08-03T20:27:41.942Z",
   "count": 76
 }
