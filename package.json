@@ -20,7 +20,7 @@
     "sync": "node scripts/sync.mjs",
     "sync:opensource": "node scripts/sync-opensource.mjs",
     "agentmap": "agentmap",
-    "test": "node scripts/lib/shape-guard.mjs --selftest && node scripts/lib/diff-guard.mjs --selftest && node scripts/lib/quarantine.mjs --selftest && node scripts/lib/source-sanity.mjs --selftest && node scripts/adapters/cheahjs.mjs --selftest && node scripts/adapters/mnfst.mjs --selftest && node scripts/adapters/openrouter.mjs --selftest && node scripts/lib/merge.mjs && node scripts/audit-dupes.mjs"
+    "test": "node scripts/lib/shape-guard.mjs --selftest && node scripts/lib/diff-guard.mjs --selftest && node scripts/lib/quarantine.mjs --selftest && node scripts/lib/source-sanity.mjs --selftest && node scripts/adapters/cheahjs.mjs --selftest && node scripts/adapters/mnfst.mjs --selftest && node scripts/adapters/openrouter.mjs --selftest && node lib/seo.mjs --selftest && node scripts/lib/merge.mjs && node scripts/audit-dupes.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

@@ -1,22 +1,11 @@
 import type { Provider } from "@/lib/types";
+import { fmtDate } from "@/lib/date";
 
 // Auto-generated FAQ — tiap Q&A CUMA dibangun dari field yang beneran ada di
 // `provider` (freeLimit/description/models/sources/maxContext). Ga ada
 // pertanyaan yang datanya ga ada di-skip, bukan dipaksa jadi "Unknown".
 // Visible section di bawah HARUS match sama teks di FAQPage JSON-LD (syarat
 // Google) — makanya jawabannya plain text, ga ada link ketanem di tengah kalimat.
-
-function fmtDate(iso: string): string {
-  try {
-    return new Intl.DateTimeFormat("id-ID", {
-      day: "numeric",
-      month: "short",
-      year: "numeric",
-    }).format(new Date(iso));
-  } catch {
-    return iso;
-  }
-}
 
 interface QA {
   question: string;

@@ -1,4 +1,5 @@
 import type { Modality, ProviderCategory, SourceRef } from "@/lib/types";
+import { fmtDate } from "@/lib/date";
 
 // ─── CategoryTag ──────────────────────────────────────────────────────────────
 
@@ -190,18 +191,6 @@ export function ModalityTags({
 }
 
 // ─── Source attribution ───────────────────────────────────────────────────────
-
-function fmtDate(iso: string): string {
-  try {
-    return new Intl.DateTimeFormat("id-ID", {
-      day: "numeric",
-      month: "short",
-      year: "numeric",
-    }).format(new Date(iso));
-  } catch {
-    return iso;
-  }
-}
 
 export function SourceLine({
   sources,

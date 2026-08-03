@@ -10,6 +10,8 @@ import ModelsTable from "@/components/directory/ModelsTable";
 import ProviderFaq from "@/components/directory/ProviderFaq";
 import SetupPanel from "@/components/setup/SetupPanel";
 import type { Provider } from "@/lib/types";
+import { providerSnippet } from "@/lib/seo";
+import { fmtDate } from "@/lib/date";
 
 export async function generateStaticParams() {
   return getAllProviders().map((p) => ({ slug: p.slug }));
@@ -24,14 +26,13 @@ export async function generateMetadata({
   const p = getProviderBySlug(slug);
   if (!p) return {};
 
-  const title = `${p.name} API Gratis — ${p.modelCount} Model, Limit & Context | tokengratis.id`;
-
-  const contextClause = p.maxContext ? `, context sampai ${p.maxContext}` : "";
-  const modalityText = p.modalities.map(modalityLabel).join("/");
-  const modalityClause = modalityText ? `, modality ${modalityText}` : "";
-  const sourceName = p.sources[0]?.name;
-  const sourceClause = sourceName ? ` Data di-sync otomatis dari ${sourceName}.` : "";
-  const description = `Free tier API ${p.name}: ${p.modelCount} model gratis${contextClause}${modalityClause}.${sourceClause} Aggregator, bukan verifier.`;
+  const { title, description } = providerSnippet({
+    name: p.name,
+    modelCount: p.modelCount,
+    maxContext: p.maxContext,
+    modalityText: p.modalities.map(modalityLabel).join("/"),
+    syncedLabel: p.syncedAt ? fmtDate(p.syncedAt) : null,
+  });
 
   return {
     title,

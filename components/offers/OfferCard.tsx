@@ -5,20 +5,9 @@ import {
   OFFER_KIND_LABEL,
   type Offer,
 } from "@/lib/offer-types";
+import { fmtDate } from "@/lib/date";
 
 // ─── Small badges (lokal — beda schema dari Badges.tsx punya direktori LLM) ───
-
-function fmtDate(iso: string): string {
-  try {
-    return new Intl.DateTimeFormat("id-ID", {
-      day: "numeric",
-      month: "short",
-      year: "numeric",
-    }).format(new Date(iso));
-  } catch {
-    return iso;
-  }
-}
 
 function CategoryBadge({ category }: { category: Offer["category"] }) {
   return (
