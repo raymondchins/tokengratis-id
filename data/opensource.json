@@ -40,7 +40,7 @@
       "homepage": null,
       "description": "Plug n play avatar, turn name, email, and any other string into beautiful avatar (or gravatar), effortless.",
       "language": "PHP",
-      "stars": 1983,
+      "stars": 1982,
       "forks": 186,
       "openIssues": 0,
       "license": "MIT",
@@ -97,14 +97,14 @@
       "language": "PHP",
       "stars": 1219,
       "forks": 1176,
-      "openIssues": 354,
+      "openIssues": 355,
       "license": null,
       "topics": [
         "opensid",
         "sistem-informasi-desa"
       ],
       "archived": false,
-      "pushedAt": "2026-08-03T13:05:57Z",
+      "pushedAt": "2026-08-04T13:03:31Z",
       "createdAt": "2016-05-21T10:55:38Z"
     },
     {
@@ -118,7 +118,7 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 923,
+      "stars": 924,
       "forks": 285,
       "openIssues": 7,
       "license": "MIT",
@@ -213,9 +213,9 @@
       "homepage": "https://omni.weekndlabs.com",
       "description": "Cuts terminal noise 89% before your AI coding agent reads it. Fewer tokens, nothing ever lost, and it never invents a result.",
       "language": "Rust",
-      "stars": 318,
-      "forks": 31,
-      "openIssues": 3,
+      "stars": 319,
+      "forks": 32,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [
         "agentic-ai",
@@ -238,7 +238,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-08-03T15:46:35Z",
+      "pushedAt": "2026-08-04T07:46:11Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -252,9 +252,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 204,
+      "stars": 205,
       "forks": 40,
-      "openIssues": 35,
+      "openIssues": 37,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -272,7 +272,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-08-03T14:24:01Z",
+      "pushedAt": "2026-08-04T14:42:37Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -286,9 +286,9 @@
       "homepage": "https://www.erdbuilderpro.com",
       "description": "ERD Builder Pro is a database design and documentation tool for developers. Build ERDs, flowcharts, notes, and drawings — all in one workspace",
       "language": "TypeScript",
-      "stars": 191,
-      "forks": 37,
-      "openIssues": 0,
+      "stars": 192,
+      "forks": 39,
+      "openIssues": 1,
       "license": null,
       "topics": [
         "coding",
@@ -315,27 +315,34 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 177,
+      "stars": 178,
       "forks": 20,
-      "openIssues": 1,
+      "openIssues": 5,
       "license": "Apache-2.0",
       "topics": [
+        "agent-memory",
         "ai",
+        "ai-agents",
         "cli",
         "cli-tool",
         "embeddings",
         "hnsw",
+        "llm",
         "local-first",
+        "mcp",
+        "mcp-server",
         "memory",
+        "offline-first",
         "onnx",
         "onnxruntime",
+        "rag",
         "rust",
         "semantic-search",
         "sqlite",
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-08-03T11:10:34Z",
+      "pushedAt": "2026-08-04T18:55:03Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -349,8 +356,8 @@
       "homepage": null,
       "description": null,
       "language": "Python",
-      "stars": 162,
-      "forks": 39,
+      "stars": 163,
+      "forks": 40,
       "openIssues": 0,
       "license": "MIT",
       "topics": [],
@@ -379,6 +386,26 @@
       "createdAt": "2018-08-06T13:38:19Z"
     },
     {
+      "slug": "jipraks/kasirgratisan",
+      "fullName": "jipraks/kasirgratisan",
+      "name": "kasirgratisan",
+      "owner": "jipraks",
+      "ownerUrl": "https://github.com/jipraks",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/10278519?v=4",
+      "url": "https://github.com/jipraks/kasirgratisan",
+      "homepage": null,
+      "description": "Free, Open Source, Offline Point of Sales Apps",
+      "language": "TypeScript",
+      "stars": 116,
+      "forks": 59,
+      "openIssues": 4,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-08-01T23:44:05Z",
+      "createdAt": "2026-02-12T11:02:43Z"
+    },
+    {
       "slug": "ilhamrisky/pddikti-kemdikbud-api",
       "fullName": "IlhamriSKY/PDDIKTI-kemdikbud-API",
       "name": "PDDIKTI-kemdikbud-API",
@@ -403,26 +430,6 @@
       "createdAt": "2021-04-21T07:59:57Z"
     },
     {
-      "slug": "jipraks/kasirgratisan",
-      "fullName": "jipraks/kasirgratisan",
-      "name": "kasirgratisan",
-      "owner": "jipraks",
-      "ownerUrl": "https://github.com/jipraks",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/10278519?v=4",
-      "url": "https://github.com/jipraks/kasirgratisan",
-      "homepage": null,
-      "description": "Free, Open Source, Offline Point of Sales Apps",
-      "language": "TypeScript",
-      "stars": 115,
-      "forks": 59,
-      "openIssues": 4,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-08-01T23:44:05Z",
-      "createdAt": "2026-02-12T11:02:43Z"
-    },
-    {
       "slug": "mydisha/keirouter",
       "fullName": "mydisha/keirouter",
       "name": "keirouter",
@@ -433,8 +440,8 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 111,
-      "forks": 39,
+      "stars": 112,
+      "forks": 40,
       "openIssues": 5,
       "license": "MIT",
       "topics": [
@@ -462,6 +469,42 @@
       "createdAt": "2026-05-31T09:02:50Z"
     },
     {
+      "slug": "ilhamrisky/tedi",
+      "fullName": "IlhamriSKY/TEDI",
+      "name": "TEDI",
+      "owner": "IlhamriSKY",
+      "ownerUrl": "https://github.com/IlhamriSKY",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/18723904?v=4",
+      "url": "https://github.com/IlhamriSKY/TEDI",
+      "homepage": "https://tedi.ilhamriski.com",
+      "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
+      "language": "TypeScript",
+      "stars": 110,
+      "forks": 11,
+      "openIssues": 1,
+      "license": "Apache-2.0",
+      "topics": [
+        "ai",
+        "ai-agent",
+        "claude-code",
+        "cmd",
+        "code-editor",
+        "codex",
+        "open-source",
+        "opencode",
+        "powershell",
+        "rust",
+        "sftp",
+        "source-control",
+        "ssh",
+        "tauri",
+        "terminal"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-04T08:09:29Z",
+      "createdAt": "2026-05-13T00:00:22Z"
+    },
+    {
       "slug": "adenaufal/anti-slop-writing",
       "fullName": "adenaufal/anti-slop-writing",
       "name": "anti-slop-writing",
@@ -472,7 +515,7 @@
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": null,
-      "stars": 105,
+      "stars": 106,
       "forks": 7,
       "openIssues": 0,
       "license": "MIT",
@@ -496,42 +539,6 @@
       "archived": false,
       "pushedAt": "2026-07-06T04:02:38Z",
       "createdAt": "2026-02-28T19:45:28Z"
-    },
-    {
-      "slug": "ilhamrisky/tedi",
-      "fullName": "IlhamriSKY/TEDI",
-      "name": "TEDI",
-      "owner": "IlhamriSKY",
-      "ownerUrl": "https://github.com/IlhamriSKY",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/18723904?v=4",
-      "url": "https://github.com/IlhamriSKY/TEDI",
-      "homepage": "https://tedi.ilhamriski.com",
-      "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
-      "language": "TypeScript",
-      "stars": 99,
-      "forks": 11,
-      "openIssues": 1,
-      "license": "Apache-2.0",
-      "topics": [
-        "ai",
-        "ai-agent",
-        "claude-code",
-        "cmd",
-        "code-editor",
-        "codex",
-        "open-source",
-        "opencode",
-        "powershell",
-        "rust",
-        "sftp",
-        "source-control",
-        "ssh",
-        "tauri",
-        "terminal"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-03T08:34:35Z",
-      "createdAt": "2026-05-13T00:00:22Z"
     },
     {
       "slug": "depapp/indogithubers",
@@ -618,7 +625,7 @@
       "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
       "language": "Svelte",
       "stars": 57,
-      "forks": 13,
+      "forks": 14,
       "openIssues": 3,
       "license": "MIT",
       "topics": [
@@ -649,7 +656,7 @@
       "description": "NATS | Open Source Business and Accounting Software",
       "language": "TypeScript",
       "stars": 50,
-      "forks": 15,
+      "forks": 16,
       "openIssues": 0,
       "license": "MIT",
       "topics": [],
@@ -694,7 +701,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-08-03T20:24:17Z",
+      "pushedAt": "2026-08-04T04:35:34Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -824,7 +831,7 @@
         "typescript"
       ],
       "archived": false,
-      "pushedAt": "2026-08-01T11:38:56Z",
+      "pushedAt": "2026-08-04T15:36:12Z",
       "createdAt": "2026-06-13T11:29:36Z"
     },
     {
@@ -838,13 +845,13 @@
       "homepage": null,
       "description": "Its Factorio for coding agents",
       "language": "Ruby",
-      "stars": 41,
+      "stars": 42,
       "forks": 4,
       "openIssues": 2,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-03T09:52:45Z",
+      "pushedAt": "2026-08-04T05:43:58Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -959,7 +966,7 @@
         "windows"
       ],
       "archived": false,
-      "pushedAt": "2026-08-03T12:28:02Z",
+      "pushedAt": "2026-08-04T03:02:19Z",
       "createdAt": "2026-05-23T05:37:35Z"
     },
     {
@@ -1192,7 +1199,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-08-03T10:35:10Z",
+      "pushedAt": "2026-08-04T17:40:14Z",
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
@@ -1417,7 +1424,7 @@
         "semantic-search"
       ],
       "archived": false,
-      "pushedAt": "2026-08-02T20:14:15Z",
+      "pushedAt": "2026-08-04T03:30:32Z",
       "createdAt": "2026-06-02T04:21:59Z"
     },
     {
@@ -1470,6 +1477,32 @@
       "archived": false,
       "pushedAt": "2026-05-03T11:25:37Z",
       "createdAt": "2026-03-25T12:38:25Z"
+    },
+    {
+      "slug": "semutdev/goigniter",
+      "fullName": "semutdev/goigniter",
+      "name": "goigniter",
+      "owner": "semutdev",
+      "ownerUrl": "https://github.com/semutdev",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/209312156?v=4",
+      "url": "https://github.com/semutdev/goigniter",
+      "homepage": "https://goigniter.semut.dev",
+      "description": "Open Source GOLANG wbe framework with Codeigniter Flavour",
+      "language": "Go",
+      "stars": 9,
+      "forks": 2,
+      "openIssues": 0,
+      "license": null,
+      "topics": [
+        "ci3",
+        "codeigniter",
+        "codeigniter3",
+        "goigniter",
+        "golang"
+      ],
+      "archived": false,
+      "pushedAt": "2026-07-01T07:37:18Z",
+      "createdAt": "2026-01-11T03:16:04Z"
     },
     {
       "slug": "rahmanef63/framepilot",
@@ -1571,32 +1604,6 @@
       "createdAt": "2026-04-23T06:17:57Z"
     },
     {
-      "slug": "semutdev/goigniter",
-      "fullName": "semutdev/goigniter",
-      "name": "goigniter",
-      "owner": "semutdev",
-      "ownerUrl": "https://github.com/semutdev",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/209312156?v=4",
-      "url": "https://github.com/semutdev/goigniter",
-      "homepage": "https://goigniter.semut.dev",
-      "description": "Open Source GOLANG wbe framework with Codeigniter Flavour",
-      "language": "Go",
-      "stars": 7,
-      "forks": 2,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "ci3",
-        "codeigniter",
-        "codeigniter3",
-        "goigniter",
-        "golang"
-      ],
-      "archived": false,
-      "pushedAt": "2026-07-01T07:37:18Z",
-      "createdAt": "2026-01-11T03:16:04Z"
-    },
-    {
       "slug": "anandazp/tempa-ui",
       "fullName": "anandazp/tempa-ui",
       "name": "tempa-ui",
@@ -1622,6 +1629,26 @@
       "createdAt": "2026-06-04T12:49:01Z"
     },
     {
+      "slug": "aofsnorth/artidor",
+      "fullName": "Aofsnorth/Artidor",
+      "name": "Artidor",
+      "owner": "Aofsnorth",
+      "ownerUrl": "https://github.com/Aofsnorth",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/108259309?v=4",
+      "url": "https://github.com/Aofsnorth/Artidor",
+      "homepage": "https://artidor.vercel.app",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 6,
+      "forks": 1,
+      "openIssues": 16,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-08-04T15:05:42Z",
+      "createdAt": "2026-06-13T11:24:30Z"
+    },
+    {
       "slug": "raymondchins/tokengratis-id",
       "fullName": "raymondchins/tokengratis-id",
       "name": "tokengratis-id",
@@ -1634,11 +1661,11 @@
       "language": "JavaScript",
       "stars": 6,
       "forks": 0,
-      "openIssues": 2,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-03T03:16:31Z",
+      "pushedAt": "2026-08-04T07:31:27Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1668,26 +1695,6 @@
       "archived": false,
       "pushedAt": "2026-07-31T15:51:15Z",
       "createdAt": "2026-06-04T12:15:07Z"
-    },
-    {
-      "slug": "aofsnorth/artidor",
-      "fullName": "Aofsnorth/Artidor",
-      "name": "Artidor",
-      "owner": "Aofsnorth",
-      "ownerUrl": "https://github.com/Aofsnorth",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/108259309?v=4",
-      "url": "https://github.com/Aofsnorth/Artidor",
-      "homepage": "https://artidor.vercel.app",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 6,
-      "forks": 1,
-      "openIssues": 15,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-07-28T15:08:20Z",
-      "createdAt": "2026-06-13T11:24:30Z"
     },
     {
       "slug": "wauputr4/skill-bansos",
@@ -2020,14 +2027,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-08-03T20:27:41.942Z"
+      "syncedAt": "2026-08-04T20:26:49.524Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-08-03T20:27:41.942Z"
+      "syncedAt": "2026-08-04T20:26:49.524Z"
     }
   ],
-  "syncedAt": "2026-08-03T20:27:41.942Z",
+  "syncedAt": "2026-08-04T20:26:49.524Z",
   "count": 76
 }

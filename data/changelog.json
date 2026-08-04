@@ -1,5 +1,23 @@
 [
   {
+    "date": "2026-08-04",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "ModelScope",
+        "added": [],
+        "removed": [
+          "Kimi K2.5",
+          "MiniMax-M2.5-highspeed",
+          "deepseek-ai/DeepSeek-V3.2",
+          "LLM-Research/Llama-4-Maverick-17B-128E-Instruct",
+          "Qwen/Qwen3-32B"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-08-02",
     "providersAdded": [],
     "providersRemoved": [],
