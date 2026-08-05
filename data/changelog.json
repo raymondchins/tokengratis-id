@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-08-05",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "ModelScope",
+        "added": [],
+        "removed": [
+          "GLM-5.2"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-08-04",
     "providersAdded": [],
     "providersRemoved": [],
