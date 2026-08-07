@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js - The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser (client-side) or Node.js (server-side).",
       "language": "JavaScript",
-      "stars": 10172,
+      "stars": 10173,
       "forks": 1219,
       "openIssues": 14,
       "license": "AGPL-3.0",
@@ -40,7 +40,7 @@
       "homepage": null,
       "description": "Plug n play avatar, turn name, email, and any other string into beautiful avatar (or gravatar), effortless.",
       "language": "PHP",
-      "stars": 1982,
+      "stars": 1981,
       "forks": 186,
       "openIssues": 1,
       "license": "MIT",
@@ -96,7 +96,7 @@
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
       "stars": 1220,
-      "forks": 1177,
+      "forks": 1176,
       "openIssues": 354,
       "license": null,
       "topics": [
@@ -104,7 +104,7 @@
         "sistem-informasi-desa"
       ],
       "archived": false,
-      "pushedAt": "2026-08-06T11:56:20Z",
+      "pushedAt": "2026-08-07T11:12:03Z",
       "createdAt": "2016-05-21T10:55:38Z"
     },
     {
@@ -215,7 +215,7 @@
       "language": "Rust",
       "stars": 320,
       "forks": 31,
-      "openIssues": 4,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [
         "agentic-ai",
@@ -238,7 +238,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-08-06T02:02:46Z",
+      "pushedAt": "2026-08-07T18:51:24Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -252,7 +252,7 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 214,
+      "stars": 216,
       "forks": 40,
       "openIssues": 37,
       "license": "MIT",
@@ -272,7 +272,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-08-06T21:39:45Z",
+      "pushedAt": "2026-08-07T14:24:48Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -286,9 +286,9 @@
       "homepage": "https://www.erdbuilderpro.com",
       "description": "ERD Builder Pro is a database design and documentation tool for developers. Build ERDs, flowcharts, notes, and drawings — all in one workspace",
       "language": "TypeScript",
-      "stars": 193,
-      "forks": 39,
-      "openIssues": 1,
+      "stars": 194,
+      "forks": 38,
+      "openIssues": 0,
       "license": null,
       "topics": [
         "coding",
@@ -301,7 +301,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-08-06T14:29:26Z",
+      "pushedAt": "2026-08-07T17:16:12Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -624,9 +624,9 @@
       "homepage": "https://bansos.dev",
       "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
       "language": "Svelte",
-      "stars": 57,
-      "forks": 15,
-      "openIssues": 3,
+      "stars": 58,
+      "forks": 16,
+      "openIssues": 4,
       "license": "MIT",
       "topics": [
         "bansos",
@@ -652,7 +652,7 @@
       "ownerUrl": "https://github.com/rahmanef63",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
       "url": "https://github.com/rahmanef63/mso",
-      "homepage": "https://os.rahmanef.com",
+      "homepage": "https://mso.rahmanef.com",
       "description": "A browser-based graphical shell & control plane for a Linux server you own — terminal, files, metrics & AI in one mobile-first pane.",
       "language": "TypeScript",
       "stars": 53,
@@ -1172,6 +1172,37 @@
       "createdAt": "2026-03-28T09:34:42Z"
     },
     {
+      "slug": "rizukirr/vibekit",
+      "fullName": "rizukirr/vibekit",
+      "name": "vibekit",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/vibekit",
+      "homepage": null,
+      "description": "Vibe-coding pipeline with halt-on-defect guardrails. RTCO-compressed briefs, evidence-based verification, bounded autonomous re-runs. CC / Pi / Codex / OpenCode / Gemini CLI.",
+      "language": "JavaScript",
+      "stars": 17,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "claude-code",
+        "claude-plugin",
+        "codex",
+        "codex-plugin",
+        "opencode",
+        "opencode-plugin",
+        "pi-mono",
+        "plugin",
+        "vibe-coding",
+        "vibecoding"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-07T16:40:38Z",
+      "createdAt": "2026-04-21T15:17:02Z"
+    },
+    {
       "slug": "rahmanef63/control-room",
       "fullName": "rahmanef63/control-room",
       "name": "control-room",
@@ -1203,37 +1234,6 @@
       "archived": false,
       "pushedAt": "2026-08-06T12:55:57Z",
       "createdAt": "2026-03-20T14:25:48Z"
-    },
-    {
-      "slug": "rizukirr/vibekit",
-      "fullName": "rizukirr/vibekit",
-      "name": "vibekit",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/vibekit",
-      "homepage": null,
-      "description": "Vibe-coding pipeline with halt-on-defect guardrails. RTCO-compressed briefs, evidence-based verification, bounded autonomous re-runs. CC / Pi / Codex / OpenCode / Gemini CLI.",
-      "language": "JavaScript",
-      "stars": 17,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "claude-code",
-        "claude-plugin",
-        "codex",
-        "codex-plugin",
-        "opencode",
-        "opencode-plugin",
-        "pi-mono",
-        "plugin",
-        "vibe-coding",
-        "vibecoding"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-06T12:27:55Z",
-      "createdAt": "2026-04-21T15:17:02Z"
     },
     {
       "slug": "muhammadhasbiashshiddieqy/openclawn",
@@ -1665,7 +1665,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-05T20:28:05Z",
+      "pushedAt": "2026-08-07T00:41:56Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1695,6 +1695,39 @@
       "archived": false,
       "pushedAt": "2026-07-31T15:51:15Z",
       "createdAt": "2026-06-04T12:15:07Z"
+    },
+    {
+      "slug": "wauputr4/agent-proxmox",
+      "fullName": "wauputr4/agent-proxmox",
+      "name": "agent-proxmox",
+      "owner": "wauputr4",
+      "ownerUrl": "https://github.com/wauputr4",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/103489788?v=4",
+      "url": "https://github.com/wauputr4/agent-proxmox",
+      "homepage": "https://skills.sh/wauputr4/agent-proxmox/proxmox-host-operator",
+      "description": "Reusable AI agent skill for safe Proxmox homelab production operations, LXC activity logging, backups, security, and migration runbooks.",
+      "language": "Python",
+      "stars": 5,
+      "forks": 1,
+      "openIssues": 1,
+      "license": "MIT",
+      "topics": [
+        "ai-agent",
+        "backup",
+        "cloudflare",
+        "codex",
+        "devops",
+        "homelab",
+        "lxc",
+        "proxmox",
+        "proxmox-ve",
+        "skills",
+        "skills-sh",
+        "tailscale"
+      ],
+      "archived": false,
+      "pushedAt": "2026-07-23T02:37:49Z",
+      "createdAt": "2026-06-06T16:32:11Z"
     },
     {
       "slug": "wauputr4/skill-bansos",
@@ -1793,45 +1826,12 @@
       "language": "C",
       "stars": 4,
       "forks": 1,
-      "openIssues": 11,
+      "openIssues": 10,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-05T17:00:02Z",
+      "pushedAt": "2026-08-07T16:58:01Z",
       "createdAt": "2025-11-22T11:52:35Z"
-    },
-    {
-      "slug": "wauputr4/agent-proxmox",
-      "fullName": "wauputr4/agent-proxmox",
-      "name": "agent-proxmox",
-      "owner": "wauputr4",
-      "ownerUrl": "https://github.com/wauputr4",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/103489788?v=4",
-      "url": "https://github.com/wauputr4/agent-proxmox",
-      "homepage": "https://skills.sh/wauputr4/agent-proxmox/proxmox-host-operator",
-      "description": "Reusable AI agent skill for safe Proxmox homelab production operations, LXC activity logging, backups, security, and migration runbooks.",
-      "language": "Python",
-      "stars": 4,
-      "forks": 1,
-      "openIssues": 1,
-      "license": "MIT",
-      "topics": [
-        "ai-agent",
-        "backup",
-        "cloudflare",
-        "codex",
-        "devops",
-        "homelab",
-        "lxc",
-        "proxmox",
-        "proxmox-ve",
-        "skills",
-        "skills-sh",
-        "tailscale"
-      ],
-      "archived": false,
-      "pushedAt": "2026-07-23T02:37:49Z",
-      "createdAt": "2026-06-06T16:32:11Z"
     },
     {
       "slug": "codecoradev/trapfall",
@@ -1943,6 +1943,26 @@
       "createdAt": "2025-12-10T04:16:53Z"
     },
     {
+      "slug": "adityazxxx/sheltermark",
+      "fullName": "AdityaZxxx/sheltermark",
+      "name": "sheltermark",
+      "owner": "AdityaZxxx",
+      "ownerUrl": "https://github.com/AdityaZxxx",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/106899341?v=4",
+      "url": "https://github.com/AdityaZxxx/sheltermark",
+      "homepage": "https://sheltermark.vercel.app",
+      "description": "Sheltermark is a safe place for your bookmarks.",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "openIssues": 0,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-08-07T16:28:06Z",
+      "createdAt": "2026-02-10T04:21:08Z"
+    },
+    {
       "slug": "dayartcrew-web/masday-workflow-rust",
       "fullName": "dayartcrew-web/masday-workflow-rust",
       "name": "masday-workflow-rust",
@@ -1961,26 +1981,6 @@
       "archived": false,
       "pushedAt": "2026-08-02T07:58:39Z",
       "createdAt": "2026-05-31T08:23:44Z"
-    },
-    {
-      "slug": "adityazxxx/sheltermark",
-      "fullName": "AdityaZxxx/sheltermark",
-      "name": "sheltermark",
-      "owner": "AdityaZxxx",
-      "ownerUrl": "https://github.com/AdityaZxxx",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/106899341?v=4",
-      "url": "https://github.com/AdityaZxxx/sheltermark",
-      "homepage": "https://sheltermark.vercel.app",
-      "description": "Sheltermark is a safe place for your bookmarks.",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "openIssues": 0,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-07-22T02:39:48Z",
-      "createdAt": "2026-02-10T04:21:08Z"
     },
     {
       "slug": "bimoalfarrabi/pantau-bbm",
@@ -2027,14 +2027,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-08-07T00:41:41.938Z"
+      "syncedAt": "2026-08-07T19:53:21.724Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-08-07T00:41:41.938Z"
+      "syncedAt": "2026-08-07T19:53:21.724Z"
     }
   ],
-  "syncedAt": "2026-08-07T00:41:41.938Z",
+  "syncedAt": "2026-08-07T19:53:21.724Z",
   "count": 76
 }
