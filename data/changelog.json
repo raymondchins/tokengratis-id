@@ -1,5 +1,66 @@
 [
   {
+    "date": "2026-08-07",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cloudflare Workers AI",
+        "added": [],
+        "removed": [
+          "Gemma 2B Instruct (LoRA)",
+          "Gemma 7B Instruct (LoRA)",
+          "Llama 2 7B Chat (LoRA)",
+          "Llama 3.2 11B Vision Instruct",
+          "Llama 3.3 70B Instruct (FP8)",
+          "Llama 4 Scout Instruct",
+          "Qwen QwQ 32B"
+        ]
+      },
+      {
+        "provider": "Google Gemini",
+        "added": [],
+        "removed": [
+          "Gemini 2.5 Flash TTS",
+          "Gemini 3.1 Flash TTS",
+          "Gemini Robotics-ER 1.5",
+          "Gemma 3 12B Instruct",
+          "Gemma 3 1B Instruct",
+          "Gemma 3 27B Instruct",
+          "Gemma 3 4B Instruct",
+          "Gemma 4 26B A4B Instruct",
+          "Gemma 4 31B Instruct"
+        ]
+      },
+      {
+        "provider": "Groq",
+        "added": [],
+        "removed": [
+          "canopylabs/orpheus-arabic-saudi",
+          "canopylabs/orpheus-v1-english",
+          "Llama 3.1 8B",
+          "Llama 3.3 70B"
+        ]
+      },
+      {
+        "provider": "OpenCode Zen",
+        "added": [],
+        "removed": [
+          "Nemotron 3 Ultra Free"
+        ]
+      },
+      {
+        "provider": "OpenRouter",
+        "added": [
+          "inclusionAI: Ling 3.0 Tiny (free)"
+        ],
+        "removed": [
+          "Ling-3.0-flash (free)"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-08-05",
     "providersAdded": [],
     "providersRemoved": [],

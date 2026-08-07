@@ -11,8 +11,8 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js - The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser (client-side) or Node.js (server-side).",
       "language": "JavaScript",
-      "stars": 10171,
-      "forks": 1218,
+      "stars": 10172,
+      "forks": 1219,
       "openIssues": 14,
       "license": "AGPL-3.0",
       "topics": [
@@ -42,7 +42,7 @@
       "language": "PHP",
       "stars": 1982,
       "forks": 186,
-      "openIssues": 0,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "avatar",
@@ -52,7 +52,7 @@
         "php-library"
       ],
       "archived": false,
-      "pushedAt": "2026-07-21T15:58:49Z",
+      "pushedAt": "2026-08-06T15:54:23Z",
       "createdAt": "2015-10-12T07:01:40Z"
     },
     {
@@ -66,8 +66,8 @@
       "homepage": "https://www.htmly.com",
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
-      "stars": 1353,
-      "forks": 305,
+      "stars": 1354,
+      "forks": 306,
       "openIssues": 51,
       "license": "GPL-2.0",
       "topics": [
@@ -95,16 +95,16 @@
       "homepage": null,
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
-      "stars": 1219,
-      "forks": 1176,
-      "openIssues": 352,
+      "stars": 1220,
+      "forks": 1177,
+      "openIssues": 354,
       "license": null,
       "topics": [
         "opensid",
         "sistem-informasi-desa"
       ],
       "archived": false,
-      "pushedAt": "2026-08-05T04:23:20Z",
+      "pushedAt": "2026-08-06T11:56:20Z",
       "createdAt": "2016-05-21T10:55:38Z"
     },
     {
@@ -118,7 +118,7 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 924,
+      "stars": 926,
       "forks": 284,
       "openIssues": 7,
       "license": "MIT",
@@ -138,9 +138,9 @@
       "homepage": null,
       "description": "Package Laravel yang berisi data Provinsi, Kabupaten/Kota, dan Kecamatan/Desa di seluruh Indonesia.",
       "language": "PHP",
-      "stars": 676,
+      "stars": 677,
       "forks": 211,
-      "openIssues": 3,
+      "openIssues": 5,
       "license": "MIT",
       "topics": [],
       "archived": false,
@@ -213,9 +213,9 @@
       "homepage": "https://omni.weekndlabs.com",
       "description": "Cuts terminal noise 89% before your AI coding agent reads it. Fewer tokens, nothing ever lost, and it never invents a result.",
       "language": "Rust",
-      "stars": 319,
+      "stars": 320,
       "forks": 31,
-      "openIssues": 3,
+      "openIssues": 4,
       "license": "MIT",
       "topics": [
         "agentic-ai",
@@ -238,7 +238,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-08-04T07:46:11Z",
+      "pushedAt": "2026-08-06T02:02:46Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -252,7 +252,7 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 209,
+      "stars": 214,
       "forks": 40,
       "openIssues": 37,
       "license": "MIT",
@@ -272,7 +272,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-08-05T17:35:11Z",
+      "pushedAt": "2026-08-06T21:39:45Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -301,7 +301,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-08-03T14:28:28Z",
+      "pushedAt": "2026-08-06T14:29:26Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -315,9 +315,9 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 186,
+      "stars": 193,
       "forks": 21,
-      "openIssues": 12,
+      "openIssues": 0,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -342,7 +342,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-08-05T17:19:33Z",
+      "pushedAt": "2026-08-06T11:25:03Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -396,38 +396,14 @@
       "homepage": null,
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
-      "stars": 116,
-      "forks": 59,
+      "stars": 117,
+      "forks": 60,
       "openIssues": 4,
       "license": "MIT",
       "topics": [],
       "archived": false,
       "pushedAt": "2026-08-05T19:20:40Z",
       "createdAt": "2026-02-12T11:02:43Z"
-    },
-    {
-      "slug": "ilhamrisky/pddikti-kemdikbud-api",
-      "fullName": "IlhamriSKY/PDDIKTI-kemdikbud-API",
-      "name": "PDDIKTI-kemdikbud-API",
-      "owner": "IlhamriSKY",
-      "ownerUrl": "https://github.com/IlhamriSKY",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/18723904?v=4",
-      "url": "https://github.com/IlhamriSKY/PDDIKTI-kemdikbud-API",
-      "homepage": "https://pddikti.kemdiktisaintek.go.id/",
-      "description": "Unofficial Python 3 API wrapper to retrieve data from PDDIKTI Kemdikbudristek.",
-      "language": "Python",
-      "stars": 115,
-      "forks": 25,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "api-wrapper",
-        "package",
-        "python3"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-02T14:59:26Z",
-      "createdAt": "2021-04-21T07:59:57Z"
     },
     {
       "slug": "ilhamrisky/tedi",
@@ -440,7 +416,7 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 112,
+      "stars": 116,
       "forks": 11,
       "openIssues": 1,
       "license": "Apache-2.0",
@@ -462,8 +438,32 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-08-05T07:04:06Z",
+      "pushedAt": "2026-08-06T07:28:54Z",
       "createdAt": "2026-05-13T00:00:22Z"
+    },
+    {
+      "slug": "ilhamrisky/pddikti-kemdikbud-api",
+      "fullName": "IlhamriSKY/PDDIKTI-kemdikbud-API",
+      "name": "PDDIKTI-kemdikbud-API",
+      "owner": "IlhamriSKY",
+      "ownerUrl": "https://github.com/IlhamriSKY",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/18723904?v=4",
+      "url": "https://github.com/IlhamriSKY/PDDIKTI-kemdikbud-API",
+      "homepage": "https://pddikti.kemdiktisaintek.go.id/",
+      "description": "Unofficial Python 3 API wrapper to retrieve data from PDDIKTI Kemdikbudristek.",
+      "language": "Python",
+      "stars": 116,
+      "forks": 25,
+      "openIssues": 0,
+      "license": null,
+      "topics": [
+        "api-wrapper",
+        "package",
+        "python3"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-02T14:59:26Z",
+      "createdAt": "2021-04-21T07:59:57Z"
     },
     {
       "slug": "mydisha/keirouter",
@@ -476,7 +476,7 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 112,
+      "stars": 116,
       "forks": 40,
       "openIssues": 5,
       "license": "MIT",
@@ -515,7 +515,7 @@
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": null,
-      "stars": 106,
+      "stars": 109,
       "forks": 7,
       "openIssues": 0,
       "license": "MIT",
@@ -626,7 +626,7 @@
       "language": "Svelte",
       "stars": 57,
       "forks": 15,
-      "openIssues": 4,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [
         "bansos",
@@ -641,7 +641,7 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-08-03T13:01:12Z",
+      "pushedAt": "2026-08-06T08:18:43Z",
       "createdAt": "2026-06-11T13:28:54Z"
     },
     {
@@ -695,7 +695,7 @@
       "homepage": "https://maziyank.github.io/nats",
       "description": "NATS | Open Source Business and Accounting Software",
       "language": "TypeScript",
-      "stars": 50,
+      "stars": 51,
       "forks": 16,
       "openIssues": 0,
       "license": "MIT",
@@ -736,7 +736,7 @@
       "description": "Omnidrive lets you connect multiple Google Drive accounts and manage all your files from a single dashboard. It runs entirely on Cloudflare's edge network — Workers for the API, D1 for the database, and KV for session storage — so there's no traditional server to maintain.",
       "language": "TypeScript",
       "stars": 47,
-      "forks": 10,
+      "forks": 11,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -1172,37 +1172,6 @@
       "createdAt": "2026-03-28T09:34:42Z"
     },
     {
-      "slug": "rizukirr/vibekit",
-      "fullName": "rizukirr/vibekit",
-      "name": "vibekit",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/vibekit",
-      "homepage": null,
-      "description": "Vibe-coding pipeline with halt-on-defect guardrails. RTCO-compressed briefs, evidence-based verification, bounded autonomous re-runs. CC / Pi / Codex / OpenCode / Gemini CLI.",
-      "language": "JavaScript",
-      "stars": 17,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "claude-code",
-        "claude-plugin",
-        "codex",
-        "codex-plugin",
-        "opencode",
-        "opencode-plugin",
-        "pi-mono",
-        "plugin",
-        "vibe-coding",
-        "vibecoding"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-05T11:50:03Z",
-      "createdAt": "2026-04-21T15:17:02Z"
-    },
-    {
       "slug": "rahmanef63/control-room",
       "fullName": "rahmanef63/control-room",
       "name": "control-room",
@@ -1232,8 +1201,39 @@
         "xterm"
       ],
       "archived": false,
-      "pushedAt": "2026-08-02T10:08:46Z",
+      "pushedAt": "2026-08-06T12:55:57Z",
       "createdAt": "2026-03-20T14:25:48Z"
+    },
+    {
+      "slug": "rizukirr/vibekit",
+      "fullName": "rizukirr/vibekit",
+      "name": "vibekit",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/vibekit",
+      "homepage": null,
+      "description": "Vibe-coding pipeline with halt-on-defect guardrails. RTCO-compressed briefs, evidence-based verification, bounded autonomous re-runs. CC / Pi / Codex / OpenCode / Gemini CLI.",
+      "language": "JavaScript",
+      "stars": 17,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "claude-code",
+        "claude-plugin",
+        "codex",
+        "codex-plugin",
+        "opencode",
+        "opencode-plugin",
+        "pi-mono",
+        "plugin",
+        "vibe-coding",
+        "vibecoding"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-06T12:27:55Z",
+      "createdAt": "2026-04-21T15:17:02Z"
     },
     {
       "slug": "muhammadhasbiashshiddieqy/openclawn",
@@ -1392,6 +1392,37 @@
       "createdAt": "2026-05-31T14:34:04Z"
     },
     {
+      "slug": "fajarhide/heimsense",
+      "fullName": "fajarhide/heimsense",
+      "name": "heimsense",
+      "owner": "fajarhide",
+      "ownerUrl": "https://github.com/fajarhide",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/4769529?v=4",
+      "url": "https://github.com/fajarhide/heimsense",
+      "homepage": null,
+      "description": "Unlock Your Claude Code for Any LLM",
+      "language": "Go",
+      "stars": 11,
+      "forks": 1,
+      "openIssues": 1,
+      "license": "MIT",
+      "topics": [
+        "antrophic",
+        "api-adapter",
+        "claude-code",
+        "cli",
+        "deepseek",
+        "golang",
+        "groq",
+        "llm",
+        "openai",
+        "proxy"
+      ],
+      "archived": false,
+      "pushedAt": "2026-05-03T11:25:37Z",
+      "createdAt": "2026-03-25T12:38:25Z"
+    },
+    {
       "slug": "xpajonx/openempiric",
       "fullName": "xpajonx/openempiric",
       "name": "openempiric",
@@ -1446,37 +1477,6 @@
       "archived": false,
       "pushedAt": "2026-05-21T12:29:21Z",
       "createdAt": "2026-05-16T04:31:37Z"
-    },
-    {
-      "slug": "fajarhide/heimsense",
-      "fullName": "fajarhide/heimsense",
-      "name": "heimsense",
-      "owner": "fajarhide",
-      "ownerUrl": "https://github.com/fajarhide",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/4769529?v=4",
-      "url": "https://github.com/fajarhide/heimsense",
-      "homepage": null,
-      "description": "Unlock Your Claude Code for Any LLM",
-      "language": "Go",
-      "stars": 10,
-      "forks": 1,
-      "openIssues": 1,
-      "license": "MIT",
-      "topics": [
-        "antrophic",
-        "api-adapter",
-        "claude-code",
-        "cli",
-        "deepseek",
-        "golang",
-        "groq",
-        "llm",
-        "openai",
-        "proxy"
-      ],
-      "archived": false,
-      "pushedAt": "2026-05-03T11:25:37Z",
-      "createdAt": "2026-03-25T12:38:25Z"
     },
     {
       "slug": "semutdev/goigniter",
@@ -1584,6 +1584,26 @@
       "createdAt": "2026-01-09T17:20:39Z"
     },
     {
+      "slug": "aofsnorth/artidor",
+      "fullName": "Aofsnorth/Artidor",
+      "name": "Artidor",
+      "owner": "Aofsnorth",
+      "ownerUrl": "https://github.com/Aofsnorth",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/108259309?v=4",
+      "url": "https://github.com/Aofsnorth/Artidor",
+      "homepage": "https://artidor.vercel.app",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 7,
+      "forks": 1,
+      "openIssues": 16,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-08-04T15:05:42Z",
+      "createdAt": "2026-06-13T11:24:30Z"
+    },
+    {
       "slug": "rifqiakrm/code-island",
       "fullName": "rifqiakrm/code-island",
       "name": "code-island",
@@ -1645,28 +1665,8 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-04T20:27:04Z",
+      "pushedAt": "2026-08-05T20:28:05Z",
       "createdAt": "2026-06-01T10:04:41Z"
-    },
-    {
-      "slug": "aofsnorth/artidor",
-      "fullName": "Aofsnorth/Artidor",
-      "name": "Artidor",
-      "owner": "Aofsnorth",
-      "ownerUrl": "https://github.com/Aofsnorth",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/108259309?v=4",
-      "url": "https://github.com/Aofsnorth/Artidor",
-      "homepage": "https://artidor.vercel.app",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 6,
-      "forks": 1,
-      "openIssues": 16,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-08-04T15:05:42Z",
-      "createdAt": "2026-06-13T11:24:30Z"
     },
     {
       "slug": "rizukirr/apic",
@@ -1868,26 +1868,6 @@
       "createdAt": "2026-06-06T00:23:26Z"
     },
     {
-      "slug": "wauputr4/hermex",
-      "fullName": "wauputr4/hermex",
-      "name": "hermex",
-      "owner": "wauputr4",
-      "ownerUrl": "https://github.com/wauputr4",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/103489788?v=4",
-      "url": "https://github.com/wauputr4/hermex",
-      "homepage": "https://hermex.fun",
-      "description": "Open-source AI personality analysis based on birth place, date, and time for reflective self-discovery.",
-      "language": "Python",
-      "stars": 3,
-      "forks": 0,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-08-03T16:21:24Z",
-      "createdAt": "2026-05-28T12:17:41Z"
-    },
-    {
       "slug": "faisalaffan/ragi-instant",
       "fullName": "faisalaffan/ragi-instant",
       "name": "ragi-instant",
@@ -1900,7 +1880,7 @@
       "language": "TypeScript",
       "stars": 3,
       "forks": 0,
-      "openIssues": 7,
+      "openIssues": 8,
       "license": "MIT",
       "topics": [
         "document-processing",
@@ -1919,8 +1899,28 @@
         "vector-sesarch"
       ],
       "archived": false,
-      "pushedAt": "2026-08-03T01:36:16Z",
+      "pushedAt": "2026-08-06T21:53:22Z",
       "createdAt": "2026-05-16T13:54:21Z"
+    },
+    {
+      "slug": "wauputr4/hermex",
+      "fullName": "wauputr4/hermex",
+      "name": "hermex",
+      "owner": "wauputr4",
+      "ownerUrl": "https://github.com/wauputr4",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/103489788?v=4",
+      "url": "https://github.com/wauputr4/hermex",
+      "homepage": "https://hermex.fun",
+      "description": "Open-source AI personality analysis based on birth place, date, and time for reflective self-discovery.",
+      "language": "Python",
+      "stars": 3,
+      "forks": 0,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-08-03T16:21:24Z",
+      "createdAt": "2026-05-28T12:17:41Z"
     },
     {
       "slug": "jutionck/tahlil-tracker",
@@ -2027,14 +2027,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-08-05T20:27:51.998Z"
+      "syncedAt": "2026-08-07T00:41:41.938Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-08-05T20:27:51.998Z"
+      "syncedAt": "2026-08-07T00:41:41.938Z"
     }
   ],
-  "syncedAt": "2026-08-05T20:27:51.998Z",
+  "syncedAt": "2026-08-07T00:41:41.938Z",
   "count": 76
 }
