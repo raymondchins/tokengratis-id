@@ -1,13 +1,4 @@
 {
   "version": 1,
-  "entries": {
-    "kilo-gateway": {
-      "kind": "disappeared",
-      "magnitude": 0,
-      "detail": "provider hilang dari hasil merge",
-      "streak": 2,
-      "firstSeen": "2026-08-07T00:41:35.124Z",
-      "lastSeen": "2026-08-07T19:53:16.088Z"
-    }
-  }
+  "entries": {}
 }

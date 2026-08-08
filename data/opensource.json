@@ -11,8 +11,8 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js - The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser (client-side) or Node.js (server-side).",
       "language": "JavaScript",
-      "stars": 10173,
-      "forks": 1219,
+      "stars": 10174,
+      "forks": 1218,
       "openIssues": 14,
       "license": "AGPL-3.0",
       "topics": [
@@ -26,7 +26,7 @@
         "user-agent-parser"
       ],
       "archived": false,
-      "pushedAt": "2026-07-27T15:52:17Z",
+      "pushedAt": "2026-08-08T06:51:49Z",
       "createdAt": "2012-02-01T01:11:49Z"
     },
     {
@@ -66,9 +66,9 @@
       "homepage": "https://www.htmly.com",
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
-      "stars": 1354,
-      "forks": 306,
-      "openIssues": 51,
+      "stars": 1355,
+      "forks": 307,
+      "openIssues": 52,
       "license": "GPL-2.0",
       "topics": [
         "blog",
@@ -185,7 +185,7 @@
       "homepage": null,
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 329,
+      "stars": 330,
       "forks": 38,
       "openIssues": 6,
       "license": "MIT",
@@ -215,7 +215,7 @@
       "language": "Rust",
       "stars": 320,
       "forks": 31,
-      "openIssues": 3,
+      "openIssues": 5,
       "license": "MIT",
       "topics": [
         "agentic-ai",
@@ -238,7 +238,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-08-07T18:51:24Z",
+      "pushedAt": "2026-08-08T18:27:48Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -252,7 +252,7 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 216,
+      "stars": 218,
       "forks": 40,
       "openIssues": 37,
       "license": "MIT",
@@ -272,8 +272,49 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-08-07T14:24:48Z",
+      "pushedAt": "2026-08-08T14:53:14Z",
       "createdAt": "2026-01-13T04:36:02Z"
+    },
+    {
+      "slug": "codecoradev/uteke",
+      "fullName": "codecoradev/uteke",
+      "name": "uteke",
+      "owner": "codecoradev",
+      "ownerUrl": "https://github.com/codecoradev",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
+      "url": "https://github.com/codecoradev/uteke",
+      "homepage": "https://codecora.dev",
+      "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
+      "language": "Rust",
+      "stars": 195,
+      "forks": 21,
+      "openIssues": 2,
+      "license": "Apache-2.0",
+      "topics": [
+        "agent-memory",
+        "ai",
+        "ai-agents",
+        "cli",
+        "cli-tool",
+        "embeddings",
+        "hnsw",
+        "llm",
+        "local-first",
+        "mcp",
+        "mcp-server",
+        "memory",
+        "offline-first",
+        "onnx",
+        "onnxruntime",
+        "rag",
+        "rust",
+        "semantic-search",
+        "sqlite",
+        "vector-database"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-08T17:09:22Z",
+      "createdAt": "2026-05-29T00:27:31Z"
     },
     {
       "slug": "hadziqmtqn/erd-builder-pro",
@@ -305,47 +346,6 @@
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
-      "slug": "codecoradev/uteke",
-      "fullName": "codecoradev/uteke",
-      "name": "uteke",
-      "owner": "codecoradev",
-      "ownerUrl": "https://github.com/codecoradev",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
-      "url": "https://github.com/codecoradev/uteke",
-      "homepage": "https://codecora.dev",
-      "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
-      "language": "Rust",
-      "stars": 193,
-      "forks": 21,
-      "openIssues": 0,
-      "license": "Apache-2.0",
-      "topics": [
-        "agent-memory",
-        "ai",
-        "ai-agents",
-        "cli",
-        "cli-tool",
-        "embeddings",
-        "hnsw",
-        "llm",
-        "local-first",
-        "mcp",
-        "mcp-server",
-        "memory",
-        "offline-first",
-        "onnx",
-        "onnxruntime",
-        "rag",
-        "rust",
-        "semantic-search",
-        "sqlite",
-        "vector-database"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-06T11:25:03Z",
-      "createdAt": "2026-05-29T00:27:31Z"
-    },
-    {
       "slug": "mallexibra-dev/clipforge",
       "fullName": "mallexibra-dev/clipforge",
       "name": "clipforge",
@@ -357,7 +357,7 @@
       "description": null,
       "language": "Python",
       "stars": 164,
-      "forks": 40,
+      "forks": 41,
       "openIssues": 0,
       "license": "MIT",
       "topics": [],
@@ -417,7 +417,7 @@
       "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
       "language": "TypeScript",
       "stars": 116,
-      "forks": 11,
+      "forks": 12,
       "openIssues": 1,
       "license": "Apache-2.0",
       "topics": [
@@ -438,7 +438,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-08-06T07:28:54Z",
+      "pushedAt": "2026-08-08T12:55:15Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -477,7 +477,7 @@
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
       "stars": 116,
-      "forks": 40,
+      "forks": 41,
       "openIssues": 5,
       "license": "MIT",
       "topics": [
@@ -626,7 +626,7 @@
       "language": "Svelte",
       "stars": 58,
       "forks": 16,
-      "openIssues": 4,
+      "openIssues": 7,
       "license": "MIT",
       "topics": [
         "bansos",
@@ -641,7 +641,7 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-08-06T08:18:43Z",
+      "pushedAt": "2026-08-08T10:56:43Z",
       "createdAt": "2026-06-11T13:28:54Z"
     },
     {
@@ -653,9 +653,9 @@
       "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
       "url": "https://github.com/rahmanef63/mso",
       "homepage": "https://mso.rahmanef.com",
-      "description": "A browser-based graphical shell & control plane for a Linux server you own — terminal, files, metrics & AI in one mobile-first pane.",
+      "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
-      "stars": 53,
+      "stars": 54,
       "forks": 7,
       "openIssues": 0,
       "license": "MIT",
@@ -666,7 +666,6 @@
         "homelab",
         "mobile-first",
         "nextjs",
-        "playwright",
         "pty",
         "react",
         "self-hosted",
@@ -701,7 +700,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-02T06:47:23Z",
+      "pushedAt": "2026-08-08T04:16:32Z",
       "createdAt": "2026-03-29T13:58:03Z"
     },
     {
@@ -781,8 +780,8 @@
       "description": "AndKasir merupakan aplikasi open source yang dibangun dengan bahasa pemrograman Java untuk kebutuhan retail perusahaan menengah dalam mengatur aktifitas barang masuk dan keluar. konsultasi isu, instalasi dan penambahan fitur silahkan kirim email ke irwan@andriawan.com",
       "language": "Java",
       "stars": 46,
-      "forks": 40,
-      "openIssues": 1,
+      "forks": 41,
+      "openIssues": 2,
       "license": "GPL-3.0",
       "topics": [
         "java",
@@ -806,7 +805,7 @@
       "language": "JavaScript",
       "stars": 45,
       "forks": 10,
-      "openIssues": 3,
+      "openIssues": 4,
       "license": "MIT",
       "topics": [
         "ai-agents",
@@ -831,7 +830,7 @@
         "typescript"
       ],
       "archived": false,
-      "pushedAt": "2026-08-04T15:36:12Z",
+      "pushedAt": "2026-08-08T09:34:54Z",
       "createdAt": "2026-06-13T11:29:36Z"
     },
     {
@@ -851,7 +850,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-05T15:50:08Z",
+      "pushedAt": "2026-08-08T16:34:58Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -944,32 +943,6 @@
       "createdAt": "2026-04-09T16:08:42Z"
     },
     {
-      "slug": "ardli-firman/sha-print",
-      "fullName": "ardli-firman/sha-print",
-      "name": "sha-print",
-      "owner": "ardli-firman",
-      "ownerUrl": "https://github.com/ardli-firman",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/48121202?v=4",
-      "url": "https://github.com/ardli-firman/sha-print",
-      "homepage": null,
-      "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
-      "language": "C#",
-      "stars": 33,
-      "forks": 13,
-      "openIssues": 1,
-      "license": null,
-      "topics": [
-        "desktop-app",
-        "printer",
-        "sharing",
-        "sharing-printer",
-        "windows"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-04T03:02:19Z",
-      "createdAt": "2026-05-23T05:37:35Z"
-    },
-    {
       "slug": "pendig/rute-bayar",
       "fullName": "pendig/rute-bayar",
       "name": "rute-bayar",
@@ -996,8 +969,34 @@
         "xendit"
       ],
       "archived": false,
-      "pushedAt": "2026-07-31T22:43:55Z",
+      "pushedAt": "2026-08-07T22:43:43Z",
       "createdAt": "2026-05-05T01:16:45Z"
+    },
+    {
+      "slug": "ardli-firman/sha-print",
+      "fullName": "ardli-firman/sha-print",
+      "name": "sha-print",
+      "owner": "ardli-firman",
+      "ownerUrl": "https://github.com/ardli-firman",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/48121202?v=4",
+      "url": "https://github.com/ardli-firman/sha-print",
+      "homepage": null,
+      "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
+      "language": "C#",
+      "stars": 33,
+      "forks": 13,
+      "openIssues": 1,
+      "license": null,
+      "topics": [
+        "desktop-app",
+        "printer",
+        "sharing",
+        "sharing-printer",
+        "windows"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-04T03:02:19Z",
+      "createdAt": "2026-05-23T05:37:35Z"
     },
     {
       "slug": "galpratama/agent-cli",
@@ -1050,39 +1049,8 @@
         "wildlife"
       ],
       "archived": false,
-      "pushedAt": "2026-08-03T12:01:14Z",
+      "pushedAt": "2026-08-08T10:29:11Z",
       "createdAt": "2026-06-14T05:07:25Z"
-    },
-    {
-      "slug": "rahmanef63/open-silong",
-      "fullName": "rahmanef63/open-silong",
-      "name": "open-silong",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/open-silong",
-      "homepage": "https://silong-os.vercel.app/",
-      "description": "An open-source Notion-inspired workspace for teams and personal use",
-      "language": "TypeScript",
-      "stars": 21,
-      "forks": 4,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "block-editor",
-        "convex",
-        "indonesia",
-        "nextjs",
-        "notion-alternative",
-        "notion-clone",
-        "open-source",
-        "react",
-        "self-hosted",
-        "workspace"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-02T10:09:12Z",
-      "createdAt": "2026-04-29T18:48:11Z"
     },
     {
       "slug": "rizukirr/hyprsimple",
@@ -1095,7 +1063,7 @@
       "homepage": null,
       "description": "Minimal aesthetic arch linux + hyprland dotfiles",
       "language": "Shell",
-      "stars": 21,
+      "stars": 22,
       "forks": 3,
       "openIssues": 0,
       "license": null,
@@ -1110,6 +1078,40 @@
       "archived": false,
       "pushedAt": "2026-07-25T16:12:01Z",
       "createdAt": "2025-10-04T10:27:45Z"
+    },
+    {
+      "slug": "rahmanef63/open-silong",
+      "fullName": "rahmanef63/open-silong",
+      "name": "open-silong",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/open-silong",
+      "homepage": "https://silong-os.vercel.app/",
+      "description": "Open-source, self-hostable Notion/Obsidian-style workspace — block editor for notes, docs and lightweight databases, plus a knowledge graph over them. Next.js 16 · React 19 · Convex · Tailwind v4.",
+      "language": "TypeScript",
+      "stars": 21,
+      "forks": 4,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "block-editor",
+        "convex",
+        "indonesia",
+        "knowledge-graph",
+        "nextjs",
+        "notion-alternative",
+        "notion-clone",
+        "open-source",
+        "react",
+        "self-hosted",
+        "tailwindcss",
+        "typescript",
+        "workspace"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-02T10:09:12Z",
+      "createdAt": "2026-04-29T18:48:11Z"
     },
     {
       "slug": "rayasabari/yntk-ts",
@@ -1199,7 +1201,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-08-07T16:40:38Z",
+      "pushedAt": "2026-08-08T16:17:19Z",
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
@@ -1211,7 +1213,7 @@
       "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
       "url": "https://github.com/rahmanef63/control-room",
       "homepage": null,
-      "description": "Mobile-first PWA for driving a single VPS from the browser — up to 16 concurrent terminals, AI agent launchers, host ops and audit. A tmux alternative for vibe coders.",
+      "description": "Mobile-first PWA for driving a single VPS from the browser — up to 16 concurrent terminals, AI agent launchers, host ops and audit behind one shared secret on a Tailscale-only domain. Next.js 15 · React 19 · Node agent (node-pty + xterm.js).",
       "language": "TypeScript",
       "stars": 17,
       "forks": 3,
@@ -1264,7 +1266,7 @@
       "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
       "url": "https://github.com/rahmanef63/si-coder-agent",
       "homepage": null,
-      "description": "Zero-human full-stack deployment skill bundle for AI agents — GitHub + Dokploy + Convex (self-hosted & Cloud) + Vercel + Hostinger DNS, via modular /sc-* slash commands.",
+      "description": "Zero-human full-stack deployment as a bundle of /sc-* Claude Code slash commands — GitHub + Convex (self-hosted & Cloud) + Dokploy + Vercel + Hostinger DNS, source to verified live URL. Node ≥18, no runtime dependencies. 8 skills implemented, 5 stubs.",
       "language": "JavaScript",
       "stars": 13,
       "forks": 2,
@@ -1513,7 +1515,7 @@
       "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
       "url": "https://github.com/rahmanef63/framepilot",
       "homepage": "https://frame-pilot.rahmanef.com/",
-      "description": "Browser-based 3D camera previsualization and shot planner for designing scenes, frames, camera angles, lenses, movements, and AI-ready prompts.",
+      "description": "Browser-based 3D camera previsualization and shot planner — design scenes, frames, angles, lenses and moves, then export platform-tuned prompts for AI video models. Next.js 16 · React 19 · Three.js · Convex.",
       "language": "TypeScript",
       "stars": 8,
       "forks": 0,
@@ -1665,7 +1667,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-07T00:41:56Z",
+      "pushedAt": "2026-08-07T19:53:34Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1959,7 +1961,7 @@
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-07T16:28:06Z",
+      "pushedAt": "2026-08-08T14:38:05Z",
       "createdAt": "2026-02-10T04:21:08Z"
     },
     {
@@ -2027,14 +2029,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-08-07T19:53:21.724Z"
+      "syncedAt": "2026-08-08T19:32:16.430Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-08-07T19:53:21.724Z"
+      "syncedAt": "2026-08-08T19:32:16.430Z"
     }
   ],
-  "syncedAt": "2026-08-07T19:53:21.724Z",
+  "syncedAt": "2026-08-08T19:32:16.430Z",
   "count": 76
 }

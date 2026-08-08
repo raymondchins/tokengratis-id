@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-08-08",
+    "providersAdded": [],
+    "providersRemoved": [
+      {
+        "slug": "kilo-gateway",
+        "name": "Kilo Gateway"
+      }
+    ],
+    "models": [
+      {
+        "provider": "LLM7.io",
+        "added": [
+          "Gemma 4 31B IT",
+          "mistral-Nemo-Instruct-2407"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "OpenCode Zen",
+        "added": [
+          "LongCat-2.0"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-08-07",
     "providersAdded": [],
     "providersRemoved": [],
