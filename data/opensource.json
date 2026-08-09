@@ -118,7 +118,7 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 926,
+      "stars": 928,
       "forks": 284,
       "openIssues": 7,
       "license": "MIT",
@@ -139,7 +139,7 @@
       "description": "Package Laravel yang berisi data Provinsi, Kabupaten/Kota, dan Kecamatan/Desa di seluruh Indonesia.",
       "language": "PHP",
       "stars": 677,
-      "forks": 211,
+      "forks": 210,
       "openIssues": 5,
       "license": "MIT",
       "topics": [],
@@ -185,9 +185,9 @@
       "homepage": null,
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 330,
+      "stars": 331,
       "forks": 38,
-      "openIssues": 6,
+      "openIssues": 5,
       "license": "MIT",
       "topics": [
         "adb",
@@ -215,7 +215,7 @@
       "language": "Rust",
       "stars": 320,
       "forks": 31,
-      "openIssues": 5,
+      "openIssues": 2,
       "license": "MIT",
       "topics": [
         "agentic-ai",
@@ -238,7 +238,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-08-08T18:27:48Z",
+      "pushedAt": "2026-08-09T05:12:18Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -254,7 +254,7 @@
       "language": "TypeScript",
       "stars": 218,
       "forks": 40,
-      "openIssues": 37,
+      "openIssues": 36,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -272,8 +272,37 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-08-08T14:53:14Z",
+      "pushedAt": "2026-08-09T17:21:08Z",
       "createdAt": "2026-01-13T04:36:02Z"
+    },
+    {
+      "slug": "hadziqmtqn/erd-builder-pro",
+      "fullName": "hadziqmtqn/erd-builder-pro",
+      "name": "erd-builder-pro",
+      "owner": "hadziqmtqn",
+      "ownerUrl": "https://github.com/hadziqmtqn",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/36812793?v=4",
+      "url": "https://github.com/hadziqmtqn/erd-builder-pro",
+      "homepage": "https://www.erdbuilderpro.com",
+      "description": "ERD Builder Pro is a database design and documentation tool for developers. Build ERDs, flowcharts, notes, and drawings — all in one workspace",
+      "language": "TypeScript",
+      "stars": 200,
+      "forks": 39,
+      "openIssues": 0,
+      "license": null,
+      "topics": [
+        "coding",
+        "developer-tools",
+        "devtools",
+        "drawing-app",
+        "erd-diagram",
+        "excalidraw",
+        "productivity",
+        "tiptap-editor"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-09T03:40:25Z",
+      "createdAt": "2026-03-30T00:18:38Z"
     },
     {
       "slug": "codecoradev/uteke",
@@ -286,7 +315,7 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 195,
+      "stars": 199,
       "forks": 21,
       "openIssues": 2,
       "license": "Apache-2.0",
@@ -313,37 +342,8 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-08-08T17:09:22Z",
+      "pushedAt": "2026-08-09T15:11:32Z",
       "createdAt": "2026-05-29T00:27:31Z"
-    },
-    {
-      "slug": "hadziqmtqn/erd-builder-pro",
-      "fullName": "hadziqmtqn/erd-builder-pro",
-      "name": "erd-builder-pro",
-      "owner": "hadziqmtqn",
-      "ownerUrl": "https://github.com/hadziqmtqn",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/36812793?v=4",
-      "url": "https://github.com/hadziqmtqn/erd-builder-pro",
-      "homepage": "https://www.erdbuilderpro.com",
-      "description": "ERD Builder Pro is a database design and documentation tool for developers. Build ERDs, flowcharts, notes, and drawings — all in one workspace",
-      "language": "TypeScript",
-      "stars": 194,
-      "forks": 38,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "coding",
-        "developer-tools",
-        "devtools",
-        "drawing-app",
-        "erd-diagram",
-        "excalidraw",
-        "productivity",
-        "tiptap-editor"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-07T17:16:12Z",
-      "createdAt": "2026-03-30T00:18:38Z"
     },
     {
       "slug": "mallexibra-dev/clipforge",
@@ -356,7 +356,7 @@
       "homepage": null,
       "description": null,
       "language": "Python",
-      "stars": 164,
+      "stars": 167,
       "forks": 41,
       "openIssues": 0,
       "license": "MIT",
@@ -386,26 +386,6 @@
       "createdAt": "2018-08-06T13:38:19Z"
     },
     {
-      "slug": "jipraks/kasirgratisan",
-      "fullName": "jipraks/kasirgratisan",
-      "name": "kasirgratisan",
-      "owner": "jipraks",
-      "ownerUrl": "https://github.com/jipraks",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/10278519?v=4",
-      "url": "https://github.com/jipraks/kasirgratisan",
-      "homepage": null,
-      "description": "Free, Open Source, Offline Point of Sales Apps",
-      "language": "TypeScript",
-      "stars": 117,
-      "forks": 60,
-      "openIssues": 4,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-08-05T19:20:40Z",
-      "createdAt": "2026-02-12T11:02:43Z"
-    },
-    {
       "slug": "ilhamrisky/tedi",
       "fullName": "IlhamriSKY/TEDI",
       "name": "TEDI",
@@ -416,7 +396,7 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 116,
+      "stars": 119,
       "forks": 12,
       "openIssues": 1,
       "license": "Apache-2.0",
@@ -438,8 +418,67 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-08-08T12:55:15Z",
+      "pushedAt": "2026-08-09T15:34:42Z",
       "createdAt": "2026-05-13T00:00:22Z"
+    },
+    {
+      "slug": "jipraks/kasirgratisan",
+      "fullName": "jipraks/kasirgratisan",
+      "name": "kasirgratisan",
+      "owner": "jipraks",
+      "ownerUrl": "https://github.com/jipraks",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/10278519?v=4",
+      "url": "https://github.com/jipraks/kasirgratisan",
+      "homepage": null,
+      "description": "Free, Open Source, Offline Point of Sales Apps",
+      "language": "TypeScript",
+      "stars": 118,
+      "forks": 60,
+      "openIssues": 4,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-08-05T19:20:40Z",
+      "createdAt": "2026-02-12T11:02:43Z"
+    },
+    {
+      "slug": "mydisha/keirouter",
+      "fullName": "mydisha/keirouter",
+      "name": "keirouter",
+      "owner": "mydisha",
+      "ownerUrl": "https://github.com/mydisha",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/7223792?v=4",
+      "url": "https://github.com/mydisha/keirouter",
+      "homepage": "https://keirouter.app",
+      "description": "Your friendly, blazing-fast, self-hostable AI gateway",
+      "language": "Go",
+      "stars": 116,
+      "forks": 41,
+      "openIssues": 6,
+      "license": "MIT",
+      "topics": [
+        "ai",
+        "ai-gateway",
+        "ai-router",
+        "anthropic",
+        "caveman",
+        "claude",
+        "claude-code",
+        "cursor",
+        "deepseek",
+        "glm",
+        "headroom",
+        "kiro",
+        "llm-gateway",
+        "openai",
+        "qoder",
+        "qwen",
+        "rtk",
+        "zai"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-09T12:32:55Z",
+      "createdAt": "2026-05-31T09:02:50Z"
     },
     {
       "slug": "ilhamrisky/pddikti-kemdikbud-api",
@@ -466,45 +505,6 @@
       "createdAt": "2021-04-21T07:59:57Z"
     },
     {
-      "slug": "mydisha/keirouter",
-      "fullName": "mydisha/keirouter",
-      "name": "keirouter",
-      "owner": "mydisha",
-      "ownerUrl": "https://github.com/mydisha",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/7223792?v=4",
-      "url": "https://github.com/mydisha/keirouter",
-      "homepage": "https://keirouter.app",
-      "description": "Your friendly, blazing-fast, self-hostable AI gateway",
-      "language": "Go",
-      "stars": 116,
-      "forks": 41,
-      "openIssues": 5,
-      "license": "MIT",
-      "topics": [
-        "ai",
-        "ai-gateway",
-        "ai-router",
-        "anthropic",
-        "caveman",
-        "claude",
-        "claude-code",
-        "cursor",
-        "deepseek",
-        "glm",
-        "headroom",
-        "kiro",
-        "llm-gateway",
-        "openai",
-        "qoder",
-        "qwen",
-        "rtk",
-        "zai"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-02T09:20:55Z",
-      "createdAt": "2026-05-31T09:02:50Z"
-    },
-    {
       "slug": "adenaufal/anti-slop-writing",
       "fullName": "adenaufal/anti-slop-writing",
       "name": "anti-slop-writing",
@@ -515,7 +515,7 @@
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": null,
-      "stars": 109,
+      "stars": 110,
       "forks": 7,
       "openIssues": 0,
       "license": "MIT",
@@ -576,7 +576,7 @@
       "homepage": "https://svelte-audio-ui.vercel.app/",
       "description": "A set of accessible and composable Audio UI components.",
       "language": "Svelte",
-      "stars": 80,
+      "stars": 83,
       "forks": 4,
       "openIssues": 10,
       "license": "MIT",
@@ -590,7 +590,7 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-07-31T19:33:53Z",
+      "pushedAt": "2026-08-09T11:36:19Z",
       "createdAt": "2026-03-17T12:55:21Z"
     },
     {
@@ -626,7 +626,7 @@
       "language": "Svelte",
       "stars": 58,
       "forks": 16,
-      "openIssues": 7,
+      "openIssues": 10,
       "license": "MIT",
       "topics": [
         "bansos",
@@ -700,7 +700,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-08T04:16:32Z",
+      "pushedAt": "2026-08-09T12:55:33Z",
       "createdAt": "2026-03-29T13:58:03Z"
     },
     {
@@ -804,7 +804,7 @@
       "description": "Stop your coding agent reading the wrong files. Compiler-grade TS/JS repo map — 100% precision on blast radius vs grep's 60%, measured on public repos. CLI + MCP server, fully local, no vector DB.",
       "language": "JavaScript",
       "stars": 45,
-      "forks": 10,
+      "forks": 11,
       "openIssues": 4,
       "license": "MIT",
       "topics": [
@@ -846,11 +846,11 @@
       "language": "Ruby",
       "stars": 42,
       "forks": 4,
-      "openIssues": 2,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-08T16:34:58Z",
+      "pushedAt": "2026-08-09T16:27:20Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -1150,7 +1150,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-03T01:49:25Z",
+      "pushedAt": "2026-08-09T01:52:53Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1201,7 +1201,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-08-08T16:17:19Z",
+      "pushedAt": "2026-08-09T16:46:40Z",
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
@@ -1234,7 +1234,7 @@
         "xterm"
       ],
       "archived": false,
-      "pushedAt": "2026-08-06T12:55:57Z",
+      "pushedAt": "2026-08-09T16:08:01Z",
       "createdAt": "2026-03-20T14:25:48Z"
     },
     {
@@ -1667,7 +1667,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-07T19:53:34Z",
+      "pushedAt": "2026-08-08T19:32:30Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1816,26 +1816,6 @@
       "createdAt": "2026-06-09T15:29:44Z"
     },
     {
-      "slug": "muslimtify-org/libmuslim",
-      "fullName": "muslimtify-org/libmuslim",
-      "name": "libmuslim",
-      "owner": "muslimtify-org",
-      "ownerUrl": "https://github.com/muslimtify-org",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/302768915?v=4",
-      "url": "https://github.com/muslimtify-org/libmuslim",
-      "homepage": "https://muslimtify.vercel.app",
-      "description": "Collection of islamic tools and utilities implemented in stb-style header only library",
-      "language": "C",
-      "stars": 4,
-      "forks": 1,
-      "openIssues": 10,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-08-07T16:58:01Z",
-      "createdAt": "2025-11-22T11:52:35Z"
-    },
-    {
       "slug": "codecoradev/trapfall",
       "fullName": "codecoradev/trapfall",
       "name": "trapfall",
@@ -1866,8 +1846,28 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-07-17T01:01:42Z",
+      "pushedAt": "2026-08-09T08:11:00Z",
       "createdAt": "2026-06-06T00:23:26Z"
+    },
+    {
+      "slug": "muslimtify-org/libmuslim",
+      "fullName": "muslimtify-org/libmuslim",
+      "name": "libmuslim",
+      "owner": "muslimtify-org",
+      "ownerUrl": "https://github.com/muslimtify-org",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/302768915?v=4",
+      "url": "https://github.com/muslimtify-org/libmuslim",
+      "homepage": "https://muslimtify.vercel.app",
+      "description": "Collection of islamic tools and utilities implemented in stb-style header only library",
+      "language": "C",
+      "stars": 4,
+      "forks": 1,
+      "openIssues": 10,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-08-07T16:58:01Z",
+      "createdAt": "2025-11-22T11:52:35Z"
     },
     {
       "slug": "faisalaffan/ragi-instant",
@@ -1945,6 +1945,26 @@
       "createdAt": "2025-12-10T04:16:53Z"
     },
     {
+      "slug": "bimoalfarrabi/pantau-bbm",
+      "fullName": "bimoalfarrabi/pantau-bbm",
+      "name": "pantau-bbm",
+      "owner": "bimoalfarrabi",
+      "ownerUrl": "https://github.com/bimoalfarrabi",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/46051173?v=4",
+      "url": "https://github.com/bimoalfarrabi/pantau-bbm",
+      "homepage": "https://pantaubbm.viasco.my.id",
+      "description": "Aplikasi web untuk memantau harga BBM Indonesia per wilayah",
+      "language": "PHP",
+      "stars": 1,
+      "forks": 0,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-08-09T10:23:09Z",
+      "createdAt": "2026-06-04T02:35:05Z"
+    },
+    {
       "slug": "adityazxxx/sheltermark",
       "fullName": "AdityaZxxx/sheltermark",
       "name": "sheltermark",
@@ -1961,7 +1981,7 @@
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-08T14:38:05Z",
+      "pushedAt": "2026-08-09T07:00:59Z",
       "createdAt": "2026-02-10T04:21:08Z"
     },
     {
@@ -1983,26 +2003,6 @@
       "archived": false,
       "pushedAt": "2026-08-02T07:58:39Z",
       "createdAt": "2026-05-31T08:23:44Z"
-    },
-    {
-      "slug": "bimoalfarrabi/pantau-bbm",
-      "fullName": "bimoalfarrabi/pantau-bbm",
-      "name": "pantau-bbm",
-      "owner": "bimoalfarrabi",
-      "ownerUrl": "https://github.com/bimoalfarrabi",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/46051173?v=4",
-      "url": "https://github.com/bimoalfarrabi/pantau-bbm",
-      "homepage": "https://pantaubbm.viasco.my.id",
-      "description": "Aplikasi web untuk memantau harga BBM Indonesia per wilayah",
-      "language": "PHP",
-      "stars": 1,
-      "forks": 0,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-07-10T02:12:05Z",
-      "createdAt": "2026-06-04T02:35:05Z"
     },
     {
       "slug": "nzxcode/hospital-ai-sales-agent",
@@ -2029,14 +2029,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-08-08T19:32:16.430Z"
+      "syncedAt": "2026-08-09T19:35:33.513Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-08-08T19:32:16.430Z"
+      "syncedAt": "2026-08-09T19:35:33.513Z"
     }
   ],
-  "syncedAt": "2026-08-08T19:32:16.430Z",
+  "syncedAt": "2026-08-09T19:35:33.513Z",
   "count": 76
 }

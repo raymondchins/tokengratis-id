@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T19:32:10.520Z",
+  "generatedAt": "2026-08-09T19:35:27.512Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -73,38 +73,40 @@
     "warnings": []
   },
   "diffGuard": {
-    "ok": false,
-    "errors": [
-      "provider \"kilo-gateway\" disappeared (was in prev, missing in next)"
-    ],
+    "ok": true,
+    "errors": [],
     "warnings": [],
     "stats": {
-      "prevProviders": 25,
+      "prevProviders": 24,
       "nextProviders": 24,
-      "prevModels": 346,
+      "prevModels": 338,
       "nextModels": 338,
-      "totalDropPct": 2.312138728323699,
-      "disappeared": [
-        "kilo-gateway"
-      ],
+      "totalDropPct": 0,
+      "disappeared": [],
       "shrunk": [],
       "churned": [],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 314,
+            "eligible": 319,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "maxOutput": {
             "eligible": 171,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "changed": 1,
+            "ratioPct": 0.5847953216374269,
+            "examples": [
+              {
+                "label": "nvidia-nim/meta-llama-3-1-8b-instruct",
+                "from": "16K",
+                "to": "8K"
+              }
+            ]
           },
           "modality": {
-            "eligible": 261,
+            "eligible": 263,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -183,13 +185,7 @@
   ],
   "quarantine": {
     "heldProviders": [],
-    "accepted": [
-      {
-        "slug": "kilo-gateway",
-        "kind": "disappeared",
-        "detail": "provider hilang dari hasil merge"
-      }
-    ],
+    "accepted": [],
     "cleared": [],
     "confirmRuns": 3
   }
