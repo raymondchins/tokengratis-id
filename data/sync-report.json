@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T19:35:27.512Z",
+  "generatedAt": "2026-08-10T19:55:26.752Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -95,15 +95,9 @@
           },
           "maxOutput": {
             "eligible": 171,
-            "changed": 1,
-            "ratioPct": 0.5847953216374269,
-            "examples": [
-              {
-                "label": "nvidia-nim/meta-llama-3-1-8b-instruct",
-                "from": "16K",
-                "to": "8K"
-              }
-            ]
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           },
           "modality": {
             "eligible": 263,

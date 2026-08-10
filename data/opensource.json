@@ -12,7 +12,7 @@
       "description": "UAParser.js - The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser (client-side) or Node.js (server-side).",
       "language": "JavaScript",
       "stars": 10174,
-      "forks": 1218,
+      "forks": 1217,
       "openIssues": 14,
       "license": "AGPL-3.0",
       "topics": [
@@ -26,7 +26,7 @@
         "user-agent-parser"
       ],
       "archived": false,
-      "pushedAt": "2026-08-08T06:51:49Z",
+      "pushedAt": "2026-08-10T08:15:38Z",
       "createdAt": "2012-02-01T01:11:49Z"
     },
     {
@@ -97,14 +97,14 @@
       "language": "PHP",
       "stars": 1220,
       "forks": 1176,
-      "openIssues": 354,
+      "openIssues": 358,
       "license": null,
       "topics": [
         "opensid",
         "sistem-informasi-desa"
       ],
       "archived": false,
-      "pushedAt": "2026-08-07T11:12:03Z",
+      "pushedAt": "2026-08-10T06:49:18Z",
       "createdAt": "2016-05-21T10:55:38Z"
     },
     {
@@ -118,9 +118,9 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 928,
+      "stars": 933,
       "forks": 284,
-      "openIssues": 7,
+      "openIssues": 10,
       "license": "MIT",
       "topics": [],
       "archived": false,
@@ -199,7 +199,7 @@
         "wails-app"
       ],
       "archived": false,
-      "pushedAt": "2026-07-23T20:12:11Z",
+      "pushedAt": "2026-08-10T04:04:00Z",
       "createdAt": "2025-11-04T15:37:00Z"
     },
     {
@@ -211,10 +211,10 @@
       "ownerAvatar": "https://avatars.githubusercontent.com/u/4769529?v=4",
       "url": "https://github.com/fajarhide/omni",
       "homepage": "https://omni.weekndlabs.com",
-      "description": "Cuts terminal noise 89% before your AI coding agent reads it. Fewer tokens, nothing ever lost, and it never invents a result.",
+      "description": "Decides what your AI coding agent reads, and keeps receipts. Every cut is recoverable byte for byte, it never invents a result, and the numbers are replayed from your own corpus.",
       "language": "Rust",
       "stars": 320,
-      "forks": 31,
+      "forks": 32,
       "openIssues": 2,
       "license": "MIT",
       "topics": [
@@ -238,7 +238,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-08-09T05:12:18Z",
+      "pushedAt": "2026-08-10T14:24:18Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -254,7 +254,7 @@
       "language": "TypeScript",
       "stars": 218,
       "forks": 40,
-      "openIssues": 36,
+      "openIssues": 38,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -272,37 +272,8 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-08-09T17:21:08Z",
+      "pushedAt": "2026-08-10T17:39:43Z",
       "createdAt": "2026-01-13T04:36:02Z"
-    },
-    {
-      "slug": "hadziqmtqn/erd-builder-pro",
-      "fullName": "hadziqmtqn/erd-builder-pro",
-      "name": "erd-builder-pro",
-      "owner": "hadziqmtqn",
-      "ownerUrl": "https://github.com/hadziqmtqn",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/36812793?v=4",
-      "url": "https://github.com/hadziqmtqn/erd-builder-pro",
-      "homepage": "https://www.erdbuilderpro.com",
-      "description": "ERD Builder Pro is a database design and documentation tool for developers. Build ERDs, flowcharts, notes, and drawings — all in one workspace",
-      "language": "TypeScript",
-      "stars": 200,
-      "forks": 39,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "coding",
-        "developer-tools",
-        "devtools",
-        "drawing-app",
-        "erd-diagram",
-        "excalidraw",
-        "productivity",
-        "tiptap-editor"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-09T03:40:25Z",
-      "createdAt": "2026-03-30T00:18:38Z"
     },
     {
       "slug": "codecoradev/uteke",
@@ -315,9 +286,9 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 199,
+      "stars": 204,
       "forks": 21,
-      "openIssues": 2,
+      "openIssues": 0,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -342,8 +313,37 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-08-09T15:11:32Z",
+      "pushedAt": "2026-08-10T14:33:13Z",
       "createdAt": "2026-05-29T00:27:31Z"
+    },
+    {
+      "slug": "hadziqmtqn/erd-builder-pro",
+      "fullName": "hadziqmtqn/erd-builder-pro",
+      "name": "erd-builder-pro",
+      "owner": "hadziqmtqn",
+      "ownerUrl": "https://github.com/hadziqmtqn",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/36812793?v=4",
+      "url": "https://github.com/hadziqmtqn/erd-builder-pro",
+      "homepage": "https://www.erdbuilderpro.com",
+      "description": "ERD Builder Pro is a database design and documentation tool for developers. Build ERDs, flowcharts, notes, and drawings — all in one workspace",
+      "language": "TypeScript",
+      "stars": 202,
+      "forks": 39,
+      "openIssues": 0,
+      "license": null,
+      "topics": [
+        "coding",
+        "developer-tools",
+        "devtools",
+        "drawing-app",
+        "erd-diagram",
+        "excalidraw",
+        "productivity",
+        "tiptap-editor"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-09T03:40:25Z",
+      "createdAt": "2026-03-30T00:18:38Z"
     },
     {
       "slug": "mallexibra-dev/clipforge",
@@ -356,8 +356,8 @@
       "homepage": null,
       "description": null,
       "language": "Python",
-      "stars": 167,
-      "forks": 41,
+      "stars": 173,
+      "forks": 42,
       "openIssues": 0,
       "license": "MIT",
       "topics": [],
@@ -396,8 +396,8 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 119,
-      "forks": 12,
+      "stars": 122,
+      "forks": 13,
       "openIssues": 1,
       "license": "Apache-2.0",
       "topics": [
@@ -418,28 +418,8 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-08-09T15:34:42Z",
+      "pushedAt": "2026-08-10T04:37:28Z",
       "createdAt": "2026-05-13T00:00:22Z"
-    },
-    {
-      "slug": "jipraks/kasirgratisan",
-      "fullName": "jipraks/kasirgratisan",
-      "name": "kasirgratisan",
-      "owner": "jipraks",
-      "ownerUrl": "https://github.com/jipraks",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/10278519?v=4",
-      "url": "https://github.com/jipraks/kasirgratisan",
-      "homepage": null,
-      "description": "Free, Open Source, Offline Point of Sales Apps",
-      "language": "TypeScript",
-      "stars": 118,
-      "forks": 60,
-      "openIssues": 4,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-08-05T19:20:40Z",
-      "createdAt": "2026-02-12T11:02:43Z"
     },
     {
       "slug": "mydisha/keirouter",
@@ -452,7 +432,7 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 116,
+      "stars": 119,
       "forks": 41,
       "openIssues": 6,
       "license": "MIT",
@@ -481,6 +461,26 @@
       "createdAt": "2026-05-31T09:02:50Z"
     },
     {
+      "slug": "jipraks/kasirgratisan",
+      "fullName": "jipraks/kasirgratisan",
+      "name": "kasirgratisan",
+      "owner": "jipraks",
+      "ownerUrl": "https://github.com/jipraks",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/10278519?v=4",
+      "url": "https://github.com/jipraks/kasirgratisan",
+      "homepage": null,
+      "description": "Free, Open Source, Offline Point of Sales Apps",
+      "language": "TypeScript",
+      "stars": 118,
+      "forks": 60,
+      "openIssues": 4,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-08-05T19:20:40Z",
+      "createdAt": "2026-02-12T11:02:43Z"
+    },
+    {
       "slug": "ilhamrisky/pddikti-kemdikbud-api",
       "fullName": "IlhamriSKY/PDDIKTI-kemdikbud-API",
       "name": "PDDIKTI-kemdikbud-API",
@@ -491,7 +491,7 @@
       "homepage": "https://pddikti.kemdiktisaintek.go.id/",
       "description": "Unofficial Python 3 API wrapper to retrieve data from PDDIKTI Kemdikbudristek.",
       "language": "Python",
-      "stars": 116,
+      "stars": 117,
       "forks": 25,
       "openIssues": 0,
       "license": null,
@@ -515,7 +515,7 @@
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": null,
-      "stars": 110,
+      "stars": 111,
       "forks": 7,
       "openIssues": 0,
       "license": "MIT",
@@ -576,7 +576,7 @@
       "homepage": "https://svelte-audio-ui.vercel.app/",
       "description": "A set of accessible and composable Audio UI components.",
       "language": "Svelte",
-      "stars": 83,
+      "stars": 84,
       "forks": 4,
       "openIssues": 10,
       "license": "MIT",
@@ -626,7 +626,7 @@
       "language": "Svelte",
       "stars": 58,
       "forks": 16,
-      "openIssues": 10,
+      "openIssues": 7,
       "license": "MIT",
       "topics": [
         "bansos",
@@ -641,7 +641,7 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-08-08T10:56:43Z",
+      "pushedAt": "2026-08-10T11:46:01Z",
       "createdAt": "2026-06-11T13:28:54Z"
     },
     {
@@ -680,7 +680,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-08-04T04:35:34Z",
+      "pushedAt": "2026-08-10T18:50:53Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -700,7 +700,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-09T12:55:33Z",
+      "pushedAt": "2026-08-10T01:00:12Z",
       "createdAt": "2026-03-29T13:58:03Z"
     },
     {
@@ -850,7 +850,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-09T16:27:20Z",
+      "pushedAt": "2026-08-10T18:59:30Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -1030,7 +1030,7 @@
       "description": "Mandum Rimba is an independent, nonprofit public-interest observatory. We do not sell data, carry advertising, or take sides. We consolidate satellite data and credible public sources into a single open map, auditable by anyone, fully open source, and with every figure traceable to its origin.",
       "language": "TypeScript",
       "stars": 25,
-      "forks": 5,
+      "forks": 6,
       "openIssues": 0,
       "license": "AGPL-3.0",
       "topics": [
@@ -1049,7 +1049,7 @@
         "wildlife"
       ],
       "archived": false,
-      "pushedAt": "2026-08-08T10:29:11Z",
+      "pushedAt": "2026-08-10T04:07:20Z",
       "createdAt": "2026-06-14T05:07:25Z"
     },
     {
@@ -1110,7 +1110,7 @@
         "workspace"
       ],
       "archived": false,
-      "pushedAt": "2026-08-02T10:09:12Z",
+      "pushedAt": "2026-08-10T10:14:07Z",
       "createdAt": "2026-04-29T18:48:11Z"
     },
     {
@@ -1150,7 +1150,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-09T01:52:53Z",
+      "pushedAt": "2026-08-09T23:39:53Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1667,7 +1667,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-08T19:32:30Z",
+      "pushedAt": "2026-08-09T19:35:47Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1709,7 +1709,7 @@
       "homepage": "https://skills.sh/wauputr4/agent-proxmox/proxmox-host-operator",
       "description": "Reusable AI agent skill for safe Proxmox homelab production operations, LXC activity logging, backups, security, and migration runbooks.",
       "language": "Python",
-      "stars": 5,
+      "stars": 6,
       "forks": 1,
       "openIssues": 1,
       "license": "MIT",
@@ -2029,14 +2029,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-08-09T19:35:33.513Z"
+      "syncedAt": "2026-08-10T19:55:32.190Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-08-09T19:35:33.513Z"
+      "syncedAt": "2026-08-10T19:55:32.190Z"
     }
   ],
-  "syncedAt": "2026-08-09T19:35:33.513Z",
+  "syncedAt": "2026-08-10T19:55:32.190Z",
   "count": 76
 }
