@@ -1,5 +1,35 @@
 [
   {
+    "date": "2026-08-11",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Ollama Cloud",
+        "added": [
+          "Gemma 4 31B IT",
+          "Nemotron 3 Nano 30B A3B",
+          "Nemotron 3 Super 120B A12B"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "OpenCode Zen",
+        "added": [
+          "ling-3.0-tiny-free"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "OpenRouter",
+        "added": [
+          "NVIDIA: Nemotron 3.5 Lightning (free)"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-08-08",
     "providersAdded": [],
     "providersRemoved": [
