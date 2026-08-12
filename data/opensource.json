@@ -12,7 +12,7 @@
       "description": "UAParser.js - The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser (client-side) or Node.js (server-side).",
       "language": "JavaScript",
       "stars": 10174,
-      "forks": 1217,
+      "forks": 1216,
       "openIssues": 14,
       "license": "AGPL-3.0",
       "topics": [
@@ -26,7 +26,7 @@
         "user-agent-parser"
       ],
       "archived": false,
-      "pushedAt": "2026-08-10T08:15:38Z",
+      "pushedAt": "2026-08-12T15:55:18Z",
       "createdAt": "2012-02-01T01:11:49Z"
     },
     {
@@ -66,8 +66,8 @@
       "homepage": "https://www.htmly.com",
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
-      "stars": 1355,
-      "forks": 307,
+      "stars": 1356,
+      "forks": 308,
       "openIssues": 52,
       "license": "GPL-2.0",
       "topics": [
@@ -96,15 +96,15 @@
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
       "stars": 1220,
-      "forks": 1176,
-      "openIssues": 363,
+      "forks": 1177,
+      "openIssues": 356,
       "license": null,
       "topics": [
         "opensid",
         "sistem-informasi-desa"
       ],
       "archived": false,
-      "pushedAt": "2026-08-10T06:49:18Z",
+      "pushedAt": "2026-08-12T12:15:54Z",
       "createdAt": "2016-05-21T10:55:38Z"
     },
     {
@@ -118,7 +118,7 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 934,
+      "stars": 936,
       "forks": 284,
       "openIssues": 10,
       "license": "MIT",
@@ -158,7 +158,7 @@
       "homepage": "https://jokoui.web.id",
       "description": "Free Open Source Tailwind CSS Component for Sat-set Developers with Zero Configuration, Installation, and Setup",
       "language": "TypeScript",
-      "stars": 415,
+      "stars": 414,
       "forks": 26,
       "openIssues": 8,
       "license": "MIT",
@@ -185,9 +185,9 @@
       "homepage": null,
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 332,
-      "forks": 38,
-      "openIssues": 5,
+      "stars": 334,
+      "forks": 39,
+      "openIssues": 6,
       "license": "MIT",
       "topics": [
         "adb",
@@ -210,19 +210,20 @@
       "ownerUrl": "https://github.com/fajarhide",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/4769529?v=4",
       "url": "https://github.com/fajarhide/omni",
-      "homepage": "https://omni.weekndlabs.com",
-      "description": "Decides what your AI coding agent reads, and keeps receipts. Every cut is recoverable byte for byte, it never invents a result, and the numbers are replayed from your own corpus.",
+      "homepage": "https://omni.weekndlabs.com/docs",
+      "description": "Stop paying to re-read the same output. OMNI turns repeated bytes into retrievable handles: 97.2% off a file your agent reads twice, 74.9% across 6,656 real commands. Nothing deleted, nothing invented, and every number replays on your own corpus.",
       "language": "Rust",
       "stars": 320,
       "forks": 32,
-      "openIssues": 2,
-      "license": "MIT",
+      "openIssues": 4,
+      "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
         "ai-agents",
         "antigravity",
         "claude-code",
         "cli",
+        "context-compression",
         "context-distillation",
         "context-engineering",
         "cost-reduction",
@@ -233,12 +234,13 @@
         "llm",
         "mcp",
         "memory",
+        "prompt-caching",
         "rust",
         "token-efficiency",
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-08-11T17:27:15Z",
+      "pushedAt": "2026-08-12T15:15:04Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -254,7 +256,7 @@
       "language": "TypeScript",
       "stars": 219,
       "forks": 42,
-      "openIssues": 39,
+      "openIssues": 42,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -272,7 +274,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-08-11T17:42:41Z",
+      "pushedAt": "2026-08-12T19:03:38Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -286,9 +288,9 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 205,
+      "stars": 211,
       "forks": 23,
-      "openIssues": 2,
+      "openIssues": 8,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -356,7 +358,7 @@
       "homepage": null,
       "description": null,
       "language": "Python",
-      "stars": 174,
+      "stars": 175,
       "forks": 42,
       "openIssues": 0,
       "license": "MIT",
@@ -376,7 +378,7 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 145,
+      "stars": 146,
       "forks": 13,
       "openIssues": 1,
       "license": "Apache-2.0",
@@ -398,7 +400,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-08-10T04:37:28Z",
+      "pushedAt": "2026-08-12T04:16:36Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -434,7 +436,7 @@
       "language": "Go",
       "stars": 119,
       "forks": 41,
-      "openIssues": 6,
+      "openIssues": 4,
       "license": "MIT",
       "topics": [
         "ai",
@@ -457,7 +459,7 @@
         "zai"
       ],
       "archived": false,
-      "pushedAt": "2026-08-09T12:32:55Z",
+      "pushedAt": "2026-08-12T10:20:17Z",
       "createdAt": "2026-05-31T09:02:50Z"
     },
     {
@@ -472,12 +474,12 @@
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
       "stars": 118,
-      "forks": 61,
-      "openIssues": 4,
+      "forks": 60,
+      "openIssues": 5,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-05T19:20:40Z",
+      "pushedAt": "2026-08-12T01:08:52Z",
       "createdAt": "2026-02-12T11:02:43Z"
     },
     {
@@ -576,9 +578,9 @@
       "homepage": "https://svelte-audio-ui.vercel.app/",
       "description": "A set of accessible and composable Audio UI components.",
       "language": "Svelte",
-      "stars": 84,
-      "forks": 4,
-      "openIssues": 10,
+      "stars": 85,
+      "forks": 5,
+      "openIssues": 11,
       "license": "MIT",
       "topics": [
         "audio",
@@ -590,7 +592,7 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-08-09T11:36:19Z",
+      "pushedAt": "2026-08-11T23:00:21Z",
       "createdAt": "2026-03-17T12:55:21Z"
     },
     {
@@ -655,7 +657,7 @@
       "homepage": "https://mso.rahmanef.com",
       "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
-      "stars": 54,
+      "stars": 56,
       "forks": 7,
       "openIssues": 0,
       "license": "MIT",
@@ -805,7 +807,7 @@
       "language": "JavaScript",
       "stars": 45,
       "forks": 11,
-      "openIssues": 4,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "ai-agents",
@@ -830,7 +832,7 @@
         "typescript"
       ],
       "archived": false,
-      "pushedAt": "2026-08-08T09:34:54Z",
+      "pushedAt": "2026-08-12T03:57:10Z",
       "createdAt": "2026-06-13T11:29:36Z"
     },
     {
@@ -846,11 +848,11 @@
       "language": "Ruby",
       "stars": 42,
       "forks": 4,
-      "openIssues": 2,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-11T09:51:01Z",
+      "pushedAt": "2026-08-12T17:20:30Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -1110,7 +1112,7 @@
         "workspace"
       ],
       "archived": false,
-      "pushedAt": "2026-08-11T16:18:38Z",
+      "pushedAt": "2026-08-12T02:27:35Z",
       "createdAt": "2026-04-29T18:48:11Z"
     },
     {
@@ -1150,7 +1152,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-09T23:39:53Z",
+      "pushedAt": "2026-08-12T11:05:06Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1182,7 +1184,7 @@
       "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
       "url": "https://github.com/rizukirr/vibekit",
       "homepage": null,
-      "description": "Vibe-coding pipeline with halt-on-defect guardrails. RTCO-compressed briefs, evidence-based verification, bounded autonomous re-runs. CC / Pi / Codex / OpenCode / Gemini CLI.",
+      "description": "Efficient, Opinionated vibe-coding pipeline for CC / Codex / OpenCode / Gemini",
       "language": "JavaScript",
       "stars": 17,
       "forks": 1,
@@ -1201,7 +1203,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-08-11T18:28:09Z",
+      "pushedAt": "2026-08-12T08:12:20Z",
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
@@ -1457,7 +1459,7 @@
         "semantic-search"
       ],
       "archived": false,
-      "pushedAt": "2026-08-04T03:30:32Z",
+      "pushedAt": "2026-08-12T14:42:26Z",
       "createdAt": "2026-06-02T04:21:59Z"
     },
     {
@@ -1667,7 +1669,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-10T19:55:45Z",
+      "pushedAt": "2026-08-11T20:00:33Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1828,7 +1830,7 @@
       "language": "Rust",
       "stars": 4,
       "forks": 0,
-      "openIssues": 0,
+      "openIssues": 10,
       "license": "Apache-2.0",
       "topics": [
         "axum",
@@ -1846,7 +1848,7 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-08-09T08:11:00Z",
+      "pushedAt": "2026-08-12T16:35:02Z",
       "createdAt": "2026-06-06T00:23:26Z"
     },
     {
@@ -1882,7 +1884,7 @@
       "language": "TypeScript",
       "stars": 3,
       "forks": 0,
-      "openIssues": 8,
+      "openIssues": 9,
       "license": "MIT",
       "topics": [
         "document-processing",
@@ -1901,7 +1903,7 @@
         "vector-sesarch"
       ],
       "archived": false,
-      "pushedAt": "2026-08-06T21:53:22Z",
+      "pushedAt": "2026-08-12T15:57:59Z",
       "createdAt": "2026-05-16T13:54:21Z"
     },
     {
@@ -1945,6 +1947,26 @@
       "createdAt": "2025-12-10T04:16:53Z"
     },
     {
+      "slug": "dayartcrew-web/masday-workflow-rust",
+      "fullName": "dayartcrew-web/masday-workflow-rust",
+      "name": "masday-workflow-rust",
+      "owner": "dayartcrew-web",
+      "ownerUrl": "https://github.com/dayartcrew-web",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/245359298?v=4",
+      "url": "https://github.com/dayartcrew-web/masday-workflow-rust",
+      "homepage": null,
+      "description": "Rust MVC MCP Server — Unified AI coding agent platform built with Axum, SQLx, and tokio. 90 MCP tools, 4-layer memory, PostgreSQL.",
+      "language": "Rust",
+      "stars": 1,
+      "forks": 0,
+      "openIssues": 14,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-08-12T02:06:11Z",
+      "createdAt": "2026-05-31T08:23:44Z"
+    },
+    {
       "slug": "bimoalfarrabi/pantau-bbm",
       "fullName": "bimoalfarrabi/pantau-bbm",
       "name": "pantau-bbm",
@@ -1985,26 +2007,6 @@
       "createdAt": "2026-02-10T04:21:08Z"
     },
     {
-      "slug": "dayartcrew-web/masday-workflow-rust",
-      "fullName": "dayartcrew-web/masday-workflow-rust",
-      "name": "masday-workflow-rust",
-      "owner": "dayartcrew-web",
-      "ownerUrl": "https://github.com/dayartcrew-web",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/245359298?v=4",
-      "url": "https://github.com/dayartcrew-web/masday-workflow-rust",
-      "homepage": null,
-      "description": "Rust MVC MCP Server — Unified AI coding agent platform built with Axum, SQLx, and tokio. 90 MCP tools, 4-layer memory, PostgreSQL.",
-      "language": "Rust",
-      "stars": 1,
-      "forks": 0,
-      "openIssues": 14,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-08-02T07:58:39Z",
-      "createdAt": "2026-05-31T08:23:44Z"
-    },
-    {
       "slug": "nzxcode/hospital-ai-sales-agent",
       "fullName": "NzxCode/Hospital-Ai-Sales-Agent",
       "name": "Hospital-Ai-Sales-Agent",
@@ -2029,14 +2031,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-08-11T20:00:21.278Z"
+      "syncedAt": "2026-08-12T20:01:16.668Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-08-11T20:00:21.278Z"
+      "syncedAt": "2026-08-12T20:01:16.668Z"
     }
   ],
-  "syncedAt": "2026-08-11T20:00:21.278Z",
+  "syncedAt": "2026-08-12T20:01:16.668Z",
   "count": 76
 }

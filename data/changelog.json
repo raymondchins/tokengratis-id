@@ -1,5 +1,33 @@
 [
   {
+    "date": "2026-08-12",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "LLM7.io",
+        "added": [],
+        "removed": [
+          "Gemma 4 31B IT"
+        ]
+      },
+      {
+        "provider": "OpenCode Zen",
+        "added": [
+          "Hy3 preview"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "OpenRouter",
+        "added": [
+          "LiquidAI: LFM2.5-2.6B (free)"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-08-11",
     "providersAdded": [],
     "providersRemoved": [],
