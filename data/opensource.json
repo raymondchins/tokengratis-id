@@ -26,7 +26,7 @@
         "user-agent-parser"
       ],
       "archived": false,
-      "pushedAt": "2026-08-12T15:55:18Z",
+      "pushedAt": "2026-08-13T14:53:40Z",
       "createdAt": "2012-02-01T01:11:49Z"
     },
     {
@@ -40,7 +40,7 @@
       "homepage": null,
       "description": "Plug n play avatar, turn name, email, and any other string into beautiful avatar (or gravatar), effortless.",
       "language": "PHP",
-      "stars": 1981,
+      "stars": 1982,
       "forks": 186,
       "openIssues": 1,
       "license": "MIT",
@@ -97,7 +97,7 @@
       "language": "PHP",
       "stars": 1220,
       "forks": 1177,
-      "openIssues": 356,
+      "openIssues": 358,
       "license": null,
       "topics": [
         "opensid",
@@ -118,7 +118,7 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 936,
+      "stars": 937,
       "forks": 284,
       "openIssues": 10,
       "license": "MIT",
@@ -214,8 +214,8 @@
       "description": "Stop paying to re-read the same output. OMNI turns repeated bytes into retrievable handles: 97.2% off a file your agent reads twice, 74.9% across 6,656 real commands. Nothing deleted, nothing invented, and every number replays on your own corpus.",
       "language": "Rust",
       "stars": 320,
-      "forks": 32,
-      "openIssues": 4,
+      "forks": 33,
+      "openIssues": 1,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -240,42 +240,8 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-08-12T15:15:04Z",
+      "pushedAt": "2026-08-13T12:59:47Z",
       "createdAt": "2026-03-15T03:38:04Z"
-    },
-    {
-      "slug": "gnoviawan/termul",
-      "fullName": "gnoviawan/termul",
-      "name": "termul",
-      "owner": "gnoviawan",
-      "ownerUrl": "https://github.com/gnoviawan",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/72639723?v=4",
-      "url": "https://github.com/gnoviawan/termul",
-      "homepage": "https://termul.dev",
-      "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
-      "language": "TypeScript",
-      "stars": 219,
-      "forks": 42,
-      "openIssues": 42,
-      "license": "MIT",
-      "topics": [
-        "cross-platform",
-        "desktop-app",
-        "developer-tools",
-        "open-source",
-        "productivity",
-        "react",
-        "rust",
-        "shell",
-        "tauri",
-        "tauri-app",
-        "terminal",
-        "terminal-emulator",
-        "workspace-manager"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-12T19:03:38Z",
-      "createdAt": "2026-01-13T04:36:02Z"
     },
     {
       "slug": "codecoradev/uteke",
@@ -288,9 +254,9 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 211,
+      "stars": 223,
       "forks": 23,
-      "openIssues": 8,
+      "openIssues": 1,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -315,8 +281,42 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-08-11T18:56:21Z",
+      "pushedAt": "2026-08-13T17:52:11Z",
       "createdAt": "2026-05-29T00:27:31Z"
+    },
+    {
+      "slug": "gnoviawan/termul",
+      "fullName": "gnoviawan/termul",
+      "name": "termul",
+      "owner": "gnoviawan",
+      "ownerUrl": "https://github.com/gnoviawan",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/72639723?v=4",
+      "url": "https://github.com/gnoviawan/termul",
+      "homepage": "https://termul.dev",
+      "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
+      "language": "TypeScript",
+      "stars": 220,
+      "forks": 41,
+      "openIssues": 39,
+      "license": "MIT",
+      "topics": [
+        "cross-platform",
+        "desktop-app",
+        "developer-tools",
+        "open-source",
+        "productivity",
+        "react",
+        "rust",
+        "shell",
+        "tauri",
+        "tauri-app",
+        "terminal",
+        "terminal-emulator",
+        "workspace-manager"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-13T17:48:07Z",
+      "createdAt": "2026-01-13T04:36:02Z"
     },
     {
       "slug": "hadziqmtqn/erd-builder-pro",
@@ -434,7 +434,7 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 119,
+      "stars": 120,
       "forks": 41,
       "openIssues": 4,
       "license": "MIT",
@@ -832,7 +832,7 @@
         "typescript"
       ],
       "archived": false,
-      "pushedAt": "2026-08-12T03:57:10Z",
+      "pushedAt": "2026-08-13T03:31:53Z",
       "createdAt": "2026-06-13T11:29:36Z"
     },
     {
@@ -852,7 +852,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-12T17:20:30Z",
+      "pushedAt": "2026-08-13T14:44:54Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -1055,6 +1055,40 @@
       "createdAt": "2026-06-14T05:07:25Z"
     },
     {
+      "slug": "rahmanef63/open-silong",
+      "fullName": "rahmanef63/open-silong",
+      "name": "open-silong",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/open-silong",
+      "homepage": "https://silong-os.vercel.app/",
+      "description": "Open-source, self-hostable Notion/Obsidian-style workspace — block editor for notes, docs and lightweight databases, plus a knowledge graph over them. Next.js 16 · React 19 · Convex · Tailwind v4.",
+      "language": "TypeScript",
+      "stars": 22,
+      "forks": 4,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "block-editor",
+        "convex",
+        "indonesia",
+        "knowledge-graph",
+        "nextjs",
+        "notion-alternative",
+        "notion-clone",
+        "open-source",
+        "react",
+        "self-hosted",
+        "tailwindcss",
+        "typescript",
+        "workspace"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-12T02:27:35Z",
+      "createdAt": "2026-04-29T18:48:11Z"
+    },
+    {
       "slug": "rizukirr/hyprsimple",
       "fullName": "rizukirr/hyprsimple",
       "name": "hyprsimple",
@@ -1080,40 +1114,6 @@
       "archived": false,
       "pushedAt": "2026-07-25T16:12:01Z",
       "createdAt": "2025-10-04T10:27:45Z"
-    },
-    {
-      "slug": "rahmanef63/open-silong",
-      "fullName": "rahmanef63/open-silong",
-      "name": "open-silong",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/open-silong",
-      "homepage": "https://silong-os.vercel.app/",
-      "description": "Open-source, self-hostable Notion/Obsidian-style workspace — block editor for notes, docs and lightweight databases, plus a knowledge graph over them. Next.js 16 · React 19 · Convex · Tailwind v4.",
-      "language": "TypeScript",
-      "stars": 21,
-      "forks": 4,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "block-editor",
-        "convex",
-        "indonesia",
-        "knowledge-graph",
-        "nextjs",
-        "notion-alternative",
-        "notion-clone",
-        "open-source",
-        "react",
-        "self-hosted",
-        "tailwindcss",
-        "typescript",
-        "workspace"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-12T02:27:35Z",
-      "createdAt": "2026-04-29T18:48:11Z"
     },
     {
       "slug": "rayasabari/yntk-ts",
@@ -1152,7 +1152,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-12T11:05:06Z",
+      "pushedAt": "2026-08-13T00:34:08Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1366,7 +1366,7 @@
       "homepage": "https://nusakit.my.id",
       "description": "🇮🇩 Indonesian Data Validation API — NIK, NPWP, Phone, Rupiah, Bank, Wilayah. Live: nusakit.my.id",
       "language": "TypeScript",
-      "stars": 11,
+      "stars": 12,
       "forks": 1,
       "openIssues": 0,
       "license": "MIT",
@@ -1600,11 +1600,11 @@
       "language": "TypeScript",
       "stars": 7,
       "forks": 1,
-      "openIssues": 16,
+      "openIssues": 0,
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-04T15:05:42Z",
+      "pushedAt": "2026-08-13T14:15:28Z",
       "createdAt": "2026-06-13T11:24:30Z"
     },
     {
@@ -1669,7 +1669,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-11T20:00:33Z",
+      "pushedAt": "2026-08-12T20:01:30Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1818,6 +1818,26 @@
       "createdAt": "2026-06-09T15:29:44Z"
     },
     {
+      "slug": "muslimtify-org/libmuslim",
+      "fullName": "muslimtify-org/libmuslim",
+      "name": "libmuslim",
+      "owner": "muslimtify-org",
+      "ownerUrl": "https://github.com/muslimtify-org",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/302768915?v=4",
+      "url": "https://github.com/muslimtify-org/libmuslim",
+      "homepage": "https://muslimtify.vercel.app",
+      "description": "Collection of islamic tools and utilities implemented in stb-style header only library",
+      "language": "C",
+      "stars": 4,
+      "forks": 1,
+      "openIssues": 10,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-08-13T14:07:38Z",
+      "createdAt": "2025-11-22T11:52:35Z"
+    },
+    {
       "slug": "codecoradev/trapfall",
       "fullName": "codecoradev/trapfall",
       "name": "trapfall",
@@ -1830,7 +1850,7 @@
       "language": "Rust",
       "stars": 4,
       "forks": 0,
-      "openIssues": 10,
+      "openIssues": 6,
       "license": "Apache-2.0",
       "topics": [
         "axum",
@@ -1848,28 +1868,8 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-08-12T16:35:02Z",
+      "pushedAt": "2026-08-13T01:35:23Z",
       "createdAt": "2026-06-06T00:23:26Z"
-    },
-    {
-      "slug": "muslimtify-org/libmuslim",
-      "fullName": "muslimtify-org/libmuslim",
-      "name": "libmuslim",
-      "owner": "muslimtify-org",
-      "ownerUrl": "https://github.com/muslimtify-org",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/302768915?v=4",
-      "url": "https://github.com/muslimtify-org/libmuslim",
-      "homepage": "https://muslimtify.vercel.app",
-      "description": "Collection of islamic tools and utilities implemented in stb-style header only library",
-      "language": "C",
-      "stars": 4,
-      "forks": 1,
-      "openIssues": 10,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-08-07T16:58:01Z",
-      "createdAt": "2025-11-22T11:52:35Z"
     },
     {
       "slug": "faisalaffan/ragi-instant",
@@ -1882,7 +1882,7 @@
       "homepage": "https://showcase.faisalaffan.com/ragi-instant",
       "description": "RAG System that implement simple and fast. like ragi to make indonesian bread",
       "language": "TypeScript",
-      "stars": 3,
+      "stars": 4,
       "forks": 0,
       "openIssues": 9,
       "license": "MIT",
@@ -2031,14 +2031,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-08-12T20:01:16.668Z"
+      "syncedAt": "2026-08-13T19:56:07.227Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-08-12T20:01:16.668Z"
+      "syncedAt": "2026-08-13T19:56:07.227Z"
     }
   ],
-  "syncedAt": "2026-08-12T20:01:16.668Z",
+  "syncedAt": "2026-08-13T19:56:07.227Z",
   "count": 76
 }

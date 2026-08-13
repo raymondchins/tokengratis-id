@@ -1,5 +1,28 @@
 [
   {
+    "date": "2026-08-13",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "OpenCode Zen",
+        "added": [],
+        "removed": [
+          "LongCat-2.0",
+          "North Mini Code",
+          "ling-3.0-flash-free"
+        ]
+      },
+      {
+        "provider": "OpenRouter",
+        "added": [],
+        "removed": [
+          "inclusionAI: Ling 3.0 Tiny (free)"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-08-12",
     "providersAdded": [],
     "providersRemoved": [],
