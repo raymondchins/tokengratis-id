@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-08-14",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "NVIDIA NIM",
+        "added": [
+          "Muse Glimmer 30B",
+          "nvidia/nemotron-3.5-lightning-30b-a3b"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "OpenCode Zen",
+        "added": [
+          "Nemotron 3.5 Lightning 30B A3B"
+        ],
+        "removed": [
+          "ling-3.0-tiny-free"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-08-13",
     "providersAdded": [],
     "providersRemoved": [],

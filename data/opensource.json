@@ -12,7 +12,7 @@
       "description": "UAParser.js - The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser (client-side) or Node.js (server-side).",
       "language": "JavaScript",
       "stars": 10174,
-      "forks": 1216,
+      "forks": 1215,
       "openIssues": 14,
       "license": "AGPL-3.0",
       "topics": [
@@ -97,7 +97,7 @@
       "language": "PHP",
       "stars": 1220,
       "forks": 1177,
-      "openIssues": 358,
+      "openIssues": 361,
       "license": null,
       "topics": [
         "opensid",
@@ -118,7 +118,7 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 937,
+      "stars": 941,
       "forks": 284,
       "openIssues": 10,
       "license": "MIT",
@@ -138,7 +138,7 @@
       "homepage": null,
       "description": "Package Laravel yang berisi data Provinsi, Kabupaten/Kota, dan Kecamatan/Desa di seluruh Indonesia.",
       "language": "PHP",
-      "stars": 677,
+      "stars": 676,
       "forks": 210,
       "openIssues": 5,
       "license": "MIT",
@@ -175,6 +175,47 @@
       "createdAt": "2026-01-04T12:18:23Z"
     },
     {
+      "slug": "fajarhide/omni",
+      "fullName": "fajarhide/omni",
+      "name": "omni",
+      "owner": "fajarhide",
+      "ownerUrl": "https://github.com/fajarhide",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/4769529?v=4",
+      "url": "https://github.com/fajarhide/omni",
+      "homepage": "https://omni.weekndlabs.com/docs",
+      "description": "Stop paying to re-read the same output. OMNI turns repeated bytes into retrievable handles: 97.2% off a file your agent reads twice, 74.9% across 6,656 real commands. Nothing deleted, nothing invented, and every number replays on your own corpus.",
+      "language": "Rust",
+      "stars": 338,
+      "forks": 34,
+      "openIssues": 4,
+      "license": "Apache-2.0",
+      "topics": [
+        "agentic-ai",
+        "ai-agents",
+        "antigravity",
+        "claude-code",
+        "cli",
+        "context-compression",
+        "context-distillation",
+        "context-engineering",
+        "cost-reduction",
+        "cursor",
+        "developer-tools",
+        "homebrew",
+        "hooks",
+        "llm",
+        "mcp",
+        "memory",
+        "prompt-caching",
+        "rust",
+        "token-efficiency",
+        "token-optimization"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-14T19:30:52Z",
+      "createdAt": "2026-03-15T03:38:04Z"
+    },
+    {
       "slug": "drenzzz/adbkit",
       "fullName": "Drenzzz/ADBKit",
       "name": "ADBKit",
@@ -203,47 +244,6 @@
       "createdAt": "2025-11-04T15:37:00Z"
     },
     {
-      "slug": "fajarhide/omni",
-      "fullName": "fajarhide/omni",
-      "name": "omni",
-      "owner": "fajarhide",
-      "ownerUrl": "https://github.com/fajarhide",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/4769529?v=4",
-      "url": "https://github.com/fajarhide/omni",
-      "homepage": "https://omni.weekndlabs.com/docs",
-      "description": "Stop paying to re-read the same output. OMNI turns repeated bytes into retrievable handles: 97.2% off a file your agent reads twice, 74.9% across 6,656 real commands. Nothing deleted, nothing invented, and every number replays on your own corpus.",
-      "language": "Rust",
-      "stars": 320,
-      "forks": 33,
-      "openIssues": 1,
-      "license": "Apache-2.0",
-      "topics": [
-        "agentic-ai",
-        "ai-agents",
-        "antigravity",
-        "claude-code",
-        "cli",
-        "context-compression",
-        "context-distillation",
-        "context-engineering",
-        "cost-reduction",
-        "cursor",
-        "developer-tools",
-        "homebrew",
-        "hooks",
-        "llm",
-        "mcp",
-        "memory",
-        "prompt-caching",
-        "rust",
-        "token-efficiency",
-        "token-optimization"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-13T12:59:47Z",
-      "createdAt": "2026-03-15T03:38:04Z"
-    },
-    {
       "slug": "codecoradev/uteke",
       "fullName": "codecoradev/uteke",
       "name": "uteke",
@@ -256,7 +256,7 @@
       "language": "Rust",
       "stars": 223,
       "forks": 23,
-      "openIssues": 1,
+      "openIssues": 0,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -281,7 +281,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-08-13T17:52:11Z",
+      "pushedAt": "2026-08-14T15:54:42Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -295,9 +295,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 220,
+      "stars": 221,
       "forks": 41,
-      "openIssues": 39,
+      "openIssues": 40,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -315,7 +315,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-08-13T17:48:07Z",
+      "pushedAt": "2026-08-14T17:36:48Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -414,7 +414,7 @@
       "homepage": null,
       "description": "Online banking angular springboot mysql",
       "language": "Java",
-      "stars": 132,
+      "stars": 131,
       "forks": 98,
       "openIssues": 0,
       "license": null,
@@ -517,7 +517,7 @@
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": null,
-      "stars": 111,
+      "stars": 112,
       "forks": 7,
       "openIssues": 0,
       "license": "MIT",
@@ -628,7 +628,7 @@
       "language": "Svelte",
       "stars": 59,
       "forks": 16,
-      "openIssues": 7,
+      "openIssues": 8,
       "license": "MIT",
       "topics": [
         "bansos",
@@ -846,13 +846,13 @@
       "homepage": null,
       "description": "Its Factorio for coding agents",
       "language": "Ruby",
-      "stars": 42,
+      "stars": 43,
       "forks": 4,
-      "openIssues": 3,
+      "openIssues": 2,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-13T14:44:54Z",
+      "pushedAt": "2026-08-14T12:41:43Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -945,6 +945,32 @@
       "createdAt": "2026-04-09T16:08:42Z"
     },
     {
+      "slug": "ardli-firman/sha-print",
+      "fullName": "ardli-firman/sha-print",
+      "name": "sha-print",
+      "owner": "ardli-firman",
+      "ownerUrl": "https://github.com/ardli-firman",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/48121202?v=4",
+      "url": "https://github.com/ardli-firman/sha-print",
+      "homepage": null,
+      "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
+      "language": "C#",
+      "stars": 33,
+      "forks": 13,
+      "openIssues": 1,
+      "license": null,
+      "topics": [
+        "desktop-app",
+        "printer",
+        "sharing",
+        "sharing-printer",
+        "windows"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-14T09:47:11Z",
+      "createdAt": "2026-05-23T05:37:35Z"
+    },
+    {
       "slug": "pendig/rute-bayar",
       "fullName": "pendig/rute-bayar",
       "name": "rute-bayar",
@@ -973,32 +999,6 @@
       "archived": false,
       "pushedAt": "2026-08-07T22:43:43Z",
       "createdAt": "2026-05-05T01:16:45Z"
-    },
-    {
-      "slug": "ardli-firman/sha-print",
-      "fullName": "ardli-firman/sha-print",
-      "name": "sha-print",
-      "owner": "ardli-firman",
-      "ownerUrl": "https://github.com/ardli-firman",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/48121202?v=4",
-      "url": "https://github.com/ardli-firman/sha-print",
-      "homepage": null,
-      "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
-      "language": "C#",
-      "stars": 33,
-      "forks": 13,
-      "openIssues": 1,
-      "license": null,
-      "topics": [
-        "desktop-app",
-        "printer",
-        "sharing",
-        "sharing-printer",
-        "windows"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-04T03:02:19Z",
-      "createdAt": "2026-05-23T05:37:35Z"
     },
     {
       "slug": "galpratama/agent-cli",
@@ -1031,7 +1031,7 @@
       "homepage": "https://www.mandumrimba.org",
       "description": "Mandum Rimba is an independent, nonprofit public-interest observatory. We do not sell data, carry advertising, or take sides. We consolidate satellite data and credible public sources into a single open map, auditable by anyone, fully open source, and with every figure traceable to its origin.",
       "language": "TypeScript",
-      "stars": 25,
+      "stars": 26,
       "forks": 6,
       "openIssues": 0,
       "license": "AGPL-3.0",
@@ -1669,7 +1669,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-12T20:01:30Z",
+      "pushedAt": "2026-08-13T19:56:20Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1830,11 +1830,11 @@
       "language": "C",
       "stars": 4,
       "forks": 1,
-      "openIssues": 10,
+      "openIssues": 9,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-13T14:07:38Z",
+      "pushedAt": "2026-08-14T15:51:27Z",
       "createdAt": "2025-11-22T11:52:35Z"
     },
     {
@@ -2031,14 +2031,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-08-13T19:56:07.227Z"
+      "syncedAt": "2026-08-14T19:49:55.867Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-08-13T19:56:07.227Z"
+      "syncedAt": "2026-08-14T19:49:55.867Z"
     }
   ],
-  "syncedAt": "2026-08-13T19:56:07.227Z",
+  "syncedAt": "2026-08-14T19:49:55.867Z",
   "count": 76
 }
