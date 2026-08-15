@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js - The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser (client-side) or Node.js (server-side).",
       "language": "JavaScript",
-      "stars": 10174,
+      "stars": 10175,
       "forks": 1215,
       "openIssues": 14,
       "license": "AGPL-3.0",
@@ -66,7 +66,7 @@
       "homepage": "https://www.htmly.com",
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
-      "stars": 1356,
+      "stars": 1357,
       "forks": 308,
       "openIssues": 52,
       "license": "GPL-2.0",
@@ -97,7 +97,7 @@
       "language": "PHP",
       "stars": 1220,
       "forks": 1177,
-      "openIssues": 361,
+      "openIssues": 363,
       "license": null,
       "topics": [
         "opensid",
@@ -118,7 +118,7 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 941,
+      "stars": 943,
       "forks": 284,
       "openIssues": 10,
       "license": "MIT",
@@ -138,7 +138,7 @@
       "homepage": null,
       "description": "Package Laravel yang berisi data Provinsi, Kabupaten/Kota, dan Kecamatan/Desa di seluruh Indonesia.",
       "language": "PHP",
-      "stars": 676,
+      "stars": 675,
       "forks": 210,
       "openIssues": 5,
       "license": "MIT",
@@ -185,9 +185,9 @@
       "homepage": "https://omni.weekndlabs.com/docs",
       "description": "Stop paying to re-read the same output. OMNI turns repeated bytes into retrievable handles: 97.2% off a file your agent reads twice, 74.9% across 6,656 real commands. Nothing deleted, nothing invented, and every number replays on your own corpus.",
       "language": "Rust",
-      "stars": 338,
-      "forks": 34,
-      "openIssues": 4,
+      "stars": 349,
+      "forks": 33,
+      "openIssues": 2,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -212,7 +212,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-08-14T19:30:52Z",
+      "pushedAt": "2026-08-15T16:54:55Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -254,9 +254,9 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 223,
+      "stars": 225,
       "forks": 23,
-      "openIssues": 0,
+      "openIssues": 2,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -281,7 +281,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-08-14T15:54:42Z",
+      "pushedAt": "2026-08-15T17:39:39Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -297,7 +297,7 @@
       "language": "TypeScript",
       "stars": 221,
       "forks": 41,
-      "openIssues": 40,
+      "openIssues": 42,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -315,7 +315,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-08-14T17:36:48Z",
+      "pushedAt": "2026-08-15T17:17:32Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -378,7 +378,7 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 146,
+      "stars": 147,
       "forks": 13,
       "openIssues": 1,
       "license": "Apache-2.0",
@@ -434,7 +434,7 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 120,
+      "stars": 121,
       "forks": 41,
       "openIssues": 4,
       "license": "MIT",
@@ -493,7 +493,7 @@
       "homepage": "https://pddikti.kemdiktisaintek.go.id/",
       "description": "Unofficial Python 3 API wrapper to retrieve data from PDDIKTI Kemdikbudristek.",
       "language": "Python",
-      "stars": 117,
+      "stars": 118,
       "forks": 25,
       "openIssues": 0,
       "license": null,
@@ -702,7 +702,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-10T01:00:12Z",
+      "pushedAt": "2026-08-15T04:08:04Z",
       "createdAt": "2026-03-29T13:58:03Z"
     },
     {
@@ -807,7 +807,7 @@
       "language": "JavaScript",
       "stars": 45,
       "forks": 11,
-      "openIssues": 1,
+      "openIssues": 2,
       "license": "MIT",
       "topics": [
         "ai-agents",
@@ -832,7 +832,7 @@
         "typescript"
       ],
       "archived": false,
-      "pushedAt": "2026-08-13T03:31:53Z",
+      "pushedAt": "2026-08-15T09:32:39Z",
       "createdAt": "2026-06-13T11:29:36Z"
     },
     {
@@ -852,7 +852,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-14T12:41:43Z",
+      "pushedAt": "2026-08-15T15:05:35Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -967,7 +967,7 @@
         "windows"
       ],
       "archived": false,
-      "pushedAt": "2026-08-14T09:47:11Z",
+      "pushedAt": "2026-08-15T07:00:05Z",
       "createdAt": "2026-05-23T05:37:35Z"
     },
     {
@@ -1055,6 +1055,33 @@
       "createdAt": "2026-06-14T05:07:25Z"
     },
     {
+      "slug": "rizukirr/hyprsimple",
+      "fullName": "rizukirr/hyprsimple",
+      "name": "hyprsimple",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/hyprsimple",
+      "homepage": null,
+      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
+      "language": "Shell",
+      "stars": 25,
+      "forks": 3,
+      "openIssues": 0,
+      "license": null,
+      "topics": [
+        "arch-linux",
+        "dotfiles",
+        "hyprland",
+        "hyprland-config",
+        "linux",
+        "omarchy"
+      ],
+      "archived": false,
+      "pushedAt": "2026-07-25T16:12:01Z",
+      "createdAt": "2025-10-04T10:27:45Z"
+    },
+    {
       "slug": "rahmanef63/open-silong",
       "fullName": "rahmanef63/open-silong",
       "name": "open-silong",
@@ -1087,33 +1114,6 @@
       "archived": false,
       "pushedAt": "2026-08-12T02:27:35Z",
       "createdAt": "2026-04-29T18:48:11Z"
-    },
-    {
-      "slug": "rizukirr/hyprsimple",
-      "fullName": "rizukirr/hyprsimple",
-      "name": "hyprsimple",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/hyprsimple",
-      "homepage": null,
-      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
-      "language": "Shell",
-      "stars": 22,
-      "forks": 3,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "arch-linux",
-        "dotfiles",
-        "hyprland",
-        "hyprland-config",
-        "linux",
-        "omarchy"
-      ],
-      "archived": false,
-      "pushedAt": "2026-07-25T16:12:01Z",
-      "createdAt": "2025-10-04T10:27:45Z"
     },
     {
       "slug": "rayasabari/yntk-ts",
@@ -1152,7 +1152,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-13T00:34:08Z",
+      "pushedAt": "2026-08-15T02:37:34Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1669,7 +1669,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-13T19:56:20Z",
+      "pushedAt": "2026-08-14T19:50:08Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1830,11 +1830,11 @@
       "language": "C",
       "stars": 4,
       "forks": 1,
-      "openIssues": 9,
+      "openIssues": 6,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-14T15:51:27Z",
+      "pushedAt": "2026-08-15T15:45:12Z",
       "createdAt": "2025-11-22T11:52:35Z"
     },
     {
@@ -2031,14 +2031,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-08-14T19:49:55.867Z"
+      "syncedAt": "2026-08-15T19:22:33.589Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-08-14T19:49:55.867Z"
+      "syncedAt": "2026-08-15T19:22:33.589Z"
     }
   ],
-  "syncedAt": "2026-08-14T19:49:55.867Z",
+  "syncedAt": "2026-08-15T19:22:33.589Z",
   "count": 76
 }

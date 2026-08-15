@@ -1,5 +1,24 @@
 [
   {
+    "date": "2026-08-15",
+    "providersAdded": [
+      {
+        "slug": "cline",
+        "name": "Cline"
+      }
+    ],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "OpenRouter",
+        "added": [
+          "Dots Studio: Dots3-Note Preview (free)"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-08-14",
     "providersAdded": [],
     "providersRemoved": [],

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T19:49:50.635Z",
+  "generatedAt": "2026-08-15T19:22:27.848Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -10,41 +10,41 @@
     },
     "freellm.net": {
       "status": "ok",
-      "providers": 24,
-      "models": 362,
+      "providers": 25,
+      "models": 363,
       "shapeIssues": [
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "maxOutput",
           "rule": "all-null-collapse",
-          "count": 362,
-          "total": 362,
+          "count": 363,
+          "total": 363,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"maxOutput\": 100% null di 362 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+          "message": "Field \"maxOutput\": 100% null di 363 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
         },
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "url",
           "rule": "all-null-collapse",
-          "count": 24,
-          "total": 24,
+          "count": 25,
+          "total": 25,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"url\": 100% null di 24 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+          "message": "Field \"url\": 100% null di 25 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
         },
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "baseUrl",
           "rule": "all-null-collapse",
-          "count": 24,
-          "total": 24,
+          "count": 25,
+          "total": 25,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"baseUrl\": 100% null di 24 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+          "message": "Field \"baseUrl\": 100% null di 25 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
         }
       ]
     },
@@ -56,7 +56,7 @@
     "openrouter.ai/api/v1/models": {
       "status": "ok",
       "providers": 1,
-      "models": 15,
+      "models": 16,
       "shapeIssues": []
     }
   },
@@ -64,8 +64,8 @@
     "cheahjs/free-llm-api-resources"
   ],
   "merged": {
-    "providers": 24,
-    "models": 342,
+    "providers": 25,
+    "models": 346,
     "shapeIssues": []
   },
   "smokeTest": {
@@ -78,35 +78,29 @@
     "warnings": [],
     "stats": {
       "prevProviders": 24,
-      "nextProviders": 24,
-      "prevModels": 340,
-      "nextModels": 342,
-      "totalDropPct": -0.5882352941176471,
+      "nextProviders": 25,
+      "prevModels": 342,
+      "nextModels": 346,
+      "totalDropPct": -1.1695906432748537,
       "disappeared": [],
       "shrunk": [],
       "churned": [],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 320,
+            "eligible": 323,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "maxOutput": {
-            "eligible": 170,
-            "changed": 1,
-            "ratioPct": 0.5882352941176471,
-            "examples": [
-              {
-                "label": "openrouter/liquid/lfm-2.5-2.6b:free",
-                "from": "33K",
-                "to": "8K"
-              }
-            ]
+            "eligible": 171,
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           },
           "modality": {
-            "eligible": 265,
+            "eligible": 267,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -154,33 +148,33 @@
       "source": "freellm.net",
       "field": "maxOutput",
       "rule": "all-null-collapse",
-      "count": 362,
-      "total": 362,
+      "count": 363,
+      "total": 363,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"maxOutput\": 100% null di 362 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+      "message": "Field \"maxOutput\": 100% null di 363 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
     },
     {
       "severity": "warn",
       "source": "freellm.net",
       "field": "url",
       "rule": "all-null-collapse",
-      "count": 24,
-      "total": 24,
+      "count": 25,
+      "total": 25,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"url\": 100% null di 24 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+      "message": "Field \"url\": 100% null di 25 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
     },
     {
       "severity": "warn",
       "source": "freellm.net",
       "field": "baseUrl",
       "rule": "all-null-collapse",
-      "count": 24,
-      "total": 24,
+      "count": 25,
+      "total": 25,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"baseUrl\": 100% null di 24 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+      "message": "Field \"baseUrl\": 100% null di 25 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
     }
   ],
   "quarantine": {
