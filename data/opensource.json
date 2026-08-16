@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js - The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser (client-side) or Node.js (server-side).",
       "language": "JavaScript",
-      "stars": 10175,
+      "stars": 10178,
       "forks": 1215,
       "openIssues": 14,
       "license": "AGPL-3.0",
@@ -118,8 +118,8 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 943,
-      "forks": 284,
+      "stars": 946,
+      "forks": 286,
       "openIssues": 10,
       "license": "MIT",
       "topics": [],
@@ -138,7 +138,7 @@
       "homepage": null,
       "description": "Package Laravel yang berisi data Provinsi, Kabupaten/Kota, dan Kecamatan/Desa di seluruh Indonesia.",
       "language": "PHP",
-      "stars": 675,
+      "stars": 676,
       "forks": 210,
       "openIssues": 5,
       "license": "MIT",
@@ -183,11 +183,11 @@
       "ownerAvatar": "https://avatars.githubusercontent.com/u/4769529?v=4",
       "url": "https://github.com/fajarhide/omni",
       "homepage": "https://omni.weekndlabs.com/docs",
-      "description": "Stop paying to re-read the same output. OMNI turns repeated bytes into retrievable handles: 97.2% off a file your agent reads twice, 74.9% across 6,656 real commands. Nothing deleted, nothing invented, and every number replays on your own corpus.",
+      "description": "Stop paying to re-read the same output. OMNI turns repeated bytes into retrievable handles: 97.2% off a file your agent reads twice, 14.9% across 6,656 real commands. Nothing deleted, nothing invented, and every number replays on your own corpus.",
       "language": "Rust",
-      "stars": 349,
+      "stars": 352,
       "forks": 33,
-      "openIssues": 2,
+      "openIssues": 6,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -212,7 +212,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-08-15T16:54:55Z",
+      "pushedAt": "2026-08-16T07:20:24Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -226,8 +226,8 @@
       "homepage": null,
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 334,
-      "forks": 39,
+      "stars": 335,
+      "forks": 40,
       "openIssues": 6,
       "license": "MIT",
       "topics": [
@@ -255,8 +255,8 @@
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
       "stars": 225,
-      "forks": 23,
-      "openIssues": 2,
+      "forks": 25,
+      "openIssues": 7,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -295,7 +295,7 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 221,
+      "stars": 222,
       "forks": 41,
       "openIssues": 42,
       "license": "MIT",
@@ -335,6 +335,9 @@
       "license": null,
       "topics": [
         "coding",
+        "data-engineering",
+        "data-visualization",
+        "database",
         "developer-tools",
         "devtools",
         "drawing-app",
@@ -344,7 +347,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-08-09T03:40:25Z",
+      "pushedAt": "2026-08-16T17:49:41Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -378,7 +381,7 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 147,
+      "stars": 148,
       "forks": 13,
       "openIssues": 1,
       "license": "Apache-2.0",
@@ -434,7 +437,7 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 121,
+      "stars": 122,
       "forks": 41,
       "openIssues": 4,
       "license": "MIT",
@@ -626,9 +629,9 @@
       "homepage": "https://bansos.dev",
       "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
       "language": "Svelte",
-      "stars": 59,
+      "stars": 60,
       "forks": 16,
-      "openIssues": 8,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [
         "bansos",
@@ -643,7 +646,7 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-08-10T11:46:01Z",
+      "pushedAt": "2026-08-16T17:16:27Z",
       "createdAt": "2026-06-11T13:28:54Z"
     },
     {
@@ -696,7 +699,7 @@
       "homepage": "https://maziyank.github.io/nats",
       "description": "NATS | Open Source Business and Accounting Software",
       "language": "TypeScript",
-      "stars": 51,
+      "stars": 52,
       "forks": 16,
       "openIssues": 0,
       "license": "MIT",
@@ -716,7 +719,7 @@
       "homepage": null,
       "description": "Omnidrive lets you connect multiple Google Drive accounts and manage all your files from a single dashboard. It runs entirely on Cloudflare's edge network — Workers for the API, D1 for the database, and KV for session storage — so there's no traditional server to maintain.",
       "language": "TypeScript",
-      "stars": 48,
+      "stars": 49,
       "forks": 12,
       "openIssues": 0,
       "license": "MIT",
@@ -729,6 +732,26 @@
       "archived": false,
       "pushedAt": "2026-06-24T03:36:32Z",
       "createdAt": "2026-06-07T16:49:12Z"
+    },
+    {
+      "slug": "mmenghancurkan/dynaqris",
+      "fullName": "mmenghancurkan/dynaQRIS",
+      "name": "dynaQRIS",
+      "owner": "mmenghancurkan",
+      "ownerUrl": "https://github.com/mmenghancurkan",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/68109330?v=4",
+      "url": "https://github.com/mmenghancurkan/dynaQRIS",
+      "homepage": null,
+      "description": "Dynamic QRIS Python-based generator program.",
+      "language": "Python",
+      "stars": 48,
+      "forks": 6,
+      "openIssues": 0,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-06-20T14:24:38Z",
+      "createdAt": "2026-06-18T03:59:11Z"
     },
     {
       "slug": "giosakti/duragent",
@@ -749,26 +772,6 @@
       "archived": false,
       "pushedAt": "2026-02-18T08:47:11Z",
       "createdAt": "2026-01-11T07:23:01Z"
-    },
-    {
-      "slug": "mmenghancurkan/dynaqris",
-      "fullName": "mmenghancurkan/dynaQRIS",
-      "name": "dynaQRIS",
-      "owner": "mmenghancurkan",
-      "ownerUrl": "https://github.com/mmenghancurkan",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/68109330?v=4",
-      "url": "https://github.com/mmenghancurkan/dynaQRIS",
-      "homepage": null,
-      "description": "Dynamic QRIS Python-based generator program.",
-      "language": "Python",
-      "stars": 47,
-      "forks": 6,
-      "openIssues": 0,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-06-20T14:24:38Z",
-      "createdAt": "2026-06-18T03:59:11Z"
     },
     {
       "slug": "andriawan/andkasir",
@@ -846,13 +849,13 @@
       "homepage": null,
       "description": "Its Factorio for coding agents",
       "language": "Ruby",
-      "stars": 43,
+      "stars": 44,
       "forks": 4,
       "openIssues": 2,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-15T15:05:35Z",
+      "pushedAt": "2026-08-16T10:54:52Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -1011,7 +1014,7 @@
       "homepage": null,
       "description": "A beautiful Terminal UI for launching multiple AI providers from a single command",
       "language": "HTML",
-      "stars": 30,
+      "stars": 31,
       "forks": 7,
       "openIssues": 0,
       "license": "MIT",
@@ -1669,7 +1672,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-14T19:50:08Z",
+      "pushedAt": "2026-08-15T19:22:48Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1830,11 +1833,11 @@
       "language": "C",
       "stars": 4,
       "forks": 1,
-      "openIssues": 6,
+      "openIssues": 2,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-15T15:45:12Z",
+      "pushedAt": "2026-08-16T15:27:01Z",
       "createdAt": "2025-11-22T11:52:35Z"
     },
     {
@@ -2031,14 +2034,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-08-15T19:22:33.589Z"
+      "syncedAt": "2026-08-16T19:22:26.599Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-08-15T19:22:33.589Z"
+      "syncedAt": "2026-08-16T19:22:26.599Z"
     }
   ],
-  "syncedAt": "2026-08-15T19:22:33.589Z",
+  "syncedAt": "2026-08-16T19:22:26.599Z",
   "count": 76
 }
