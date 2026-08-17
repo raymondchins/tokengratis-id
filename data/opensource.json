@@ -96,7 +96,7 @@
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
       "stars": 1220,
-      "forks": 1177,
+      "forks": 1178,
       "openIssues": 363,
       "license": null,
       "topics": [
@@ -118,8 +118,8 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 946,
-      "forks": 286,
+      "stars": 955,
+      "forks": 292,
       "openIssues": 10,
       "license": "MIT",
       "topics": [],
@@ -183,11 +183,11 @@
       "ownerAvatar": "https://avatars.githubusercontent.com/u/4769529?v=4",
       "url": "https://github.com/fajarhide/omni",
       "homepage": "https://omni.weekndlabs.com/docs",
-      "description": "Stop paying to re-read the same output. OMNI turns repeated bytes into retrievable handles: 97.2% off a file your agent reads twice, 14.9% across 6,656 real commands. Nothing deleted, nothing invented, and every number replays on your own corpus.",
+      "description": "Stop paying to re-read the same output. OMNI turns repeated bytes into retrievable handles: 97.2% off a file your agent reads twice, and across 5,984 real commands 69.6% on a heavy week, 14.9% on an ordinary one. Nothing deleted, nothing invented, every number replays on your own corpus.",
       "language": "Rust",
       "stars": 352,
       "forks": 33,
-      "openIssues": 6,
+      "openIssues": 4,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -212,7 +212,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-08-16T07:20:24Z",
+      "pushedAt": "2026-08-17T11:22:23Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -226,7 +226,7 @@
       "homepage": null,
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 335,
+      "stars": 336,
       "forks": 40,
       "openIssues": 6,
       "license": "MIT",
@@ -255,8 +255,8 @@
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
       "stars": 225,
-      "forks": 25,
-      "openIssues": 7,
+      "forks": 26,
+      "openIssues": 4,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -281,7 +281,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-08-15T17:39:39Z",
+      "pushedAt": "2026-08-17T14:23:36Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -297,7 +297,7 @@
       "language": "TypeScript",
       "stars": 222,
       "forks": 41,
-      "openIssues": 42,
+      "openIssues": 41,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -315,7 +315,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-08-15T17:17:32Z",
+      "pushedAt": "2026-08-17T17:23:32Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -347,7 +347,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-08-16T17:49:41Z",
+      "pushedAt": "2026-08-17T12:33:35Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -381,7 +381,7 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 148,
+      "stars": 150,
       "forks": 13,
       "openIssues": 1,
       "license": "Apache-2.0",
@@ -403,7 +403,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-08-12T04:16:36Z",
+      "pushedAt": "2026-08-17T12:54:27Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -437,7 +437,7 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 122,
+      "stars": 123,
       "forks": 41,
       "openIssues": 4,
       "license": "MIT",
@@ -477,7 +477,7 @@
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
       "stars": 118,
-      "forks": 60,
+      "forks": 61,
       "openIssues": 5,
       "license": "MIT",
       "topics": [],
@@ -520,7 +520,7 @@
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": null,
-      "stars": 112,
+      "stars": 113,
       "forks": 7,
       "openIssues": 0,
       "license": "MIT",
@@ -581,7 +581,7 @@
       "homepage": "https://svelte-audio-ui.vercel.app/",
       "description": "A set of accessible and composable Audio UI components.",
       "language": "Svelte",
-      "stars": 85,
+      "stars": 86,
       "forks": 5,
       "openIssues": 11,
       "license": "MIT",
@@ -646,7 +646,7 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-08-16T17:16:27Z",
+      "pushedAt": "2026-08-17T04:06:41Z",
       "createdAt": "2026-06-11T13:28:54Z"
     },
     {
@@ -660,8 +660,8 @@
       "homepage": "https://mso.rahmanef.com",
       "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
-      "stars": 56,
-      "forks": 7,
+      "stars": 58,
+      "forks": 8,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -685,7 +685,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-08-11T10:56:54Z",
+      "pushedAt": "2026-08-17T18:54:12Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -1095,7 +1095,7 @@
       "homepage": "https://silong-os.vercel.app/",
       "description": "Open-source, self-hostable Notion/Obsidian-style workspace — block editor for notes, docs and lightweight databases, plus a knowledge graph over them. Next.js 16 · React 19 · Convex · Tailwind v4.",
       "language": "TypeScript",
-      "stars": 22,
+      "stars": 24,
       "forks": 4,
       "openIssues": 0,
       "license": "MIT",
@@ -1159,6 +1159,39 @@
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
+      "slug": "rahmanef63/control-room",
+      "fullName": "rahmanef63/control-room",
+      "name": "control-room",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/control-room",
+      "homepage": null,
+      "description": "Mobile-first PWA for driving a single VPS from the browser — up to 16 concurrent terminals, AI agent launchers, host ops and audit behind one shared secret on a Tailscale-only domain. Next.js 15 · React 19 · Node agent (node-pty + xterm.js).",
+      "language": "TypeScript",
+      "stars": 18,
+      "forks": 3,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "ai-agents",
+        "devops",
+        "mobile-first",
+        "nextjs",
+        "nodejs",
+        "pty",
+        "pwa",
+        "self-hosted",
+        "terminal",
+        "tmux-alternative",
+        "vps",
+        "xterm"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-09T16:08:01Z",
+      "createdAt": "2026-03-20T14:25:48Z"
+    },
+    {
       "slug": "rafiulm/warungos",
       "fullName": "RafiulM/warungos",
       "name": "warungos",
@@ -1210,39 +1243,6 @@
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
-      "slug": "rahmanef63/control-room",
-      "fullName": "rahmanef63/control-room",
-      "name": "control-room",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/control-room",
-      "homepage": null,
-      "description": "Mobile-first PWA for driving a single VPS from the browser — up to 16 concurrent terminals, AI agent launchers, host ops and audit behind one shared secret on a Tailscale-only domain. Next.js 15 · React 19 · Node agent (node-pty + xterm.js).",
-      "language": "TypeScript",
-      "stars": 17,
-      "forks": 3,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "ai-agents",
-        "devops",
-        "mobile-first",
-        "nextjs",
-        "nodejs",
-        "pty",
-        "pwa",
-        "self-hosted",
-        "terminal",
-        "tmux-alternative",
-        "vps",
-        "xterm"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-09T16:08:01Z",
-      "createdAt": "2026-03-20T14:25:48Z"
-    },
-    {
       "slug": "muhammadhasbiashshiddieqy/openclawn",
       "fullName": "MuhammadHasbiAshshiddieqy/OpenClawn",
       "name": "OpenClawn",
@@ -1273,8 +1273,8 @@
       "homepage": null,
       "description": "Zero-human full-stack deployment as a bundle of /sc-* Claude Code slash commands — GitHub + Convex (self-hosted & Cloud) + Dokploy + Vercel + Hostinger DNS, source to verified live URL. Node ≥18, no runtime dependencies. 8 skills implemented, 5 stubs.",
       "language": "JavaScript",
-      "stars": 13,
-      "forks": 2,
+      "stars": 14,
+      "forks": 3,
       "openIssues": 1,
       "license": "MIT",
       "topics": [
@@ -1306,7 +1306,7 @@
       "homepage": "https://muslimtify.vercel.app",
       "description": "A daily prayer notification daemon for Muslims on Windows and Linux, supporting 21 global standard calculation methods, all madzhab, all country.",
       "language": "C",
-      "stars": 13,
+      "stars": 14,
       "forks": 1,
       "openIssues": 0,
       "license": "MIT",
@@ -1486,6 +1486,40 @@
       "createdAt": "2026-05-16T04:31:37Z"
     },
     {
+      "slug": "rahmanef63/framepilot",
+      "fullName": "rahmanef63/framepilot",
+      "name": "framepilot",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/framepilot",
+      "homepage": "https://frame-pilot.rahmanef.com/",
+      "description": "Browser-based 3D camera previsualization and shot planner — design scenes, frames, angles, lenses and moves, then export platform-tuned prompts for AI video models. Next.js 16 · React 19 · Three.js · Convex.",
+      "language": "TypeScript",
+      "stars": 9,
+      "forks": 0,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "ai-video",
+        "camera",
+        "cinematography",
+        "convex",
+        "nextjs",
+        "previsualization",
+        "prompt-engineering",
+        "shot-planner",
+        "storyboard",
+        "text-to-video",
+        "threejs",
+        "typescript",
+        "webgl"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-02T10:08:50Z",
+      "createdAt": "2026-07-10T13:57:01Z"
+    },
+    {
       "slug": "semutdev/goigniter",
       "fullName": "semutdev/goigniter",
       "name": "goigniter",
@@ -1510,40 +1544,6 @@
       "archived": false,
       "pushedAt": "2026-07-01T07:37:18Z",
       "createdAt": "2026-01-11T03:16:04Z"
-    },
-    {
-      "slug": "rahmanef63/framepilot",
-      "fullName": "rahmanef63/framepilot",
-      "name": "framepilot",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/framepilot",
-      "homepage": "https://frame-pilot.rahmanef.com/",
-      "description": "Browser-based 3D camera previsualization and shot planner — design scenes, frames, angles, lenses and moves, then export platform-tuned prompts for AI video models. Next.js 16 · React 19 · Three.js · Convex.",
-      "language": "TypeScript",
-      "stars": 8,
-      "forks": 0,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "ai-video",
-        "camera",
-        "cinematography",
-        "convex",
-        "nextjs",
-        "previsualization",
-        "prompt-engineering",
-        "shot-planner",
-        "storyboard",
-        "text-to-video",
-        "threejs",
-        "typescript",
-        "webgl"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-02T10:08:50Z",
-      "createdAt": "2026-07-10T13:57:01Z"
     },
     {
       "slug": "rrndev/app-permission-analyzer",
@@ -1672,7 +1672,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-15T19:22:48Z",
+      "pushedAt": "2026-08-16T19:22:40Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1833,12 +1833,47 @@
       "language": "C",
       "stars": 4,
       "forks": 1,
-      "openIssues": 2,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-16T15:27:01Z",
+      "pushedAt": "2026-08-17T14:29:17Z",
       "createdAt": "2025-11-22T11:52:35Z"
+    },
+    {
+      "slug": "faisalaffan/ragi-instant",
+      "fullName": "faisalaffan/ragi-instant",
+      "name": "ragi-instant",
+      "owner": "faisalaffan",
+      "ownerUrl": "https://github.com/faisalaffan",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/31681362?v=4",
+      "url": "https://github.com/faisalaffan/ragi-instant",
+      "homepage": "https://showcase.faisalaffan.com/ragi-instant",
+      "description": "RAG System that implement simple and fast. like ragi to make indonesian bread",
+      "language": "TypeScript",
+      "stars": 4,
+      "forks": 0,
+      "openIssues": 9,
+      "license": "MIT",
+      "topics": [
+        "document-processing",
+        "embeddings",
+        "hybrid-search",
+        "indonesian",
+        "llm",
+        "pgvector",
+        "production-ready",
+        "rag",
+        "rag-evaluation",
+        "regulatory-compliance",
+        "reranking",
+        "retrieval-augmented-generation",
+        "semantic-search",
+        "vector-sesarch"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-17T01:36:39Z",
+      "createdAt": "2026-05-16T13:54:21Z"
     },
     {
       "slug": "codecoradev/trapfall",
@@ -1873,41 +1908,6 @@
       "archived": false,
       "pushedAt": "2026-08-13T01:35:23Z",
       "createdAt": "2026-06-06T00:23:26Z"
-    },
-    {
-      "slug": "faisalaffan/ragi-instant",
-      "fullName": "faisalaffan/ragi-instant",
-      "name": "ragi-instant",
-      "owner": "faisalaffan",
-      "ownerUrl": "https://github.com/faisalaffan",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/31681362?v=4",
-      "url": "https://github.com/faisalaffan/ragi-instant",
-      "homepage": "https://showcase.faisalaffan.com/ragi-instant",
-      "description": "RAG System that implement simple and fast. like ragi to make indonesian bread",
-      "language": "TypeScript",
-      "stars": 4,
-      "forks": 0,
-      "openIssues": 9,
-      "license": "MIT",
-      "topics": [
-        "document-processing",
-        "embeddings",
-        "hybrid-search",
-        "indonesian",
-        "llm",
-        "pgvector",
-        "production-ready",
-        "rag",
-        "rag-evaluation",
-        "regulatory-compliance",
-        "reranking",
-        "retrieval-augmented-generation",
-        "semantic-search",
-        "vector-sesarch"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-12T15:57:59Z",
-      "createdAt": "2026-05-16T13:54:21Z"
     },
     {
       "slug": "wauputr4/hermex",
@@ -1950,6 +1950,26 @@
       "createdAt": "2025-12-10T04:16:53Z"
     },
     {
+      "slug": "adityazxxx/sheltermark",
+      "fullName": "AdityaZxxx/sheltermark",
+      "name": "sheltermark",
+      "owner": "AdityaZxxx",
+      "ownerUrl": "https://github.com/AdityaZxxx",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/106899341?v=4",
+      "url": "https://github.com/AdityaZxxx/sheltermark",
+      "homepage": "https://sheltermark.vercel.app",
+      "description": "Sheltermark is a safe place for your bookmarks.",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "openIssues": 0,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-08-17T13:42:04Z",
+      "createdAt": "2026-02-10T04:21:08Z"
+    },
+    {
       "slug": "dayartcrew-web/masday-workflow-rust",
       "fullName": "dayartcrew-web/masday-workflow-rust",
       "name": "masday-workflow-rust",
@@ -1990,26 +2010,6 @@
       "createdAt": "2026-06-04T02:35:05Z"
     },
     {
-      "slug": "adityazxxx/sheltermark",
-      "fullName": "AdityaZxxx/sheltermark",
-      "name": "sheltermark",
-      "owner": "AdityaZxxx",
-      "ownerUrl": "https://github.com/AdityaZxxx",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/106899341?v=4",
-      "url": "https://github.com/AdityaZxxx/sheltermark",
-      "homepage": "https://sheltermark.vercel.app",
-      "description": "Sheltermark is a safe place for your bookmarks.",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "openIssues": 0,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-08-09T07:00:59Z",
-      "createdAt": "2026-02-10T04:21:08Z"
-    },
-    {
       "slug": "nzxcode/hospital-ai-sales-agent",
       "fullName": "NzxCode/Hospital-Ai-Sales-Agent",
       "name": "Hospital-Ai-Sales-Agent",
@@ -2034,14 +2034,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-08-16T19:22:26.599Z"
+      "syncedAt": "2026-08-17T19:30:04.441Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-08-16T19:22:26.599Z"
+      "syncedAt": "2026-08-17T19:30:04.441Z"
     }
   ],
-  "syncedAt": "2026-08-16T19:22:26.599Z",
+  "syncedAt": "2026-08-17T19:30:04.441Z",
   "count": 76
 }
