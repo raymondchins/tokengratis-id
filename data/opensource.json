@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js - The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser (client-side) or Node.js (server-side).",
       "language": "JavaScript",
-      "stars": 10178,
+      "stars": 10179,
       "forks": 1215,
       "openIssues": 14,
       "license": "AGPL-3.0",
@@ -66,9 +66,9 @@
       "homepage": "https://www.htmly.com",
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
-      "stars": 1357,
+      "stars": 1358,
       "forks": 308,
-      "openIssues": 52,
+      "openIssues": 53,
       "license": "GPL-2.0",
       "topics": [
         "blog",
@@ -97,14 +97,14 @@
       "language": "PHP",
       "stars": 1220,
       "forks": 1178,
-      "openIssues": 363,
+      "openIssues": 358,
       "license": null,
       "topics": [
         "opensid",
         "sistem-informasi-desa"
       ],
       "archived": false,
-      "pushedAt": "2026-08-12T12:15:54Z",
+      "pushedAt": "2026-08-18T08:48:25Z",
       "createdAt": "2016-05-21T10:55:38Z"
     },
     {
@@ -118,8 +118,8 @@
       "homepage": null,
       "description": "🎬 Transform long-form YouTube videos (podcasts, interviews, vlogs) into engaging short-form content for TikTok, Instagram Reels, and YouTube Shorts — all with a single command.",
       "language": "Python",
-      "stars": 955,
-      "forks": 292,
+      "stars": 959,
+      "forks": 293,
       "openIssues": 10,
       "license": "MIT",
       "topics": [],
@@ -183,11 +183,11 @@
       "ownerAvatar": "https://avatars.githubusercontent.com/u/4769529?v=4",
       "url": "https://github.com/fajarhide/omni",
       "homepage": "https://omni.weekndlabs.com/docs",
-      "description": "Stop paying to re-read the same output. OMNI turns repeated bytes into retrievable handles: 97.2% off a file your agent reads twice, and across 5,984 real commands 69.6% on a heavy week, 14.9% on an ordinary one. Nothing deleted, nothing invented, every number replays on your own corpus.",
+      "description": "Your agent pays twice for output it has already seen. OMNI returns a handle instead: 97.2% off a file read twice. Nothing deleted, nothing invented.",
       "language": "Rust",
       "stars": 352,
       "forks": 33,
-      "openIssues": 4,
+      "openIssues": 13,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -212,7 +212,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-08-17T11:22:23Z",
+      "pushedAt": "2026-08-18T16:55:19Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -226,8 +226,8 @@
       "homepage": null,
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 336,
-      "forks": 40,
+      "stars": 337,
+      "forks": 41,
       "openIssues": 6,
       "license": "MIT",
       "topics": [
@@ -240,7 +240,7 @@
         "wails-app"
       ],
       "archived": false,
-      "pushedAt": "2026-08-11T06:06:06Z",
+      "pushedAt": "2026-08-18T05:00:57Z",
       "createdAt": "2025-11-04T15:37:00Z"
     },
     {
@@ -256,7 +256,7 @@
       "language": "Rust",
       "stars": 225,
       "forks": 26,
-      "openIssues": 4,
+      "openIssues": 5,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -281,7 +281,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-08-17T14:23:36Z",
+      "pushedAt": "2026-08-18T18:54:09Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -297,7 +297,7 @@
       "language": "TypeScript",
       "stars": 222,
       "forks": 41,
-      "openIssues": 41,
+      "openIssues": 43,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -381,7 +381,7 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 150,
+      "stars": 152,
       "forks": 13,
       "openIssues": 1,
       "license": "Apache-2.0",
@@ -437,8 +437,8 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 123,
-      "forks": 41,
+      "stars": 124,
+      "forks": 42,
       "openIssues": 4,
       "license": "MIT",
       "topics": [
@@ -476,8 +476,8 @@
       "homepage": null,
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
-      "stars": 118,
-      "forks": 61,
+      "stars": 120,
+      "forks": 62,
       "openIssues": 5,
       "license": "MIT",
       "topics": [],
@@ -496,7 +496,7 @@
       "homepage": "https://pddikti.kemdiktisaintek.go.id/",
       "description": "Unofficial Python 3 API wrapper to retrieve data from PDDIKTI Kemdikbudristek.",
       "language": "Python",
-      "stars": 118,
+      "stars": 119,
       "forks": 25,
       "openIssues": 0,
       "license": null,
@@ -629,9 +629,9 @@
       "homepage": "https://bansos.dev",
       "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
       "language": "Svelte",
-      "stars": 60,
+      "stars": 64,
       "forks": 16,
-      "openIssues": 3,
+      "openIssues": 4,
       "license": "MIT",
       "topics": [
         "bansos",
@@ -646,7 +646,7 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-08-17T04:06:41Z",
+      "pushedAt": "2026-08-18T10:37:55Z",
       "createdAt": "2026-06-11T13:28:54Z"
     },
     {
@@ -685,7 +685,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-08-17T18:54:12Z",
+      "pushedAt": "2026-08-18T11:51:30Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -798,6 +798,26 @@
       "createdAt": "2017-05-22T15:52:00Z"
     },
     {
+      "slug": "firewalker06/tycho",
+      "fullName": "firewalker06/tycho",
+      "name": "tycho",
+      "owner": "firewalker06",
+      "ownerUrl": "https://github.com/firewalker06",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/157515?v=4",
+      "url": "https://github.com/firewalker06/tycho",
+      "homepage": null,
+      "description": "Its Factorio for coding agents",
+      "language": "Ruby",
+      "stars": 45,
+      "forks": 4,
+      "openIssues": 2,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-08-18T13:30:49Z",
+      "createdAt": "2026-05-23T01:58:17Z"
+    },
+    {
       "slug": "raymondchins/agentmap",
       "fullName": "raymondchins/agentmap",
       "name": "agentmap",
@@ -837,26 +857,6 @@
       "archived": false,
       "pushedAt": "2026-08-15T09:32:39Z",
       "createdAt": "2026-06-13T11:29:36Z"
-    },
-    {
-      "slug": "firewalker06/tycho",
-      "fullName": "firewalker06/tycho",
-      "name": "tycho",
-      "owner": "firewalker06",
-      "ownerUrl": "https://github.com/firewalker06",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/157515?v=4",
-      "url": "https://github.com/firewalker06/tycho",
-      "homepage": null,
-      "description": "Its Factorio for coding agents",
-      "language": "Ruby",
-      "stars": 44,
-      "forks": 4,
-      "openIssues": 2,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-08-16T10:54:52Z",
-      "createdAt": "2026-05-23T01:58:17Z"
     },
     {
       "slug": "akbxr/dns",
@@ -958,7 +958,7 @@
       "homepage": null,
       "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
       "language": "C#",
-      "stars": 33,
+      "stars": 34,
       "forks": 13,
       "openIssues": 1,
       "license": null,
@@ -1058,6 +1058,40 @@
       "createdAt": "2026-06-14T05:07:25Z"
     },
     {
+      "slug": "rahmanef63/open-silong",
+      "fullName": "rahmanef63/open-silong",
+      "name": "open-silong",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/open-silong",
+      "homepage": "https://silong-os.vercel.app/",
+      "description": "Open-source, self-hostable Notion/Obsidian-style workspace — block editor for notes, docs and lightweight databases, plus a knowledge graph over them. Next.js 16 · React 19 · Convex · Tailwind v4.",
+      "language": "TypeScript",
+      "stars": 25,
+      "forks": 5,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "block-editor",
+        "convex",
+        "indonesia",
+        "knowledge-graph",
+        "nextjs",
+        "notion-alternative",
+        "notion-clone",
+        "open-source",
+        "react",
+        "self-hosted",
+        "tailwindcss",
+        "typescript",
+        "workspace"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-12T02:27:35Z",
+      "createdAt": "2026-04-29T18:48:11Z"
+    },
+    {
       "slug": "rizukirr/hyprsimple",
       "fullName": "rizukirr/hyprsimple",
       "name": "hyprsimple",
@@ -1083,40 +1117,6 @@
       "archived": false,
       "pushedAt": "2026-07-25T16:12:01Z",
       "createdAt": "2025-10-04T10:27:45Z"
-    },
-    {
-      "slug": "rahmanef63/open-silong",
-      "fullName": "rahmanef63/open-silong",
-      "name": "open-silong",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/open-silong",
-      "homepage": "https://silong-os.vercel.app/",
-      "description": "Open-source, self-hostable Notion/Obsidian-style workspace — block editor for notes, docs and lightweight databases, plus a knowledge graph over them. Next.js 16 · React 19 · Convex · Tailwind v4.",
-      "language": "TypeScript",
-      "stars": 24,
-      "forks": 4,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "block-editor",
-        "convex",
-        "indonesia",
-        "knowledge-graph",
-        "nextjs",
-        "notion-alternative",
-        "notion-clone",
-        "open-source",
-        "react",
-        "self-hosted",
-        "tailwindcss",
-        "typescript",
-        "workspace"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-12T02:27:35Z",
-      "createdAt": "2026-04-29T18:48:11Z"
     },
     {
       "slug": "rayasabari/yntk-ts",
@@ -1149,13 +1149,13 @@
       "homepage": null,
       "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
       "language": "TypeScript",
-      "stars": 18,
+      "stars": 19,
       "forks": 2,
       "openIssues": 0,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-15T02:37:34Z",
+      "pushedAt": "2026-08-18T02:46:10Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1169,7 +1169,7 @@
       "homepage": null,
       "description": "Mobile-first PWA for driving a single VPS from the browser — up to 16 concurrent terminals, AI agent launchers, host ops and audit behind one shared secret on a Tailscale-only domain. Next.js 15 · React 19 · Node agent (node-pty + xterm.js).",
       "language": "TypeScript",
-      "stars": 18,
+      "stars": 19,
       "forks": 3,
       "openIssues": 0,
       "license": "MIT",
@@ -1263,6 +1263,38 @@
       "createdAt": "2026-06-15T14:35:14Z"
     },
     {
+      "slug": "muslimtify-org/muslimtify",
+      "fullName": "muslimtify-org/muslimtify",
+      "name": "muslimtify",
+      "owner": "muslimtify-org",
+      "ownerUrl": "https://github.com/muslimtify-org",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/302768915?v=4",
+      "url": "https://github.com/muslimtify-org/muslimtify",
+      "homepage": "https://muslimtify.vercel.app",
+      "description": "A daily prayer notification daemon for Muslims on Windows and Linux, supporting 21 global standard calculation methods, all madzhab, all country.",
+      "language": "C",
+      "stars": 14,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "c-language",
+        "cross-platform",
+        "daemon",
+        "linux",
+        "muslim-prayer-times",
+        "muslims-prayer",
+        "notification",
+        "systemd",
+        "windows",
+        "windows-app",
+        "windows-desktop"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-18T16:20:20Z",
+      "createdAt": "2026-02-23T13:59:12Z"
+    },
+    {
       "slug": "rahmanef63/si-coder-agent",
       "fullName": "rahmanef63/si-coder-agent",
       "name": "si-coder-agent",
@@ -1294,38 +1326,6 @@
       "archived": false,
       "pushedAt": "2026-08-02T10:09:14Z",
       "createdAt": "2026-03-18T18:38:41Z"
-    },
-    {
-      "slug": "muslimtify-org/muslimtify",
-      "fullName": "muslimtify-org/muslimtify",
-      "name": "muslimtify",
-      "owner": "muslimtify-org",
-      "ownerUrl": "https://github.com/muslimtify-org",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/302768915?v=4",
-      "url": "https://github.com/muslimtify-org/muslimtify",
-      "homepage": "https://muslimtify.vercel.app",
-      "description": "A daily prayer notification daemon for Muslims on Windows and Linux, supporting 21 global standard calculation methods, all madzhab, all country.",
-      "language": "C",
-      "stars": 14,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "c-language",
-        "cross-platform",
-        "daemon",
-        "linux",
-        "muslim-prayer-times",
-        "muslims-prayer",
-        "notification",
-        "systemd",
-        "windows",
-        "windows-app",
-        "windows-desktop"
-      ],
-      "archived": false,
-      "pushedAt": "2026-07-30T09:50:37Z",
-      "createdAt": "2026-02-23T13:59:12Z"
     },
     {
       "slug": "rizukirr/numc",
@@ -1369,8 +1369,8 @@
       "homepage": "https://nusakit.my.id",
       "description": "🇮🇩 Indonesian Data Validation API — NIK, NPWP, Phone, Rupiah, Bank, Wilayah. Live: nusakit.my.id",
       "language": "TypeScript",
-      "stars": 12,
-      "forks": 1,
+      "stars": 13,
+      "forks": 2,
       "openIssues": 0,
       "license": "MIT",
       "topics": [],
@@ -1603,11 +1603,11 @@
       "language": "TypeScript",
       "stars": 7,
       "forks": 1,
-      "openIssues": 0,
+      "openIssues": 12,
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-13T14:15:28Z",
+      "pushedAt": "2026-08-18T15:06:09Z",
       "createdAt": "2026-06-13T11:24:30Z"
     },
     {
@@ -1672,7 +1672,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-16T19:22:40Z",
+      "pushedAt": "2026-08-17T19:30:18Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1833,11 +1833,11 @@
       "language": "C",
       "stars": 4,
       "forks": 1,
-      "openIssues": 3,
+      "openIssues": 5,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-17T14:29:17Z",
+      "pushedAt": "2026-08-18T16:12:28Z",
       "createdAt": "2025-11-22T11:52:35Z"
     },
     {
@@ -2034,14 +2034,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-08-17T19:30:04.441Z"
+      "syncedAt": "2026-08-18T19:29:43.764Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-08-17T19:30:04.441Z"
+      "syncedAt": "2026-08-18T19:29:43.764Z"
     }
   ],
-  "syncedAt": "2026-08-17T19:30:04.441Z",
+  "syncedAt": "2026-08-18T19:29:43.764Z",
   "count": 76
 }

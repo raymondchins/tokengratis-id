@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-08-18",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Google Gemini",
+        "added": [],
+        "removed": [
+          "gemini-3.7-flash-video-understanding-eap"
+        ]
+      },
+      {
+        "provider": "LLM7.io",
+        "added": [
+          "Gemma 4 31B IT"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-08-17",
     "providersAdded": [],
     "providersRemoved": [],
