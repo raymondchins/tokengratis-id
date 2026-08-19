@@ -1,28 +1,28 @@
 {
-  "generatedAt": "2026-08-18T19:29:37.978Z",
+  "generatedAt": "2026-08-19T19:27:46.650Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
       "status": "ok",
-      "providers": 19,
-      "models": 137,
+      "providers": 17,
+      "models": 118,
       "shapeIssues": []
     },
     "freellm.net": {
       "status": "ok",
       "providers": 25,
-      "models": 366,
+      "models": 358,
       "shapeIssues": [
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "maxOutput",
           "rule": "all-null-collapse",
-          "count": 366,
-          "total": 366,
+          "count": 358,
+          "total": 358,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"maxOutput\": 100% null di 366 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+          "message": "Field \"maxOutput\": 100% null di 358 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
         },
         {
           "severity": "warn",
@@ -65,7 +65,7 @@
   ],
   "merged": {
     "providers": 25,
-    "models": 350,
+    "models": 343,
     "shapeIssues": []
   },
   "smokeTest": {
@@ -73,52 +73,121 @@
     "warnings": []
   },
   "diffGuard": {
-    "ok": true,
-    "errors": [],
-    "warnings": [],
+    "ok": false,
+    "errors": [
+      "provider \"llm7-io\" model count dropped 46.2% (13 → 7), threshold is 40%",
+      "provider \"aion-labs\" model ids churned 100.0% at same-ish count (overlap 0.0%, 5→6 ids) — possible source corruption",
+      "provider \"github-models\" model ids churned 76.9% at same-ish count (overlap 23.1%, 13→13 ids) — possible source corruption",
+      "provider \"llm7-io\" model ids churned 53.8% at same-ish count (overlap 46.2%, 13→7 ids) — possible source corruption"
+    ],
+    "warnings": [
+      "field \"description\" (level provider) berubah nilai di 5/19 entri yang match (26.3%). Contoh: cloudflare-workers-ai: \"10,000 Neurons/day free. 50+ models available on…\"→\"10,000 Neurons/day free, no credit card required…\", google-gemini: \"Free tier unavailable in EU/UK/Switzerland. Free…\"→\"Free tier, no credit card. Free-tier prompts may…\", llm7-io: \"Zero-friction API gateway. No registration neede…\"→\"API gateway with a free tier. Anonymous access i…\". Ambang warning 15% (di bawah ambang error 35%) — lolos, tapi worth dicek manual."
+    ],
     "stats": {
       "prevProviders": 25,
       "nextProviders": 25,
       "prevModels": 350,
-      "nextModels": 350,
-      "totalDropPct": 0,
+      "nextModels": 343,
+      "totalDropPct": 2,
       "disappeared": [],
-      "shrunk": [],
-      "churned": [],
+      "shrunk": [
+        {
+          "slug": "llm7-io",
+          "prev": 13,
+          "next": 7,
+          "dropPct": 46.15384615384615
+        }
+      ],
+      "churned": [
+        {
+          "slug": "aion-labs",
+          "overlapPct": 0,
+          "prevIds": 5,
+          "nextIds": 6
+        },
+        {
+          "slug": "github-models",
+          "overlapPct": 23.076923076923077,
+          "prevIds": 13,
+          "nextIds": 13
+        },
+        {
+          "slug": "llm7-io",
+          "overlapPct": 46.15384615384615,
+          "prevIds": 13,
+          "nextIds": 7
+        }
+      ],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 327,
-            "changed": 1,
-            "ratioPct": 0.3058103975535168,
+            "eligible": 302,
+            "changed": 11,
+            "ratioPct": 3.642384105960265,
             "examples": [
               {
-                "label": "openrouter/z-ai/glm-5.2:free",
-                "from": "128K",
-                "to": "256K"
+                "label": "cerebras/gemma-4-31b",
+                "from": "131K (65K on free)",
+                "to": "131K"
+              },
+              {
+                "label": "cerebras/gpt-oss-120b",
+                "from": "131K (65K on free)",
+                "to": "131K"
+              },
+              {
+                "label": "cloudflare-workers-ai/@cf/meta/llama-4-scout-17b-16e-instruct",
+                "from": "Up to 10M",
+                "to": "131K"
               }
             ]
           },
           "maxOutput": {
-            "eligible": 172,
-            "changed": 1,
-            "ratioPct": 0.5813953488372093,
+            "eligible": 150,
+            "changed": 8,
+            "ratioPct": 5.333333333333334,
             "examples": [
               {
-                "label": "openrouter/z-ai/glm-5.2:free",
-                "from": "128K",
-                "to": "256K"
+                "label": "cohere/command-a-reasoning-08-2025",
+                "from": "~4K",
+                "to": "32K"
+              },
+              {
+                "label": "cohere/c4ai-aya-expanse-32b",
+                "from": "~4K",
+                "to": "4K"
+              },
+              {
+                "label": "cohere/command-a-vision-07-2025",
+                "from": "~4K",
+                "to": "8K"
               }
             ]
           },
           "modality": {
-            "eligible": 274,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "eligible": 245,
+            "changed": 4,
+            "ratioPct": 1.6326530612244898,
+            "examples": [
+              {
+                "label": "cerebras/gemma-4-31b",
+                "from": "Text + Image",
+                "to": "text + image + reasoning"
+              },
+              {
+                "label": "cerebras/gpt-oss-120b",
+                "from": "Text",
+                "to": "text + reasoning"
+              },
+              {
+                "label": "mistral-ai/mistral-large-2512",
+                "from": "Text",
+                "to": "Multimodal"
+              }
+            ]
           },
           "rateLimit": {
-            "eligible": 223,
+            "eligible": 197,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -127,9 +196,25 @@
         "provider": {
           "description": {
             "eligible": 19,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "changed": 5,
+            "ratioPct": 26.31578947368421,
+            "examples": [
+              {
+                "label": "cloudflare-workers-ai",
+                "from": "10,000 Neurons/day free. 50+ models available on free tier.",
+                "to": "10,000 Neurons/day free, no credit card required. 75+ models available on the free tier."
+              },
+              {
+                "label": "google-gemini",
+                "from": "Free tier unavailable in EU/UK/Switzerland. Free-tier prompts may be used by Google to improve products.",
+                "to": "Free tier, no credit card. Free-tier prompts may be used by Google to improve products."
+              },
+              {
+                "label": "llm7-io",
+                "from": "Zero-friction API gateway. No registration needed for basic access. 30+ models. GDPR-compliant.",
+                "to": "API gateway with a free tier. Anonymous access is now limited to select models; a free token from token.llm7.io unlocks the rest."
+              }
+            ]
           },
           "baseUrl": {
             "eligible": 19,
@@ -139,15 +224,37 @@
           },
           "freeLimit": {
             "eligible": 12,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "changed": 1,
+            "ratioPct": 8.333333333333332,
+            "examples": [
+              {
+                "label": "mistral-ai",
+                "from": "~1B token/bln",
+                "to": "$10 kredit"
+              }
+            ]
           },
           "maxContext": {
             "eligible": 24,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "changed": 3,
+            "ratioPct": 12.5,
+            "examples": [
+              {
+                "label": "cerebras",
+                "from": "131K (65K on free)",
+                "to": "131K"
+              },
+              {
+                "label": "cloudflare-workers-ai",
+                "from": "10M",
+                "to": "262K"
+              },
+              {
+                "label": "cohere",
+                "from": "436K",
+                "to": "256K"
+              }
+            ]
           }
         }
       }
@@ -160,11 +267,11 @@
       "source": "freellm.net",
       "field": "maxOutput",
       "rule": "all-null-collapse",
-      "count": 366,
-      "total": 366,
+      "count": 358,
+      "total": 358,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"maxOutput\": 100% null di 366 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+      "message": "Field \"maxOutput\": 100% null di 358 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
     },
     {
       "severity": "warn",
@@ -190,7 +297,29 @@
     }
   ],
   "quarantine": {
-    "heldProviders": [],
+    "heldProviders": [
+      {
+        "slug": "llm7-io",
+        "kind": "shrunk",
+        "detail": "model 13 -> 7 (-46%)",
+        "streak": 1,
+        "needs": 3
+      },
+      {
+        "slug": "aion-labs",
+        "kind": "churned",
+        "detail": "id churn, overlap 0% (5 -> 6 id)",
+        "streak": 1,
+        "needs": 3
+      },
+      {
+        "slug": "github-models",
+        "kind": "churned",
+        "detail": "id churn, overlap 23% (13 -> 13 id)",
+        "streak": 1,
+        "needs": 3
+      }
+    ],
     "accepted": [],
     "cleared": [],
     "confirmRuns": 3

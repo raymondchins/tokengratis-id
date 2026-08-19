@@ -68,7 +68,7 @@
       "language": "PHP",
       "stars": 1358,
       "forks": 308,
-      "openIssues": 53,
+      "openIssues": 52,
       "license": "GPL-2.0",
       "topics": [
         "blog",
@@ -96,15 +96,15 @@
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
       "stars": 1220,
-      "forks": 1178,
-      "openIssues": 358,
+      "forks": 1179,
+      "openIssues": 362,
       "license": null,
       "topics": [
         "opensid",
         "sistem-informasi-desa"
       ],
       "archived": false,
-      "pushedAt": "2026-08-18T08:48:25Z",
+      "pushedAt": "2026-08-19T06:04:29Z",
       "createdAt": "2016-05-21T10:55:38Z"
     },
     {
@@ -185,9 +185,9 @@
       "homepage": "https://omni.weekndlabs.com/docs",
       "description": "Your agent pays twice for output it has already seen. OMNI returns a handle instead: 97.2% off a file read twice. Nothing deleted, nothing invented.",
       "language": "Rust",
-      "stars": 352,
-      "forks": 33,
-      "openIssues": 13,
+      "stars": 354,
+      "forks": 34,
+      "openIssues": 15,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -212,7 +212,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-08-18T16:55:19Z",
+      "pushedAt": "2026-08-19T16:14:52Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -254,7 +254,7 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 225,
+      "stars": 226,
       "forks": 26,
       "openIssues": 5,
       "license": "Apache-2.0",
@@ -281,7 +281,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-08-18T18:54:09Z",
+      "pushedAt": "2026-08-19T14:20:08Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -297,7 +297,7 @@
       "language": "TypeScript",
       "stars": 222,
       "forks": 41,
-      "openIssues": 43,
+      "openIssues": 47,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -438,8 +438,8 @@
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
       "stars": 124,
-      "forks": 42,
-      "openIssues": 4,
+      "forks": 43,
+      "openIssues": 5,
       "license": "MIT",
       "topics": [
         "ai",
@@ -476,7 +476,7 @@
       "homepage": null,
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
-      "stars": 120,
+      "stars": 121,
       "forks": 62,
       "openIssues": 5,
       "license": "MIT",
@@ -558,7 +558,7 @@
       "language": "TypeScript",
       "stars": 97,
       "forks": 22,
-      "openIssues": 10,
+      "openIssues": 8,
       "license": "MIT",
       "topics": [
         "hacktoberfest",
@@ -567,7 +567,7 @@
         "hacktoberfest2023"
       ],
       "archived": false,
-      "pushedAt": "2026-07-20T20:43:27Z",
+      "pushedAt": "2026-08-19T11:31:44Z",
       "createdAt": "2023-09-05T12:35:21Z"
     },
     {
@@ -631,7 +631,7 @@
       "language": "Svelte",
       "stars": 64,
       "forks": 16,
-      "openIssues": 4,
+      "openIssues": 5,
       "license": "MIT",
       "topics": [
         "bansos",
@@ -685,7 +685,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-08-18T11:51:30Z",
+      "pushedAt": "2026-08-19T16:10:07Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -814,7 +814,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-18T13:30:49Z",
+      "pushedAt": "2026-08-19T16:52:00Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -958,7 +958,7 @@
       "homepage": null,
       "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
       "language": "C#",
-      "stars": 34,
+      "stars": 35,
       "forks": 13,
       "openIssues": 1,
       "license": null,
@@ -1275,7 +1275,7 @@
       "language": "C",
       "stars": 14,
       "forks": 1,
-      "openIssues": 0,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "c-language",
@@ -1291,7 +1291,7 @@
         "windows-desktop"
       ],
       "archived": false,
-      "pushedAt": "2026-08-18T16:20:20Z",
+      "pushedAt": "2026-08-19T13:11:21Z",
       "createdAt": "2026-02-23T13:59:12Z"
     },
     {
@@ -1324,7 +1324,7 @@
         "zero-human"
       ],
       "archived": false,
-      "pushedAt": "2026-08-02T10:09:14Z",
+      "pushedAt": "2026-08-19T12:10:20Z",
       "createdAt": "2026-03-18T18:38:41Z"
     },
     {
@@ -1672,7 +1672,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-17T19:30:18Z",
+      "pushedAt": "2026-08-18T19:29:57Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1833,11 +1833,11 @@
       "language": "C",
       "stars": 4,
       "forks": 1,
-      "openIssues": 5,
+      "openIssues": 6,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-18T16:12:28Z",
+      "pushedAt": "2026-08-19T13:04:13Z",
       "createdAt": "2025-11-22T11:52:35Z"
     },
     {
@@ -1966,7 +1966,7 @@
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-17T13:42:04Z",
+      "pushedAt": "2026-08-19T16:01:24Z",
       "createdAt": "2026-02-10T04:21:08Z"
     },
     {
@@ -2034,14 +2034,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-08-18T19:29:43.764Z"
+      "syncedAt": "2026-08-19T19:27:54.864Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-08-18T19:29:43.764Z"
+      "syncedAt": "2026-08-19T19:27:54.864Z"
     }
   ],
-  "syncedAt": "2026-08-18T19:29:43.764Z",
+  "syncedAt": "2026-08-19T19:27:54.864Z",
   "count": 76
 }

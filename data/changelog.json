@@ -1,5 +1,68 @@
 [
   {
+    "date": "2026-08-19",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cerebras",
+        "added": [],
+        "removed": [
+          "zai-glm-4.7 (deprecated Aug 2026)"
+        ]
+      },
+      {
+        "provider": "Cline",
+        "added": [],
+        "removed": [
+          "nemotron-3.5-lightning"
+        ]
+      },
+      {
+        "provider": "Cloudflare Workers AI",
+        "added": [
+          "@cf/moonshotai/kimi-k2.7-code",
+          "@cf/zai-org/glm-4.7-flash"
+        ],
+        "removed": [
+          "@cf/moonshotai/kimi-k2.7-code",
+          "@cf/zhipuai/glm-4.7-flash"
+        ]
+      },
+      {
+        "provider": "Google Gemini",
+        "added": [],
+        "removed": [
+          "Gemini 3 Flash (Preview)",
+          "Gemini Flash Latest",
+          "Gemini Flash-Lite Latest",
+          "gemini-robotics-er-1.6-preview",
+          "gemini-robotics-er-2-preview"
+        ]
+      },
+      {
+        "provider": "Kilo Code",
+        "added": [
+          "inclusionai/ling-3.0-flash:free",
+          "nvidia/nemotron-3.5-lightning:free",
+          "tencent/hy3:free"
+        ],
+        "removed": [
+          "inclusionai/ling-3.0-flash:free"
+        ]
+      },
+      {
+        "provider": "Mistral AI",
+        "added": [
+          "Ministral 14B",
+          "Ministral 8B",
+          "Ministral 3B"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-08-18",
     "providersAdded": [],
     "providersRemoved": [],
