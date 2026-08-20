@@ -1,5 +1,45 @@
 [
   {
+    "date": "2026-08-20",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cloudflare Workers AI",
+        "added": [
+          "@cf/qwen/qwen3.8-27b"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "Groq",
+        "added": [],
+        "removed": [
+          "llama-3.1-8b-instant",
+          "llama-3.3-70b-versatile"
+        ]
+      },
+      {
+        "provider": "ModelScope",
+        "added": [
+          "deepseek-ai/DeepSeek-V4-Pro-0813"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "NVIDIA NIM",
+        "added": [
+          "deepseek-ai/deepseek-v4-flash"
+        ],
+        "removed": [
+          "deepseek-ai/deepseek-v4-flash",
+          "mistralai/mistral-medium-3.5-128b",
+          "deepseek-ai/deepseek-v4-pro"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-08-19",
     "providersAdded": [],
     "providersRemoved": [],
