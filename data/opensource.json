@@ -11,9 +11,9 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js - The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser (client-side) or Node.js (server-side).",
       "language": "JavaScript",
-      "stars": 10178,
-      "forks": 1215,
-      "openIssues": 14,
+      "stars": 10180,
+      "forks": 1216,
+      "openIssues": 15,
       "license": "AGPL-3.0",
       "topics": [
         "analytics",
@@ -67,7 +67,7 @@
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
       "stars": 1358,
-      "forks": 308,
+      "forks": 309,
       "openIssues": 52,
       "license": "GPL-2.0",
       "topics": [
@@ -95,8 +95,8 @@
       "homepage": null,
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
-      "stars": 1220,
-      "forks": 1179,
+      "stars": 1221,
+      "forks": 1180,
       "openIssues": 361,
       "license": null,
       "topics": [
@@ -117,8 +117,8 @@
       "url": "https://github.com/jipraks/yt-short-clipper",
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
-      "language": "Python",
-      "stars": 958,
+      "language": "TypeScript",
+      "stars": 960,
       "forks": 293,
       "openIssues": 0,
       "license": "MIT",
@@ -142,7 +142,7 @@
         "yt-dlp"
       ],
       "archived": false,
-      "pushedAt": "2026-08-20T09:23:15Z",
+      "pushedAt": "2026-08-21T01:38:36Z",
       "createdAt": "2026-01-15T09:55:34Z"
     },
     {
@@ -203,7 +203,7 @@
       "homepage": "https://omni.weekndlabs.com/docs",
       "description": "Your agent pays twice for output it has already seen. OMNI returns a handle instead: 97.2% off a file read twice. Nothing deleted, nothing invented.",
       "language": "Rust",
-      "stars": 353,
+      "stars": 354,
       "forks": 34,
       "openIssues": 12,
       "license": "Apache-2.0",
@@ -244,7 +244,7 @@
       "homepage": null,
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 337,
+      "stars": 336,
       "forks": 41,
       "openIssues": 6,
       "license": "MIT",
@@ -273,8 +273,8 @@
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
       "stars": 229,
-      "forks": 26,
-      "openIssues": 5,
+      "forks": 25,
+      "openIssues": 7,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -299,7 +299,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-08-20T03:11:36Z",
+      "pushedAt": "2026-08-21T15:30:16Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -313,9 +313,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 222,
-      "forks": 41,
-      "openIssues": 47,
+      "stars": 223,
+      "forks": 42,
+      "openIssues": 48,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-08-20T13:41:23Z",
+      "pushedAt": "2026-08-21T06:54:47Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -379,7 +379,7 @@
       "homepage": null,
       "description": null,
       "language": "Python",
-      "stars": 175,
+      "stars": 176,
       "forks": 42,
       "openIssues": 0,
       "license": "MIT",
@@ -400,7 +400,7 @@
       "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
       "language": "TypeScript",
       "stars": 153,
-      "forks": 13,
+      "forks": 12,
       "openIssues": 1,
       "license": "Apache-2.0",
       "topics": [
@@ -436,7 +436,7 @@
       "description": "Online banking angular springboot mysql",
       "language": "Java",
       "stars": 131,
-      "forks": 98,
+      "forks": 99,
       "openIssues": 0,
       "license": null,
       "topics": [],
@@ -455,7 +455,7 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 124,
+      "stars": 125,
       "forks": 44,
       "openIssues": 6,
       "license": "MIT",
@@ -496,11 +496,11 @@
       "language": "TypeScript",
       "stars": 121,
       "forks": 62,
-      "openIssues": 5,
+      "openIssues": 6,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-12T01:08:52Z",
+      "pushedAt": "2026-08-20T22:39:49Z",
       "createdAt": "2026-02-12T11:02:43Z"
     },
     {
@@ -514,7 +514,7 @@
       "homepage": "https://pddikti.kemdiktisaintek.go.id/",
       "description": "Unofficial Python 3 API wrapper to retrieve data from PDDIKTI Kemdikbudristek.",
       "language": "Python",
-      "stars": 119,
+      "stars": 120,
       "forks": 25,
       "openIssues": 0,
       "license": null,
@@ -647,9 +647,9 @@
       "homepage": "https://mso.rahmanef.com",
       "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
-      "stars": 64,
+      "stars": 66,
       "forks": 10,
-      "openIssues": 0,
+      "openIssues": 2,
       "license": "MIT",
       "topics": [
         "browser-shell",
@@ -687,8 +687,8 @@
       "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
       "language": "Svelte",
       "stars": 64,
-      "forks": 16,
-      "openIssues": 6,
+      "forks": 18,
+      "openIssues": 8,
       "license": "MIT",
       "topics": [
         "bansos",
@@ -828,11 +828,11 @@
       "language": "Ruby",
       "stars": 45,
       "forks": 4,
-      "openIssues": 2,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-20T11:36:16Z",
+      "pushedAt": "2026-08-21T12:12:20Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -1052,7 +1052,7 @@
       "homepage": "https://www.mandumrimba.org",
       "description": "Mandum Rimba is an independent, nonprofit public-interest observatory. We do not sell data, carry advertising, or take sides. We consolidate satellite data and credible public sources into a single open map, auditable by anyone, fully open source, and with every figure traceable to its origin.",
       "language": "TypeScript",
-      "stars": 27,
+      "stars": 28,
       "forks": 6,
       "openIssues": 0,
       "license": "AGPL-3.0",
@@ -1072,7 +1072,7 @@
         "wildlife"
       ],
       "archived": false,
-      "pushedAt": "2026-08-10T04:07:20Z",
+      "pushedAt": "2026-08-21T13:39:07Z",
       "createdAt": "2026-06-14T05:07:25Z"
     },
     {
@@ -1690,7 +1690,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-19T19:28:05Z",
+      "pushedAt": "2026-08-20T19:33:37Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1889,7 +1889,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-20T10:22:25Z",
+      "pushedAt": "2026-08-21T13:25:07Z",
       "createdAt": "2025-11-22T11:52:35Z"
     },
     {
@@ -1984,7 +1984,7 @@
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-20T12:59:57Z",
+      "pushedAt": "2026-08-21T13:35:37Z",
       "createdAt": "2026-02-10T04:21:08Z"
     },
     {
@@ -2052,14 +2052,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-08-20T19:33:24.062Z"
+      "syncedAt": "2026-08-21T19:27:27.597Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-08-20T19:33:24.062Z"
+      "syncedAt": "2026-08-21T19:27:27.597Z"
     }
   ],
-  "syncedAt": "2026-08-20T19:33:24.062Z",
+  "syncedAt": "2026-08-21T19:27:27.597Z",
   "count": 76
 }

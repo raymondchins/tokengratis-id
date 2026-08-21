@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-20T19:33:18.721Z",
+  "generatedAt": "2026-08-21T19:27:21.961Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
       "status": "ok",
       "providers": 16,
-      "models": 107,
+      "models": 112,
       "shapeIssues": []
     },
     "freellm.net": {
@@ -75,28 +75,28 @@
   "diffGuard": {
     "ok": false,
     "errors": [
-      "provider \"llm7-io\" model count dropped 46.2% (13 → 7), threshold is 40%",
+      "provider \"llm7-io\" model count dropped 53.8% (13 → 6), threshold is 40%",
       "provider \"aion-labs\" model ids churned 100.0% at same-ish count (overlap 0.0%, 5→6 ids) — possible source corruption",
       "provider \"github-models\" model ids churned 76.9% at same-ish count (overlap 23.1%, 13→13 ids) — possible source corruption",
-      "provider \"llm7-io\" model ids churned 53.8% at same-ish count (overlap 46.2%, 13→7 ids) — possible source corruption",
+      "provider \"llm7-io\" model ids churned 76.9% at same-ish count (overlap 23.1%, 13→6 ids) — possible source corruption",
       "provider \"sambanova\" model ids churned 100.0% at same-ish count (overlap 0.0%, 6→4 ids) — possible source corruption"
     ],
     "warnings": [
-      "field \"description\" (level provider) berubah nilai di 4/18 entri yang match (22.2%). Contoh: llm7-io: \"Zero-friction API gateway. No registration neede…\"→\"API gateway with a free tier. Anonymous access i…\", nvidia-nim: \"Free with NVIDIA Developer Program membership. 1…\"→\"Free with NVIDIA Developer Program membership. 1…\", ollama-cloud: \"Free tier with qualitative usage limits. 400+ mo…\"→\"Free tier with usage limits. 16 cloud model fami…\". Ambang warning 15% (di bawah ambang error 35%) — lolos, tapi worth dicek manual."
+      "field \"description\" (level provider) berubah nilai di 3/18 entri yang match (16.7%). Contoh: kilo-code: \"Free models with no credit card required. kilo-a…\"→\"Free models with no credit card and no API key r…\", llm7-io: \"Zero-friction API gateway. No registration neede…\"→\"API gateway with a free tier. Anonymous access n…\", siliconflow: \"Permanently free models, no credit card required…\"→\"Permanently free models, no credit card required…\". Ambang warning 15% (di bawah ambang error 35%) — lolos, tapi worth dicek manual."
     ],
     "stats": {
       "prevProviders": 25,
       "nextProviders": 25,
-      "prevModels": 348,
+      "prevModels": 346,
       "nextModels": 339,
-      "totalDropPct": 2.586206896551724,
+      "totalDropPct": 2.023121387283237,
       "disappeared": [],
       "shrunk": [
         {
           "slug": "llm7-io",
           "prev": 13,
-          "next": 7,
-          "dropPct": 46.15384615384615
+          "next": 6,
+          "dropPct": 53.84615384615385
         }
       ],
       "churned": [
@@ -114,9 +114,9 @@
         },
         {
           "slug": "llm7-io",
-          "overlapPct": 46.15384615384615,
+          "overlapPct": 23.076923076923077,
           "prevIds": 13,
-          "nextIds": 7
+          "nextIds": 6
         },
         {
           "slug": "sambanova",
@@ -128,38 +128,54 @@
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 297,
-            "changed": 9,
-            "ratioPct": 3.0303030303030303,
+            "eligible": 294,
+            "changed": 6,
+            "ratioPct": 2.0408163265306123,
             "examples": [
               {
-                "label": "nvidia-nim/nvidia/nemotron-3-super-120b-a12b",
+                "label": "google-gemini/gemma-4-26b-a4b-it",
                 "from": "262K",
-                "to": "1M"
+                "to": "256K"
               },
               {
-                "label": "nvidia-nim/nvidia/nemotron-3-ultra-550b-a55b",
+                "label": "google-gemini/gemma-4-31b-it",
                 "from": "262K",
-                "to": "1M"
+                "to": "256K"
               },
               {
-                "label": "nvidia-nim/google/gemma-4-31b-it",
-                "from": "128K",
-                "to": "262K"
+                "label": "modelscope/Qwen/Qwen3.5-27B",
+                "from": "8K",
+                "to": "256K"
               }
             ]
           },
           "maxOutput": {
-            "eligible": 136,
+            "eligible": 133,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "modality": {
-            "eligible": 242,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "eligible": 238,
+            "changed": 8,
+            "ratioPct": 3.361344537815126,
+            "examples": [
+              {
+                "label": "cloudflare-workers-ai/@cf/google/gemma-4-26b-a4b-it",
+                "from": "Text",
+                "to": "Text + Vision"
+              },
+              {
+                "label": "google-gemini/gemma-4-26b-a4b-it",
+                "from": "vision + reasoning",
+                "to": "Text"
+              },
+              {
+                "label": "google-gemini/gemma-4-31b-it",
+                "from": "vision + reasoning",
+                "to": "Text"
+              }
+            ]
           },
           "rateLimit": {
             "eligible": 193,
@@ -167,19 +183,19 @@
             "ratioPct": 5.699481865284974,
             "examples": [
               {
-                "label": "nvidia-nim/minimaxai/minimax-m3",
-                "from": "~40 RPM",
-                "to": "40 RPM, 10,000 RPD"
+                "label": "kilo-code/nvidia/nemotron-3-ultra-550b-a55b:free",
+                "from": "~200 req/hr",
+                "to": "200 req/hr"
               },
               {
-                "label": "nvidia-nim/nvidia/nemotron-3-super-120b-a12b",
-                "from": "~40 RPM",
-                "to": "40 RPM, 10,000 RPD"
+                "label": "kilo-code/nvidia/nemotron-3-super-120b-a12b:free",
+                "from": "~200 req/hr",
+                "to": "200 req/hr"
               },
               {
-                "label": "nvidia-nim/nvidia/nemotron-3-ultra-550b-a55b",
-                "from": "~40 RPM",
-                "to": "40 RPM, 10,000 RPD"
+                "label": "kilo-code/poolside/laguna-s-2.1:free",
+                "from": "~200 req/hr",
+                "to": "200 req/hr"
               }
             ]
           }
@@ -187,49 +203,37 @@
         "provider": {
           "description": {
             "eligible": 18,
-            "changed": 4,
-            "ratioPct": 22.22222222222222,
+            "changed": 3,
+            "ratioPct": 16.666666666666664,
             "examples": [
+              {
+                "label": "kilo-code",
+                "from": "Free models with no credit card required. kilo-auto/free auto-router dynamically routes to models in the free pool.",
+                "to": "Free models with no credit card and no API key required. kilo-auto/free auto-router dynamically routes to models in the free pool."
+              },
               {
                 "label": "llm7-io",
                 "from": "Zero-friction API gateway. No registration needed for basic access. 30+ models. GDPR-compliant.",
-                "to": "API gateway with a free tier. Anonymous access is now limited to select models; a free token from token.llm7.io unlocks the rest."
+                "to": "API gateway with a free tier. Anonymous access needs no key and reaches the turbo models; a free token from token.llm7.io raises the rate and token limits but reaches the same models."
               },
               {
-                "label": "nvidia-nim",
-                "from": "Free with NVIDIA Developer Program membership. 100+ models. Rate-limited (no daily token cap).",
-                "to": "Free with NVIDIA Developer Program membership. 100+ models. Rate-limited per model."
-              },
-              {
-                "label": "ollama-cloud",
-                "from": "Free tier with qualitative usage limits. 400+ models from Ollama library. Not OpenAI SDK-compatible; uses Ollama API.",
-                "to": "Free tier with usage limits. 16 cloud model families from the Ollama library. OpenAI SDK-compatible via https://ollama.com/v1."
+                "label": "siliconflow",
+                "from": "Permanently free models, no credit card required. Identity verification required. 200+ paid models also available.",
+                "to": "Permanently free models, no credit card required. Identity verification required. 100+ models in the catalog, most of them paid."
               }
             ]
           },
           "baseUrl": {
             "eligible": 18,
-            "changed": 1,
-            "ratioPct": 5.555555555555555,
-            "examples": [
-              {
-                "label": "ollama-cloud",
-                "from": "https://api.ollama.com",
-                "to": "https://ollama.com/api"
-              }
-            ]
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           },
           "freeLimit": {
             "eligible": 11,
-            "changed": 1,
-            "ratioPct": 9.090909090909092,
-            "examples": [
-              {
-                "label": "openrouter",
-                "from": "~22 model free",
-                "to": "17 model free"
-              }
-            ]
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           },
           "maxContext": {
             "eligible": 24,
@@ -280,35 +284,30 @@
   "quarantine": {
     "heldProviders": [
       {
-        "slug": "llm7-io",
-        "kind": "shrunk",
-        "detail": "model 13 -> 7 (-46%)",
+        "slug": "sambanova",
+        "kind": "churned",
+        "detail": "id churn, overlap 0% (6 -> 4 id)",
         "streak": 2,
         "needs": 3
+      }
+    ],
+    "accepted": [
+      {
+        "slug": "llm7-io",
+        "kind": "shrunk",
+        "detail": "model 13 -> 6 (-54%)"
       },
       {
         "slug": "aion-labs",
         "kind": "churned",
-        "detail": "id churn, overlap 0% (5 -> 6 id)",
-        "streak": 2,
-        "needs": 3
+        "detail": "id churn, overlap 0% (5 -> 6 id)"
       },
       {
         "slug": "github-models",
         "kind": "churned",
-        "detail": "id churn, overlap 23% (13 -> 13 id)",
-        "streak": 2,
-        "needs": 3
-      },
-      {
-        "slug": "sambanova",
-        "kind": "churned",
-        "detail": "id churn, overlap 0% (6 -> 4 id)",
-        "streak": 1,
-        "needs": 3
+        "detail": "id churn, overlap 23% (13 -> 13 id)"
       }
     ],
-    "accepted": [],
     "cleared": [],
     "confirmRuns": 3
   }

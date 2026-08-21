@@ -1,37 +1,13 @@
 {
   "version": 1,
   "entries": {
-    "llm7-io": {
-      "kind": "shrunk",
-      "magnitude": 7,
-      "detail": "model 13 -> 7 (-46%)",
-      "streak": 2,
-      "firstSeen": "2026-08-19T19:27:46.650Z",
-      "lastSeen": "2026-08-20T19:33:18.720Z"
-    },
-    "aion-labs": {
-      "kind": "churned",
-      "magnitude": 6,
-      "detail": "id churn, overlap 0% (5 -> 6 id)",
-      "streak": 2,
-      "firstSeen": "2026-08-19T19:27:46.650Z",
-      "lastSeen": "2026-08-20T19:33:18.720Z"
-    },
-    "github-models": {
-      "kind": "churned",
-      "magnitude": 13,
-      "detail": "id churn, overlap 23% (13 -> 13 id)",
-      "streak": 2,
-      "firstSeen": "2026-08-19T19:27:46.650Z",
-      "lastSeen": "2026-08-20T19:33:18.720Z"
-    },
     "sambanova": {
       "kind": "churned",
       "magnitude": 4,
       "detail": "id churn, overlap 0% (6 -> 4 id)",
-      "streak": 1,
+      "streak": 2,
       "firstSeen": "2026-08-20T19:33:18.720Z",
-      "lastSeen": "2026-08-20T19:33:18.720Z"
+      "lastSeen": "2026-08-21T19:27:21.961Z"
     }
   }
 }

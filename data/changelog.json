@@ -1,5 +1,111 @@
 [
   {
+    "date": "2026-08-21",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Aion Labs",
+        "added": [
+          "Aion 2.5",
+          "aion-labs/aion-2.0",
+          "aion-labs/aion-3.0",
+          "aion-labs/aion-3.0-mini",
+          "aion-labs/aion-rp-llama-3.1-8b",
+          "Aion-RP 1.0 (8B)"
+        ],
+        "removed": [
+          "Aion 2.0",
+          "Aion 2.5",
+          "Aion 3.0",
+          "Aion 3.0 Mini",
+          "Aion-RP 1.0 (8B)"
+        ]
+      },
+      {
+        "provider": "GitHub Models",
+        "added": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "Llama-4-Scout-17B-16E-Instruct",
+          "Llama-4-Maverick-17B-128E-Instruct-FP8",
+          "gpt-5",
+          "o4-mini",
+          "Llama-3.3-70B-Instruct",
+          "gpt-4o",
+          "Mistral-Small-3.1",
+          "DeepSeek-R1"
+        ],
+        "removed": [
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "Llama-4-Scout-17B-16E-Instruct",
+          "Llama-4-Maverick-17B-128E-Instruct-FP8",
+          "gpt-5",
+          "o4-mini",
+          "Llama-3.3-70B-Instruct",
+          "gpt-4o",
+          "Mistral-Small-3.1",
+          "DeepSeek-R1"
+        ]
+      },
+      {
+        "provider": "Google Gemini",
+        "added": [
+          "Gemini 3.7 Flash"
+        ],
+        "removed": [
+          "Gemini 3.7 Flash"
+        ]
+      },
+      {
+        "provider": "Kilo Code",
+        "added": [
+          "liquid/lfm-2.5-2.6b:free"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "LLM7.io",
+        "added": [
+          "minimax-m2.7",
+          "gpt-oss:20b",
+          "mistral-Nemo-Instruct-2407"
+        ],
+        "removed": [
+          "DeepSeek V4 Flash 0731",
+          "MiniMax-M2.7",
+          "deepseek-v3-0324",
+          "GPT OSS 20B",
+          "mistral-small-3.1-24b",
+          "mistral-Nemo-Instruct-2407",
+          "deepseek-r1-0528",
+          "gemini-2.5-flash-lite",
+          "gpt-4o-mini",
+          "qwen2.5-coder-32b"
+        ]
+      },
+      {
+        "provider": "Mistral AI",
+        "added": [
+          "Mistral Medium 3.5 (128B)"
+        ],
+        "removed": [
+          "Mistral Medium 3.5 (128B)"
+        ]
+      },
+      {
+        "provider": "SiliconFlow",
+        "added": [
+          "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+        ],
+        "removed": [
+          "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-08-20",
     "providersAdded": [],
     "providersRemoved": [],
