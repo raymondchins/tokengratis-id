@@ -1,5 +1,101 @@
 [
   {
+    "date": "2026-08-22",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cerebras",
+        "added": [],
+        "removed": [
+          "Llama 3.1 70B"
+        ]
+      },
+      {
+        "provider": "Cline",
+        "added": [
+          "ox-alpha"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "Cloudflare Workers AI",
+        "added": [],
+        "removed": [
+          "Mistral 7B",
+          "Qwen 1.5 7B"
+        ]
+      },
+      {
+        "provider": "Groq",
+        "added": [],
+        "removed": [
+          "Moonshot Kimi K2",
+          "Moonshot Kimi K2 0905"
+        ]
+      },
+      {
+        "provider": "LLM7.io",
+        "added": [
+          "DeepSeek V4 Flash 0731",
+          "meta-Llama-3.1-8B-Instruct-Turbo"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "ModelScope",
+        "added": [
+          "early-access/EA-29B-A4B",
+          "Qwen/Qwen3.8-27B"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "NVIDIA NIM",
+        "added": [
+          "Kimi K3"
+        ],
+        "removed": [
+          "z-ai/glm-5.2"
+        ]
+      },
+      {
+        "provider": "OpenCode Zen",
+        "added": [
+          "x-preview-f-free"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "OpenRouter",
+        "added": [
+          "Thinking Machines: Inkling (free)",
+          "Thinking Machines: Inkling Small (free)"
+        ],
+        "removed": [
+          "OpenAI: gpt-oss-20b (free)"
+        ]
+      },
+      {
+        "provider": "SambaNova",
+        "added": [
+          "DeepSeek-V3.1",
+          "DeepSeek-V3.2 (Preview)",
+          "gemma-4-31B-it (Preview)",
+          "MiniMax-M2.7"
+        ],
+        "removed": [
+          "DeepSeek-V3.1",
+          "DeepSeek-V3.2 (Preview)",
+          "gemma-4-31B-it (Preview)",
+          "gpt-oss-120b",
+          "Meta-Llama-3.3-70B-Instruct",
+          "MiniMax-M2.7"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-08-21",
     "providersAdded": [],
     "providersRemoved": [],

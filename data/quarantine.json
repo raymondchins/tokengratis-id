@@ -1,13 +1,4 @@
 {
   "version": 1,
-  "entries": {
-    "sambanova": {
-      "kind": "churned",
-      "magnitude": 4,
-      "detail": "id churn, overlap 0% (6 -> 4 id)",
-      "streak": 2,
-      "firstSeen": "2026-08-20T19:33:18.720Z",
-      "lastSeen": "2026-08-21T19:27:21.961Z"
-    }
-  }
+  "entries": {}
 }

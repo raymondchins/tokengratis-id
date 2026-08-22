@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T19:27:21.961Z",
+  "generatedAt": "2026-08-22T19:24:18.579Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -11,18 +11,18 @@
     "freellm.net": {
       "status": "ok",
       "providers": 25,
-      "models": 361,
+      "models": 364,
       "shapeIssues": [
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "maxOutput",
           "rule": "all-null-collapse",
-          "count": 361,
-          "total": 361,
+          "count": 364,
+          "total": 364,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"maxOutput\": 100% null di 361 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+          "message": "Field \"maxOutput\": 100% null di 364 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
         },
         {
           "severity": "warn",
@@ -56,7 +56,7 @@
     "openrouter.ai/api/v1/models": {
       "status": "ok",
       "providers": 1,
-      "models": 17,
+      "models": 18,
       "shapeIssues": []
     }
   },
@@ -65,7 +65,7 @@
   ],
   "merged": {
     "providers": 25,
-    "models": 339,
+    "models": 341,
     "shapeIssues": []
   },
   "smokeTest": {
@@ -75,49 +75,18 @@
   "diffGuard": {
     "ok": false,
     "errors": [
-      "provider \"llm7-io\" model count dropped 53.8% (13 → 6), threshold is 40%",
-      "provider \"aion-labs\" model ids churned 100.0% at same-ish count (overlap 0.0%, 5→6 ids) — possible source corruption",
-      "provider \"github-models\" model ids churned 76.9% at same-ish count (overlap 23.1%, 13→13 ids) — possible source corruption",
-      "provider \"llm7-io\" model ids churned 76.9% at same-ish count (overlap 23.1%, 13→6 ids) — possible source corruption",
       "provider \"sambanova\" model ids churned 100.0% at same-ish count (overlap 0.0%, 6→4 ids) — possible source corruption"
     ],
-    "warnings": [
-      "field \"description\" (level provider) berubah nilai di 3/18 entri yang match (16.7%). Contoh: kilo-code: \"Free models with no credit card required. kilo-a…\"→\"Free models with no credit card and no API key r…\", llm7-io: \"Zero-friction API gateway. No registration neede…\"→\"API gateway with a free tier. Anonymous access n…\", siliconflow: \"Permanently free models, no credit card required…\"→\"Permanently free models, no credit card required…\". Ambang warning 15% (di bawah ambang error 35%) — lolos, tapi worth dicek manual."
-    ],
+    "warnings": [],
     "stats": {
       "prevProviders": 25,
       "nextProviders": 25,
-      "prevModels": 346,
-      "nextModels": 339,
-      "totalDropPct": 2.023121387283237,
+      "prevModels": 341,
+      "nextModels": 341,
+      "totalDropPct": 0,
       "disappeared": [],
-      "shrunk": [
-        {
-          "slug": "llm7-io",
-          "prev": 13,
-          "next": 6,
-          "dropPct": 53.84615384615385
-        }
-      ],
+      "shrunk": [],
       "churned": [
-        {
-          "slug": "aion-labs",
-          "overlapPct": 0,
-          "prevIds": 5,
-          "nextIds": 6
-        },
-        {
-          "slug": "github-models",
-          "overlapPct": 23.076923076923077,
-          "prevIds": 13,
-          "nextIds": 13
-        },
-        {
-          "slug": "llm7-io",
-          "overlapPct": 23.076923076923077,
-          "prevIds": 13,
-          "nextIds": 6
-        },
         {
           "slug": "sambanova",
           "overlapPct": 0,
@@ -128,109 +97,45 @@
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 294,
-            "changed": 6,
-            "ratioPct": 2.0408163265306123,
-            "examples": [
-              {
-                "label": "google-gemini/gemma-4-26b-a4b-it",
-                "from": "262K",
-                "to": "256K"
-              },
-              {
-                "label": "google-gemini/gemma-4-31b-it",
-                "from": "262K",
-                "to": "256K"
-              },
-              {
-                "label": "modelscope/Qwen/Qwen3.5-27B",
-                "from": "8K",
-                "to": "256K"
-              }
-            ]
+            "eligible": 312,
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           },
           "maxOutput": {
-            "eligible": 133,
+            "eligible": 146,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "modality": {
-            "eligible": 238,
-            "changed": 8,
-            "ratioPct": 3.361344537815126,
-            "examples": [
-              {
-                "label": "cloudflare-workers-ai/@cf/google/gemma-4-26b-a4b-it",
-                "from": "Text",
-                "to": "Text + Vision"
-              },
-              {
-                "label": "google-gemini/gemma-4-26b-a4b-it",
-                "from": "vision + reasoning",
-                "to": "Text"
-              },
-              {
-                "label": "google-gemini/gemma-4-31b-it",
-                "from": "vision + reasoning",
-                "to": "Text"
-              }
-            ]
+            "eligible": 254,
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           },
           "rateLimit": {
-            "eligible": 193,
-            "changed": 11,
-            "ratioPct": 5.699481865284974,
-            "examples": [
-              {
-                "label": "kilo-code/nvidia/nemotron-3-ultra-550b-a55b:free",
-                "from": "~200 req/hr",
-                "to": "200 req/hr"
-              },
-              {
-                "label": "kilo-code/nvidia/nemotron-3-super-120b-a12b:free",
-                "from": "~200 req/hr",
-                "to": "200 req/hr"
-              },
-              {
-                "label": "kilo-code/poolside/laguna-s-2.1:free",
-                "from": "~200 req/hr",
-                "to": "200 req/hr"
-              }
-            ]
+            "eligible": 213,
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           }
         },
         "provider": {
           "description": {
-            "eligible": 18,
-            "changed": 3,
-            "ratioPct": 16.666666666666664,
-            "examples": [
-              {
-                "label": "kilo-code",
-                "from": "Free models with no credit card required. kilo-auto/free auto-router dynamically routes to models in the free pool.",
-                "to": "Free models with no credit card and no API key required. kilo-auto/free auto-router dynamically routes to models in the free pool."
-              },
-              {
-                "label": "llm7-io",
-                "from": "Zero-friction API gateway. No registration needed for basic access. 30+ models. GDPR-compliant.",
-                "to": "API gateway with a free tier. Anonymous access needs no key and reaches the turbo models; a free token from token.llm7.io raises the rate and token limits but reaches the same models."
-              },
-              {
-                "label": "siliconflow",
-                "from": "Permanently free models, no credit card required. Identity verification required. 200+ paid models also available.",
-                "to": "Permanently free models, no credit card required. Identity verification required. 100+ models in the catalog, most of them paid."
-              }
-            ]
+            "eligible": 17,
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           },
           "baseUrl": {
-            "eligible": 18,
+            "eligible": 17,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "freeLimit": {
-            "eligible": 11,
+            "eligible": 10,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -252,11 +157,11 @@
       "source": "freellm.net",
       "field": "maxOutput",
       "rule": "all-null-collapse",
-      "count": 361,
-      "total": 361,
+      "count": 364,
+      "total": 364,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"maxOutput\": 100% null di 361 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+      "message": "Field \"maxOutput\": 100% null di 364 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
     },
     {
       "severity": "warn",
@@ -282,30 +187,12 @@
     }
   ],
   "quarantine": {
-    "heldProviders": [
+    "heldProviders": [],
+    "accepted": [
       {
         "slug": "sambanova",
         "kind": "churned",
-        "detail": "id churn, overlap 0% (6 -> 4 id)",
-        "streak": 2,
-        "needs": 3
-      }
-    ],
-    "accepted": [
-      {
-        "slug": "llm7-io",
-        "kind": "shrunk",
-        "detail": "model 13 -> 6 (-54%)"
-      },
-      {
-        "slug": "aion-labs",
-        "kind": "churned",
-        "detail": "id churn, overlap 0% (5 -> 6 id)"
-      },
-      {
-        "slug": "github-models",
-        "kind": "churned",
-        "detail": "id churn, overlap 23% (13 -> 13 id)"
+        "detail": "id churn, overlap 0% (6 -> 4 id)"
       }
     ],
     "cleared": [],
