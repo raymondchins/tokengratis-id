@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js - The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser (client-side) or Node.js (server-side).",
       "language": "JavaScript",
-      "stars": 10180,
+      "stars": 10181,
       "forks": 1215,
       "openIssues": 14,
       "license": "AGPL-3.0",
@@ -26,7 +26,7 @@
         "user-agent-parser"
       ],
       "archived": false,
-      "pushedAt": "2026-08-22T09:11:12Z",
+      "pushedAt": "2026-08-23T12:48:23Z",
       "createdAt": "2012-02-01T01:11:49Z"
     },
     {
@@ -96,8 +96,8 @@
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
       "stars": 1221,
-      "forks": 1181,
-      "openIssues": 361,
+      "forks": 1182,
+      "openIssues": 356,
       "license": null,
       "topics": [
         "opensid",
@@ -118,7 +118,7 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 964,
+      "stars": 965,
       "forks": 293,
       "openIssues": 0,
       "license": "MIT",
@@ -205,7 +205,7 @@
       "language": "Rust",
       "stars": 355,
       "forks": 34,
-      "openIssues": 12,
+      "openIssues": 8,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -230,7 +230,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-08-20T05:19:12Z",
+      "pushedAt": "2026-08-23T19:03:41Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -245,7 +245,7 @@
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
       "stars": 336,
-      "forks": 41,
+      "forks": 42,
       "openIssues": 6,
       "license": "MIT",
       "topics": [
@@ -313,9 +313,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 224,
+      "stars": 225,
       "forks": 43,
-      "openIssues": 49,
+      "openIssues": 46,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -333,7 +333,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-08-22T17:21:50Z",
+      "pushedAt": "2026-08-23T17:18:52Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -455,7 +455,7 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 125,
+      "stars": 126,
       "forks": 44,
       "openIssues": 6,
       "license": "MIT",
@@ -515,7 +515,7 @@
       "description": "Unofficial Python 3 API wrapper to retrieve data from PDDIKTI Kemdikbudristek.",
       "language": "Python",
       "stars": 121,
-      "forks": 25,
+      "forks": 26,
       "openIssues": 0,
       "license": null,
       "topics": [
@@ -647,7 +647,7 @@
       "homepage": "https://mso.rahmanef.com",
       "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
-      "stars": 67,
+      "stars": 72,
       "forks": 10,
       "openIssues": 0,
       "license": "MIT",
@@ -672,7 +672,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-08-22T19:18:59Z",
+      "pushedAt": "2026-08-23T09:40:56Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -792,30 +792,6 @@
       "createdAt": "2026-01-11T07:23:01Z"
     },
     {
-      "slug": "andriawan/andkasir",
-      "fullName": "andriawan/AndKasir",
-      "name": "AndKasir",
-      "owner": "andriawan",
-      "ownerUrl": "https://github.com/andriawan",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/13099373?v=4",
-      "url": "https://github.com/andriawan/AndKasir",
-      "homepage": null,
-      "description": "AndKasir merupakan aplikasi open source yang dibangun dengan bahasa pemrograman Java untuk kebutuhan retail perusahaan menengah dalam mengatur aktifitas barang masuk dan keluar. konsultasi isu, instalasi dan penambahan fitur silahkan kirim email ke irwan@andriawan.com",
-      "language": "Java",
-      "stars": 46,
-      "forks": 42,
-      "openIssues": 2,
-      "license": "GPL-3.0",
-      "topics": [
-        "java",
-        "kasir",
-        "point-of-sale"
-      ],
-      "archived": false,
-      "pushedAt": "2026-01-16T15:24:01Z",
-      "createdAt": "2017-05-22T15:52:00Z"
-    },
-    {
       "slug": "raymondchins/agentmap",
       "fullName": "raymondchins/agentmap",
       "name": "agentmap",
@@ -826,7 +802,7 @@
       "homepage": null,
       "description": "Stop your coding agent reading the wrong files. Compiler-grade TS/JS repo map — 100% precision on blast radius vs grep's 60%, measured on public repos. CLI + MCP server, fully local, no vector DB.",
       "language": "JavaScript",
-      "stars": 45,
+      "stars": 46,
       "forks": 11,
       "openIssues": 3,
       "license": "MIT",
@@ -855,6 +831,30 @@
       "archived": false,
       "pushedAt": "2026-08-22T09:34:30Z",
       "createdAt": "2026-06-13T11:29:36Z"
+    },
+    {
+      "slug": "andriawan/andkasir",
+      "fullName": "andriawan/AndKasir",
+      "name": "AndKasir",
+      "owner": "andriawan",
+      "ownerUrl": "https://github.com/andriawan",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/13099373?v=4",
+      "url": "https://github.com/andriawan/AndKasir",
+      "homepage": null,
+      "description": "AndKasir merupakan aplikasi open source yang dibangun dengan bahasa pemrograman Java untuk kebutuhan retail perusahaan menengah dalam mengatur aktifitas barang masuk dan keluar. konsultasi isu, instalasi dan penambahan fitur silahkan kirim email ke irwan@andriawan.com",
+      "language": "Java",
+      "stars": 46,
+      "forks": 42,
+      "openIssues": 2,
+      "license": "GPL-3.0",
+      "topics": [
+        "java",
+        "kasir",
+        "point-of-sale"
+      ],
+      "archived": false,
+      "pushedAt": "2026-01-16T15:24:01Z",
+      "createdAt": "2017-05-22T15:52:00Z"
     },
     {
       "slug": "firewalker06/tycho",
@@ -978,7 +978,7 @@
       "language": "C#",
       "stars": 35,
       "forks": 13,
-      "openIssues": 1,
+      "openIssues": 2,
       "license": null,
       "topics": [
         "desktop-app",
@@ -988,7 +988,7 @@
         "windows"
       ],
       "archived": false,
-      "pushedAt": "2026-08-20T03:10:23Z",
+      "pushedAt": "2026-08-23T04:16:12Z",
       "createdAt": "2026-05-23T05:37:35Z"
     },
     {
@@ -1072,7 +1072,7 @@
         "wildlife"
       ],
       "archived": false,
-      "pushedAt": "2026-08-22T05:54:37Z",
+      "pushedAt": "2026-08-23T08:45:33Z",
       "createdAt": "2026-06-14T05:07:25Z"
     },
     {
@@ -1309,7 +1309,7 @@
         "windows-desktop"
       ],
       "archived": false,
-      "pushedAt": "2026-08-22T07:17:09Z",
+      "pushedAt": "2026-08-23T05:43:16Z",
       "createdAt": "2026-02-23T13:59:12Z"
     },
     {
@@ -1674,26 +1674,6 @@
       "createdAt": "2026-06-04T12:49:01Z"
     },
     {
-      "slug": "raymondchins/tokengratis-id",
-      "fullName": "raymondchins/tokengratis-id",
-      "name": "tokengratis-id",
-      "owner": "raymondchins",
-      "ownerUrl": "https://github.com/raymondchins",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
-      "url": "https://github.com/raymondchins/tokengratis-id",
-      "homepage": "https://tokengratis.id",
-      "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
-      "language": "JavaScript",
-      "stars": 6,
-      "forks": 1,
-      "openIssues": 1,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-08-21T19:27:40Z",
-      "createdAt": "2026-06-01T10:04:41Z"
-    },
-    {
       "slug": "rizukirr/apic",
       "fullName": "rizukirr/apic",
       "name": "apic",
@@ -1718,8 +1698,28 @@
         "rust"
       ],
       "archived": false,
-      "pushedAt": "2026-07-31T15:51:15Z",
+      "pushedAt": "2026-08-23T17:22:44Z",
       "createdAt": "2026-06-04T12:15:07Z"
+    },
+    {
+      "slug": "raymondchins/tokengratis-id",
+      "fullName": "raymondchins/tokengratis-id",
+      "name": "tokengratis-id",
+      "owner": "raymondchins",
+      "ownerUrl": "https://github.com/raymondchins",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
+      "url": "https://github.com/raymondchins/tokengratis-id",
+      "homepage": "https://tokengratis.id",
+      "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
+      "language": "JavaScript",
+      "stars": 6,
+      "forks": 1,
+      "openIssues": 1,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-08-22T19:24:38Z",
+      "createdAt": "2026-06-01T10:04:41Z"
     },
     {
       "slug": "wauputr4/agent-proxmox",
@@ -1984,7 +1984,7 @@
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-22T05:16:02Z",
+      "pushedAt": "2026-08-23T16:38:42Z",
       "createdAt": "2026-02-10T04:21:08Z"
     },
     {
@@ -2052,14 +2052,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-08-22T19:24:24.260Z"
+      "syncedAt": "2026-08-23T19:23:56.943Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-08-22T19:24:24.260Z"
+      "syncedAt": "2026-08-23T19:23:56.943Z"
     }
   ],
-  "syncedAt": "2026-08-22T19:24:24.260Z",
+  "syncedAt": "2026-08-23T19:23:56.943Z",
   "count": 76
 }

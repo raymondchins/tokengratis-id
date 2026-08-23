@@ -1,5 +1,35 @@
 [
   {
+    "date": "2026-08-23",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cerebras",
+        "added": [
+          "Llama 3.1 70B"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "Cloudflare Workers AI",
+        "added": [
+          "Mistral 7B",
+          "Qwen 1.5 7B"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "Groq",
+        "added": [
+          "Moonshot Kimi K2",
+          "Moonshot Kimi K2 0905"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-08-22",
     "providersAdded": [],
     "providersRemoved": [],

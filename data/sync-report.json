@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T19:24:18.579Z",
+  "generatedAt": "2026-08-23T19:23:51.472Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -11,18 +11,18 @@
     "freellm.net": {
       "status": "ok",
       "providers": 25,
-      "models": 364,
+      "models": 369,
       "shapeIssues": [
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "maxOutput",
           "rule": "all-null-collapse",
-          "count": 364,
-          "total": 364,
+          "count": 369,
+          "total": 369,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"maxOutput\": 100% null di 364 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+          "message": "Field \"maxOutput\": 100% null di 369 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
         },
         {
           "severity": "warn",
@@ -65,7 +65,7 @@
   ],
   "merged": {
     "providers": 25,
-    "models": 341,
+    "models": 346,
     "shapeIssues": []
   },
   "smokeTest": {
@@ -73,49 +73,40 @@
     "warnings": []
   },
   "diffGuard": {
-    "ok": false,
-    "errors": [
-      "provider \"sambanova\" model ids churned 100.0% at same-ish count (overlap 0.0%, 6→4 ids) — possible source corruption"
-    ],
+    "ok": true,
+    "errors": [],
     "warnings": [],
     "stats": {
       "prevProviders": 25,
       "nextProviders": 25,
       "prevModels": 341,
-      "nextModels": 341,
-      "totalDropPct": 0,
+      "nextModels": 346,
+      "totalDropPct": -1.466275659824047,
       "disappeared": [],
       "shrunk": [],
-      "churned": [
-        {
-          "slug": "sambanova",
-          "overlapPct": 0,
-          "prevIds": 6,
-          "nextIds": 4
-        }
-      ],
+      "churned": [],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 312,
+            "eligible": 324,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "maxOutput": {
-            "eligible": 146,
+            "eligible": 149,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "modality": {
-            "eligible": 254,
+            "eligible": 263,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "rateLimit": {
-            "eligible": 213,
+            "eligible": 220,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -123,19 +114,19 @@
         },
         "provider": {
           "description": {
-            "eligible": 17,
+            "eligible": 16,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "baseUrl": {
-            "eligible": 17,
+            "eligible": 16,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "freeLimit": {
-            "eligible": 10,
+            "eligible": 9,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -157,11 +148,11 @@
       "source": "freellm.net",
       "field": "maxOutput",
       "rule": "all-null-collapse",
-      "count": 364,
-      "total": 364,
+      "count": 369,
+      "total": 369,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"maxOutput\": 100% null di 364 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+      "message": "Field \"maxOutput\": 100% null di 369 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
     },
     {
       "severity": "warn",
@@ -188,13 +179,7 @@
   ],
   "quarantine": {
     "heldProviders": [],
-    "accepted": [
-      {
-        "slug": "sambanova",
-        "kind": "churned",
-        "detail": "id churn, overlap 0% (6 -> 4 id)"
-      }
-    ],
+    "accepted": [],
     "cleared": [],
     "confirmRuns": 3
   }
