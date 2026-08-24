@@ -1,5 +1,21 @@
 [
   {
+    "date": "2026-08-24",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "OpenRouter",
+        "added": [],
+        "removed": [
+          "NVIDIA: Nemotron 3 Nano 30B A3B (free)",
+          "NVIDIA: Nemotron Nano 12B 2 VL (free)",
+          "NVIDIA: Nemotron Nano 9B V2 (free)"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-08-23",
     "providersAdded": [],
     "providersRemoved": [],
