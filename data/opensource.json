@@ -40,7 +40,7 @@
       "homepage": null,
       "description": "Plug n play avatar, turn name, email, and any other string into beautiful avatar (or gravatar), effortless.",
       "language": "PHP",
-      "stars": 1982,
+      "stars": 1981,
       "forks": 186,
       "openIssues": 1,
       "license": "MIT",
@@ -97,14 +97,14 @@
       "language": "PHP",
       "stars": 1222,
       "forks": 1182,
-      "openIssues": 356,
+      "openIssues": 424,
       "license": null,
       "topics": [
         "opensid",
         "sistem-informasi-desa"
       ],
       "archived": false,
-      "pushedAt": "2026-08-24T08:49:59Z",
+      "pushedAt": "2026-08-25T11:57:23Z",
       "createdAt": "2016-05-21T10:55:38Z"
     },
     {
@@ -118,8 +118,8 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 967,
-      "forks": 294,
+      "stars": 970,
+      "forks": 295,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -156,7 +156,7 @@
       "homepage": null,
       "description": "Package Laravel yang berisi data Provinsi, Kabupaten/Kota, dan Kecamatan/Desa di seluruh Indonesia.",
       "language": "PHP",
-      "stars": 676,
+      "stars": 675,
       "forks": 210,
       "openIssues": 5,
       "license": "MIT",
@@ -203,9 +203,9 @@
       "homepage": "https://omni.weekndlabs.com/docs",
       "description": "Your agent pays twice for output it has already seen. OMNI returns a handle instead: 97.2% off a file read twice. Nothing deleted, nothing invented.",
       "language": "Rust",
-      "stars": 355,
+      "stars": 359,
       "forks": 34,
-      "openIssues": 11,
+      "openIssues": 12,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -230,7 +230,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-08-24T08:59:24Z",
+      "pushedAt": "2026-08-25T18:16:51Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -258,7 +258,7 @@
         "wails-app"
       ],
       "archived": false,
-      "pushedAt": "2026-08-24T11:13:18Z",
+      "pushedAt": "2026-08-25T18:03:28Z",
       "createdAt": "2025-11-04T15:37:00Z"
     },
     {
@@ -274,7 +274,7 @@
       "language": "Rust",
       "stars": 235,
       "forks": 25,
-      "openIssues": 8,
+      "openIssues": 7,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -299,7 +299,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-08-24T11:48:00Z",
+      "pushedAt": "2026-08-25T18:55:53Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -333,7 +333,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-08-24T11:05:57Z",
+      "pushedAt": "2026-08-25T17:24:06Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -379,7 +379,7 @@
       "homepage": null,
       "description": null,
       "language": "Python",
-      "stars": 176,
+      "stars": 177,
       "forks": 42,
       "openIssues": 0,
       "license": "MIT",
@@ -399,9 +399,9 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 153,
-      "forks": 12,
-      "openIssues": 1,
+      "stars": 154,
+      "forks": 13,
+      "openIssues": 2,
       "license": "Apache-2.0",
       "topics": [
         "ai",
@@ -421,7 +421,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-08-24T08:40:51Z",
+      "pushedAt": "2026-08-25T10:49:46Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -456,8 +456,8 @@
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
       "stars": 126,
-      "forks": 45,
-      "openIssues": 3,
+      "forks": 46,
+      "openIssues": 4,
       "license": "MIT",
       "topics": [
         "ai",
@@ -599,7 +599,7 @@
       "homepage": "https://svelte-audio-ui.vercel.app/",
       "description": "A set of accessible and composable Audio UI components.",
       "language": "Svelte",
-      "stars": 87,
+      "stars": 88,
       "forks": 5,
       "openIssues": 11,
       "license": "MIT",
@@ -672,7 +672,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-08-24T19:02:30Z",
+      "pushedAt": "2026-08-24T21:24:02Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -762,7 +762,7 @@
       "homepage": null,
       "description": "Dynamic QRIS Python-based generator program.",
       "language": "Python",
-      "stars": 48,
+      "stars": 49,
       "forks": 6,
       "openIssues": 0,
       "license": null,
@@ -1257,7 +1257,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-08-22T17:32:31Z",
+      "pushedAt": "2026-08-25T12:47:28Z",
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
@@ -1279,6 +1279,39 @@
       "archived": false,
       "pushedAt": "2026-08-03T01:36:44Z",
       "createdAt": "2026-06-15T14:35:14Z"
+    },
+    {
+      "slug": "rahmanef63/si-coder-agent",
+      "fullName": "rahmanef63/si-coder-agent",
+      "name": "si-coder-agent",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/si-coder-agent",
+      "homepage": null,
+      "description": "Zero-human full-stack deployment as a bundle of /sc-* Claude Code slash commands — GitHub + Convex (self-hosted & Cloud) + Dokploy + Vercel + Hostinger DNS, source to verified live URL. Node ≥18, no runtime dependencies. 8 skills implemented, 5 stubs.",
+      "language": "JavaScript",
+      "stars": 14,
+      "forks": 3,
+      "openIssues": 1,
+      "license": "MIT",
+      "topics": [
+        "ai-agent",
+        "claude-code",
+        "claude-skills",
+        "convex",
+        "deployment-automation",
+        "devops",
+        "dokploy",
+        "hostinger",
+        "nextjs",
+        "self-hosted",
+        "vercel",
+        "zero-human"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-24T21:25:53Z",
+      "createdAt": "2026-03-18T18:38:41Z"
     },
     {
       "slug": "muslimtify-org/muslimtify",
@@ -1311,39 +1344,6 @@
       "archived": false,
       "pushedAt": "2026-08-23T05:43:16Z",
       "createdAt": "2026-02-23T13:59:12Z"
-    },
-    {
-      "slug": "rahmanef63/si-coder-agent",
-      "fullName": "rahmanef63/si-coder-agent",
-      "name": "si-coder-agent",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/si-coder-agent",
-      "homepage": null,
-      "description": "Zero-human full-stack deployment as a bundle of /sc-* Claude Code slash commands — GitHub + Convex (self-hosted & Cloud) + Dokploy + Vercel + Hostinger DNS, source to verified live URL. Node ≥18, no runtime dependencies. 8 skills implemented, 5 stubs.",
-      "language": "JavaScript",
-      "stars": 14,
-      "forks": 3,
-      "openIssues": 1,
-      "license": "MIT",
-      "topics": [
-        "ai-agent",
-        "claude-code",
-        "claude-skills",
-        "convex",
-        "deployment-automation",
-        "devops",
-        "dokploy",
-        "hostinger",
-        "nextjs",
-        "self-hosted",
-        "vercel",
-        "zero-human"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-19T12:10:20Z",
-      "createdAt": "2026-03-18T18:38:41Z"
     },
     {
       "slug": "rizukirr/numc",
@@ -1564,6 +1564,26 @@
       "createdAt": "2026-01-11T03:16:04Z"
     },
     {
+      "slug": "rifqiakrm/code-island",
+      "fullName": "rifqiakrm/code-island",
+      "name": "code-island",
+      "owner": "rifqiakrm",
+      "ownerUrl": "https://github.com/rifqiakrm",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/35358522?v=4",
+      "url": "https://github.com/rifqiakrm/code-island",
+      "homepage": "https://rifqiakrm.github.io/code-island/",
+      "description": "macOS app that turns your MacBook's notch into a live dashboard for Claude Code, Codex, etc",
+      "language": "Swift",
+      "stars": 8,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "GPL-3.0",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-07-30T12:28:13Z",
+      "createdAt": "2026-04-23T06:17:57Z"
+    },
+    {
       "slug": "rrndev/app-permission-analyzer",
       "fullName": "RRNDev/app-permission-analyzer",
       "name": "app-permission-analyzer",
@@ -1625,28 +1645,8 @@
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-20T03:37:32Z",
+      "pushedAt": "2026-08-25T15:11:37Z",
       "createdAt": "2026-06-13T11:24:30Z"
-    },
-    {
-      "slug": "rifqiakrm/code-island",
-      "fullName": "rifqiakrm/code-island",
-      "name": "code-island",
-      "owner": "rifqiakrm",
-      "ownerUrl": "https://github.com/rifqiakrm",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/35358522?v=4",
-      "url": "https://github.com/rifqiakrm/code-island",
-      "homepage": "https://rifqiakrm.github.io/code-island/",
-      "description": "macOS app that turns your MacBook's notch into a live dashboard for Claude Code, Codex, etc",
-      "language": "Swift",
-      "stars": 7,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "GPL-3.0",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-07-30T12:28:13Z",
-      "createdAt": "2026-04-23T06:17:57Z"
     },
     {
       "slug": "anandazp/tempa-ui",
@@ -1698,7 +1698,7 @@
         "rust"
       ],
       "archived": false,
-      "pushedAt": "2026-08-24T12:27:48Z",
+      "pushedAt": "2026-08-25T15:22:42Z",
       "createdAt": "2026-06-04T12:15:07Z"
     },
     {
@@ -1718,7 +1718,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-23T19:24:10Z",
+      "pushedAt": "2026-08-24T19:31:57Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1984,7 +1984,7 @@
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-24T05:52:37Z",
+      "pushedAt": "2026-08-25T10:36:55Z",
       "createdAt": "2026-02-10T04:21:08Z"
     },
     {
@@ -2052,14 +2052,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-08-24T19:31:47.455Z"
+      "syncedAt": "2026-08-25T19:33:52.027Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-08-24T19:31:47.455Z"
+      "syncedAt": "2026-08-25T19:33:52.027Z"
     }
   ],
-  "syncedAt": "2026-08-24T19:31:47.455Z",
+  "syncedAt": "2026-08-25T19:33:52.027Z",
   "count": 76
 }

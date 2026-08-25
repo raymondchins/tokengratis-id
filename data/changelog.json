@@ -1,5 +1,27 @@
 [
   {
+    "date": "2026-08-25",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "LLM7.io",
+        "added": [],
+        "removed": [
+          "DeepSeek V4 Flash 0731"
+        ]
+      },
+      {
+        "provider": "OpenRouter",
+        "added": [
+          "MiniMax: MiniMax M3 (free)",
+          "MiniMax: MiniMax M2.7 (free)"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-08-24",
     "providersAdded": [],
     "providersRemoved": [],
