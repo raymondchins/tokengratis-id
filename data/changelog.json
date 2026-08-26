@@ -1,5 +1,32 @@
 [
   {
+    "date": "2026-08-26",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "LLM7.io",
+        "added": [
+          "DeepSeek V4 Flash 0731"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "NVIDIA NIM",
+        "added": [],
+        "removed": [
+          "Inkling",
+          "baai/bge-m3",
+          "nvidia/llama-nemotron-embed-1b-v2",
+          "nvidia/nemoretriever-parse",
+          "nvidia/nv-embed-v1",
+          "nvidia/nv-embedcode-7b-v1",
+          "nvidia/nv-embedqa-e5-v5"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-08-25",
     "providersAdded": [],
     "providersRemoved": [],

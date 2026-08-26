@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T19:33:46.539Z",
+  "generatedAt": "2026-08-26T21:42:15.991Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -11,18 +11,18 @@
     "freellm.net": {
       "status": "ok",
       "providers": 25,
-      "models": 363,
+      "models": 359,
       "shapeIssues": [
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "maxOutput",
           "rule": "all-null-collapse",
-          "count": 363,
-          "total": 363,
+          "count": 359,
+          "total": 359,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"maxOutput\": 100% null di 363 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+          "message": "Field \"maxOutput\": 100% null di 359 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
         },
         {
           "severity": "warn",
@@ -65,7 +65,7 @@
   ],
   "merged": {
     "providers": 25,
-    "models": 344,
+    "models": 338,
     "shapeIssues": []
   },
   "smokeTest": {
@@ -79,61 +79,34 @@
     "stats": {
       "prevProviders": 25,
       "nextProviders": 25,
-      "prevModels": 343,
-      "nextModels": 344,
-      "totalDropPct": -0.2915451895043732,
+      "prevModels": 344,
+      "nextModels": 338,
+      "totalDropPct": 1.744186046511628,
       "disappeared": [],
       "shrunk": [],
       "churned": [],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 325,
-            "changed": 2,
-            "ratioPct": 0.6153846153846154,
-            "examples": [
-              {
-                "label": "openrouter/thinkingmachines/inkling:free",
-                "from": "262K",
-                "to": "1.049M"
-              },
-              {
-                "label": "openrouter/thinkingmachines/inkling-small:free",
-                "from": "262K",
-                "to": "1.049M"
-              }
-            ]
+            "eligible": 323,
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           },
           "maxOutput": {
-            "eligible": 148,
-            "changed": 3,
-            "ratioPct": 2.027027027027027,
-            "examples": [
-              {
-                "label": "openrouter/dots-studio/dots-3-note-preview:free",
-                "from": "512K",
-                "to": "461K"
-              },
-              {
-                "label": "openrouter/nvidia/nemotron-3-super-120b-a12b:free",
-                "from": "262K",
-                "to": "236K"
-              },
-              {
-                "label": "openrouter/z-ai/glm-5.2:free",
-                "from": "256K",
-                "to": "230K"
-              }
-            ]
+            "eligible": 145,
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           },
           "modality": {
-            "eligible": 264,
+            "eligible": 259,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "rateLimit": {
-            "eligible": 217,
+            "eligible": 212,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -160,15 +133,9 @@
           },
           "maxContext": {
             "eligible": 24,
-            "changed": 1,
-            "ratioPct": 4.166666666666666,
-            "examples": [
-              {
-                "label": "openrouter",
-                "from": "1M",
-                "to": "1.049M"
-              }
-            ]
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           }
         }
       }
@@ -181,11 +148,11 @@
       "source": "freellm.net",
       "field": "maxOutput",
       "rule": "all-null-collapse",
-      "count": 363,
-      "total": 363,
+      "count": 359,
+      "total": 359,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"maxOutput\": 100% null di 363 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+      "message": "Field \"maxOutput\": 100% null di 359 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
     },
     {
       "severity": "warn",

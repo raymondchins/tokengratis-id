@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js - The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser (client-side) or Node.js (server-side).",
       "language": "JavaScript",
-      "stars": 10180,
+      "stars": 10181,
       "forks": 1215,
       "openIssues": 14,
       "license": "AGPL-3.0",
@@ -66,7 +66,7 @@
       "homepage": "https://www.htmly.com",
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
-      "stars": 1359,
+      "stars": 1360,
       "forks": 309,
       "openIssues": 52,
       "license": "GPL-2.0",
@@ -97,14 +97,14 @@
       "language": "PHP",
       "stars": 1222,
       "forks": 1182,
-      "openIssues": 424,
+      "openIssues": 360,
       "license": null,
       "topics": [
         "opensid",
         "sistem-informasi-desa"
       ],
       "archived": false,
-      "pushedAt": "2026-08-25T11:57:23Z",
+      "pushedAt": "2026-08-26T13:13:55Z",
       "createdAt": "2016-05-21T10:55:38Z"
     },
     {
@@ -203,9 +203,9 @@
       "homepage": "https://omni.weekndlabs.com/docs",
       "description": "Your agent pays twice for output it has already seen. OMNI returns a handle instead: 97.2% off a file read twice. Nothing deleted, nothing invented.",
       "language": "Rust",
-      "stars": 359,
+      "stars": 361,
       "forks": 34,
-      "openIssues": 12,
+      "openIssues": 11,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -230,7 +230,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-08-25T18:16:51Z",
+      "pushedAt": "2026-08-26T14:12:25Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -246,7 +246,7 @@
       "language": "TypeScript",
       "stars": 336,
       "forks": 42,
-      "openIssues": 6,
+      "openIssues": 7,
       "license": "MIT",
       "topics": [
         "adb",
@@ -258,7 +258,7 @@
         "wails-app"
       ],
       "archived": false,
-      "pushedAt": "2026-08-25T18:03:28Z",
+      "pushedAt": "2026-08-26T02:21:54Z",
       "createdAt": "2025-11-04T15:37:00Z"
     },
     {
@@ -274,7 +274,7 @@
       "language": "Rust",
       "stars": 235,
       "forks": 25,
-      "openIssues": 7,
+      "openIssues": 1,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -299,7 +299,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-08-25T18:55:53Z",
+      "pushedAt": "2026-08-26T13:16:53Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -315,7 +315,7 @@
       "language": "TypeScript",
       "stars": 225,
       "forks": 44,
-      "openIssues": 47,
+      "openIssues": 44,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -333,7 +333,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-08-25T17:24:06Z",
+      "pushedAt": "2026-08-26T18:29:13Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -401,7 +401,7 @@
       "language": "TypeScript",
       "stars": 154,
       "forks": 13,
-      "openIssues": 2,
+      "openIssues": 1,
       "license": "Apache-2.0",
       "topics": [
         "ai",
@@ -421,7 +421,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-08-25T10:49:46Z",
+      "pushedAt": "2026-08-26T06:06:54Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -456,7 +456,7 @@
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
       "stars": 126,
-      "forks": 46,
+      "forks": 47,
       "openIssues": 4,
       "license": "MIT",
       "topics": [
@@ -494,7 +494,7 @@
       "homepage": null,
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
-      "stars": 123,
+      "stars": 124,
       "forks": 63,
       "openIssues": 6,
       "license": "MIT",
@@ -538,7 +538,7 @@
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": null,
-      "stars": 116,
+      "stars": 117,
       "forks": 7,
       "openIssues": 0,
       "license": "MIT",
@@ -617,26 +617,6 @@
       "createdAt": "2026-03-17T12:55:21Z"
     },
     {
-      "slug": "njinlabs/njinattend-backend",
-      "fullName": "njinlabs/njinattend-backend",
-      "name": "njinattend-backend",
-      "owner": "njinlabs",
-      "ownerUrl": "https://github.com/njinlabs",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/145111707?v=4",
-      "url": "https://github.com/njinlabs/njinattend-backend",
-      "homepage": null,
-      "description": "The backend of NjinAttend is built using AdonisJS.",
-      "language": "TypeScript",
-      "stars": 73,
-      "forks": 20,
-      "openIssues": 0,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2023-10-04T21:50:13Z",
-      "createdAt": "2023-09-23T21:07:22Z"
-    },
-    {
       "slug": "rahmanef63/mso",
       "fullName": "rahmanef63/mso",
       "name": "mso",
@@ -647,7 +627,7 @@
       "homepage": "https://mso.rahmanef.com",
       "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
-      "stars": 72,
+      "stars": 73,
       "forks": 10,
       "openIssues": 0,
       "license": "MIT",
@@ -672,8 +652,28 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-08-24T21:24:02Z",
+      "pushedAt": "2026-08-26T04:31:31Z",
       "createdAt": "2026-05-29T17:44:06Z"
+    },
+    {
+      "slug": "njinlabs/njinattend-backend",
+      "fullName": "njinlabs/njinattend-backend",
+      "name": "njinattend-backend",
+      "owner": "njinlabs",
+      "ownerUrl": "https://github.com/njinlabs",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/145111707?v=4",
+      "url": "https://github.com/njinlabs/njinattend-backend",
+      "homepage": null,
+      "description": "The backend of NjinAttend is built using AdonisJS.",
+      "language": "TypeScript",
+      "stars": 73,
+      "forks": 20,
+      "openIssues": 0,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2023-10-04T21:50:13Z",
+      "createdAt": "2023-09-23T21:07:22Z"
     },
     {
       "slug": "wauputr4/bansos",
@@ -686,7 +686,7 @@
       "homepage": "https://bansos.dev",
       "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
       "language": "Svelte",
-      "stars": 64,
+      "stars": 65,
       "forks": 19,
       "openIssues": 7,
       "license": "MIT",
@@ -926,7 +926,7 @@
         "windows"
       ],
       "archived": false,
-      "pushedAt": "2026-08-24T06:57:55Z",
+      "pushedAt": "2026-08-26T00:40:53Z",
       "createdAt": "2026-05-23T05:37:35Z"
     },
     {
@@ -1076,6 +1076,40 @@
       "createdAt": "2026-06-14T05:07:25Z"
     },
     {
+      "slug": "rahmanef63/open-silong",
+      "fullName": "rahmanef63/open-silong",
+      "name": "open-silong",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/open-silong",
+      "homepage": "https://silong-os.vercel.app/",
+      "description": "Open-source, self-hostable Notion/Obsidian-style workspace — block editor for notes, docs and lightweight databases, plus a knowledge graph over them. Next.js 16 · React 19 · Convex · Tailwind v4.",
+      "language": "TypeScript",
+      "stars": 26,
+      "forks": 5,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "block-editor",
+        "convex",
+        "indonesia",
+        "knowledge-graph",
+        "nextjs",
+        "notion-alternative",
+        "notion-clone",
+        "open-source",
+        "react",
+        "self-hosted",
+        "tailwindcss",
+        "typescript",
+        "workspace"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-26T04:28:49Z",
+      "createdAt": "2026-04-29T18:48:11Z"
+    },
+    {
       "slug": "rizukirr/hyprsimple",
       "fullName": "rizukirr/hyprsimple",
       "name": "hyprsimple",
@@ -1103,40 +1137,6 @@
       "createdAt": "2025-10-04T10:27:45Z"
     },
     {
-      "slug": "rahmanef63/open-silong",
-      "fullName": "rahmanef63/open-silong",
-      "name": "open-silong",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/open-silong",
-      "homepage": "https://silong-os.vercel.app/",
-      "description": "Open-source, self-hostable Notion/Obsidian-style workspace — block editor for notes, docs and lightweight databases, plus a knowledge graph over them. Next.js 16 · React 19 · Convex · Tailwind v4.",
-      "language": "TypeScript",
-      "stars": 25,
-      "forks": 5,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "block-editor",
-        "convex",
-        "indonesia",
-        "knowledge-graph",
-        "nextjs",
-        "notion-alternative",
-        "notion-clone",
-        "open-source",
-        "react",
-        "self-hosted",
-        "tailwindcss",
-        "typescript",
-        "workspace"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-12T02:27:35Z",
-      "createdAt": "2026-04-29T18:48:11Z"
-    },
-    {
       "slug": "rudycity/superagent",
       "fullName": "RudyCity/superagent",
       "name": "superagent",
@@ -1153,7 +1153,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-20T01:47:53Z",
+      "pushedAt": "2026-08-26T08:29:55Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1629,6 +1629,34 @@
       "createdAt": "2026-01-09T17:20:39Z"
     },
     {
+      "slug": "rizukirr/apic",
+      "fullName": "rizukirr/apic",
+      "name": "apic",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/apic",
+      "homepage": null,
+      "description": "A lightweight, Git-friendly tool for designing and collaborating on API contracts",
+      "language": "Rust",
+      "stars": 7,
+      "forks": 2,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "api",
+        "api-contract",
+        "cli-tool",
+        "colaboration",
+        "contracts",
+        "rest-api",
+        "rust"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-26T05:31:59Z",
+      "createdAt": "2026-06-04T12:15:07Z"
+    },
+    {
       "slug": "aofsnorth/artidor",
       "fullName": "Aofsnorth/Artidor",
       "name": "Artidor",
@@ -1674,34 +1702,6 @@
       "createdAt": "2026-06-04T12:49:01Z"
     },
     {
-      "slug": "rizukirr/apic",
-      "fullName": "rizukirr/apic",
-      "name": "apic",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/apic",
-      "homepage": null,
-      "description": "A lightweight, Git-friendly tool for designing and collaborating on API contracts",
-      "language": "Rust",
-      "stars": 6,
-      "forks": 2,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "api",
-        "api-contract",
-        "cli-tool",
-        "colaboration",
-        "contracts",
-        "rest-api",
-        "rust"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-25T15:22:42Z",
-      "createdAt": "2026-06-04T12:15:07Z"
-    },
-    {
       "slug": "raymondchins/tokengratis-id",
       "fullName": "raymondchins/tokengratis-id",
       "name": "tokengratis-id",
@@ -1718,8 +1718,42 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-24T19:31:57Z",
+      "pushedAt": "2026-08-25T19:34:02Z",
       "createdAt": "2026-06-01T10:04:41Z"
+    },
+    {
+      "slug": "codecoradev/trapfall",
+      "fullName": "codecoradev/trapfall",
+      "name": "trapfall",
+      "owner": "codecoradev",
+      "ownerUrl": "https://github.com/codecoradev",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
+      "url": "https://github.com/codecoradev/trapfall",
+      "homepage": "https://codecora.dev",
+      "description": "TrapFall — Lightweight self-hosted error capture engine. Sentry-compatible, Rust + SvelteKit 5.",
+      "language": "Rust",
+      "stars": 6,
+      "forks": 0,
+      "openIssues": 6,
+      "license": "Apache-2.0",
+      "topics": [
+        "axum",
+        "blake3",
+        "crash-reporting",
+        "error-capture",
+        "error-tracking",
+        "flutter",
+        "mcp",
+        "observability",
+        "rust",
+        "self-hosted",
+        "sentry",
+        "sentry-alternative",
+        "sveltekit"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-13T01:35:23Z",
+      "createdAt": "2026-06-06T00:23:26Z"
     },
     {
       "slug": "wauputr4/agent-proxmox",
@@ -1753,40 +1787,6 @@
       "archived": false,
       "pushedAt": "2026-07-23T02:37:49Z",
       "createdAt": "2026-06-06T16:32:11Z"
-    },
-    {
-      "slug": "codecoradev/trapfall",
-      "fullName": "codecoradev/trapfall",
-      "name": "trapfall",
-      "owner": "codecoradev",
-      "ownerUrl": "https://github.com/codecoradev",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
-      "url": "https://github.com/codecoradev/trapfall",
-      "homepage": "https://codecora.dev",
-      "description": "TrapFall — Lightweight self-hosted error capture engine. Sentry-compatible, Rust + SvelteKit 5.",
-      "language": "Rust",
-      "stars": 5,
-      "forks": 0,
-      "openIssues": 6,
-      "license": "Apache-2.0",
-      "topics": [
-        "axum",
-        "blake3",
-        "crash-reporting",
-        "error-capture",
-        "error-tracking",
-        "flutter",
-        "mcp",
-        "observability",
-        "rust",
-        "self-hosted",
-        "sentry",
-        "sentry-alternative",
-        "sveltekit"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-13T01:35:23Z",
-      "createdAt": "2026-06-06T00:23:26Z"
     },
     {
       "slug": "wauputr4/skill-bansos",
@@ -2052,14 +2052,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-08-25T19:33:52.027Z"
+      "syncedAt": "2026-08-26T21:42:22.804Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-08-25T19:33:52.027Z"
+      "syncedAt": "2026-08-26T21:42:22.804Z"
     }
   ],
-  "syncedAt": "2026-08-25T19:33:52.027Z",
+  "syncedAt": "2026-08-26T21:42:22.804Z",
   "count": 76
 }
