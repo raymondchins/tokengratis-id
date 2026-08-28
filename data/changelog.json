@@ -1,5 +1,61 @@
 [
   {
+    "date": "2026-08-28",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cline",
+        "added": [
+          "glm-5.3-flash"
+        ],
+        "removed": [
+          "ox-alpha"
+        ]
+      },
+      {
+        "provider": "LLM7.io",
+        "added": [
+          "deepseek-v3-0324"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "NVIDIA NIM",
+        "added": [
+          "deepseek-ai/deepseek-v4-pro"
+        ],
+        "removed": [
+          "Llama 3.3 Nemotron Super 49B v1",
+          "meta/llama-3.1-70b-instruct",
+          "meta/llama-3.2-3b-instruct",
+          "nvidia/llama-3.3-nemotron-super-49b-v1.5",
+          "Nemotron Mini 4B Instruct",
+          "Nemotron Nano 12B v2 VL",
+          "meta/llama-3.2-1b-instruct",
+          "meta/llama-3.1-8b-instruct",
+          "nvidia/llama-3.1-nemotron-nano-8b-v1",
+          "nvidia/llama-3.1-nemotron-nano-vl-8b-v1",
+          "nvidia/nvidia-nemotron-nano-9b-v2"
+        ]
+      },
+      {
+        "provider": "OpenCode Zen",
+        "added": [],
+        "removed": [
+          "x-preview-f-free"
+        ]
+      },
+      {
+        "provider": "OpenRouter",
+        "added": [
+          "Ling 3.0 Flash Fin (free)"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-08-26",
     "providersAdded": [],
     "providersRemoved": [],
