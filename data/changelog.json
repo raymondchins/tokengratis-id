@@ -5,32 +5,11 @@
     "providersRemoved": [],
     "models": [
       {
-        "provider": "Groq",
+        "provider": "Cline",
         "added": [
-          "qwen/qwen3.8-27b"
+          "LongCat-2.0"
         ],
         "removed": []
-      },
-      {
-        "provider": "LLM7.io",
-        "added": [],
-        "removed": [
-          "deepseek-v3-0324"
-        ]
-      },
-      {
-        "provider": "ModelScope",
-        "added": [
-          "Qwen/Qwen3.8-Flash-Next"
-        ],
-        "removed": []
-      },
-      {
-        "provider": "NVIDIA NIM",
-        "added": [],
-        "removed": [
-          "stepfun-ai/step-3.7-flash"
-        ]
       }
     ]
   },
