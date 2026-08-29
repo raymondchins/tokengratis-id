@@ -1,5 +1,40 @@
 [
   {
+    "date": "2026-08-29",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Groq",
+        "added": [
+          "qwen/qwen3.8-27b"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "LLM7.io",
+        "added": [],
+        "removed": [
+          "deepseek-v3-0324"
+        ]
+      },
+      {
+        "provider": "ModelScope",
+        "added": [
+          "Qwen/Qwen3.8-Flash-Next"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "NVIDIA NIM",
+        "added": [],
+        "removed": [
+          "stepfun-ai/step-3.7-flash"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-08-28",
     "providersAdded": [],
     "providersRemoved": [],
