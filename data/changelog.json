@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-08-30",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "OpenCode Zen",
+        "added": [],
+        "removed": [
+          "Hy3 preview"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-08-29",
     "providersAdded": [],
     "providersRemoved": [],
