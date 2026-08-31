@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-08-31",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "OpenCode Zen",
+        "added": [
+          "Ling 3.0 Flash Fin"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-08-30",
     "providersAdded": [],
     "providersRemoved": [],

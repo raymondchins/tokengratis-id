@@ -13,7 +13,7 @@
       "language": "JavaScript",
       "stars": 10184,
       "forks": 1215,
-      "openIssues": 15,
+      "openIssues": 17,
       "license": "AGPL-3.0",
       "topics": [
         "analytics",
@@ -96,8 +96,8 @@
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
       "stars": 1221,
-      "forks": 1183,
-      "openIssues": 359,
+      "forks": 1185,
+      "openIssues": 353,
       "license": null,
       "topics": [
         "opensid",
@@ -118,7 +118,7 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 977,
+      "stars": 980,
       "forks": 295,
       "openIssues": 0,
       "license": "MIT",
@@ -203,9 +203,9 @@
       "homepage": "https://omni.weekndlabs.com/docs",
       "description": "Your agent pays twice for output it has already seen. OMNI returns a handle instead: 97.2% off a file read twice. Nothing deleted, nothing invented.",
       "language": "Rust",
-      "stars": 361,
+      "stars": 360,
       "forks": 34,
-      "openIssues": 7,
+      "openIssues": 12,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -230,7 +230,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-08-30T11:26:03Z",
+      "pushedAt": "2026-08-31T05:25:33Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -244,9 +244,9 @@
       "homepage": null,
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 339,
+      "stars": 340,
       "forks": 42,
-      "openIssues": 7,
+      "openIssues": 6,
       "license": "MIT",
       "topics": [
         "adb",
@@ -258,7 +258,7 @@
         "wails-app"
       ],
       "archived": false,
-      "pushedAt": "2026-08-27T07:21:17Z",
+      "pushedAt": "2026-08-31T03:17:11Z",
       "createdAt": "2025-11-04T15:37:00Z"
     },
     {
@@ -272,9 +272,9 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 235,
+      "stars": 236,
       "forks": 25,
-      "openIssues": 3,
+      "openIssues": 5,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -299,7 +299,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-08-30T11:19:09Z",
+      "pushedAt": "2026-08-31T10:22:56Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -315,7 +315,7 @@
       "language": "TypeScript",
       "stars": 231,
       "forks": 45,
-      "openIssues": 45,
+      "openIssues": 46,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -333,7 +333,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-08-27T20:58:51Z",
+      "pushedAt": "2026-08-31T17:31:35Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-08-30T17:43:47Z",
+      "pushedAt": "2026-08-31T17:18:15Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -421,7 +421,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-08-28T02:47:09Z",
+      "pushedAt": "2026-08-31T01:19:07Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -437,11 +437,11 @@
       "language": "Java",
       "stars": 131,
       "forks": 99,
-      "openIssues": 1,
+      "openIssues": 2,
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-27T11:22:57Z",
+      "pushedAt": "2026-08-30T22:10:10Z",
       "createdAt": "2018-08-06T13:38:19Z"
     },
     {
@@ -456,7 +456,7 @@
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
       "stars": 128,
-      "forks": 49,
+      "forks": 50,
       "openIssues": 2,
       "license": "MIT",
       "topics": [
@@ -494,7 +494,7 @@
       "homepage": null,
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
-      "stars": 126,
+      "stars": 125,
       "forks": 64,
       "openIssues": 6,
       "license": "MIT",
@@ -627,9 +627,9 @@
       "homepage": "https://mso.rahmanef.com",
       "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
-      "stars": 73,
-      "forks": 10,
-      "openIssues": 1,
+      "stars": 74,
+      "forks": 9,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [
         "browser-shell",
@@ -652,7 +652,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-08-30T21:43:35Z",
+      "pushedAt": "2026-08-31T18:35:24Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -827,12 +827,12 @@
       "description": "Its Factorio for coding agents",
       "language": "Ruby",
       "stars": 46,
-      "forks": 5,
+      "forks": 4,
       "openIssues": 1,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-30T05:37:54Z",
+      "pushedAt": "2026-08-31T13:28:53Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -1122,7 +1122,7 @@
       "language": "Shell",
       "stars": 25,
       "forks": 4,
-      "openIssues": 0,
+      "openIssues": 1,
       "license": null,
       "topics": [
         "arch-linux",
@@ -1133,7 +1133,7 @@
         "omarchy"
       ],
       "archived": false,
-      "pushedAt": "2026-08-30T17:31:11Z",
+      "pushedAt": "2026-08-31T16:33:01Z",
       "createdAt": "2025-10-04T10:27:45Z"
     },
     {
@@ -1153,7 +1153,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-30T14:17:01Z",
+      "pushedAt": "2026-08-31T10:45:18Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1189,7 +1189,7 @@
       "language": "TypeScript",
       "stars": 19,
       "forks": 3,
-      "openIssues": 0,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "ai-agents",
@@ -1206,7 +1206,7 @@
         "xterm"
       ],
       "archived": false,
-      "pushedAt": "2026-08-30T21:06:11Z",
+      "pushedAt": "2026-08-31T18:20:14Z",
       "createdAt": "2026-03-20T14:25:48Z"
     },
     {
@@ -1291,7 +1291,7 @@
       "homepage": "https://muslimtify.vercel.app",
       "description": "A daily prayer notification daemon for Muslims on Windows and Linux, supporting 21 global standard calculation methods, all madzhab, all country.",
       "language": "C",
-      "stars": 14,
+      "stars": 15,
       "forks": 1,
       "openIssues": 0,
       "license": "MIT",
@@ -1564,6 +1564,40 @@
       "createdAt": "2026-01-11T03:16:04Z"
     },
     {
+      "slug": "codecoradev/trapfall",
+      "fullName": "codecoradev/trapfall",
+      "name": "trapfall",
+      "owner": "codecoradev",
+      "ownerUrl": "https://github.com/codecoradev",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
+      "url": "https://github.com/codecoradev/trapfall",
+      "homepage": "https://codecora.dev",
+      "description": "TrapFall — Lightweight self-hosted error capture engine. Sentry-compatible, Rust + SvelteKit 5.",
+      "language": "Rust",
+      "stars": 8,
+      "forks": 0,
+      "openIssues": 13,
+      "license": "Apache-2.0",
+      "topics": [
+        "axum",
+        "blake3",
+        "crash-reporting",
+        "error-capture",
+        "error-tracking",
+        "flutter",
+        "mcp",
+        "observability",
+        "rust",
+        "self-hosted",
+        "sentry",
+        "sentry-alternative",
+        "sveltekit"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-30T11:36:28Z",
+      "createdAt": "2026-06-06T00:23:26Z"
+    },
+    {
       "slug": "rizukirr/apic",
       "fullName": "rizukirr/apic",
       "name": "apic",
@@ -1702,40 +1736,6 @@
       "createdAt": "2026-06-04T12:49:01Z"
     },
     {
-      "slug": "codecoradev/trapfall",
-      "fullName": "codecoradev/trapfall",
-      "name": "trapfall",
-      "owner": "codecoradev",
-      "ownerUrl": "https://github.com/codecoradev",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
-      "url": "https://github.com/codecoradev/trapfall",
-      "homepage": "https://codecora.dev",
-      "description": "TrapFall — Lightweight self-hosted error capture engine. Sentry-compatible, Rust + SvelteKit 5.",
-      "language": "Rust",
-      "stars": 6,
-      "forks": 0,
-      "openIssues": 13,
-      "license": "Apache-2.0",
-      "topics": [
-        "axum",
-        "blake3",
-        "crash-reporting",
-        "error-capture",
-        "error-tracking",
-        "flutter",
-        "mcp",
-        "observability",
-        "rust",
-        "self-hosted",
-        "sentry",
-        "sentry-alternative",
-        "sveltekit"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-30T11:36:28Z",
-      "createdAt": "2026-06-06T00:23:26Z"
-    },
-    {
       "slug": "raymondchins/tokengratis-id",
       "fullName": "raymondchins/tokengratis-id",
       "name": "tokengratis-id",
@@ -1752,7 +1752,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-29T21:33:14Z",
+      "pushedAt": "2026-08-30T21:51:18Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1987,7 +1987,7 @@
         "productivity"
       ],
       "archived": false,
-      "pushedAt": "2026-08-29T14:11:12Z",
+      "pushedAt": "2026-08-31T15:40:37Z",
       "createdAt": "2026-02-10T04:21:08Z"
     },
     {
@@ -2055,14 +2055,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-08-30T21:51:05.746Z"
+      "syncedAt": "2026-08-31T23:08:55.038Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-08-30T21:51:05.746Z"
+      "syncedAt": "2026-08-31T23:08:55.038Z"
     }
   ],
-  "syncedAt": "2026-08-30T21:51:05.746Z",
+  "syncedAt": "2026-08-31T23:08:55.038Z",
   "count": 76
 }
