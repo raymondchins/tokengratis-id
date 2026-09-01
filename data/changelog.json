@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-09-01",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "LLM7.io",
+        "added": [],
+        "removed": [
+          "meta-Llama-3.1-8B-Instruct-Turbo"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-08-31",
     "providersAdded": [],
     "providersRemoved": [],

@@ -12,8 +12,8 @@
       "description": "UAParser.js - The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser (client-side) or Node.js (server-side).",
       "language": "JavaScript",
       "stars": 10184,
-      "forks": 1215,
-      "openIssues": 17,
+      "forks": 1216,
+      "openIssues": 15,
       "license": "AGPL-3.0",
       "topics": [
         "analytics",
@@ -26,7 +26,7 @@
         "user-agent-parser"
       ],
       "archived": false,
-      "pushedAt": "2026-08-24T15:56:44Z",
+      "pushedAt": "2026-09-01T14:34:53Z",
       "createdAt": "2012-02-01T01:11:49Z"
     },
     {
@@ -67,7 +67,7 @@
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
       "stars": 1360,
-      "forks": 309,
+      "forks": 310,
       "openIssues": 53,
       "license": "GPL-2.0",
       "topics": [
@@ -95,16 +95,16 @@
       "homepage": null,
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
-      "stars": 1221,
-      "forks": 1185,
-      "openIssues": 353,
+      "stars": 1220,
+      "forks": 1186,
+      "openIssues": 355,
       "license": null,
       "topics": [
         "opensid",
         "sistem-informasi-desa"
       ],
       "archived": false,
-      "pushedAt": "2026-08-29T08:39:08Z",
+      "pushedAt": "2026-09-01T02:10:58Z",
       "createdAt": "2016-05-21T10:55:38Z"
     },
     {
@@ -118,8 +118,8 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 980,
-      "forks": 295,
+      "stars": 978,
+      "forks": 294,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -156,7 +156,7 @@
       "homepage": null,
       "description": "Package Laravel yang berisi data Provinsi, Kabupaten/Kota, dan Kecamatan/Desa di seluruh Indonesia.",
       "language": "PHP",
-      "stars": 675,
+      "stars": 676,
       "forks": 210,
       "openIssues": 5,
       "license": "MIT",
@@ -176,7 +176,7 @@
       "homepage": "https://jokoui.web.id",
       "description": "Free Open Source Tailwind CSS Component for Sat-set Developers with Zero Configuration, Installation, and Setup",
       "language": "TypeScript",
-      "stars": 415,
+      "stars": 414,
       "forks": 26,
       "openIssues": 9,
       "license": "MIT",
@@ -204,8 +204,8 @@
       "description": "Your agent pays twice for output it has already seen. OMNI returns a handle instead: 97.2% off a file read twice. Nothing deleted, nothing invented.",
       "language": "Rust",
       "stars": 360,
-      "forks": 34,
-      "openIssues": 12,
+      "forks": 33,
+      "openIssues": 16,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -230,7 +230,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-08-31T05:25:33Z",
+      "pushedAt": "2026-09-01T17:00:41Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -258,7 +258,7 @@
         "wails-app"
       ],
       "archived": false,
-      "pushedAt": "2026-08-31T03:17:11Z",
+      "pushedAt": "2026-09-01T07:33:14Z",
       "createdAt": "2025-11-04T15:37:00Z"
     },
     {
@@ -274,7 +274,7 @@
       "language": "Rust",
       "stars": 236,
       "forks": 25,
-      "openIssues": 5,
+      "openIssues": 9,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -299,7 +299,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-08-31T10:22:56Z",
+      "pushedAt": "2026-09-01T18:56:59Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -313,9 +313,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 231,
-      "forks": 45,
-      "openIssues": 46,
+      "stars": 230,
+      "forks": 44,
+      "openIssues": 42,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -333,7 +333,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-08-31T17:31:35Z",
+      "pushedAt": "2026-09-01T17:19:30Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -349,7 +349,7 @@
       "language": "TypeScript",
       "stars": 201,
       "forks": 40,
-      "openIssues": 0,
+      "openIssues": 4,
       "license": null,
       "topics": [
         "coding",
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-08-31T17:18:15Z",
+      "pushedAt": "2026-09-01T15:07:55Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -379,7 +379,7 @@
       "homepage": null,
       "description": null,
       "language": "Python",
-      "stars": 179,
+      "stars": 180,
       "forks": 42,
       "openIssues": 0,
       "license": "MIT",
@@ -421,7 +421,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-08-31T01:19:07Z",
+      "pushedAt": "2026-09-01T03:31:39Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -435,7 +435,7 @@
       "homepage": null,
       "description": "Online banking angular springboot mysql",
       "language": "Java",
-      "stars": 131,
+      "stars": 130,
       "forks": 99,
       "openIssues": 2,
       "license": null,
@@ -455,7 +455,7 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 128,
+      "stars": 129,
       "forks": 50,
       "openIssues": 2,
       "license": "MIT",
@@ -494,7 +494,7 @@
       "homepage": null,
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
-      "stars": 125,
+      "stars": 124,
       "forks": 64,
       "openIssues": 6,
       "license": "MIT",
@@ -538,7 +538,7 @@
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": null,
-      "stars": 120,
+      "stars": 121,
       "forks": 7,
       "openIssues": 0,
       "license": "MIT",
@@ -574,7 +574,7 @@
       "homepage": "https://indogithubers.net",
       "description": "IndoGitHubers is an application that displays the GitHub rank of users in Indonesia.",
       "language": "TypeScript",
-      "stars": 99,
+      "stars": 98,
       "forks": 22,
       "openIssues": 8,
       "license": "MIT",
@@ -617,45 +617,6 @@
       "createdAt": "2026-03-17T12:55:21Z"
     },
     {
-      "slug": "rahmanef63/mso",
-      "fullName": "rahmanef63/mso",
-      "name": "mso",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/mso",
-      "homepage": "https://mso.rahmanef.com",
-      "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
-      "language": "TypeScript",
-      "stars": 74,
-      "forks": 9,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "browser-shell",
-        "control-plane",
-        "file-manager",
-        "homelab",
-        "mobile-first",
-        "nextjs",
-        "pty",
-        "react",
-        "self-hosted",
-        "server-management",
-        "shadcn-ui",
-        "sysadmin",
-        "tailwindcss",
-        "terminal",
-        "typescript",
-        "vps",
-        "web-desktop",
-        "web-terminal"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-31T18:35:24Z",
-      "createdAt": "2026-05-29T17:44:06Z"
-    },
-    {
       "slug": "njinlabs/njinattend-backend",
       "fullName": "njinlabs/njinattend-backend",
       "name": "njinattend-backend",
@@ -686,9 +647,9 @@
       "homepage": "https://bansos.dev",
       "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
       "language": "Svelte",
-      "stars": 66,
+      "stars": 67,
       "forks": 19,
-      "openIssues": 8,
+      "openIssues": 4,
       "license": "MIT",
       "topics": [
         "bansos",
@@ -703,7 +664,7 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-08-22T10:11:01Z",
+      "pushedAt": "2026-09-01T11:45:17Z",
       "createdAt": "2026-06-11T13:28:54Z"
     },
     {
@@ -803,8 +764,8 @@
       "description": "AndKasir merupakan aplikasi open source yang dibangun dengan bahasa pemrograman Java untuk kebutuhan retail perusahaan menengah dalam mengatur aktifitas barang masuk dan keluar. konsultasi isu, instalasi dan penambahan fitur silahkan kirim email ke irwan@andriawan.com",
       "language": "Java",
       "stars": 48,
-      "forks": 42,
-      "openIssues": 2,
+      "forks": 41,
+      "openIssues": 1,
       "license": "GPL-3.0",
       "topics": [
         "java",
@@ -814,26 +775,6 @@
       "archived": false,
       "pushedAt": "2026-01-16T15:24:01Z",
       "createdAt": "2017-05-22T15:52:00Z"
-    },
-    {
-      "slug": "firewalker06/tycho",
-      "fullName": "firewalker06/tycho",
-      "name": "tycho",
-      "owner": "firewalker06",
-      "ownerUrl": "https://github.com/firewalker06",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/157515?v=4",
-      "url": "https://github.com/firewalker06/tycho",
-      "homepage": null,
-      "description": "Its Factorio for coding agents",
-      "language": "Ruby",
-      "stars": 46,
-      "forks": 4,
-      "openIssues": 1,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-08-31T13:28:53Z",
-      "createdAt": "2026-05-23T01:58:17Z"
     },
     {
       "slug": "raymondchins/agentmap",
@@ -846,7 +787,7 @@
       "homepage": null,
       "description": "Stop your coding agent reading the wrong files. Compiler-grade TS/JS repo map — 100% precision on blast radius vs grep's 60%, measured on public repos. CLI + MCP server, fully local, no vector DB.",
       "language": "JavaScript",
-      "stars": 46,
+      "stars": 47,
       "forks": 11,
       "openIssues": 3,
       "license": "MIT",
@@ -877,6 +818,26 @@
       "createdAt": "2026-06-13T11:29:36Z"
     },
     {
+      "slug": "firewalker06/tycho",
+      "fullName": "firewalker06/tycho",
+      "name": "tycho",
+      "owner": "firewalker06",
+      "ownerUrl": "https://github.com/firewalker06",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/157515?v=4",
+      "url": "https://github.com/firewalker06/tycho",
+      "homepage": null,
+      "description": "Its Factorio for coding agents",
+      "language": "Ruby",
+      "stars": 45,
+      "forks": 3,
+      "openIssues": 2,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-09-01T16:00:21Z",
+      "createdAt": "2026-05-23T01:58:17Z"
+    },
+    {
       "slug": "akbxr/dns",
       "fullName": "akbxr/dns",
       "name": "dns",
@@ -887,7 +848,7 @@
       "homepage": "https://dns.akbxr.com",
       "description": "DNS Pemblokir Judol, Iklan & Tracker",
       "language": null,
-      "stars": 42,
+      "stars": 41,
       "forks": 3,
       "openIssues": 17,
       "license": "MIT",
@@ -1002,7 +963,7 @@
       "homepage": "http://rutebayar.id/",
       "description": "Payment router for Indonesian payment gateways.",
       "language": "Go",
-      "stars": 33,
+      "stars": 31,
       "forks": 7,
       "openIssues": 22,
       "license": "MIT",
@@ -1053,7 +1014,7 @@
       "description": "Mandum Rimba is an independent, nonprofit public-interest observatory. We do not sell data, carry advertising, or take sides. We consolidate satellite data and credible public sources into a single open map, auditable by anyone, fully open source, and with every figure traceable to its origin.",
       "language": "TypeScript",
       "stars": 29,
-      "forks": 6,
+      "forks": 7,
       "openIssues": 0,
       "license": "AGPL-3.0",
       "topics": [
@@ -1076,40 +1037,6 @@
       "createdAt": "2026-06-14T05:07:25Z"
     },
     {
-      "slug": "rahmanef63/open-silong",
-      "fullName": "rahmanef63/open-silong",
-      "name": "open-silong",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/open-silong",
-      "homepage": "https://silong-os.vercel.app/",
-      "description": "Open-source, self-hostable Notion/Obsidian-style workspace — block editor for notes, docs and lightweight databases, plus a knowledge graph over them. Next.js 16 · React 19 · Convex · Tailwind v4.",
-      "language": "TypeScript",
-      "stars": 26,
-      "forks": 5,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "block-editor",
-        "convex",
-        "indonesia",
-        "knowledge-graph",
-        "nextjs",
-        "notion-alternative",
-        "notion-clone",
-        "open-source",
-        "react",
-        "self-hosted",
-        "tailwindcss",
-        "typescript",
-        "workspace"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-30T13:18:54Z",
-      "createdAt": "2026-04-29T18:48:11Z"
-    },
-    {
       "slug": "rizukirr/hyprsimple",
       "fullName": "rizukirr/hyprsimple",
       "name": "hyprsimple",
@@ -1122,7 +1049,7 @@
       "language": "Shell",
       "stars": 25,
       "forks": 4,
-      "openIssues": 1,
+      "openIssues": 0,
       "license": null,
       "topics": [
         "arch-linux",
@@ -1133,7 +1060,7 @@
         "omarchy"
       ],
       "archived": false,
-      "pushedAt": "2026-08-31T16:33:01Z",
+      "pushedAt": "2026-09-01T18:04:12Z",
       "createdAt": "2025-10-04T10:27:45Z"
     },
     {
@@ -1175,39 +1102,6 @@
       "archived": false,
       "pushedAt": "2026-04-08T09:29:42Z",
       "createdAt": "2026-04-08T09:27:49Z"
-    },
-    {
-      "slug": "rahmanef63/control-room",
-      "fullName": "rahmanef63/control-room",
-      "name": "control-room",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/control-room",
-      "homepage": null,
-      "description": "Mobile-first PWA for driving a single VPS from the browser — up to 16 concurrent terminals, AI agent launchers, host ops and audit behind one shared secret on a Tailscale-only domain. Next.js 15 · React 19 · Node agent (node-pty + xterm.js).",
-      "language": "TypeScript",
-      "stars": 19,
-      "forks": 3,
-      "openIssues": 1,
-      "license": "MIT",
-      "topics": [
-        "ai-agents",
-        "devops",
-        "mobile-first",
-        "nextjs",
-        "nodejs",
-        "pty",
-        "pwa",
-        "self-hosted",
-        "terminal",
-        "tmux-alternative",
-        "vps",
-        "xterm"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-31T18:20:14Z",
-      "createdAt": "2026-03-20T14:25:48Z"
     },
     {
       "slug": "rafiulm/warungos",
@@ -1277,7 +1171,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-27T16:34:00Z",
+      "pushedAt": "2026-09-01T13:33:42Z",
       "createdAt": "2026-06-15T14:35:14Z"
     },
     {
@@ -1311,39 +1205,6 @@
       "archived": false,
       "pushedAt": "2026-08-30T03:26:11Z",
       "createdAt": "2026-02-23T13:59:12Z"
-    },
-    {
-      "slug": "rahmanef63/si-coder-agent",
-      "fullName": "rahmanef63/si-coder-agent",
-      "name": "si-coder-agent",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/si-coder-agent",
-      "homepage": null,
-      "description": "Zero-human full-stack deployment as a bundle of /sc-* Claude Code slash commands — GitHub + Convex (self-hosted & Cloud) + Dokploy + Vercel + Hostinger DNS, source to verified live URL. Node ≥18, no runtime dependencies. 8 skills implemented, 5 stubs.",
-      "language": "JavaScript",
-      "stars": 14,
-      "forks": 3,
-      "openIssues": 1,
-      "license": "MIT",
-      "topics": [
-        "ai-agent",
-        "claude-code",
-        "claude-skills",
-        "convex",
-        "deployment-automation",
-        "devops",
-        "dokploy",
-        "hostinger",
-        "nextjs",
-        "self-hosted",
-        "vercel",
-        "zero-human"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-28T13:51:27Z",
-      "createdAt": "2026-03-18T18:38:41Z"
     },
     {
       "slug": "rizukirr/numc",
@@ -1417,6 +1278,26 @@
       "createdAt": "2026-05-31T14:34:04Z"
     },
     {
+      "slug": "hellodit/openmasjid",
+      "fullName": "hellodit/OpenMasjid",
+      "name": "OpenMasjid",
+      "owner": "hellodit",
+      "ownerUrl": "https://github.com/hellodit",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/32544683?v=4",
+      "url": "https://github.com/hellodit/OpenMasjid",
+      "homepage": null,
+      "description": null,
+      "language": "Vue",
+      "stars": 11,
+      "forks": 0,
+      "openIssues": 0,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-05-21T12:29:21Z",
+      "createdAt": "2026-05-16T04:31:37Z"
+    },
+    {
       "slug": "fajarhide/heimsense",
       "fullName": "fajarhide/heimsense",
       "name": "heimsense",
@@ -1484,60 +1365,6 @@
       "createdAt": "2026-06-02T04:21:59Z"
     },
     {
-      "slug": "hellodit/openmasjid",
-      "fullName": "hellodit/OpenMasjid",
-      "name": "OpenMasjid",
-      "owner": "hellodit",
-      "ownerUrl": "https://github.com/hellodit",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/32544683?v=4",
-      "url": "https://github.com/hellodit/OpenMasjid",
-      "homepage": null,
-      "description": null,
-      "language": "Vue",
-      "stars": 10,
-      "forks": 0,
-      "openIssues": 0,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-05-21T12:29:21Z",
-      "createdAt": "2026-05-16T04:31:37Z"
-    },
-    {
-      "slug": "rahmanef63/framepilot",
-      "fullName": "rahmanef63/framepilot",
-      "name": "framepilot",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/framepilot",
-      "homepage": "https://frame-pilot.rahmanef.com/",
-      "description": "Browser-based 3D camera previsualization and shot planner — design scenes, frames, angles, lenses and moves, then export platform-tuned prompts for AI video models. Next.js 16 · React 19 · Three.js · Convex.",
-      "language": "TypeScript",
-      "stars": 9,
-      "forks": 0,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "ai-video",
-        "camera",
-        "cinematography",
-        "convex",
-        "nextjs",
-        "previsualization",
-        "prompt-engineering",
-        "shot-planner",
-        "storyboard",
-        "text-to-video",
-        "threejs",
-        "typescript",
-        "webgl"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-02T10:08:50Z",
-      "createdAt": "2026-07-10T13:57:01Z"
-    },
-    {
       "slug": "semutdev/goigniter",
       "fullName": "semutdev/goigniter",
       "name": "goigniter",
@@ -1594,7 +1421,7 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-08-30T11:36:28Z",
+      "pushedAt": "2026-09-01T14:25:17Z",
       "createdAt": "2026-06-06T00:23:26Z"
     },
     {
@@ -1703,11 +1530,11 @@
       "language": "TypeScript",
       "stars": 7,
       "forks": 1,
-      "openIssues": 13,
+      "openIssues": 15,
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-25T15:11:37Z",
+      "pushedAt": "2026-09-01T15:21:31Z",
       "createdAt": "2026-06-13T11:24:30Z"
     },
     {
@@ -1752,7 +1579,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-30T21:51:18Z",
+      "pushedAt": "2026-08-31T23:09:08Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1789,37 +1616,6 @@
       "createdAt": "2026-06-06T16:32:11Z"
     },
     {
-      "slug": "wauputr4/skill-bansos",
-      "fullName": "wauputr4/skill-bansos",
-      "name": "skill-bansos",
-      "owner": "wauputr4",
-      "ownerUrl": "https://github.com/wauputr4",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/103489788?v=4",
-      "url": "https://github.com/wauputr4/skill-bansos",
-      "homepage": "https://skills.sh/wauputr4/skill-bansos",
-      "description": "Open Agent Skills for adding bansos.dev listings and developing the bansos.dev SvelteKit site.",
-      "language": null,
-      "stars": 5,
-      "forks": 0,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "agent-skills",
-        "ai-agent",
-        "bansos-dev",
-        "codex",
-        "open-agent-skills",
-        "openai",
-        "skills",
-        "skills-sh",
-        "static-site",
-        "sveltekit"
-      ],
-      "archived": false,
-      "pushedAt": "2026-07-22T11:40:45Z",
-      "createdAt": "2026-06-13T11:25:13Z"
-    },
-    {
       "slug": "achmdfzn/hippocrates",
       "fullName": "achmdfzn/hippocrates",
       "name": "hippocrates",
@@ -1831,8 +1627,8 @@
       "description": "Next.js security middleware with Redis-backed threat scoring, honeypot decoy routing, and Python ML engine for advanced detection.",
       "language": "TypeScript",
       "stars": 5,
-      "forks": 1,
-      "openIssues": 1,
+      "forks": 0,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [
         "ai-security",
@@ -1948,6 +1744,37 @@
       "createdAt": "2026-05-28T12:17:41Z"
     },
     {
+      "slug": "wauputr4/skill-bansos",
+      "fullName": "wauputr4/skill-bansos",
+      "name": "skill-bansos",
+      "owner": "wauputr4",
+      "ownerUrl": "https://github.com/wauputr4",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/103489788?v=4",
+      "url": "https://github.com/wauputr4/skill-bansos",
+      "homepage": "https://skills.sh/wauputr4/skill-bansos",
+      "description": "Open Agent Skills for adding bansos.dev listings and developing the bansos.dev SvelteKit site.",
+      "language": null,
+      "stars": 3,
+      "forks": 0,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "agent-skills",
+        "ai-agent",
+        "bansos-dev",
+        "codex",
+        "open-agent-skills",
+        "openai",
+        "skills",
+        "skills-sh",
+        "static-site",
+        "sveltekit"
+      ],
+      "archived": false,
+      "pushedAt": "2026-07-22T11:40:45Z",
+      "createdAt": "2026-06-13T11:25:13Z"
+    },
+    {
       "slug": "jutionck/tahlil-tracker",
       "fullName": "jutionck/tahlil-tracker",
       "name": "tahlil-tracker",
@@ -1987,7 +1814,7 @@
         "productivity"
       ],
       "archived": false,
-      "pushedAt": "2026-08-31T15:40:37Z",
+      "pushedAt": "2026-09-01T14:14:35Z",
       "createdAt": "2026-02-10T04:21:08Z"
     },
     {
@@ -2055,14 +1882,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-08-31T23:08:55.038Z"
+      "syncedAt": "2026-09-01T21:38:48.593Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-08-31T23:08:55.038Z"
+      "syncedAt": "2026-09-01T21:38:48.593Z"
     }
   ],
-  "syncedAt": "2026-08-31T23:08:55.038Z",
-  "count": 76
+  "syncedAt": "2026-09-01T21:38:48.593Z",
+  "count": 71
 }
