@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js - The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser (client-side) or Node.js (server-side).",
       "language": "JavaScript",
-      "stars": 10184,
+      "stars": 10186,
       "forks": 1216,
       "openIssues": 15,
       "license": "AGPL-3.0",
@@ -95,9 +95,9 @@
       "homepage": null,
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
-      "stars": 1220,
-      "forks": 1186,
-      "openIssues": 355,
+      "stars": 1222,
+      "forks": 1187,
+      "openIssues": 356,
       "license": null,
       "topics": [
         "opensid",
@@ -118,7 +118,7 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 978,
+      "stars": 980,
       "forks": 294,
       "openIssues": 0,
       "license": "MIT",
@@ -176,7 +176,7 @@
       "homepage": "https://jokoui.web.id",
       "description": "Free Open Source Tailwind CSS Component for Sat-set Developers with Zero Configuration, Installation, and Setup",
       "language": "TypeScript",
-      "stars": 414,
+      "stars": 415,
       "forks": 26,
       "openIssues": 9,
       "license": "MIT",
@@ -203,9 +203,9 @@
       "homepage": "https://omni.weekndlabs.com/docs",
       "description": "Your agent pays twice for output it has already seen. OMNI returns a handle instead: 97.2% off a file read twice. Nothing deleted, nothing invented.",
       "language": "Rust",
-      "stars": 360,
-      "forks": 33,
-      "openIssues": 16,
+      "stars": 361,
+      "forks": 34,
+      "openIssues": 13,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -230,7 +230,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-09-01T17:00:41Z",
+      "pushedAt": "2026-09-02T05:34:25Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -313,7 +313,7 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 230,
+      "stars": 232,
       "forks": 44,
       "openIssues": 42,
       "license": "MIT",
@@ -349,7 +349,7 @@
       "language": "TypeScript",
       "stars": 201,
       "forks": 40,
-      "openIssues": 4,
+      "openIssues": 12,
       "license": null,
       "topics": [
         "coding",
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-09-01T15:07:55Z",
+      "pushedAt": "2026-09-02T15:53:20Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -401,7 +401,7 @@
       "language": "TypeScript",
       "stars": 155,
       "forks": 13,
-      "openIssues": 1,
+      "openIssues": 0,
       "license": "Apache-2.0",
       "topics": [
         "ai",
@@ -421,7 +421,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-01T03:31:39Z",
+      "pushedAt": "2026-09-02T15:58:05Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -496,11 +496,11 @@
       "language": "TypeScript",
       "stars": 124,
       "forks": 64,
-      "openIssues": 6,
+      "openIssues": 7,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-20T22:39:49Z",
+      "pushedAt": "2026-09-02T18:28:40Z",
       "createdAt": "2026-02-12T11:02:43Z"
     },
     {
@@ -576,7 +576,7 @@
       "language": "TypeScript",
       "stars": 98,
       "forks": 22,
-      "openIssues": 8,
+      "openIssues": 9,
       "license": "MIT",
       "topics": [
         "hacktoberfest",
@@ -585,7 +585,7 @@
         "hacktoberfest2023"
       ],
       "archived": false,
-      "pushedAt": "2026-08-29T14:33:53Z",
+      "pushedAt": "2026-09-02T03:32:29Z",
       "createdAt": "2023-09-05T12:35:21Z"
     },
     {
@@ -599,9 +599,9 @@
       "homepage": "https://svelte-audio-ui.vercel.app/",
       "description": "A set of accessible and composable Audio UI components.",
       "language": "Svelte",
-      "stars": 88,
+      "stars": 89,
       "forks": 5,
-      "openIssues": 11,
+      "openIssues": 12,
       "license": "MIT",
       "topics": [
         "audio",
@@ -613,7 +613,7 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-08-11T23:00:21Z",
+      "pushedAt": "2026-09-02T01:37:31Z",
       "createdAt": "2026-03-17T12:55:21Z"
     },
     {
@@ -765,7 +765,7 @@
       "language": "Java",
       "stars": 48,
       "forks": 41,
-      "openIssues": 1,
+      "openIssues": 2,
       "license": "GPL-3.0",
       "topics": [
         "java",
@@ -834,7 +834,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-01T16:00:21Z",
+      "pushedAt": "2026-09-02T04:50:48Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -1060,7 +1060,7 @@
         "omarchy"
       ],
       "archived": false,
-      "pushedAt": "2026-09-01T18:04:12Z",
+      "pushedAt": "2026-09-02T12:40:56Z",
       "createdAt": "2025-10-04T10:27:45Z"
     },
     {
@@ -1080,7 +1080,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-31T10:45:18Z",
+      "pushedAt": "2026-09-02T06:23:13Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1134,7 +1134,7 @@
       "homepage": null,
       "description": "Efficient, Opinionated vibe-coding pipeline for CC / Codex / OpenCode / Gemini",
       "language": "JavaScript",
-      "stars": 17,
+      "stars": 18,
       "forks": 1,
       "openIssues": 0,
       "license": "MIT",
@@ -1579,7 +1579,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-08-31T23:09:08Z",
+      "pushedAt": "2026-09-01T21:39:01Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1628,7 +1628,7 @@
       "language": "TypeScript",
       "stars": 5,
       "forks": 0,
-      "openIssues": 0,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "ai-security",
@@ -1814,7 +1814,7 @@
         "productivity"
       ],
       "archived": false,
-      "pushedAt": "2026-09-01T14:14:35Z",
+      "pushedAt": "2026-09-02T11:28:58Z",
       "createdAt": "2026-02-10T04:21:08Z"
     },
     {
@@ -1882,14 +1882,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-09-01T21:38:48.593Z"
+      "syncedAt": "2026-09-02T21:37:55.353Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-09-01T21:38:48.593Z"
+      "syncedAt": "2026-09-02T21:37:55.353Z"
     }
   ],
-  "syncedAt": "2026-09-01T21:38:48.593Z",
+  "syncedAt": "2026-09-02T21:37:55.353Z",
   "count": 71
 }
