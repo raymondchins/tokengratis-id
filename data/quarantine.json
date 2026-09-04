@@ -1,4 +1,13 @@
 {
   "version": 1,
-  "entries": {}
+  "entries": {
+    "cerebras": {
+      "kind": "shrunk",
+      "magnitude": 1,
+      "detail": "model 3 -> 1 (-67%)",
+      "streak": 1,
+      "firstSeen": "2026-09-04T21:18:05.129Z",
+      "lastSeen": "2026-09-04T21:18:05.129Z"
+    }
+  }
 }
