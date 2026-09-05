@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T21:18:05.130Z",
+  "generatedAt": "2026-09-05T20:59:49.677Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -65,7 +65,7 @@
   ],
   "merged": {
     "providers": 25,
-    "models": 325,
+    "models": 324,
     "shapeIssues": []
   },
   "smokeTest": {
@@ -82,9 +82,9 @@
     "stats": {
       "prevProviders": 25,
       "nextProviders": 25,
-      "prevModels": 329,
-      "nextModels": 325,
-      "totalDropPct": 1.21580547112462,
+      "prevModels": 327,
+      "nextModels": 324,
+      "totalDropPct": 0.9174311926605505,
       "disappeared": [],
       "shrunk": [
         {
@@ -105,19 +105,19 @@
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 308,
+            "eligible": 309,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "maxOutput": {
-            "eligible": 143,
+            "eligible": 145,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "modality": {
-            "eligible": 253,
+            "eligible": 254,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -200,7 +200,7 @@
         "slug": "cerebras",
         "kind": "shrunk",
         "detail": "model 3 -> 1 (-67%)",
-        "streak": 1,
+        "streak": 2,
         "needs": 3
       }
     ],

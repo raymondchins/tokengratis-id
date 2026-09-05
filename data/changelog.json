@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-09-05",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "OpenCode Zen",
+        "added": [],
+        "removed": [
+          "Laguna S 2.1"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-09-04",
     "providersAdded": [],
     "providersRemoved": [],

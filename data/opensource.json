@@ -66,7 +66,7 @@
       "homepage": "https://www.htmly.com",
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
-      "stars": 1360,
+      "stars": 1358,
       "forks": 310,
       "openIssues": 53,
       "license": "GPL-2.0",
@@ -97,14 +97,14 @@
       "language": "PHP",
       "stars": 1223,
       "forks": 1189,
-      "openIssues": 360,
+      "openIssues": 362,
       "license": null,
       "topics": [
         "opensid",
         "sistem-informasi-desa"
       ],
       "archived": false,
-      "pushedAt": "2026-09-01T02:10:58Z",
+      "pushedAt": "2026-09-05T07:39:39Z",
       "createdAt": "2016-05-21T10:55:38Z"
     },
     {
@@ -299,7 +299,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-09-03T14:53:24Z",
+      "pushedAt": "2026-09-05T15:19:14Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-09-04T14:49:38Z",
+      "pushedAt": "2026-09-05T17:03:00Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -475,7 +475,7 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 129,
+      "stars": 130,
       "forks": 48,
       "openIssues": 2,
       "license": "MIT",
@@ -514,7 +514,7 @@
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": null,
-      "stars": 125,
+      "stars": 124,
       "forks": 7,
       "openIssues": 0,
       "license": "MIT",
@@ -576,7 +576,7 @@
       "language": "TypeScript",
       "stars": 99,
       "forks": 22,
-      "openIssues": 10,
+      "openIssues": 11,
       "license": "MIT",
       "topics": [
         "hacktoberfest",
@@ -585,7 +585,7 @@
         "hacktoberfest2023"
       ],
       "archived": false,
-      "pushedAt": "2026-09-03T13:03:55Z",
+      "pushedAt": "2026-09-05T08:43:33Z",
       "createdAt": "2023-09-05T12:35:21Z"
     },
     {
@@ -599,7 +599,7 @@
       "homepage": "https://svelte-audio-ui.vercel.app/",
       "description": "A set of accessible and composable Audio UI components.",
       "language": "Svelte",
-      "stars": 91,
+      "stars": 92,
       "forks": 4,
       "openIssues": 14,
       "license": "MIT",
@@ -615,45 +615,6 @@
       "archived": false,
       "pushedAt": "2026-09-03T19:30:57Z",
       "createdAt": "2026-03-17T12:55:21Z"
-    },
-    {
-      "slug": "rahmanef63/mso",
-      "fullName": "rahmanef63/mso",
-      "name": "mso",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/mso",
-      "homepage": "https://mso.rahmanef.com",
-      "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
-      "language": "TypeScript",
-      "stars": 74,
-      "forks": 9,
-      "openIssues": 1,
-      "license": "MIT",
-      "topics": [
-        "browser-shell",
-        "control-plane",
-        "file-manager",
-        "homelab",
-        "mobile-first",
-        "nextjs",
-        "pty",
-        "react",
-        "self-hosted",
-        "server-management",
-        "shadcn-ui",
-        "sysadmin",
-        "tailwindcss",
-        "terminal",
-        "typescript",
-        "vps",
-        "web-desktop",
-        "web-terminal"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-04T10:50:17Z",
-      "createdAt": "2026-05-29T17:44:06Z"
     },
     {
       "slug": "njinlabs/njinattend-backend",
@@ -676,6 +637,45 @@
       "createdAt": "2023-09-23T21:07:22Z"
     },
     {
+      "slug": "rahmanef63/mso",
+      "fullName": "rahmanef63/mso",
+      "name": "mso",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/mso",
+      "homepage": "https://mso.rahmanef.com",
+      "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
+      "language": "TypeScript",
+      "stars": 72,
+      "forks": 8,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "browser-shell",
+        "control-plane",
+        "file-manager",
+        "homelab",
+        "mobile-first",
+        "nextjs",
+        "pty",
+        "react",
+        "self-hosted",
+        "server-management",
+        "shadcn-ui",
+        "sysadmin",
+        "tailwindcss",
+        "terminal",
+        "typescript",
+        "vps",
+        "web-desktop",
+        "web-terminal"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-05T20:38:19Z",
+      "createdAt": "2026-05-29T17:44:06Z"
+    },
+    {
       "slug": "wauputr4/bansos",
       "fullName": "wauputr4/bansos",
       "name": "bansos",
@@ -686,7 +686,7 @@
       "homepage": "https://bansos.dev",
       "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
       "language": "Svelte",
-      "stars": 66,
+      "stars": 67,
       "forks": 19,
       "openIssues": 4,
       "license": "MIT",
@@ -829,7 +829,7 @@
         "typescript"
       ],
       "archived": false,
-      "pushedAt": "2026-08-29T09:32:45Z",
+      "pushedAt": "2026-09-05T09:32:38Z",
       "createdAt": "2026-06-13T11:29:36Z"
     },
     {
@@ -869,11 +869,11 @@
       "language": "Ruby",
       "stars": 46,
       "forks": 3,
-      "openIssues": 3,
+      "openIssues": 2,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-04T16:24:56Z",
+      "pushedAt": "2026-09-05T15:36:23Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -1018,7 +1018,7 @@
         "xendit"
       ],
       "archived": false,
-      "pushedAt": "2026-08-28T22:43:51Z",
+      "pushedAt": "2026-09-04T22:43:43Z",
       "createdAt": "2026-05-05T01:16:45Z"
     },
     {
@@ -1076,6 +1076,33 @@
       "createdAt": "2026-06-14T05:07:25Z"
     },
     {
+      "slug": "rizukirr/hyprsimple",
+      "fullName": "rizukirr/hyprsimple",
+      "name": "hyprsimple",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/hyprsimple",
+      "homepage": null,
+      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
+      "language": "Shell",
+      "stars": 26,
+      "forks": 4,
+      "openIssues": 0,
+      "license": null,
+      "topics": [
+        "arch-linux",
+        "dotfiles",
+        "hyprland",
+        "hyprland-config",
+        "linux",
+        "omarchy"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-05T16:31:34Z",
+      "createdAt": "2025-10-04T10:27:45Z"
+    },
+    {
       "slug": "rahmanef63/open-silong",
       "fullName": "rahmanef63/open-silong",
       "name": "open-silong",
@@ -1086,7 +1113,7 @@
       "homepage": "https://silong-os.vercel.app/",
       "description": "Open-source, self-hostable Notion/Obsidian-style workspace — block editor for notes, docs and lightweight databases, plus a knowledge graph over them. Next.js 16 · React 19 · Convex · Tailwind v4.",
       "language": "TypeScript",
-      "stars": 26,
+      "stars": 24,
       "forks": 5,
       "openIssues": 0,
       "license": "MIT",
@@ -1110,33 +1137,6 @@
       "createdAt": "2026-04-29T18:48:11Z"
     },
     {
-      "slug": "rizukirr/hyprsimple",
-      "fullName": "rizukirr/hyprsimple",
-      "name": "hyprsimple",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/hyprsimple",
-      "homepage": null,
-      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
-      "language": "Shell",
-      "stars": 25,
-      "forks": 4,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "arch-linux",
-        "dotfiles",
-        "hyprland",
-        "hyprland-config",
-        "linux",
-        "omarchy"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-04T16:52:11Z",
-      "createdAt": "2025-10-04T10:27:45Z"
-    },
-    {
       "slug": "rudycity/superagent",
       "fullName": "RudyCity/superagent",
       "name": "superagent",
@@ -1153,7 +1153,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-04T13:05:25Z",
+      "pushedAt": "2026-09-04T21:56:37Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1197,39 +1197,6 @@
       "createdAt": "2026-04-08T09:27:49Z"
     },
     {
-      "slug": "rahmanef63/control-room",
-      "fullName": "rahmanef63/control-room",
-      "name": "control-room",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/control-room",
-      "homepage": null,
-      "description": "Mobile-first PWA for driving a single VPS from the browser — up to 16 concurrent terminals, AI agent launchers, host ops and audit behind one shared secret on a Tailscale-only domain. Next.js 15 · React 19 · Node agent (node-pty + xterm.js).",
-      "language": "TypeScript",
-      "stars": 19,
-      "forks": 3,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "ai-agents",
-        "devops",
-        "mobile-first",
-        "nextjs",
-        "nodejs",
-        "pty",
-        "pwa",
-        "self-hosted",
-        "terminal",
-        "tmux-alternative",
-        "vps",
-        "xterm"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-04T01:54:49Z",
-      "createdAt": "2026-03-20T14:25:48Z"
-    },
-    {
       "slug": "rizukirr/vibekit",
       "fullName": "rizukirr/vibekit",
       "name": "vibekit",
@@ -1257,8 +1224,41 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-08-25T12:47:28Z",
+      "pushedAt": "2026-09-05T09:41:07Z",
       "createdAt": "2026-04-21T15:17:02Z"
+    },
+    {
+      "slug": "rahmanef63/control-room",
+      "fullName": "rahmanef63/control-room",
+      "name": "control-room",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/control-room",
+      "homepage": null,
+      "description": "Mobile-first PWA for driving a single VPS from the browser — up to 16 concurrent terminals, AI agent launchers, host ops and audit behind one shared secret on a Tailscale-only domain. Next.js 15 · React 19 · Node agent (node-pty + xterm.js).",
+      "language": "TypeScript",
+      "stars": 18,
+      "forks": 3,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "ai-agents",
+        "devops",
+        "mobile-first",
+        "nextjs",
+        "nodejs",
+        "pty",
+        "pwa",
+        "self-hosted",
+        "terminal",
+        "tmux-alternative",
+        "vps",
+        "xterm"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-04T01:54:49Z",
+      "createdAt": "2026-03-20T14:25:48Z"
     },
     {
       "slug": "muhammadhasbiashshiddieqy/openclawn",
@@ -1309,41 +1309,8 @@
         "windows-desktop"
       ],
       "archived": false,
-      "pushedAt": "2026-09-04T16:36:06Z",
+      "pushedAt": "2026-09-05T16:01:26Z",
       "createdAt": "2026-02-23T13:59:12Z"
-    },
-    {
-      "slug": "rahmanef63/si-coder-agent",
-      "fullName": "rahmanef63/si-coder-agent",
-      "name": "si-coder-agent",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/si-coder-agent",
-      "homepage": null,
-      "description": "Zero-human full-stack deployment as a bundle of /sc-* Claude Code slash commands — GitHub + Convex (self-hosted & Cloud) + Dokploy + Vercel + Hostinger DNS, source to verified live URL. Node ≥18, no runtime dependencies. 8 skills implemented, 5 stubs.",
-      "language": "JavaScript",
-      "stars": 14,
-      "forks": 3,
-      "openIssues": 1,
-      "license": "MIT",
-      "topics": [
-        "ai-agent",
-        "claude-code",
-        "claude-skills",
-        "convex",
-        "deployment-automation",
-        "devops",
-        "dokploy",
-        "hostinger",
-        "nextjs",
-        "self-hosted",
-        "vercel",
-        "zero-human"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-02T20:45:36Z",
-      "createdAt": "2026-03-18T18:38:41Z"
     },
     {
       "slug": "rizukirr/numc",
@@ -1395,6 +1362,39 @@
       "archived": false,
       "pushedAt": "2026-06-13T16:18:08Z",
       "createdAt": "2026-06-12T01:36:09Z"
+    },
+    {
+      "slug": "rahmanef63/si-coder-agent",
+      "fullName": "rahmanef63/si-coder-agent",
+      "name": "si-coder-agent",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/si-coder-agent",
+      "homepage": null,
+      "description": "Zero-human full-stack deployment as a bundle of /sc-* Claude Code slash commands — GitHub + Convex (self-hosted & Cloud) + Dokploy + Vercel + Hostinger DNS, source to verified live URL. Node ≥18, no runtime dependencies. 8 skills implemented, 5 stubs.",
+      "language": "JavaScript",
+      "stars": 12,
+      "forks": 2,
+      "openIssues": 1,
+      "license": "MIT",
+      "topics": [
+        "ai-agent",
+        "claude-code",
+        "claude-skills",
+        "convex",
+        "deployment-automation",
+        "devops",
+        "dokploy",
+        "hostinger",
+        "nextjs",
+        "self-hosted",
+        "vercel",
+        "zero-human"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-05T20:33:46Z",
+      "createdAt": "2026-03-18T18:38:41Z"
     },
     {
       "slug": "ahmadghaisanfad2/absen-kelas",
@@ -1502,40 +1502,6 @@
       "archived": false,
       "pushedAt": "2026-05-03T11:25:37Z",
       "createdAt": "2026-03-25T12:38:25Z"
-    },
-    {
-      "slug": "rahmanef63/framepilot",
-      "fullName": "rahmanef63/framepilot",
-      "name": "framepilot",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/framepilot",
-      "homepage": "https://frame-pilot.rahmanef.com/",
-      "description": "Browser-based 3D camera previsualization and shot planner — design scenes, frames, angles, lenses and moves, then export platform-tuned prompts for AI video models. Next.js 16 · React 19 · Three.js · Convex.",
-      "language": "TypeScript",
-      "stars": 9,
-      "forks": 0,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "ai-video",
-        "camera",
-        "cinematography",
-        "convex",
-        "nextjs",
-        "previsualization",
-        "prompt-engineering",
-        "shot-planner",
-        "storyboard",
-        "text-to-video",
-        "threejs",
-        "typescript",
-        "webgl"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-02T10:08:50Z",
-      "createdAt": "2026-07-10T13:57:01Z"
     },
     {
       "slug": "semutdev/goigniter",
@@ -1736,6 +1702,40 @@
       "createdAt": "2026-06-13T11:24:30Z"
     },
     {
+      "slug": "rahmanef63/framepilot",
+      "fullName": "rahmanef63/framepilot",
+      "name": "framepilot",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/framepilot",
+      "homepage": "https://frame-pilot.rahmanef.com/",
+      "description": "Browser-based 3D camera previsualization and shot planner — design scenes, frames, angles, lenses and moves, then export platform-tuned prompts for AI video models. Next.js 16 · React 19 · Three.js · Convex.",
+      "language": "TypeScript",
+      "stars": 7,
+      "forks": 0,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "ai-video",
+        "camera",
+        "cinematography",
+        "convex",
+        "nextjs",
+        "previsualization",
+        "prompt-engineering",
+        "shot-planner",
+        "storyboard",
+        "text-to-video",
+        "threejs",
+        "typescript",
+        "webgl"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-02T10:08:50Z",
+      "createdAt": "2026-07-10T13:57:01Z"
+    },
+    {
       "slug": "raymondchins/tokengratis-id",
       "fullName": "raymondchins/tokengratis-id",
       "name": "tokengratis-id",
@@ -1752,7 +1752,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-03T21:35:49Z",
+      "pushedAt": "2026-09-04T21:18:22Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1854,11 +1854,11 @@
       "language": "C",
       "stars": 4,
       "forks": 1,
-      "openIssues": 1,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-03T17:16:15Z",
+      "pushedAt": "2026-09-05T16:08:51Z",
       "createdAt": "2025-11-22T11:52:35Z"
     },
     {
@@ -2055,14 +2055,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-09-04T21:18:11.660Z"
+      "syncedAt": "2026-09-05T20:59:55.347Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-09-04T21:18:11.660Z"
+      "syncedAt": "2026-09-05T20:59:55.347Z"
     }
   ],
-  "syncedAt": "2026-09-04T21:18:11.660Z",
+  "syncedAt": "2026-09-05T20:59:55.347Z",
   "count": 76
 }
