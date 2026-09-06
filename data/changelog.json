@@ -1,5 +1,27 @@
 [
   {
+    "date": "2026-09-06",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cerebras",
+        "added": [],
+        "removed": [
+          "gemma-4-31b",
+          "gpt-oss-120b"
+        ]
+      },
+      {
+        "provider": "OpenRouter",
+        "added": [],
+        "removed": [
+          "Z.ai: GLM 5.2 (free)"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-09-05",
     "providersAdded": [],
     "providersRemoved": [],

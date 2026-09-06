@@ -66,7 +66,7 @@
       "homepage": "https://www.htmly.com",
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
-      "stars": 1358,
+      "stars": 1359,
       "forks": 310,
       "openIssues": 53,
       "license": "GPL-2.0",
@@ -97,14 +97,14 @@
       "language": "PHP",
       "stars": 1223,
       "forks": 1189,
-      "openIssues": 362,
+      "openIssues": 364,
       "license": null,
       "topics": [
         "opensid",
         "sistem-informasi-desa"
       ],
       "archived": false,
-      "pushedAt": "2026-09-05T07:39:39Z",
+      "pushedAt": "2026-09-06T06:59:28Z",
       "createdAt": "2016-05-21T10:55:38Z"
     },
     {
@@ -118,7 +118,7 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 986,
+      "stars": 987,
       "forks": 295,
       "openIssues": 0,
       "license": "MIT",
@@ -203,7 +203,7 @@
       "homepage": "https://omni.weekndlabs.com/docs",
       "description": "Your agent pays twice for output it has already seen. OMNI returns a handle instead: 97.2% off a file read twice. Nothing deleted, nothing invented.",
       "language": "Rust",
-      "stars": 364,
+      "stars": 365,
       "forks": 34,
       "openIssues": 15,
       "license": "Apache-2.0",
@@ -272,7 +272,7 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 237,
+      "stars": 238,
       "forks": 25,
       "openIssues": 4,
       "license": "Apache-2.0",
@@ -299,7 +299,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-09-05T15:19:14Z",
+      "pushedAt": "2026-09-06T12:59:04Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -313,9 +313,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 233,
+      "stars": 237,
       "forks": 44,
-      "openIssues": 43,
+      "openIssues": 44,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-09-05T17:03:00Z",
+      "pushedAt": "2026-09-06T17:37:51Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -399,7 +399,7 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 156,
+      "stars": 157,
       "forks": 13,
       "openIssues": 0,
       "license": "Apache-2.0",
@@ -421,7 +421,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-03T05:11:33Z",
+      "pushedAt": "2026-09-06T17:49:25Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -445,26 +445,6 @@
       "createdAt": "2018-08-06T13:38:19Z"
     },
     {
-      "slug": "jipraks/kasirgratisan",
-      "fullName": "jipraks/kasirgratisan",
-      "name": "kasirgratisan",
-      "owner": "jipraks",
-      "ownerUrl": "https://github.com/jipraks",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/10278519?v=4",
-      "url": "https://github.com/jipraks/kasirgratisan",
-      "homepage": null,
-      "description": "Free, Open Source, Offline Point of Sales Apps",
-      "language": "TypeScript",
-      "stars": 130,
-      "forks": 66,
-      "openIssues": 8,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-09-03T11:28:13Z",
-      "createdAt": "2026-02-12T11:02:43Z"
-    },
-    {
       "slug": "mydisha/keirouter",
       "fullName": "mydisha/keirouter",
       "name": "keirouter",
@@ -475,8 +455,8 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 130,
-      "forks": 48,
+      "stars": 131,
+      "forks": 49,
       "openIssues": 2,
       "license": "MIT",
       "topics": [
@@ -502,6 +482,26 @@
       "archived": false,
       "pushedAt": "2026-08-28T02:35:20Z",
       "createdAt": "2026-05-31T09:02:50Z"
+    },
+    {
+      "slug": "jipraks/kasirgratisan",
+      "fullName": "jipraks/kasirgratisan",
+      "name": "kasirgratisan",
+      "owner": "jipraks",
+      "ownerUrl": "https://github.com/jipraks",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/10278519?v=4",
+      "url": "https://github.com/jipraks/kasirgratisan",
+      "homepage": null,
+      "description": "Free, Open Source, Offline Point of Sales Apps",
+      "language": "TypeScript",
+      "stars": 130,
+      "forks": 66,
+      "openIssues": 8,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-09-03T11:28:13Z",
+      "createdAt": "2026-02-12T11:02:43Z"
     },
     {
       "slug": "adenaufal/anti-slop-writing",
@@ -601,7 +601,7 @@
       "language": "Svelte",
       "stars": 92,
       "forks": 4,
-      "openIssues": 14,
+      "openIssues": 15,
       "license": "MIT",
       "topics": [
         "audio",
@@ -613,28 +613,8 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-09-03T19:30:57Z",
+      "pushedAt": "2026-09-06T00:39:22Z",
       "createdAt": "2026-03-17T12:55:21Z"
-    },
-    {
-      "slug": "njinlabs/njinattend-backend",
-      "fullName": "njinlabs/njinattend-backend",
-      "name": "njinattend-backend",
-      "owner": "njinlabs",
-      "ownerUrl": "https://github.com/njinlabs",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/145111707?v=4",
-      "url": "https://github.com/njinlabs/njinattend-backend",
-      "homepage": null,
-      "description": "The backend of NjinAttend is built using AdonisJS.",
-      "language": "TypeScript",
-      "stars": 73,
-      "forks": 20,
-      "openIssues": 0,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2023-10-04T21:50:13Z",
-      "createdAt": "2023-09-23T21:07:22Z"
     },
     {
       "slug": "rahmanef63/mso",
@@ -647,7 +627,7 @@
       "homepage": "https://mso.rahmanef.com",
       "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
-      "stars": 72,
+      "stars": 73,
       "forks": 8,
       "openIssues": 0,
       "license": "MIT",
@@ -672,8 +652,28 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-05T20:38:19Z",
+      "pushedAt": "2026-09-06T16:21:19Z",
       "createdAt": "2026-05-29T17:44:06Z"
+    },
+    {
+      "slug": "njinlabs/njinattend-backend",
+      "fullName": "njinlabs/njinattend-backend",
+      "name": "njinattend-backend",
+      "owner": "njinlabs",
+      "ownerUrl": "https://github.com/njinlabs",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/145111707?v=4",
+      "url": "https://github.com/njinlabs/njinattend-backend",
+      "homepage": null,
+      "description": "The backend of NjinAttend is built using AdonisJS.",
+      "language": "TypeScript",
+      "stars": 73,
+      "forks": 20,
+      "openIssues": 0,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2023-10-04T21:50:13Z",
+      "createdAt": "2023-09-23T21:07:22Z"
     },
     {
       "slug": "wauputr4/bansos",
@@ -873,7 +873,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-05T15:36:23Z",
+      "pushedAt": "2026-09-06T01:14:57Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -1072,7 +1072,7 @@
         "wildlife"
       ],
       "archived": false,
-      "pushedAt": "2026-08-27T02:51:56Z",
+      "pushedAt": "2026-09-06T09:47:13Z",
       "createdAt": "2026-06-14T05:07:25Z"
     },
     {
@@ -1099,7 +1099,7 @@
         "omarchy"
       ],
       "archived": false,
-      "pushedAt": "2026-09-05T16:31:34Z",
+      "pushedAt": "2026-09-06T17:13:49Z",
       "createdAt": "2025-10-04T10:27:45Z"
     },
     {
@@ -1113,7 +1113,7 @@
       "homepage": "https://silong-os.vercel.app/",
       "description": "Open-source, self-hostable Notion/Obsidian-style workspace — block editor for notes, docs and lightweight databases, plus a knowledge graph over them. Next.js 16 · React 19 · Convex · Tailwind v4.",
       "language": "TypeScript",
-      "stars": 24,
+      "stars": 25,
       "forks": 5,
       "openIssues": 0,
       "license": "MIT",
@@ -1147,8 +1147,8 @@
       "homepage": null,
       "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
       "language": "TypeScript",
-      "stars": 20,
-      "forks": 2,
+      "stars": 21,
+      "forks": 3,
       "openIssues": 0,
       "license": "MIT",
       "topics": [],
@@ -1197,37 +1197,6 @@
       "createdAt": "2026-04-08T09:27:49Z"
     },
     {
-      "slug": "rizukirr/vibekit",
-      "fullName": "rizukirr/vibekit",
-      "name": "vibekit",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/vibekit",
-      "homepage": null,
-      "description": "Efficient, Opinionated vibe-coding pipeline for CC / Codex / OpenCode / Gemini",
-      "language": "JavaScript",
-      "stars": 18,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "claude-code",
-        "claude-plugin",
-        "codex",
-        "codex-plugin",
-        "opencode",
-        "opencode-plugin",
-        "pi-mono",
-        "plugin",
-        "vibe-coding",
-        "vibecoding"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-05T09:41:07Z",
-      "createdAt": "2026-04-21T15:17:02Z"
-    },
-    {
       "slug": "rahmanef63/control-room",
       "fullName": "rahmanef63/control-room",
       "name": "control-room",
@@ -1257,8 +1226,39 @@
         "xterm"
       ],
       "archived": false,
-      "pushedAt": "2026-09-04T01:54:49Z",
+      "pushedAt": "2026-09-06T10:56:40Z",
       "createdAt": "2026-03-20T14:25:48Z"
+    },
+    {
+      "slug": "rizukirr/vibekit",
+      "fullName": "rizukirr/vibekit",
+      "name": "vibekit",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/vibekit",
+      "homepage": null,
+      "description": "Efficient, Opinionated vibe-coding pipeline for CC / Codex / OpenCode / Gemini",
+      "language": "JavaScript",
+      "stars": 18,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "claude-code",
+        "claude-plugin",
+        "codex",
+        "codex-plugin",
+        "opencode",
+        "opencode-plugin",
+        "pi-mono",
+        "plugin",
+        "vibe-coding",
+        "vibecoding"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-05T09:41:07Z",
+      "createdAt": "2026-04-21T15:17:02Z"
     },
     {
       "slug": "muhammadhasbiashshiddieqy/openclawn",
@@ -1309,8 +1309,28 @@
         "windows-desktop"
       ],
       "archived": false,
-      "pushedAt": "2026-09-05T16:01:26Z",
+      "pushedAt": "2026-09-06T12:00:14Z",
       "createdAt": "2026-02-23T13:59:12Z"
+    },
+    {
+      "slug": "muhfauziazhar/nusakit-api",
+      "fullName": "muhfauziazhar/nusakit-api",
+      "name": "nusakit-api",
+      "owner": "muhfauziazhar",
+      "ownerUrl": "https://github.com/muhfauziazhar",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/72305833?v=4",
+      "url": "https://github.com/muhfauziazhar/nusakit-api",
+      "homepage": "https://nusakit.my.id",
+      "description": "🇮🇩 Indonesian Data Validation API — NIK, NPWP, Phone, Rupiah, Bank, Wilayah. Live: nusakit.my.id",
+      "language": "TypeScript",
+      "stars": 15,
+      "forks": 2,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-06-13T16:18:08Z",
+      "createdAt": "2026-06-12T01:36:09Z"
     },
     {
       "slug": "rizukirr/numc",
@@ -1344,26 +1364,6 @@
       "createdAt": "2026-03-12T09:55:51Z"
     },
     {
-      "slug": "muhfauziazhar/nusakit-api",
-      "fullName": "muhfauziazhar/nusakit-api",
-      "name": "nusakit-api",
-      "owner": "muhfauziazhar",
-      "ownerUrl": "https://github.com/muhfauziazhar",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/72305833?v=4",
-      "url": "https://github.com/muhfauziazhar/nusakit-api",
-      "homepage": "https://nusakit.my.id",
-      "description": "🇮🇩 Indonesian Data Validation API — NIK, NPWP, Phone, Rupiah, Bank, Wilayah. Live: nusakit.my.id",
-      "language": "TypeScript",
-      "stars": 14,
-      "forks": 2,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-06-13T16:18:08Z",
-      "createdAt": "2026-06-12T01:36:09Z"
-    },
-    {
       "slug": "rahmanef63/si-coder-agent",
       "fullName": "rahmanef63/si-coder-agent",
       "name": "si-coder-agent",
@@ -1393,7 +1393,7 @@
         "zero-human"
       ],
       "archived": false,
-      "pushedAt": "2026-09-05T20:33:46Z",
+      "pushedAt": "2026-09-06T15:52:09Z",
       "createdAt": "2026-03-18T18:38:41Z"
     },
     {
@@ -1469,7 +1469,7 @@
         "semantic-search"
       ],
       "archived": false,
-      "pushedAt": "2026-09-04T11:17:03Z",
+      "pushedAt": "2026-09-06T20:54:54Z",
       "createdAt": "2026-06-02T04:21:59Z"
     },
     {
@@ -1682,26 +1682,6 @@
       "createdAt": "2026-01-09T17:20:39Z"
     },
     {
-      "slug": "aofsnorth/artidor",
-      "fullName": "Aofsnorth/Artidor",
-      "name": "Artidor",
-      "owner": "Aofsnorth",
-      "ownerUrl": "https://github.com/Aofsnorth",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/108259309?v=4",
-      "url": "https://github.com/Aofsnorth/Artidor",
-      "homepage": "https://artidor.vercel.app",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 7,
-      "forks": 1,
-      "openIssues": 15,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-09-01T15:21:31Z",
-      "createdAt": "2026-06-13T11:24:30Z"
-    },
-    {
       "slug": "rahmanef63/framepilot",
       "fullName": "rahmanef63/framepilot",
       "name": "framepilot",
@@ -1752,7 +1732,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-04T21:18:22Z",
+      "pushedAt": "2026-09-05T21:00:08Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1858,7 +1838,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-05T16:08:51Z",
+      "pushedAt": "2026-09-06T15:03:05Z",
       "createdAt": "2025-11-22T11:52:35Z"
     },
     {
@@ -2031,6 +2011,26 @@
       "createdAt": "2026-06-04T02:35:05Z"
     },
     {
+      "slug": "aofsnorth/artidor",
+      "fullName": "Aofsnorth/Artidor",
+      "name": "Artidor",
+      "owner": "Aofsnorth",
+      "ownerUrl": "https://github.com/Aofsnorth",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/108259309?v=4",
+      "url": "https://github.com/Aofsnorth/Artidor",
+      "homepage": "https://artidor.vercel.app",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "openIssues": 0,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-09-06T18:10:28Z",
+      "createdAt": "2026-06-13T11:24:30Z"
+    },
+    {
       "slug": "nzxcode/hospital-ai-sales-agent",
       "fullName": "NzxCode/Hospital-Ai-Sales-Agent",
       "name": "Hospital-Ai-Sales-Agent",
@@ -2055,14 +2055,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-09-05T20:59:55.347Z"
+      "syncedAt": "2026-09-06T21:08:23.349Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-09-05T20:59:55.347Z"
+      "syncedAt": "2026-09-06T21:08:23.349Z"
     }
   ],
-  "syncedAt": "2026-09-05T20:59:55.347Z",
+  "syncedAt": "2026-09-06T21:08:23.349Z",
   "count": 76
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T20:59:49.677Z",
+  "generatedAt": "2026-09-06T21:08:17.235Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -56,7 +56,7 @@
     "openrouter.ai/api/v1/models": {
       "status": "ok",
       "providers": 1,
-      "models": 19,
+      "models": 18,
       "shapeIssues": []
     }
   },
@@ -65,7 +65,7 @@
   ],
   "merged": {
     "providers": 25,
-    "models": 324,
+    "models": 323,
     "shapeIssues": []
   },
   "smokeTest": {
@@ -82,9 +82,9 @@
     "stats": {
       "prevProviders": 25,
       "nextProviders": 25,
-      "prevModels": 327,
-      "nextModels": 324,
-      "totalDropPct": 0.9174311926605505,
+      "prevModels": 326,
+      "nextModels": 323,
+      "totalDropPct": 0.9202453987730062,
       "disappeared": [],
       "shrunk": [
         {
@@ -105,19 +105,19 @@
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 309,
+            "eligible": 308,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "maxOutput": {
-            "eligible": 145,
+            "eligible": 144,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "modality": {
-            "eligible": 254,
+            "eligible": 253,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -195,16 +195,14 @@
     }
   ],
   "quarantine": {
-    "heldProviders": [
+    "heldProviders": [],
+    "accepted": [
       {
         "slug": "cerebras",
         "kind": "shrunk",
-        "detail": "model 3 -> 1 (-67%)",
-        "streak": 2,
-        "needs": 3
+        "detail": "model 3 -> 1 (-67%)"
       }
     ],
-    "accepted": [],
     "cleared": [],
     "confirmRuns": 3
   }
