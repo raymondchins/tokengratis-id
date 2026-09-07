@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T21:08:17.235Z",
+  "generatedAt": "2026-09-07T21:55:37.837Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -11,18 +11,18 @@
     "freellm.net": {
       "status": "ok",
       "providers": 25,
-      "models": 304,
+      "models": 303,
       "shapeIssues": [
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "maxOutput",
           "rule": "all-null-collapse",
-          "count": 304,
-          "total": 304,
+          "count": 303,
+          "total": 303,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"maxOutput\": 100% null di 304 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+          "message": "Field \"maxOutput\": 100% null di 303 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
         },
         {
           "severity": "warn",
@@ -56,7 +56,7 @@
     "openrouter.ai/api/v1/models": {
       "status": "ok",
       "providers": 1,
-      "models": 18,
+      "models": 16,
       "shapeIssues": []
     }
   },
@@ -65,7 +65,7 @@
   ],
   "merged": {
     "providers": 25,
-    "models": 323,
+    "models": 321,
     "shapeIssues": []
   },
   "smokeTest": {
@@ -73,57 +73,40 @@
     "warnings": []
   },
   "diffGuard": {
-    "ok": false,
-    "errors": [
-      "provider \"cerebras\" model count dropped 66.7% (3 → 1), threshold is 40%",
-      "provider \"cerebras\" model ids churned 66.7% at same-ish count (overlap 33.3%, 3→1 ids) — possible source corruption"
-    ],
+    "ok": true,
+    "errors": [],
     "warnings": [],
     "stats": {
       "prevProviders": 25,
       "nextProviders": 25,
-      "prevModels": 326,
-      "nextModels": 323,
-      "totalDropPct": 0.9202453987730062,
+      "prevModels": 323,
+      "nextModels": 321,
+      "totalDropPct": 0.6191950464396285,
       "disappeared": [],
-      "shrunk": [
-        {
-          "slug": "cerebras",
-          "prev": 3,
-          "next": 1,
-          "dropPct": 66.66666666666666
-        }
-      ],
-      "churned": [
-        {
-          "slug": "cerebras",
-          "overlapPct": 33.33333333333333,
-          "prevIds": 3,
-          "nextIds": 1
-        }
-      ],
+      "shrunk": [],
+      "churned": [],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 308,
+            "eligible": 306,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "maxOutput": {
-            "eligible": 144,
+            "eligible": 142,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "modality": {
-            "eligible": 253,
+            "eligible": 251,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "rateLimit": {
-            "eligible": 210,
+            "eligible": 209,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -165,11 +148,11 @@
       "source": "freellm.net",
       "field": "maxOutput",
       "rule": "all-null-collapse",
-      "count": 304,
-      "total": 304,
+      "count": 303,
+      "total": 303,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"maxOutput\": 100% null di 304 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+      "message": "Field \"maxOutput\": 100% null di 303 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
     },
     {
       "severity": "warn",
@@ -196,13 +179,7 @@
   ],
   "quarantine": {
     "heldProviders": [],
-    "accepted": [
-      {
-        "slug": "cerebras",
-        "kind": "shrunk",
-        "detail": "model 3 -> 1 (-67%)"
-      }
-    ],
+    "accepted": [],
     "cleared": [],
     "confirmRuns": 3
   }

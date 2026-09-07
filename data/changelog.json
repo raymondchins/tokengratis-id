@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-09-07",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "OpenRouter",
+        "added": [],
+        "removed": [
+          "MiniMax: MiniMax M3 (free)",
+          "MiniMax: MiniMax M2.7 (free)"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-09-06",
     "providersAdded": [],
     "providersRemoved": [],

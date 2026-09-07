@@ -11,8 +11,8 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js - The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser (client-side) or Node.js (server-side).",
       "language": "JavaScript",
-      "stars": 10186,
-      "forks": 1217,
+      "stars": 10188,
+      "forks": 1218,
       "openIssues": 15,
       "license": "AGPL-3.0",
       "topics": [
@@ -66,7 +66,7 @@
       "homepage": "https://www.htmly.com",
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
-      "stars": 1359,
+      "stars": 1361,
       "forks": 310,
       "openIssues": 53,
       "license": "GPL-2.0",
@@ -95,9 +95,9 @@
       "homepage": null,
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
-      "stars": 1223,
+      "stars": 1224,
       "forks": 1189,
-      "openIssues": 364,
+      "openIssues": 362,
       "license": null,
       "topics": [
         "opensid",
@@ -157,7 +157,7 @@
       "description": "Package Laravel yang berisi data Provinsi, Kabupaten/Kota, dan Kecamatan/Desa di seluruh Indonesia.",
       "language": "PHP",
       "stars": 676,
-      "forks": 210,
+      "forks": 209,
       "openIssues": 5,
       "license": "MIT",
       "topics": [],
@@ -176,7 +176,7 @@
       "homepage": "https://jokoui.web.id",
       "description": "Free Open Source Tailwind CSS Component for Sat-set Developers with Zero Configuration, Installation, and Setup",
       "language": "TypeScript",
-      "stars": 416,
+      "stars": 417,
       "forks": 26,
       "openIssues": 9,
       "license": "MIT",
@@ -203,9 +203,9 @@
       "homepage": "https://omni.weekndlabs.com/docs",
       "description": "Your agent pays twice for output it has already seen. OMNI returns a handle instead: 97.2% off a file read twice. Nothing deleted, nothing invented.",
       "language": "Rust",
-      "stars": 365,
+      "stars": 367,
       "forks": 34,
-      "openIssues": 15,
+      "openIssues": 13,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -230,7 +230,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-09-04T15:42:25Z",
+      "pushedAt": "2026-09-07T16:37:50Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -262,6 +262,40 @@
       "createdAt": "2025-11-04T15:37:00Z"
     },
     {
+      "slug": "gnoviawan/termul",
+      "fullName": "gnoviawan/termul",
+      "name": "termul",
+      "owner": "gnoviawan",
+      "ownerUrl": "https://github.com/gnoviawan",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/72639723?v=4",
+      "url": "https://github.com/gnoviawan/termul",
+      "homepage": "https://termul.dev",
+      "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
+      "language": "TypeScript",
+      "stars": 239,
+      "forks": 44,
+      "openIssues": 44,
+      "license": "MIT",
+      "topics": [
+        "cross-platform",
+        "desktop-app",
+        "developer-tools",
+        "open-source",
+        "productivity",
+        "react",
+        "rust",
+        "shell",
+        "tauri",
+        "tauri-app",
+        "terminal",
+        "terminal-emulator",
+        "workspace-manager"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-01T17:19:30Z",
+      "createdAt": "2026-01-13T04:36:02Z"
+    },
+    {
       "slug": "codecoradev/uteke",
       "fullName": "codecoradev/uteke",
       "name": "uteke",
@@ -274,7 +308,7 @@
       "language": "Rust",
       "stars": 238,
       "forks": 25,
-      "openIssues": 4,
+      "openIssues": 1,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -299,42 +333,8 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-09-06T12:59:04Z",
+      "pushedAt": "2026-09-07T13:38:01Z",
       "createdAt": "2026-05-29T00:27:31Z"
-    },
-    {
-      "slug": "gnoviawan/termul",
-      "fullName": "gnoviawan/termul",
-      "name": "termul",
-      "owner": "gnoviawan",
-      "ownerUrl": "https://github.com/gnoviawan",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/72639723?v=4",
-      "url": "https://github.com/gnoviawan/termul",
-      "homepage": "https://termul.dev",
-      "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
-      "language": "TypeScript",
-      "stars": 237,
-      "forks": 44,
-      "openIssues": 44,
-      "license": "MIT",
-      "topics": [
-        "cross-platform",
-        "desktop-app",
-        "developer-tools",
-        "open-source",
-        "productivity",
-        "react",
-        "rust",
-        "shell",
-        "tauri",
-        "tauri-app",
-        "terminal",
-        "terminal-emulator",
-        "workspace-manager"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-01T17:19:30Z",
-      "createdAt": "2026-01-13T04:36:02Z"
     },
     {
       "slug": "hadziqmtqn/erd-builder-pro",
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-09-06T17:37:51Z",
+      "pushedAt": "2026-09-07T15:34:41Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -399,7 +399,7 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 157,
+      "stars": 158,
       "forks": 13,
       "openIssues": 0,
       "license": "Apache-2.0",
@@ -421,28 +421,8 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-06T17:49:25Z",
+      "pushedAt": "2026-09-07T07:11:27Z",
       "createdAt": "2026-05-13T00:00:22Z"
-    },
-    {
-      "slug": "hendisantika/online-banking-angular-springboot-mysql",
-      "fullName": "hendisantika/Online-banking-angular-springboot-mysql",
-      "name": "Online-banking-angular-springboot-mysql",
-      "owner": "hendisantika",
-      "ownerUrl": "https://github.com/hendisantika",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/3713580?v=4",
-      "url": "https://github.com/hendisantika/Online-banking-angular-springboot-mysql",
-      "homepage": null,
-      "description": "Online banking angular springboot mysql",
-      "language": "Java",
-      "stars": 131,
-      "forks": 99,
-      "openIssues": 1,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-09-03T20:03:25Z",
-      "createdAt": "2018-08-06T13:38:19Z"
     },
     {
       "slug": "mydisha/keirouter",
@@ -455,9 +435,9 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 131,
-      "forks": 49,
-      "openIssues": 2,
+      "stars": 133,
+      "forks": 53,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [
         "ai",
@@ -480,8 +460,28 @@
         "zai"
       ],
       "archived": false,
-      "pushedAt": "2026-08-28T02:35:20Z",
+      "pushedAt": "2026-09-07T12:00:04Z",
       "createdAt": "2026-05-31T09:02:50Z"
+    },
+    {
+      "slug": "hendisantika/online-banking-angular-springboot-mysql",
+      "fullName": "hendisantika/Online-banking-angular-springboot-mysql",
+      "name": "Online-banking-angular-springboot-mysql",
+      "owner": "hendisantika",
+      "ownerUrl": "https://github.com/hendisantika",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/3713580?v=4",
+      "url": "https://github.com/hendisantika/Online-banking-angular-springboot-mysql",
+      "homepage": null,
+      "description": "Online banking angular springboot mysql",
+      "language": "Java",
+      "stars": 131,
+      "forks": 99,
+      "openIssues": 1,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-09-03T20:03:25Z",
+      "createdAt": "2018-08-06T13:38:19Z"
     },
     {
       "slug": "jipraks/kasirgratisan",
@@ -496,11 +496,11 @@
       "language": "TypeScript",
       "stars": 130,
       "forks": 66,
-      "openIssues": 8,
+      "openIssues": 9,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-03T11:28:13Z",
+      "pushedAt": "2026-09-07T03:12:12Z",
       "createdAt": "2026-02-12T11:02:43Z"
     },
     {
@@ -514,7 +514,7 @@
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": null,
-      "stars": 124,
+      "stars": 126,
       "forks": 7,
       "openIssues": 0,
       "license": "MIT",
@@ -576,7 +576,7 @@
       "language": "TypeScript",
       "stars": 99,
       "forks": 22,
-      "openIssues": 11,
+      "openIssues": 18,
       "license": "MIT",
       "topics": [
         "hacktoberfest",
@@ -585,7 +585,7 @@
         "hacktoberfest2023"
       ],
       "archived": false,
-      "pushedAt": "2026-09-05T08:43:33Z",
+      "pushedAt": "2026-09-07T20:44:09Z",
       "createdAt": "2023-09-05T12:35:21Z"
     },
     {
@@ -599,7 +599,7 @@
       "homepage": "https://svelte-audio-ui.vercel.app/",
       "description": "A set of accessible and composable Audio UI components.",
       "language": "Svelte",
-      "stars": 92,
+      "stars": 91,
       "forks": 4,
       "openIssues": 15,
       "license": "MIT",
@@ -627,7 +627,7 @@
       "homepage": "https://mso.rahmanef.com",
       "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
-      "stars": 73,
+      "stars": 74,
       "forks": 8,
       "openIssues": 0,
       "license": "MIT",
@@ -652,7 +652,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-06T16:21:19Z",
+      "pushedAt": "2026-09-07T20:42:35Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -873,7 +873,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-06T01:14:57Z",
+      "pushedAt": "2026-09-07T13:48:08Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -1086,9 +1086,9 @@
       "homepage": null,
       "description": "Minimal aesthetic arch linux + hyprland dotfiles",
       "language": "Shell",
-      "stars": 26,
+      "stars": 25,
       "forks": 4,
-      "openIssues": 0,
+      "openIssues": 1,
       "license": null,
       "topics": [
         "arch-linux",
@@ -1099,7 +1099,7 @@
         "omarchy"
       ],
       "archived": false,
-      "pushedAt": "2026-09-06T17:13:49Z",
+      "pushedAt": "2026-09-07T16:19:51Z",
       "createdAt": "2025-10-04T10:27:45Z"
     },
     {
@@ -1153,7 +1153,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-04T21:56:37Z",
+      "pushedAt": "2026-09-07T08:23:43Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1393,7 +1393,7 @@
         "zero-human"
       ],
       "archived": false,
-      "pushedAt": "2026-09-06T15:52:09Z",
+      "pushedAt": "2026-09-07T21:47:48Z",
       "createdAt": "2026-03-18T18:38:41Z"
     },
     {
@@ -1469,7 +1469,7 @@
         "semantic-search"
       ],
       "archived": false,
-      "pushedAt": "2026-09-06T20:54:54Z",
+      "pushedAt": "2026-09-07T01:12:50Z",
       "createdAt": "2026-06-02T04:21:59Z"
     },
     {
@@ -1682,6 +1682,26 @@
       "createdAt": "2026-01-09T17:20:39Z"
     },
     {
+      "slug": "raymondchins/tokengratis-id",
+      "fullName": "raymondchins/tokengratis-id",
+      "name": "tokengratis-id",
+      "owner": "raymondchins",
+      "ownerUrl": "https://github.com/raymondchins",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
+      "url": "https://github.com/raymondchins/tokengratis-id",
+      "homepage": "https://tokengratis.id",
+      "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
+      "language": "JavaScript",
+      "stars": 7,
+      "forks": 1,
+      "openIssues": 1,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-09-06T21:08:35Z",
+      "createdAt": "2026-06-01T10:04:41Z"
+    },
+    {
       "slug": "rahmanef63/framepilot",
       "fullName": "rahmanef63/framepilot",
       "name": "framepilot",
@@ -1714,26 +1734,6 @@
       "archived": false,
       "pushedAt": "2026-08-02T10:08:50Z",
       "createdAt": "2026-07-10T13:57:01Z"
-    },
-    {
-      "slug": "raymondchins/tokengratis-id",
-      "fullName": "raymondchins/tokengratis-id",
-      "name": "tokengratis-id",
-      "owner": "raymondchins",
-      "ownerUrl": "https://github.com/raymondchins",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
-      "url": "https://github.com/raymondchins/tokengratis-id",
-      "homepage": "https://tokengratis.id",
-      "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
-      "language": "JavaScript",
-      "stars": 6,
-      "forks": 1,
-      "openIssues": 1,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-09-05T21:00:08Z",
-      "createdAt": "2026-06-01T10:04:41Z"
     },
     {
       "slug": "wauputr4/agent-proxmox",
@@ -1812,7 +1812,7 @@
       "homepage": null,
       "description": null,
       "language": null,
-      "stars": 5,
+      "stars": 6,
       "forks": 0,
       "openIssues": 0,
       "license": null,
@@ -1832,13 +1832,13 @@
       "homepage": "https://muslimtify.vercel.app",
       "description": "Collection of islamic tools and utilities implemented in stb-style header only library",
       "language": "C",
-      "stars": 4,
+      "stars": 5,
       "forks": 1,
       "openIssues": 0,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-06T15:03:05Z",
+      "pushedAt": "2026-09-07T14:04:30Z",
       "createdAt": "2025-11-22T11:52:35Z"
     },
     {
@@ -2027,7 +2027,7 @@
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-06T18:10:28Z",
+      "pushedAt": "2026-09-07T05:56:29Z",
       "createdAt": "2026-06-13T11:24:30Z"
     },
     {
@@ -2055,14 +2055,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-09-06T21:08:23.349Z"
+      "syncedAt": "2026-09-07T21:55:42.891Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-09-06T21:08:23.349Z"
+      "syncedAt": "2026-09-07T21:55:42.891Z"
     }
   ],
-  "syncedAt": "2026-09-06T21:08:23.349Z",
+  "syncedAt": "2026-09-07T21:55:42.891Z",
   "count": 76
 }
