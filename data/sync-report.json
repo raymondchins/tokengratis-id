@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T21:55:37.837Z",
+  "generatedAt": "2026-09-08T21:40:43.783Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -10,41 +10,41 @@
     },
     "freellm.net": {
       "status": "ok",
-      "providers": 25,
-      "models": 303,
+      "providers": 23,
+      "models": 294,
       "shapeIssues": [
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "maxOutput",
           "rule": "all-null-collapse",
-          "count": 303,
-          "total": 303,
+          "count": 294,
+          "total": 294,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"maxOutput\": 100% null di 303 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+          "message": "Field \"maxOutput\": 100% null di 294 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
         },
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "url",
           "rule": "all-null-collapse",
-          "count": 25,
-          "total": 25,
+          "count": 23,
+          "total": 23,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"url\": 100% null di 25 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+          "message": "Field \"url\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
         },
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "baseUrl",
           "rule": "all-null-collapse",
-          "count": 25,
-          "total": 25,
+          "count": 23,
+          "total": 23,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"baseUrl\": 100% null di 25 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+          "message": "Field \"baseUrl\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
         }
       ]
     },
@@ -56,7 +56,7 @@
     "openrouter.ai/api/v1/models": {
       "status": "ok",
       "providers": 1,
-      "models": 16,
+      "models": 18,
       "shapeIssues": []
     }
   },
@@ -64,8 +64,8 @@
     "cheahjs/free-llm-api-resources"
   ],
   "merged": {
-    "providers": 25,
-    "models": 321,
+    "providers": 24,
+    "models": 305,
     "shapeIssues": []
   },
   "smokeTest": {
@@ -73,40 +73,72 @@
     "warnings": []
   },
   "diffGuard": {
-    "ok": true,
-    "errors": [],
+    "ok": false,
+    "errors": [
+      "provider \"sambanova\" disappeared (was in prev, missing in next)",
+      "provider \"github-models\" model count dropped 76.9% (13 → 3), threshold is 40%",
+      "provider \"github-models\" model ids churned 76.9% at same-ish count (overlap 23.1%, 13→3 ids) — possible source corruption"
+    ],
     "warnings": [],
     "stats": {
       "prevProviders": 25,
-      "nextProviders": 25,
-      "prevModels": 323,
-      "nextModels": 321,
-      "totalDropPct": 0.6191950464396285,
-      "disappeared": [],
-      "shrunk": [],
-      "churned": [],
+      "nextProviders": 24,
+      "prevModels": 321,
+      "nextModels": 305,
+      "totalDropPct": 4.984423676012461,
+      "disappeared": [
+        "sambanova"
+      ],
+      "shrunk": [
+        {
+          "slug": "github-models",
+          "prev": 13,
+          "next": 3,
+          "dropPct": 76.92307692307693
+        }
+      ],
+      "churned": [
+        {
+          "slug": "github-models",
+          "overlapPct": 23.076923076923077,
+          "prevIds": 13,
+          "nextIds": 3
+        }
+      ],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 306,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "eligible": 285,
+            "changed": 1,
+            "ratioPct": 0.3508771929824561,
+            "examples": [
+              {
+                "label": "nvidia-nim/meta-llama-guard-4-12b",
+                "from": "1.0M",
+                "to": "164K"
+              }
+            ]
           },
           "maxOutput": {
-            "eligible": 142,
+            "eligible": 135,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "modality": {
-            "eligible": 251,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "eligible": 230,
+            "changed": 1,
+            "ratioPct": 0.43478260869565216,
+            "examples": [
+              {
+                "label": "agnes-ai/agnes-2-0-flash",
+                "from": "text + vision",
+                "to": "text + vision + image + reasoning"
+              }
+            ]
           },
           "rateLimit": {
-            "eligible": 209,
+            "eligible": 188,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -132,10 +164,26 @@
             "examples": []
           },
           "maxContext": {
-            "eligible": 24,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "eligible": 23,
+            "changed": 3,
+            "ratioPct": 13.043478260869565,
+            "examples": [
+              {
+                "label": "github-models",
+                "from": "1M",
+                "to": "256K"
+              },
+              {
+                "label": "nvidia-nim",
+                "from": "1M",
+                "to": "1.3M"
+              },
+              {
+                "label": "siliconflow",
+                "from": "131K",
+                "to": "128K"
+              }
+            ]
           }
         }
       }
@@ -148,37 +196,52 @@
       "source": "freellm.net",
       "field": "maxOutput",
       "rule": "all-null-collapse",
-      "count": 303,
-      "total": 303,
+      "count": 294,
+      "total": 294,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"maxOutput\": 100% null di 303 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+      "message": "Field \"maxOutput\": 100% null di 294 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
     },
     {
       "severity": "warn",
       "source": "freellm.net",
       "field": "url",
       "rule": "all-null-collapse",
-      "count": 25,
-      "total": 25,
+      "count": 23,
+      "total": 23,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"url\": 100% null di 25 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+      "message": "Field \"url\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
     },
     {
       "severity": "warn",
       "source": "freellm.net",
       "field": "baseUrl",
       "rule": "all-null-collapse",
-      "count": 25,
-      "total": 25,
+      "count": 23,
+      "total": 23,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"baseUrl\": 100% null di 25 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+      "message": "Field \"baseUrl\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
     }
   ],
   "quarantine": {
-    "heldProviders": [],
+    "heldProviders": [
+      {
+        "slug": "sambanova",
+        "kind": "disappeared",
+        "detail": "provider hilang dari hasil merge",
+        "streak": 1,
+        "needs": 3
+      },
+      {
+        "slug": "github-models",
+        "kind": "shrunk",
+        "detail": "model 13 -> 3 (-77%)",
+        "streak": 1,
+        "needs": 3
+      }
+    ],
     "accepted": [],
     "cleared": [],
     "confirmRuns": 3

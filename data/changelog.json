@@ -1,5 +1,66 @@
 [
   {
+    "date": "2026-09-08",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Aion Labs",
+        "added": [],
+        "removed": [
+          "Aion 2.5",
+          "Aion-RP 1.0 (8B)"
+        ]
+      },
+      {
+        "provider": "Groq",
+        "added": [
+          "GPT-OSS Safeguard 20B"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "Kilo Code",
+        "added": [],
+        "removed": [
+          "inclusionai/ling-3.0-flash:free"
+        ]
+      },
+      {
+        "provider": "Mistral AI",
+        "added": [],
+        "removed": [
+          "Ministral 14B",
+          "Ministral 8B",
+          "Ministral 3B"
+        ]
+      },
+      {
+        "provider": "NVIDIA NIM",
+        "added": [
+          "deepseek-ai/deepseek-v4-flash-0731",
+          "deepseek-ai/deepseek-v4-pro-0813"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "OpenRouter",
+        "added": [
+          "Nex AGI: Nex-N2.5-Mini (free)",
+          "Nex AGI: Nex-N2.5-Pro (free)"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "SiliconFlow",
+        "added": [],
+        "removed": [
+          "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-09-07",
     "providersAdded": [],
     "providersRemoved": [],

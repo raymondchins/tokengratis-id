@@ -1,4 +1,21 @@
 {
   "version": 1,
-  "entries": {}
+  "entries": {
+    "sambanova": {
+      "kind": "disappeared",
+      "magnitude": 0,
+      "detail": "provider hilang dari hasil merge",
+      "streak": 1,
+      "firstSeen": "2026-09-08T21:40:43.783Z",
+      "lastSeen": "2026-09-08T21:40:43.783Z"
+    },
+    "github-models": {
+      "kind": "shrunk",
+      "magnitude": 3,
+      "detail": "model 13 -> 3 (-77%)",
+      "streak": 1,
+      "firstSeen": "2026-09-08T21:40:43.783Z",
+      "lastSeen": "2026-09-08T21:40:43.783Z"
+    }
+  }
 }
