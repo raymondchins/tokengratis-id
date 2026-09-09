@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T21:40:43.783Z",
+  "generatedAt": "2026-09-09T21:32:10.512Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -11,18 +11,18 @@
     "freellm.net": {
       "status": "ok",
       "providers": 23,
-      "models": 294,
+      "models": 295,
       "shapeIssues": [
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "maxOutput",
           "rule": "all-null-collapse",
-          "count": 294,
-          "total": 294,
+          "count": 295,
+          "total": 295,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"maxOutput\": 100% null di 294 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+          "message": "Field \"maxOutput\": 100% null di 295 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
         },
         {
           "severity": "warn",
@@ -65,7 +65,7 @@
   ],
   "merged": {
     "providers": 24,
-    "models": 305,
+    "models": 306,
     "shapeIssues": []
   },
   "smokeTest": {
@@ -83,9 +83,9 @@
     "stats": {
       "prevProviders": 25,
       "nextProviders": 24,
-      "prevModels": 321,
-      "nextModels": 305,
-      "totalDropPct": 4.984423676012461,
+      "prevModels": 319,
+      "nextModels": 306,
+      "totalDropPct": 4.075235109717868,
       "disappeared": [
         "sambanova"
       ],
@@ -108,37 +108,31 @@
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 285,
-            "changed": 1,
-            "ratioPct": 0.3508771929824561,
-            "examples": [
-              {
-                "label": "nvidia-nim/meta-llama-guard-4-12b",
-                "from": "1.0M",
-                "to": "164K"
-              }
-            ]
+            "eligible": 289,
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           },
           "maxOutput": {
-            "eligible": 135,
+            "eligible": 136,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "modality": {
-            "eligible": 230,
+            "eligible": 234,
             "changed": 1,
-            "ratioPct": 0.43478260869565216,
+            "ratioPct": 0.4273504273504274,
             "examples": [
               {
-                "label": "agnes-ai/agnes-2-0-flash",
-                "from": "text + vision",
-                "to": "text + vision + image + reasoning"
+                "label": "openrouter/nex-agi/nex-n2.5-mini:free",
+                "from": "Text",
+                "to": "Text + Vision"
               }
             ]
           },
           "rateLimit": {
-            "eligible": 188,
+            "eligible": 189,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -165,23 +159,13 @@
           },
           "maxContext": {
             "eligible": 23,
-            "changed": 3,
-            "ratioPct": 13.043478260869565,
+            "changed": 1,
+            "ratioPct": 4.3478260869565215,
             "examples": [
               {
                 "label": "github-models",
                 "from": "1M",
                 "to": "256K"
-              },
-              {
-                "label": "nvidia-nim",
-                "from": "1M",
-                "to": "1.3M"
-              },
-              {
-                "label": "siliconflow",
-                "from": "131K",
-                "to": "128K"
               }
             ]
           }
@@ -196,11 +180,11 @@
       "source": "freellm.net",
       "field": "maxOutput",
       "rule": "all-null-collapse",
-      "count": 294,
-      "total": 294,
+      "count": 295,
+      "total": 295,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"maxOutput\": 100% null di 294 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+      "message": "Field \"maxOutput\": 100% null di 295 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
     },
     {
       "severity": "warn",
@@ -231,14 +215,14 @@
         "slug": "sambanova",
         "kind": "disappeared",
         "detail": "provider hilang dari hasil merge",
-        "streak": 1,
+        "streak": 2,
         "needs": 3
       },
       {
         "slug": "github-models",
         "kind": "shrunk",
         "detail": "model 13 -> 3 (-77%)",
-        "streak": 1,
+        "streak": 2,
         "needs": 3
       }
     ],

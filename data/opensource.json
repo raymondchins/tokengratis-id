@@ -11,8 +11,8 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js - The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser (client-side) or Node.js (server-side).",
       "language": "JavaScript",
-      "stars": 10188,
-      "forks": 1218,
+      "stars": 10187,
+      "forks": 1217,
       "openIssues": 15,
       "license": "AGPL-3.0",
       "topics": [
@@ -41,7 +41,7 @@
       "description": "Plug n play avatar, turn name, email, and any other string into beautiful avatar (or gravatar), effortless.",
       "language": "PHP",
       "stars": 1983,
-      "forks": 186,
+      "forks": 187,
       "openIssues": 1,
       "license": "MIT",
       "topics": [
@@ -67,7 +67,7 @@
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
       "stars": 1361,
-      "forks": 310,
+      "forks": 309,
       "openIssues": 53,
       "license": "GPL-2.0",
       "topics": [
@@ -97,7 +97,7 @@
       "language": "PHP",
       "stars": 1224,
       "forks": 1189,
-      "openIssues": 362,
+      "openIssues": 364,
       "license": null,
       "topics": [
         "opensid",
@@ -176,7 +176,7 @@
       "homepage": "https://jokoui.web.id",
       "description": "Free Open Source Tailwind CSS Component for Sat-set Developers with Zero Configuration, Installation, and Setup",
       "language": "TypeScript",
-      "stars": 417,
+      "stars": 418,
       "forks": 26,
       "openIssues": 9,
       "license": "MIT",
@@ -244,9 +244,9 @@
       "homepage": null,
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 343,
-      "forks": 42,
-      "openIssues": 2,
+      "stars": 344,
+      "forks": 43,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [
         "adb",
@@ -258,7 +258,7 @@
         "wails-app"
       ],
       "archived": false,
-      "pushedAt": "2026-09-08T16:49:57Z",
+      "pushedAt": "2026-09-09T06:28:45Z",
       "createdAt": "2025-11-04T15:37:00Z"
     },
     {
@@ -308,7 +308,7 @@
       "language": "Rust",
       "stars": 238,
       "forks": 25,
-      "openIssues": 5,
+      "openIssues": 6,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -333,7 +333,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-09-08T18:54:26Z",
+      "pushedAt": "2026-09-09T16:03:12Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-09-08T13:42:35Z",
+      "pushedAt": "2026-09-09T16:40:03Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -421,7 +421,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-08T16:18:39Z",
+      "pushedAt": "2026-09-09T13:08:40Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -435,7 +435,7 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 135,
+      "stars": 137,
       "forks": 53,
       "openIssues": 3,
       "license": "MIT",
@@ -474,8 +474,8 @@
       "homepage": null,
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
-      "stars": 131,
-      "forks": 66,
+      "stars": 133,
+      "forks": 67,
       "openIssues": 10,
       "license": "MIT",
       "topics": [],
@@ -496,11 +496,11 @@
       "language": "Java",
       "stars": 131,
       "forks": 100,
-      "openIssues": 1,
+      "openIssues": 0,
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-03T20:03:25Z",
+      "pushedAt": "2026-09-08T23:25:01Z",
       "createdAt": "2018-08-06T13:38:19Z"
     },
     {
@@ -652,7 +652,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-08T21:34:23Z",
+      "pushedAt": "2026-09-09T17:47:19Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -868,12 +868,12 @@
       "description": "Its Factorio for coding agents",
       "language": "Ruby",
       "stars": 46,
-      "forks": 3,
+      "forks": 4,
       "openIssues": 2,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-07T13:48:08Z",
+      "pushedAt": "2026-09-09T13:15:01Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -1033,7 +1033,7 @@
       "description": "Mandum Rimba is an independent, nonprofit public-interest observatory. We do not sell data, carry advertising, or take sides. We consolidate satellite data and credible public sources into a single open map, auditable by anyone, fully open source, and with every figure traceable to its origin.",
       "language": "TypeScript",
       "stars": 31,
-      "forks": 7,
+      "forks": 8,
       "openIssues": 0,
       "license": "AGPL-3.0",
       "topics": [
@@ -1052,7 +1052,7 @@
         "wildlife"
       ],
       "archived": false,
-      "pushedAt": "2026-09-06T09:47:13Z",
+      "pushedAt": "2026-09-09T08:38:49Z",
       "createdAt": "2026-06-14T05:07:25Z"
     },
     {
@@ -1074,33 +1074,6 @@
       "archived": false,
       "pushedAt": "2025-12-27T17:13:26Z",
       "createdAt": "2025-12-17T16:19:36Z"
-    },
-    {
-      "slug": "rizukirr/hyprsimple",
-      "fullName": "rizukirr/hyprsimple",
-      "name": "hyprsimple",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/hyprsimple",
-      "homepage": null,
-      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
-      "language": "Shell",
-      "stars": 25,
-      "forks": 4,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "arch-linux",
-        "dotfiles",
-        "hyprland",
-        "hyprland-config",
-        "linux",
-        "omarchy"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-08T15:47:07Z",
-      "createdAt": "2025-10-04T10:27:45Z"
     },
     {
       "slug": "rahmanef63/open-silong",
@@ -1133,8 +1106,35 @@
         "workspace"
       ],
       "archived": false,
-      "pushedAt": "2026-08-30T13:18:54Z",
+      "pushedAt": "2026-09-09T13:37:34Z",
       "createdAt": "2026-04-29T18:48:11Z"
+    },
+    {
+      "slug": "rizukirr/hyprsimple",
+      "fullName": "rizukirr/hyprsimple",
+      "name": "hyprsimple",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/hyprsimple",
+      "homepage": null,
+      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
+      "language": "Shell",
+      "stars": 25,
+      "forks": 4,
+      "openIssues": 0,
+      "license": null,
+      "topics": [
+        "arch-linux",
+        "dotfiles",
+        "hyprland",
+        "hyprland-config",
+        "linux",
+        "omarchy"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-09T06:04:51Z",
+      "createdAt": "2025-10-04T10:27:45Z"
     },
     {
       "slug": "rudycity/superagent",
@@ -1197,6 +1197,39 @@
       "createdAt": "2026-04-08T09:27:49Z"
     },
     {
+      "slug": "rahmanef63/control-room",
+      "fullName": "rahmanef63/control-room",
+      "name": "control-room",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/control-room",
+      "homepage": null,
+      "description": "Mobile-first PWA for driving a single VPS from the browser — up to 16 concurrent terminals, AI agent launchers, host ops and audit behind one shared secret on a Tailscale-only domain. Next.js 15 · React 19 · Node agent (node-pty + xterm.js).",
+      "language": "TypeScript",
+      "stars": 18,
+      "forks": 3,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "ai-agents",
+        "devops",
+        "mobile-first",
+        "nextjs",
+        "nodejs",
+        "pty",
+        "pwa",
+        "self-hosted",
+        "terminal",
+        "tmux-alternative",
+        "vps",
+        "xterm"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-09T13:36:26Z",
+      "createdAt": "2026-03-20T14:25:48Z"
+    },
+    {
       "slug": "rizukirr/vibekit",
       "fullName": "rizukirr/vibekit",
       "name": "vibekit",
@@ -1228,39 +1261,6 @@
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
-      "slug": "rahmanef63/control-room",
-      "fullName": "rahmanef63/control-room",
-      "name": "control-room",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/control-room",
-      "homepage": null,
-      "description": "Mobile-first PWA for driving a single VPS from the browser — up to 16 concurrent terminals, AI agent launchers, host ops and audit behind one shared secret on a Tailscale-only domain. Next.js 15 · React 19 · Node agent (node-pty + xterm.js).",
-      "language": "TypeScript",
-      "stars": 18,
-      "forks": 3,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "ai-agents",
-        "devops",
-        "mobile-first",
-        "nextjs",
-        "nodejs",
-        "pty",
-        "pwa",
-        "self-hosted",
-        "terminal",
-        "tmux-alternative",
-        "vps",
-        "xterm"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-06T10:56:40Z",
-      "createdAt": "2026-03-20T14:25:48Z"
-    },
-    {
       "slug": "muhammadhasbiashshiddieqy/openclawn",
       "fullName": "MuhammadHasbiAshshiddieqy/OpenClawn",
       "name": "OpenClawn",
@@ -1277,7 +1277,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-01T13:33:42Z",
+      "pushedAt": "2026-09-09T14:11:58Z",
       "createdAt": "2026-06-15T14:35:14Z"
     },
     {
@@ -1393,7 +1393,7 @@
         "zero-human"
       ],
       "archived": false,
-      "pushedAt": "2026-09-07T22:35:48Z",
+      "pushedAt": "2026-09-09T13:40:41Z",
       "createdAt": "2026-03-18T18:38:41Z"
     },
     {
@@ -1698,7 +1698,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-07T21:55:56Z",
+      "pushedAt": "2026-09-09T17:02:45Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1732,7 +1732,7 @@
         "webgl"
       ],
       "archived": false,
-      "pushedAt": "2026-08-02T10:08:50Z",
+      "pushedAt": "2026-09-09T13:32:00Z",
       "createdAt": "2026-07-10T13:57:01Z"
     },
     {
@@ -1967,7 +1967,7 @@
         "productivity"
       ],
       "archived": false,
-      "pushedAt": "2026-09-02T11:28:58Z",
+      "pushedAt": "2026-09-09T13:06:12Z",
       "createdAt": "2026-02-10T04:21:08Z"
     },
     {
@@ -2055,14 +2055,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-09-08T21:40:49.213Z"
+      "syncedAt": "2026-09-09T21:32:16.020Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-09-08T21:40:49.213Z"
+      "syncedAt": "2026-09-09T21:32:16.020Z"
     }
   ],
-  "syncedAt": "2026-09-08T21:40:49.213Z",
+  "syncedAt": "2026-09-09T21:32:16.020Z",
   "count": 76
 }
