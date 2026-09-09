@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 /*
- * Design language: getaiperks.com — paper + editorial serif + neutral black/white,
- * dengan accent hijau (free/positif) & ungu (partner).
+ * Search-first directory: light paper + editorial serif + neutral black/white,
+ * with green for free-tier information and legacy purple for secondary tags.
  * Token names lama dipertahankan (ink/ember/fog/mute) biar low-churn:
- *   ink       = paper background (#f1f0e8)
+ *   ink       = paper background (#f7f7f2)
  *   ink-soft  = card / input surface (putih)
  *   ink-line  = border / divider
  *   fog       = primary text (cool near-black)
@@ -13,7 +13,7 @@
  * Accent baru: grass* (hijau) + grape* (ungu).
  */
 @theme {
-  --color-ink: #f1f0e8;        /* page background — warm paper */
+  --color-ink: #f7f7f2;        /* lighter paper supports a working directory */
   --color-ink-soft: #ffffff;   /* cards, inputs */
   --color-ink-line: #e4e2d8;   /* borders, dividers */
   --color-ember: #000000;      /* accent → pure black (buttons) */
@@ -43,6 +43,14 @@
 
 html {
   color-scheme: light;
+}
+
+@layer base {
+  :where(a, button, input, select, summary):focus-visible {
+    outline: 2px solid var(--color-fog);
+    outline-offset: 3px;
+  }
+  input { caret-color: var(--color-fog); }
 }
 
 body {

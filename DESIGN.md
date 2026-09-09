@@ -1,8 +1,8 @@
 ---
 name: tokengratis.id
-description: Direktori free tier & free credits API LLM — paper-surface, editorial-serif, receipt-first.
+description: A light paper utility catalog with editorial titles, direct controls, and visible sources.
 colors:
-  ink: "#f1f0e8"
+  ink: "#f7f7f2"
   ink-soft: "#ffffff"
   ink-line: "#e4e2d8"
   ink-sel: "#dedbcb"
@@ -18,458 +18,188 @@ colors:
   grape-bg: "#f4f3fb"
   grape-line: "#d8cef2"
 typography:
-  display:
-    fontFamily: "Georgia, 'Times New Roman', Times, serif"
-    fontSize: "2.25rem"
-    fontWeight: 500
-    lineHeight: 1.04
-    letterSpacing: "-0.02em"
   headline:
     fontFamily: "Georgia, 'Times New Roman', Times, serif"
     fontSize: "1.875rem"
-    fontWeight: 600
+    fontWeight: 500
     lineHeight: 1.2
-    letterSpacing: "-0.02em"
+    letterSpacing: "-0.025em"
   title:
-    fontFamily: "Georgia, 'Times New Roman', Times, serif"
-    fontSize: "1rem"
+    fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif"
+    fontSize: "1.25rem"
     fontWeight: 600
     lineHeight: 1.4
-    letterSpacing: "-0.02em"
+    letterSpacing: "-0.025em"
   body:
     fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif"
     fontSize: "0.875rem"
     fontWeight: 400
     lineHeight: 1.625
-    letterSpacing: "normal"
   label:
     fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif"
-    fontSize: "0.6875rem"
-    fontWeight: 600
-    lineHeight: 1
-    letterSpacing: "0.05em"
-  mono:
-    fontFamily: "ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+    fontSize: "0.875rem"
+    lineHeight: 1.428571
+  caption:
+    fontFamily: "Inter, ui-sans-serif, system-ui, sans-serif"
     fontSize: "0.75rem"
-    fontWeight: 400
     lineHeight: 1.625
-    letterSpacing: "normal"
 rounded:
-  micro: "2px"
-  sm: "4px"
   md: "6px"
   lg: "8px"
+  xl: "12px"
+  2xl: "16px"
   pill: "9999px"
 spacing:
-  xs: "6px"
   sm: "8px"
   md: "12px"
   lg: "16px"
+  card: "20px"
   xl: "24px"
-  section: "64px"
-  section-lg: "96px"
+  section: "32px"
 components:
   button-primary:
     backgroundColor: "{colors.ember}"
     textColor: "{colors.ink-soft}"
-    rounded: "{rounded.md}"
-    padding: "8px 16px"
-    height: "44px"
+    rounded: "{rounded.xl}"
+    padding: "12px 20px"
+    typography: "{typography.label}"
   button-primary-hover:
     backgroundColor: "{colors.ember-soft}"
-    textColor: "{colors.ink-soft}"
   button-secondary:
     backgroundColor: "{colors.ink-soft}"
     textColor: "{colors.fog}"
     rounded: "{rounded.md}"
     padding: "8px 12px"
-    height: "44px"
-  button-secondary-hover:
-    backgroundColor: "{colors.ink-soft}"
-    textColor: "{colors.fog}"
   chip-filter:
     backgroundColor: "{colors.ink-soft}"
-    textColor: "{colors.mute}"
-    rounded: "{rounded.md}"
-    padding: "8px 16px"
-    height: "44px"
-  chip-filter-active:
-    backgroundColor: "{colors.ink-sel}"
     textColor: "{colors.fog}"
-    rounded: "{rounded.md}"
+    rounded: "{rounded.pill}"
+    padding: "8px 16px"
+  chip-filter-active:
+    backgroundColor: "{colors.fog}"
+    textColor: "{colors.ink-soft}"
+    rounded: "{rounded.pill}"
   input-search:
     backgroundColor: "{colors.ink-soft}"
     textColor: "{colors.fog}"
-    rounded: "{rounded.lg}"
-    padding: "14px 16px 14px 44px"
-    width: "100%"
-  badge-free:
-    backgroundColor: "{colors.grass-bg}"
-    textColor: "{colors.grass}"
-    rounded: "{rounded.sm}"
-    padding: "2px 8px"
-  badge-credit:
-    backgroundColor: "{colors.grape-bg}"
-    textColor: "{colors.grape}"
-    rounded: "{rounded.sm}"
-    padding: "2px 8px"
+    rounded: "{rounded.2xl}"
+    padding: "8px 8px 8px 16px"
   card-surface:
     backgroundColor: "{colors.ink-soft}"
     textColor: "{colors.fog}"
-    rounded: "{rounded.lg}"
+    rounded: "{rounded.2xl}"
     padding: "20px"
-  nav-pill:
+  navigation:
     backgroundColor: "{colors.ink-soft}"
     textColor: "{colors.mute}"
-    rounded: "{rounded.pill}"
-    padding: "8px 12px 8px 20px"
-  code-block:
-    backgroundColor: "{colors.ink}"
-    textColor: "{colors.fog}"
-    typography: "{typography.mono}"
-    rounded: "{rounded.md}"
-    padding: "14px 16px"
+    padding: "8px 16px"
 ---
 
 # Design System: tokengratis.id
 
-## 1. Overview
+## Overview
 
 **Creative North Star: "The Field Notebook"**
 
-This is the notebook of someone who actually went and checked. Warm paper stock (`#f1f0e8`),
-Georgia set tight, ruled lines instead of drop shadows, and a marginal note under every single
-entry telling you where it came from and when. The page never claims authority — it shows its
-sources and lets you follow them. That is the whole aesthetic argument: a directory that earns
-trust by exposing its own paper trail rather than by looking expensive.
+The established Field Notebook identity now serves a light paper utility catalog. Georgia gives page titles and the wordmark a familiar editorial voice; Inter carries controls, provider names, and working section headings. White panels, quiet rules, and visible source links keep the interface practical and candid.
 
-Density is deliberately high. The audience is a developer on a phone, mid-task, comparing free
-tiers — they want a page of rows, not a page of hero sections. So the system runs on one wide
-content column (`max-w-5xl`, 1024px), 1px rules in `#e4e2d8` doing all the structural work, and
-a single pure-black accent reserved for the one thing on screen you're supposed to click. There
-are exactly two decorative gestures in the entire system: the floating navbar pill and the green
-freshness dot. Everything else is information.
-
-What this explicitly rejects: the word **"Verified"** anywhere on the surface, and the whole SaaS
-landing-page grammar — gradient hero text, glassmorphism, big-number hero metrics, an uppercase
-tracked eyebrow above every section, 01/02/03 section scaffolding. It also rejects fake
-completeness: a field with no source data is removed from the DOM, never rendered as a hollow cell.
-The serif is a bet that a directory can read like an editorial page and still be a tool.
+This record merges the incumbent identity with source inspected on 2026-09-09. It covers the homepage directory, provider detail, modality listings, and shared navigation/footer. Secondary tools retain their existing layouts and smaller component variants. No browser, screenshot, computed-style, or visual verification was performed; historical accessibility measurements in PRODUCT.md are not fresh validation of this build.
 
 **Key Characteristics:**
-- Paper-warm neutral surface with pure-white cards floating on it — two-layer, never three
-- Georgia serif for every heading; Inter for every piece of UI text, data, and label
-- Flat by construction: 1px borders and surface swaps carry depth, not shadows
-- Pure black (`#000000`) is the only action color, used on ~1 element per screen region
-- Green means "free", purple means "credit" — semantic, never decorative
-- Every datum carries a visible `Disinkron [tanggal] dari [sumber]` receipt
-- 44px minimum touch target on every standalone control; inline prose links exempt
-- Mobile and desktop are separate renders of the same row, not one layout squeezed
+- Light paper ground and white information surfaces.
+- Editorial page titles; plain sans-serif working hierarchy.
+- Dark controls and selected states; green free-information text.
+- Visible source attribution and progressively disclosed secondary detail.
 
-## 2. Colors
+## Colors
 
-A warm paper ground, a cool near-black ink, and two semantic accents that only ever mean one
-thing each. Restrained strategy: the accent budget for a given screen is roughly one primary
-button plus whatever green the data actually earns.
+The palette remains low-chroma paper and cool dark ink; the lightened paper value in frontmatter is the current CSS value, superseding the old value in AGENTS.md and stylesheet comments.
 
 ### Primary
-- **Ink Black** (`#000000`): The single action color. Primary buttons ("Lihat direktori", the
-  per-row "Lihat" CTA), the selected state of snippet-target tabs, the current page in pagination,
-  and `::selection`. Pure black on paper is the highest-contrast affordance available and it costs
-  no hue — the palette stays quiet while the click target stays obvious. Hover deepens to
-  **Ink Black Soft** (`#1a1a1a`), a barely-perceptible lift that confirms the pointer without
-  flashing.
+- **Ember / Ember Soft:** Black action fill and its hover state. The name is inherited; orange is not active.
+- **Fog:** Primary text, dark selected need chips, input focus, and native checkbox accent.
 
 ### Secondary
-- **Grass Green** (`#0e793c`): Means *free*, and only that. Free-tier amounts in the directory
-  ("Gratis: 1M token/hari"), the `free_tier` badge, "bisa buat indie Indonesia". Paired with
-  **Grass Wash** (`#e8faf0`) as the badge fill and **Grass Line** (`#a2e9c1`) as its hairline.
-  Text-on-wash measures 5.07:1. **Grass Solid** (`#00a63e`) is reserved for the 8–10px freshness
-  dot — the one place the palette is allowed to be bright, because it is signalling liveness.
+- **Grass:** Free-tier information in provider cards and detail. Green washes, outlines, and status dots remain in secondary offer/open-source/status surfaces.
 
 ### Tertiary
-- **Grape Violet** (`#7c3aed`): Means *credits* — a finite dollar amount, categorically different
-  from a recurring free tier. Credit-value badges on `/modal-gratis`, secondary categorization.
-  Paired with **Grape Wash** (`#f4f3fb`) and **Grape Line** (`#d8cef2`); text-on-wash is 5.17:1.
-  Also appears as the `code` modality icon hue.
+- **Grape family:** Retained for existing offer-credit and open-source categorization. It is not a modality palette for the refreshed discovery cards.
 
 ### Neutral
-- **Paper** (`#f1f0e8`): The page ground. Warm, low-chroma, and load-bearing — it is what makes
-  white cards read as *cards* without a single shadow. Also the recessed fill for code blocks,
-  `.env` panes, small buttons, and category tags.
-- **Card White** (`#ffffff`): Every raised surface — directory table, offer cards, panels, inputs,
-  the navbar pill, the mobile menu.
-- **Rule** (`#e4e2d8`): Every border, divider, table rule, and `divide-y`. This color does the job
-  a shadow would do in another system.
-- **Selected** (`#dedbcb`): The fill for a *chosen* multi-select control — currently only the
-  filter chips. Deliberately not load-bearing: a tonal fill can never reach the 3:1 that WCAG
-  1.4.11 demands for component state without turning into a black chip (you'd need relative
-  luminance ≤0.30). State is carried by a solid Mute border plus a `✓`; this fill is the
-  at-a-glance cue that lets you scan a row of chips without reading each border.
-- **Fog Ink** (`#11181c`): Primary text. A cool near-black, deliberately not `#000` — black is
-  spent on buttons, so body copy sits one notch back at 15.6:1 on paper.
-- **Mute** (`#5f6a70`): Secondary text, labels, table headers, source lines, placeholders. Measures
-  4.85:1 on paper and 5.55:1 on white — it clears AA as *body* text, which is why the source
-  receipts can safely live in it at 11px.
+- **Ink / Ink Soft:** Paper page ground and white card, field, and navigation surfaces.
+- **Ink Line:** Fine separators and inactive control borders.
+- **Ink Sel:** Tonal hover fill for provider action links; legacy selection treatments also remain.
+- **Mute:** Supporting prose, source receipts, placeholders, and inactive navigation.
 
-### Modality Hues (functional, not palette)
-Eight icon-only hues distinguish capability at a glance in a 3-column icon grid: slate `#475569`
-(text), blue `#2563eb` (vision), green `#0d7a56` (image), amber `#b45309` (audio), rose `#e11d48`
-(video), violet `#7c3aed` (code), cyan `#0891b2` (embeddings), pink `#db2777` (reranking). All are
-pre-darkened to clear 3:1 as non-text graphics on white. These are a lookup table, not brand
-colors — never borrow one for a button, background, or heading.
+**The Semantic Accent Rule.** Use green for free-information emphasis in the discovery flow. Keep action and selected controls in the dark neutral palette; legacy tools retain their existing semantic green and purple treatments.
 
-### Named Rules
+## Typography
 
-**The One Black Rule.** `#000000` marks the primary action and nothing else. If a screen region
-has two black elements competing, one of them is decoration and must be demoted to the outlined
-secondary button. Black is never a background, never a heading color, never a border.
+**Display Font:** Georgia, with Times fallbacks; this is the explicitly retained incumbent brand face.
+**Body Font:** Inter, with sans-serif fallbacks. Existing code and model identifiers retain system monospace.
 
-**The Semantic Accent Rule.** Green means free. Purple means credit. Neither color may be used
-because a section "needed some color." A page with no free tiers on it shows no green, and that
-is correct.
+The refreshed hierarchy steps from 30–48px editorial titles into 18–24px sans-serif working headings, then 14–16px body text and 12px supporting copy. The homepage title uses 36px then 48px at the small breakpoint, with 1.12 line-height; that composition belongs to its surface brief. Provider titles step from 30px to 36px. Provider card names use 18px/600 and 1.375 line-height. Recurring detail section titles use the title token; the results heading grows to 24px at the small breakpoint. Body descriptions use the body token; form and navigation labels use normal case, with weight selected by function.
 
-**The Two-Layer Rule.** Paper ground, white surface. That's the entire depth model. A white card
-inside a white card is forbidden; recess with Paper (`#f1f0e8`) instead — which is exactly what
-code blocks and `.env` panes do.
+Global headings default to Georgia with −0.02em tracking; explicit tight-tracking utilities use −0.025em. Explicit sans-serif headings override the global family. SourceLine still uses 11px text; it is recorded below as a limitation, not as a recommended caption token.
 
-## 3. Typography
+**The Working Type Rule.** Use Inter for controls, provider names, and operational section headings. Keep Georgia for editorial page titles and the established wordmark.
 
-**Display Font:** Georgia (with `"Times New Roman", Times, serif`)
-**Body Font:** Inter (with `ui-sans-serif, system-ui, sans-serif`), weights 400/500/600/700
-**Mono Font:** the system mono stack (`ui-monospace, SFMono-Regular, Menlo, Consolas`)
+## Layout
 
-**Character:** A true contrast pairing — an old-style serif with real thick/thin modulation against
-a neutral grotesque. Georgia is the notebook's handwriting: it appears on headings and on the two
-first-person asides, and nowhere else. Inter is the ruled data underneath it. The pairing works
-precisely because the two fonts share nothing; a second sans would have been mush. Georgia is also
-a free, universally-installed, zero-request font, which is the maintenance-free posture the whole
-project runs on.
+Refreshed pages share a centered 1152px maximum container. Main content uses 20px horizontal gutters, increasing to 32px at 640px; navigation and footer use 16px then 24px. Provider cards stack at narrow widths and form two columns from 768px, with 24px horizontal gaps. Repeated panel padding steps from 20px to 24px at 640px. Spacing is predominantly in 4px increments; 8/12/16/20/24/32px form the reusable rhythm.
 
-### Hierarchy
-- **Display** (Georgia 500, 2.25rem → 3rem @640px → 3.75rem @768px, line-height 1.04,
-  letter-spacing −0.02em): The page `h1` only. Breakpoint-stepped, never `clamp()` — this is a tool,
-  and fluid type that resizes mid-scroll looks unstable in a data view. Ceiling is 3.75rem (60px),
-  well under the shouting threshold.
-- **Headline** (Georgia 600, 1.875rem, letter-spacing −0.02em): Section headings ("Cara kerja") and
-  page titles on `/pilih`, `/fallback`, `/modal-gratis`.
-- **Title** (Georgia 600, 1rem, letter-spacing −0.02em): Card and panel headings. Small enough that
-  the serif reads as *voice* rather than as a competing display element.
-- **Body** (Inter 400, 0.875rem, line-height 1.625): All prose, descriptions, table cells. The lede
-  paragraph steps up to 1rem → 1.125rem @640px. Prose blocks cap at `max-w-2xl`/`max-w-xl` (~65ch);
-  the directory table is allowed to run the full 1024px because dense tabular data reads fine wide.
-- **Label** (Inter 600, 0.6875rem, letter-spacing 0.05em, UPPERCASE): Table column headers, panel
-  headers, `dt` terms in the mobile model list. Uppercase is licensed **only** as a table/panel
-  header — it is structural, not an eyebrow.
-- **Mono** (system mono, 0.6875–0.75rem): Model IDs, code snippets, `.env` keys. Anything a user
-  will copy into a terminal is mono; anything they'll read is not.
+Provider detail becomes a flexible main column plus a 320px sidebar at 1024px, with a 40px gap and a sticky sidebar 96px from the top. At smaller widths it remains in document flow. Secondary tools retain narrower containers and their pre-existing layouts. Discovery sequence and result count are documented in `.impeccable/surfaces/token-discovery.md`, not imposed on every page.
 
-### Named Rules
+## Elevation & Depth
 
-**The Serif-Is-Voice Rule.** Georgia appears on `h1`–`h4` and on the two first-person asides on the
-homepage ("Kenapa gw bikin ini…"). It is forbidden in buttons, labels, table cells, data, form
-controls, and any UI chrome. The moment a serif shows up on a button, the page stops being a tool.
+The refreshed flow is flat: white surfaces on paper, thin borders, and occasional paper recesses. The old floating-pill navbar shadow and translucent blur are absent from the current Navbar; neither remains a token. Focus is an interaction signal rather than decorative elevation: the global rule provides a 2px Fog outline with 3px offset. Some established controls use a 2px Fog-at-70% ring instead; the search group uses a 2px focus-within ring.
 
-**The Uppercase Budget Rule.** Uppercase tracked text is permitted for table column headers, panel
-headers, and definition-list terms. It is forbidden above a section heading. An uppercase kicker
-over every section is the AI tell this project exists to avoid.
+**The Ruled Surface Rule.** Separate content with a surface change or a thin border. The refreshed navigation, cards, and panels carry no decorative shadow.
 
-**The Copyable-Is-Mono Rule.** If the user is meant to select it and paste it somewhere, it renders
-mono — model IDs, base URLs, env keys, snippets. No exceptions in either direction.
+Navigation crossfades use 200ms ease only when reduced motion is not requested. Reduced-motion CSS removes those animations and pulsing status animation. Standard control transitions change colors; the build does not establish a general entrance-animation system.
 
-## 4. Elevation
+## Shapes
 
-This system is **flat by construction**. Depth is communicated by surface swap (Paper `#f1f0e8` →
-Card White `#ffffff`) and by 1px `#e4e2d8` rules — the same way a ruled notebook page separates
-entries. There is exactly **one** shadow token in the entire codebase, and it exists solely to lift
-the navbar off content it scrolls over.
+Soft rectangular panels use the 16px radius, action buttons and disclosure panels use 12px, and secondary links/selects use 8px. Need chips are fully rounded. Existing pagination retains 6px corners; legacy badge and code variants retain their smaller radii. This is a family of functional shapes, not a universal pill rule. Ordinary borders are 1px; the search border is Mute for stronger field definition.
 
-Recession is expressed the same way, inverted: code blocks, `.env` panes, small ghost buttons, and
-category tags sit on Paper *inside* a white card, so they read as pressed into the surface. Grouped
-cards use a `gap-px` grid over a `#e4e2d8` background — the "shadow" between the three "Cara kerja"
-panels is literally a 1px rule showing through.
-
-### Shadow Vocabulary
-- **Floating chrome** (`box-shadow: 0 8px 30px rgba(17, 24, 28, 0.06)`): The sticky navbar pill and
-  the mobile menu panel. Uses Fog Ink at 6% rather than neutral black, so the shadow is tinted to
-  the same cool ink as the text and never reads gray-on-warm. This is the only shadow in the system.
-
-### Named Rules
-
-**The One-Shadow Rule.** `0 8px 30px rgba(17,24,28,0.06)` is used on floating chrome and nothing
-else. A card, panel, badge, button, or dropdown that reaches for a shadow is wrong — give it a
-`#e4e2d8` border or swap its surface instead. Audit test: if two elements on the same screen cast
-shadows, one is decoration.
-
-**The Hairline Rule.** All borders are exactly 1px `#e4e2d8`. A thicker or colored border is only
-permitted where it is a semantic badge outline (`#a2e9c1` grass, `#d8cef2` grape) or the fill-matched
-outline of an active black control. Colored side-stripes are forbidden outright.
-
-## 5. Components
-
-Everything interactive is at least 44px tall. Every interactive element uses the same focus
-treatment: `focus-visible` only, `ring-2` in Fog Ink at 70% opacity — full-bleed row links use
-`ring-inset` so the ring stays inside the table.
+## Components
 
 ### Buttons
-- **Shape:** Gently squared (6px radius) for standard actions; 4px for compact in-panel controls;
-  fully round (`9999px`) for the navbar CTA and the "reset filter" escape hatch.
-- **Primary:** Pure black fill (`#000000`), white text, 600 weight, `8px 16px` padding, 44px min
-  height. Hover deepens to `#1a1a1a`. Reserved for one control per screen region — the directory
-  rows deliberately do *not* use it (see the secondary treatment below and the One Black Rule).
-- **Secondary / Ghost:** White fill, `#e4e2d8` border, Fog Ink text. Hover shifts the border to Mute
-  (`#5f6a70`) — the border moves, not the fill. Active presses to `#e4e2d8` at 60%.
-- **Recessed (in-panel):** Paper fill (`#f1f0e8`) on a white card, 4px radius, used for "Salin",
-  pagination inside `ModelsTable`, and the model `<select>`.
-- **Disabled:** 40% opacity + `cursor-not-allowed`. Never a color change.
-- **Focus:** `ring-2 ring-fog/70`, `focus-visible` only. Native outline is always replaced, never
-  merely removed.
+
+Primary actions use black fill, white 14px semibold type, 12px corners, and at least 48px height. Provider-start actions use 12px vertical and 20px horizontal padding; the search action uses the same horizontal inset. Hover uses Ember Soft. Pagination's secondary buttons remain white with a thin rule, 6px corners, 8px/12px padding, and at least 44px height; hover darkens the border, press adds a tonal fill, and disabled controls have 40% opacity.
 
 ### Chips
-- **Style:** 6px radius, 44px min height, `16px` horizontal padding, 13px Inter 500. Unselected is
-  white with a `#e4e2d8` border and Mute text; hover moves the border to Mute and the text to Fog.
-- **State:** Selected is Selected fill (`#dedbcb`) + a **solid** Mute border (`#5f6a70`, no opacity
-  modifier) + Fog Ink text at 600 + a leading `✓`. Tonal, not black, because filter chips are
-  multi-select and several can be on at once. The border and the glyph are what satisfy WCAG 1.4.11
-  (4.85:1 against paper, 5.55:1 against the white inactive chip); the fill alone is 1.44:1 and is a
-  scanning aid, not the state carrier. `aria-pressed` carries the state for assistive tech.
-- **Counts:** A chip may render a trailing count — the number of results you'd get by clicking it.
-  Under this project's AND filter semantics that count *is* the explanation of the semantics, which
-  is why there is no helper text. Count color is Mute when inactive, but `text-fog/70` when active
-  (Mute over the Selected fill measures 3.99:1 and fails AA at that size).
-- **Overflow:** Inside the panel the chip row **wraps at every breakpoint**. It must never scroll
-  horizontally: a scrolling row hides facets and lets the reset control slide off-screen, and
-  `overflow-x-auto` forces `overflow-y: auto`, which clips the focus ring.
-- **Chips live inside a closed panel, not on the page.** See the Filter Bar below.
 
-### Filter Bar (signature component)
-One component for every list surface (`/`, `/pilih`, `/modal-gratis`, `/opensource`), because five
-surfaces with five interaction grammars means nothing a user learns on one page transfers to the
-next. Locked order: search → control row → active pills → panel.
-
-**At rest it shows one control.** Search, a single `Filter` button, and sort. Nothing else. An
-earlier version rendered every chip up front — grouped and labelled — and that was wrong: grouping
-*tidies* a wall of 23 buttons, it doesn't reduce it. The real defect was inverted emphasis —
-*unselected* options shouted (23 bordered, filled boxes) while *selected* ones whispered.
-
-**Selected state is the loud one.** Active filters render as removable pills (`Vision ✕`) plus
-`Reset`, always visible without opening anything. The panel carries the full grouped chip set and
-opens only on request.
-
-**The panel is a disclosure in normal flow, never a popover** — no position math, and it cannot be
-clipped by an `overflow: hidden` ancestor. It is **mounted and unmounted**, never class-toggled.
-
-**The Rest-Is-Quiet Rule.** A filter surface at rest shows the count of *active* filters, never the
-menu of available ones. Audit test: count the buttons visible before the user has done anything —
-if it's more than search + filter + sort, the emphasis is inverted.
+Quick-need controls wrap and have at least 44px height, pill corners, 8px/16px padding, normal-case 14px labels, and `aria-pressed`. Inactive chips are white with a thin rule; hover darkens the border. Selected chips use Fog fill, matching border, and white text. Advanced combined needs use labeled native checkboxes rather than this single-need selection pattern.
 
 ### Cards / Containers
-- **Corner Style:** 8px for cards and panels. This is the largest radius in the system that isn't a pill.
-- **Background:** Card White on Paper.
-- **Shadow Strategy:** None. See Elevation.
-- **Border:** 1px `#e4e2d8`, always.
-- **Internal Padding:** `20px` (panels, offer cards) or `24px` (prose cards). Interactive cards
-  shift their border to Mute on hover; they do not lift, scale, or shadow.
-- **Grouped cards:** `grid gap-px` on a `#e4e2d8` background inside an `overflow-hidden` 8px
-  container — dividers become the rules of the grid.
+
+ProviderCard and the provider-start panel share white fill, a thin rule, 16px corners, and responsive 20px/24px padding. Cards use Inter names, green sourced free information, readable modality text, and source links. Descriptions wrap without a line clamp. Provider navigation actions sit beneath the information panel; they are separate links with at least 44px height and a tonal hover background. The whole panel is not a wrapping anchor.
 
 ### Inputs / Fields
-- **Style:** White fill, 1px `#e4e2d8`, 8px radius on the primary search field (4px on in-panel
-  ones). The search field is 14px vertical padding with a 44px left inset for the icon.
-- **Focus:** Border shifts to Fog at 40% *and* `ring-2 ring-fog/70`. Both, not either.
-- **Placeholder:** Mute (`#5f6a70`) — chosen because it clears 4.5:1, not because it looked soft.
-- **Select:** Native `<select>`, `min-h-[44px]`, styled to match the recessed button. Native form
-  controls are kept native.
+
+The discovery search is a white 16px-radius group with a Mute border and internal search icon, input, and submit action. Its input is at least 48px tall, 16px type, and transparent inside the group. Group focus stays visible even though the input removes its own outline. Sorting uses a native select with at least 44px height, white fill, thin rule, and 8px corners.
 
 ### Navigation
-- **Style:** A sticky floating pill — `max-w-5xl`, fully rounded, white at **95%** with
-  `backdrop-blur`, 1px `#e4e2d8`, and the system's one shadow. `top-3`, `z-50`. 95%, not 90%: at 90%
-  the dense directory rows scrolling underneath stayed legible *through* the pill, slicing text
-  mid-line. Translucency over a data list is a legibility cost, not a material.
-- **CTA:** The `Lihat direktori` pill is black on every route except `/`, where it is demoted to the
-  secondary treatment — on the homepage it only scrolls to a section already below the fold, and
-  spending the region's single black on a near-no-op is exactly what the One Black Rule forbids.
-- **Typography:** 14px Inter 500 in Mute; active and hover resolve to Fog Ink. `aria-current="page"`
-  marks the active route.
-- **Mobile:** Below `lg` the center links collapse behind a 44px hamburger — `lg`, not `md`,
-  because five labels plus logo, flag and CTA need ~392px of text alone and only ~360px exists
-  at 768px. (The previous four labels didn't fit either; flex was silently squeezing them.) The panel is
-  **mounted and unmounted**, never toggled via visibility/max-height classes, and renders as a
-  *sibling* of the pill rather than a child — the pill's `rounded-full` + `backdrop-blur` creates a
-  stacking context that clips absolutely-positioned children. Closes on route change, outside
-  pointerdown, and Escape (returning focus to the button).
 
-### Directory Row (signature component)
-Two separate renders of the same record — a mobile card and a `md:grid` row — never one layout
-squeezed. The row is **not** a single wrapping anchor: it carries real source links (`SourceLine`,
-plus the `Ga ada di sumber` receipt), and an `<a>` inside an `<a>` is invalid markup that browsers
-silently un-nest. Navigation lives on two explicit links instead — the provider identity block
-(logo + name + meta, `min-h-[44px]`) and the `Lihat` control — with `hover:bg-ink/40` and
-`focus-within:bg-ink/40` keeping the whole row reactive. Any field with no source data is omitted
-outright on mobile; on desktop the grid cell renders empty, never a dash.
+Navbar is a full-width sticky white header at top zero with a bottom rule. Its centered content wraps the link row below the brand on small screens, then uses one row from 640px. The wordmark is Georgia 20px/500; navigation links are Inter 14px/500. Dark text marks active and open states. The Lainnya disclosure is a right-aligned white bordered panel, 224px wide, with 12px corners. It closes on outside pointer, route change, focus departure, or Escape; Escape returns focus to its trigger. The footer uses a native disclosure for secondary links and data resources.
 
-### Source Line (signature component)
-The component the whole project exists for. An 11px Mute line reading
-`Disinkron 27 Jul 2026 dari mnfst/awesome-free-llm-apis`, where the source name is an underlined
-external link with a `#e4e2d8` decoration that darkens to Fog on hover. When the upstream data
-itself changed it appends `· sumber diperbarui [tanggal]` — two distinct signals, because a sync
-timestamp is proof of liveness, not proof the data moved. It renders on every provider, every
-model, every offer. It is never styled to be quiet enough to miss.
+### Source receipts and disclosures
 
-### Code Block (signature component)
-Paper-recessed (`#f1f0e8`) inside a white card, 6px radius, 1px rule, 12px mono at 1.625 line-height,
-`overflow-x-auto` with `pr-20` reserved for a floating "Salin" button pinned top-right. The copy
-button reports all three states in a `role="status"` span: `Salin` → `Tersalin` (1.6s) →
-`Gagal — salin manual` (4s) when the clipboard API is refused. A copy button that silently does
-nothing is a broken affordance.
+SourceLine presents sync date and linked source names; source-update time is separate when available. Provider cards show the first source plus a link to additional sources. Provider detail keeps attribution visible in the sidebar while setup code and technical metadata use native details/summary. Existing source and code components are retained rather than redesigned.
 
-## 6. Do's and Don'ts
+## Do's and Don'ts
 
 ### Do:
-- **Do** render the `SourceLine` receipt on every surface that displays synced data — `Disinkron
-  [tanggal] dari [sumber]` with the source name as a live external link.
-- **Do** give every standalone control `min-h-[44px]` and a `focus-visible:ring-2 ring-fog/70`.
-  Links inline in running prose are exempt from the size rule (WCAG 2.5.8 exempts them, and padding
-  a link mid-sentence wrecks line rhythm for zero conformance gain) — but link *lists* formatted as
-  prose, like the footer's `Jelajah:` / `Alat:` rows, are not sentences and do get padded. The focus
-  ring has no exemptions.
-- **Do** carry selected-state contrast on a border and a glyph, not on a fill. A tonal fill cannot
-  reach WCAG 1.4.11's 3:1 without becoming a black control; check the *border* against both
-  adjacent surfaces instead.
-- **Do** carry depth with a 1px `#e4e2d8` border or a surface swap. Reach for `#f1f0e8` to recess
-  and `#ffffff` to raise.
-- **Do** keep Georgia on `h1`–`h4` and Inter on everything a user operates.
-- **Do** gate `min-w-[...]` behind a `md:` breakpoint whenever the row has its own mobile layout,
-  and give grid items an explicit `min-w-0` — an unshrinkable child is the single cause of every
-  horizontal-scroll bug this project has shipped.
-- **Do** mount and unmount conditional UI. Never gate content visibility behind a class transition;
-  transitions don't fire in background tabs or headless renders and the feature ships dead.
-- **Do** pair every animation with a `prefers-reduced-motion: reduce` alternative, including
-  Tailwind's `animate-pulse`, whose keyframes are unconditional.
-- **Do** verify a responsive change by measuring the DOM at 375px. `tsc` and `next build` are
-  structurally blind to layout.
+- Do keep source names as usable links beside sync information.
+- Do give standalone controls at least 44px height and a visible keyboard focus treatment.
+- Do let cards and controls wrap, with shrinkable content columns and wrapping long descriptions.
+- Do retain reduced-motion handling for navigation transitions and pulsing status indicators.
 
 ### Don't:
-- **Don't** use the word **"Verified"**, or any phrasing that claims this site checked something.
-  The line is always "Synced [tanggal] dari [sumber]". This is the project's hard ban.
-- **Don't** render **"Unknown"**, **"N/A"**, **"—"**, or a guessed boolean in place of a missing
-  field. If a source doesn't provide the field in structured form, the field must not render at all.
-  In a flow layout, omit the element entirely; in a grid or table where the track must stay aligned,
-  render the cell **empty**. An empty cell reads "not provided"; an em dash reads "we checked, it's
-  nothing." Where the absence is itself interesting — a free-tier amount the source never published
-  — the strongest move is to replace the hole with the receipt: a quiet `Ga ada di sumber` linking
-  to that provider's source.
-- **Don't** import SaaS landing-page grammar: no gradient hero text, no glassmorphism, no
-  big-number hero metrics, no uppercase tracked eyebrow above every section, no 01/02/03 scaffolding.
-- **Don't** add a `box-shadow` to a card, badge, button, or panel. The system has one shadow and it
-  belongs to floating chrome.
-- **Don't** use `border-left` or `border-right` above 1px as a colored accent stripe. The "Jebakan"
-  callout on `/modal-gratis` shows the correct pattern: recessed background + border + icon + label.
-- **Don't** spend green or purple on decoration. Green is free-tier, purple is credits; a section
-  that needs "some color" doesn't get any.
-- **Don't** put a second black element in a screen region. One primary action, one black.
-- **Don't** introduce a display font, a second sans, or a new hue without deleting something first.
-  The palette is 14 tokens and the type system is 2 families, on purpose.
-- **Don't** build for a community that doesn't exist: no voting, comments, submission forms, user
-  accounts, or admin panels.
-- **Don't** use `clamp()` for headings. This is a tool; the type scale steps at breakpoints.
+- Don't claim independent verification of aggregated data.
+- Don't invent missing provider fields or fill their place with guessed values.
+- Don't introduce decorative kickers, gradient headline text, or glass surfaces.
+- Don't treat the legacy secondary tools as evidence that the refreshed discovery flow still uses a dense provider table.
+
+**Not canonized:** 11px source receipts, Unicode arrow/plus/minus action icons, and the green hover on the homepage helper link remain source-level limitations: small attribution needs visual legibility review, glyph icons are not reusable icon assets, and that green hover does not establish a second action palette. Historical contrast/accessibility claims and obsolete hidden-filter/table/navbar prescriptions were not carried forward as current guarantees.

@@ -85,8 +85,8 @@ export interface Provider {
 }
 
 /**
- * Versi ramping buat tabel direktori (client). Sengaja TANPA models[]/baseUrl/
- * url biar payload yang dikirim ke client kecil. `searchText` =
+ * Versi ramping buat direktori (client). Sengaja TANPA models[]/baseUrl
+ * biar payload yang dikirim ke client kecil. `searchText` =
  * name + nama/id model (di-precompute) biar search tetep jalan.
  *
  * `sources` SENGAJA dibawa walau nambah payload (~4KB buat 24 provider):
@@ -97,6 +97,8 @@ export interface Provider {
 export interface ProviderListItem {
   slug: string;
   name: string;
+  /** Halaman resmi dari sumber; tidak diisi dari tebakan domain. */
+  url: string | null;
   logo: string | null;
   flag: string | null;
   category: ProviderCategory | null;

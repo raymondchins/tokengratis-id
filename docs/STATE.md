@@ -2,7 +2,7 @@
 
 > **Auto-read on demand** — when prompt asks "current state", "what phase", "what's deployed", "what's blocked". Update on every meaningful push.
 >
-> **Last updated:** 2026-07-25
+> **Last updated:** 2026-09-10
 
 ## Project Summary
 
@@ -11,6 +11,8 @@
 **Vercel fallback:** https://tokengratis-id.vercel.app
 
 ## Current phase
+
+**Token-discovery UX refresh (2026-09-10):** Homepage search and plain-language needs lead to six provider cards per page and simpler provider setup pages. Primary navigation is Cari token / Cara pakai / Lainnya. Advanced filters and code snippets are disclosed on demand; legacy URL parameters and all secondary routes remain available. Data ingestion and schema facts are unchanged. TypeScript, production build, pipeline self-tests, and `node scripts/check-directory.mjs` passed locally; no visual/browser verification performed. The dated phase/data counts below are historical snapshots.
 
 **Phase 6 — dari direktori jadi alat (Pilih → Pasang → Jaga).** Data layer tetap sama (pipeline nightly 4 sumber, **24 provider / 397 model**, dihitung ulang dari `data/providers.json` 2026-07-25). Yang baru: situs ga cuma nampilin daftar, tapi ngebantu user milih, masang, dan tau kalau berubah.
 

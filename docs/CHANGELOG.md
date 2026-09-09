@@ -168,3 +168,16 @@ tail -10 docs/CHANGELOG.md
 4. Markup drift fallback: edit freellm/cheahjs HTML structure → sync tetap jalan (LLM rescue) kalau `ANTHROPIC_API_KEY` ada.
 5. Rolling baseline: baseline mencatat baseline sebelumnya, >25% diff block push.
 
+
+### 2026-09-10 — Simplify token discovery and provider setup
+
+**Trigger / context:** Visitors found the previous directory and navigation confusing.
+
+**Changes:** Search and plain-language needs lead the homepage; six providers per page, shared cards on modality pages, a smaller navigation menu, and provider details ordered around getting started. Advanced filters and setup code use progressive disclosure. Existing URL filters, provenance, secondary routes, and the data pipeline are preserved.
+
+**Validation:** Final local production build and TypeScript passed after fast-forwarding nightly data to `23cc005`; `npm test` and `node scripts/check-directory.mjs` passed. No browser/visual verification performed.
+
+**Test cases (after deploy):**
+1. Home → choose Gambar and Context terbesar → matching providers; refresh retains filters.
+2. Provider → Cara pakai → official provider link; expand code examples → model/SDK selectors and copy actions available.
+3. Search a nonexistent model → empty state; reset → all providers reachable through pagination.

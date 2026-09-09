@@ -2,19 +2,13 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Link } from "next-view-transitions";
 import Navbar from "@/components/Navbar";
-import ProviderLogo from "@/components/ProviderLogo";
+import ProviderCard from "@/components/directory/ProviderCard";
 import { MODALITY_ORDER, modalityLabel, SourceLine } from "@/components/directory/Badges";
 import { getAllProviders, getLastUpdated } from "@/lib/data";
 import { ctxNum } from "@/lib/ctxnum";
 import type { Modality, Model, Provider, SourceRef } from "@/lib/types";
 
 const BASE = "https://tokengratis.id";
-
-// CTA sekunder — SAMA persis sama treatment ProviderRow di DirectoryClient.tsx
-// (putih + garis, bukan hitam). Row ini juga cuma satu screen region punya CTA
-// hitam; 11 tombol "Lihat" hitam ditumpuk ngelanggar One Black Rule (DESIGN.md).
-const CTA_SECONDARY =
-  "inline-flex min-h-[44px] shrink-0 items-center rounded-[6px] border border-ink-line bg-ink-soft px-4 text-sm font-semibold text-fog transition-colors group-hover:border-mute focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70";
 
 /**
  * Facet pages only exist for modalities that clear a thin-content floor:
@@ -153,13 +147,7 @@ export default async function GratisModalityPage({
   const label = modalityLabel(facet);
   const syncedLabel = fmtDate(getLastUpdated());
 
-  // Kuitansi level-facet, BUKAN per-row — 24 baris x 3-4 nama sumber nyaris
-  // identik cuma numpukin tinggi row buat sinyal yang sama (WHY 2026-07-27,
-  // docs/log.md, kenapa SourceLine dicabut dari ProviderRow di /). Di sini
-  // rownya cuma 3 kolom data (bukan 4+ kayak direktori), tapi prinsipnya sama:
-  // satu kuitansi yang nutupin facet secara keseluruhan, bukan diulang 11x.
-  // Diambil dari sumber-sumber provider yang BENERAN nyumbang facet ini (bukan
-  // getSources() global yang ngitung semua provider di seluruh situs).
+  // Aggregate only sources from providers that actually contribute to this facet.
   const facetSources: SourceRef[] = (() => {
     const map = new Map<string, SourceRef>();
     for (const r of rows) {
@@ -191,7 +179,7 @@ export default async function GratisModalityPage({
   return (
     <div className="min-h-dvh pb-24">
       <Navbar />
-      <main id="main-content" className="mx-auto max-w-5xl px-4 pt-8 sm:px-6 sm:pt-12">
+      <main id="main-content" className="mx-auto max-w-6xl px-5 pt-8 sm:px-8 sm:pt-12">
         {/* back */}
         <Link
           href="/#direktori"
@@ -220,71 +208,27 @@ export default async function GratisModalityPage({
           )}
         </header>
 
-        {/* table */}
-        <section className="mt-8 overflow-hidden rounded-[8px] border border-ink-line bg-ink-soft">
-          <div className="overflow-x-auto">
-            {/* Baris label kolom, BUKAN heading — sengaja <div aria-hidden>.
-                Tiap baris di bawahnya udah punya aria-label sendiri, jadi
-                label kolom ini murni visual. (Pernah dijadiin <h2 aria-hidden>:
-                heading yang di-hide ga nolong siapa-siapa + ini bukan heading.) */}
-            <div
-              aria-hidden="true"
-              className="hidden min-w-[640px] grid-cols-[minmax(190px,1.8fr)_minmax(140px,1fr)_minmax(140px,1fr)_108px] items-center gap-4 px-5 py-3 text-[11px] font-semibold uppercase tracking-wider text-mute md:grid"
-            >
-              <span>Provider</span>
-              <span>Model {label}</span>
-              <span>Context maks</span>
-              <span className="text-right">Aksi</span>
-            </div>
-            {/* min-w cuma dari md ke atas — di HP baris-nya flex-col (ga butuh
-                640px), dan min-w-[640px] tanpa gate bikin tombol "Lihat"
-                kedorong ke luar layar di viewport 375. */}
-            <div className="md:min-w-[640px]">
-              {rows.map((r) => (
-                <Link
-                  key={r.provider.slug}
-                  href={`/provider/${r.provider.slug}`}
-                  aria-label={`${r.provider.name} — ${r.modelCount} model ${label}`}
-                  className="group flex flex-col gap-3 border-t border-ink-line px-4 py-4 transition-colors first:border-t-0 hover:bg-ink/40 focus-visible:bg-ink/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70 focus-visible:ring-inset sm:px-5 md:grid md:grid-cols-[minmax(190px,1.8fr)_minmax(140px,1fr)_minmax(140px,1fr)_108px] md:items-center md:gap-4"
-                >
-                  <div className="flex min-w-0 items-center gap-3">
-                    <ProviderLogo
-                      logo={r.provider.logo}
-                      flag={r.provider.flag}
-                      name={r.provider.name}
-                      className="h-9 w-9"
-                    />
-                    <span className="truncate font-semibold text-fog">
-                      {r.provider.name}
-                    </span>
-                  </div>
-                  <div className="text-sm text-fog">
-                    {r.modelCount} model
-                  </div>
-                  {/* maxContext absen = sel dibiarin kosong, BUKAN em dash —
-                      "—" kebaca "kita udah cek, hasilnya nihil" padahal kita
-                      cuma aggregator (PRODUCT.md anti-halusinasi). Label
-                      "Context maks:" cuma nongol di bawah md karena header
-                      kolom desktop ilang di mobile (flex-col, bukan grid). */}
-                  <div className="text-sm text-fog">
-                    {r.maxContext && (
-                      <>
-                        <span className="text-mute md:hidden">Context maks: </span>
-                        {r.maxContext}
-                      </>
-                    )}
-                  </div>
-                  <div className="flex md:justify-end">
-                    <span className={CTA_SECONDARY}>Lihat</span>
-                  </div>
-                </Link>
-              ))}
-            </div>
+        <section aria-labelledby="facet-providers" className="mt-8">
+          <h2 id="facet-providers" className="sr-only">Provider API {label} gratis</h2>
+          <div className="grid gap-x-6 gap-y-8 md:grid-cols-2">
+            {rows.map((row) => (
+              <div key={row.provider.slug} className="flex min-w-0 flex-col [&>article]:flex-1">
+                <ProviderCard
+                  provider={row.provider}
+                  modelLabel={`${row.modelCount} model ${label}`}
+                />
+                {row.maxContext && (
+                  <p className="px-4 pt-2 text-xs leading-relaxed text-mute">
+                    Context maks. model {label}: <span className="font-medium text-fog">{row.maxContext}</span>
+                  </p>
+                )}
+              </div>
+            ))}
           </div>
         </section>
 
         {/* footer note */}
-        <p className="mt-6 max-w-2xl text-[11px] leading-relaxed text-mute">
+        <p className="mt-8 max-w-2xl text-xs leading-relaxed text-mute">
           tokengratis.id aggregator — bukan verifier, bukan pemilik datanya. Data
           di-sync otomatis dari sumber komunitas.{" "}
           <Link

@@ -77,7 +77,7 @@ const POPULARITY: string[] = [
 export type SortKey = "popular" | "context" | "models" | "name";
 
 export const SORT_LABELS: Record<SortKey, string> = {
-  popular: "Paling populer",
+  popular: "Urutan pilihan editor",
   context: "Context terbesar",
   models: "Model terbanyak",
   name: "Nama (A–Z)",

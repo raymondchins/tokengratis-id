@@ -53,7 +53,7 @@ export default function SetupPanel({ provider }: { provider: Provider }) {
   const setup = getProviderSetup(provider, modelId);
 
   return (
-    <section className="rounded-[8px] border border-ink-line bg-ink-soft px-5 py-4">
+    <section aria-label="Contoh integrasi API" className="min-w-0">
       {!provider.baseUrl || !setup ? (
         <p className="text-sm leading-relaxed text-mute">
           Sumber belum menyediakan base URL API buat {provider.name}, jadi

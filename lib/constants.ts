@@ -1,5 +1,5 @@
-// Show all providers at current scale (~26); pagination stays dormant until list exceeds 100.
-export const DIRECTORY_PAGE_SIZE = 100;
+// Six choices keep the mobile directory short; all providers remain searchable.
+export const DIRECTORY_PAGE_SIZE = 6;
 export const MODELS_PAGE_SIZE = 8;
 
 /**

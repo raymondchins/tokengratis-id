@@ -5,81 +5,45 @@ import { usePathname } from "next/navigation";
 import { Link } from "next-view-transitions";
 import Spark from "./Spark";
 
-// Nav muat 5 link — /fallback masuk karena sebelumnya NOL kali muncul di
-// header di viewport mana pun (cuma di footer), padahal dia yang paling
-// langsung jawab keluhan inti audiens: "kepentok token". Anchor homepage
-// "Cara kerja"/"Sumber" tetep di baris "Alat & jelajah" di Footer — masih
-// ke-crawl dari semua halaman, tapi slot nav kepake buat halaman beneran.
-//
-// BARIS LINK PINDAH md: -> lg:, jadi 768–1023px ikut pakai hamburger.
-// Itungannya di 768px: pill = 768 − 32 (px-4 header) = 736; − pl-5 (20) −
-// px-3 (12) = 704; − 2× gap-4 (32) = 672px buat isi. Logo ≈144px (ikon 16 +
-// gap 8 + "tokengratis.id" Georgia 18px ≈120), blok kanan ≈168px (bendera ~20
-// + gap 8 + CTA "Lihat direktori" ≈140). Sisa buat baris link cuma ≈360px —
-// sementara 5 label ≈392px TEKS DOANG plus 4 gap. Lewat jauh; bahkan 4 link
-// yang sekarang (≈291 + 72 gap + 38 badge = 401px) udah nombok di 768px,
-// cuma ketutupan karena flex diem-diem naksir-naksir. Di 1024px: 992 − 32 −
-// 32 = 928; − 312 (logo + kanan) = 616px sisa, sedangkan 5 link @ gap-5 =
-// 392 + 80 = 472px. Sisa ruang ~30%, aman walau taksiran lebar karakter
-// meleset seperlima.
-//
-// Badge "NEW" DIBUANG, bukan dipindah. Dua alasan: (1) badge-nya hijau,
-// sedangkan grass di sistem ini artinya "free tier" — "baru" itu pemakaian
-// dekoratif yang dilarang Semantic Accent Rule; (2) di project yang sengaja
-// maintenance-nol, badge "NEW" itu utang yang ga ada yang inget nyabut.
-// Bonusnya dia balikin ~38px ke budget lebar yang justru lagi mepet.
-const NAV_LINKS: { label: string; href: string }[] = [
-  { label: "Direktori", href: "/#direktori" },
+const MORE_LINKS = [
   { label: "Pilih model", href: "/pilih" },
   { label: "Rantai fallback", href: "/fallback" },
   { label: "Modal gratis", href: "/modal-gratis" },
   { label: "Open source", href: "/opensource" },
+  { label: "Perubahan data", href: "/changelog" },
 ];
 
 const FOCUS_RING =
-  "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70";
+  "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fog/70 focus-visible:ring-offset-2";
 
-/** Exact match untuk root path (mis. "/#direktori" -> "/"), prefix match buat
- * sub-route (mis. "/modal-gratis/slug" tetep nge-active-in "Modal gratis"). */
 function isNavLinkActive(pathname: string, href: string): boolean {
-  const path = href.split("#")[0] || "/";
-  if (path === "/") return pathname === "/";
-  return pathname === path || pathname.startsWith(`${path}/`);
+  return pathname === href || pathname.startsWith(`${href}/`);
 }
 
 export default function Navbar() {
   const pathname = usePathname();
-  // Di "/" tombol cuma scroll ke #direktori yang udah di layar — CTA hitam
-  // di situ jadi elemen paling kontras buat aksi yang paling ga penting
-  // (One Black Rule kepake buat row directory, bukan buat no-op ini).
-  // Di route lain klik ini beneran mindahin ke halaman lain, jadi hitam
-  // masih layak dipertahanin.
-  const isHome = pathname === "/";
   const menuId = useId();
   const [open, setOpen] = useState(false);
-  const panelRef = useRef<HTMLDivElement>(null);
+  const disclosureRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
+  const inDirectory = pathname === "/" || ["/provider", "/model", "/gratis"].some(
+    (route) => isNavLinkActive(pathname, route),
+  );
+  const inMore = MORE_LINKS.some((link) => isNavLinkActive(pathname, link.href));
 
-  // Tutup menu tiap pindah halaman (jaga-jaga kalau close-on-click ke-skip,
-  // mis. navigasi via keyboard/back-forward).
   useEffect(() => {
     setOpen(false);
   }, [pathname]);
 
-  // Close on outside click + Escape. Listener cuma nempel selama menu open,
-  // dan selalu di-cleanup pas unmount/close.
   useEffect(() => {
     if (!open) return;
 
-    function handlePointerDown(e: PointerEvent) {
-      const target = e.target as Node;
-      if (panelRef.current?.contains(target)) return;
-      if (buttonRef.current?.contains(target)) return;
-      setOpen(false);
+    function handlePointerDown(event: PointerEvent) {
+      if (!disclosureRef.current?.contains(event.target as Node)) setOpen(false);
     }
 
-    function handleKeyDown(e: KeyboardEvent) {
-      if (e.key === "Escape") {
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") {
         setOpen(false);
         buttonRef.current?.focus();
       }
@@ -94,136 +58,81 @@ export default function Navbar() {
   }, [open]);
 
   return (
-    <header className="sticky top-3 z-50 px-4">
+    <header className="sticky top-0 z-50 border-b border-ink-line bg-ink-soft">
       <nav
         aria-label="Navigasi utama"
-        className="mx-auto flex max-w-5xl items-center justify-between gap-2 rounded-full border border-ink-line bg-ink-soft/95 px-2 py-2 pl-3 shadow-[0_8px_30px_rgba(17,24,28,0.06)] backdrop-blur sm:gap-4 sm:px-3 sm:pl-5"
+        className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 px-4 py-2 sm:flex-nowrap sm:px-6 sm:py-3"
       >
-        {/* Logo */}
-        <Link href="/" className="flex min-h-[44px] items-center gap-2">
-          <Spark className="h-4 w-4 text-fog" />
-          <span className="font-serif text-base font-medium tracking-tight text-fog sm:text-lg">
+        <Link href="/" className={`flex min-h-11 items-center gap-2 rounded-sm ${FOCUS_RING}`}>
+          <Spark className="h-5 w-5 text-fog" />
+          <span className="font-serif text-xl font-medium tracking-tight text-fog">
             tokengratis<span className="text-mute">.id</span>
           </span>
         </Link>
 
-        {/* Center links */}
-        {/* gap-5 (bukan 6) di lg biar 5 link muat dengan sisa ruang; balik ke
-            gap-6 di xl di mana ruangnya emang berlebih. `lg:min-h-0 lg:py-1`
-            dibuang: dulu itu cuma kepake di desktop lebar, tapi sekarang baris
-            ini SATU-SATUNYA render link nav yang keliatan, jadi 44px-nya wajib
-            berlaku selalu. Ga nambah tinggi pill — logo & CTA udah 44px. */}
-        <div className="hidden items-center gap-5 text-sm font-medium text-mute lg:flex xl:gap-6">
-          {NAV_LINKS.map((l) => {
-            const active = isNavLinkActive(pathname, l.href);
-            return (
-              <Link
-                key={l.href}
-                href={l.href}
-                aria-current={active ? "page" : undefined}
-                className={`inline-flex min-h-[44px] min-w-0 items-center whitespace-nowrap rounded-sm transition-colors hover:text-fog ${FOCUS_RING} ${
-                  active ? "text-fog" : ""
-                }`}
-              >
-                {l.label}
-              </Link>
-            );
-          })}
-        </div>
-
-        {/* Right actions */}
-        <div className="flex items-center gap-2">
-          <span className="text-base" aria-hidden>
-            🇮🇩
-          </span>
+        <div className="flex w-full items-center justify-between gap-2 text-sm font-medium sm:w-auto sm:justify-end sm:gap-5">
           <Link
             href="/#direktori"
-            className={`flex min-h-[44px] items-center rounded-full px-3 py-1.5 text-sm font-semibold transition-colors sm:px-4 ${FOCUS_RING} ${
-              isHome
-                ? "border border-ink-line bg-ink-soft text-fog hover:border-mute"
-                : "bg-ember text-white hover:bg-ember-soft"
-            }`}
+            aria-current={inDirectory ? "location" : undefined}
+            onClick={() => setOpen(false)}
+            className={`inline-flex min-h-11 items-center rounded-sm px-1 transition-colors hover:text-fog ${FOCUS_RING} ${inDirectory ? "text-fog" : "text-mute"}`}
           >
-            Lihat direktori
+            Cari token
           </Link>
-
-          {/* Hamburger — cuma tampil di bawah lg, di mana center links ke-hidden */}
-          <button
-            ref={buttonRef}
-            type="button"
-            onClick={() => setOpen((o) => !o)}
-            aria-expanded={open}
-            aria-controls={menuId}
-            aria-label={open ? "Tutup menu" : "Buka menu"}
-            className={`inline-flex h-11 w-11 items-center justify-center rounded-full text-fog transition-colors hover:bg-ink lg:hidden ${FOCUS_RING}`}
+          <Link
+            href="/#cara-kerja"
+            onClick={() => setOpen(false)}
+            className={`inline-flex min-h-11 items-center rounded-sm px-1 text-mute transition-colors hover:text-fog ${FOCUS_RING}`}
           >
-            {open ? (
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                className="h-5 w-5"
-                aria-hidden="true"
-              >
-                <path d="M6 6l12 12M18 6L6 18" />
+            Cara pakai
+          </Link>
+          <div
+            ref={disclosureRef}
+            className="relative"
+            onBlur={(event) => {
+              if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setOpen(false);
+            }}
+          >
+            <button
+              ref={buttonRef}
+              type="button"
+              onClick={() => setOpen((value) => !value)}
+              aria-expanded={open}
+              aria-controls={menuId}
+              className={`inline-flex min-h-11 items-center gap-2 rounded-sm px-1 transition-colors hover:text-fog ${FOCUS_RING} ${inMore || open ? "text-fog" : "text-mute"}`}
+            >
+              Lainnya
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" className={`h-4 w-4 ${open ? "rotate-180" : ""}`} aria-hidden="true">
+                <path d="m4 6 4 4 4-4" />
               </svg>
-            ) : (
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                className="h-5 w-5"
-                aria-hidden="true"
-              >
-                <path d="M4 7h16M4 12h16M4 17h16" />
-              </svg>
+            </button>
+            {open && (
+              <div id={menuId} className="absolute right-0 top-full mt-2 w-56 rounded-xl border border-ink-line bg-ink-soft p-2">
+                <ul>
+                  {MORE_LINKS.map((link) => {
+                    const active = isNavLinkActive(pathname, link.href);
+                    return (
+                      <li key={link.href}>
+                        <Link
+                          href={link.href}
+                          aria-current={active ? "page" : undefined}
+                          onClick={() => {
+                            setOpen(false);
+                            buttonRef.current?.focus();
+                          }}
+                          className={`flex min-h-11 items-center rounded-lg px-3 transition-colors hover:bg-ink hover:text-fog ${FOCUS_RING} ${active ? "bg-ink text-fog" : "text-mute"}`}
+                        >
+                          {link.label}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
             )}
-          </button>
+          </div>
         </div>
       </nav>
-
-      {/* Mobile menu panel — sibling of the pill <nav>, NOT nested inside it.
-          The pill is rounded-full + backdrop-blur (its own stacking context),
-          so an absolutely-positioned child risks getting clipped by the
-          rounding. Rendering it here, below the pill, sidesteps that. */}
-      {/* Di-MOUNT/UNMOUNT, bukan di-toggle lewat class visibility/max-height.
-          Versi sebelumnya pakai `invisible max-h-0 opacity-0` ↔ `visible
-          max-h-96 opacity-100`: class-nya kebalik dengan bener tapi computed
-          style-nya nyangkut di ketutup, jadi menu-nya GA PERNAH kebuka di
-          production. Gating konten di balik transisi class emang rapuh —
-          mount langsung ga bisa gagal kayak gitu, plus pas ketutup panel-nya
-          beneran ilang dari a11y tree & urutan tab (bukan cuma ke-hide). */}
-      {open && (
-        <div
-          id={menuId}
-          ref={panelRef}
-          className="mx-auto mt-2 max-w-5xl overflow-hidden rounded-[8px] border border-ink-line bg-ink-soft shadow-[0_8px_30px_rgba(17,24,28,0.06)] lg:hidden"
-        >
-          <ul className="divide-y divide-ink-line p-2 text-sm font-medium text-mute">
-            {NAV_LINKS.map((l) => {
-              const active = isNavLinkActive(pathname, l.href);
-              return (
-                <li key={l.href}>
-                  <Link
-                    href={l.href}
-                    aria-current={active ? "page" : undefined}
-                    onClick={() => setOpen(false)}
-                    className={`flex min-h-[44px] min-w-0 items-center rounded-sm px-3 transition-colors hover:text-fog ${FOCUS_RING} ${
-                      active ? "text-fog" : ""
-                    }`}
-                  >
-                    {l.label}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      )}
     </header>
   );
 }
