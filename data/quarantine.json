@@ -1,21 +1,13 @@
 {
   "version": 1,
   "entries": {
-    "sambanova": {
+    "cerebras": {
       "kind": "disappeared",
       "magnitude": 0,
       "detail": "provider hilang dari hasil merge",
-      "streak": 2,
-      "firstSeen": "2026-09-08T21:40:43.783Z",
-      "lastSeen": "2026-09-09T21:32:10.512Z"
-    },
-    "github-models": {
-      "kind": "shrunk",
-      "magnitude": 3,
-      "detail": "model 13 -> 3 (-77%)",
-      "streak": 2,
-      "firstSeen": "2026-09-08T21:40:43.783Z",
-      "lastSeen": "2026-09-09T21:32:10.512Z"
+      "streak": 1,
+      "firstSeen": "2026-09-10T21:28:39.693Z",
+      "lastSeen": "2026-09-10T21:28:39.693Z"
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T21:32:10.512Z",
+  "generatedAt": "2026-09-10T21:28:39.693Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -10,41 +10,41 @@
     },
     "freellm.net": {
       "status": "ok",
-      "providers": 23,
-      "models": 295,
+      "providers": 22,
+      "models": 289,
       "shapeIssues": [
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "maxOutput",
           "rule": "all-null-collapse",
-          "count": 295,
-          "total": 295,
+          "count": 289,
+          "total": 289,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"maxOutput\": 100% null di 295 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+          "message": "Field \"maxOutput\": 100% null di 289 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
         },
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "url",
           "rule": "all-null-collapse",
-          "count": 23,
-          "total": 23,
+          "count": 22,
+          "total": 22,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"url\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+          "message": "Field \"url\": 100% null di 22 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
         },
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "baseUrl",
           "rule": "all-null-collapse",
-          "count": 23,
-          "total": 23,
+          "count": 22,
+          "total": 22,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"baseUrl\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+          "message": "Field \"baseUrl\": 100% null di 22 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
         }
       ]
     },
@@ -56,7 +56,7 @@
     "openrouter.ai/api/v1/models": {
       "status": "ok",
       "providers": 1,
-      "models": 18,
+      "models": 19,
       "shapeIssues": []
     }
   },
@@ -64,8 +64,8 @@
     "cheahjs/free-llm-api-resources"
   ],
   "merged": {
-    "providers": 24,
-    "models": 306,
+    "providers": 23,
+    "models": 302,
     "shapeIssues": []
   },
   "smokeTest": {
@@ -75,6 +75,7 @@
   "diffGuard": {
     "ok": false,
     "errors": [
+      "provider \"cerebras\" disappeared (was in prev, missing in next)",
       "provider \"sambanova\" disappeared (was in prev, missing in next)",
       "provider \"github-models\" model count dropped 76.9% (13 → 3), threshold is 40%",
       "provider \"github-models\" model ids churned 76.9% at same-ish count (overlap 23.1%, 13→3 ids) — possible source corruption"
@@ -82,11 +83,12 @@
     "warnings": [],
     "stats": {
       "prevProviders": 25,
-      "nextProviders": 24,
-      "prevModels": 319,
-      "nextModels": 306,
-      "totalDropPct": 4.075235109717868,
+      "nextProviders": 23,
+      "prevModels": 320,
+      "nextModels": 302,
+      "totalDropPct": 5.625,
       "disappeared": [
+        "cerebras",
         "sambanova"
       ],
       "shrunk": [
@@ -108,7 +110,7 @@
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 289,
+            "eligible": 281,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -120,16 +122,10 @@
             "examples": []
           },
           "modality": {
-            "eligible": 234,
-            "changed": 1,
-            "ratioPct": 0.4273504273504274,
-            "examples": [
-              {
-                "label": "openrouter/nex-agi/nex-n2.5-mini:free",
-                "from": "Text",
-                "to": "Text + Vision"
-              }
-            ]
+            "eligible": 229,
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           },
           "rateLimit": {
             "eligible": 189,
@@ -158,9 +154,9 @@
             "examples": []
           },
           "maxContext": {
-            "eligible": 23,
+            "eligible": 22,
             "changed": 1,
-            "ratioPct": 4.3478260869565215,
+            "ratioPct": 4.545454545454546,
             "examples": [
               {
                 "label": "github-models",
@@ -180,53 +176,57 @@
       "source": "freellm.net",
       "field": "maxOutput",
       "rule": "all-null-collapse",
-      "count": 295,
-      "total": 295,
+      "count": 289,
+      "total": 289,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"maxOutput\": 100% null di 295 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+      "message": "Field \"maxOutput\": 100% null di 289 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
     },
     {
       "severity": "warn",
       "source": "freellm.net",
       "field": "url",
       "rule": "all-null-collapse",
-      "count": 23,
-      "total": 23,
+      "count": 22,
+      "total": 22,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"url\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+      "message": "Field \"url\": 100% null di 22 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
     },
     {
       "severity": "warn",
       "source": "freellm.net",
       "field": "baseUrl",
       "rule": "all-null-collapse",
-      "count": 23,
-      "total": 23,
+      "count": 22,
+      "total": 22,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"baseUrl\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+      "message": "Field \"baseUrl\": 100% null di 22 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
     }
   ],
   "quarantine": {
     "heldProviders": [
       {
-        "slug": "sambanova",
+        "slug": "cerebras",
         "kind": "disappeared",
         "detail": "provider hilang dari hasil merge",
-        "streak": 2,
+        "streak": 1,
         "needs": 3
+      }
+    ],
+    "accepted": [
+      {
+        "slug": "sambanova",
+        "kind": "disappeared",
+        "detail": "provider hilang dari hasil merge"
       },
       {
         "slug": "github-models",
         "kind": "shrunk",
-        "detail": "model 13 -> 3 (-77%)",
-        "streak": 2,
-        "needs": 3
+        "detail": "model 13 -> 3 (-77%)"
       }
     ],
-    "accepted": [],
     "cleared": [],
     "confirmRuns": 3
   }

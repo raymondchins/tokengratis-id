@@ -97,7 +97,7 @@
       "language": "PHP",
       "stars": 1224,
       "forks": 1189,
-      "openIssues": 364,
+      "openIssues": 362,
       "license": null,
       "topics": [
         "opensid",
@@ -118,7 +118,7 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 990,
+      "stars": 991,
       "forks": 297,
       "openIssues": 0,
       "license": "MIT",
@@ -203,9 +203,9 @@
       "homepage": "https://omni.weekndlabs.com/docs",
       "description": "Your agent pays twice for output it has already seen. OMNI returns a handle instead: 97.2% off a file read twice. Nothing deleted, nothing invented.",
       "language": "Rust",
-      "stars": 367,
+      "stars": 369,
       "forks": 34,
-      "openIssues": 22,
+      "openIssues": 21,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -230,7 +230,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-09-08T16:54:28Z",
+      "pushedAt": "2026-09-10T09:46:19Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -244,7 +244,7 @@
       "homepage": null,
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 344,
+      "stars": 345,
       "forks": 43,
       "openIssues": 3,
       "license": "MIT",
@@ -308,7 +308,7 @@
       "language": "Rust",
       "stars": 238,
       "forks": 25,
-      "openIssues": 6,
+      "openIssues": 9,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -333,7 +333,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-09-09T16:03:12Z",
+      "pushedAt": "2026-09-10T15:44:53Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -349,7 +349,7 @@
       "language": "TypeScript",
       "stars": 203,
       "forks": 40,
-      "openIssues": 5,
+      "openIssues": 6,
       "license": null,
       "topics": [
         "coding",
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-09-09T16:40:03Z",
+      "pushedAt": "2026-09-10T12:09:22Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -399,7 +399,7 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 158,
+      "stars": 162,
       "forks": 13,
       "openIssues": 0,
       "license": "Apache-2.0",
@@ -435,7 +435,7 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 137,
+      "stars": 138,
       "forks": 53,
       "openIssues": 3,
       "license": "MIT",
@@ -474,13 +474,13 @@
       "homepage": null,
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
-      "stars": 133,
+      "stars": 132,
       "forks": 67,
-      "openIssues": 10,
+      "openIssues": 12,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-08T17:23:27Z",
+      "pushedAt": "2026-09-10T11:24:33Z",
       "createdAt": "2026-02-12T11:02:43Z"
     },
     {
@@ -515,7 +515,7 @@
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": null,
       "stars": 127,
-      "forks": 7,
+      "forks": 8,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -550,7 +550,7 @@
       "homepage": "https://pddikti.kemdiktisaintek.go.id/",
       "description": "Unofficial Python 3 API wrapper to retrieve data from PDDIKTI Kemdikbudristek.",
       "language": "Python",
-      "stars": 122,
+      "stars": 123,
       "forks": 26,
       "openIssues": 0,
       "license": null,
@@ -575,8 +575,8 @@
       "description": "IndoGitHubers is an application that displays the GitHub rank of users in Indonesia.",
       "language": "TypeScript",
       "stars": 99,
-      "forks": 22,
-      "openIssues": 18,
+      "forks": 23,
+      "openIssues": 19,
       "license": "MIT",
       "topics": [
         "hacktoberfest",
@@ -585,7 +585,7 @@
         "hacktoberfest2023"
       ],
       "archived": false,
-      "pushedAt": "2026-09-07T20:44:09Z",
+      "pushedAt": "2026-09-10T13:49:14Z",
       "createdAt": "2023-09-05T12:35:21Z"
     },
     {
@@ -652,7 +652,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-09T17:47:19Z",
+      "pushedAt": "2026-09-10T02:59:01Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -688,7 +688,7 @@
       "language": "Svelte",
       "stars": 67,
       "forks": 19,
-      "openIssues": 4,
+      "openIssues": 5,
       "license": "MIT",
       "topics": [
         "bansos",
@@ -873,7 +873,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-09T13:15:01Z",
+      "pushedAt": "2026-09-10T16:58:52Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -992,6 +992,40 @@
       "createdAt": "2026-04-09T16:08:42Z"
     },
     {
+      "slug": "ammar-rasyidi/mandum-rimba",
+      "fullName": "ammar-rasyidi/mandum-rimba",
+      "name": "mandum-rimba",
+      "owner": "ammar-rasyidi",
+      "ownerUrl": "https://github.com/ammar-rasyidi",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/110449863?v=4",
+      "url": "https://github.com/ammar-rasyidi/mandum-rimba",
+      "homepage": "https://www.mandumrimba.org",
+      "description": "Mandum Rimba is an independent, nonprofit public-interest observatory. We do not sell data, carry advertising, or take sides. We consolidate satellite data and credible public sources into a single open map, auditable by anyone, fully open source, and with every figure traceable to its origin.",
+      "language": "TypeScript",
+      "stars": 32,
+      "forks": 8,
+      "openIssues": 0,
+      "license": "AGPL-3.0",
+      "topics": [
+        "conservation",
+        "environment",
+        "forest",
+        "geospatial",
+        "indonesia",
+        "maplibre",
+        "mongodb",
+        "nestjs",
+        "nextjs",
+        "open-data",
+        "open-source",
+        "pmtiles",
+        "wildlife"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-09T08:38:49Z",
+      "createdAt": "2026-06-14T05:07:25Z"
+    },
+    {
       "slug": "pendig/rute-bayar",
       "fullName": "pendig/rute-bayar",
       "name": "rute-bayar",
@@ -1020,40 +1054,6 @@
       "archived": false,
       "pushedAt": "2026-09-04T22:43:43Z",
       "createdAt": "2026-05-05T01:16:45Z"
-    },
-    {
-      "slug": "ammar-rasyidi/mandum-rimba",
-      "fullName": "ammar-rasyidi/mandum-rimba",
-      "name": "mandum-rimba",
-      "owner": "ammar-rasyidi",
-      "ownerUrl": "https://github.com/ammar-rasyidi",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/110449863?v=4",
-      "url": "https://github.com/ammar-rasyidi/mandum-rimba",
-      "homepage": "https://www.mandumrimba.org",
-      "description": "Mandum Rimba is an independent, nonprofit public-interest observatory. We do not sell data, carry advertising, or take sides. We consolidate satellite data and credible public sources into a single open map, auditable by anyone, fully open source, and with every figure traceable to its origin.",
-      "language": "TypeScript",
-      "stars": 31,
-      "forks": 8,
-      "openIssues": 0,
-      "license": "AGPL-3.0",
-      "topics": [
-        "conservation",
-        "environment",
-        "forest",
-        "geospatial",
-        "indonesia",
-        "maplibre",
-        "mongodb",
-        "nestjs",
-        "nextjs",
-        "open-data",
-        "open-source",
-        "pmtiles",
-        "wildlife"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-09T08:38:49Z",
-      "createdAt": "2026-06-14T05:07:25Z"
     },
     {
       "slug": "galpratama/agent-cli",
@@ -1086,7 +1086,7 @@
       "homepage": "https://silong-os.vercel.app/",
       "description": "Open-source, self-hostable Notion/Obsidian-style workspace — block editor for notes, docs and lightweight databases, plus a knowledge graph over them. Next.js 16 · React 19 · Convex · Tailwind v4.",
       "language": "TypeScript",
-      "stars": 25,
+      "stars": 26,
       "forks": 5,
       "openIssues": 0,
       "license": "MIT",
@@ -1153,7 +1153,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-08T03:07:53Z",
+      "pushedAt": "2026-09-10T02:43:46Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1197,6 +1197,40 @@
       "createdAt": "2026-04-08T09:27:49Z"
     },
     {
+      "slug": "rizukirr/vibekit",
+      "fullName": "rizukirr/vibekit",
+      "name": "vibekit",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/vibekit",
+      "homepage": null,
+      "description": "Efficient, Opinionated vibe-coding pipeline for CC / Codex / OpenCode / Antigravity / Pi",
+      "language": "JavaScript",
+      "stars": 19,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "antigravity",
+        "claude-code",
+        "claude-plugin",
+        "codex",
+        "codex-plugin",
+        "openai",
+        "opencode",
+        "opencode-plugin",
+        "pi-mono",
+        "pi-plugins",
+        "plugin",
+        "vibe-coding",
+        "vibecoding"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-10T04:24:55Z",
+      "createdAt": "2026-04-21T15:17:02Z"
+    },
+    {
       "slug": "rahmanef63/control-room",
       "fullName": "rahmanef63/control-room",
       "name": "control-room",
@@ -1228,37 +1262,6 @@
       "archived": false,
       "pushedAt": "2026-09-09T13:36:26Z",
       "createdAt": "2026-03-20T14:25:48Z"
-    },
-    {
-      "slug": "rizukirr/vibekit",
-      "fullName": "rizukirr/vibekit",
-      "name": "vibekit",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/vibekit",
-      "homepage": null,
-      "description": "Efficient, Opinionated vibe-coding pipeline for CC / Codex / OpenCode / Gemini",
-      "language": "JavaScript",
-      "stars": 18,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "claude-code",
-        "claude-plugin",
-        "codex",
-        "codex-plugin",
-        "opencode",
-        "opencode-plugin",
-        "pi-mono",
-        "plugin",
-        "vibe-coding",
-        "vibecoding"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-08T08:59:38Z",
-      "createdAt": "2026-04-21T15:17:02Z"
     },
     {
       "slug": "muhammadhasbiashshiddieqy/openclawn",
@@ -1374,7 +1377,7 @@
       "homepage": null,
       "description": "Zero-human full-stack deployment as a bundle of /sc-* Claude Code slash commands — GitHub + Convex (self-hosted & Cloud) + Dokploy + Vercel + Hostinger DNS, source to verified live URL. Node ≥18, no runtime dependencies. 8 skills implemented, 5 stubs.",
       "language": "JavaScript",
-      "stars": 12,
+      "stars": 13,
       "forks": 2,
       "openIssues": 1,
       "license": "MIT",
@@ -1698,7 +1701,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-09T17:02:45Z",
+      "pushedAt": "2026-09-09T21:32:28Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -2055,14 +2058,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-09-09T21:32:16.020Z"
+      "syncedAt": "2026-09-10T21:28:46.466Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-09-09T21:32:16.020Z"
+      "syncedAt": "2026-09-10T21:28:46.466Z"
     }
   ],
-  "syncedAt": "2026-09-09T21:32:16.020Z",
+  "syncedAt": "2026-09-10T21:28:46.466Z",
   "count": 76
 }
