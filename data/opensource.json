@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js - The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser (client-side) or Node.js (server-side).",
       "language": "JavaScript",
-      "stars": 10187,
+      "stars": 10188,
       "forks": 1217,
       "openIssues": 15,
       "license": "AGPL-3.0",
@@ -66,9 +66,9 @@
       "homepage": "https://www.htmly.com",
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
-      "stars": 1361,
+      "stars": 1362,
       "forks": 309,
-      "openIssues": 53,
+      "openIssues": 54,
       "license": "GPL-2.0",
       "topics": [
         "blog",
@@ -97,7 +97,7 @@
       "language": "PHP",
       "stars": 1224,
       "forks": 1189,
-      "openIssues": 362,
+      "openIssues": 357,
       "license": null,
       "topics": [
         "opensid",
@@ -118,7 +118,7 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 991,
+      "stars": 990,
       "forks": 297,
       "openIssues": 0,
       "license": "MIT",
@@ -205,7 +205,7 @@
       "language": "Rust",
       "stars": 369,
       "forks": 34,
-      "openIssues": 21,
+      "openIssues": 22,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -241,12 +241,12 @@
       "ownerUrl": "https://github.com/Drenzzz",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/116653610?v=4",
       "url": "https://github.com/Drenzzz/ADBKit",
-      "homepage": null,
+      "homepage": "https://adbkit.netlify.app/",
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 345,
-      "forks": 43,
-      "openIssues": 3,
+      "stars": 350,
+      "forks": 44,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "adb",
@@ -258,7 +258,7 @@
         "wails-app"
       ],
       "archived": false,
-      "pushedAt": "2026-09-09T06:28:45Z",
+      "pushedAt": "2026-09-11T06:24:26Z",
       "createdAt": "2025-11-04T15:37:00Z"
     },
     {
@@ -306,9 +306,9 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 238,
+      "stars": 239,
       "forks": 25,
-      "openIssues": 9,
+      "openIssues": 2,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -333,7 +333,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-09-10T15:44:53Z",
+      "pushedAt": "2026-09-11T16:34:53Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-09-10T12:09:22Z",
+      "pushedAt": "2026-09-11T16:08:43Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -399,7 +399,7 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 162,
+      "stars": 165,
       "forks": 13,
       "openIssues": 0,
       "license": "Apache-2.0",
@@ -421,7 +421,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-09T13:08:40Z",
+      "pushedAt": "2026-09-11T07:56:12Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -435,9 +435,9 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 138,
+      "stars": 139,
       "forks": 53,
-      "openIssues": 3,
+      "openIssues": 4,
       "license": "MIT",
       "topics": [
         "ai",
@@ -460,7 +460,7 @@
         "zai"
       ],
       "archived": false,
-      "pushedAt": "2026-09-08T08:09:35Z",
+      "pushedAt": "2026-09-11T00:23:51Z",
       "createdAt": "2026-05-31T09:02:50Z"
     },
     {
@@ -474,7 +474,7 @@
       "homepage": null,
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
-      "stars": 132,
+      "stars": 131,
       "forks": 67,
       "openIssues": 12,
       "license": "MIT",
@@ -514,7 +514,7 @@
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": null,
-      "stars": 127,
+      "stars": 126,
       "forks": 8,
       "openIssues": 0,
       "license": "MIT",
@@ -599,7 +599,7 @@
       "homepage": "https://svelte-audio-ui.vercel.app/",
       "description": "A set of accessible and composable Audio UI components.",
       "language": "Svelte",
-      "stars": 92,
+      "stars": 93,
       "forks": 4,
       "openIssues": 15,
       "license": "MIT",
@@ -627,8 +627,8 @@
       "homepage": "https://mso.rahmanef.com",
       "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
-      "stars": 74,
-      "forks": 10,
+      "stars": 75,
+      "forks": 11,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -652,7 +652,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-10T02:59:01Z",
+      "pushedAt": "2026-09-11T18:59:54Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -867,13 +867,13 @@
       "homepage": null,
       "description": "Its Factorio for coding agents",
       "language": "Ruby",
-      "stars": 46,
+      "stars": 47,
       "forks": 4,
       "openIssues": 2,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-10T16:58:52Z",
+      "pushedAt": "2026-09-11T05:56:39Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -1086,7 +1086,7 @@
       "homepage": "https://silong-os.vercel.app/",
       "description": "Open-source, self-hostable Notion/Obsidian-style workspace — block editor for notes, docs and lightweight databases, plus a knowledge graph over them. Next.js 16 · React 19 · Convex · Tailwind v4.",
       "language": "TypeScript",
-      "stars": 26,
+      "stars": 27,
       "forks": 5,
       "openIssues": 0,
       "license": "MIT",
@@ -1153,7 +1153,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-10T02:43:46Z",
+      "pushedAt": "2026-09-11T09:06:02Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1205,7 +1205,7 @@
       "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
       "url": "https://github.com/rizukirr/vibekit",
       "homepage": null,
-      "description": "Efficient, Opinionated vibe-coding pipeline for CC / Codex / OpenCode / Antigravity / Pi",
+      "description": "Efficient, Evidence-based, Opinionated vibe-coding pipeline for CC / Codex / OpenCode / Antigravity / Pi",
       "language": "JavaScript",
       "stars": 19,
       "forks": 1,
@@ -1377,7 +1377,7 @@
       "homepage": null,
       "description": "Zero-human full-stack deployment as a bundle of /sc-* Claude Code slash commands — GitHub + Convex (self-hosted & Cloud) + Dokploy + Vercel + Hostinger DNS, source to verified live URL. Node ≥18, no runtime dependencies. 8 skills implemented, 5 stubs.",
       "language": "JavaScript",
-      "stars": 13,
+      "stars": 12,
       "forks": 2,
       "openIssues": 1,
       "license": "MIT",
@@ -1563,7 +1563,7 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-09-03T09:15:01Z",
+      "pushedAt": "2026-09-11T06:19:37Z",
       "createdAt": "2026-06-06T00:23:26Z"
     },
     {
@@ -1701,7 +1701,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-09T21:32:28Z",
+      "pushedAt": "2026-09-11T16:38:59Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1951,6 +1951,26 @@
       "createdAt": "2025-12-10T04:16:53Z"
     },
     {
+      "slug": "dayartcrew-web/masday-workflow-rust",
+      "fullName": "dayartcrew-web/masday-workflow-rust",
+      "name": "masday-workflow-rust",
+      "owner": "dayartcrew-web",
+      "ownerUrl": "https://github.com/dayartcrew-web",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/245359298?v=4",
+      "url": "https://github.com/dayartcrew-web/masday-workflow-rust",
+      "homepage": null,
+      "description": "Rust MVC MCP Server — Unified AI coding agent platform built with Axum, SQLx, and tokio. 90 MCP tools, 4-layer memory, PostgreSQL.",
+      "language": "Rust",
+      "stars": 1,
+      "forks": 0,
+      "openIssues": 15,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-09-11T04:49:44Z",
+      "createdAt": "2026-05-31T08:23:44Z"
+    },
+    {
       "slug": "adityazxxx/sheltermark",
       "fullName": "AdityaZxxx/sheltermark",
       "name": "sheltermark",
@@ -1972,26 +1992,6 @@
       "archived": false,
       "pushedAt": "2026-09-09T13:06:12Z",
       "createdAt": "2026-02-10T04:21:08Z"
-    },
-    {
-      "slug": "dayartcrew-web/masday-workflow-rust",
-      "fullName": "dayartcrew-web/masday-workflow-rust",
-      "name": "masday-workflow-rust",
-      "owner": "dayartcrew-web",
-      "ownerUrl": "https://github.com/dayartcrew-web",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/245359298?v=4",
-      "url": "https://github.com/dayartcrew-web/masday-workflow-rust",
-      "homepage": null,
-      "description": "Rust MVC MCP Server — Unified AI coding agent platform built with Axum, SQLx, and tokio. 90 MCP tools, 4-layer memory, PostgreSQL.",
-      "language": "Rust",
-      "stars": 1,
-      "forks": 0,
-      "openIssues": 14,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-08-12T02:06:11Z",
-      "createdAt": "2026-05-31T08:23:44Z"
     },
     {
       "slug": "bimoalfarrabi/pantau-bbm",
@@ -2026,11 +2026,11 @@
       "language": "TypeScript",
       "stars": 0,
       "forks": 0,
-      "openIssues": 11,
+      "openIssues": 13,
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-08T15:09:08Z",
+      "pushedAt": "2026-09-11T07:01:28Z",
       "createdAt": "2026-06-13T11:24:30Z"
     },
     {
@@ -2058,14 +2058,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-09-10T21:28:46.466Z"
+      "syncedAt": "2026-09-11T21:35:21.697Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-09-10T21:28:46.466Z"
+      "syncedAt": "2026-09-11T21:35:21.697Z"
     }
   ],
-  "syncedAt": "2026-09-10T21:28:46.466Z",
+  "syncedAt": "2026-09-11T21:35:21.697Z",
   "count": 76
 }

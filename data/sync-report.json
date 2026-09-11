@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T21:28:39.693Z",
+  "generatedAt": "2026-09-11T21:35:15.807Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -10,7 +10,7 @@
     },
     "freellm.net": {
       "status": "ok",
-      "providers": 22,
+      "providers": 23,
       "models": 289,
       "shapeIssues": [
         {
@@ -29,22 +29,22 @@
           "source": "freellm.net",
           "field": "url",
           "rule": "all-null-collapse",
-          "count": 22,
-          "total": 22,
+          "count": 23,
+          "total": 23,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"url\": 100% null di 22 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+          "message": "Field \"url\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
         },
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "baseUrl",
           "rule": "all-null-collapse",
-          "count": 22,
-          "total": 22,
+          "count": 23,
+          "total": 23,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"baseUrl\": 100% null di 22 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+          "message": "Field \"baseUrl\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
         }
       ]
     },
@@ -64,8 +64,8 @@
     "cheahjs/free-llm-api-resources"
   ],
   "merged": {
-    "providers": 23,
-    "models": 302,
+    "providers": 24,
+    "models": 304,
     "shapeIssues": []
   },
   "smokeTest": {
@@ -73,62 +73,40 @@
     "warnings": []
   },
   "diffGuard": {
-    "ok": false,
-    "errors": [
-      "provider \"cerebras\" disappeared (was in prev, missing in next)",
-      "provider \"sambanova\" disappeared (was in prev, missing in next)",
-      "provider \"github-models\" model count dropped 76.9% (13 → 3), threshold is 40%",
-      "provider \"github-models\" model ids churned 76.9% at same-ish count (overlap 23.1%, 13→3 ids) — possible source corruption"
-    ],
+    "ok": true,
+    "errors": [],
     "warnings": [],
     "stats": {
-      "prevProviders": 25,
-      "nextProviders": 23,
-      "prevModels": 320,
-      "nextModels": 302,
-      "totalDropPct": 5.625,
-      "disappeared": [
-        "cerebras",
-        "sambanova"
-      ],
-      "shrunk": [
-        {
-          "slug": "github-models",
-          "prev": 13,
-          "next": 3,
-          "dropPct": 76.92307692307693
-        }
-      ],
-      "churned": [
-        {
-          "slug": "github-models",
-          "overlapPct": 23.076923076923077,
-          "prevIds": 13,
-          "nextIds": 3
-        }
-      ],
+      "prevProviders": 24,
+      "nextProviders": 24,
+      "prevModels": 303,
+      "nextModels": 304,
+      "totalDropPct": -0.33003300330033003,
+      "disappeared": [],
+      "shrunk": [],
+      "churned": [],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 281,
+            "eligible": 282,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "maxOutput": {
-            "eligible": 136,
+            "eligible": 137,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "modality": {
-            "eligible": 229,
+            "eligible": 231,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "rateLimit": {
-            "eligible": 189,
+            "eligible": 187,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -154,16 +132,10 @@
             "examples": []
           },
           "maxContext": {
-            "eligible": 22,
-            "changed": 1,
-            "ratioPct": 4.545454545454546,
-            "examples": [
-              {
-                "label": "github-models",
-                "from": "1M",
-                "to": "256K"
-              }
-            ]
+            "eligible": 23,
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           }
         }
       }
@@ -187,47 +159,30 @@
       "source": "freellm.net",
       "field": "url",
       "rule": "all-null-collapse",
-      "count": 22,
-      "total": 22,
+      "count": 23,
+      "total": 23,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"url\": 100% null di 22 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+      "message": "Field \"url\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
     },
     {
       "severity": "warn",
       "source": "freellm.net",
       "field": "baseUrl",
       "rule": "all-null-collapse",
-      "count": 22,
-      "total": 22,
+      "count": 23,
+      "total": 23,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"baseUrl\": 100% null di 22 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+      "message": "Field \"baseUrl\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
     }
   ],
   "quarantine": {
-    "heldProviders": [
-      {
-        "slug": "cerebras",
-        "kind": "disappeared",
-        "detail": "provider hilang dari hasil merge",
-        "streak": 1,
-        "needs": 3
-      }
+    "heldProviders": [],
+    "accepted": [],
+    "cleared": [
+      "cerebras"
     ],
-    "accepted": [
-      {
-        "slug": "sambanova",
-        "kind": "disappeared",
-        "detail": "provider hilang dari hasil merge"
-      },
-      {
-        "slug": "github-models",
-        "kind": "shrunk",
-        "detail": "model 13 -> 3 (-77%)"
-      }
-    ],
-    "cleared": [],
     "confirmRuns": 3
   }
 }

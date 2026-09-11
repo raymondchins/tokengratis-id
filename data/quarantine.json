@@ -1,13 +1,4 @@
 {
   "version": 1,
-  "entries": {
-    "cerebras": {
-      "kind": "disappeared",
-      "magnitude": 0,
-      "detail": "provider hilang dari hasil merge",
-      "streak": 1,
-      "firstSeen": "2026-09-10T21:28:39.693Z",
-      "lastSeen": "2026-09-10T21:28:39.693Z"
-    }
-  }
+  "entries": {}
 }
