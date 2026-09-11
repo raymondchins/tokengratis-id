@@ -52,16 +52,6 @@ npm test         # pipeline self-tests (jalan offline, no creds)
 
 Env vars semuanya **opsional** — situs build & jalan tanpa satu pun di-set. Copy [`.env.example`](.env.example) → `.env` kalau mau ngaktifin LLM fallback / newsletter route.
 
-### Code navigation — agentmap
-
-Repo ini pakai [**agentmap**](https://www.npmjs.com/package/@raymondchins/agentmap) (devDep) — code-relationship & reuse map buat ngejawab "file apa yang make X", "siapa yang import ini", "fitur Y filenya apa aja", reuse-before-rebuild — tanpa grep manual. Berguna buat human contributor maupun AI coding assistant.
-
-```bash
-npm run agentmap -- --any <query>      # auto-route: file / symbol / feature / live content
-npm run agentmap -- --relates <path>   # blast radius (siapa yang import path ini)
-npm run agentmap -- --find <symbol>    # reuse-before-rebuild
-```
-
 ## Cara kerja (pipeline aggregator)
 
 `npm run sync` (atau nightly cron) jalanin `scripts/sync.mjs`:
