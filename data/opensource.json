@@ -67,7 +67,7 @@
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
       "stars": 1362,
-      "forks": 309,
+      "forks": 308,
       "openIssues": 54,
       "license": "GPL-2.0",
       "topics": [
@@ -97,7 +97,7 @@
       "language": "PHP",
       "stars": 1224,
       "forks": 1189,
-      "openIssues": 357,
+      "openIssues": 355,
       "license": null,
       "topics": [
         "opensid",
@@ -119,7 +119,7 @@
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
       "stars": 990,
-      "forks": 297,
+      "forks": 298,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -244,7 +244,7 @@
       "homepage": "https://adbkit.netlify.app/",
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 350,
+      "stars": 352,
       "forks": 44,
       "openIssues": 1,
       "license": "MIT",
@@ -272,7 +272,7 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 240,
+      "stars": 241,
       "forks": 45,
       "openIssues": 44,
       "license": "MIT",
@@ -308,7 +308,7 @@
       "language": "Rust",
       "stars": 239,
       "forks": 25,
-      "openIssues": 2,
+      "openIssues": 6,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -333,7 +333,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-09-11T16:34:53Z",
+      "pushedAt": "2026-09-12T13:34:28Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -347,8 +347,8 @@
       "homepage": "https://www.erdbuilderpro.com",
       "description": "ERD Builder Pro is a database design and documentation tool for developers. Build ERDs, flowcharts, notes, and drawings — all in one workspace",
       "language": "TypeScript",
-      "stars": 203,
-      "forks": 40,
+      "stars": 204,
+      "forks": 41,
       "openIssues": 6,
       "license": null,
       "topics": [
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-09-11T16:08:43Z",
+      "pushedAt": "2026-09-12T12:18:19Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -379,7 +379,7 @@
       "homepage": null,
       "description": null,
       "language": "Python",
-      "stars": 180,
+      "stars": 181,
       "forks": 42,
       "openIssues": 0,
       "license": "MIT",
@@ -399,8 +399,8 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 165,
-      "forks": 13,
+      "stars": 168,
+      "forks": 14,
       "openIssues": 0,
       "license": "Apache-2.0",
       "topics": [
@@ -435,9 +435,9 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 139,
+      "stars": 140,
       "forks": 53,
-      "openIssues": 4,
+      "openIssues": 5,
       "license": "MIT",
       "topics": [
         "ai",
@@ -514,8 +514,8 @@
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": null,
-      "stars": 126,
-      "forks": 8,
+      "stars": 128,
+      "forks": 9,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -627,7 +627,7 @@
       "homepage": "https://mso.rahmanef.com",
       "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
-      "stars": 75,
+      "stars": 79,
       "forks": 11,
       "openIssues": 0,
       "license": "MIT",
@@ -652,7 +652,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-11T18:59:54Z",
+      "pushedAt": "2026-09-12T18:47:38Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -829,7 +829,7 @@
         "typescript"
       ],
       "archived": false,
-      "pushedAt": "2026-09-05T09:32:38Z",
+      "pushedAt": "2026-09-12T09:33:25Z",
       "createdAt": "2026-06-13T11:29:36Z"
     },
     {
@@ -1147,7 +1147,7 @@
       "homepage": null,
       "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
       "language": "TypeScript",
-      "stars": 21,
+      "stars": 22,
       "forks": 3,
       "openIssues": 0,
       "license": "MIT",
@@ -1209,7 +1209,7 @@
       "language": "JavaScript",
       "stars": 19,
       "forks": 1,
-      "openIssues": 0,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "antigravity",
@@ -1227,7 +1227,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-09-10T04:24:55Z",
+      "pushedAt": "2026-09-12T00:12:41Z",
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
@@ -1260,7 +1260,7 @@
         "xterm"
       ],
       "archived": false,
-      "pushedAt": "2026-09-09T13:36:26Z",
+      "pushedAt": "2026-09-11T22:00:32Z",
       "createdAt": "2026-03-20T14:25:48Z"
     },
     {
@@ -1396,7 +1396,7 @@
         "zero-human"
       ],
       "archived": false,
-      "pushedAt": "2026-09-09T13:40:41Z",
+      "pushedAt": "2026-09-12T13:08:28Z",
       "createdAt": "2026-03-18T18:38:41Z"
     },
     {
@@ -1533,6 +1533,34 @@
       "createdAt": "2026-01-11T03:16:04Z"
     },
     {
+      "slug": "rizukirr/apic",
+      "fullName": "rizukirr/apic",
+      "name": "apic",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/apic",
+      "homepage": null,
+      "description": "A lightweight, Git-friendly tool for designing and collaborating on API contracts",
+      "language": "Rust",
+      "stars": 8,
+      "forks": 2,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "api",
+        "api-contract",
+        "cli-tool",
+        "colaboration",
+        "contracts",
+        "rest-api",
+        "rust"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-12T14:08:35Z",
+      "createdAt": "2026-06-04T12:15:07Z"
+    },
+    {
       "slug": "codecoradev/trapfall",
       "fullName": "codecoradev/trapfall",
       "name": "trapfall",
@@ -1565,34 +1593,6 @@
       "archived": false,
       "pushedAt": "2026-09-11T06:19:37Z",
       "createdAt": "2026-06-06T00:23:26Z"
-    },
-    {
-      "slug": "rizukirr/apic",
-      "fullName": "rizukirr/apic",
-      "name": "apic",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/apic",
-      "homepage": null,
-      "description": "A lightweight, Git-friendly tool for designing and collaborating on API contracts",
-      "language": "Rust",
-      "stars": 8,
-      "forks": 2,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "api",
-        "api-contract",
-        "cli-tool",
-        "colaboration",
-        "contracts",
-        "rest-api",
-        "rust"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-29T15:54:27Z",
-      "createdAt": "2026-06-04T12:15:07Z"
     },
     {
       "slug": "rifqiakrm/code-island",
@@ -1701,7 +1701,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-11T16:38:59Z",
+      "pushedAt": "2026-09-11T21:35:35Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -2058,14 +2058,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-09-11T21:35:21.697Z"
+      "syncedAt": "2026-09-12T21:18:02.441Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-09-11T21:35:21.697Z"
+      "syncedAt": "2026-09-12T21:18:02.441Z"
     }
   ],
-  "syncedAt": "2026-09-11T21:35:21.697Z",
+  "syncedAt": "2026-09-12T21:18:02.441Z",
   "count": 76
 }

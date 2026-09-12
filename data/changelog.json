@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-09-12",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "NVIDIA NIM",
+        "added": [
+          "z-ai/glm-5.3-flash"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-09-11",
     "providersAdded": [],
     "providersRemoved": [],
