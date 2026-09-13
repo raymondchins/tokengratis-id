@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js - The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser (client-side) or Node.js (server-side).",
       "language": "JavaScript",
-      "stars": 10188,
+      "stars": 10189,
       "forks": 1217,
       "openIssues": 15,
       "license": "AGPL-3.0",
@@ -97,7 +97,7 @@
       "language": "PHP",
       "stars": 1224,
       "forks": 1189,
-      "openIssues": 355,
+      "openIssues": 356,
       "license": null,
       "topics": [
         "opensid",
@@ -118,8 +118,8 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 990,
-      "forks": 298,
+      "stars": 991,
+      "forks": 299,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -230,7 +230,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-09-10T09:46:19Z",
+      "pushedAt": "2026-09-13T03:33:25Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -272,7 +272,7 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 241,
+      "stars": 242,
       "forks": 45,
       "openIssues": 44,
       "license": "MIT",
@@ -306,8 +306,8 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 239,
-      "forks": 25,
+      "stars": 240,
+      "forks": 26,
       "openIssues": 6,
       "license": "Apache-2.0",
       "topics": [
@@ -333,7 +333,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-09-12T13:34:28Z",
+      "pushedAt": "2026-09-13T15:26:02Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-09-12T12:18:19Z",
+      "pushedAt": "2026-09-13T15:11:22Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -421,7 +421,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-11T07:56:12Z",
+      "pushedAt": "2026-09-13T14:15:21Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -474,13 +474,13 @@
       "homepage": null,
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
-      "stars": 131,
+      "stars": 133,
       "forks": 67,
       "openIssues": 12,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-10T11:24:33Z",
+      "pushedAt": "2026-09-13T20:30:31Z",
       "createdAt": "2026-02-12T11:02:43Z"
     },
     {
@@ -514,7 +514,7 @@
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": null,
-      "stars": 128,
+      "stars": 129,
       "forks": 9,
       "openIssues": 0,
       "license": "MIT",
@@ -627,7 +627,7 @@
       "homepage": "https://mso.rahmanef.com",
       "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
-      "stars": 79,
+      "stars": 82,
       "forks": 11,
       "openIssues": 0,
       "license": "MIT",
@@ -688,7 +688,7 @@
       "language": "Svelte",
       "stars": 67,
       "forks": 19,
-      "openIssues": 5,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [
         "bansos",
@@ -703,7 +703,7 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-09-01T11:45:17Z",
+      "pushedAt": "2026-09-13T09:07:18Z",
       "createdAt": "2026-06-11T13:28:54Z"
     },
     {
@@ -869,11 +869,11 @@
       "language": "Ruby",
       "stars": 47,
       "forks": 4,
-      "openIssues": 2,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-11T05:56:39Z",
+      "pushedAt": "2026-09-13T09:01:11Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -1076,6 +1076,33 @@
       "createdAt": "2025-12-17T16:19:36Z"
     },
     {
+      "slug": "rizukirr/hyprsimple",
+      "fullName": "rizukirr/hyprsimple",
+      "name": "hyprsimple",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/hyprsimple",
+      "homepage": null,
+      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
+      "language": "Shell",
+      "stars": 28,
+      "forks": 4,
+      "openIssues": 0,
+      "license": null,
+      "topics": [
+        "arch-linux",
+        "dotfiles",
+        "hyprland",
+        "hyprland-config",
+        "linux",
+        "omarchy"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-09T06:04:51Z",
+      "createdAt": "2025-10-04T10:27:45Z"
+    },
+    {
       "slug": "rahmanef63/open-silong",
       "fullName": "rahmanef63/open-silong",
       "name": "open-silong",
@@ -1108,33 +1135,6 @@
       "archived": false,
       "pushedAt": "2026-09-09T13:37:34Z",
       "createdAt": "2026-04-29T18:48:11Z"
-    },
-    {
-      "slug": "rizukirr/hyprsimple",
-      "fullName": "rizukirr/hyprsimple",
-      "name": "hyprsimple",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/hyprsimple",
-      "homepage": null,
-      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
-      "language": "Shell",
-      "stars": 25,
-      "forks": 4,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "arch-linux",
-        "dotfiles",
-        "hyprland",
-        "hyprland-config",
-        "linux",
-        "omarchy"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-09T06:04:51Z",
-      "createdAt": "2025-10-04T10:27:45Z"
     },
     {
       "slug": "rudycity/superagent",
@@ -1209,7 +1209,7 @@
       "language": "JavaScript",
       "stars": 19,
       "forks": 1,
-      "openIssues": 1,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [
         "antigravity",
@@ -1227,7 +1227,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-09-12T00:12:41Z",
+      "pushedAt": "2026-09-13T06:51:29Z",
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
@@ -1312,7 +1312,7 @@
         "windows-desktop"
       ],
       "archived": false,
-      "pushedAt": "2026-09-06T12:00:14Z",
+      "pushedAt": "2026-09-13T11:38:11Z",
       "createdAt": "2026-02-23T13:59:12Z"
     },
     {
@@ -1365,6 +1365,26 @@
       "archived": false,
       "pushedAt": "2026-06-16T16:14:20Z",
       "createdAt": "2026-03-12T09:55:51Z"
+    },
+    {
+      "slug": "naeos-foundation/naeos",
+      "fullName": "NAEOS-foundation/naeos",
+      "name": "naeos",
+      "owner": "NAEOS-foundation",
+      "ownerUrl": "https://github.com/NAEOS-foundation",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/301789713?v=4",
+      "url": "https://github.com/NAEOS-foundation/naeos",
+      "homepage": null,
+      "description": null,
+      "language": "Go",
+      "stars": 12,
+      "forks": 6,
+      "openIssues": 4,
+      "license": "Apache-2.0",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-09-13T20:05:50Z",
+      "createdAt": "2026-07-09T15:14:16Z"
     },
     {
       "slug": "rahmanef63/si-coder-agent",
@@ -1701,7 +1721,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-11T21:35:35Z",
+      "pushedAt": "2026-09-12T21:18:15Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1843,6 +1863,26 @@
       "archived": false,
       "pushedAt": "2026-09-07T14:04:30Z",
       "createdAt": "2025-11-22T11:52:35Z"
+    },
+    {
+      "slug": "kusdianta/disk-space-detective",
+      "fullName": "Kusdianta/disk-space-detective",
+      "name": "disk-space-detective",
+      "owner": "Kusdianta",
+      "ownerUrl": "https://github.com/Kusdianta",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/113098131?v=4",
+      "url": "https://github.com/Kusdianta/disk-space-detective",
+      "homepage": null,
+      "description": "Agent Skill: find what is silently filling a disk, root-cause it by measurement, and install a permanent fix. Windows, macOS, Linux.",
+      "language": "PowerShell",
+      "stars": 4,
+      "forks": 0,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-08-21T03:20:21Z",
+      "createdAt": "2026-07-23T04:04:49Z"
     },
     {
       "slug": "faisalaffan/ragi-instant",
@@ -2034,6 +2074,26 @@
       "createdAt": "2026-06-13T11:24:30Z"
     },
     {
+      "slug": "khmuhtadin/studioapi",
+      "fullName": "khmuhtadin/studioapi",
+      "name": "studioapi",
+      "owner": "khmuhtadin",
+      "ownerUrl": "https://github.com/khmuhtadin",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/23192230?v=4",
+      "url": "https://github.com/khmuhtadin/studioapi",
+      "homepage": null,
+      "description": null,
+      "language": "Astro",
+      "stars": 0,
+      "forks": 0,
+      "openIssues": 0,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-09-02T13:19:00Z",
+      "createdAt": "2026-08-05T07:19:57Z"
+    },
+    {
       "slug": "nzxcode/hospital-ai-sales-agent",
       "fullName": "NzxCode/Hospital-Ai-Sales-Agent",
       "name": "Hospital-Ai-Sales-Agent",
@@ -2058,14 +2118,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-09-12T21:18:02.441Z"
+      "syncedAt": "2026-09-13T21:16:24.822Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-09-12T21:18:02.441Z"
+      "syncedAt": "2026-09-13T21:16:24.822Z"
     }
   ],
-  "syncedAt": "2026-09-12T21:18:02.441Z",
-  "count": 76
+  "syncedAt": "2026-09-13T21:16:24.822Z",
+  "count": 79
 }
