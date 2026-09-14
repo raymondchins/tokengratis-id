@@ -42,7 +42,7 @@
       "language": "PHP",
       "stars": 1983,
       "forks": 187,
-      "openIssues": 1,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [
         "avatar",
@@ -52,7 +52,7 @@
         "php-library"
       ],
       "archived": false,
-      "pushedAt": "2026-08-06T15:54:23Z",
+      "pushedAt": "2026-09-14T04:10:01Z",
       "createdAt": "2015-10-12T07:01:40Z"
     },
     {
@@ -67,7 +67,7 @@
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
       "stars": 1362,
-      "forks": 308,
+      "forks": 307,
       "openIssues": 54,
       "license": "GPL-2.0",
       "topics": [
@@ -95,9 +95,9 @@
       "homepage": null,
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
-      "stars": 1224,
-      "forks": 1189,
-      "openIssues": 356,
+      "stars": 1225,
+      "forks": 1191,
+      "openIssues": 354,
       "license": null,
       "topics": [
         "opensid",
@@ -118,7 +118,7 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 991,
+      "stars": 992,
       "forks": 299,
       "openIssues": 0,
       "license": "MIT",
@@ -205,7 +205,7 @@
       "language": "Rust",
       "stars": 369,
       "forks": 34,
-      "openIssues": 22,
+      "openIssues": 24,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -262,6 +262,47 @@
       "createdAt": "2025-11-04T15:37:00Z"
     },
     {
+      "slug": "codecoradev/uteke",
+      "fullName": "codecoradev/uteke",
+      "name": "uteke",
+      "owner": "codecoradev",
+      "ownerUrl": "https://github.com/codecoradev",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
+      "url": "https://github.com/codecoradev/uteke",
+      "homepage": "https://codecora.dev",
+      "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
+      "language": "Rust",
+      "stars": 245,
+      "forks": 27,
+      "openIssues": 6,
+      "license": "Apache-2.0",
+      "topics": [
+        "agent-memory",
+        "ai",
+        "ai-agents",
+        "cli",
+        "cli-tool",
+        "embeddings",
+        "hnsw",
+        "llm",
+        "local-first",
+        "mcp",
+        "mcp-server",
+        "memory",
+        "offline-first",
+        "onnx",
+        "onnxruntime",
+        "rag",
+        "rust",
+        "semantic-search",
+        "sqlite",
+        "vector-database"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-14T14:15:22Z",
+      "createdAt": "2026-05-29T00:27:31Z"
+    },
+    {
       "slug": "gnoviawan/termul",
       "fullName": "gnoviawan/termul",
       "name": "termul",
@@ -296,47 +337,6 @@
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
-      "slug": "codecoradev/uteke",
-      "fullName": "codecoradev/uteke",
-      "name": "uteke",
-      "owner": "codecoradev",
-      "ownerUrl": "https://github.com/codecoradev",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
-      "url": "https://github.com/codecoradev/uteke",
-      "homepage": "https://codecora.dev",
-      "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
-      "language": "Rust",
-      "stars": 240,
-      "forks": 26,
-      "openIssues": 6,
-      "license": "Apache-2.0",
-      "topics": [
-        "agent-memory",
-        "ai",
-        "ai-agents",
-        "cli",
-        "cli-tool",
-        "embeddings",
-        "hnsw",
-        "llm",
-        "local-first",
-        "mcp",
-        "mcp-server",
-        "memory",
-        "offline-first",
-        "onnx",
-        "onnxruntime",
-        "rag",
-        "rust",
-        "semantic-search",
-        "sqlite",
-        "vector-database"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-13T15:26:02Z",
-      "createdAt": "2026-05-29T00:27:31Z"
-    },
-    {
       "slug": "hadziqmtqn/erd-builder-pro",
       "fullName": "hadziqmtqn/erd-builder-pro",
       "name": "erd-builder-pro",
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-09-13T15:11:22Z",
+      "pushedAt": "2026-09-14T12:46:13Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -399,7 +399,7 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 168,
+      "stars": 167,
       "forks": 14,
       "openIssues": 0,
       "license": "Apache-2.0",
@@ -421,7 +421,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-13T14:15:21Z",
+      "pushedAt": "2026-09-14T04:08:33Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -435,8 +435,8 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 140,
-      "forks": 53,
+      "stars": 142,
+      "forks": 54,
       "openIssues": 5,
       "license": "MIT",
       "topics": [
@@ -474,7 +474,7 @@
       "homepage": null,
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
-      "stars": 133,
+      "stars": 134,
       "forks": 67,
       "openIssues": 12,
       "license": "MIT",
@@ -599,7 +599,7 @@
       "homepage": "https://svelte-audio-ui.vercel.app/",
       "description": "A set of accessible and composable Audio UI components.",
       "language": "Svelte",
-      "stars": 93,
+      "stars": 94,
       "forks": 4,
       "openIssues": 15,
       "license": "MIT",
@@ -627,9 +627,9 @@
       "homepage": "https://mso.rahmanef.com",
       "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
-      "stars": 82,
-      "forks": 11,
-      "openIssues": 0,
+      "stars": 83,
+      "forks": 12,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "browser-shell",
@@ -652,7 +652,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-12T18:47:38Z",
+      "pushedAt": "2026-09-14T21:35:55Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -904,6 +904,39 @@
       "createdAt": "2025-05-26T04:42:45Z"
     },
     {
+      "slug": "rizukirr/no-vibe",
+      "fullName": "rizukirr/no-vibe",
+      "name": "no-vibe",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/no-vibe",
+      "homepage": null,
+      "description": "Turn your AI assistant into a tutor. It plans, shows code, reviews, adapts to how you learn and helps you complete your real project on your own",
+      "language": "Shell",
+      "stars": 37,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "ai-agents",
+        "claude-code",
+        "codex",
+        "learning",
+        "llm",
+        "mentor",
+        "opencode",
+        "plugin",
+        "study",
+        "tutor",
+        "vibe-coding",
+        "vibecoding"
+      ],
+      "archived": false,
+      "pushedAt": "2026-06-12T15:10:29Z",
+      "createdAt": "2026-04-09T16:08:42Z"
+    },
+    {
       "slug": "ardli-firman/sha-print",
       "fullName": "ardli-firman/sha-print",
       "name": "sha-print",
@@ -957,39 +990,6 @@
       "archived": false,
       "pushedAt": "2026-08-05T02:24:00Z",
       "createdAt": "2026-06-05T18:22:55Z"
-    },
-    {
-      "slug": "rizukirr/no-vibe",
-      "fullName": "rizukirr/no-vibe",
-      "name": "no-vibe",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/no-vibe",
-      "homepage": null,
-      "description": "Turn your AI assistant into a tutor. It plans, shows code, reviews, adapts to how you learn and helps you complete your real project on your own",
-      "language": "Shell",
-      "stars": 36,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "ai-agents",
-        "claude-code",
-        "codex",
-        "learning",
-        "llm",
-        "mentor",
-        "opencode",
-        "plugin",
-        "study",
-        "tutor",
-        "vibe-coding",
-        "vibecoding"
-      ],
-      "archived": false,
-      "pushedAt": "2026-06-12T15:10:29Z",
-      "createdAt": "2026-04-09T16:08:42Z"
     },
     {
       "slug": "ammar-rasyidi/mandum-rimba",
@@ -1099,7 +1099,7 @@
         "omarchy"
       ],
       "archived": false,
-      "pushedAt": "2026-09-09T06:04:51Z",
+      "pushedAt": "2026-09-14T06:10:09Z",
       "createdAt": "2025-10-04T10:27:45Z"
     },
     {
@@ -1113,7 +1113,7 @@
       "homepage": "https://silong-os.vercel.app/",
       "description": "Open-source, self-hostable Notion/Obsidian-style workspace — block editor for notes, docs and lightweight databases, plus a knowledge graph over them. Next.js 16 · React 19 · Convex · Tailwind v4.",
       "language": "TypeScript",
-      "stars": 27,
+      "stars": 28,
       "forks": 5,
       "openIssues": 0,
       "license": "MIT",
@@ -1241,7 +1241,7 @@
       "homepage": null,
       "description": "Mobile-first PWA for driving a single VPS from the browser — up to 16 concurrent terminals, AI agent launchers, host ops and audit behind one shared secret on a Tailscale-only domain. Next.js 15 · React 19 · Node agent (node-pty + xterm.js).",
       "language": "TypeScript",
-      "stars": 18,
+      "stars": 19,
       "forks": 3,
       "openIssues": 0,
       "license": "MIT",
@@ -1264,6 +1264,38 @@
       "createdAt": "2026-03-20T14:25:48Z"
     },
     {
+      "slug": "muslimtify-org/muslimtify",
+      "fullName": "muslimtify-org/muslimtify",
+      "name": "muslimtify",
+      "owner": "muslimtify-org",
+      "ownerUrl": "https://github.com/muslimtify-org",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/302768915?v=4",
+      "url": "https://github.com/muslimtify-org/muslimtify",
+      "homepage": "https://muslimtify.vercel.app",
+      "description": "A daily prayer notification daemon for Muslims on Windows and Linux, supporting 21 global standard calculation methods, all madzhab, all country.",
+      "language": "C",
+      "stars": 16,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "c-language",
+        "cross-platform",
+        "daemon",
+        "linux",
+        "muslim-prayer-times",
+        "muslims-prayer",
+        "notification",
+        "systemd",
+        "windows",
+        "windows-app",
+        "windows-desktop"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-14T09:18:04Z",
+      "createdAt": "2026-02-23T13:59:12Z"
+    },
+    {
       "slug": "muhammadhasbiashshiddieqy/openclawn",
       "fullName": "MuhammadHasbiAshshiddieqy/OpenClawn",
       "name": "OpenClawn",
@@ -1282,38 +1314,6 @@
       "archived": false,
       "pushedAt": "2026-09-09T14:11:58Z",
       "createdAt": "2026-06-15T14:35:14Z"
-    },
-    {
-      "slug": "muslimtify-org/muslimtify",
-      "fullName": "muslimtify-org/muslimtify",
-      "name": "muslimtify",
-      "owner": "muslimtify-org",
-      "ownerUrl": "https://github.com/muslimtify-org",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/302768915?v=4",
-      "url": "https://github.com/muslimtify-org/muslimtify",
-      "homepage": "https://muslimtify.vercel.app",
-      "description": "A daily prayer notification daemon for Muslims on Windows and Linux, supporting 21 global standard calculation methods, all madzhab, all country.",
-      "language": "C",
-      "stars": 15,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "c-language",
-        "cross-platform",
-        "daemon",
-        "linux",
-        "muslim-prayer-times",
-        "muslims-prayer",
-        "notification",
-        "systemd",
-        "windows",
-        "windows-app",
-        "windows-desktop"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-13T11:38:11Z",
-      "createdAt": "2026-02-23T13:59:12Z"
     },
     {
       "slug": "muhfauziazhar/nusakit-api",
@@ -1367,26 +1367,6 @@
       "createdAt": "2026-03-12T09:55:51Z"
     },
     {
-      "slug": "naeos-foundation/naeos",
-      "fullName": "NAEOS-foundation/naeos",
-      "name": "naeos",
-      "owner": "NAEOS-foundation",
-      "ownerUrl": "https://github.com/NAEOS-foundation",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/301789713?v=4",
-      "url": "https://github.com/NAEOS-foundation/naeos",
-      "homepage": null,
-      "description": null,
-      "language": "Go",
-      "stars": 12,
-      "forks": 6,
-      "openIssues": 4,
-      "license": "Apache-2.0",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-09-13T20:05:50Z",
-      "createdAt": "2026-07-09T15:14:16Z"
-    },
-    {
       "slug": "rahmanef63/si-coder-agent",
       "fullName": "rahmanef63/si-coder-agent",
       "name": "si-coder-agent",
@@ -1397,8 +1377,8 @@
       "homepage": null,
       "description": "Zero-human full-stack deployment as a bundle of /sc-* Claude Code slash commands — GitHub + Convex (self-hosted & Cloud) + Dokploy + Vercel + Hostinger DNS, source to verified live URL. Node ≥18, no runtime dependencies. 8 skills implemented, 5 stubs.",
       "language": "JavaScript",
-      "stars": 12,
-      "forks": 2,
+      "stars": 13,
+      "forks": 3,
       "openIssues": 1,
       "license": "MIT",
       "topics": [
@@ -1418,6 +1398,26 @@
       "archived": false,
       "pushedAt": "2026-09-12T13:08:28Z",
       "createdAt": "2026-03-18T18:38:41Z"
+    },
+    {
+      "slug": "naeos-foundation/naeos",
+      "fullName": "NAEOS-foundation/naeos",
+      "name": "naeos",
+      "owner": "NAEOS-foundation",
+      "ownerUrl": "https://github.com/NAEOS-foundation",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/301789713?v=4",
+      "url": "https://github.com/NAEOS-foundation/naeos",
+      "homepage": null,
+      "description": null,
+      "language": "Go",
+      "stars": 12,
+      "forks": 6,
+      "openIssues": 21,
+      "license": "Apache-2.0",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-09-14T20:40:26Z",
+      "createdAt": "2026-07-09T15:14:16Z"
     },
     {
       "slug": "ahmadghaisanfad2/absen-kelas",
@@ -1615,6 +1615,40 @@
       "createdAt": "2026-06-06T00:23:26Z"
     },
     {
+      "slug": "rahmanef63/framepilot",
+      "fullName": "rahmanef63/framepilot",
+      "name": "framepilot",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/framepilot",
+      "homepage": "https://frame-pilot.rahmanef.com/",
+      "description": "Browser-based 3D camera previsualization and shot planner — design scenes, frames, angles, lenses and moves, then export platform-tuned prompts for AI video models. Next.js 16 · React 19 · Three.js · Convex.",
+      "language": "TypeScript",
+      "stars": 8,
+      "forks": 0,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "ai-video",
+        "camera",
+        "cinematography",
+        "convex",
+        "nextjs",
+        "previsualization",
+        "prompt-engineering",
+        "shot-planner",
+        "storyboard",
+        "text-to-video",
+        "threejs",
+        "typescript",
+        "webgl"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-09T13:32:00Z",
+      "createdAt": "2026-07-10T13:57:01Z"
+    },
+    {
       "slug": "rifqiakrm/code-island",
       "fullName": "rifqiakrm/code-island",
       "name": "code-island",
@@ -1721,42 +1755,8 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-12T21:18:15Z",
+      "pushedAt": "2026-09-13T21:16:37Z",
       "createdAt": "2026-06-01T10:04:41Z"
-    },
-    {
-      "slug": "rahmanef63/framepilot",
-      "fullName": "rahmanef63/framepilot",
-      "name": "framepilot",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/framepilot",
-      "homepage": "https://frame-pilot.rahmanef.com/",
-      "description": "Browser-based 3D camera previsualization and shot planner — design scenes, frames, angles, lenses and moves, then export platform-tuned prompts for AI video models. Next.js 16 · React 19 · Three.js · Convex.",
-      "language": "TypeScript",
-      "stars": 7,
-      "forks": 0,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "ai-video",
-        "camera",
-        "cinematography",
-        "convex",
-        "nextjs",
-        "previsualization",
-        "prompt-engineering",
-        "shot-planner",
-        "storyboard",
-        "text-to-video",
-        "threejs",
-        "typescript",
-        "webgl"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-09T13:32:00Z",
-      "createdAt": "2026-07-10T13:57:01Z"
     },
     {
       "slug": "wauputr4/agent-proxmox",
@@ -2003,11 +2003,11 @@
       "language": "Rust",
       "stars": 1,
       "forks": 0,
-      "openIssues": 15,
+      "openIssues": 16,
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-11T04:49:44Z",
+      "pushedAt": "2026-09-14T05:54:44Z",
       "createdAt": "2026-05-31T08:23:44Z"
     },
     {
@@ -2118,14 +2118,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-09-13T21:16:24.822Z"
+      "syncedAt": "2026-09-14T22:20:39.068Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-09-13T21:16:24.822Z"
+      "syncedAt": "2026-09-14T22:20:39.068Z"
     }
   ],
-  "syncedAt": "2026-09-13T21:16:24.822Z",
+  "syncedAt": "2026-09-14T22:20:39.068Z",
   "count": 79
 }

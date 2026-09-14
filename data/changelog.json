@@ -1,5 +1,27 @@
 [
   {
+    "date": "2026-09-14",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "ModelScope",
+        "added": [
+          "nex-agi/Nex-N2.5-mini",
+          "nex-agi/Nex-N2.5-Pro"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "NVIDIA NIM",
+        "added": [
+          "nvidia/nemotron-parse-2.0"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-09-12",
     "providersAdded": [],
     "providersRemoved": [],
