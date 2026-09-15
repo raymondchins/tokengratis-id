@@ -1,5 +1,36 @@
 [
   {
+    "date": "2026-09-15",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cline",
+        "added": [
+          "Deepseek-v4.1-Flash"
+        ],
+        "removed": [
+          "deepseek-v4-flash",
+          "LongCat-2.0"
+        ]
+      },
+      {
+        "provider": "NVIDIA NIM",
+        "added": [],
+        "removed": [
+          "deepseek-ai/deepseek-v4-pro-0813"
+        ]
+      },
+      {
+        "provider": "OpenRouter",
+        "added": [
+          "Z.ai: GLM 5.2 (free)"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-09-14",
     "providersAdded": [],
     "providersRemoved": [],
