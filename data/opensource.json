@@ -96,8 +96,8 @@
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
       "stars": 1225,
-      "forks": 1191,
-      "openIssues": 343,
+      "forks": 1192,
+      "openIssues": 341,
       "license": null,
       "topics": [
         "opensid",
@@ -118,7 +118,7 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 992,
+      "stars": 994,
       "forks": 300,
       "openIssues": 0,
       "license": "MIT",
@@ -203,9 +203,9 @@
       "homepage": "https://omni.weekndlabs.com/docs",
       "description": "Your agent pays twice for output it has already seen. OMNI returns a handle instead: 97.2% off a file read twice. Nothing deleted, nothing invented.",
       "language": "Rust",
-      "stars": 370,
+      "stars": 371,
       "forks": 34,
-      "openIssues": 26,
+      "openIssues": 27,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -244,7 +244,7 @@
       "homepage": "https://adbkit.netlify.app/",
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 352,
+      "stars": 353,
       "forks": 43,
       "openIssues": 1,
       "license": "MIT",
@@ -258,7 +258,7 @@
         "wails-app"
       ],
       "archived": false,
-      "pushedAt": "2026-09-11T06:24:26Z",
+      "pushedAt": "2026-09-16T03:33:40Z",
       "createdAt": "2025-11-04T15:37:00Z"
     },
     {
@@ -272,9 +272,9 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 253,
+      "stars": 255,
       "forks": 28,
-      "openIssues": 4,
+      "openIssues": 1,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -299,7 +299,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-09-15T18:54:10Z",
+      "pushedAt": "2026-09-16T02:24:28Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -315,7 +315,7 @@
       "language": "TypeScript",
       "stars": 242,
       "forks": 46,
-      "openIssues": 60,
+      "openIssues": 39,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -333,7 +333,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-09-15T21:19:04Z",
+      "pushedAt": "2026-09-16T17:30:33Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-09-15T04:47:35Z",
+      "pushedAt": "2026-09-16T16:15:20Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -380,7 +380,7 @@
       "description": null,
       "language": "Python",
       "stars": 181,
-      "forks": 42,
+      "forks": 43,
       "openIssues": 0,
       "license": "MIT",
       "topics": [],
@@ -399,7 +399,7 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 167,
+      "stars": 168,
       "forks": 14,
       "openIssues": 0,
       "license": "Apache-2.0",
@@ -421,7 +421,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-14T04:08:33Z",
+      "pushedAt": "2026-09-16T15:37:25Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -436,7 +436,7 @@
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
       "stars": 143,
-      "forks": 54,
+      "forks": 55,
       "openIssues": 5,
       "license": "MIT",
       "topics": [
@@ -550,8 +550,8 @@
       "homepage": "https://pddikti.kemdiktisaintek.go.id/",
       "description": "Unofficial Python 3 API wrapper to retrieve data from PDDIKTI Kemdikbudristek.",
       "language": "Python",
-      "stars": 123,
-      "forks": 26,
+      "stars": 124,
+      "forks": 27,
       "openIssues": 0,
       "license": null,
       "topics": [
@@ -628,7 +628,7 @@
       "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
       "stars": 83,
-      "forks": 12,
+      "forks": 13,
       "openIssues": 1,
       "license": "MIT",
       "topics": [
@@ -652,7 +652,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-15T15:03:18Z",
+      "pushedAt": "2026-09-16T21:19:55Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -717,7 +717,7 @@
       "homepage": "https://maziyank.github.io/nats",
       "description": "NATS | Open Source Business and Accounting Software",
       "language": "TypeScript",
-      "stars": 52,
+      "stars": 51,
       "forks": 15,
       "openIssues": 0,
       "license": "MIT",
@@ -808,7 +808,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-15T12:38:21Z",
+      "pushedAt": "2026-09-16T16:13:32Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -1076,6 +1076,40 @@
       "createdAt": "2025-12-17T16:19:36Z"
     },
     {
+      "slug": "rahmanef63/open-silong",
+      "fullName": "rahmanef63/open-silong",
+      "name": "open-silong",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/open-silong",
+      "homepage": "https://silong-os.vercel.app/",
+      "description": "Open-source, self-hostable Notion/Obsidian-style workspace — block editor for notes, docs and lightweight databases, plus a knowledge graph over them. Next.js 16 · React 19 · Convex · Tailwind v4.",
+      "language": "TypeScript",
+      "stars": 29,
+      "forks": 5,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "block-editor",
+        "convex",
+        "indonesia",
+        "knowledge-graph",
+        "nextjs",
+        "notion-alternative",
+        "notion-clone",
+        "open-source",
+        "react",
+        "self-hosted",
+        "tailwindcss",
+        "typescript",
+        "workspace"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-09T13:37:34Z",
+      "createdAt": "2026-04-29T18:48:11Z"
+    },
+    {
       "slug": "rizukirr/hyprsimple",
       "fullName": "rizukirr/hyprsimple",
       "name": "hyprsimple",
@@ -1103,40 +1137,6 @@
       "createdAt": "2025-10-04T10:27:45Z"
     },
     {
-      "slug": "rahmanef63/open-silong",
-      "fullName": "rahmanef63/open-silong",
-      "name": "open-silong",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/open-silong",
-      "homepage": "https://silong-os.vercel.app/",
-      "description": "Open-source, self-hostable Notion/Obsidian-style workspace — block editor for notes, docs and lightweight databases, plus a knowledge graph over them. Next.js 16 · React 19 · Convex · Tailwind v4.",
-      "language": "TypeScript",
-      "stars": 28,
-      "forks": 5,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "block-editor",
-        "convex",
-        "indonesia",
-        "knowledge-graph",
-        "nextjs",
-        "notion-alternative",
-        "notion-clone",
-        "open-source",
-        "react",
-        "self-hosted",
-        "tailwindcss",
-        "typescript",
-        "workspace"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-09T13:37:34Z",
-      "createdAt": "2026-04-29T18:48:11Z"
-    },
-    {
       "slug": "rudycity/superagent",
       "fullName": "RudyCity/superagent",
       "name": "superagent",
@@ -1155,40 +1155,6 @@
       "archived": false,
       "pushedAt": "2026-09-11T09:06:02Z",
       "createdAt": "2026-06-09T15:06:10Z"
-    },
-    {
-      "slug": "rizukirr/vibekit",
-      "fullName": "rizukirr/vibekit",
-      "name": "vibekit",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/vibekit",
-      "homepage": null,
-      "description": "Efficient, Evidence-based, Opinionated vibe-coding pipeline for CC / Codex / OpenCode / Antigravity / Pi",
-      "language": "JavaScript",
-      "stars": 20,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "antigravity",
-        "claude-code",
-        "claude-plugin",
-        "codex",
-        "codex-plugin",
-        "openai",
-        "opencode",
-        "opencode-plugin",
-        "pi-mono",
-        "pi-plugins",
-        "plugin",
-        "vibe-coding",
-        "vibecoding"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-13T06:51:29Z",
-      "createdAt": "2026-04-21T15:17:02Z"
     },
     {
       "slug": "rafiulm/warungos",
@@ -1231,6 +1197,40 @@
       "createdAt": "2026-04-08T09:27:49Z"
     },
     {
+      "slug": "rizukirr/vibekit",
+      "fullName": "rizukirr/vibekit",
+      "name": "vibekit",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/vibekit",
+      "homepage": null,
+      "description": "Efficient, Evidence-based, Opinionated vibe-coding pipeline for CC / Codex / OpenCode / Antigravity / Pi",
+      "language": "JavaScript",
+      "stars": 19,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "antigravity",
+        "claude-code",
+        "claude-plugin",
+        "codex",
+        "codex-plugin",
+        "openai",
+        "opencode",
+        "opencode-plugin",
+        "pi-mono",
+        "pi-plugins",
+        "plugin",
+        "vibe-coding",
+        "vibecoding"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-16T01:41:47Z",
+      "createdAt": "2026-04-21T15:17:02Z"
+    },
+    {
       "slug": "rahmanef63/control-room",
       "fullName": "rahmanef63/control-room",
       "name": "control-room",
@@ -1264,26 +1264,6 @@
       "createdAt": "2026-03-20T14:25:48Z"
     },
     {
-      "slug": "muhammadhasbiashshiddieqy/openclawn",
-      "fullName": "MuhammadHasbiAshshiddieqy/OpenClawn",
-      "name": "OpenClawn",
-      "owner": "MuhammadHasbiAshshiddieqy",
-      "ownerUrl": "https://github.com/MuhammadHasbiAshshiddieqy",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/47019965?v=4",
-      "url": "https://github.com/MuhammadHasbiAshshiddieqy/OpenClawn",
-      "homepage": null,
-      "description": "Lightweight, safe, self-improving multi-role AI agent framework. Hybrid local + cloud LLMs with self-calibrating routing, decaying skills, and confidence-gated learning — 25 sandboxed tools for code, data, docs, git, and the web.",
-      "language": "Python",
-      "stars": 16,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-09-15T04:24:23Z",
-      "createdAt": "2026-06-15T14:35:14Z"
-    },
-    {
       "slug": "muslimtify-org/muslimtify",
       "fullName": "muslimtify-org/muslimtify",
       "name": "muslimtify",
@@ -1312,8 +1292,28 @@
         "windows-desktop"
       ],
       "archived": false,
-      "pushedAt": "2026-09-14T09:18:04Z",
+      "pushedAt": "2026-09-16T13:35:17Z",
       "createdAt": "2026-02-23T13:59:12Z"
+    },
+    {
+      "slug": "muhammadhasbiashshiddieqy/openclawn",
+      "fullName": "MuhammadHasbiAshshiddieqy/OpenClawn",
+      "name": "OpenClawn",
+      "owner": "MuhammadHasbiAshshiddieqy",
+      "ownerUrl": "https://github.com/MuhammadHasbiAshshiddieqy",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/47019965?v=4",
+      "url": "https://github.com/MuhammadHasbiAshshiddieqy/OpenClawn",
+      "homepage": null,
+      "description": "Lightweight, safe, self-improving multi-role AI agent framework. Hybrid local + cloud LLMs with self-calibrating routing, decaying skills, and confidence-gated learning — 25 sandboxed tools for code, data, docs, git, and the web.",
+      "language": "Python",
+      "stars": 16,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-09-15T04:24:23Z",
+      "createdAt": "2026-06-15T14:35:14Z"
     },
     {
       "slug": "muhfauziazhar/nusakit-api",
@@ -1416,7 +1416,7 @@
       "license": "Apache-2.0",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-15T20:20:17Z",
+      "pushedAt": "2026-09-16T19:10:46Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1755,7 +1755,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-14T22:20:52Z",
+      "pushedAt": "2026-09-15T21:58:10Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1861,7 +1861,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-07T14:04:30Z",
+      "pushedAt": "2026-09-16T14:12:36Z",
       "createdAt": "2025-11-22T11:52:35Z"
     },
     {
@@ -1991,26 +1991,6 @@
       "createdAt": "2025-12-10T04:16:53Z"
     },
     {
-      "slug": "dayartcrew-web/masday-workflow-rust",
-      "fullName": "dayartcrew-web/masday-workflow-rust",
-      "name": "masday-workflow-rust",
-      "owner": "dayartcrew-web",
-      "ownerUrl": "https://github.com/dayartcrew-web",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/245359298?v=4",
-      "url": "https://github.com/dayartcrew-web/masday-workflow-rust",
-      "homepage": null,
-      "description": "Rust MVC MCP Server — Unified AI coding agent platform built with Axum, SQLx, and tokio. 90 MCP tools, 4-layer memory, PostgreSQL.",
-      "language": "Rust",
-      "stars": 1,
-      "forks": 0,
-      "openIssues": 16,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-09-14T05:54:44Z",
-      "createdAt": "2026-05-31T08:23:44Z"
-    },
-    {
       "slug": "adityazxxx/sheltermark",
       "fullName": "AdityaZxxx/sheltermark",
       "name": "sheltermark",
@@ -2030,8 +2010,28 @@
         "productivity"
       ],
       "archived": false,
-      "pushedAt": "2026-09-09T13:06:12Z",
+      "pushedAt": "2026-09-16T01:23:25Z",
       "createdAt": "2026-02-10T04:21:08Z"
+    },
+    {
+      "slug": "dayartcrew-web/masday-workflow-rust",
+      "fullName": "dayartcrew-web/masday-workflow-rust",
+      "name": "masday-workflow-rust",
+      "owner": "dayartcrew-web",
+      "ownerUrl": "https://github.com/dayartcrew-web",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/245359298?v=4",
+      "url": "https://github.com/dayartcrew-web/masday-workflow-rust",
+      "homepage": null,
+      "description": "Rust MVC MCP Server — Unified AI coding agent platform built with Axum, SQLx, and tokio. 90 MCP tools, 4-layer memory, PostgreSQL.",
+      "language": "Rust",
+      "stars": 1,
+      "forks": 0,
+      "openIssues": 16,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-09-14T05:54:44Z",
+      "createdAt": "2026-05-31T08:23:44Z"
     },
     {
       "slug": "bimoalfarrabi/pantau-bbm",
@@ -2118,14 +2118,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-09-15T21:57:57.120Z"
+      "syncedAt": "2026-09-16T21:57:32.181Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-09-15T21:57:57.120Z"
+      "syncedAt": "2026-09-16T21:57:32.181Z"
     }
   ],
-  "syncedAt": "2026-09-15T21:57:57.120Z",
+  "syncedAt": "2026-09-16T21:57:32.181Z",
   "count": 79
 }

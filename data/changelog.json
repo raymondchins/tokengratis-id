@@ -1,5 +1,61 @@
 [
   {
+    "date": "2026-09-16",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cloudflare Workers AI",
+        "added": [],
+        "removed": [
+          "Mistral 7B",
+          "Qwen 1.5 7B"
+        ]
+      },
+      {
+        "provider": "Groq",
+        "added": [
+          "meta-llama/llama-prompt-guard-2-22m",
+          "meta-llama/llama-prompt-guard-2-86m",
+          "qwen/qwen3.8-27b"
+        ],
+        "removed": [
+          "Moonshot Kimi K2",
+          "Moonshot Kimi K2 0905"
+        ]
+      },
+      {
+        "provider": "ModelScope",
+        "added": [
+          "GLM-5.3-Flash",
+          "deepseek-ai/DeepSeek-V4.1-Flash"
+        ],
+        "removed": [
+          "Qwen/Qwen3-14B",
+          "Qwen/Qwen3-235B-A22B",
+          "Qwen/Qwen3-235B-A22B-Thinking-2507",
+          "Qwen/Qwen3-30B-A3B",
+          "Qwen/Qwen3-30B-A3B-Thinking-2507",
+          "Qwen/Qwen3-4B",
+          "Qwen/Qwen3-8B",
+          "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+          "Qwen/Qwen3-Next-80B-A3B-Instruct",
+          "Qwen/Qwen3-Next-80B-A3B-Thinking",
+          "Qwen/Qwen3-VL-235B-A22B-Instruct",
+          "Qwen/Qwen3-VL-8B-Instruct",
+          "Qwen/Qwen3-VL-8B-Thinking"
+        ]
+      },
+      {
+        "provider": "NVIDIA NIM",
+        "added": [
+          "z-ai/glm-5.3"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-09-15",
     "providersAdded": [],
     "providersRemoved": [],
