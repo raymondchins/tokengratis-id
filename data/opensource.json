@@ -11,9 +11,9 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js - The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser (client-side) or Node.js (server-side).",
       "language": "JavaScript",
-      "stars": 10190,
+      "stars": 10189,
       "forks": 1217,
-      "openIssues": 15,
+      "openIssues": 14,
       "license": "AGPL-3.0",
       "topics": [
         "analytics",
@@ -67,7 +67,7 @@
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
       "stars": 1362,
-      "forks": 307,
+      "forks": 306,
       "openIssues": 54,
       "license": "GPL-2.0",
       "topics": [
@@ -97,7 +97,7 @@
       "language": "PHP",
       "stars": 1225,
       "forks": 1192,
-      "openIssues": 341,
+      "openIssues": 342,
       "license": null,
       "topics": [
         "opensid",
@@ -118,8 +118,8 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 994,
-      "forks": 300,
+      "stars": 995,
+      "forks": 302,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -205,7 +205,7 @@
       "language": "Rust",
       "stars": 371,
       "forks": 34,
-      "openIssues": 27,
+      "openIssues": 29,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -230,7 +230,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-09-15T16:54:48Z",
+      "pushedAt": "2026-09-16T22:17:04Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -244,7 +244,7 @@
       "homepage": "https://adbkit.netlify.app/",
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 353,
+      "stars": 352,
       "forks": 43,
       "openIssues": 1,
       "license": "MIT",
@@ -272,9 +272,9 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 255,
+      "stars": 257,
       "forks": 28,
-      "openIssues": 1,
+      "openIssues": 2,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -299,7 +299,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-09-16T02:24:28Z",
+      "pushedAt": "2026-09-17T11:34:29Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -315,7 +315,7 @@
       "language": "TypeScript",
       "stars": 242,
       "forks": 46,
-      "openIssues": 39,
+      "openIssues": 38,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -333,7 +333,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-09-16T17:30:33Z",
+      "pushedAt": "2026-09-17T17:26:20Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -436,7 +436,7 @@
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
       "stars": 143,
-      "forks": 55,
+      "forks": 54,
       "openIssues": 5,
       "license": "MIT",
       "topics": [
@@ -550,7 +550,7 @@
       "homepage": "https://pddikti.kemdiktisaintek.go.id/",
       "description": "Unofficial Python 3 API wrapper to retrieve data from PDDIKTI Kemdikbudristek.",
       "language": "Python",
-      "stars": 124,
+      "stars": 126,
       "forks": 27,
       "openIssues": 0,
       "license": null,
@@ -627,9 +627,9 @@
       "homepage": "https://mso.rahmanef.com",
       "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
-      "stars": 83,
+      "stars": 87,
       "forks": 13,
-      "openIssues": 1,
+      "openIssues": 6,
       "license": "MIT",
       "topics": [
         "browser-shell",
@@ -652,7 +652,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-16T21:19:55Z",
+      "pushedAt": "2026-09-17T19:17:52Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -804,11 +804,11 @@
       "language": "Ruby",
       "stars": 48,
       "forks": 5,
-      "openIssues": 1,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-16T16:13:32Z",
+      "pushedAt": "2026-09-17T09:38:30Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -1002,7 +1002,7 @@
       "homepage": "https://www.mandumrimba.org",
       "description": "Mandum Rimba is an independent, nonprofit public-interest observatory. We do not sell data, carry advertising, or take sides. We consolidate satellite data and credible public sources into a single open map, auditable by anyone, fully open source, and with every figure traceable to its origin.",
       "language": "TypeScript",
-      "stars": 32,
+      "stars": 33,
       "forks": 8,
       "openIssues": 0,
       "license": "AGPL-3.0",
@@ -1076,6 +1076,33 @@
       "createdAt": "2025-12-17T16:19:36Z"
     },
     {
+      "slug": "rizukirr/hyprsimple",
+      "fullName": "rizukirr/hyprsimple",
+      "name": "hyprsimple",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/hyprsimple",
+      "homepage": null,
+      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
+      "language": "Shell",
+      "stars": 30,
+      "forks": 4,
+      "openIssues": 0,
+      "license": null,
+      "topics": [
+        "arch-linux",
+        "dotfiles",
+        "hyprland",
+        "hyprland-config",
+        "linux",
+        "omarchy"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-17T11:41:01Z",
+      "createdAt": "2025-10-04T10:27:45Z"
+    },
+    {
       "slug": "rahmanef63/open-silong",
       "fullName": "rahmanef63/open-silong",
       "name": "open-silong",
@@ -1110,33 +1137,6 @@
       "createdAt": "2026-04-29T18:48:11Z"
     },
     {
-      "slug": "rizukirr/hyprsimple",
-      "fullName": "rizukirr/hyprsimple",
-      "name": "hyprsimple",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/hyprsimple",
-      "homepage": null,
-      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
-      "language": "Shell",
-      "stars": 28,
-      "forks": 4,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "arch-linux",
-        "dotfiles",
-        "hyprland",
-        "hyprland-config",
-        "linux",
-        "omarchy"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-14T06:10:09Z",
-      "createdAt": "2025-10-04T10:27:45Z"
-    },
-    {
       "slug": "rudycity/superagent",
       "fullName": "RudyCity/superagent",
       "name": "superagent",
@@ -1147,13 +1147,13 @@
       "homepage": null,
       "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
       "language": "TypeScript",
-      "stars": 22,
+      "stars": 23,
       "forks": 3,
       "openIssues": 0,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-11T09:06:02Z",
+      "pushedAt": "2026-09-17T14:06:59Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1412,11 +1412,11 @@
       "language": "Go",
       "stars": 12,
       "forks": 6,
-      "openIssues": 6,
+      "openIssues": 5,
       "license": "Apache-2.0",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-16T19:10:46Z",
+      "pushedAt": "2026-09-17T19:07:23Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1755,7 +1755,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-15T21:58:10Z",
+      "pushedAt": "2026-09-16T21:57:45Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -2118,14 +2118,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-09-16T21:57:32.181Z"
+      "syncedAt": "2026-09-17T21:57:17.532Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-09-16T21:57:32.181Z"
+      "syncedAt": "2026-09-17T21:57:17.532Z"
     }
   ],
-  "syncedAt": "2026-09-16T21:57:32.181Z",
+  "syncedAt": "2026-09-17T21:57:17.532Z",
   "count": 79
 }
