@@ -66,7 +66,7 @@
       "homepage": "https://www.htmly.com",
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
-      "stars": 1362,
+      "stars": 1363,
       "forks": 306,
       "openIssues": 54,
       "license": "GPL-2.0",
@@ -95,9 +95,9 @@
       "homepage": null,
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
-      "stars": 1225,
+      "stars": 1226,
       "forks": 1192,
-      "openIssues": 342,
+      "openIssues": 343,
       "license": null,
       "topics": [
         "opensid",
@@ -118,9 +118,9 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 995,
+      "stars": 996,
       "forks": 302,
-      "openIssues": 0,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "ai-video",
@@ -203,7 +203,7 @@
       "homepage": "https://omni.weekndlabs.com/docs",
       "description": "Your agent pays twice for output it has already seen. OMNI returns a handle instead: 97.2% off a file read twice. Nothing deleted, nothing invented.",
       "language": "Rust",
-      "stars": 371,
+      "stars": 370,
       "forks": 34,
       "openIssues": 29,
       "license": "Apache-2.0",
@@ -244,7 +244,7 @@
       "homepage": "https://adbkit.netlify.app/",
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 352,
+      "stars": 353,
       "forks": 43,
       "openIssues": 1,
       "license": "MIT",
@@ -273,8 +273,8 @@
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
       "stars": 257,
-      "forks": 28,
-      "openIssues": 2,
+      "forks": 29,
+      "openIssues": 1,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -299,7 +299,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-09-17T11:34:29Z",
+      "pushedAt": "2026-09-18T12:12:25Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -333,7 +333,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-09-17T17:26:20Z",
+      "pushedAt": "2026-09-18T17:27:05Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -347,7 +347,7 @@
       "homepage": "https://www.erdbuilderpro.com",
       "description": "ERD Builder Pro is a database design and documentation tool for developers. Build ERDs, flowcharts, notes, and drawings — all in one workspace",
       "language": "TypeScript",
-      "stars": 204,
+      "stars": 205,
       "forks": 41,
       "openIssues": 7,
       "license": null,
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-09-16T16:15:20Z",
+      "pushedAt": "2026-09-18T12:53:54Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -421,7 +421,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-16T15:37:25Z",
+      "pushedAt": "2026-09-18T05:27:18Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -435,7 +435,7 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 143,
+      "stars": 145,
       "forks": 54,
       "openIssues": 5,
       "license": "MIT",
@@ -495,7 +495,7 @@
       "description": "Online banking angular springboot mysql",
       "language": "Java",
       "stars": 131,
-      "forks": 100,
+      "forks": 101,
       "openIssues": 0,
       "license": null,
       "topics": [],
@@ -514,7 +514,7 @@
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": null,
-      "stars": 129,
+      "stars": 130,
       "forks": 9,
       "openIssues": 0,
       "license": "MIT",
@@ -629,7 +629,7 @@
       "language": "TypeScript",
       "stars": 87,
       "forks": 13,
-      "openIssues": 6,
+      "openIssues": 2,
       "license": "MIT",
       "topics": [
         "browser-shell",
@@ -652,7 +652,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-17T19:17:52Z",
+      "pushedAt": "2026-09-18T15:31:48Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -914,7 +914,7 @@
       "homepage": null,
       "description": "Turn your AI assistant into a tutor. It plans, shows code, reviews, adapts to how you learn and helps you complete your real project on your own",
       "language": "Shell",
-      "stars": 37,
+      "stars": 38,
       "forks": 1,
       "openIssues": 0,
       "license": "MIT",
@@ -1099,7 +1099,7 @@
         "omarchy"
       ],
       "archived": false,
-      "pushedAt": "2026-09-17T11:41:01Z",
+      "pushedAt": "2026-09-18T16:23:25Z",
       "createdAt": "2025-10-04T10:27:45Z"
     },
     {
@@ -1168,7 +1168,7 @@
       "description": null,
       "language": "TypeScript",
       "stars": 20,
-      "forks": 6,
+      "forks": 7,
       "openIssues": 1,
       "license": null,
       "topics": [],
@@ -1264,6 +1264,26 @@
       "createdAt": "2026-03-20T14:25:48Z"
     },
     {
+      "slug": "muhammadhasbiashshiddieqy/openclawn",
+      "fullName": "MuhammadHasbiAshshiddieqy/OpenClawn",
+      "name": "OpenClawn",
+      "owner": "MuhammadHasbiAshshiddieqy",
+      "ownerUrl": "https://github.com/MuhammadHasbiAshshiddieqy",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/47019965?v=4",
+      "url": "https://github.com/MuhammadHasbiAshshiddieqy/OpenClawn",
+      "homepage": null,
+      "description": "Lightweight, safe, self-improving multi-role AI agent framework. Hybrid local + cloud LLMs with self-calibrating routing, decaying skills, and confidence-gated learning — 25 sandboxed tools for code, data, docs, git, and the web.",
+      "language": "Python",
+      "stars": 16,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-09-18T13:36:05Z",
+      "createdAt": "2026-06-15T14:35:14Z"
+    },
+    {
       "slug": "muslimtify-org/muslimtify",
       "fullName": "muslimtify-org/muslimtify",
       "name": "muslimtify",
@@ -1294,26 +1314,6 @@
       "archived": false,
       "pushedAt": "2026-09-16T13:35:17Z",
       "createdAt": "2026-02-23T13:59:12Z"
-    },
-    {
-      "slug": "muhammadhasbiashshiddieqy/openclawn",
-      "fullName": "MuhammadHasbiAshshiddieqy/OpenClawn",
-      "name": "OpenClawn",
-      "owner": "MuhammadHasbiAshshiddieqy",
-      "ownerUrl": "https://github.com/MuhammadHasbiAshshiddieqy",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/47019965?v=4",
-      "url": "https://github.com/MuhammadHasbiAshshiddieqy/OpenClawn",
-      "homepage": null,
-      "description": "Lightweight, safe, self-improving multi-role AI agent framework. Hybrid local + cloud LLMs with self-calibrating routing, decaying skills, and confidence-gated learning — 25 sandboxed tools for code, data, docs, git, and the web.",
-      "language": "Python",
-      "stars": 16,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-09-15T04:24:23Z",
-      "createdAt": "2026-06-15T14:35:14Z"
     },
     {
       "slug": "muhfauziazhar/nusakit-api",
@@ -1416,7 +1416,7 @@
       "license": "Apache-2.0",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-17T19:07:23Z",
+      "pushedAt": "2026-09-18T19:50:42Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1755,7 +1755,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-16T21:57:45Z",
+      "pushedAt": "2026-09-17T21:57:30Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -2010,7 +2010,7 @@
         "productivity"
       ],
       "archived": false,
-      "pushedAt": "2026-09-16T01:23:25Z",
+      "pushedAt": "2026-09-18T03:44:27Z",
       "createdAt": "2026-02-10T04:21:08Z"
     },
     {
@@ -2118,14 +2118,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-09-17T21:57:17.532Z"
+      "syncedAt": "2026-09-18T21:29:50.343Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-09-17T21:57:17.532Z"
+      "syncedAt": "2026-09-18T21:29:50.343Z"
     }
   ],
-  "syncedAt": "2026-09-17T21:57:17.532Z",
+  "syncedAt": "2026-09-18T21:29:50.343Z",
   "count": 79
 }

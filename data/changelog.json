@@ -1,5 +1,34 @@
 [
   {
+    "date": "2026-09-18",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cline",
+        "added": [],
+        "removed": [
+          "Union Alpha"
+        ]
+      },
+      {
+        "provider": "ModelScope",
+        "added": [],
+        "removed": [
+          "GLM-5.3-Flash",
+          "Tencent-Hunyuan/Hy3"
+        ]
+      },
+      {
+        "provider": "OpenRouter",
+        "added": [
+          "DeepSeek: DeepSeek V4 Flash 0731 (free)"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-09-17",
     "providersAdded": [],
     "providersRemoved": [],
