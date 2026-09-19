@@ -1,5 +1,62 @@
 [
   {
+    "date": "2026-09-19",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cloudflare Workers AI",
+        "added": [],
+        "removed": [
+          "Mistral 7B",
+          "Qwen 1.5 7B"
+        ]
+      },
+      {
+        "provider": "Groq",
+        "added": [
+          "meta-llama/llama-prompt-guard-2-22m",
+          "meta-llama/llama-prompt-guard-2-86m",
+          "qwen/qwen3.8-27b"
+        ],
+        "removed": [
+          "Moonshot Kimi K2",
+          "Moonshot Kimi K2 0905"
+        ]
+      },
+      {
+        "provider": "LLM7.io",
+        "added": [
+          "GLM-5.3-Flash"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "OpenCode Zen",
+        "added": [
+          "DeepSeek V4 Flash Vision Exp",
+          "DeepSeek V4 Pro",
+          "DeepSeek V4.1 Flash",
+          "GLM-5.2",
+          "GLM-5.3",
+          "GLM-5.3-Flash",
+          "Kimi K3",
+          "MiniMax-M3",
+          "Qwen3.5 Plus",
+          "Qwen3.6 Plus",
+          "Qwen3.8 Flash",
+          "Kimi K2.5",
+          "Kimi K2.6",
+          "GLM-5",
+          "MiniMax-M2.5",
+          "MiniMax-M2.7",
+          "GLM-5.1"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-09-18",
     "providersAdded": [],
     "providersRemoved": [],
