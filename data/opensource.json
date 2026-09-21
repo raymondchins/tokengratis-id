@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js - The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser (client-side) or Node.js (server-side).",
       "language": "JavaScript",
-      "stars": 10189,
+      "stars": 10190,
       "forks": 1216,
       "openIssues": 15,
       "license": "AGPL-3.0",
@@ -66,8 +66,8 @@
       "homepage": "https://www.htmly.com",
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
-      "stars": 1363,
-      "forks": 306,
+      "stars": 1364,
+      "forks": 305,
       "openIssues": 54,
       "license": "GPL-2.0",
       "topics": [
@@ -97,7 +97,7 @@
       "language": "PHP",
       "stars": 1227,
       "forks": 1192,
-      "openIssues": 344,
+      "openIssues": 352,
       "license": null,
       "topics": [
         "opensid",
@@ -119,7 +119,7 @@
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
       "stars": 1004,
-      "forks": 303,
+      "forks": 304,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -205,7 +205,7 @@
       "language": "Rust",
       "stars": 370,
       "forks": 34,
-      "openIssues": 19,
+      "openIssues": 20,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -241,10 +241,10 @@
       "ownerUrl": "https://github.com/Drenzzz",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/116653610?v=4",
       "url": "https://github.com/Drenzzz/ADBKit",
-      "homepage": "https://adbkit.netlify.app/",
+      "homepage": "https://adbkit.pages.dev",
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 354,
+      "stars": 355,
       "forks": 43,
       "openIssues": 1,
       "license": "MIT",
@@ -258,7 +258,7 @@
         "wails-app"
       ],
       "archived": false,
-      "pushedAt": "2026-09-16T03:33:40Z",
+      "pushedAt": "2026-09-21T07:05:46Z",
       "createdAt": "2025-11-04T15:37:00Z"
     },
     {
@@ -272,7 +272,7 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 260,
+      "stars": 262,
       "forks": 30,
       "openIssues": 1,
       "license": "Apache-2.0",
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-09-20T11:10:20Z",
+      "pushedAt": "2026-09-21T13:16:27Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -379,7 +379,7 @@
       "homepage": null,
       "description": null,
       "language": "Python",
-      "stars": 182,
+      "stars": 183,
       "forks": 44,
       "openIssues": 0,
       "license": "MIT",
@@ -421,7 +421,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-19T16:32:39Z",
+      "pushedAt": "2026-09-21T08:30:27Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -436,7 +436,7 @@
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
       "stars": 146,
-      "forks": 53,
+      "forks": 54,
       "openIssues": 5,
       "license": "MIT",
       "topics": [
@@ -474,7 +474,7 @@
       "homepage": null,
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
-      "stars": 135,
+      "stars": 136,
       "forks": 69,
       "openIssues": 12,
       "license": "MIT",
@@ -627,9 +627,9 @@
       "homepage": "https://mso.rahmanef.com",
       "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
-      "stars": 90,
+      "stars": 91,
       "forks": 14,
-      "openIssues": 1,
+      "openIssues": 2,
       "license": "MIT",
       "topics": [
         "browser-shell",
@@ -652,7 +652,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-20T13:40:14Z",
+      "pushedAt": "2026-09-21T10:46:02Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -747,6 +747,26 @@
       "createdAt": "2026-06-18T03:59:11Z"
     },
     {
+      "slug": "firewalker06/tycho",
+      "fullName": "firewalker06/tycho",
+      "name": "tycho",
+      "owner": "firewalker06",
+      "ownerUrl": "https://github.com/firewalker06",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/157515?v=4",
+      "url": "https://github.com/firewalker06/tycho",
+      "homepage": null,
+      "description": "Its Factorio for coding agents",
+      "language": "Ruby",
+      "stars": 49,
+      "forks": 5,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-09-20T10:49:51Z",
+      "createdAt": "2026-05-23T01:58:17Z"
+    },
+    {
       "slug": "abilfida/omnidrive",
       "fullName": "abilfida/OmniDrive",
       "name": "OmniDrive",
@@ -790,26 +810,6 @@
       "archived": false,
       "pushedAt": "2026-02-18T08:47:11Z",
       "createdAt": "2026-01-11T07:23:01Z"
-    },
-    {
-      "slug": "firewalker06/tycho",
-      "fullName": "firewalker06/tycho",
-      "name": "tycho",
-      "owner": "firewalker06",
-      "ownerUrl": "https://github.com/firewalker06",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/157515?v=4",
-      "url": "https://github.com/firewalker06/tycho",
-      "homepage": null,
-      "description": "Its Factorio for coding agents",
-      "language": "Ruby",
-      "stars": 48,
-      "forks": 5,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-09-20T10:49:51Z",
-      "createdAt": "2026-05-23T01:58:17Z"
     },
     {
       "slug": "raymondchins/agentmap",
@@ -1153,7 +1153,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-19T21:58:01Z",
+      "pushedAt": "2026-09-21T08:22:07Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1264,26 +1264,6 @@
       "createdAt": "2026-03-20T14:25:48Z"
     },
     {
-      "slug": "muhammadhasbiashshiddieqy/openclawn",
-      "fullName": "MuhammadHasbiAshshiddieqy/OpenClawn",
-      "name": "OpenClawn",
-      "owner": "MuhammadHasbiAshshiddieqy",
-      "ownerUrl": "https://github.com/MuhammadHasbiAshshiddieqy",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/47019965?v=4",
-      "url": "https://github.com/MuhammadHasbiAshshiddieqy/OpenClawn",
-      "homepage": null,
-      "description": "Lightweight, safe, self-improving multi-role AI agent framework. Hybrid local + cloud LLMs with self-calibrating routing, decaying skills, and confidence-gated learning — 25 sandboxed tools for code, data, docs, git, and the web.",
-      "language": "Python",
-      "stars": 16,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-09-18T13:36:05Z",
-      "createdAt": "2026-06-15T14:35:14Z"
-    },
-    {
       "slug": "muslimtify-org/muslimtify",
       "fullName": "muslimtify-org/muslimtify",
       "name": "muslimtify",
@@ -1294,7 +1274,7 @@
       "homepage": "https://muslimtify.vercel.app",
       "description": "A daily prayer notification daemon for Muslims on Windows and Linux, supporting 21 global standard calculation methods, all madzhab, all country.",
       "language": "C",
-      "stars": 16,
+      "stars": 17,
       "forks": 1,
       "openIssues": 0,
       "license": "MIT",
@@ -1314,6 +1294,26 @@
       "archived": false,
       "pushedAt": "2026-09-16T13:35:17Z",
       "createdAt": "2026-02-23T13:59:12Z"
+    },
+    {
+      "slug": "muhammadhasbiashshiddieqy/openclawn",
+      "fullName": "MuhammadHasbiAshshiddieqy/OpenClawn",
+      "name": "OpenClawn",
+      "owner": "MuhammadHasbiAshshiddieqy",
+      "ownerUrl": "https://github.com/MuhammadHasbiAshshiddieqy",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/47019965?v=4",
+      "url": "https://github.com/MuhammadHasbiAshshiddieqy/OpenClawn",
+      "homepage": null,
+      "description": "Lightweight, safe, self-improving multi-role AI agent framework. Hybrid local + cloud LLMs with self-calibrating routing, decaying skills, and confidence-gated learning — 25 sandboxed tools for code, data, docs, git, and the web.",
+      "language": "Python",
+      "stars": 16,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-09-18T13:36:05Z",
+      "createdAt": "2026-06-15T14:35:14Z"
     },
     {
       "slug": "muhfauziazhar/nusakit-api",
@@ -1412,11 +1412,11 @@
       "language": "Go",
       "stars": 12,
       "forks": 6,
-      "openIssues": 6,
+      "openIssues": 28,
       "license": "Apache-2.0",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-20T19:50:43Z",
+      "pushedAt": "2026-09-21T21:43:24Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1755,7 +1755,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-19T21:20:50Z",
+      "pushedAt": "2026-09-20T21:16:06Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -2118,14 +2118,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-09-20T21:15:55.295Z"
+      "syncedAt": "2026-09-21T22:30:22.351Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-09-20T21:15:55.295Z"
+      "syncedAt": "2026-09-21T22:30:22.351Z"
     }
   ],
-  "syncedAt": "2026-09-20T21:15:55.295Z",
+  "syncedAt": "2026-09-21T22:30:22.351Z",
   "count": 79
 }

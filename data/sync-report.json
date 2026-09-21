@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T21:15:50.042Z",
+  "generatedAt": "2026-09-21T22:30:17.232Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -11,18 +11,18 @@
     "freellm.net": {
       "status": "ok",
       "providers": 23,
-      "models": 300,
+      "models": 299,
       "shapeIssues": [
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "maxOutput",
           "rule": "all-null-collapse",
-          "count": 300,
-          "total": 300,
+          "count": 299,
+          "total": 299,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"maxOutput\": 100% null di 300 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+          "message": "Field \"maxOutput\": 100% null di 299 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
         },
         {
           "severity": "warn",
@@ -100,7 +100,7 @@
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 294,
+            "eligible": 298,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -112,7 +112,7 @@
             "examples": []
           },
           "modality": {
-            "eligible": 247,
+            "eligible": 251,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -160,11 +160,11 @@
       "source": "freellm.net",
       "field": "maxOutput",
       "rule": "all-null-collapse",
-      "count": 300,
-      "total": 300,
+      "count": 299,
+      "total": 299,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"maxOutput\": 100% null di 300 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+      "message": "Field \"maxOutput\": 100% null di 299 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
     },
     {
       "severity": "warn",
