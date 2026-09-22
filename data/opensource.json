@@ -95,9 +95,9 @@
       "homepage": null,
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
-      "stars": 1227,
+      "stars": 1228,
       "forks": 1192,
-      "openIssues": 352,
+      "openIssues": 344,
       "license": null,
       "topics": [
         "opensid",
@@ -118,8 +118,8 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1004,
-      "forks": 304,
+      "stars": 1005,
+      "forks": 303,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -203,9 +203,9 @@
       "homepage": "https://omni.weekndlabs.com/docs",
       "description": "Your agent pays twice for output it has already seen. OMNI returns a handle instead: 97.2% off a file read twice. Nothing deleted, nothing invented.",
       "language": "Rust",
-      "stars": 370,
+      "stars": 371,
       "forks": 34,
-      "openIssues": 20,
+      "openIssues": 25,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -230,7 +230,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-09-20T13:02:46Z",
+      "pushedAt": "2026-09-22T16:55:14Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -244,8 +244,8 @@
       "homepage": "https://adbkit.pages.dev",
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 355,
-      "forks": 43,
+      "stars": 357,
+      "forks": 44,
       "openIssues": 1,
       "license": "MIT",
       "topics": [
@@ -272,9 +272,9 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 262,
-      "forks": 30,
-      "openIssues": 1,
+      "stars": 263,
+      "forks": 31,
+      "openIssues": 8,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -299,7 +299,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-09-18T12:12:25Z",
+      "pushedAt": "2026-09-22T18:55:00Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -313,7 +313,7 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 244,
+      "stars": 245,
       "forks": 47,
       "openIssues": 38,
       "license": "MIT",
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-09-21T13:16:27Z",
+      "pushedAt": "2026-09-22T12:26:54Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -399,7 +399,7 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 168,
+      "stars": 167,
       "forks": 14,
       "openIssues": 0,
       "license": "Apache-2.0",
@@ -421,7 +421,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-21T08:30:27Z",
+      "pushedAt": "2026-09-22T02:58:04Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -484,26 +484,6 @@
       "createdAt": "2026-02-12T11:02:43Z"
     },
     {
-      "slug": "hendisantika/online-banking-angular-springboot-mysql",
-      "fullName": "hendisantika/Online-banking-angular-springboot-mysql",
-      "name": "Online-banking-angular-springboot-mysql",
-      "owner": "hendisantika",
-      "ownerUrl": "https://github.com/hendisantika",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/3713580?v=4",
-      "url": "https://github.com/hendisantika/Online-banking-angular-springboot-mysql",
-      "homepage": null,
-      "description": "Online banking angular springboot mysql",
-      "language": "Java",
-      "stars": 131,
-      "forks": 101,
-      "openIssues": 0,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-09-08T23:25:01Z",
-      "createdAt": "2018-08-06T13:38:19Z"
-    },
-    {
       "slug": "adenaufal/anti-slop-writing",
       "fullName": "adenaufal/anti-slop-writing",
       "name": "anti-slop-writing",
@@ -514,7 +494,7 @@
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": null,
-      "stars": 131,
+      "stars": 132,
       "forks": 9,
       "openIssues": 0,
       "license": "MIT",
@@ -538,6 +518,26 @@
       "archived": false,
       "pushedAt": "2026-07-06T04:02:38Z",
       "createdAt": "2026-02-28T19:45:28Z"
+    },
+    {
+      "slug": "hendisantika/online-banking-angular-springboot-mysql",
+      "fullName": "hendisantika/Online-banking-angular-springboot-mysql",
+      "name": "Online-banking-angular-springboot-mysql",
+      "owner": "hendisantika",
+      "ownerUrl": "https://github.com/hendisantika",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/3713580?v=4",
+      "url": "https://github.com/hendisantika/Online-banking-angular-springboot-mysql",
+      "homepage": null,
+      "description": "Online banking angular springboot mysql",
+      "language": "Java",
+      "stars": 131,
+      "forks": 101,
+      "openIssues": 0,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-09-08T23:25:01Z",
+      "createdAt": "2018-08-06T13:38:19Z"
     },
     {
       "slug": "ilhamrisky/pddikti-kemdikbud-api",
@@ -589,6 +589,45 @@
       "createdAt": "2023-09-05T12:35:21Z"
     },
     {
+      "slug": "rahmanef63/mso",
+      "fullName": "rahmanef63/mso",
+      "name": "mso",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/mso",
+      "homepage": "https://mso.rahmanef.com",
+      "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
+      "language": "TypeScript",
+      "stars": 92,
+      "forks": 14,
+      "openIssues": 3,
+      "license": "MIT",
+      "topics": [
+        "browser-shell",
+        "control-plane",
+        "file-manager",
+        "homelab",
+        "mobile-first",
+        "nextjs",
+        "pty",
+        "react",
+        "self-hosted",
+        "server-management",
+        "shadcn-ui",
+        "sysadmin",
+        "tailwindcss",
+        "terminal",
+        "typescript",
+        "vps",
+        "web-desktop",
+        "web-terminal"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-22T19:19:07Z",
+      "createdAt": "2026-05-29T17:44:06Z"
+    },
+    {
       "slug": "ddtamn/svelte-audio-ui",
       "fullName": "ddtamn/svelte-audio-ui",
       "name": "svelte-audio-ui",
@@ -615,45 +654,6 @@
       "archived": false,
       "pushedAt": "2026-09-06T00:39:22Z",
       "createdAt": "2026-03-17T12:55:21Z"
-    },
-    {
-      "slug": "rahmanef63/mso",
-      "fullName": "rahmanef63/mso",
-      "name": "mso",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/mso",
-      "homepage": "https://mso.rahmanef.com",
-      "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
-      "language": "TypeScript",
-      "stars": 91,
-      "forks": 14,
-      "openIssues": 2,
-      "license": "MIT",
-      "topics": [
-        "browser-shell",
-        "control-plane",
-        "file-manager",
-        "homelab",
-        "mobile-first",
-        "nextjs",
-        "pty",
-        "react",
-        "self-hosted",
-        "server-management",
-        "shadcn-ui",
-        "sysadmin",
-        "tailwindcss",
-        "terminal",
-        "typescript",
-        "vps",
-        "web-desktop",
-        "web-terminal"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-21T10:46:02Z",
-      "createdAt": "2026-05-29T17:44:06Z"
     },
     {
       "slug": "njinlabs/njinattend-backend",
@@ -759,11 +759,11 @@
       "language": "Ruby",
       "stars": 49,
       "forks": 5,
-      "openIssues": 0,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-20T10:49:51Z",
+      "pushedAt": "2026-09-22T08:09:03Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -778,7 +778,7 @@
       "description": "Omnidrive lets you connect multiple Google Drive accounts and manage all your files from a single dashboard. It runs entirely on Cloudflare's edge network — Workers for the API, D1 for the database, and KV for session storage — so there's no traditional server to maintain.",
       "language": "TypeScript",
       "stars": 49,
-      "forks": 12,
+      "forks": 13,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -914,7 +914,7 @@
       "homepage": null,
       "description": "Turn your AI assistant into a tutor. It plans, shows code, reviews, adapts to how you learn and helps you complete your real project on your own",
       "language": "Shell",
-      "stars": 39,
+      "stars": 40,
       "forks": 1,
       "openIssues": 0,
       "license": "MIT",
@@ -1153,7 +1153,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-21T08:22:07Z",
+      "pushedAt": "2026-09-22T03:40:12Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1400,26 +1400,6 @@
       "createdAt": "2026-03-12T09:55:51Z"
     },
     {
-      "slug": "naeos-foundation/naeos",
-      "fullName": "NAEOS-foundation/naeos",
-      "name": "naeos",
-      "owner": "NAEOS-foundation",
-      "ownerUrl": "https://github.com/NAEOS-foundation",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/301789713?v=4",
-      "url": "https://github.com/NAEOS-foundation/naeos",
-      "homepage": null,
-      "description": null,
-      "language": "Go",
-      "stars": 12,
-      "forks": 6,
-      "openIssues": 28,
-      "license": "Apache-2.0",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-09-21T21:43:24Z",
-      "createdAt": "2026-07-09T15:14:16Z"
-    },
-    {
       "slug": "ahmadghaisanfad2/absen-kelas",
       "fullName": "ahmadghaisanfad2/absen-kelas",
       "name": "absen-kelas",
@@ -1458,6 +1438,26 @@
       "archived": false,
       "pushedAt": "2026-05-21T12:29:21Z",
       "createdAt": "2026-05-16T04:31:37Z"
+    },
+    {
+      "slug": "naeos-foundation/naeos",
+      "fullName": "NAEOS-foundation/naeos",
+      "name": "naeos",
+      "owner": "NAEOS-foundation",
+      "ownerUrl": "https://github.com/NAEOS-foundation",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/301789713?v=4",
+      "url": "https://github.com/NAEOS-foundation/naeos",
+      "homepage": null,
+      "description": null,
+      "language": "Go",
+      "stars": 11,
+      "forks": 6,
+      "openIssues": 29,
+      "license": "Apache-2.0",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-09-22T20:17:05Z",
+      "createdAt": "2026-07-09T15:14:16Z"
     },
     {
       "slug": "xpajonx/openempiric",
@@ -1618,7 +1618,7 @@
       "language": "Rust",
       "stars": 8,
       "forks": 0,
-      "openIssues": 12,
+      "openIssues": 14,
       "license": "Apache-2.0",
       "topics": [
         "axum",
@@ -1755,7 +1755,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-20T21:16:06Z",
+      "pushedAt": "2026-09-21T22:30:35Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -2118,14 +2118,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-09-21T22:30:22.351Z"
+      "syncedAt": "2026-09-22T21:51:59.918Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-09-21T22:30:22.351Z"
+      "syncedAt": "2026-09-22T21:51:59.918Z"
     }
   ],
-  "syncedAt": "2026-09-21T22:30:22.351Z",
+  "syncedAt": "2026-09-22T21:51:59.918Z",
   "count": 79
 }

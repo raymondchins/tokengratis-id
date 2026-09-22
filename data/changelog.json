@@ -1,5 +1,41 @@
 [
   {
+    "date": "2026-09-22",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cloudflare Workers AI",
+        "added": [],
+        "removed": [
+          "Mistral 7B",
+          "Qwen 1.5 7B"
+        ]
+      },
+      {
+        "provider": "Groq",
+        "added": [
+          "meta-llama/llama-prompt-guard-2-22m",
+          "meta-llama/llama-prompt-guard-2-86m",
+          "qwen/qwen3.8-27b"
+        ],
+        "removed": [
+          "Moonshot Kimi K2",
+          "Moonshot Kimi K2 0905"
+        ]
+      },
+      {
+        "provider": "NVIDIA NIM",
+        "added": [
+          "deepseek-ai/deepseek-v4.1-flash"
+        ],
+        "removed": [
+          "deepseek-ai/deepseek-v4-flash-0731"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-09-20",
     "providersAdded": [],
     "providersRemoved": [],
