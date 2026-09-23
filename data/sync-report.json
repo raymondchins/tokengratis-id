@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T21:51:53.310Z",
+  "generatedAt": "2026-09-23T22:07:05.444Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -10,7 +10,7 @@
     },
     "freellm.net": {
       "status": "ok",
-      "providers": 22,
+      "providers": 23,
       "models": 297,
       "shapeIssues": [
         {
@@ -29,22 +29,22 @@
           "source": "freellm.net",
           "field": "url",
           "rule": "all-null-collapse",
-          "count": 22,
-          "total": 22,
+          "count": 23,
+          "total": 23,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"url\": 100% null di 22 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+          "message": "Field \"url\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
         },
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "baseUrl",
           "rule": "all-null-collapse",
-          "count": 22,
-          "total": 22,
+          "count": 23,
+          "total": 23,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"baseUrl\": 100% null di 22 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+          "message": "Field \"baseUrl\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
         }
       ]
     },
@@ -56,18 +56,18 @@
     "openrouter.ai/api/v1/models": {
       "status": "ok",
       "providers": 1,
-      "models": 21,
+      "models": 20,
       "shapeIssues": [
         {
           "severity": "warn",
           "source": "openrouter.ai/api/v1/models",
           "field": "rateLimit",
           "rule": "all-null-collapse",
-          "count": 21,
-          "total": 21,
+          "count": 20,
+          "total": 20,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"rateLimit\": 100% null di 21 model dari sumber \"openrouter.ai/api/v1/models\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"openrouter.ai/api/v1/models\" langsung untuk mutusin."
+          "message": "Field \"rateLimit\": 100% null di 20 model dari sumber \"openrouter.ai/api/v1/models\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"openrouter.ai/api/v1/models\" langsung untuk mutusin."
         }
       ]
     }
@@ -76,8 +76,8 @@
     "cheahjs/free-llm-api-resources"
   ],
   "merged": {
-    "providers": 23,
-    "models": 312,
+    "providers": 24,
+    "models": 313,
     "shapeIssues": []
   },
   "smokeTest": {
@@ -85,32 +85,28 @@
     "warnings": []
   },
   "diffGuard": {
-    "ok": false,
-    "errors": [
-      "provider \"cerebras\" disappeared (was in prev, missing in next)"
-    ],
+    "ok": true,
+    "errors": [],
     "warnings": [],
     "stats": {
       "prevProviders": 24,
-      "nextProviders": 23,
-      "prevModels": 314,
-      "nextModels": 312,
-      "totalDropPct": 0.6369426751592357,
-      "disappeared": [
-        "cerebras"
-      ],
+      "nextProviders": 24,
+      "prevModels": 313,
+      "nextModels": 313,
+      "totalDropPct": 0,
+      "disappeared": [],
       "shrunk": [],
       "churned": [],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 292,
+            "eligible": 293,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "maxOutput": {
-            "eligible": 151,
+            "eligible": 149,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -148,7 +144,7 @@
             "examples": []
           },
           "maxContext": {
-            "eligible": 22,
+            "eligible": 23,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -175,47 +171,41 @@
       "source": "freellm.net",
       "field": "url",
       "rule": "all-null-collapse",
-      "count": 22,
-      "total": 22,
+      "count": 23,
+      "total": 23,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"url\": 100% null di 22 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+      "message": "Field \"url\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
     },
     {
       "severity": "warn",
       "source": "freellm.net",
       "field": "baseUrl",
       "rule": "all-null-collapse",
-      "count": 22,
-      "total": 22,
+      "count": 23,
+      "total": 23,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"baseUrl\": 100% null di 22 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+      "message": "Field \"baseUrl\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
     },
     {
       "severity": "warn",
       "source": "openrouter.ai/api/v1/models",
       "field": "rateLimit",
       "rule": "all-null-collapse",
-      "count": 21,
-      "total": 21,
+      "count": 20,
+      "total": 20,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"rateLimit\": 100% null di 21 model dari sumber \"openrouter.ai/api/v1/models\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"openrouter.ai/api/v1/models\" langsung untuk mutusin."
+      "message": "Field \"rateLimit\": 100% null di 20 model dari sumber \"openrouter.ai/api/v1/models\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"openrouter.ai/api/v1/models\" langsung untuk mutusin."
     }
   ],
   "quarantine": {
-    "heldProviders": [
-      {
-        "slug": "cerebras",
-        "kind": "disappeared",
-        "detail": "provider hilang dari hasil merge",
-        "streak": 1,
-        "needs": 3
-      }
-    ],
+    "heldProviders": [],
     "accepted": [],
-    "cleared": [],
+    "cleared": [
+      "cerebras"
+    ],
     "confirmRuns": 3
   }
 }

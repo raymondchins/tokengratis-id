@@ -26,7 +26,7 @@
         "user-agent-parser"
       ],
       "archived": false,
-      "pushedAt": "2026-09-01T14:34:53Z",
+      "pushedAt": "2026-09-23T14:47:41Z",
       "createdAt": "2012-02-01T01:11:49Z"
     },
     {
@@ -97,7 +97,7 @@
       "language": "PHP",
       "stars": 1228,
       "forks": 1192,
-      "openIssues": 344,
+      "openIssues": 342,
       "license": null,
       "topics": [
         "opensid",
@@ -203,9 +203,9 @@
       "homepage": "https://omni.weekndlabs.com/docs",
       "description": "Your agent pays twice for output it has already seen. OMNI returns a handle instead: 97.2% off a file read twice. Nothing deleted, nothing invented.",
       "language": "Rust",
-      "stars": 371,
+      "stars": 372,
       "forks": 34,
-      "openIssues": 25,
+      "openIssues": 14,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -230,7 +230,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-09-22T16:55:14Z",
+      "pushedAt": "2026-09-23T17:43:53Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -272,9 +272,9 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 263,
+      "stars": 266,
       "forks": 31,
-      "openIssues": 8,
+      "openIssues": 5,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -299,7 +299,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-09-22T18:55:00Z",
+      "pushedAt": "2026-09-23T01:30:41Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -315,7 +315,7 @@
       "language": "TypeScript",
       "stars": 245,
       "forks": 47,
-      "openIssues": 38,
+      "openIssues": 41,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -494,7 +494,7 @@
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": null,
-      "stars": 132,
+      "stars": 133,
       "forks": 9,
       "openIssues": 0,
       "license": "MIT",
@@ -601,7 +601,7 @@
       "language": "TypeScript",
       "stars": 92,
       "forks": 14,
-      "openIssues": 3,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [
         "browser-shell",
@@ -624,7 +624,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-22T19:19:07Z",
+      "pushedAt": "2026-09-23T16:23:43Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -688,7 +688,7 @@
       "language": "Svelte",
       "stars": 67,
       "forks": 19,
-      "openIssues": 6,
+      "openIssues": 7,
       "license": "MIT",
       "topics": [
         "bansos",
@@ -759,11 +759,11 @@
       "language": "Ruby",
       "stars": 49,
       "forks": 5,
-      "openIssues": 3,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-22T08:09:03Z",
+      "pushedAt": "2026-09-23T15:14:47Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -947,7 +947,7 @@
       "homepage": null,
       "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
       "language": "C#",
-      "stars": 37,
+      "stars": 38,
       "forks": 14,
       "openIssues": 2,
       "license": null,
@@ -1209,7 +1209,7 @@
       "language": "JavaScript",
       "stars": 19,
       "forks": 1,
-      "openIssues": 1,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [
         "antigravity",
@@ -1227,7 +1227,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-09-19T00:13:20Z",
+      "pushedAt": "2026-09-23T07:07:35Z",
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
@@ -1452,11 +1452,11 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 29,
+      "openIssues": 34,
       "license": "Apache-2.0",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-22T20:17:05Z",
+      "pushedAt": "2026-09-23T19:22:14Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1602,7 +1602,7 @@
         "rust"
       ],
       "archived": false,
-      "pushedAt": "2026-09-12T14:08:35Z",
+      "pushedAt": "2026-09-23T12:08:09Z",
       "createdAt": "2026-06-04T12:15:07Z"
     },
     {
@@ -1651,7 +1651,7 @@
       "description": "Browser-based 3D camera previsualization and shot planner — design scenes, frames, angles, lenses and moves, then export platform-tuned prompts for AI video models. Next.js 16 · React 19 · Three.js · Convex.",
       "language": "TypeScript",
       "stars": 8,
-      "forks": 0,
+      "forks": 1,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -1755,8 +1755,28 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-21T22:30:35Z",
+      "pushedAt": "2026-09-22T21:52:14Z",
       "createdAt": "2026-06-01T10:04:41Z"
+    },
+    {
+      "slug": "ramaaditya49/ai-agentic",
+      "fullName": "RamaAditya49/ai-agentic",
+      "name": "ai-agentic",
+      "owner": "RamaAditya49",
+      "ownerUrl": "https://github.com/RamaAditya49",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/213913142?v=4",
+      "url": "https://github.com/RamaAditya49/ai-agentic",
+      "homepage": null,
+      "description": null,
+      "language": null,
+      "stars": 7,
+      "forks": 0,
+      "openIssues": 0,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-06-09T15:51:19Z",
+      "createdAt": "2026-06-09T15:29:44Z"
     },
     {
       "slug": "wauputr4/agent-proxmox",
@@ -1823,26 +1843,6 @@
       "archived": false,
       "pushedAt": "2026-06-25T12:19:25Z",
       "createdAt": "2026-06-12T19:08:26Z"
-    },
-    {
-      "slug": "ramaaditya49/ai-agentic",
-      "fullName": "RamaAditya49/ai-agentic",
-      "name": "ai-agentic",
-      "owner": "RamaAditya49",
-      "ownerUrl": "https://github.com/RamaAditya49",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/213913142?v=4",
-      "url": "https://github.com/RamaAditya49/ai-agentic",
-      "homepage": null,
-      "description": null,
-      "language": null,
-      "stars": 6,
-      "forks": 0,
-      "openIssues": 0,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-06-09T15:51:19Z",
-      "createdAt": "2026-06-09T15:29:44Z"
     },
     {
       "slug": "muslimtify-org/libmuslim",
@@ -2118,14 +2118,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-09-22T21:51:59.918Z"
+      "syncedAt": "2026-09-23T22:07:11.686Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-09-22T21:51:59.918Z"
+      "syncedAt": "2026-09-23T22:07:11.686Z"
     }
   ],
-  "syncedAt": "2026-09-22T21:51:59.918Z",
+  "syncedAt": "2026-09-23T22:07:11.686Z",
   "count": 79
 }
