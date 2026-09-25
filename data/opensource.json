@@ -66,7 +66,7 @@
       "homepage": "https://www.htmly.com",
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
-      "stars": 1364,
+      "stars": 1363,
       "forks": 305,
       "openIssues": 54,
       "license": "GPL-2.0",
@@ -97,7 +97,7 @@
       "language": "PHP",
       "stars": 1228,
       "forks": 1192,
-      "openIssues": 341,
+      "openIssues": 342,
       "license": null,
       "topics": [
         "opensid",
@@ -118,7 +118,7 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1006,
+      "stars": 1007,
       "forks": 304,
       "openIssues": 0,
       "license": "MIT",
@@ -244,7 +244,7 @@
       "homepage": "https://adbkit.pages.dev",
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 357,
+      "stars": 358,
       "forks": 44,
       "openIssues": 1,
       "license": "MIT",
@@ -272,7 +272,7 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 267,
+      "stars": 268,
       "forks": 31,
       "openIssues": 2,
       "license": "Apache-2.0",
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-09-22T12:26:54Z",
+      "pushedAt": "2026-09-25T11:17:51Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -379,7 +379,7 @@
       "homepage": null,
       "description": null,
       "language": "Python",
-      "stars": 183,
+      "stars": 184,
       "forks": 44,
       "openIssues": 0,
       "license": "MIT",
@@ -436,7 +436,7 @@
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
       "stars": 146,
-      "forks": 54,
+      "forks": 55,
       "openIssues": 5,
       "license": "MIT",
       "topics": [
@@ -494,7 +494,7 @@
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": null,
-      "stars": 135,
+      "stars": 136,
       "forks": 9,
       "openIssues": 0,
       "license": "MIT",
@@ -624,7 +624,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-24T12:20:48Z",
+      "pushedAt": "2026-09-25T18:03:39Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -743,7 +743,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-24T09:42:22Z",
+      "pushedAt": "2026-09-25T01:18:46Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -900,7 +900,7 @@
         "judol"
       ],
       "archived": false,
-      "pushedAt": "2026-04-01T07:43:03Z",
+      "pushedAt": "2026-09-25T03:09:23Z",
       "createdAt": "2025-05-26T04:42:45Z"
     },
     {
@@ -947,7 +947,7 @@
       "homepage": null,
       "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
       "language": "C#",
-      "stars": 38,
+      "stars": 39,
       "forks": 14,
       "openIssues": 2,
       "license": null,
@@ -1177,26 +1177,6 @@
       "createdAt": "2026-03-28T09:34:42Z"
     },
     {
-      "slug": "rayasabari/yntk-ts",
-      "fullName": "rayasabari/yntk-ts",
-      "name": "yntk-ts",
-      "owner": "rayasabari",
-      "ownerUrl": "https://github.com/rayasabari",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/57746279?v=4",
-      "url": "https://github.com/rayasabari/yntk-ts",
-      "homepage": null,
-      "description": "You Need This Kit - Type-safe Starter: REST API boilerplate that ships with User Management, Role Management, and Authentication with JWTs, Prisma ORM, and PostgreSQL",
-      "language": "TypeScript",
-      "stars": 20,
-      "forks": 0,
-      "openIssues": 0,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-04-08T09:29:42Z",
-      "createdAt": "2026-04-08T09:27:49Z"
-    },
-    {
       "slug": "rizukirr/vibekit",
       "fullName": "rizukirr/vibekit",
       "name": "vibekit",
@@ -1207,7 +1187,7 @@
       "homepage": null,
       "description": "Efficient, Evidence-based, Opinionated vibe-coding pipeline for CC / Codex / OpenCode / Antigravity / Pi",
       "language": "JavaScript",
-      "stars": 19,
+      "stars": 20,
       "forks": 1,
       "openIssues": 0,
       "license": "MIT",
@@ -1229,6 +1209,26 @@
       "archived": false,
       "pushedAt": "2026-09-23T07:07:35Z",
       "createdAt": "2026-04-21T15:17:02Z"
+    },
+    {
+      "slug": "rayasabari/yntk-ts",
+      "fullName": "rayasabari/yntk-ts",
+      "name": "yntk-ts",
+      "owner": "rayasabari",
+      "ownerUrl": "https://github.com/rayasabari",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/57746279?v=4",
+      "url": "https://github.com/rayasabari/yntk-ts",
+      "homepage": null,
+      "description": "You Need This Kit - Type-safe Starter: REST API boilerplate that ships with User Management, Role Management, and Authentication with JWTs, Prisma ORM, and PostgreSQL",
+      "language": "TypeScript",
+      "stars": 20,
+      "forks": 0,
+      "openIssues": 0,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-04-08T09:29:42Z",
+      "createdAt": "2026-04-08T09:27:49Z"
     },
     {
       "slug": "rahmanef63/control-room",
@@ -1452,11 +1452,11 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 37,
+      "openIssues": 45,
       "license": "Apache-2.0",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-24T22:04:16Z",
+      "pushedAt": "2026-09-25T17:43:15Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1755,7 +1755,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-23T22:07:25Z",
+      "pushedAt": "2026-09-24T22:06:20Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1861,7 +1861,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-16T14:12:36Z",
+      "pushedAt": "2026-09-25T15:59:23Z",
       "createdAt": "2025-11-22T11:52:35Z"
     },
     {
@@ -2118,14 +2118,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-09-24T22:06:09.271Z"
+      "syncedAt": "2026-09-25T22:04:06.751Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-09-24T22:06:09.271Z"
+      "syncedAt": "2026-09-25T22:04:06.751Z"
     }
   ],
-  "syncedAt": "2026-09-24T22:06:09.271Z",
+  "syncedAt": "2026-09-25T22:04:06.751Z",
   "count": 79
 }

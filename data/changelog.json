@@ -1,5 +1,55 @@
 [
   {
+    "date": "2026-09-25",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cline",
+        "added": [
+          "Gemini 3.8 Flash"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "Cloudflare Workers AI",
+        "added": [],
+        "removed": [
+          "Mistral 7B",
+          "Qwen 1.5 7B"
+        ]
+      },
+      {
+        "provider": "Groq",
+        "added": [
+          "meta-llama/llama-prompt-guard-2-22m",
+          "meta-llama/llama-prompt-guard-2-86m",
+          "qwen/qwen3.8-27b"
+        ],
+        "removed": [
+          "Moonshot Kimi K2",
+          "Moonshot Kimi K2 0905"
+        ]
+      },
+      {
+        "provider": "OpenCode Zen",
+        "added": [
+          "space-bunny-free"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "OpenRouter",
+        "added": [],
+        "removed": [
+          "Nex AGI: Nex-N2.5-Mini (free)",
+          "Nex AGI: Nex-N2.5-Pro (free)",
+          "Z.ai: GLM 5.2 (free)"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-09-24",
     "providersAdded": [],
     "providersRemoved": [],
