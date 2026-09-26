@@ -95,9 +95,9 @@
       "homepage": null,
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
-      "stars": 1228,
+      "stars": 1227,
       "forks": 1192,
-      "openIssues": 342,
+      "openIssues": 344,
       "license": null,
       "topics": [
         "opensid",
@@ -118,7 +118,7 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1007,
+      "stars": 1008,
       "forks": 304,
       "openIssues": 0,
       "license": "MIT",
@@ -156,7 +156,7 @@
       "homepage": null,
       "description": "Package Laravel yang berisi data Provinsi, Kabupaten/Kota, dan Kecamatan/Desa di seluruh Indonesia.",
       "language": "PHP",
-      "stars": 676,
+      "stars": 677,
       "forks": 209,
       "openIssues": 5,
       "license": "MIT",
@@ -204,7 +204,7 @@
       "description": "Your agent pays twice for output it has already seen. OMNI returns a handle instead: 97.2% off a file read twice. Nothing deleted, nothing invented.",
       "language": "Rust",
       "stars": 373,
-      "forks": 34,
+      "forks": 35,
       "openIssues": 14,
       "license": "Apache-2.0",
       "topics": [
@@ -244,9 +244,9 @@
       "homepage": "https://adbkit.pages.dev",
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 358,
+      "stars": 359,
       "forks": 44,
-      "openIssues": 1,
+      "openIssues": 2,
       "license": "MIT",
       "topics": [
         "adb",
@@ -624,7 +624,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-25T18:03:39Z",
+      "pushedAt": "2026-09-26T13:36:48Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -638,7 +638,7 @@
       "homepage": "https://svelte-audio-ui.vercel.app/",
       "description": "A set of accessible and composable Audio UI components.",
       "language": "Svelte",
-      "stars": 92,
+      "stars": 93,
       "forks": 4,
       "openIssues": 15,
       "license": "MIT",
@@ -739,11 +739,11 @@
       "language": "Ruby",
       "stars": 51,
       "forks": 5,
-      "openIssues": 0,
+      "openIssues": 2,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-25T01:18:46Z",
+      "pushedAt": "2026-09-26T13:03:22Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -804,7 +804,7 @@
         "typescript"
       ],
       "archived": false,
-      "pushedAt": "2026-09-19T09:32:43Z",
+      "pushedAt": "2026-09-26T09:33:08Z",
       "createdAt": "2026-06-13T11:29:36Z"
     },
     {
@@ -887,7 +887,7 @@
       "homepage": "https://dns.akbxr.com",
       "description": "DNS Pemblokir Judol, Iklan & Tracker",
       "language": null,
-      "stars": 42,
+      "stars": 41,
       "forks": 4,
       "openIssues": 19,
       "license": "MIT",
@@ -1189,7 +1189,7 @@
       "language": "JavaScript",
       "stars": 20,
       "forks": 1,
-      "openIssues": 0,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "antigravity",
@@ -1207,7 +1207,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-09-23T07:07:35Z",
+      "pushedAt": "2026-09-26T00:12:27Z",
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
@@ -1312,7 +1312,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-18T13:36:05Z",
+      "pushedAt": "2026-09-26T07:25:55Z",
       "createdAt": "2026-06-15T14:35:14Z"
     },
     {
@@ -1452,11 +1452,11 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 45,
+      "openIssues": 48,
       "license": "Apache-2.0",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-25T17:43:15Z",
+      "pushedAt": "2026-09-26T19:04:53Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1755,7 +1755,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-24T22:06:20Z",
+      "pushedAt": "2026-09-25T22:04:20Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -2118,14 +2118,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-09-25T22:04:06.751Z"
+      "syncedAt": "2026-09-26T21:54:14.993Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-09-25T22:04:06.751Z"
+      "syncedAt": "2026-09-26T21:54:14.993Z"
     }
   ],
-  "syncedAt": "2026-09-25T22:04:06.751Z",
+  "syncedAt": "2026-09-26T21:54:14.993Z",
   "count": 79
 }
