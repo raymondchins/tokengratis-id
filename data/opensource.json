@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js - The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser (client-side) or Node.js (server-side).",
       "language": "JavaScript",
-      "stars": 10190,
+      "stars": 10189,
       "forks": 1216,
       "openIssues": 15,
       "license": "AGPL-3.0",
@@ -96,8 +96,8 @@
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
       "stars": 1227,
-      "forks": 1192,
-      "openIssues": 344,
+      "forks": 1193,
+      "openIssues": 343,
       "license": null,
       "topics": [
         "opensid",
@@ -157,7 +157,7 @@
       "description": "Package Laravel yang berisi data Provinsi, Kabupaten/Kota, dan Kecamatan/Desa di seluruh Indonesia.",
       "language": "PHP",
       "stars": 677,
-      "forks": 209,
+      "forks": 210,
       "openIssues": 5,
       "license": "MIT",
       "topics": [],
@@ -244,7 +244,7 @@
       "homepage": "https://adbkit.pages.dev",
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 359,
+      "stars": 361,
       "forks": 44,
       "openIssues": 2,
       "license": "MIT",
@@ -273,7 +273,7 @@
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
       "stars": 268,
-      "forks": 31,
+      "forks": 32,
       "openIssues": 2,
       "license": "Apache-2.0",
       "topics": [
@@ -315,7 +315,7 @@
       "language": "TypeScript",
       "stars": 247,
       "forks": 47,
-      "openIssues": 42,
+      "openIssues": 43,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -333,7 +333,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-09-20T17:21:06Z",
+      "pushedAt": "2026-09-27T17:54:42Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -464,26 +464,6 @@
       "createdAt": "2026-05-31T09:02:50Z"
     },
     {
-      "slug": "jipraks/kasirgratisan",
-      "fullName": "jipraks/kasirgratisan",
-      "name": "kasirgratisan",
-      "owner": "jipraks",
-      "ownerUrl": "https://github.com/jipraks",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/10278519?v=4",
-      "url": "https://github.com/jipraks/kasirgratisan",
-      "homepage": null,
-      "description": "Free, Open Source, Offline Point of Sales Apps",
-      "language": "TypeScript",
-      "stars": 136,
-      "forks": 69,
-      "openIssues": 12,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-09-13T20:30:31Z",
-      "createdAt": "2026-02-12T11:02:43Z"
-    },
-    {
       "slug": "adenaufal/anti-slop-writing",
       "fullName": "adenaufal/anti-slop-writing",
       "name": "anti-slop-writing",
@@ -493,9 +473,9 @@
       "url": "https://github.com/adenaufal/anti-slop-writing",
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
-      "language": null,
-      "stars": 136,
-      "forks": 9,
+      "language": "Python",
+      "stars": 137,
+      "forks": 10,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -516,8 +496,28 @@
         "writing-style"
       ],
       "archived": false,
-      "pushedAt": "2026-07-06T04:02:38Z",
+      "pushedAt": "2026-09-27T04:56:07Z",
       "createdAt": "2026-02-28T19:45:28Z"
+    },
+    {
+      "slug": "jipraks/kasirgratisan",
+      "fullName": "jipraks/kasirgratisan",
+      "name": "kasirgratisan",
+      "owner": "jipraks",
+      "ownerUrl": "https://github.com/jipraks",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/10278519?v=4",
+      "url": "https://github.com/jipraks/kasirgratisan",
+      "homepage": null,
+      "description": "Free, Open Source, Offline Point of Sales Apps",
+      "language": "TypeScript",
+      "stars": 136,
+      "forks": 70,
+      "openIssues": 12,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-09-13T20:30:31Z",
+      "createdAt": "2026-02-12T11:02:43Z"
     },
     {
       "slug": "hendisantika/online-banking-angular-springboot-mysql",
@@ -551,7 +551,7 @@
       "description": "Unofficial Python 3 API wrapper to retrieve data from PDDIKTI Kemdikbudristek.",
       "language": "Python",
       "stars": 128,
-      "forks": 27,
+      "forks": 28,
       "openIssues": 0,
       "license": null,
       "topics": [
@@ -624,7 +624,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-26T13:36:48Z",
+      "pushedAt": "2026-09-27T14:02:34Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -688,7 +688,7 @@
       "language": "Svelte",
       "stars": 67,
       "forks": 19,
-      "openIssues": 7,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [
         "bansos",
@@ -703,7 +703,7 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-09-15T10:14:42Z",
+      "pushedAt": "2026-09-27T07:58:27Z",
       "createdAt": "2026-06-11T13:28:54Z"
     },
     {
@@ -739,11 +739,11 @@
       "language": "Ruby",
       "stars": 51,
       "forks": 5,
-      "openIssues": 2,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-26T13:03:22Z",
+      "pushedAt": "2026-09-27T12:23:20Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -888,7 +888,7 @@
       "description": "DNS Pemblokir Judol, Iklan & Tracker",
       "language": null,
       "stars": 41,
-      "forks": 4,
+      "forks": 5,
       "openIssues": 19,
       "license": "MIT",
       "topics": [
@@ -1002,7 +1002,7 @@
       "homepage": "https://www.mandumrimba.org",
       "description": "Mandum Rimba is an independent, nonprofit public-interest observatory. We do not sell data, carry advertising, or take sides. We consolidate satellite data and credible public sources into a single open map, auditable by anyone, fully open source, and with every figure traceable to its origin.",
       "language": "TypeScript",
-      "stars": 34,
+      "stars": 35,
       "forks": 8,
       "openIssues": 0,
       "license": "AGPL-3.0",
@@ -1452,11 +1452,11 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 48,
+      "openIssues": 51,
       "license": "Apache-2.0",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-26T19:04:53Z",
+      "pushedAt": "2026-09-27T20:58:52Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1755,7 +1755,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-25T22:04:20Z",
+      "pushedAt": "2026-09-26T21:54:25Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -2066,11 +2066,11 @@
       "language": "TypeScript",
       "stars": 0,
       "forks": 0,
-      "openIssues": 15,
+      "openIssues": 0,
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-15T15:12:17Z",
+      "pushedAt": "2026-09-27T18:40:57Z",
       "createdAt": "2026-06-13T11:24:30Z"
     },
     {
@@ -2118,14 +2118,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-09-26T21:54:14.993Z"
+      "syncedAt": "2026-09-27T21:54:09.444Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-09-26T21:54:14.993Z"
+      "syncedAt": "2026-09-27T21:54:09.444Z"
     }
   ],
-  "syncedAt": "2026-09-26T21:54:14.993Z",
+  "syncedAt": "2026-09-27T21:54:09.444Z",
   "count": 79
 }
