@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js - The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser (client-side) or Node.js (server-side).",
       "language": "JavaScript",
-      "stars": 10189,
+      "stars": 10191,
       "forks": 1216,
       "openIssues": 15,
       "license": "AGPL-3.0",
@@ -26,7 +26,7 @@
         "user-agent-parser"
       ],
       "archived": false,
-      "pushedAt": "2026-09-23T14:47:41Z",
+      "pushedAt": "2026-09-28T13:38:17Z",
       "createdAt": "2012-02-01T01:11:49Z"
     },
     {
@@ -66,7 +66,7 @@
       "homepage": "https://www.htmly.com",
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
-      "stars": 1363,
+      "stars": 1364,
       "forks": 305,
       "openIssues": 54,
       "license": "GPL-2.0",
@@ -96,8 +96,8 @@
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
       "stars": 1227,
-      "forks": 1193,
-      "openIssues": 343,
+      "forks": 1194,
+      "openIssues": 345,
       "license": null,
       "topics": [
         "opensid",
@@ -118,7 +118,7 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1008,
+      "stars": 1012,
       "forks": 304,
       "openIssues": 0,
       "license": "MIT",
@@ -299,7 +299,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-09-24T10:32:57Z",
+      "pushedAt": "2026-09-28T23:35:00Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -313,9 +313,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 247,
+      "stars": 248,
       "forks": 47,
-      "openIssues": 43,
+      "openIssues": 44,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -333,7 +333,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-09-27T17:54:42Z",
+      "pushedAt": "2026-09-28T23:41:31Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-09-25T11:17:51Z",
+      "pushedAt": "2026-09-28T12:31:27Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -474,7 +474,7 @@
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": "Python",
-      "stars": 137,
+      "stars": 139,
       "forks": 10,
       "openIssues": 0,
       "license": "MIT",
@@ -551,7 +551,7 @@
       "description": "Unofficial Python 3 API wrapper to retrieve data from PDDIKTI Kemdikbudristek.",
       "language": "Python",
       "stars": 128,
-      "forks": 28,
+      "forks": 29,
       "openIssues": 0,
       "license": null,
       "topics": [
@@ -599,8 +599,8 @@
       "homepage": "https://mso.rahmanef.com",
       "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
-      "stars": 94,
-      "forks": 14,
+      "stars": 93,
+      "forks": 13,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -624,7 +624,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-27T14:02:34Z",
+      "pushedAt": "2026-09-28T18:05:46Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -688,7 +688,7 @@
       "language": "Svelte",
       "stars": 67,
       "forks": 19,
-      "openIssues": 3,
+      "openIssues": 4,
       "license": "MIT",
       "topics": [
         "bansos",
@@ -739,11 +739,11 @@
       "language": "Ruby",
       "stars": 51,
       "forks": 5,
-      "openIssues": 0,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-27T12:23:20Z",
+      "pushedAt": "2026-09-28T17:10:50Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -1083,6 +1083,26 @@
       "createdAt": "2025-10-04T10:27:45Z"
     },
     {
+      "slug": "galpratama/agent-cli",
+      "fullName": "galpratama/agent-cli",
+      "name": "agent-cli",
+      "owner": "galpratama",
+      "ownerUrl": "https://github.com/galpratama",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/2271384?v=4",
+      "url": "https://github.com/galpratama/agent-cli",
+      "homepage": null,
+      "description": "A beautiful Terminal UI for launching multiple AI providers from a single command",
+      "language": "HTML",
+      "stars": 31,
+      "forks": 7,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2025-12-27T17:13:26Z",
+      "createdAt": "2025-12-17T16:19:36Z"
+    },
+    {
       "slug": "rahmanef63/open-silong",
       "fullName": "rahmanef63/open-silong",
       "name": "open-silong",
@@ -1093,7 +1113,7 @@
       "homepage": "https://silong-os.vercel.app/",
       "description": "Open-source, self-hostable Notion/Obsidian-style workspace — block editor for notes, docs and lightweight databases, plus a knowledge graph over them. Next.js 16 · React 19 · Convex · Tailwind v4.",
       "language": "TypeScript",
-      "stars": 31,
+      "stars": 30,
       "forks": 6,
       "openIssues": 0,
       "license": "MIT",
@@ -1115,26 +1135,6 @@
       "archived": false,
       "pushedAt": "2026-09-09T13:37:34Z",
       "createdAt": "2026-04-29T18:48:11Z"
-    },
-    {
-      "slug": "galpratama/agent-cli",
-      "fullName": "galpratama/agent-cli",
-      "name": "agent-cli",
-      "owner": "galpratama",
-      "ownerUrl": "https://github.com/galpratama",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/2271384?v=4",
-      "url": "https://github.com/galpratama/agent-cli",
-      "homepage": null,
-      "description": "A beautiful Terminal UI for launching multiple AI providers from a single command",
-      "language": "HTML",
-      "stars": 31,
-      "forks": 7,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2025-12-27T17:13:26Z",
-      "createdAt": "2025-12-17T16:19:36Z"
     },
     {
       "slug": "rudycity/superagent",
@@ -1241,7 +1241,7 @@
       "homepage": null,
       "description": "Mobile-first PWA for driving a single VPS from the browser — up to 16 concurrent terminals, AI agent launchers, host ops and audit behind one shared secret on a Tailscale-only domain. Next.js 15 · React 19 · Node agent (node-pty + xterm.js).",
       "language": "TypeScript",
-      "stars": 19,
+      "stars": 18,
       "forks": 3,
       "openIssues": 0,
       "license": "MIT",
@@ -1272,7 +1272,7 @@
       "ownerAvatar": "https://avatars.githubusercontent.com/u/302768915?v=4",
       "url": "https://github.com/muslimtify-org/muslimtify",
       "homepage": "https://muslimtify.vercel.app",
-      "description": "A daily prayer notification daemon for Muslims on Windows and Linux, supporting 21 global standard calculation methods, all madzhab, all country.",
+      "description": "A daily prayer notification & reminder for Muslims on Windows and Linux, supporting 21 global standard calculation methods, all madzhab, all country.",
       "language": "C",
       "stars": 17,
       "forks": 1,
@@ -1292,7 +1292,7 @@
         "windows-desktop"
       ],
       "archived": false,
-      "pushedAt": "2026-09-16T13:35:17Z",
+      "pushedAt": "2026-09-28T16:20:17Z",
       "createdAt": "2026-02-23T13:59:12Z"
     },
     {
@@ -1336,39 +1336,6 @@
       "createdAt": "2026-06-12T01:36:09Z"
     },
     {
-      "slug": "rahmanef63/si-coder-agent",
-      "fullName": "rahmanef63/si-coder-agent",
-      "name": "si-coder-agent",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/si-coder-agent",
-      "homepage": null,
-      "description": "Zero-human full-stack deployment as a bundle of /sc-* Claude Code slash commands — GitHub + Convex (self-hosted & Cloud) + Dokploy + Vercel + Hostinger DNS, source to verified live URL. Node ≥18, no runtime dependencies. 8 skills implemented, 5 stubs.",
-      "language": "JavaScript",
-      "stars": 14,
-      "forks": 4,
-      "openIssues": 1,
-      "license": "MIT",
-      "topics": [
-        "ai-agent",
-        "claude-code",
-        "claude-skills",
-        "convex",
-        "deployment-automation",
-        "devops",
-        "dokploy",
-        "hostinger",
-        "nextjs",
-        "self-hosted",
-        "vercel",
-        "zero-human"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-12T13:08:28Z",
-      "createdAt": "2026-03-18T18:38:41Z"
-    },
-    {
       "slug": "rizukirr/numc",
       "fullName": "rizukirr/numc",
       "name": "numc",
@@ -1398,6 +1365,39 @@
       "archived": false,
       "pushedAt": "2026-06-16T16:14:20Z",
       "createdAt": "2026-03-12T09:55:51Z"
+    },
+    {
+      "slug": "rahmanef63/si-coder-agent",
+      "fullName": "rahmanef63/si-coder-agent",
+      "name": "si-coder-agent",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/si-coder-agent",
+      "homepage": null,
+      "description": "Zero-human full-stack deployment as a bundle of /sc-* Claude Code slash commands — GitHub + Convex (self-hosted & Cloud) + Dokploy + Vercel + Hostinger DNS, source to verified live URL. Node ≥18, no runtime dependencies. 8 skills implemented, 5 stubs.",
+      "language": "JavaScript",
+      "stars": 13,
+      "forks": 3,
+      "openIssues": 1,
+      "license": "MIT",
+      "topics": [
+        "ai-agent",
+        "claude-code",
+        "claude-skills",
+        "convex",
+        "deployment-automation",
+        "devops",
+        "dokploy",
+        "hostinger",
+        "nextjs",
+        "self-hosted",
+        "vercel",
+        "zero-human"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-12T13:08:28Z",
+      "createdAt": "2026-03-18T18:38:41Z"
     },
     {
       "slug": "ahmadghaisanfad2/absen-kelas",
@@ -1452,11 +1452,11 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 51,
+      "openIssues": 46,
       "license": "Apache-2.0",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-27T20:58:52Z",
+      "pushedAt": "2026-09-28T19:53:52Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1640,40 +1640,6 @@
       "createdAt": "2026-06-06T00:23:26Z"
     },
     {
-      "slug": "rahmanef63/framepilot",
-      "fullName": "rahmanef63/framepilot",
-      "name": "framepilot",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/framepilot",
-      "homepage": "https://frame-pilot.rahmanef.com/",
-      "description": "Browser-based 3D camera previsualization and shot planner — design scenes, frames, angles, lenses and moves, then export platform-tuned prompts for AI video models. Next.js 16 · React 19 · Three.js · Convex.",
-      "language": "TypeScript",
-      "stars": 8,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "ai-video",
-        "camera",
-        "cinematography",
-        "convex",
-        "nextjs",
-        "previsualization",
-        "prompt-engineering",
-        "shot-planner",
-        "storyboard",
-        "text-to-video",
-        "threejs",
-        "typescript",
-        "webgl"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-09T13:32:00Z",
-      "createdAt": "2026-07-10T13:57:01Z"
-    },
-    {
       "slug": "rifqiakrm/code-island",
       "fullName": "rifqiakrm/code-island",
       "name": "code-island",
@@ -1755,8 +1721,42 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-26T21:54:25Z",
+      "pushedAt": "2026-09-27T21:54:23Z",
       "createdAt": "2026-06-01T10:04:41Z"
+    },
+    {
+      "slug": "rahmanef63/framepilot",
+      "fullName": "rahmanef63/framepilot",
+      "name": "framepilot",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/framepilot",
+      "homepage": "https://frame-pilot.rahmanef.com/",
+      "description": "Browser-based 3D camera previsualization and shot planner — design scenes, frames, angles, lenses and moves, then export platform-tuned prompts for AI video models. Next.js 16 · React 19 · Three.js · Convex.",
+      "language": "TypeScript",
+      "stars": 7,
+      "forks": 2,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "ai-video",
+        "camera",
+        "cinematography",
+        "convex",
+        "nextjs",
+        "previsualization",
+        "prompt-engineering",
+        "shot-planner",
+        "storyboard",
+        "text-to-video",
+        "threejs",
+        "typescript",
+        "webgl"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-09T13:32:00Z",
+      "createdAt": "2026-07-10T13:57:01Z"
     },
     {
       "slug": "ramaaditya49/ai-agentic",
@@ -2070,7 +2070,7 @@
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-27T18:40:57Z",
+      "pushedAt": "2026-09-28T17:20:44Z",
       "createdAt": "2026-06-13T11:24:30Z"
     },
     {
@@ -2118,14 +2118,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-09-27T21:54:09.444Z"
+      "syncedAt": "2026-09-28T23:45:46.989Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-09-27T21:54:09.444Z"
+      "syncedAt": "2026-09-28T23:45:46.989Z"
     }
   ],
-  "syncedAt": "2026-09-27T21:54:09.444Z",
+  "syncedAt": "2026-09-28T23:45:46.989Z",
   "count": 79
 }

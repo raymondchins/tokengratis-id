@@ -1,5 +1,48 @@
 [
   {
+    "date": "2026-09-28",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cloudflare Workers AI",
+        "added": [],
+        "removed": [
+          "Mistral 7B",
+          "Qwen 1.5 7B"
+        ]
+      },
+      {
+        "provider": "Groq",
+        "added": [
+          "meta-llama/llama-prompt-guard-2-22m",
+          "meta-llama/llama-prompt-guard-2-86m",
+          "qwen/qwen3.8-27b"
+        ],
+        "removed": [
+          "Moonshot Kimi K2",
+          "Moonshot Kimi K2 0905"
+        ]
+      },
+      {
+        "provider": "OpenCode Zen",
+        "added": [
+          "Qwen3.8 Max"
+        ],
+        "removed": [
+          "GLM-5"
+        ]
+      },
+      {
+        "provider": "OpenRouter",
+        "added": [],
+        "removed": [
+          "inclusionAI: Ling 3.0 Flash Fin (free)"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-09-26",
     "providersAdded": [],
     "providersRemoved": [],
