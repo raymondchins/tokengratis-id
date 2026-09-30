@@ -1,5 +1,20 @@
 [
   {
+    "date": "2026-09-30",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "OpenCode Zen",
+        "added": [],
+        "removed": [
+          "DeepSeek V4 Flash Vision Exp",
+          "Ling 3.0 Flash Fin"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-09-29",
     "providersAdded": [],
     "providersRemoved": [],

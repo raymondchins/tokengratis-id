@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T22:52:01.561Z",
+  "generatedAt": "2026-09-30T22:51:36.588Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -11,18 +11,18 @@
     "freellm.net": {
       "status": "ok",
       "providers": 22,
-      "models": 288,
+      "models": 287,
       "shapeIssues": [
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "maxOutput",
           "rule": "all-null-collapse",
-          "count": 288,
-          "total": 288,
+          "count": 287,
+          "total": 287,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"maxOutput\": 100% null di 288 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+          "message": "Field \"maxOutput\": 100% null di 287 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
         },
         {
           "severity": "warn",
@@ -65,7 +65,7 @@
   ],
   "merged": {
     "providers": 23,
-    "models": 306,
+    "models": 304,
     "shapeIssues": []
   },
   "smokeTest": {
@@ -81,9 +81,9 @@
     "stats": {
       "prevProviders": 24,
       "nextProviders": 23,
-      "prevModels": 310,
-      "nextModels": 306,
-      "totalDropPct": 1.2903225806451613,
+      "prevModels": 309,
+      "nextModels": 304,
+      "totalDropPct": 1.6181229773462782,
       "disappeared": [
         "github-models"
       ],
@@ -92,19 +92,30 @@
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 289,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "eligible": 291,
+            "changed": 2,
+            "ratioPct": 0.6872852233676976,
+            "examples": [
+              {
+                "label": "nvidia-nim/z-ai-glm-5-3",
+                "from": "1.3M",
+                "to": "1.0M"
+              },
+              {
+                "label": "nvidia-nim/z-ai-glm-5-3-flash",
+                "from": "1.3M",
+                "to": "1.0M"
+              }
+            ]
           },
           "maxOutput": {
-            "eligible": 149,
+            "eligible": 148,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "modality": {
-            "eligible": 238,
+            "eligible": 240,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -137,9 +148,15 @@
           },
           "maxContext": {
             "eligible": 22,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "changed": 1,
+            "ratioPct": 4.545454545454546,
+            "examples": [
+              {
+                "label": "nvidia-nim",
+                "from": "1.3M",
+                "to": "1M"
+              }
+            ]
           }
         }
       }
@@ -152,11 +169,11 @@
       "source": "freellm.net",
       "field": "maxOutput",
       "rule": "all-null-collapse",
-      "count": 288,
-      "total": 288,
+      "count": 287,
+      "total": 287,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"maxOutput\": 100% null di 288 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+      "message": "Field \"maxOutput\": 100% null di 287 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
     },
     {
       "severity": "warn",
@@ -187,14 +204,12 @@
         "slug": "github-models",
         "kind": "disappeared",
         "detail": "provider hilang dari hasil merge",
-        "streak": 1,
+        "streak": 2,
         "needs": 3
       }
     ],
     "accepted": [],
-    "cleared": [
-      "cerebras"
-    ],
+    "cleared": [],
     "confirmRuns": 3
   }
 }
