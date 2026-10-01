@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js: The Go-To User-Agent Tool for Teams That Build the Web. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
-      "stars": 10194,
+      "stars": 10195,
       "forks": 1216,
       "openIssues": 15,
       "license": "AGPL-3.0",
@@ -52,7 +52,7 @@
         "php-library"
       ],
       "archived": false,
-      "pushedAt": "2026-09-14T04:10:01Z",
+      "pushedAt": "2026-10-01T09:21:35Z",
       "createdAt": "2015-10-12T07:01:40Z"
     },
     {
@@ -95,9 +95,9 @@
       "homepage": null,
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
-      "stars": 1227,
+      "stars": 1229,
       "forks": 1195,
-      "openIssues": 340,
+      "openIssues": 344,
       "license": null,
       "topics": [
         "opensid",
@@ -118,8 +118,8 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1017,
-      "forks": 304,
+      "stars": 1021,
+      "forks": 305,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -176,7 +176,7 @@
       "homepage": "https://jokoui.web.id",
       "description": "Free Open Source Tailwind CSS Component for Sat-set Developers with Zero Configuration, Installation, and Setup",
       "language": "TypeScript",
-      "stars": 419,
+      "stars": 418,
       "forks": 26,
       "openIssues": 9,
       "license": "MIT",
@@ -299,7 +299,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-09-30T19:28:22Z",
+      "pushedAt": "2026-10-01T00:28:47Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -313,9 +313,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 253,
+      "stars": 254,
       "forks": 47,
-      "openIssues": 42,
+      "openIssues": 40,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -333,7 +333,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-09-30T16:03:00Z",
+      "pushedAt": "2026-10-01T22:55:36Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-09-30T14:25:16Z",
+      "pushedAt": "2026-10-01T13:59:49Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -379,7 +379,7 @@
       "homepage": null,
       "description": null,
       "language": "Python",
-      "stars": 184,
+      "stars": 183,
       "forks": 44,
       "openIssues": 0,
       "license": "MIT",
@@ -400,7 +400,7 @@
       "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
       "language": "TypeScript",
       "stars": 168,
-      "forks": 14,
+      "forks": 15,
       "openIssues": 0,
       "license": "Apache-2.0",
       "topics": [
@@ -435,8 +435,8 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 146,
-      "forks": 55,
+      "stars": 147,
+      "forks": 54,
       "openIssues": 5,
       "license": "MIT",
       "topics": [
@@ -739,11 +739,11 @@
       "language": "Ruby",
       "stars": 51,
       "forks": 5,
-      "openIssues": 2,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-30T18:08:46Z",
+      "pushedAt": "2026-10-01T12:27:13Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -889,7 +889,7 @@
       "language": "C#",
       "stars": 42,
       "forks": 15,
-      "openIssues": 14,
+      "openIssues": 11,
       "license": null,
       "topics": [
         "desktop-app",
@@ -899,7 +899,7 @@
         "windows"
       ],
       "archived": false,
-      "pushedAt": "2026-09-30T10:00:16Z",
+      "pushedAt": "2026-10-01T07:10:48Z",
       "createdAt": "2026-05-23T05:37:35Z"
     },
     {
@@ -1026,33 +1026,6 @@
       "createdAt": "2026-06-14T05:07:25Z"
     },
     {
-      "slug": "rizukirr/hyprsimple",
-      "fullName": "rizukirr/hyprsimple",
-      "name": "hyprsimple",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/hyprsimple",
-      "homepage": null,
-      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
-      "language": "Shell",
-      "stars": 32,
-      "forks": 4,
-      "openIssues": 1,
-      "license": null,
-      "topics": [
-        "arch-linux",
-        "dotfiles",
-        "hyprland",
-        "hyprland-config",
-        "linux",
-        "omarchy"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-30T11:02:23Z",
-      "createdAt": "2025-10-04T10:27:45Z"
-    },
-    {
       "slug": "pendig/rute-bayar",
       "fullName": "pendig/rute-bayar",
       "name": "rute-bayar",
@@ -1083,24 +1056,31 @@
       "createdAt": "2026-05-05T01:16:45Z"
     },
     {
-      "slug": "galpratama/agent-cli",
-      "fullName": "galpratama/agent-cli",
-      "name": "agent-cli",
-      "owner": "galpratama",
-      "ownerUrl": "https://github.com/galpratama",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/2271384?v=4",
-      "url": "https://github.com/galpratama/agent-cli",
+      "slug": "rizukirr/hyprsimple",
+      "fullName": "rizukirr/hyprsimple",
+      "name": "hyprsimple",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/hyprsimple",
       "homepage": null,
-      "description": "A beautiful Terminal UI for launching multiple AI providers from a single command",
-      "language": "HTML",
+      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
+      "language": "Shell",
       "stars": 31,
-      "forks": 7,
+      "forks": 4,
       "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
+      "license": null,
+      "topics": [
+        "arch-linux",
+        "dotfiles",
+        "hyprland",
+        "hyprland-config",
+        "linux",
+        "omarchy"
+      ],
       "archived": false,
-      "pushedAt": "2025-12-27T17:13:26Z",
-      "createdAt": "2025-12-17T16:19:36Z"
+      "pushedAt": "2026-10-01T07:58:15Z",
+      "createdAt": "2025-10-04T10:27:45Z"
     },
     {
       "slug": "rahmanef63/open-silong",
@@ -1113,7 +1093,7 @@
       "homepage": "https://silong-os.vercel.app/",
       "description": "Open-source, self-hostable Notion/Obsidian-style workspace — block editor for notes, docs and lightweight databases, plus a knowledge graph over them. Next.js 16 · React 19 · Convex · Tailwind v4.",
       "language": "TypeScript",
-      "stars": 30,
+      "stars": 31,
       "forks": 6,
       "openIssues": 0,
       "license": "MIT",
@@ -1137,6 +1117,26 @@
       "createdAt": "2026-04-29T18:48:11Z"
     },
     {
+      "slug": "galpratama/agent-cli",
+      "fullName": "galpratama/agent-cli",
+      "name": "agent-cli",
+      "owner": "galpratama",
+      "ownerUrl": "https://github.com/galpratama",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/2271384?v=4",
+      "url": "https://github.com/galpratama/agent-cli",
+      "homepage": null,
+      "description": "A beautiful Terminal UI for launching multiple AI providers from a single command",
+      "language": "HTML",
+      "stars": 31,
+      "forks": 7,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2025-12-27T17:13:26Z",
+      "createdAt": "2025-12-17T16:19:36Z"
+    },
+    {
       "slug": "rudycity/superagent",
       "fullName": "RudyCity/superagent",
       "name": "superagent",
@@ -1147,13 +1147,13 @@
       "homepage": null,
       "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
       "language": "TypeScript",
-      "stars": 23,
+      "stars": 26,
       "forks": 3,
       "openIssues": 0,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-22T03:40:12Z",
+      "pushedAt": "2026-10-01T22:34:23Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1189,7 +1189,7 @@
       "language": "JavaScript",
       "stars": 20,
       "forks": 1,
-      "openIssues": 1,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [
         "antigravity",
@@ -1207,7 +1207,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-09-26T00:12:27Z",
+      "pushedAt": "2026-10-01T07:40:14Z",
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
@@ -1229,6 +1229,38 @@
       "archived": false,
       "pushedAt": "2026-04-08T09:29:42Z",
       "createdAt": "2026-04-08T09:27:49Z"
+    },
+    {
+      "slug": "muslimtify-org/muslimtify",
+      "fullName": "muslimtify-org/muslimtify",
+      "name": "muslimtify",
+      "owner": "muslimtify-org",
+      "ownerUrl": "https://github.com/muslimtify-org",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/302768915?v=4",
+      "url": "https://github.com/muslimtify-org/muslimtify",
+      "homepage": "https://muslimtify.vercel.app",
+      "description": "A daily prayer notification & reminder for Muslims on Windows and Linux, supporting 21 global standard calculation methods, all madzhab, all country.",
+      "language": "C",
+      "stars": 18,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "c-language",
+        "cross-platform",
+        "daemon",
+        "linux",
+        "muslim-prayer-times",
+        "muslims-prayer",
+        "notification",
+        "systemd",
+        "windows",
+        "windows-app",
+        "windows-desktop"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-29T14:48:54Z",
+      "createdAt": "2026-02-23T13:59:12Z"
     },
     {
       "slug": "rahmanef63/control-room",
@@ -1262,38 +1294,6 @@
       "archived": false,
       "pushedAt": "2026-09-11T22:00:32Z",
       "createdAt": "2026-03-20T14:25:48Z"
-    },
-    {
-      "slug": "muslimtify-org/muslimtify",
-      "fullName": "muslimtify-org/muslimtify",
-      "name": "muslimtify",
-      "owner": "muslimtify-org",
-      "ownerUrl": "https://github.com/muslimtify-org",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/302768915?v=4",
-      "url": "https://github.com/muslimtify-org/muslimtify",
-      "homepage": "https://muslimtify.vercel.app",
-      "description": "A daily prayer notification & reminder for Muslims on Windows and Linux, supporting 21 global standard calculation methods, all madzhab, all country.",
-      "language": "C",
-      "stars": 17,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "c-language",
-        "cross-platform",
-        "daemon",
-        "linux",
-        "muslim-prayer-times",
-        "muslims-prayer",
-        "notification",
-        "systemd",
-        "windows",
-        "windows-app",
-        "windows-desktop"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-29T14:48:54Z",
-      "createdAt": "2026-02-23T13:59:12Z"
     },
     {
       "slug": "muhammadhasbiashshiddieqy/openclawn",
@@ -1452,11 +1452,11 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 17,
+      "openIssues": 10,
       "license": "Apache-2.0",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-30T18:35:03Z",
+      "pushedAt": "2026-10-01T18:51:16Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1472,7 +1472,7 @@
       "language": "Go",
       "stars": 11,
       "forks": 1,
-      "openIssues": 3,
+      "openIssues": 5,
       "license": "MIT",
       "topics": [
         "antrophic",
@@ -1487,7 +1487,7 @@
         "proxy"
       ],
       "archived": false,
-      "pushedAt": "2026-09-30T10:29:07Z",
+      "pushedAt": "2026-10-01T04:23:44Z",
       "createdAt": "2026-03-25T12:38:25Z"
     },
     {
@@ -1721,7 +1721,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-29T22:52:22Z",
+      "pushedAt": "2026-09-30T22:51:56Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -2054,26 +2054,6 @@
       "createdAt": "2026-06-04T02:35:05Z"
     },
     {
-      "slug": "khmuhtadin/studioapi",
-      "fullName": "khmuhtadin/studioapi",
-      "name": "studioapi",
-      "owner": "khmuhtadin",
-      "ownerUrl": "https://github.com/khmuhtadin",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/23192230?v=4",
-      "url": "https://github.com/khmuhtadin/studioapi",
-      "homepage": null,
-      "description": null,
-      "language": "Astro",
-      "stars": 0,
-      "forks": 0,
-      "openIssues": 0,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-09-30T19:18:43Z",
-      "createdAt": "2026-08-05T07:19:57Z"
-    },
-    {
       "slug": "aofsnorth/artidor",
       "fullName": "Aofsnorth/Artidor",
       "name": "Artidor",
@@ -2086,11 +2066,11 @@
       "language": "TypeScript",
       "stars": 0,
       "forks": 0,
-      "openIssues": 9,
+      "openIssues": 0,
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-30T12:25:00Z",
+      "pushedAt": "2026-10-01T13:53:18Z",
       "createdAt": "2026-06-13T11:24:30Z"
     },
     {
@@ -2118,14 +2098,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-09-30T22:51:42.944Z"
+      "syncedAt": "2026-10-01T23:01:56.797Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-09-30T22:51:42.944Z"
+      "syncedAt": "2026-10-01T23:01:56.797Z"
     }
   ],
-  "syncedAt": "2026-09-30T22:51:42.944Z",
-  "count": 79
+  "syncedAt": "2026-10-01T23:01:56.797Z",
+  "count": 78
 }

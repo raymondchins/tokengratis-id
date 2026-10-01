@@ -1,13 +1,4 @@
 {
   "version": 1,
-  "entries": {
-    "github-models": {
-      "kind": "disappeared",
-      "magnitude": 0,
-      "detail": "provider hilang dari hasil merge",
-      "streak": 2,
-      "firstSeen": "2026-09-29T22:52:01.561Z",
-      "lastSeen": "2026-09-30T22:51:36.588Z"
-    }
-  }
+  "entries": {}
 }

@@ -1,5 +1,47 @@
 [
   {
+    "date": "2026-10-01",
+    "providersAdded": [],
+    "providersRemoved": [
+      {
+        "slug": "github-models",
+        "name": "GitHub Models"
+      }
+    ],
+    "models": [
+      {
+        "provider": "Cline",
+        "added": [],
+        "removed": [
+          "Pixel Canary"
+        ]
+      },
+      {
+        "provider": "LLM7.io",
+        "added": [
+          "GLM-5.3-Flash"
+        ],
+        "removed": [
+          "DeepSeek V4 Flash 0731"
+        ]
+      },
+      {
+        "provider": "OpenCode Zen",
+        "added": [],
+        "removed": [
+          "Nemotron 3 Ultra 550B A55B"
+        ]
+      },
+      {
+        "provider": "OpenRouter",
+        "added": [
+          "Apodex: Apodex 1.1 Mini (free)"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-09-30",
     "providersAdded": [],
     "providersRemoved": [],
@@ -2239,20 +2281,6 @@
         "removed": [
           "Hy3 preview"
         ]
-      }
-    ]
-  },
-  {
-    "date": "2026-07-21",
-    "providersAdded": [],
-    "providersRemoved": [],
-    "models": [
-      {
-        "provider": "OpenRouter",
-        "added": [
-          "Poolside: Laguna S 2.1 (free)"
-        ],
-        "removed": []
       }
     ]
   }
