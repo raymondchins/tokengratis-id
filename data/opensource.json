@@ -11,8 +11,8 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js: The Go-To User-Agent Tool for Teams That Build the Web. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
-      "stars": 10195,
-      "forks": 1216,
+      "stars": 10197,
+      "forks": 1215,
       "openIssues": 15,
       "license": "AGPL-3.0",
       "topics": [
@@ -66,7 +66,7 @@
       "homepage": "https://www.htmly.com",
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
-      "stars": 1364,
+      "stars": 1363,
       "forks": 305,
       "openIssues": 54,
       "license": "GPL-2.0",
@@ -96,8 +96,8 @@
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
       "stars": 1229,
-      "forks": 1195,
-      "openIssues": 344,
+      "forks": 1196,
+      "openIssues": 346,
       "license": null,
       "topics": [
         "opensid",
@@ -118,7 +118,7 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1021,
+      "stars": 1022,
       "forks": 305,
       "openIssues": 0,
       "license": "MIT",
@@ -177,7 +177,7 @@
       "description": "Free Open Source Tailwind CSS Component for Sat-set Developers with Zero Configuration, Installation, and Setup",
       "language": "TypeScript",
       "stars": 418,
-      "forks": 26,
+      "forks": 27,
       "openIssues": 9,
       "license": "MIT",
       "topics": [
@@ -274,7 +274,7 @@
       "language": "Rust",
       "stars": 268,
       "forks": 32,
-      "openIssues": 3,
+      "openIssues": 6,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -299,7 +299,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-10-01T00:28:47Z",
+      "pushedAt": "2026-10-02T04:45:41Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -313,9 +313,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 254,
+      "stars": 256,
       "forks": 47,
-      "openIssues": 40,
+      "openIssues": 39,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -333,7 +333,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-10-01T22:55:36Z",
+      "pushedAt": "2026-10-02T19:06:30Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -349,7 +349,7 @@
       "language": "TypeScript",
       "stars": 206,
       "forks": 42,
-      "openIssues": 11,
+      "openIssues": 10,
       "license": null,
       "topics": [
         "coding",
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-10-01T13:59:49Z",
+      "pushedAt": "2026-10-02T03:40:20Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -421,7 +421,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-29T05:03:06Z",
+      "pushedAt": "2026-10-02T15:34:48Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -436,7 +436,7 @@
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
       "stars": 147,
-      "forks": 54,
+      "forks": 53,
       "openIssues": 5,
       "license": "MIT",
       "topics": [
@@ -576,7 +576,7 @@
       "language": "TypeScript",
       "stars": 99,
       "forks": 23,
-      "openIssues": 19,
+      "openIssues": 20,
       "license": "MIT",
       "topics": [
         "hacktoberfest",
@@ -585,7 +585,7 @@
         "hacktoberfest2023"
       ],
       "archived": false,
-      "pushedAt": "2026-09-10T13:49:14Z",
+      "pushedAt": "2026-10-02T11:21:11Z",
       "createdAt": "2023-09-05T12:35:21Z"
     },
     {
@@ -624,7 +624,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-09-30T14:00:41Z",
+      "pushedAt": "2026-10-02T22:44:53Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -743,7 +743,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-01T12:27:13Z",
+      "pushedAt": "2026-10-02T12:41:29Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -887,9 +887,9 @@
       "homepage": null,
       "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
       "language": "C#",
-      "stars": 42,
+      "stars": 43,
       "forks": 15,
-      "openIssues": 11,
+      "openIssues": 3,
       "license": null,
       "topics": [
         "desktop-app",
@@ -899,7 +899,7 @@
         "windows"
       ],
       "archived": false,
-      "pushedAt": "2026-10-01T07:10:48Z",
+      "pushedAt": "2026-10-02T05:52:59Z",
       "createdAt": "2026-05-23T05:37:35Z"
     },
     {
@@ -1079,7 +1079,7 @@
         "omarchy"
       ],
       "archived": false,
-      "pushedAt": "2026-10-01T07:58:15Z",
+      "pushedAt": "2026-10-02T06:25:22Z",
       "createdAt": "2025-10-04T10:27:45Z"
     },
     {
@@ -1153,7 +1153,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-01T22:34:23Z",
+      "pushedAt": "2026-10-02T22:48:38Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1452,11 +1452,11 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 10,
+      "openIssues": 14,
       "license": "Apache-2.0",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-01T18:51:16Z",
+      "pushedAt": "2026-10-02T15:36:53Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1721,7 +1721,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-30T22:51:56Z",
+      "pushedAt": "2026-10-01T23:02:10Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -2098,14 +2098,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-10-01T23:01:56.797Z"
+      "syncedAt": "2026-10-02T22:50:23.115Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-10-01T23:01:56.797Z"
+      "syncedAt": "2026-10-02T22:50:23.115Z"
     }
   ],
-  "syncedAt": "2026-10-01T23:01:56.797Z",
+  "syncedAt": "2026-10-02T22:50:23.115Z",
   "count": 78
 }
