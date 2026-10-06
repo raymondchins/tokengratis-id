@@ -5,9 +5,9 @@
       "kind": "churned",
       "magnitude": 8,
       "detail": "id churn, overlap 45% (11 -> 8 id)",
-      "streak": 1,
+      "streak": 2,
       "firstSeen": "2026-10-06T00:39:50.599Z",
-      "lastSeen": "2026-10-06T00:39:50.599Z"
+      "lastSeen": "2026-10-06T22:56:05.276Z"
     }
   }
 }
