@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js: The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
-      "stars": 10198,
+      "stars": 10199,
       "forks": 1215,
       "openIssues": 15,
       "license": "AGPL-3.0",
@@ -96,7 +96,7 @@
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
       "stars": 1229,
-      "forks": 1196,
+      "forks": 1197,
       "openIssues": 349,
       "license": null,
       "topics": [
@@ -203,7 +203,7 @@
       "homepage": "https://omni.weekndlabs.com/docs",
       "description": "Your agent pays twice for output it has already seen. OMNI returns a handle instead: 97.2% off a file read twice. Nothing deleted, nothing invented.",
       "language": "Rust",
-      "stars": 373,
+      "stars": 372,
       "forks": 35,
       "openIssues": 18,
       "license": "Apache-2.0",
@@ -272,9 +272,9 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 268,
+      "stars": 269,
       "forks": 32,
-      "openIssues": 1,
+      "openIssues": 0,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -299,7 +299,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-10-03T10:22:47Z",
+      "pushedAt": "2026-10-05T06:29:13Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -313,9 +313,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 260,
+      "stars": 262,
       "forks": 47,
-      "openIssues": 47,
+      "openIssues": 63,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -333,7 +333,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-10-04T18:54:40Z",
+      "pushedAt": "2026-10-05T23:12:19Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -347,7 +347,7 @@
       "homepage": "https://www.erdbuilderpro.com",
       "description": "ERD Builder Pro is a database design and documentation tool for developers. Build ERDs, flowcharts, notes, and drawings — all in one workspace",
       "language": "TypeScript",
-      "stars": 206,
+      "stars": 205,
       "forks": 42,
       "openIssues": 11,
       "license": null,
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-10-04T15:01:15Z",
+      "pushedAt": "2026-10-05T15:58:55Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -511,7 +511,7 @@
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
       "stars": 138,
-      "forks": 71,
+      "forks": 72,
       "openIssues": 12,
       "license": "MIT",
       "topics": [],
@@ -599,9 +599,9 @@
       "homepage": "https://mso.rahmanef.com",
       "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
-      "stars": 94,
-      "forks": 13,
-      "openIssues": 2,
+      "stars": 95,
+      "forks": 14,
+      "openIssues": 4,
       "license": "MIT",
       "topics": [
         "browser-shell",
@@ -624,7 +624,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-10-04T09:48:34Z",
+      "pushedAt": "2026-10-05T14:25:59Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -638,7 +638,7 @@
       "homepage": "https://svelte-audio-ui.vercel.app/",
       "description": "A set of accessible and composable Audio UI components.",
       "language": "Svelte",
-      "stars": 93,
+      "stars": 94,
       "forks": 4,
       "openIssues": 15,
       "license": "MIT",
@@ -688,7 +688,7 @@
       "language": "Svelte",
       "stars": 68,
       "forks": 18,
-      "openIssues": 5,
+      "openIssues": 6,
       "license": "MIT",
       "topics": [
         "bansos",
@@ -739,11 +739,11 @@
       "language": "Ruby",
       "stars": 51,
       "forks": 5,
-      "openIssues": 3,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-04T15:06:08Z",
+      "pushedAt": "2026-10-05T14:28:46Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -889,7 +889,7 @@
       "language": "Rust",
       "stars": 44,
       "forks": 15,
-      "openIssues": 6,
+      "openIssues": 0,
       "license": null,
       "topics": [
         "desktop-app",
@@ -899,7 +899,7 @@
         "windows"
       ],
       "archived": false,
-      "pushedAt": "2026-10-03T07:12:01Z",
+      "pushedAt": "2026-10-05T06:25:56Z",
       "createdAt": "2026-05-23T05:37:35Z"
     },
     {
@@ -940,7 +940,7 @@
       "homepage": null,
       "description": "Turn your AI assistant into a tutor. It plans, shows code, reviews, adapts to how you learn and helps you complete your real project on your own",
       "language": "Shell",
-      "stars": 40,
+      "stars": 41,
       "forks": 1,
       "openIssues": 0,
       "license": "MIT",
@@ -1036,7 +1036,7 @@
       "homepage": "https://silong-os.vercel.app/",
       "description": "Open-source, self-hostable Notion/Obsidian-style workspace — block editor for notes, docs and lightweight databases, plus a knowledge graph over them. Next.js 16 · React 19 · Convex · Tailwind v4.",
       "language": "TypeScript",
-      "stars": 32,
+      "stars": 33,
       "forks": 6,
       "openIssues": 0,
       "license": "MIT",
@@ -1102,7 +1102,7 @@
       "language": "Shell",
       "stars": 31,
       "forks": 4,
-      "openIssues": 0,
+      "openIssues": 1,
       "license": null,
       "topics": [
         "arch-linux",
@@ -1113,7 +1113,7 @@
         "omarchy"
       ],
       "archived": false,
-      "pushedAt": "2026-10-04T18:10:03Z",
+      "pushedAt": "2026-10-05T23:35:10Z",
       "createdAt": "2025-10-04T10:27:45Z"
     },
     {
@@ -1153,7 +1153,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-04T11:22:52Z",
+      "pushedAt": "2026-10-05T07:11:28Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1189,7 +1189,7 @@
       "language": "JavaScript",
       "stars": 20,
       "forks": 1,
-      "openIssues": 1,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [
         "antigravity",
@@ -1207,28 +1207,8 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-10-03T00:12:38Z",
+      "pushedAt": "2026-10-05T07:14:53Z",
       "createdAt": "2026-04-21T15:17:02Z"
-    },
-    {
-      "slug": "rayasabari/yntk-ts",
-      "fullName": "rayasabari/yntk-ts",
-      "name": "yntk-ts",
-      "owner": "rayasabari",
-      "ownerUrl": "https://github.com/rayasabari",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/57746279?v=4",
-      "url": "https://github.com/rayasabari/yntk-ts",
-      "homepage": null,
-      "description": "You Need This Kit - Type-safe Starter: REST API boilerplate that ships with User Management, Role Management, and Authentication with JWTs, Prisma ORM, and PostgreSQL",
-      "language": "TypeScript",
-      "stars": 20,
-      "forks": 0,
-      "openIssues": 0,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-04-08T09:29:42Z",
-      "createdAt": "2026-04-08T09:27:49Z"
     },
     {
       "slug": "rahmanef63/control-room",
@@ -1241,7 +1221,7 @@
       "homepage": null,
       "description": "Mobile-first PWA for driving a single VPS from the browser — up to 16 concurrent terminals, AI agent launchers, host ops and audit behind one shared secret on a Tailscale-only domain. Next.js 15 · React 19 · Node agent (node-pty + xterm.js).",
       "language": "TypeScript",
-      "stars": 19,
+      "stars": 20,
       "forks": 3,
       "openIssues": 0,
       "license": "MIT",
@@ -1264,6 +1244,26 @@
       "createdAt": "2026-03-20T14:25:48Z"
     },
     {
+      "slug": "rayasabari/yntk-ts",
+      "fullName": "rayasabari/yntk-ts",
+      "name": "yntk-ts",
+      "owner": "rayasabari",
+      "ownerUrl": "https://github.com/rayasabari",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/57746279?v=4",
+      "url": "https://github.com/rayasabari/yntk-ts",
+      "homepage": null,
+      "description": "You Need This Kit - Type-safe Starter: REST API boilerplate that ships with User Management, Role Management, and Authentication with JWTs, Prisma ORM, and PostgreSQL",
+      "language": "TypeScript",
+      "stars": 20,
+      "forks": 0,
+      "openIssues": 0,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-04-08T09:29:42Z",
+      "createdAt": "2026-04-08T09:27:49Z"
+    },
+    {
       "slug": "muslimtify-org/muslimtify",
       "fullName": "muslimtify-org/muslimtify",
       "name": "muslimtify",
@@ -1274,7 +1274,7 @@
       "homepage": "https://muslimtify.org",
       "description": "A daily prayer notification & reminder for Muslims on Windows and Linux, supporting 21 global standard calculation methods, all madzhab, all country.",
       "language": "C",
-      "stars": 18,
+      "stars": 19,
       "forks": 1,
       "openIssues": 0,
       "license": "MIT",
@@ -1292,7 +1292,7 @@
         "windows-desktop"
       ],
       "archived": false,
-      "pushedAt": "2026-10-04T17:59:37Z",
+      "pushedAt": "2026-10-05T16:19:50Z",
       "createdAt": "2026-02-23T13:59:12Z"
     },
     {
@@ -1316,26 +1316,6 @@
       "createdAt": "2026-06-15T14:35:14Z"
     },
     {
-      "slug": "muhfauziazhar/nusakit-api",
-      "fullName": "muhfauziazhar/nusakit-api",
-      "name": "nusakit-api",
-      "owner": "muhfauziazhar",
-      "ownerUrl": "https://github.com/muhfauziazhar",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/72305833?v=4",
-      "url": "https://github.com/muhfauziazhar/nusakit-api",
-      "homepage": "https://nusakit.my.id",
-      "description": "🇮🇩 Indonesian Data Validation API — NIK, NPWP, Phone, Rupiah, Bank, Wilayah. Live: nusakit.my.id",
-      "language": "TypeScript",
-      "stars": 15,
-      "forks": 2,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-06-13T16:18:08Z",
-      "createdAt": "2026-06-12T01:36:09Z"
-    },
-    {
       "slug": "rahmanef63/si-coder-agent",
       "fullName": "rahmanef63/si-coder-agent",
       "name": "si-coder-agent",
@@ -1346,8 +1326,8 @@
       "homepage": null,
       "description": "Zero-human full-stack deployment as a bundle of /sc-* Claude Code slash commands — GitHub + Convex (self-hosted & Cloud) + Dokploy + Vercel + Hostinger DNS, source to verified live URL. Node ≥18, no runtime dependencies. 8 skills implemented, 5 stubs.",
       "language": "JavaScript",
-      "stars": 14,
-      "forks": 3,
+      "stars": 15,
+      "forks": 4,
       "openIssues": 1,
       "license": "MIT",
       "topics": [
@@ -1367,6 +1347,26 @@
       "archived": false,
       "pushedAt": "2026-09-12T13:08:28Z",
       "createdAt": "2026-03-18T18:38:41Z"
+    },
+    {
+      "slug": "muhfauziazhar/nusakit-api",
+      "fullName": "muhfauziazhar/nusakit-api",
+      "name": "nusakit-api",
+      "owner": "muhfauziazhar",
+      "ownerUrl": "https://github.com/muhfauziazhar",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/72305833?v=4",
+      "url": "https://github.com/muhfauziazhar/nusakit-api",
+      "homepage": "https://nusakit.my.id",
+      "description": "🇮🇩 Indonesian Data Validation API — NIK, NPWP, Phone, Rupiah, Bank, Wilayah. Live: nusakit.my.id",
+      "language": "TypeScript",
+      "stars": 15,
+      "forks": 2,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-06-13T16:18:08Z",
+      "createdAt": "2026-06-12T01:36:09Z"
     },
     {
       "slug": "rizukirr/numc",
@@ -1452,11 +1452,11 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 22,
+      "openIssues": 40,
       "license": "Apache-2.0",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-04T20:44:04Z",
+      "pushedAt": "2026-10-05T23:17:02Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1640,6 +1640,40 @@
       "createdAt": "2026-06-06T00:23:26Z"
     },
     {
+      "slug": "rahmanef63/framepilot",
+      "fullName": "rahmanef63/framepilot",
+      "name": "framepilot",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/framepilot",
+      "homepage": "https://frame-pilot.rahmanef.com/",
+      "description": "Browser-based 3D camera previsualization and shot planner — design scenes, frames, angles, lenses and moves, then export platform-tuned prompts for AI video models. Next.js 16 · React 19 · Three.js · Convex.",
+      "language": "TypeScript",
+      "stars": 8,
+      "forks": 2,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "ai-video",
+        "camera",
+        "cinematography",
+        "convex",
+        "nextjs",
+        "previsualization",
+        "prompt-engineering",
+        "shot-planner",
+        "storyboard",
+        "text-to-video",
+        "threejs",
+        "typescript",
+        "webgl"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-09T13:32:00Z",
+      "createdAt": "2026-07-10T13:57:01Z"
+    },
+    {
       "slug": "rifqiakrm/code-island",
       "fullName": "rifqiakrm/code-island",
       "name": "code-island",
@@ -1721,42 +1755,8 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-03T22:03:19Z",
+      "pushedAt": "2026-10-04T22:14:56Z",
       "createdAt": "2026-06-01T10:04:41Z"
-    },
-    {
-      "slug": "rahmanef63/framepilot",
-      "fullName": "rahmanef63/framepilot",
-      "name": "framepilot",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/framepilot",
-      "homepage": "https://frame-pilot.rahmanef.com/",
-      "description": "Browser-based 3D camera previsualization and shot planner — design scenes, frames, angles, lenses and moves, then export platform-tuned prompts for AI video models. Next.js 16 · React 19 · Three.js · Convex.",
-      "language": "TypeScript",
-      "stars": 7,
-      "forks": 2,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "ai-video",
-        "camera",
-        "cinematography",
-        "convex",
-        "nextjs",
-        "previsualization",
-        "prompt-engineering",
-        "shot-planner",
-        "storyboard",
-        "text-to-video",
-        "threejs",
-        "typescript",
-        "webgl"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-09T13:32:00Z",
-      "createdAt": "2026-07-10T13:57:01Z"
     },
     {
       "slug": "ramaaditya49/ai-agentic",
@@ -2098,14 +2098,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-10-04T22:14:43.202Z"
+      "syncedAt": "2026-10-06T00:39:57.036Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-10-04T22:14:43.202Z"
+      "syncedAt": "2026-10-06T00:39:57.036Z"
     }
   ],
-  "syncedAt": "2026-10-04T22:14:43.202Z",
+  "syncedAt": "2026-10-06T00:39:57.036Z",
   "count": 78
 }

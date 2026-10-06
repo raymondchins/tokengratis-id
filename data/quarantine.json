@@ -1,13 +1,13 @@
 {
   "version": 1,
   "entries": {
-    "cerebras": {
-      "kind": "disappeared",
-      "magnitude": 0,
-      "detail": "provider hilang dari hasil merge",
+    "groq": {
+      "kind": "churned",
+      "magnitude": 8,
+      "detail": "id churn, overlap 45% (11 -> 8 id)",
       "streak": 1,
-      "firstSeen": "2026-10-04T22:14:37.446Z",
-      "lastSeen": "2026-10-04T22:14:37.446Z"
+      "firstSeen": "2026-10-06T00:39:50.599Z",
+      "lastSeen": "2026-10-06T00:39:50.599Z"
     }
   }
 }

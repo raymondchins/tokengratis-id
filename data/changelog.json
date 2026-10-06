@@ -1,5 +1,87 @@
 [
   {
+    "date": "2026-10-06",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cline",
+        "added": [],
+        "removed": [
+          "Deepseek-v4.1-Flash"
+        ]
+      },
+      {
+        "provider": "Cloudflare Workers AI",
+        "added": [
+          "Mistral 7B",
+          "Qwen 1.5 7B"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "Google Gemini",
+        "added": [
+          "Gemini 3.8 Flash"
+        ],
+        "removed": [
+          "Gemini 3.8 Flash"
+        ]
+      },
+      {
+        "provider": "Kilo Code",
+        "added": [
+          "dots-studio/dots-3-note-preview:free",
+          "apodex/apodex-1.1-mini:free",
+          "inclusionai/ling-3.0-flash-sante:free",
+          "inclusionai/ling-3.1-flash",
+          "qwen/qwen3.8-27b:free",
+          "kilo-auto/free"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "LLM7.io",
+        "added": [
+          "DeepSeek-V4-Flash-0731"
+        ],
+        "removed": [
+          "DeepSeek V4 Flash 0731"
+        ]
+      },
+      {
+        "provider": "NVIDIA NIM",
+        "added": [],
+        "removed": [
+          "minimaxai/minimax-m3",
+          "nvidia/nemotron-3-nano-30b-a3b",
+          "openai/gpt-oss-120b",
+          "meta/llama-3.3-70b-instruct",
+          "mistralai/mistral-nemotron"
+        ]
+      },
+      {
+        "provider": "OpenRouter",
+        "added": [],
+        "removed": [
+          "Qwen: Qwen3.8 27B (free)"
+        ]
+      },
+      {
+        "provider": "OVHcloud AI Endpoints",
+        "added": [
+          "Qwen3-Coder-30B-A3B-Instruct",
+          "Qwen3.8-27B",
+          "Mistral-7B-Instruct-v0.3"
+        ],
+        "removed": [
+          "Qwen3-Coder-30B-A3B-Instruct",
+          "Mistral-7B-Instruct-v0.3"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-10-04",
     "providersAdded": [],
     "providersRemoved": [],
@@ -2195,58 +2277,6 @@
           "Big Pickle Stealth",
           "Nemotron 3 Super Free"
         ]
-      }
-    ]
-  },
-  {
-    "date": "2026-07-25",
-    "providersAdded": [],
-    "providersRemoved": [],
-    "models": [
-      {
-        "provider": "Cerebras",
-        "added": [],
-        "removed": [
-          "Llama 3.1 70B"
-        ]
-      },
-      {
-        "provider": "Cloudflare Workers AI",
-        "added": [],
-        "removed": [
-          "Mistral 7B",
-          "Qwen 1.5 7B"
-        ]
-      },
-      {
-        "provider": "Groq",
-        "added": [],
-        "removed": [
-          "Moonshot Kimi K2",
-          "Moonshot Kimi K2 0905"
-        ]
-      },
-      {
-        "provider": "LLM7.io",
-        "added": [
-          "grok-3-mini"
-        ],
-        "removed": []
-      },
-      {
-        "provider": "NVIDIA NIM",
-        "added": [
-          "nvidia/ising-calibration-1.5-31b"
-        ],
-        "removed": []
-      },
-      {
-        "provider": "OpenCode Zen",
-        "added": [
-          "Laguna S 2.1",
-          "ling-3.0-flash-free"
-        ],
-        "removed": []
       }
     ]
   }
