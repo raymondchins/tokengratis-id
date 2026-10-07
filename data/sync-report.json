@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T22:56:05.276Z",
+  "generatedAt": "2026-10-07T23:29:40.514Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -81,9 +81,9 @@
     "stats": {
       "prevProviders": 23,
       "nextProviders": 23,
-      "prevModels": 307,
+      "prevModels": 303,
       "nextModels": 300,
-      "totalDropPct": 2.2801302931596092,
+      "totalDropPct": 0.9900990099009901,
       "disappeared": [],
       "shrunk": [],
       "churned": [
@@ -97,7 +97,7 @@
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 285,
+            "eligible": 284,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -109,13 +109,13 @@
             "examples": []
           },
           "modality": {
-            "eligible": 234,
+            "eligible": 233,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "rateLimit": {
-            "eligible": 186,
+            "eligible": 185,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -187,16 +187,14 @@
     }
   ],
   "quarantine": {
-    "heldProviders": [
+    "heldProviders": [],
+    "accepted": [
       {
         "slug": "groq",
         "kind": "churned",
-        "detail": "id churn, overlap 45% (11 -> 8 id)",
-        "streak": 2,
-        "needs": 3
+        "detail": "id churn, overlap 45% (11 -> 8 id)"
       }
     ],
-    "accepted": [],
     "cleared": [],
     "confirmRuns": 3
   }

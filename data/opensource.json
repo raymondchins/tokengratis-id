@@ -40,8 +40,8 @@
       "homepage": null,
       "description": "Plug n play avatar, turn name, email, and any other string into beautiful avatar (or gravatar), effortless.",
       "language": "PHP",
-      "stars": 1982,
-      "forks": 187,
+      "stars": 1983,
+      "forks": 186,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -97,7 +97,7 @@
       "language": "PHP",
       "stars": 1229,
       "forks": 1197,
-      "openIssues": 324,
+      "openIssues": 323,
       "license": null,
       "topics": [
         "opensid",
@@ -118,7 +118,7 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1024,
+      "stars": 1028,
       "forks": 307,
       "openIssues": 0,
       "license": "MIT",
@@ -203,9 +203,9 @@
       "homepage": "https://omni.weekndlabs.com/docs",
       "description": "Your agent pays twice for output it has already seen. OMNI returns a handle instead: 97.2% off a file read twice. Nothing deleted, nothing invented.",
       "language": "Rust",
-      "stars": 373,
+      "stars": 374,
       "forks": 35,
-      "openIssues": 22,
+      "openIssues": 24,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -274,7 +274,7 @@
       "language": "Rust",
       "stars": 269,
       "forks": 32,
-      "openIssues": 2,
+      "openIssues": 13,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -299,7 +299,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-10-06T18:54:19Z",
+      "pushedAt": "2026-10-07T22:56:19Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -313,9 +313,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 263,
-      "forks": 47,
-      "openIssues": 59,
+      "stars": 264,
+      "forks": 48,
+      "openIssues": 66,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -333,7 +333,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-10-06T17:32:37Z",
+      "pushedAt": "2026-10-07T19:11:29Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -349,7 +349,7 @@
       "language": "TypeScript",
       "stars": 206,
       "forks": 42,
-      "openIssues": 13,
+      "openIssues": 14,
       "license": null,
       "topics": [
         "coding",
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-10-06T13:14:42Z",
+      "pushedAt": "2026-10-07T15:45:24Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -474,7 +474,7 @@
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": "Python",
-      "stars": 144,
+      "stars": 145,
       "forks": 12,
       "openIssues": 0,
       "license": "MIT",
@@ -599,9 +599,9 @@
       "homepage": "https://mso.rahmanef.com",
       "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
-      "stars": 95,
+      "stars": 96,
       "forks": 14,
-      "openIssues": 2,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [
         "browser-shell",
@@ -624,7 +624,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-10-06T15:27:47Z",
+      "pushedAt": "2026-10-07T20:07:00Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -739,11 +739,11 @@
       "language": "Ruby",
       "stars": 51,
       "forks": 5,
-      "openIssues": 2,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-06T12:42:28Z",
+      "pushedAt": "2026-10-07T02:13:42Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -863,7 +863,7 @@
       "homepage": null,
       "description": "AndKasir merupakan aplikasi open source yang dibangun dengan bahasa pemrograman Java untuk kebutuhan retail perusahaan menengah dalam mengatur aktifitas barang masuk dan keluar. konsultasi isu, instalasi dan penambahan fitur silahkan kirim email ke irwan@andriawan.com",
       "language": "Java",
-      "stars": 48,
+      "stars": 49,
       "forks": 42,
       "openIssues": 2,
       "license": "GPL-3.0",
@@ -889,7 +889,7 @@
       "language": "Rust",
       "stars": 45,
       "forks": 15,
-      "openIssues": 0,
+      "openIssues": 5,
       "license": null,
       "topics": [
         "desktop-app",
@@ -899,35 +899,8 @@
         "windows"
       ],
       "archived": false,
-      "pushedAt": "2026-10-06T06:58:22Z",
+      "pushedAt": "2026-10-07T14:34:19Z",
       "createdAt": "2026-05-23T05:37:35Z"
-    },
-    {
-      "slug": "akbxr/dns",
-      "fullName": "akbxr/dns",
-      "name": "dns",
-      "owner": "akbxr",
-      "ownerUrl": "https://github.com/akbxr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/119819574?v=4",
-      "url": "https://github.com/akbxr/dns",
-      "homepage": "https://dns.akbxr.com",
-      "description": "DNS Pemblokir Judol, Iklan & Tracker",
-      "language": null,
-      "stars": 41,
-      "forks": 5,
-      "openIssues": 19,
-      "license": "MIT",
-      "topics": [
-        "adblock",
-        "dns",
-        "dns-over-https",
-        "dns-over-tls",
-        "doh",
-        "judol"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-25T03:09:23Z",
-      "createdAt": "2025-05-26T04:42:45Z"
     },
     {
       "slug": "rizukirr/no-vibe",
@@ -940,7 +913,7 @@
       "homepage": null,
       "description": "Turn your AI assistant into a tutor. It plans, shows code, reviews, adapts to how you learn and helps you complete your real project on your own",
       "language": "Shell",
-      "stars": 41,
+      "stars": 42,
       "forks": 1,
       "openIssues": 0,
       "license": "MIT",
@@ -973,7 +946,7 @@
       "homepage": null,
       "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
       "language": "TypeScript",
-      "stars": 38,
+      "stars": 41,
       "forks": 4,
       "openIssues": 0,
       "license": "MIT",
@@ -981,6 +954,33 @@
       "archived": false,
       "pushedAt": "2026-10-06T14:58:04Z",
       "createdAt": "2026-06-09T15:06:10Z"
+    },
+    {
+      "slug": "akbxr/dns",
+      "fullName": "akbxr/dns",
+      "name": "dns",
+      "owner": "akbxr",
+      "ownerUrl": "https://github.com/akbxr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/119819574?v=4",
+      "url": "https://github.com/akbxr/dns",
+      "homepage": "https://dns.akbxr.com",
+      "description": "DNS Pemblokir Judol, Iklan & Tracker",
+      "language": null,
+      "stars": 41,
+      "forks": 5,
+      "openIssues": 19,
+      "license": "MIT",
+      "topics": [
+        "adblock",
+        "dns",
+        "dns-over-https",
+        "dns-over-tls",
+        "doh",
+        "judol"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-25T03:09:23Z",
+      "createdAt": "2025-05-26T04:42:45Z"
     },
     {
       "slug": "ammar-rasyidi/mandum-rimba",
@@ -1056,8 +1056,8 @@
       "homepage": "https://silong-os.vercel.app/",
       "description": "Open-source, self-hostable Notion/Obsidian-style workspace — block editor for notes, docs and lightweight databases, plus a knowledge graph over them. Next.js 16 · React 19 · Convex · Tailwind v4.",
       "language": "TypeScript",
-      "stars": 33,
-      "forks": 6,
+      "stars": 34,
+      "forks": 7,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -1153,7 +1153,7 @@
         "omarchy"
       ],
       "archived": false,
-      "pushedAt": "2026-10-06T08:27:26Z",
+      "pushedAt": "2026-10-07T08:44:38Z",
       "createdAt": "2025-10-04T10:27:45Z"
     },
     {
@@ -1207,7 +1207,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-10-05T07:14:53Z",
+      "pushedAt": "2026-10-07T07:42:57Z",
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
@@ -1292,7 +1292,7 @@
         "windows-desktop"
       ],
       "archived": false,
-      "pushedAt": "2026-10-06T14:41:29Z",
+      "pushedAt": "2026-10-07T23:16:37Z",
       "createdAt": "2026-02-23T13:59:12Z"
     },
     {
@@ -1314,6 +1314,26 @@
       "archived": false,
       "pushedAt": "2026-09-26T07:25:55Z",
       "createdAt": "2026-06-15T14:35:14Z"
+    },
+    {
+      "slug": "muhfauziazhar/nusakit-api",
+      "fullName": "muhfauziazhar/nusakit-api",
+      "name": "nusakit-api",
+      "owner": "muhfauziazhar",
+      "ownerUrl": "https://github.com/muhfauziazhar",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/72305833?v=4",
+      "url": "https://github.com/muhfauziazhar/nusakit-api",
+      "homepage": "https://nusakit.my.id",
+      "description": "🇮🇩 Indonesian Data Validation API — NIK, NPWP, Phone, Rupiah, Bank, Wilayah. Live: nusakit.my.id",
+      "language": "TypeScript",
+      "stars": 16,
+      "forks": 2,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-06-13T16:18:08Z",
+      "createdAt": "2026-06-12T01:36:09Z"
     },
     {
       "slug": "rahmanef63/si-coder-agent",
@@ -1347,26 +1367,6 @@
       "archived": false,
       "pushedAt": "2026-09-12T13:08:28Z",
       "createdAt": "2026-03-18T18:38:41Z"
-    },
-    {
-      "slug": "muhfauziazhar/nusakit-api",
-      "fullName": "muhfauziazhar/nusakit-api",
-      "name": "nusakit-api",
-      "owner": "muhfauziazhar",
-      "ownerUrl": "https://github.com/muhfauziazhar",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/72305833?v=4",
-      "url": "https://github.com/muhfauziazhar/nusakit-api",
-      "homepage": "https://nusakit.my.id",
-      "description": "🇮🇩 Indonesian Data Validation API — NIK, NPWP, Phone, Rupiah, Bank, Wilayah. Live: nusakit.my.id",
-      "language": "TypeScript",
-      "stars": 15,
-      "forks": 2,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-06-13T16:18:08Z",
-      "createdAt": "2026-06-12T01:36:09Z"
     },
     {
       "slug": "rizukirr/numc",
@@ -1452,11 +1452,11 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 29,
+      "openIssues": 30,
       "license": "Apache-2.0",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-06T18:48:57Z",
+      "pushedAt": "2026-10-07T19:00:51Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1578,6 +1578,40 @@
       "createdAt": "2026-05-23T08:12:20Z"
     },
     {
+      "slug": "codecoradev/trapfall",
+      "fullName": "codecoradev/trapfall",
+      "name": "trapfall",
+      "owner": "codecoradev",
+      "ownerUrl": "https://github.com/codecoradev",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
+      "url": "https://github.com/codecoradev/trapfall",
+      "homepage": "https://codecora.dev",
+      "description": "TrapFall — Lightweight self-hosted error capture engine. Sentry-compatible, Rust + SvelteKit 5.",
+      "language": "Rust",
+      "stars": 8,
+      "forks": 0,
+      "openIssues": 25,
+      "license": "Apache-2.0",
+      "topics": [
+        "axum",
+        "blake3",
+        "crash-reporting",
+        "error-capture",
+        "error-tracking",
+        "flutter",
+        "mcp",
+        "observability",
+        "rust",
+        "self-hosted",
+        "sentry",
+        "sentry-alternative",
+        "sveltekit"
+      ],
+      "archived": false,
+      "pushedAt": "2026-10-07T09:32:28Z",
+      "createdAt": "2026-06-06T00:23:26Z"
+    },
+    {
       "slug": "rizukirr/apic",
       "fullName": "rizukirr/apic",
       "name": "apic",
@@ -1604,40 +1638,6 @@
       "archived": false,
       "pushedAt": "2026-09-23T12:08:09Z",
       "createdAt": "2026-06-04T12:15:07Z"
-    },
-    {
-      "slug": "codecoradev/trapfall",
-      "fullName": "codecoradev/trapfall",
-      "name": "trapfall",
-      "owner": "codecoradev",
-      "ownerUrl": "https://github.com/codecoradev",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
-      "url": "https://github.com/codecoradev/trapfall",
-      "homepage": "https://codecora.dev",
-      "description": "TrapFall — Lightweight self-hosted error capture engine. Sentry-compatible, Rust + SvelteKit 5.",
-      "language": "Rust",
-      "stars": 8,
-      "forks": 0,
-      "openIssues": 14,
-      "license": "Apache-2.0",
-      "topics": [
-        "axum",
-        "blake3",
-        "crash-reporting",
-        "error-capture",
-        "error-tracking",
-        "flutter",
-        "mcp",
-        "observability",
-        "rust",
-        "self-hosted",
-        "sentry",
-        "sentry-alternative",
-        "sveltekit"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-11T06:19:37Z",
-      "createdAt": "2026-06-06T00:23:26Z"
     },
     {
       "slug": "rahmanef63/framepilot",
@@ -1755,28 +1755,8 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-06T00:40:08Z",
+      "pushedAt": "2026-10-06T22:56:21Z",
       "createdAt": "2026-06-01T10:04:41Z"
-    },
-    {
-      "slug": "ramaaditya49/ai-agentic",
-      "fullName": "RamaAditya49/ai-agentic",
-      "name": "ai-agentic",
-      "owner": "RamaAditya49",
-      "ownerUrl": "https://github.com/RamaAditya49",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/213913142?v=4",
-      "url": "https://github.com/RamaAditya49/ai-agentic",
-      "homepage": null,
-      "description": null,
-      "language": null,
-      "stars": 7,
-      "forks": 0,
-      "openIssues": 0,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-06-09T15:51:19Z",
-      "createdAt": "2026-06-09T15:29:44Z"
     },
     {
       "slug": "wauputr4/agent-proxmox",
@@ -1789,7 +1769,7 @@
       "homepage": "https://skills.sh/wauputr4/agent-proxmox/proxmox-host-operator",
       "description": "Reusable AI agent skill for safe Proxmox homelab production operations, LXC activity logging, backups, security, and migration runbooks.",
       "language": "Python",
-      "stars": 6,
+      "stars": 7,
       "forks": 1,
       "openIssues": 1,
       "license": "MIT",
@@ -1810,6 +1790,26 @@
       "archived": false,
       "pushedAt": "2026-07-23T02:37:49Z",
       "createdAt": "2026-06-06T16:32:11Z"
+    },
+    {
+      "slug": "ramaaditya49/ai-agentic",
+      "fullName": "RamaAditya49/ai-agentic",
+      "name": "ai-agentic",
+      "owner": "RamaAditya49",
+      "ownerUrl": "https://github.com/RamaAditya49",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/213913142?v=4",
+      "url": "https://github.com/RamaAditya49/ai-agentic",
+      "homepage": null,
+      "description": null,
+      "language": null,
+      "stars": 7,
+      "forks": 0,
+      "openIssues": 0,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-06-09T15:51:19Z",
+      "createdAt": "2026-06-09T15:29:44Z"
     },
     {
       "slug": "achmdfzn/hippocrates",
@@ -2098,14 +2098,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-10-06T22:56:10.758Z"
+      "syncedAt": "2026-10-07T23:29:47.075Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-10-06T22:56:10.758Z"
+      "syncedAt": "2026-10-07T23:29:47.075Z"
     }
   ],
-  "syncedAt": "2026-10-06T22:56:10.758Z",
+  "syncedAt": "2026-10-07T23:29:47.075Z",
   "count": 78
 }
