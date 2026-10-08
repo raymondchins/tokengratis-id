@@ -1,5 +1,35 @@
 [
   {
+    "date": "2026-10-08",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "LLM7.io",
+        "added": [
+          "DeepSeek V4 Pro",
+          "GLM-5.2",
+          "MiniMax-M3"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "OpenCode Zen",
+        "added": [
+          "Mistral Large 4"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "OpenRouter",
+        "added": [],
+        "removed": [
+          "inclusionAI: Ling 3.0 Flash Sante (free)"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-10-07",
     "providersAdded": [],
     "providersRemoved": [],
@@ -2118,39 +2148,6 @@
         "removed": [
           "Kwaipilot KAT-Coder-Pro V2.5",
           "Poolside Laguna M.1"
-        ]
-      }
-    ]
-  },
-  {
-    "date": "2026-07-28",
-    "providersAdded": [],
-    "providersRemoved": [],
-    "models": [
-      {
-        "provider": "LLM7.io",
-        "added": [
-          "Gemini 3.1 Flash Lite"
-        ],
-        "removed": [
-          "MiniMax-M2.7",
-          "grok-3-mini"
-        ]
-      },
-      {
-        "provider": "NVIDIA NIM",
-        "added": [
-          "nvidia/riva-translate-4b-instruct-v2"
-        ],
-        "removed": [
-          "nvidia/ising-calibration-1-35b-a3b"
-        ]
-      },
-      {
-        "provider": "OpenRouter",
-        "added": [],
-        "removed": [
-          "Poolside: Laguna M.1 (free)"
         ]
       }
     ]

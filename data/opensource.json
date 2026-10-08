@@ -66,7 +66,7 @@
       "homepage": "https://www.htmly.com",
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
-      "stars": 1364,
+      "stars": 1365,
       "forks": 305,
       "openIssues": 54,
       "license": "GPL-2.0",
@@ -97,7 +97,7 @@
       "language": "PHP",
       "stars": 1229,
       "forks": 1197,
-      "openIssues": 323,
+      "openIssues": 324,
       "license": null,
       "topics": [
         "opensid",
@@ -156,7 +156,7 @@
       "homepage": null,
       "description": "Package Laravel yang berisi data Provinsi, Kabupaten/Kota, dan Kecamatan/Desa di seluruh Indonesia.",
       "language": "PHP",
-      "stars": 677,
+      "stars": 678,
       "forks": 210,
       "openIssues": 5,
       "license": "MIT",
@@ -177,8 +177,8 @@
       "description": "Free Open Source Tailwind CSS Component for Sat-set Developers with Zero Configuration, Installation, and Setup",
       "language": "TypeScript",
       "stars": 418,
-      "forks": 27,
-      "openIssues": 9,
+      "forks": 28,
+      "openIssues": 10,
       "license": "MIT",
       "topics": [
         "css",
@@ -205,7 +205,7 @@
       "language": "Rust",
       "stars": 374,
       "forks": 35,
-      "openIssues": 24,
+      "openIssues": 23,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -230,7 +230,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-10-06T16:55:47Z",
+      "pushedAt": "2026-10-08T13:15:27Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -244,7 +244,7 @@
       "homepage": "https://adbkit.pages.dev",
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 365,
+      "stars": 364,
       "forks": 44,
       "openIssues": 3,
       "license": "MIT",
@@ -274,7 +274,7 @@
       "language": "Rust",
       "stars": 269,
       "forks": 32,
-      "openIssues": 13,
+      "openIssues": 9,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -299,7 +299,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-10-07T22:56:19Z",
+      "pushedAt": "2026-10-08T19:52:33Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -314,8 +314,8 @@
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
       "stars": 264,
-      "forks": 48,
-      "openIssues": 66,
+      "forks": 49,
+      "openIssues": 73,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -333,7 +333,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-10-07T19:11:29Z",
+      "pushedAt": "2026-10-08T22:12:55Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-10-07T15:45:24Z",
+      "pushedAt": "2026-10-08T16:33:18Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -399,7 +399,7 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 167,
+      "stars": 166,
       "forks": 15,
       "openIssues": 0,
       "license": "Apache-2.0",
@@ -421,7 +421,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-10-02T15:34:48Z",
+      "pushedAt": "2026-10-08T16:35:39Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -601,7 +601,7 @@
       "language": "TypeScript",
       "stars": 96,
       "forks": 14,
-      "openIssues": 0,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "browser-shell",
@@ -624,7 +624,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-10-07T20:07:00Z",
+      "pushedAt": "2026-10-08T09:25:54Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -638,7 +638,7 @@
       "homepage": "https://svelte-audio-ui.vercel.app/",
       "description": "A set of accessible and composable Audio UI components.",
       "language": "Svelte",
-      "stars": 95,
+      "stars": 96,
       "forks": 4,
       "openIssues": 15,
       "license": "MIT",
@@ -887,7 +887,7 @@
       "homepage": null,
       "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
       "language": "Rust",
-      "stars": 45,
+      "stars": 47,
       "forks": 15,
       "openIssues": 5,
       "license": null,
@@ -899,7 +899,7 @@
         "windows"
       ],
       "archived": false,
-      "pushedAt": "2026-10-07T14:34:19Z",
+      "pushedAt": "2026-10-08T05:53:41Z",
       "createdAt": "2026-05-23T05:37:35Z"
     },
     {
@@ -952,7 +952,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-06T14:58:04Z",
+      "pushedAt": "2026-10-08T04:16:34Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1090,7 +1090,7 @@
       "homepage": "http://rutebayar.id/",
       "description": "Payment router for Indonesian payment gateways.",
       "language": "Go",
-      "stars": 32,
+      "stars": 33,
       "forks": 7,
       "openIssues": 22,
       "license": "MIT",
@@ -1207,7 +1207,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-10-07T07:42:57Z",
+      "pushedAt": "2026-10-08T11:39:51Z",
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
@@ -1292,7 +1292,7 @@
         "windows-desktop"
       ],
       "archived": false,
-      "pushedAt": "2026-10-07T23:16:37Z",
+      "pushedAt": "2026-10-08T04:11:48Z",
       "createdAt": "2026-02-23T13:59:12Z"
     },
     {
@@ -1452,11 +1452,11 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 30,
+      "openIssues": 29,
       "license": "Apache-2.0",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-07T19:00:51Z",
+      "pushedAt": "2026-10-08T18:38:42Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1549,7 +1549,7 @@
         "golang"
       ],
       "archived": false,
-      "pushedAt": "2026-07-01T07:37:18Z",
+      "pushedAt": "2026-10-08T06:42:33Z",
       "createdAt": "2026-01-11T03:16:04Z"
     },
     {
@@ -1755,7 +1755,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-06T22:56:21Z",
+      "pushedAt": "2026-10-07T23:29:59Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -2070,7 +2070,7 @@
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-06T15:10:21Z",
+      "pushedAt": "2026-10-08T19:14:58Z",
       "createdAt": "2026-06-13T11:24:30Z"
     },
     {
@@ -2098,14 +2098,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-10-07T23:29:47.075Z"
+      "syncedAt": "2026-10-08T23:41:11.518Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-10-07T23:29:47.075Z"
+      "syncedAt": "2026-10-08T23:41:11.518Z"
     }
   ],
-  "syncedAt": "2026-10-07T23:29:47.075Z",
+  "syncedAt": "2026-10-08T23:41:11.518Z",
   "count": 78
 }
