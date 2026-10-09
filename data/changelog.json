@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-10-09",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cline",
+        "added": [
+          "Step 5 Preview"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-10-08",
     "providersAdded": [],
     "providersRemoved": [],
@@ -2133,21 +2147,6 @@
         ],
         "removed": [
           "GLM-4.5-Flash"
-        ]
-      }
-    ]
-  },
-  {
-    "date": "2026-07-29",
-    "providersAdded": [],
-    "providersRemoved": [],
-    "models": [
-      {
-        "provider": "Kilo Gateway",
-        "added": [],
-        "removed": [
-          "Kwaipilot KAT-Coder-Pro V2.5",
-          "Poolside Laguna M.1"
         ]
       }
     ]
