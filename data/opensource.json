@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js: The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
-      "stars": 10195,
+      "stars": 10196,
       "forks": 1214,
       "openIssues": 17,
       "license": "AGPL-3.0",
@@ -97,7 +97,7 @@
       "language": "PHP",
       "stars": 1229,
       "forks": 1196,
-      "openIssues": 324,
+      "openIssues": 325,
       "license": null,
       "topics": [
         "opensid",
@@ -118,7 +118,7 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1031,
+      "stars": 1032,
       "forks": 308,
       "openIssues": 0,
       "license": "MIT",
@@ -272,7 +272,7 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 269,
+      "stars": 270,
       "forks": 32,
       "openIssues": 9,
       "license": "Apache-2.0",
@@ -315,7 +315,7 @@
       "language": "TypeScript",
       "stars": 263,
       "forks": 49,
-      "openIssues": 61,
+      "openIssues": 69,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -333,7 +333,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-10-10T21:47:57Z",
+      "pushedAt": "2026-10-11T22:06:15Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -348,7 +348,7 @@
       "description": "ERD Builder Pro is a database design and documentation tool for developers. Build ERDs, flowcharts, notes, and drawings — all in one workspace",
       "language": "TypeScript",
       "stars": 206,
-      "forks": 42,
+      "forks": 41,
       "openIssues": 15,
       "license": null,
       "topics": [
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-10-10T18:44:31Z",
+      "pushedAt": "2026-10-11T05:22:15Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -379,7 +379,7 @@
       "homepage": null,
       "description": null,
       "language": "Python",
-      "stars": 183,
+      "stars": 184,
       "forks": 44,
       "openIssues": 0,
       "license": "MIT",
@@ -425,45 +425,6 @@
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
-      "slug": "mydisha/keirouter",
-      "fullName": "mydisha/keirouter",
-      "name": "keirouter",
-      "owner": "mydisha",
-      "ownerUrl": "https://github.com/mydisha",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/7223792?v=4",
-      "url": "https://github.com/mydisha/keirouter",
-      "homepage": "https://keirouter.app",
-      "description": "Your friendly, blazing-fast, self-hostable AI gateway",
-      "language": "Go",
-      "stars": 147,
-      "forks": 51,
-      "openIssues": 5,
-      "license": "MIT",
-      "topics": [
-        "ai",
-        "ai-gateway",
-        "ai-router",
-        "anthropic",
-        "caveman",
-        "claude",
-        "claude-code",
-        "cursor",
-        "deepseek",
-        "glm",
-        "headroom",
-        "kiro",
-        "llm-gateway",
-        "openai",
-        "qoder",
-        "qwen",
-        "rtk",
-        "zai"
-      ],
-      "archived": false,
-      "pushedAt": "2026-10-10T17:18:12Z",
-      "createdAt": "2026-05-31T09:02:50Z"
-    },
-    {
       "slug": "adenaufal/anti-slop-writing",
       "fullName": "adenaufal/anti-slop-writing",
       "name": "anti-slop-writing",
@@ -474,7 +435,7 @@
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": "Python",
-      "stars": 147,
+      "stars": 148,
       "forks": 12,
       "openIssues": 0,
       "license": "MIT",
@@ -498,6 +459,45 @@
       "archived": false,
       "pushedAt": "2026-09-27T04:56:07Z",
       "createdAt": "2026-02-28T19:45:28Z"
+    },
+    {
+      "slug": "mydisha/keirouter",
+      "fullName": "mydisha/keirouter",
+      "name": "keirouter",
+      "owner": "mydisha",
+      "ownerUrl": "https://github.com/mydisha",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/7223792?v=4",
+      "url": "https://github.com/mydisha/keirouter",
+      "homepage": "https://keirouter.app",
+      "description": "Your friendly, blazing-fast, self-hostable AI gateway",
+      "language": "Go",
+      "stars": 147,
+      "forks": 51,
+      "openIssues": 6,
+      "license": "MIT",
+      "topics": [
+        "ai",
+        "ai-gateway",
+        "ai-router",
+        "anthropic",
+        "caveman",
+        "claude",
+        "claude-code",
+        "cursor",
+        "deepseek",
+        "glm",
+        "headroom",
+        "kiro",
+        "llm-gateway",
+        "openai",
+        "qoder",
+        "qwen",
+        "rtk",
+        "zai"
+      ],
+      "archived": false,
+      "pushedAt": "2026-10-11T09:42:21Z",
+      "createdAt": "2026-05-31T09:02:50Z"
     },
     {
       "slug": "jipraks/kasirgratisan",
@@ -589,6 +589,34 @@
       "createdAt": "2023-09-05T12:35:21Z"
     },
     {
+      "slug": "ddtamn/svelte-audio-ui",
+      "fullName": "ddtamn/svelte-audio-ui",
+      "name": "svelte-audio-ui",
+      "owner": "ddtamn",
+      "ownerUrl": "https://github.com/ddtamn",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/102568893?v=4",
+      "url": "https://github.com/ddtamn/svelte-audio-ui",
+      "homepage": "https://svelte-audio-ui.vercel.app/",
+      "description": "A set of accessible and composable Audio UI components.",
+      "language": "Svelte",
+      "stars": 97,
+      "forks": 4,
+      "openIssues": 15,
+      "license": "MIT",
+      "topics": [
+        "audio",
+        "audio-player",
+        "audio-ui",
+        "shadcn-svelte",
+        "svelte-5",
+        "svelte-components",
+        "sveltekit"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-06T00:39:22Z",
+      "createdAt": "2026-03-17T12:55:21Z"
+    },
+    {
       "slug": "rahmanef63/mso",
       "fullName": "rahmanef63/mso",
       "name": "mso",
@@ -628,34 +656,6 @@
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
-      "slug": "ddtamn/svelte-audio-ui",
-      "fullName": "ddtamn/svelte-audio-ui",
-      "name": "svelte-audio-ui",
-      "owner": "ddtamn",
-      "ownerUrl": "https://github.com/ddtamn",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/102568893?v=4",
-      "url": "https://github.com/ddtamn/svelte-audio-ui",
-      "homepage": "https://svelte-audio-ui.vercel.app/",
-      "description": "A set of accessible and composable Audio UI components.",
-      "language": "Svelte",
-      "stars": 96,
-      "forks": 4,
-      "openIssues": 15,
-      "license": "MIT",
-      "topics": [
-        "audio",
-        "audio-player",
-        "audio-ui",
-        "shadcn-svelte",
-        "svelte-5",
-        "svelte-components",
-        "sveltekit"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-06T00:39:22Z",
-      "createdAt": "2026-03-17T12:55:21Z"
-    },
-    {
       "slug": "njinlabs/njinattend-backend",
       "fullName": "njinlabs/njinattend-backend",
       "name": "njinattend-backend",
@@ -687,8 +687,8 @@
       "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
       "language": "Svelte",
       "stars": 68,
-      "forks": 18,
-      "openIssues": 6,
+      "forks": 19,
+      "openIssues": 7,
       "license": "MIT",
       "topics": [
         "bansos",
@@ -739,11 +739,11 @@
       "language": "Ruby",
       "stars": 51,
       "forks": 5,
-      "openIssues": 3,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-10T13:08:21Z",
+      "pushedAt": "2026-10-11T16:53:23Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -899,7 +899,7 @@
         "windows"
       ],
       "archived": false,
-      "pushedAt": "2026-10-10T13:18:54Z",
+      "pushedAt": "2026-10-11T00:17:57Z",
       "createdAt": "2026-05-23T05:37:35Z"
     },
     {
@@ -952,7 +952,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-10T22:05:57Z",
+      "pushedAt": "2026-10-11T14:56:07Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -1153,7 +1153,7 @@
         "omarchy"
       ],
       "archived": false,
-      "pushedAt": "2026-10-10T08:41:07Z",
+      "pushedAt": "2026-10-11T16:33:13Z",
       "createdAt": "2025-10-04T10:27:45Z"
     },
     {
@@ -1400,6 +1400,32 @@
       "createdAt": "2026-03-12T09:55:51Z"
     },
     {
+      "slug": "semutdev/goigniter",
+      "fullName": "semutdev/goigniter",
+      "name": "goigniter",
+      "owner": "semutdev",
+      "ownerUrl": "https://github.com/semutdev",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/209312156?v=4",
+      "url": "https://github.com/semutdev/goigniter",
+      "homepage": "https://goigniter.semut.dev",
+      "description": "Simple MVC web framework golang",
+      "language": "Go",
+      "stars": 12,
+      "forks": 2,
+      "openIssues": 0,
+      "license": null,
+      "topics": [
+        "ci3",
+        "codeigniter",
+        "codeigniter3",
+        "goigniter",
+        "golang"
+      ],
+      "archived": false,
+      "pushedAt": "2026-10-09T02:37:21Z",
+      "createdAt": "2026-01-11T03:16:04Z"
+    },
+    {
       "slug": "ahmadghaisanfad2/absen-kelas",
       "fullName": "ahmadghaisanfad2/absen-kelas",
       "name": "absen-kelas",
@@ -1456,34 +1482,8 @@
       "license": "Apache-2.0",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-10T16:21:22Z",
+      "pushedAt": "2026-10-11T18:34:55Z",
       "createdAt": "2026-07-09T15:14:16Z"
-    },
-    {
-      "slug": "semutdev/goigniter",
-      "fullName": "semutdev/goigniter",
-      "name": "goigniter",
-      "owner": "semutdev",
-      "ownerUrl": "https://github.com/semutdev",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/209312156?v=4",
-      "url": "https://github.com/semutdev/goigniter",
-      "homepage": "https://goigniter.semut.dev",
-      "description": "Simple MVC web framework golang",
-      "language": "Go",
-      "stars": 11,
-      "forks": 2,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "ci3",
-        "codeigniter",
-        "codeigniter3",
-        "goigniter",
-        "golang"
-      ],
-      "archived": false,
-      "pushedAt": "2026-10-09T02:37:21Z",
-      "createdAt": "2026-01-11T03:16:04Z"
     },
     {
       "slug": "fajarhide/heimsense",
@@ -1755,7 +1755,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-09T23:05:41Z",
+      "pushedAt": "2026-10-10T22:18:36Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -2098,14 +2098,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-10-10T22:18:27.846Z"
+      "syncedAt": "2026-10-11T22:43:28.259Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-10-10T22:18:27.846Z"
+      "syncedAt": "2026-10-11T22:43:28.259Z"
     }
   ],
-  "syncedAt": "2026-10-10T22:18:27.846Z",
+  "syncedAt": "2026-10-11T22:43:28.259Z",
   "count": 78
 }

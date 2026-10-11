@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-10-11",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cloudflare Workers AI",
+        "added": [
+          "Mistral 7B",
+          "Qwen 1.5 7B"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "Groq",
+        "added": [
+          "Moonshot Kimi K2",
+          "Moonshot Kimi K2 0905"
+        ],
+        "removed": [
+          "meta-llama/llama-prompt-guard-2-22m",
+          "meta-llama/llama-prompt-guard-2-86m"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-10-10",
     "providersAdded": [],
     "providersRemoved": [],
@@ -1997,50 +2023,6 @@
           "glm-4.6:cloud",
           "gpt-oss:120b-cloud",
           "qwen3-coder:480b-cloud"
-        ]
-      }
-    ]
-  },
-  {
-    "date": "2026-07-31",
-    "providersAdded": [],
-    "providersRemoved": [],
-    "models": [
-      {
-        "provider": "Cerebras",
-        "added": [],
-        "removed": [
-          "Gemma 4 31B IT"
-        ]
-      },
-      {
-        "provider": "GitHub Models",
-        "added": [],
-        "removed": [
-          "Llama-4-Maverick-17B-128E",
-          "Meta-Llama-3.3-70B"
-        ]
-      },
-      {
-        "provider": "LLM7.io",
-        "added": [
-          "MiniMax-M2.7"
-        ],
-        "removed": []
-      },
-      {
-        "provider": "Mistral AI",
-        "added": [],
-        "removed": [
-          "Mistral Nemo (12B)",
-          "Pixtral Large"
-        ]
-      },
-      {
-        "provider": "OVHcloud AI Endpoints",
-        "added": [],
-        "removed": [
-          "Llama-3.1-8B-Instruct"
         ]
       }
     ]
