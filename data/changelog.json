@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-10-14",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cloudflare Workers AI",
+        "added": [
+          "Mistral 7B",
+          "Qwen 1.5 7B"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "Groq",
+        "added": [
+          "Moonshot Kimi K2",
+          "Moonshot Kimi K2 0905"
+        ],
+        "removed": [
+          "meta-llama/llama-prompt-guard-2-22m",
+          "meta-llama/llama-prompt-guard-2-86m"
+        ]
+      },
+      {
+        "provider": "LLM7.io",
+        "added": [
+          "gemini-2.5-flash-lite"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-10-13",
     "providersAdded": [],
     "providersRemoved": [],
@@ -1980,46 +2013,6 @@
           "deepseek-ai/DeepSeek-V3.2",
           "LLM-Research/Llama-4-Maverick-17B-128E-Instruct",
           "Qwen/Qwen3-32B"
-        ]
-      }
-    ]
-  },
-  {
-    "date": "2026-08-02",
-    "providersAdded": [],
-    "providersRemoved": [],
-    "models": [
-      {
-        "provider": "Hugging Face",
-        "added": [
-          "gemma-3-4b-it",
-          "Qwen2.5-Coder-7B-Instruct",
-          "Meta-Llama-3.1-8B-Instruct",
-          "phi-4"
-        ],
-        "removed": [
-          "Meta-Llama-3.1-8B-Instruct",
-          "Phi-3.5-mini-instruct",
-          "Mistral-7B-Instruct-v0.3",
-          "Mixtral-8x7B-Instruct-v0.1"
-        ]
-      },
-      {
-        "provider": "Kilo Code",
-        "added": [
-          "nvidia/nemotron-3-ultra-550b-a55b:free",
-          "inclusionai/ling-3.0-flash:free",
-          "poolside/laguna-s-2.1:free",
-          "poolside/laguna-xs-2.1:free",
-          "stepfun/step-3.7-flash:free",
-          "cohere/north-mini-code:free",
-          "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"
-        ],
-        "removed": [
-          "x-ai/grok-code-fast-1:free",
-          "minimax/minimax-m2.5:free",
-          "arcee-ai/trinity-large-thinking:free",
-          "bytedance-seed/dola-seed-2.0-pro:free"
         ]
       }
     ]

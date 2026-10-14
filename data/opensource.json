@@ -12,7 +12,7 @@
       "description": "UAParser.js: The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
       "stars": 10198,
-      "forks": 1214,
+      "forks": 1213,
       "openIssues": 17,
       "license": "AGPL-3.0",
       "topics": [
@@ -40,7 +40,7 @@
       "homepage": null,
       "description": "Plug n play avatar, turn name, email, and any other string into beautiful avatar (or gravatar), effortless.",
       "language": "PHP",
-      "stars": 1983,
+      "stars": 1984,
       "forks": 186,
       "openIssues": 0,
       "license": "MIT",
@@ -96,8 +96,8 @@
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
       "stars": 1229,
-      "forks": 1196,
-      "openIssues": 325,
+      "forks": 1197,
+      "openIssues": 326,
       "license": null,
       "topics": [
         "opensid",
@@ -118,8 +118,8 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1037,
-      "forks": 308,
+      "stars": 1039,
+      "forks": 310,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -203,9 +203,9 @@
       "homepage": "https://omni.weekndlabs.com/docs",
       "description": "Your agent pays twice for output it has already seen. OMNI returns a handle instead: 97.2% off a file read twice. Nothing deleted, nothing invented.",
       "language": "Rust",
-      "stars": 368,
+      "stars": 367,
       "forks": 35,
-      "openIssues": 12,
+      "openIssues": 22,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -230,7 +230,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-10-09T11:39:13Z",
+      "pushedAt": "2026-10-14T18:14:32Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -274,7 +274,7 @@
       "language": "Rust",
       "stars": 272,
       "forks": 32,
-      "openIssues": 8,
+      "openIssues": 12,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -299,7 +299,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-10-13T09:07:12Z",
+      "pushedAt": "2026-10-14T18:31:29Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -315,7 +315,7 @@
       "language": "TypeScript",
       "stars": 268,
       "forks": 50,
-      "openIssues": 70,
+      "openIssues": 57,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -333,7 +333,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-10-13T23:04:47Z",
+      "pushedAt": "2026-10-14T17:42:01Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -349,7 +349,7 @@
       "language": "TypeScript",
       "stars": 206,
       "forks": 41,
-      "openIssues": 4,
+      "openIssues": 5,
       "license": null,
       "topics": [
         "coding",
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-10-13T06:21:37Z",
+      "pushedAt": "2026-10-14T15:49:11Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -475,7 +475,7 @@
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": "Python",
       "stars": 150,
-      "forks": 12,
+      "forks": 13,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -511,7 +511,7 @@
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
       "stars": 140,
-      "forks": 73,
+      "forks": 74,
       "openIssues": 12,
       "license": "MIT",
       "topics": [],
@@ -652,7 +652,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-10-13T06:46:54Z",
+      "pushedAt": "2026-10-14T15:48:01Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -686,7 +686,7 @@
       "homepage": "https://bansos.dev",
       "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
       "language": "Svelte",
-      "stars": 69,
+      "stars": 70,
       "forks": 19,
       "openIssues": 5,
       "license": "MIT",
@@ -727,6 +727,26 @@
       "createdAt": "2026-03-29T13:58:03Z"
     },
     {
+      "slug": "firewalker06/tycho",
+      "fullName": "firewalker06/tycho",
+      "name": "tycho",
+      "owner": "firewalker06",
+      "ownerUrl": "https://github.com/firewalker06",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/157515?v=4",
+      "url": "https://github.com/firewalker06/tycho",
+      "homepage": null,
+      "description": "Its Factorio for coding agents",
+      "language": "Ruby",
+      "stars": 51,
+      "forks": 5,
+      "openIssues": 2,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-10-14T18:13:43Z",
+      "createdAt": "2026-05-23T01:58:17Z"
+    },
+    {
       "slug": "rudycity/superagent",
       "fullName": "RudyCity/superagent",
       "name": "superagent",
@@ -743,28 +763,33 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-13T15:11:17Z",
+      "pushedAt": "2026-10-14T11:24:01Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
-      "slug": "firewalker06/tycho",
-      "fullName": "firewalker06/tycho",
-      "name": "tycho",
-      "owner": "firewalker06",
-      "ownerUrl": "https://github.com/firewalker06",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/157515?v=4",
-      "url": "https://github.com/firewalker06/tycho",
+      "slug": "abilfida/omnidrive",
+      "fullName": "abilfida/OmniDrive",
+      "name": "OmniDrive",
+      "owner": "abilfida",
+      "ownerUrl": "https://github.com/abilfida",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/38366329?v=4",
+      "url": "https://github.com/abilfida/OmniDrive",
       "homepage": null,
-      "description": "Its Factorio for coding agents",
-      "language": "Ruby",
-      "stars": 51,
-      "forks": 5,
+      "description": "Omnidrive lets you connect multiple Google Drive accounts and manage all your files from a single dashboard. It runs entirely on Cloudflare's edge network — Workers for the API, D1 for the database, and KV for session storage — so there's no traditional server to maintain.",
+      "language": "TypeScript",
+      "stars": 50,
+      "forks": 14,
       "openIssues": 0,
       "license": "MIT",
-      "topics": [],
+      "topics": [
+        "cloudflare",
+        "google-drive",
+        "reactjs",
+        "vitejs"
+      ],
       "archived": false,
-      "pushedAt": "2026-10-12T10:59:05Z",
-      "createdAt": "2026-05-23T01:58:17Z"
+      "pushedAt": "2026-06-24T03:36:32Z",
+      "createdAt": "2026-06-07T16:49:12Z"
     },
     {
       "slug": "mmenghancurkan/dynaqris",
@@ -828,31 +853,6 @@
       "createdAt": "2026-06-13T11:29:36Z"
     },
     {
-      "slug": "abilfida/omnidrive",
-      "fullName": "abilfida/OmniDrive",
-      "name": "OmniDrive",
-      "owner": "abilfida",
-      "ownerUrl": "https://github.com/abilfida",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/38366329?v=4",
-      "url": "https://github.com/abilfida/OmniDrive",
-      "homepage": null,
-      "description": "Omnidrive lets you connect multiple Google Drive accounts and manage all your files from a single dashboard. It runs entirely on Cloudflare's edge network — Workers for the API, D1 for the database, and KV for session storage — so there's no traditional server to maintain.",
-      "language": "TypeScript",
-      "stars": 49,
-      "forks": 14,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "cloudflare",
-        "google-drive",
-        "reactjs",
-        "vitejs"
-      ],
-      "archived": false,
-      "pushedAt": "2026-06-24T03:36:32Z",
-      "createdAt": "2026-06-07T16:49:12Z"
-    },
-    {
       "slug": "giosakti/duragent",
       "fullName": "giosakti/duragent",
       "name": "duragent",
@@ -909,7 +909,7 @@
       "language": "Rust",
       "stars": 47,
       "forks": 16,
-      "openIssues": 11,
+      "openIssues": 0,
       "license": null,
       "topics": [
         "android",
@@ -920,7 +920,7 @@
         "windows"
       ],
       "archived": false,
-      "pushedAt": "2026-10-13T22:20:10Z",
+      "pushedAt": "2026-10-14T09:39:51Z",
       "createdAt": "2026-05-23T05:37:35Z"
     },
     {
@@ -934,7 +934,7 @@
       "homepage": null,
       "description": "Turn your AI assistant into a tutor. It plans, shows code, reviews, adapts to how you learn and helps you complete your real project on your own",
       "language": "Shell",
-      "stars": 42,
+      "stars": 43,
       "forks": 1,
       "openIssues": 0,
       "license": "MIT",
@@ -1695,6 +1695,39 @@
       "createdAt": "2026-04-23T06:17:57Z"
     },
     {
+      "slug": "wauputr4/agent-proxmox",
+      "fullName": "wauputr4/agent-proxmox",
+      "name": "agent-proxmox",
+      "owner": "wauputr4",
+      "ownerUrl": "https://github.com/wauputr4",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/103489788?v=4",
+      "url": "https://github.com/wauputr4/agent-proxmox",
+      "homepage": "https://skills.sh/wauputr4/agent-proxmox/proxmox-host-operator",
+      "description": "Reusable AI agent skill for safe Proxmox homelab production operations, LXC activity logging, backups, security, and migration runbooks.",
+      "language": "Python",
+      "stars": 8,
+      "forks": 1,
+      "openIssues": 1,
+      "license": "MIT",
+      "topics": [
+        "ai-agent",
+        "backup",
+        "cloudflare",
+        "codex",
+        "devops",
+        "homelab",
+        "lxc",
+        "proxmox",
+        "proxmox-ve",
+        "skills",
+        "skills-sh",
+        "tailscale"
+      ],
+      "archived": false,
+      "pushedAt": "2026-07-23T02:37:49Z",
+      "createdAt": "2026-06-06T16:32:11Z"
+    },
+    {
       "slug": "anandazp/tempa-ui",
       "fullName": "anandazp/tempa-ui",
       "name": "tempa-ui",
@@ -1756,41 +1789,8 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-13T01:09:15Z",
+      "pushedAt": "2026-10-13T23:13:14Z",
       "createdAt": "2026-06-01T10:04:41Z"
-    },
-    {
-      "slug": "wauputr4/agent-proxmox",
-      "fullName": "wauputr4/agent-proxmox",
-      "name": "agent-proxmox",
-      "owner": "wauputr4",
-      "ownerUrl": "https://github.com/wauputr4",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/103489788?v=4",
-      "url": "https://github.com/wauputr4/agent-proxmox",
-      "homepage": "https://skills.sh/wauputr4/agent-proxmox/proxmox-host-operator",
-      "description": "Reusable AI agent skill for safe Proxmox homelab production operations, LXC activity logging, backups, security, and migration runbooks.",
-      "language": "Python",
-      "stars": 7,
-      "forks": 1,
-      "openIssues": 1,
-      "license": "MIT",
-      "topics": [
-        "ai-agent",
-        "backup",
-        "cloudflare",
-        "codex",
-        "devops",
-        "homelab",
-        "lxc",
-        "proxmox",
-        "proxmox-ve",
-        "skills",
-        "skills-sh",
-        "tailscale"
-      ],
-      "archived": false,
-      "pushedAt": "2026-07-23T02:37:49Z",
-      "createdAt": "2026-06-06T16:32:11Z"
     },
     {
       "slug": "ramaaditya49/ai-agentic",
@@ -1952,6 +1952,26 @@
       "createdAt": "2026-06-13T11:25:13Z"
     },
     {
+      "slug": "aofsnorth/artidor",
+      "fullName": "Aofsnorth/Artidor",
+      "name": "Artidor",
+      "owner": "Aofsnorth",
+      "ownerUrl": "https://github.com/Aofsnorth",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/108259309?v=4",
+      "url": "https://github.com/Aofsnorth/Artidor",
+      "homepage": "https://artidor.vercel.app",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 3,
+      "forks": 0,
+      "openIssues": 10,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-10-14T18:13:55Z",
+      "createdAt": "2026-06-13T11:24:30Z"
+    },
+    {
       "slug": "wauputr4/hermex",
       "fullName": "wauputr4/hermex",
       "name": "hermex",
@@ -1970,26 +1990,6 @@
       "archived": false,
       "pushedAt": "2026-08-03T16:21:24Z",
       "createdAt": "2026-05-28T12:17:41Z"
-    },
-    {
-      "slug": "aofsnorth/artidor",
-      "fullName": "Aofsnorth/Artidor",
-      "name": "Artidor",
-      "owner": "Aofsnorth",
-      "ownerUrl": "https://github.com/Aofsnorth",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/108259309?v=4",
-      "url": "https://github.com/Aofsnorth/Artidor",
-      "homepage": "https://artidor.vercel.app",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 2,
-      "forks": 0,
-      "openIssues": 7,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-10-08T19:14:58Z",
-      "createdAt": "2026-06-13T11:24:30Z"
     },
     {
       "slug": "jutionck/tahlil-tracker",
@@ -2099,14 +2099,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-10-13T23:13:01.630Z"
+      "syncedAt": "2026-10-14T22:07:12.860Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-10-13T23:13:01.630Z"
+      "syncedAt": "2026-10-14T22:07:12.860Z"
     }
   ],
-  "syncedAt": "2026-10-13T23:13:01.630Z",
+  "syncedAt": "2026-10-14T22:07:12.860Z",
   "count": 78
 }
