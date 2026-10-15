@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-10-15",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "LLM7.io",
+        "added": [],
+        "removed": [
+          "gemini-2.5-flash-lite"
+        ]
+      },
+      {
+        "provider": "OpenRouter",
+        "added": [
+          "NVIDIA: Nemotron 3.5 Super VL (free)"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-10-14",
     "providersAdded": [],
     "providersRemoved": [],
@@ -1995,24 +2016,6 @@
         "added": [],
         "removed": [
           "GLM-5.2"
-        ]
-      }
-    ]
-  },
-  {
-    "date": "2026-08-04",
-    "providersAdded": [],
-    "providersRemoved": [],
-    "models": [
-      {
-        "provider": "ModelScope",
-        "added": [],
-        "removed": [
-          "Kimi K2.5",
-          "MiniMax-M2.5-highspeed",
-          "deepseek-ai/DeepSeek-V3.2",
-          "LLM-Research/Llama-4-Maverick-17B-128E-Instruct",
-          "Qwen/Qwen3-32B"
         ]
       }
     ]

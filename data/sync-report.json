@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T22:07:05.135Z",
+  "generatedAt": "2026-10-15T21:59:38.597Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -11,18 +11,18 @@
     "freellm.net": {
       "status": "ok",
       "providers": 23,
-      "models": 294,
+      "models": 293,
       "shapeIssues": [
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "maxOutput",
           "rule": "all-null-collapse",
-          "count": 294,
-          "total": 294,
+          "count": 293,
+          "total": 293,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"maxOutput\": 100% null di 294 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+          "message": "Field \"maxOutput\": 100% null di 293 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
         },
         {
           "severity": "warn",
@@ -56,7 +56,7 @@
     "openrouter.ai/api/v1/models": {
       "status": "ok",
       "providers": 1,
-      "models": 14,
+      "models": 15,
       "shapeIssues": []
     }
   },
@@ -79,16 +79,16 @@
     "stats": {
       "prevProviders": 23,
       "nextProviders": 23,
-      "prevModels": 301,
+      "prevModels": 304,
       "nextModels": 304,
-      "totalDropPct": -0.9966777408637874,
+      "totalDropPct": 0,
       "disappeared": [],
       "shrunk": [],
       "churned": [],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 285,
+            "eligible": 289,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -100,7 +100,7 @@
             "examples": []
           },
           "modality": {
-            "eligible": 236,
+            "eligible": 240,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -148,11 +148,11 @@
       "source": "freellm.net",
       "field": "maxOutput",
       "rule": "all-null-collapse",
-      "count": 294,
-      "total": 294,
+      "count": 293,
+      "total": 293,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"maxOutput\": 100% null di 294 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+      "message": "Field \"maxOutput\": 100% null di 293 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
     },
     {
       "severity": "warn",
@@ -180,9 +180,7 @@
   "quarantine": {
     "heldProviders": [],
     "accepted": [],
-    "cleared": [
-      "cerebras"
-    ],
+    "cleared": [],
     "confirmRuns": 3
   }
 }

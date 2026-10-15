@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js: The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
-      "stars": 10198,
+      "stars": 10200,
       "forks": 1213,
       "openIssues": 17,
       "license": "AGPL-3.0",
@@ -66,7 +66,7 @@
       "homepage": "https://www.htmly.com",
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
-      "stars": 1365,
+      "stars": 1364,
       "forks": 304,
       "openIssues": 54,
       "license": "GPL-2.0",
@@ -97,7 +97,7 @@
       "language": "PHP",
       "stars": 1229,
       "forks": 1197,
-      "openIssues": 326,
+      "openIssues": 328,
       "license": null,
       "topics": [
         "opensid",
@@ -156,7 +156,7 @@
       "homepage": null,
       "description": "Package Laravel yang berisi data Provinsi, Kabupaten/Kota, dan Kecamatan/Desa di seluruh Indonesia.",
       "language": "PHP",
-      "stars": 678,
+      "stars": 679,
       "forks": 210,
       "openIssues": 5,
       "license": "MIT",
@@ -203,7 +203,7 @@
       "homepage": "https://omni.weekndlabs.com/docs",
       "description": "Your agent pays twice for output it has already seen. OMNI returns a handle instead: 97.2% off a file read twice. Nothing deleted, nothing invented.",
       "language": "Rust",
-      "stars": 367,
+      "stars": 368,
       "forks": 35,
       "openIssues": 22,
       "license": "Apache-2.0",
@@ -272,9 +272,9 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 272,
+      "stars": 271,
       "forks": 32,
-      "openIssues": 12,
+      "openIssues": 20,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -299,7 +299,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-10-14T18:31:29Z",
+      "pushedAt": "2026-10-15T14:53:01Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -314,8 +314,8 @@
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
       "stars": 268,
-      "forks": 50,
-      "openIssues": 57,
+      "forks": 51,
+      "openIssues": 64,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -333,7 +333,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-10-14T17:42:01Z",
+      "pushedAt": "2026-10-15T17:44:13Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-10-14T15:49:11Z",
+      "pushedAt": "2026-10-15T15:19:02Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -435,7 +435,7 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 150,
+      "stars": 151,
       "forks": 51,
       "openIssues": 9,
       "license": "MIT",
@@ -510,7 +510,7 @@
       "homepage": null,
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
-      "stars": 140,
+      "stars": 142,
       "forks": 74,
       "openIssues": 12,
       "license": "MIT",
@@ -629,7 +629,7 @@
       "language": "TypeScript",
       "stars": 96,
       "forks": 15,
-      "openIssues": 4,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "browser-shell",
@@ -652,7 +652,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-10-14T15:48:01Z",
+      "pushedAt": "2026-10-15T11:35:18Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -739,11 +739,11 @@
       "language": "Ruby",
       "stars": 51,
       "forks": 5,
-      "openIssues": 2,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-14T18:13:43Z",
+      "pushedAt": "2026-10-15T12:43:43Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -763,7 +763,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-14T11:24:01Z",
+      "pushedAt": "2026-10-15T04:30:37Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -920,7 +920,7 @@
         "windows"
       ],
       "archived": false,
-      "pushedAt": "2026-10-14T09:39:51Z",
+      "pushedAt": "2026-10-15T14:05:33Z",
       "createdAt": "2026-05-23T05:37:35Z"
     },
     {
@@ -1111,6 +1111,33 @@
       "createdAt": "2026-05-05T01:16:45Z"
     },
     {
+      "slug": "rizukirr/hyprsimple",
+      "fullName": "rizukirr/hyprsimple",
+      "name": "hyprsimple",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/hyprsimple",
+      "homepage": null,
+      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
+      "language": "Shell",
+      "stars": 31,
+      "forks": 4,
+      "openIssues": 0,
+      "license": null,
+      "topics": [
+        "arch-linux",
+        "dotfiles",
+        "hyprland",
+        "hyprland-config",
+        "linux",
+        "omarchy"
+      ],
+      "archived": false,
+      "pushedAt": "2026-10-11T16:33:13Z",
+      "createdAt": "2025-10-04T10:27:45Z"
+    },
+    {
       "slug": "galpratama/agent-cli",
       "fullName": "galpratama/agent-cli",
       "name": "agent-cli",
@@ -1129,33 +1156,6 @@
       "archived": false,
       "pushedAt": "2025-12-27T17:13:26Z",
       "createdAt": "2025-12-17T16:19:36Z"
-    },
-    {
-      "slug": "rizukirr/hyprsimple",
-      "fullName": "rizukirr/hyprsimple",
-      "name": "hyprsimple",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/hyprsimple",
-      "homepage": null,
-      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
-      "language": "Shell",
-      "stars": 30,
-      "forks": 4,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "arch-linux",
-        "dotfiles",
-        "hyprland",
-        "hyprland-config",
-        "linux",
-        "omarchy"
-      ],
-      "archived": false,
-      "pushedAt": "2026-10-11T16:33:13Z",
-      "createdAt": "2025-10-04T10:27:45Z"
     },
     {
       "slug": "rafiulm/warungos",
@@ -1347,7 +1347,7 @@
       "homepage": null,
       "description": "Zero-human full-stack deployment as a bundle of /sc-* Claude Code slash commands — GitHub + Convex (self-hosted & Cloud) + Dokploy + Vercel + Hostinger DNS, source to verified live URL. Node ≥18, no runtime dependencies. 8 skills implemented, 5 stubs.",
       "language": "JavaScript",
-      "stars": 15,
+      "stars": 14,
       "forks": 4,
       "openIssues": 1,
       "license": "MIT",
@@ -1380,7 +1380,7 @@
       "homepage": null,
       "description": "A fast, lightweight NumPy-like N-dimensional tensor library in C, built for high-performance scientific computing and AI workloads.",
       "language": "C",
-      "stars": 14,
+      "stars": 13,
       "forks": 1,
       "openIssues": 0,
       "license": "MIT",
@@ -1399,6 +1399,26 @@
       "archived": false,
       "pushedAt": "2026-06-16T16:14:20Z",
       "createdAt": "2026-03-12T09:55:51Z"
+    },
+    {
+      "slug": "hellodit/openmasjid",
+      "fullName": "hellodit/OpenMasjid",
+      "name": "OpenMasjid",
+      "owner": "hellodit",
+      "ownerUrl": "https://github.com/hellodit",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/32544683?v=4",
+      "url": "https://github.com/hellodit/OpenMasjid",
+      "homepage": null,
+      "description": null,
+      "language": "Vue",
+      "stars": 12,
+      "forks": 0,
+      "openIssues": 0,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-10-15T04:18:12Z",
+      "createdAt": "2026-05-16T04:31:37Z"
     },
     {
       "slug": "semutdev/goigniter",
@@ -1447,26 +1467,6 @@
       "createdAt": "2026-05-31T14:34:04Z"
     },
     {
-      "slug": "hellodit/openmasjid",
-      "fullName": "hellodit/OpenMasjid",
-      "name": "OpenMasjid",
-      "owner": "hellodit",
-      "ownerUrl": "https://github.com/hellodit",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/32544683?v=4",
-      "url": "https://github.com/hellodit/OpenMasjid",
-      "homepage": null,
-      "description": null,
-      "language": "Vue",
-      "stars": 12,
-      "forks": 0,
-      "openIssues": 0,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-05-21T12:29:21Z",
-      "createdAt": "2026-05-16T04:31:37Z"
-    },
-    {
       "slug": "naeos-foundation/naeos",
       "fullName": "NAEOS-foundation/naeos",
       "name": "naeos",
@@ -1479,11 +1479,11 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 52,
+      "openIssues": 54,
       "license": "Apache-2.0",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-13T11:46:47Z",
+      "pushedAt": "2026-10-15T17:27:22Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1789,7 +1789,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-13T23:13:14Z",
+      "pushedAt": "2026-10-14T22:07:22Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1864,6 +1864,26 @@
       "archived": false,
       "pushedAt": "2026-10-10T15:41:48Z",
       "createdAt": "2025-11-22T11:52:35Z"
+    },
+    {
+      "slug": "aofsnorth/artidor",
+      "fullName": "Aofsnorth/Artidor",
+      "name": "Artidor",
+      "owner": "Aofsnorth",
+      "ownerUrl": "https://github.com/Aofsnorth",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/108259309?v=4",
+      "url": "https://github.com/Aofsnorth/Artidor",
+      "homepage": "https://artidor.vercel.app",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 4,
+      "forks": 0,
+      "openIssues": 10,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-10-14T18:13:55Z",
+      "createdAt": "2026-06-13T11:24:30Z"
     },
     {
       "slug": "kusdianta/disk-space-detective",
@@ -1950,26 +1970,6 @@
       "archived": false,
       "pushedAt": "2026-07-22T11:40:45Z",
       "createdAt": "2026-06-13T11:25:13Z"
-    },
-    {
-      "slug": "aofsnorth/artidor",
-      "fullName": "Aofsnorth/Artidor",
-      "name": "Artidor",
-      "owner": "Aofsnorth",
-      "ownerUrl": "https://github.com/Aofsnorth",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/108259309?v=4",
-      "url": "https://github.com/Aofsnorth/Artidor",
-      "homepage": "https://artidor.vercel.app",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 3,
-      "forks": 0,
-      "openIssues": 10,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-10-14T18:13:55Z",
-      "createdAt": "2026-06-13T11:24:30Z"
     },
     {
       "slug": "wauputr4/hermex",
@@ -2099,14 +2099,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-10-14T22:07:12.860Z"
+      "syncedAt": "2026-10-15T21:59:45.007Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-10-14T22:07:12.860Z"
+      "syncedAt": "2026-10-15T21:59:45.007Z"
     }
   ],
-  "syncedAt": "2026-10-14T22:07:12.860Z",
+  "syncedAt": "2026-10-15T21:59:45.007Z",
   "count": 78
 }
