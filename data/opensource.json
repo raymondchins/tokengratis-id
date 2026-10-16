@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js: The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
-      "stars": 10200,
+      "stars": 10201,
       "forks": 1213,
       "openIssues": 17,
       "license": "AGPL-3.0",
@@ -95,9 +95,9 @@
       "homepage": null,
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
-      "stars": 1229,
+      "stars": 1230,
       "forks": 1197,
-      "openIssues": 328,
+      "openIssues": 330,
       "license": null,
       "topics": [
         "opensid",
@@ -118,7 +118,7 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1039,
+      "stars": 1041,
       "forks": 310,
       "openIssues": 0,
       "license": "MIT",
@@ -262,6 +262,40 @@
       "createdAt": "2025-11-04T15:37:00Z"
     },
     {
+      "slug": "gnoviawan/termul",
+      "fullName": "gnoviawan/termul",
+      "name": "termul",
+      "owner": "gnoviawan",
+      "ownerUrl": "https://github.com/gnoviawan",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/72639723?v=4",
+      "url": "https://github.com/gnoviawan/termul",
+      "homepage": "https://termul.dev",
+      "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
+      "language": "TypeScript",
+      "stars": 271,
+      "forks": 51,
+      "openIssues": 103,
+      "license": "MIT",
+      "topics": [
+        "cross-platform",
+        "desktop-app",
+        "developer-tools",
+        "open-source",
+        "productivity",
+        "react",
+        "rust",
+        "shell",
+        "tauri",
+        "tauri-app",
+        "terminal",
+        "terminal-emulator",
+        "workspace-manager"
+      ],
+      "archived": false,
+      "pushedAt": "2026-10-16T21:42:51Z",
+      "createdAt": "2026-01-13T04:36:02Z"
+    },
+    {
       "slug": "codecoradev/uteke",
       "fullName": "codecoradev/uteke",
       "name": "uteke",
@@ -273,8 +307,8 @@
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
       "stars": 271,
-      "forks": 32,
-      "openIssues": 20,
+      "forks": 33,
+      "openIssues": 13,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -299,42 +333,8 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-10-15T14:53:01Z",
+      "pushedAt": "2026-10-16T07:35:39Z",
       "createdAt": "2026-05-29T00:27:31Z"
-    },
-    {
-      "slug": "gnoviawan/termul",
-      "fullName": "gnoviawan/termul",
-      "name": "termul",
-      "owner": "gnoviawan",
-      "ownerUrl": "https://github.com/gnoviawan",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/72639723?v=4",
-      "url": "https://github.com/gnoviawan/termul",
-      "homepage": "https://termul.dev",
-      "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
-      "language": "TypeScript",
-      "stars": 268,
-      "forks": 51,
-      "openIssues": 64,
-      "license": "MIT",
-      "topics": [
-        "cross-platform",
-        "desktop-app",
-        "developer-tools",
-        "open-source",
-        "productivity",
-        "react",
-        "rust",
-        "shell",
-        "tauri",
-        "tauri-app",
-        "terminal",
-        "terminal-emulator",
-        "workspace-manager"
-      ],
-      "archived": false,
-      "pushedAt": "2026-10-15T17:44:13Z",
-      "createdAt": "2026-01-13T04:36:02Z"
     },
     {
       "slug": "hadziqmtqn/erd-builder-pro",
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-10-15T15:19:02Z",
+      "pushedAt": "2026-10-16T14:41:26Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -599,7 +599,7 @@
       "homepage": "https://svelte-audio-ui.vercel.app/",
       "description": "A set of accessible and composable Audio UI components.",
       "language": "Svelte",
-      "stars": 98,
+      "stars": 99,
       "forks": 4,
       "openIssues": 15,
       "license": "MIT",
@@ -687,8 +687,8 @@
       "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
       "language": "Svelte",
       "stars": 70,
-      "forks": 19,
-      "openIssues": 5,
+      "forks": 20,
+      "openIssues": 6,
       "license": "MIT",
       "topics": [
         "bansos",
@@ -743,7 +743,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-15T12:43:43Z",
+      "pushedAt": "2026-10-16T05:39:22Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -763,8 +763,49 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-15T04:30:37Z",
+      "pushedAt": "2026-10-16T05:27:44Z",
       "createdAt": "2026-06-09T15:06:10Z"
+    },
+    {
+      "slug": "raymondchins/agentmap",
+      "fullName": "raymondchins/agentmap",
+      "name": "agentmap",
+      "owner": "raymondchins",
+      "ownerUrl": "https://github.com/raymondchins",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
+      "url": "https://github.com/raymondchins/agentmap",
+      "homepage": null,
+      "description": "Stop your coding agent reading the wrong files. Compiler-grade TS/JS repo map — 100% precision on blast radius vs grep's 60%, measured on public repos. CLI + MCP server, fully local, no vector DB.",
+      "language": "JavaScript",
+      "stars": 50,
+      "forks": 12,
+      "openIssues": 6,
+      "license": "MIT",
+      "topics": [
+        "ai-agents",
+        "ai-coding",
+        "claude-code",
+        "cli",
+        "code-context",
+        "code-graph",
+        "code-intelligence",
+        "code-map",
+        "coding-agent",
+        "context-engineering",
+        "dependency-graph",
+        "developer-tools",
+        "javascript",
+        "mcp",
+        "mcp-server",
+        "pagerank",
+        "repo-map",
+        "static-analysis",
+        "ts-morph",
+        "typescript"
+      ],
+      "archived": false,
+      "pushedAt": "2026-10-10T09:33:26Z",
+      "createdAt": "2026-06-13T11:29:36Z"
     },
     {
       "slug": "abilfida/omnidrive",
@@ -810,47 +851,6 @@
       "archived": false,
       "pushedAt": "2026-06-20T14:24:38Z",
       "createdAt": "2026-06-18T03:59:11Z"
-    },
-    {
-      "slug": "raymondchins/agentmap",
-      "fullName": "raymondchins/agentmap",
-      "name": "agentmap",
-      "owner": "raymondchins",
-      "ownerUrl": "https://github.com/raymondchins",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
-      "url": "https://github.com/raymondchins/agentmap",
-      "homepage": null,
-      "description": "Stop your coding agent reading the wrong files. Compiler-grade TS/JS repo map — 100% precision on blast radius vs grep's 60%, measured on public repos. CLI + MCP server, fully local, no vector DB.",
-      "language": "JavaScript",
-      "stars": 49,
-      "forks": 12,
-      "openIssues": 6,
-      "license": "MIT",
-      "topics": [
-        "ai-agents",
-        "ai-coding",
-        "claude-code",
-        "cli",
-        "code-context",
-        "code-graph",
-        "code-intelligence",
-        "code-map",
-        "coding-agent",
-        "context-engineering",
-        "dependency-graph",
-        "developer-tools",
-        "javascript",
-        "mcp",
-        "mcp-server",
-        "pagerank",
-        "repo-map",
-        "static-analysis",
-        "ts-morph",
-        "typescript"
-      ],
-      "archived": false,
-      "pushedAt": "2026-10-10T09:33:26Z",
-      "createdAt": "2026-06-13T11:29:36Z"
     },
     {
       "slug": "giosakti/duragent",
@@ -909,7 +909,7 @@
       "language": "Rust",
       "stars": 47,
       "forks": 16,
-      "openIssues": 0,
+      "openIssues": 3,
       "license": null,
       "topics": [
         "android",
@@ -920,7 +920,7 @@
         "windows"
       ],
       "archived": false,
-      "pushedAt": "2026-10-15T14:05:33Z",
+      "pushedAt": "2026-10-16T06:54:55Z",
       "createdAt": "2026-05-23T05:37:35Z"
     },
     {
@@ -1479,11 +1479,11 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 54,
+      "openIssues": 55,
       "license": "Apache-2.0",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-15T17:27:22Z",
+      "pushedAt": "2026-10-16T16:24:38Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1789,7 +1789,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-14T22:07:22Z",
+      "pushedAt": "2026-10-15T21:59:58Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1846,6 +1846,26 @@
       "createdAt": "2026-06-12T19:08:26Z"
     },
     {
+      "slug": "aofsnorth/artidor",
+      "fullName": "Aofsnorth/Artidor",
+      "name": "Artidor",
+      "owner": "Aofsnorth",
+      "ownerUrl": "https://github.com/Aofsnorth",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/108259309?v=4",
+      "url": "https://github.com/Aofsnorth/Artidor",
+      "homepage": "https://artidor.vercel.app",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 5,
+      "forks": 0,
+      "openIssues": 11,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-10-16T17:32:05Z",
+      "createdAt": "2026-06-13T11:24:30Z"
+    },
+    {
       "slug": "muslimtify-org/libmuslim",
       "fullName": "muslimtify-org/libmuslim",
       "name": "libmuslim",
@@ -1862,28 +1882,8 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-10T15:41:48Z",
+      "pushedAt": "2026-10-16T13:37:30Z",
       "createdAt": "2025-11-22T11:52:35Z"
-    },
-    {
-      "slug": "aofsnorth/artidor",
-      "fullName": "Aofsnorth/Artidor",
-      "name": "Artidor",
-      "owner": "Aofsnorth",
-      "ownerUrl": "https://github.com/Aofsnorth",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/108259309?v=4",
-      "url": "https://github.com/Aofsnorth/Artidor",
-      "homepage": "https://artidor.vercel.app",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 4,
-      "forks": 0,
-      "openIssues": 10,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-10-14T18:13:55Z",
-      "createdAt": "2026-06-13T11:24:30Z"
     },
     {
       "slug": "kusdianta/disk-space-detective",
@@ -2099,14 +2099,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-10-15T21:59:45.007Z"
+      "syncedAt": "2026-10-16T21:57:23.044Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-10-15T21:59:45.007Z"
+      "syncedAt": "2026-10-16T21:57:23.044Z"
     }
   ],
-  "syncedAt": "2026-10-15T21:59:45.007Z",
+  "syncedAt": "2026-10-16T21:57:23.044Z",
   "count": 78
 }

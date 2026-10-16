@@ -1,5 +1,59 @@
 [
   {
+    "date": "2026-10-16",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cline",
+        "added": [
+          "cline-free/nemotron-3.5-super-vl"
+        ],
+        "removed": [
+          "Step 5 Preview"
+        ]
+      },
+      {
+        "provider": "Cloudflare Workers AI",
+        "added": [
+          "@cf/daily-co/phonellm-mini-alpha-2"
+        ],
+        "removed": [
+          "Mistral 7B",
+          "Qwen 1.5 7B"
+        ]
+      },
+      {
+        "provider": "Groq",
+        "added": [
+          "meta-llama/llama-prompt-guard-2-22m",
+          "meta-llama/llama-prompt-guard-2-86m"
+        ],
+        "removed": [
+          "Moonshot Kimi K2",
+          "Moonshot Kimi K2 0905"
+        ]
+      },
+      {
+        "provider": "NVIDIA NIM",
+        "added": [
+          "Nemotron 3.5 Super VL 120B A12B",
+          "stepfun-ai/step-5-preview"
+        ],
+        "removed": [
+          "Kimi K3"
+        ]
+      },
+      {
+        "provider": "OpenRouter",
+        "added": [
+          "XingChen: Xing4.0 29B A4B (free)"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-10-15",
     "providersAdded": [],
     "providersRemoved": [],
@@ -2002,20 +2056,6 @@
         ],
         "removed": [
           "Ling-3.0-flash (free)"
-        ]
-      }
-    ]
-  },
-  {
-    "date": "2026-08-05",
-    "providersAdded": [],
-    "providersRemoved": [],
-    "models": [
-      {
-        "provider": "ModelScope",
-        "added": [],
-        "removed": [
-          "GLM-5.2"
         ]
       }
     ]
