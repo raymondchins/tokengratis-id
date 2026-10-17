@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js: The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
-      "stars": 10201,
+      "stars": 10202,
       "forks": 1213,
       "openIssues": 17,
       "license": "AGPL-3.0",
@@ -97,7 +97,7 @@
       "language": "PHP",
       "stars": 1230,
       "forks": 1197,
-      "openIssues": 330,
+      "openIssues": 332,
       "license": null,
       "topics": [
         "opensid",
@@ -262,40 +262,6 @@
       "createdAt": "2025-11-04T15:37:00Z"
     },
     {
-      "slug": "gnoviawan/termul",
-      "fullName": "gnoviawan/termul",
-      "name": "termul",
-      "owner": "gnoviawan",
-      "ownerUrl": "https://github.com/gnoviawan",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/72639723?v=4",
-      "url": "https://github.com/gnoviawan/termul",
-      "homepage": "https://termul.dev",
-      "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
-      "language": "TypeScript",
-      "stars": 271,
-      "forks": 51,
-      "openIssues": 103,
-      "license": "MIT",
-      "topics": [
-        "cross-platform",
-        "desktop-app",
-        "developer-tools",
-        "open-source",
-        "productivity",
-        "react",
-        "rust",
-        "shell",
-        "tauri",
-        "tauri-app",
-        "terminal",
-        "terminal-emulator",
-        "workspace-manager"
-      ],
-      "archived": false,
-      "pushedAt": "2026-10-16T21:42:51Z",
-      "createdAt": "2026-01-13T04:36:02Z"
-    },
-    {
       "slug": "codecoradev/uteke",
       "fullName": "codecoradev/uteke",
       "name": "uteke",
@@ -306,8 +272,8 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 271,
-      "forks": 33,
+      "stars": 272,
+      "forks": 35,
       "openIssues": 13,
       "license": "Apache-2.0",
       "topics": [
@@ -335,6 +301,40 @@
       "archived": false,
       "pushedAt": "2026-10-16T07:35:39Z",
       "createdAt": "2026-05-29T00:27:31Z"
+    },
+    {
+      "slug": "gnoviawan/termul",
+      "fullName": "gnoviawan/termul",
+      "name": "termul",
+      "owner": "gnoviawan",
+      "ownerUrl": "https://github.com/gnoviawan",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/72639723?v=4",
+      "url": "https://github.com/gnoviawan/termul",
+      "homepage": "https://termul.dev",
+      "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
+      "language": "TypeScript",
+      "stars": 271,
+      "forks": 52,
+      "openIssues": 34,
+      "license": "MIT",
+      "topics": [
+        "cross-platform",
+        "desktop-app",
+        "developer-tools",
+        "open-source",
+        "productivity",
+        "react",
+        "rust",
+        "shell",
+        "tauri",
+        "tauri-app",
+        "terminal",
+        "terminal-emulator",
+        "workspace-manager"
+      ],
+      "archived": false,
+      "pushedAt": "2026-10-17T18:42:45Z",
+      "createdAt": "2026-01-13T04:36:02Z"
     },
     {
       "slug": "hadziqmtqn/erd-builder-pro",
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-10-16T14:41:26Z",
+      "pushedAt": "2026-10-17T13:00:39Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -437,7 +437,7 @@
       "language": "Go",
       "stars": 151,
       "forks": 51,
-      "openIssues": 9,
+      "openIssues": 10,
       "license": "MIT",
       "topics": [
         "ai",
@@ -474,8 +474,8 @@
       "homepage": null,
       "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
       "language": "Python",
-      "stars": 150,
-      "forks": 13,
+      "stars": 151,
+      "forks": 14,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -511,7 +511,7 @@
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
       "stars": 142,
-      "forks": 74,
+      "forks": 75,
       "openIssues": 12,
       "license": "MIT",
       "topics": [],
@@ -629,7 +629,7 @@
       "language": "TypeScript",
       "stars": 96,
       "forks": 15,
-      "openIssues": 1,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [
         "browser-shell",
@@ -652,7 +652,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-10-15T11:35:18Z",
+      "pushedAt": "2026-10-17T16:02:32Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -739,11 +739,11 @@
       "language": "Ruby",
       "stars": 51,
       "forks": 5,
-      "openIssues": 0,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-16T05:39:22Z",
+      "pushedAt": "2026-10-17T15:08:03Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -804,7 +804,7 @@
         "typescript"
       ],
       "archived": false,
-      "pushedAt": "2026-10-10T09:33:26Z",
+      "pushedAt": "2026-10-17T09:32:45Z",
       "createdAt": "2026-06-13T11:29:36Z"
     },
     {
@@ -909,18 +909,20 @@
       "language": "Rust",
       "stars": 47,
       "forks": 16,
-      "openIssues": 3,
+      "openIssues": 0,
       "license": null,
       "topics": [
         "android",
         "desktop-app",
+        "linux",
+        "linux-desktop",
         "printer",
         "sharing",
         "sharing-printer",
         "windows"
       ],
       "archived": false,
-      "pushedAt": "2026-10-16T06:54:55Z",
+      "pushedAt": "2026-10-17T04:38:41Z",
       "createdAt": "2026-05-23T05:37:35Z"
     },
     {
@@ -1134,7 +1136,7 @@
         "omarchy"
       ],
       "archived": false,
-      "pushedAt": "2026-10-11T16:33:13Z",
+      "pushedAt": "2026-10-17T09:25:57Z",
       "createdAt": "2025-10-04T10:27:45Z"
     },
     {
@@ -1190,7 +1192,7 @@
       "language": "JavaScript",
       "stars": 20,
       "forks": 1,
-      "openIssues": 0,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "antigravity",
@@ -1208,7 +1210,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-10-10T16:07:30Z",
+      "pushedAt": "2026-10-17T00:12:41Z",
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
@@ -1293,7 +1295,7 @@
         "windows-desktop"
       ],
       "archived": false,
-      "pushedAt": "2026-10-09T06:18:59Z",
+      "pushedAt": "2026-10-17T07:22:38Z",
       "createdAt": "2026-02-23T13:59:12Z"
     },
     {
@@ -1307,7 +1309,7 @@
       "homepage": "https://nusakit.my.id",
       "description": "🇮🇩 Indonesian Data Validation API — NIK, NPWP, Phone, Rupiah, Bank, Wilayah. Live: nusakit.my.id",
       "language": "TypeScript",
-      "stars": 17,
+      "stars": 18,
       "forks": 2,
       "openIssues": 0,
       "license": "MIT",
@@ -1479,11 +1481,11 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 55,
+      "openIssues": 61,
       "license": "Apache-2.0",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-16T16:24:38Z",
+      "pushedAt": "2026-10-17T17:08:04Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1789,7 +1791,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-15T21:59:58Z",
+      "pushedAt": "2026-10-16T21:57:36Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1846,6 +1848,26 @@
       "createdAt": "2026-06-12T19:08:26Z"
     },
     {
+      "slug": "muslimtify-org/libmuslim",
+      "fullName": "muslimtify-org/libmuslim",
+      "name": "libmuslim",
+      "owner": "muslimtify-org",
+      "ownerUrl": "https://github.com/muslimtify-org",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/302768915?v=4",
+      "url": "https://github.com/muslimtify-org/libmuslim",
+      "homepage": "https://muslimtify.org",
+      "description": "Collection of islamic tools and utilities implemented in stb-style header only library",
+      "language": "C",
+      "stars": 5,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-10-17T14:48:51Z",
+      "createdAt": "2025-11-22T11:52:35Z"
+    },
+    {
       "slug": "aofsnorth/artidor",
       "fullName": "Aofsnorth/Artidor",
       "name": "Artidor",
@@ -1864,26 +1886,6 @@
       "archived": false,
       "pushedAt": "2026-10-16T17:32:05Z",
       "createdAt": "2026-06-13T11:24:30Z"
-    },
-    {
-      "slug": "muslimtify-org/libmuslim",
-      "fullName": "muslimtify-org/libmuslim",
-      "name": "libmuslim",
-      "owner": "muslimtify-org",
-      "ownerUrl": "https://github.com/muslimtify-org",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/302768915?v=4",
-      "url": "https://github.com/muslimtify-org/libmuslim",
-      "homepage": "https://muslimtify.org",
-      "description": "Collection of islamic tools and utilities implemented in stb-style header only library",
-      "language": "C",
-      "stars": 5,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-10-16T13:37:30Z",
-      "createdAt": "2025-11-22T11:52:35Z"
     },
     {
       "slug": "kusdianta/disk-space-detective",
@@ -2099,14 +2101,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-10-16T21:57:23.044Z"
+      "syncedAt": "2026-10-17T21:19:28.544Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-10-16T21:57:23.044Z"
+      "syncedAt": "2026-10-17T21:19:28.544Z"
     }
   ],
-  "syncedAt": "2026-10-16T21:57:23.044Z",
+  "syncedAt": "2026-10-17T21:19:28.544Z",
   "count": 78
 }
