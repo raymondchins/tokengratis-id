@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js: The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
-      "stars": 10202,
+      "stars": 10203,
       "forks": 1213,
       "openIssues": 17,
       "license": "AGPL-3.0",
@@ -119,7 +119,7 @@
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
       "stars": 1041,
-      "forks": 310,
+      "forks": 309,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -203,7 +203,7 @@
       "homepage": "https://omni.weekndlabs.com/docs",
       "description": "Your agent pays twice for output it has already seen. OMNI returns a handle instead: 97.2% off a file read twice. Nothing deleted, nothing invented.",
       "language": "Rust",
-      "stars": 368,
+      "stars": 369,
       "forks": 35,
       "openIssues": 22,
       "license": "Apache-2.0",
@@ -230,7 +230,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-10-14T18:14:32Z",
+      "pushedAt": "2026-10-18T06:28:13Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -244,7 +244,7 @@
       "homepage": "https://adbkit.pages.dev",
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 365,
+      "stars": 366,
       "forks": 44,
       "openIssues": 3,
       "license": "MIT",
@@ -262,6 +262,40 @@
       "createdAt": "2025-11-04T15:37:00Z"
     },
     {
+      "slug": "gnoviawan/termul",
+      "fullName": "gnoviawan/termul",
+      "name": "termul",
+      "owner": "gnoviawan",
+      "ownerUrl": "https://github.com/gnoviawan",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/72639723?v=4",
+      "url": "https://github.com/gnoviawan/termul",
+      "homepage": "https://termul.dev",
+      "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
+      "language": "TypeScript",
+      "stars": 274,
+      "forks": 54,
+      "openIssues": 60,
+      "license": "MIT",
+      "topics": [
+        "cross-platform",
+        "desktop-app",
+        "developer-tools",
+        "open-source",
+        "productivity",
+        "react",
+        "rust",
+        "shell",
+        "tauri",
+        "tauri-app",
+        "terminal",
+        "terminal-emulator",
+        "workspace-manager"
+      ],
+      "archived": false,
+      "pushedAt": "2026-10-18T21:13:25Z",
+      "createdAt": "2026-01-13T04:36:02Z"
+    },
+    {
       "slug": "codecoradev/uteke",
       "fullName": "codecoradev/uteke",
       "name": "uteke",
@@ -272,8 +306,8 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 272,
-      "forks": 35,
+      "stars": 273,
+      "forks": 37,
       "openIssues": 13,
       "license": "Apache-2.0",
       "topics": [
@@ -301,40 +335,6 @@
       "archived": false,
       "pushedAt": "2026-10-16T07:35:39Z",
       "createdAt": "2026-05-29T00:27:31Z"
-    },
-    {
-      "slug": "gnoviawan/termul",
-      "fullName": "gnoviawan/termul",
-      "name": "termul",
-      "owner": "gnoviawan",
-      "ownerUrl": "https://github.com/gnoviawan",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/72639723?v=4",
-      "url": "https://github.com/gnoviawan/termul",
-      "homepage": "https://termul.dev",
-      "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
-      "language": "TypeScript",
-      "stars": 271,
-      "forks": 52,
-      "openIssues": 34,
-      "license": "MIT",
-      "topics": [
-        "cross-platform",
-        "desktop-app",
-        "developer-tools",
-        "open-source",
-        "productivity",
-        "react",
-        "rust",
-        "shell",
-        "tauri",
-        "tauri-app",
-        "terminal",
-        "terminal-emulator",
-        "workspace-manager"
-      ],
-      "archived": false,
-      "pushedAt": "2026-10-17T18:42:45Z",
-      "createdAt": "2026-01-13T04:36:02Z"
     },
     {
       "slug": "hadziqmtqn/erd-builder-pro",
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-10-17T13:00:39Z",
+      "pushedAt": "2026-10-18T16:02:40Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -425,6 +425,42 @@
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
+      "slug": "adenaufal/anti-slop-writing",
+      "fullName": "adenaufal/anti-slop-writing",
+      "name": "anti-slop-writing",
+      "owner": "adenaufal",
+      "ownerUrl": "https://github.com/adenaufal",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/4465236?v=4",
+      "url": "https://github.com/adenaufal/anti-slop-writing",
+      "homepage": null,
+      "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
+      "language": "Python",
+      "stars": 153,
+      "forks": 14,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "agent-skill",
+        "ai",
+        "ai-detection",
+        "anti-slop",
+        "authentic-writing",
+        "chatgpt",
+        "claude",
+        "content-writing",
+        "copilot",
+        "gemini",
+        "llm",
+        "prompt-engineering",
+        "system-prompt",
+        "writing",
+        "writing-style"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-27T04:56:07Z",
+      "createdAt": "2026-02-28T19:45:28Z"
+    },
+    {
       "slug": "mydisha/keirouter",
       "fullName": "mydisha/keirouter",
       "name": "keirouter",
@@ -462,42 +498,6 @@
       "archived": false,
       "pushedAt": "2026-10-13T06:46:13Z",
       "createdAt": "2026-05-31T09:02:50Z"
-    },
-    {
-      "slug": "adenaufal/anti-slop-writing",
-      "fullName": "adenaufal/anti-slop-writing",
-      "name": "anti-slop-writing",
-      "owner": "adenaufal",
-      "ownerUrl": "https://github.com/adenaufal",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/4465236?v=4",
-      "url": "https://github.com/adenaufal/anti-slop-writing",
-      "homepage": null,
-      "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
-      "language": "Python",
-      "stars": 151,
-      "forks": 14,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "agent-skill",
-        "ai",
-        "ai-detection",
-        "anti-slop",
-        "authentic-writing",
-        "chatgpt",
-        "claude",
-        "content-writing",
-        "copilot",
-        "gemini",
-        "llm",
-        "prompt-engineering",
-        "system-prompt",
-        "writing",
-        "writing-style"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-27T04:56:07Z",
-      "createdAt": "2026-02-28T19:45:28Z"
     },
     {
       "slug": "jipraks/kasirgratisan",
@@ -629,7 +629,7 @@
       "language": "TypeScript",
       "stars": 96,
       "forks": 15,
-      "openIssues": 3,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "browser-shell",
@@ -652,7 +652,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-10-17T16:02:32Z",
+      "pushedAt": "2026-10-18T16:59:23Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -727,6 +727,26 @@
       "createdAt": "2026-03-29T13:58:03Z"
     },
     {
+      "slug": "rudycity/superagent",
+      "fullName": "RudyCity/superagent",
+      "name": "superagent",
+      "owner": "RudyCity",
+      "ownerUrl": "https://github.com/RudyCity",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/82188919?v=4",
+      "url": "https://github.com/RudyCity/superagent",
+      "homepage": null,
+      "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
+      "language": "TypeScript",
+      "stars": 51,
+      "forks": 7,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-10-18T21:08:56Z",
+      "createdAt": "2026-06-09T15:06:10Z"
+    },
+    {
       "slug": "firewalker06/tycho",
       "fullName": "firewalker06/tycho",
       "name": "tycho",
@@ -745,26 +765,6 @@
       "archived": false,
       "pushedAt": "2026-10-17T15:08:03Z",
       "createdAt": "2026-05-23T01:58:17Z"
-    },
-    {
-      "slug": "rudycity/superagent",
-      "fullName": "RudyCity/superagent",
-      "name": "superagent",
-      "owner": "RudyCity",
-      "ownerUrl": "https://github.com/RudyCity",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/82188919?v=4",
-      "url": "https://github.com/RudyCity/superagent",
-      "homepage": null,
-      "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
-      "language": "TypeScript",
-      "stars": 51,
-      "forks": 7,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-10-16T05:27:44Z",
-      "createdAt": "2026-06-09T15:06:10Z"
     },
     {
       "slug": "raymondchins/agentmap",
@@ -907,7 +907,7 @@
       "homepage": null,
       "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
       "language": "Rust",
-      "stars": 47,
+      "stars": 48,
       "forks": 16,
       "openIssues": 0,
       "license": null,
@@ -1295,7 +1295,7 @@
         "windows-desktop"
       ],
       "archived": false,
-      "pushedAt": "2026-10-17T07:22:38Z",
+      "pushedAt": "2026-10-18T06:58:01Z",
       "createdAt": "2026-02-23T13:59:12Z"
     },
     {
@@ -1481,11 +1481,11 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 61,
+      "openIssues": 54,
       "license": "Apache-2.0",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-17T17:08:04Z",
+      "pushedAt": "2026-10-18T19:10:12Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1791,7 +1791,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-16T21:57:36Z",
+      "pushedAt": "2026-10-17T21:19:41Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -2101,14 +2101,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-10-17T21:19:28.544Z"
+      "syncedAt": "2026-10-18T21:18:55.028Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-10-17T21:19:28.544Z"
+      "syncedAt": "2026-10-18T21:18:55.028Z"
     }
   ],
-  "syncedAt": "2026-10-17T21:19:28.544Z",
+  "syncedAt": "2026-10-18T21:18:55.028Z",
   "count": 78
 }

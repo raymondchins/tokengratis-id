@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T21:19:21.652Z",
+  "generatedAt": "2026-10-18T21:18:48.301Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -79,16 +79,16 @@
     "stats": {
       "prevProviders": 23,
       "nextProviders": 23,
-      "prevModels": 305,
+      "prevModels": 307,
       "nextModels": 307,
-      "totalDropPct": -0.6557377049180327,
+      "totalDropPct": 0,
       "disappeared": [],
       "shrunk": [],
       "churned": [],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 289,
+            "eligible": 293,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -100,13 +100,13 @@
             "examples": []
           },
           "modality": {
-            "eligible": 239,
+            "eligible": 243,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "rateLimit": {
-            "eligible": 186,
+            "eligible": 187,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -180,9 +180,7 @@
   "quarantine": {
     "heldProviders": [],
     "accepted": [],
-    "cleared": [
-      "cerebras"
-    ],
+    "cleared": [],
     "confirmRuns": 3
   }
 }
