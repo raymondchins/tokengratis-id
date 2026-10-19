@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js: The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
-      "stars": 10203,
+      "stars": 10207,
       "forks": 1213,
       "openIssues": 17,
       "license": "AGPL-3.0",
@@ -40,7 +40,7 @@
       "homepage": null,
       "description": "Plug n play avatar, turn name, email, and any other string into beautiful avatar (or gravatar), effortless.",
       "language": "PHP",
-      "stars": 1984,
+      "stars": 1983,
       "forks": 186,
       "openIssues": 0,
       "license": "MIT",
@@ -67,7 +67,7 @@
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
       "stars": 1364,
-      "forks": 304,
+      "forks": 305,
       "openIssues": 54,
       "license": "GPL-2.0",
       "topics": [
@@ -97,7 +97,7 @@
       "language": "PHP",
       "stars": 1230,
       "forks": 1197,
-      "openIssues": 332,
+      "openIssues": 331,
       "license": null,
       "topics": [
         "opensid",
@@ -118,7 +118,7 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1041,
+      "stars": 1044,
       "forks": 309,
       "openIssues": 0,
       "license": "MIT",
@@ -203,7 +203,7 @@
       "homepage": "https://omni.weekndlabs.com/docs",
       "description": "Your agent pays twice for output it has already seen. OMNI returns a handle instead: 97.2% off a file read twice. Nothing deleted, nothing invented.",
       "language": "Rust",
-      "stars": 369,
+      "stars": 370,
       "forks": 35,
       "openIssues": 22,
       "license": "Apache-2.0",
@@ -244,8 +244,8 @@
       "homepage": "https://adbkit.pages.dev",
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 366,
-      "forks": 44,
+      "stars": 367,
+      "forks": 45,
       "openIssues": 3,
       "license": "MIT",
       "topics": [
@@ -272,9 +272,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 274,
+      "stars": 277,
       "forks": 54,
-      "openIssues": 60,
+      "openIssues": 82,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -292,7 +292,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-10-18T21:13:25Z",
+      "pushedAt": "2026-10-19T22:01:48Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -347,7 +347,7 @@
       "homepage": "https://www.erdbuilderpro.com",
       "description": "ERD Builder Pro is a database design and documentation tool for developers. Build ERDs, flowcharts, notes, and drawings — all in one workspace",
       "language": "TypeScript",
-      "stars": 206,
+      "stars": 207,
       "forks": 41,
       "openIssues": 5,
       "license": null,
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-10-18T16:02:40Z",
+      "pushedAt": "2026-10-19T14:07:36Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -425,42 +425,6 @@
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
-      "slug": "adenaufal/anti-slop-writing",
-      "fullName": "adenaufal/anti-slop-writing",
-      "name": "anti-slop-writing",
-      "owner": "adenaufal",
-      "ownerUrl": "https://github.com/adenaufal",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/4465236?v=4",
-      "url": "https://github.com/adenaufal/anti-slop-writing",
-      "homepage": null,
-      "description": "Stop your AI from writing like AI. A universal system prompt eliminating every known LLM style tell — works with Claude Code, Gemini CLI, Codex CLI, Copilot, Cursor, and any web AI.",
-      "language": "Python",
-      "stars": 153,
-      "forks": 14,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "agent-skill",
-        "ai",
-        "ai-detection",
-        "anti-slop",
-        "authentic-writing",
-        "chatgpt",
-        "claude",
-        "content-writing",
-        "copilot",
-        "gemini",
-        "llm",
-        "prompt-engineering",
-        "system-prompt",
-        "writing",
-        "writing-style"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-27T04:56:07Z",
-      "createdAt": "2026-02-28T19:45:28Z"
-    },
-    {
       "slug": "mydisha/keirouter",
       "fullName": "mydisha/keirouter",
       "name": "keirouter",
@@ -510,7 +474,7 @@
       "homepage": null,
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
-      "stars": 142,
+      "stars": 143,
       "forks": 75,
       "openIssues": 12,
       "license": "MIT",
@@ -585,7 +549,7 @@
         "hacktoberfest2023"
       ],
       "archived": false,
-      "pushedAt": "2026-10-06T11:00:25Z",
+      "pushedAt": "2026-10-19T05:15:19Z",
       "createdAt": "2023-09-05T12:35:21Z"
     },
     {
@@ -627,9 +591,9 @@
       "homepage": "https://mso.rahmanef.com",
       "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
-      "stars": 96,
-      "forks": 15,
-      "openIssues": 1,
+      "stars": 95,
+      "forks": 14,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [
         "browser-shell",
@@ -652,7 +616,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-10-18T16:59:23Z",
+      "pushedAt": "2026-10-19T15:09:17Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -743,7 +707,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-18T21:08:56Z",
+      "pushedAt": "2026-10-19T11:26:48Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -863,7 +827,7 @@
       "homepage": "http://docs.duragent.ai/",
       "description": "Durable agent runtime. Sessions survive crashes. Agents are just files. One binary, zero dependencies.",
       "language": "Rust",
-      "stars": 49,
+      "stars": 50,
       "forks": 2,
       "openIssues": 0,
       "license": "MIT",
@@ -922,7 +886,7 @@
         "windows"
       ],
       "archived": false,
-      "pushedAt": "2026-10-17T04:38:41Z",
+      "pushedAt": "2026-10-19T00:34:21Z",
       "createdAt": "2026-05-23T05:37:35Z"
     },
     {
@@ -1059,7 +1023,7 @@
       "homepage": "https://silong-os.vercel.app/",
       "description": "Open-source, self-hostable Notion/Obsidian-style workspace — block editor for notes, docs and lightweight databases, plus a knowledge graph over them. Next.js 16 · React 19 · Convex · Tailwind v4.",
       "language": "TypeScript",
-      "stars": 34,
+      "stars": 33,
       "forks": 7,
       "openIssues": 0,
       "license": "MIT",
@@ -1214,39 +1178,6 @@
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
-      "slug": "rahmanef63/control-room",
-      "fullName": "rahmanef63/control-room",
-      "name": "control-room",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/control-room",
-      "homepage": null,
-      "description": "Mobile-first PWA for driving a single VPS from the browser — up to 16 concurrent terminals, AI agent launchers, host ops and audit behind one shared secret on a Tailscale-only domain. Next.js 15 · React 19 · Node agent (node-pty + xterm.js).",
-      "language": "TypeScript",
-      "stars": 20,
-      "forks": 3,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "ai-agents",
-        "devops",
-        "mobile-first",
-        "nextjs",
-        "nodejs",
-        "pty",
-        "pwa",
-        "self-hosted",
-        "terminal",
-        "tmux-alternative",
-        "vps",
-        "xterm"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-11T22:00:32Z",
-      "createdAt": "2026-03-20T14:25:48Z"
-    },
-    {
       "slug": "rayasabari/yntk-ts",
       "fullName": "rayasabari/yntk-ts",
       "name": "yntk-ts",
@@ -1299,6 +1230,39 @@
       "createdAt": "2026-02-23T13:59:12Z"
     },
     {
+      "slug": "rahmanef63/control-room",
+      "fullName": "rahmanef63/control-room",
+      "name": "control-room",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/control-room",
+      "homepage": null,
+      "description": "Mobile-first PWA for driving a single VPS from the browser — up to 16 concurrent terminals, AI agent launchers, host ops and audit behind one shared secret on a Tailscale-only domain. Next.js 15 · React 19 · Node agent (node-pty + xterm.js).",
+      "language": "TypeScript",
+      "stars": 19,
+      "forks": 3,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "ai-agents",
+        "devops",
+        "mobile-first",
+        "nextjs",
+        "nodejs",
+        "pty",
+        "pwa",
+        "self-hosted",
+        "terminal",
+        "tmux-alternative",
+        "vps",
+        "xterm"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-11T22:00:32Z",
+      "createdAt": "2026-03-20T14:25:48Z"
+    },
+    {
       "slug": "muhfauziazhar/nusakit-api",
       "fullName": "muhfauziazhar/nusakit-api",
       "name": "nusakit-api",
@@ -1349,8 +1313,8 @@
       "homepage": null,
       "description": "Zero-human full-stack deployment as a bundle of /sc-* Claude Code slash commands — GitHub + Convex (self-hosted & Cloud) + Dokploy + Vercel + Hostinger DNS, source to verified live URL. Node ≥18, no runtime dependencies. 8 skills implemented, 5 stubs.",
       "language": "JavaScript",
-      "stars": 14,
-      "forks": 4,
+      "stars": 13,
+      "forks": 3,
       "openIssues": 1,
       "license": "MIT",
       "topics": [
@@ -1481,11 +1445,11 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 54,
+      "openIssues": 58,
       "license": "Apache-2.0",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-18T19:10:12Z",
+      "pushedAt": "2026-10-19T12:58:35Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1643,40 +1607,6 @@
       "createdAt": "2026-06-04T12:15:07Z"
     },
     {
-      "slug": "rahmanef63/framepilot",
-      "fullName": "rahmanef63/framepilot",
-      "name": "framepilot",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/framepilot",
-      "homepage": "https://frame-pilot.rahmanef.com/",
-      "description": "Browser-based 3D camera previsualization and shot planner — design scenes, frames, angles, lenses and moves, then export platform-tuned prompts for AI video models. Next.js 16 · React 19 · Three.js · Convex.",
-      "language": "TypeScript",
-      "stars": 8,
-      "forks": 2,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "ai-video",
-        "camera",
-        "cinematography",
-        "convex",
-        "nextjs",
-        "previsualization",
-        "prompt-engineering",
-        "shot-planner",
-        "storyboard",
-        "text-to-video",
-        "threejs",
-        "typescript",
-        "webgl"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-09T13:32:00Z",
-      "createdAt": "2026-07-10T13:57:01Z"
-    },
-    {
       "slug": "rifqiakrm/code-island",
       "fullName": "rifqiakrm/code-island",
       "name": "code-island",
@@ -1791,8 +1721,42 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-17T21:19:41Z",
+      "pushedAt": "2026-10-18T21:19:06Z",
       "createdAt": "2026-06-01T10:04:41Z"
+    },
+    {
+      "slug": "rahmanef63/framepilot",
+      "fullName": "rahmanef63/framepilot",
+      "name": "framepilot",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/framepilot",
+      "homepage": "https://frame-pilot.rahmanef.com/",
+      "description": "Browser-based 3D camera previsualization and shot planner — design scenes, frames, angles, lenses and moves, then export platform-tuned prompts for AI video models. Next.js 16 · React 19 · Three.js · Convex.",
+      "language": "TypeScript",
+      "stars": 7,
+      "forks": 2,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "ai-video",
+        "camera",
+        "cinematography",
+        "convex",
+        "nextjs",
+        "previsualization",
+        "prompt-engineering",
+        "shot-planner",
+        "storyboard",
+        "text-to-video",
+        "threejs",
+        "typescript",
+        "webgl"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-09T13:32:00Z",
+      "createdAt": "2026-07-10T13:57:01Z"
     },
     {
       "slug": "ramaaditya49/ai-agentic",
@@ -1813,6 +1777,26 @@
       "archived": false,
       "pushedAt": "2026-06-09T15:51:19Z",
       "createdAt": "2026-06-09T15:29:44Z"
+    },
+    {
+      "slug": "aofsnorth/artidor",
+      "fullName": "Aofsnorth/Artidor",
+      "name": "Artidor",
+      "owner": "Aofsnorth",
+      "ownerUrl": "https://github.com/Aofsnorth",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/108259309?v=4",
+      "url": "https://github.com/Aofsnorth/Artidor",
+      "homepage": "https://artidor.vercel.app",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 6,
+      "forks": 0,
+      "openIssues": 11,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-10-16T17:32:05Z",
+      "createdAt": "2026-06-13T11:24:30Z"
     },
     {
       "slug": "achmdfzn/hippocrates",
@@ -1866,26 +1850,6 @@
       "archived": false,
       "pushedAt": "2026-10-17T14:48:51Z",
       "createdAt": "2025-11-22T11:52:35Z"
-    },
-    {
-      "slug": "aofsnorth/artidor",
-      "fullName": "Aofsnorth/Artidor",
-      "name": "Artidor",
-      "owner": "Aofsnorth",
-      "ownerUrl": "https://github.com/Aofsnorth",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/108259309?v=4",
-      "url": "https://github.com/Aofsnorth/Artidor",
-      "homepage": "https://artidor.vercel.app",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 5,
-      "forks": 0,
-      "openIssues": 11,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-10-16T17:32:05Z",
-      "createdAt": "2026-06-13T11:24:30Z"
     },
     {
       "slug": "kusdianta/disk-space-detective",
@@ -2033,7 +1997,7 @@
         "productivity"
       ],
       "archived": false,
-      "pushedAt": "2026-09-19T05:14:18Z",
+      "pushedAt": "2026-10-19T12:10:28Z",
       "createdAt": "2026-02-10T04:21:08Z"
     },
     {
@@ -2101,14 +2065,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-10-18T21:18:55.028Z"
+      "syncedAt": "2026-10-19T22:49:40.547Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-10-18T21:18:55.028Z"
+      "syncedAt": "2026-10-19T22:49:40.547Z"
     }
   ],
-  "syncedAt": "2026-10-18T21:18:55.028Z",
-  "count": 78
+  "syncedAt": "2026-10-19T22:49:40.547Z",
+  "count": 77
 }

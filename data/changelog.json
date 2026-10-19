@@ -1,5 +1,38 @@
 [
   {
+    "date": "2026-10-19",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cloudflare Workers AI",
+        "added": [],
+        "removed": [
+          "Mistral 7B",
+          "Qwen 1.5 7B"
+        ]
+      },
+      {
+        "provider": "Groq",
+        "added": [
+          "meta-llama/llama-prompt-guard-2-22m",
+          "meta-llama/llama-prompt-guard-2-86m"
+        ],
+        "removed": [
+          "Moonshot Kimi K2",
+          "Moonshot Kimi K2 0905"
+        ]
+      },
+      {
+        "provider": "OpenRouter",
+        "added": [
+          "MiniMax: MiniMax M3.1 Flash (free)"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-10-17",
     "providersAdded": [],
     "providersRemoved": [],
@@ -1993,33 +2026,6 @@
         "provider": "OpenRouter",
         "added": [
           "NVIDIA: Nemotron 3.5 Lightning (free)"
-        ],
-        "removed": []
-      }
-    ]
-  },
-  {
-    "date": "2026-08-08",
-    "providersAdded": [],
-    "providersRemoved": [
-      {
-        "slug": "kilo-gateway",
-        "name": "Kilo Gateway"
-      }
-    ],
-    "models": [
-      {
-        "provider": "LLM7.io",
-        "added": [
-          "Gemma 4 31B IT",
-          "mistral-Nemo-Instruct-2407"
-        ],
-        "removed": []
-      },
-      {
-        "provider": "OpenCode Zen",
-        "added": [
-          "LongCat-2.0"
         ],
         "removed": []
       }
