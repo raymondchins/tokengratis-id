@@ -11,8 +11,8 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js: The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
-      "stars": 10207,
-      "forks": 1213,
+      "stars": 10208,
+      "forks": 1212,
       "openIssues": 17,
       "license": "AGPL-3.0",
       "topics": [
@@ -66,8 +66,8 @@
       "homepage": "https://www.htmly.com",
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
-      "stars": 1364,
-      "forks": 305,
+      "stars": 1367,
+      "forks": 306,
       "openIssues": 54,
       "license": "GPL-2.0",
       "topics": [
@@ -95,9 +95,9 @@
       "homepage": null,
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
-      "stars": 1230,
+      "stars": 1231,
       "forks": 1197,
-      "openIssues": 331,
+      "openIssues": 326,
       "license": null,
       "topics": [
         "opensid",
@@ -118,8 +118,8 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1044,
-      "forks": 309,
+      "stars": 1049,
+      "forks": 308,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -156,7 +156,7 @@
       "homepage": null,
       "description": "Package Laravel yang berisi data Provinsi, Kabupaten/Kota, dan Kecamatan/Desa di seluruh Indonesia.",
       "language": "PHP",
-      "stars": 679,
+      "stars": 680,
       "forks": 210,
       "openIssues": 5,
       "license": "MIT",
@@ -205,7 +205,7 @@
       "language": "Rust",
       "stars": 370,
       "forks": 35,
-      "openIssues": 22,
+      "openIssues": 24,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -230,7 +230,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-10-18T06:28:13Z",
+      "pushedAt": "2026-10-21T17:11:58Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -272,9 +272,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 277,
-      "forks": 54,
-      "openIssues": 82,
+      "stars": 281,
+      "forks": 56,
+      "openIssues": 70,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -292,7 +292,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-10-19T22:01:48Z",
+      "pushedAt": "2026-10-21T19:28:35Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -306,9 +306,9 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 273,
-      "forks": 37,
-      "openIssues": 13,
+      "stars": 275,
+      "forks": 31,
+      "openIssues": 12,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -333,7 +333,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-10-16T07:35:39Z",
+      "pushedAt": "2026-10-21T09:17:14Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -348,8 +348,8 @@
       "description": "ERD Builder Pro is a database design and documentation tool for developers. Build ERDs, flowcharts, notes, and drawings — all in one workspace",
       "language": "TypeScript",
       "stars": 207,
-      "forks": 41,
-      "openIssues": 5,
+      "forks": 40,
+      "openIssues": 9,
       "license": null,
       "topics": [
         "coding",
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-10-19T14:07:36Z",
+      "pushedAt": "2026-10-21T13:07:39Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -435,9 +435,9 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 151,
+      "stars": 153,
       "forks": 51,
-      "openIssues": 10,
+      "openIssues": 11,
       "license": "MIT",
       "topics": [
         "ai",
@@ -460,7 +460,7 @@
         "zai"
       ],
       "archived": false,
-      "pushedAt": "2026-10-13T06:46:13Z",
+      "pushedAt": "2026-10-20T23:01:45Z",
       "createdAt": "2026-05-31T09:02:50Z"
     },
     {
@@ -495,7 +495,7 @@
       "description": "Online banking angular springboot mysql",
       "language": "Java",
       "stars": 131,
-      "forks": 100,
+      "forks": 99,
       "openIssues": 0,
       "license": null,
       "topics": [],
@@ -592,8 +592,8 @@
       "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
       "stars": 95,
-      "forks": 14,
-      "openIssues": 3,
+      "forks": 15,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [
         "browser-shell",
@@ -616,7 +616,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-10-19T15:09:17Z",
+      "pushedAt": "2026-10-21T19:54:24Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -630,7 +630,7 @@
       "homepage": null,
       "description": "The backend of NjinAttend is built using AdonisJS.",
       "language": "TypeScript",
-      "stars": 73,
+      "stars": 72,
       "forks": 20,
       "openIssues": 0,
       "license": null,
@@ -671,6 +671,26 @@
       "createdAt": "2026-06-11T13:28:54Z"
     },
     {
+      "slug": "rudycity/superagent",
+      "fullName": "RudyCity/superagent",
+      "name": "superagent",
+      "owner": "RudyCity",
+      "ownerUrl": "https://github.com/RudyCity",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/82188919?v=4",
+      "url": "https://github.com/RudyCity/superagent",
+      "homepage": null,
+      "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
+      "language": "TypeScript",
+      "stars": 57,
+      "forks": 7,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-10-21T21:59:58Z",
+      "createdAt": "2026-06-09T15:06:10Z"
+    },
+    {
       "slug": "maziyank/nats",
       "fullName": "maziyank/nats",
       "name": "nats",
@@ -691,26 +711,6 @@
       "createdAt": "2026-03-29T13:58:03Z"
     },
     {
-      "slug": "rudycity/superagent",
-      "fullName": "RudyCity/superagent",
-      "name": "superagent",
-      "owner": "RudyCity",
-      "ownerUrl": "https://github.com/RudyCity",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/82188919?v=4",
-      "url": "https://github.com/RudyCity/superagent",
-      "homepage": null,
-      "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
-      "language": "TypeScript",
-      "stars": 51,
-      "forks": 7,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-10-19T11:26:48Z",
-      "createdAt": "2026-06-09T15:06:10Z"
-    },
-    {
       "slug": "firewalker06/tycho",
       "fullName": "firewalker06/tycho",
       "name": "tycho",
@@ -723,78 +723,12 @@
       "language": "Ruby",
       "stars": 51,
       "forks": 5,
-      "openIssues": 3,
+      "openIssues": 2,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-17T15:08:03Z",
+      "pushedAt": "2026-10-21T07:09:48Z",
       "createdAt": "2026-05-23T01:58:17Z"
-    },
-    {
-      "slug": "raymondchins/agentmap",
-      "fullName": "raymondchins/agentmap",
-      "name": "agentmap",
-      "owner": "raymondchins",
-      "ownerUrl": "https://github.com/raymondchins",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
-      "url": "https://github.com/raymondchins/agentmap",
-      "homepage": null,
-      "description": "Stop your coding agent reading the wrong files. Compiler-grade TS/JS repo map — 100% precision on blast radius vs grep's 60%, measured on public repos. CLI + MCP server, fully local, no vector DB.",
-      "language": "JavaScript",
-      "stars": 50,
-      "forks": 12,
-      "openIssues": 6,
-      "license": "MIT",
-      "topics": [
-        "ai-agents",
-        "ai-coding",
-        "claude-code",
-        "cli",
-        "code-context",
-        "code-graph",
-        "code-intelligence",
-        "code-map",
-        "coding-agent",
-        "context-engineering",
-        "dependency-graph",
-        "developer-tools",
-        "javascript",
-        "mcp",
-        "mcp-server",
-        "pagerank",
-        "repo-map",
-        "static-analysis",
-        "ts-morph",
-        "typescript"
-      ],
-      "archived": false,
-      "pushedAt": "2026-10-17T09:32:45Z",
-      "createdAt": "2026-06-13T11:29:36Z"
-    },
-    {
-      "slug": "abilfida/omnidrive",
-      "fullName": "abilfida/OmniDrive",
-      "name": "OmniDrive",
-      "owner": "abilfida",
-      "ownerUrl": "https://github.com/abilfida",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/38366329?v=4",
-      "url": "https://github.com/abilfida/OmniDrive",
-      "homepage": null,
-      "description": "Omnidrive lets you connect multiple Google Drive accounts and manage all your files from a single dashboard. It runs entirely on Cloudflare's edge network — Workers for the API, D1 for the database, and KV for session storage — so there's no traditional server to maintain.",
-      "language": "TypeScript",
-      "stars": 50,
-      "forks": 14,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "cloudflare",
-        "google-drive",
-        "reactjs",
-        "vitejs"
-      ],
-      "archived": false,
-      "pushedAt": "2026-06-24T03:36:32Z",
-      "createdAt": "2026-06-07T16:49:12Z"
     },
     {
       "slug": "mmenghancurkan/dynaqris",
@@ -837,6 +771,31 @@
       "createdAt": "2026-01-11T07:23:01Z"
     },
     {
+      "slug": "abilfida/omnidrive",
+      "fullName": "abilfida/OmniDrive",
+      "name": "OmniDrive",
+      "owner": "abilfida",
+      "ownerUrl": "https://github.com/abilfida",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/38366329?v=4",
+      "url": "https://github.com/abilfida/OmniDrive",
+      "homepage": null,
+      "description": "Omnidrive lets you connect multiple Google Drive accounts and manage all your files from a single dashboard. It runs entirely on Cloudflare's edge network — Workers for the API, D1 for the database, and KV for session storage — so there's no traditional server to maintain.",
+      "language": "TypeScript",
+      "stars": 49,
+      "forks": 14,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "cloudflare",
+        "google-drive",
+        "reactjs",
+        "vitejs"
+      ],
+      "archived": false,
+      "pushedAt": "2026-06-24T03:36:32Z",
+      "createdAt": "2026-06-07T16:49:12Z"
+    },
+    {
       "slug": "andriawan/andkasir",
       "fullName": "andriawan/AndKasir",
       "name": "AndKasir",
@@ -873,7 +832,7 @@
       "language": "Rust",
       "stars": 48,
       "forks": 16,
-      "openIssues": 0,
+      "openIssues": 9,
       "license": null,
       "topics": [
         "android",
@@ -961,7 +920,7 @@
       "description": "Mandum Rimba is an independent, nonprofit public-interest observatory. We do not sell data, carry advertising, or take sides. We consolidate satellite data and credible public sources into a single open map, auditable by anyone, fully open source, and with every figure traceable to its origin.",
       "language": "TypeScript",
       "stars": 36,
-      "forks": 8,
+      "forks": 7,
       "openIssues": 0,
       "license": "AGPL-3.0",
       "topics": [
@@ -980,7 +939,7 @@
         "wildlife"
       ],
       "archived": false,
-      "pushedAt": "2026-09-09T08:38:49Z",
+      "pushedAt": "2026-10-21T03:58:48Z",
       "createdAt": "2026-06-14T05:07:25Z"
     },
     {
@@ -1023,7 +982,7 @@
       "homepage": "https://silong-os.vercel.app/",
       "description": "Open-source, self-hostable Notion/Obsidian-style workspace — block editor for notes, docs and lightweight databases, plus a knowledge graph over them. Next.js 16 · React 19 · Convex · Tailwind v4.",
       "language": "TypeScript",
-      "stars": 33,
+      "stars": 34,
       "forks": 7,
       "openIssues": 0,
       "license": "MIT",
@@ -1058,7 +1017,7 @@
       "description": "Payment router for Indonesian payment gateways.",
       "language": "Go",
       "stars": 33,
-      "forks": 6,
+      "forks": 5,
       "openIssues": 22,
       "license": "MIT",
       "topics": [
@@ -1087,7 +1046,7 @@
       "homepage": null,
       "description": "Minimal aesthetic arch linux + hyprland dotfiles",
       "language": "Shell",
-      "stars": 31,
+      "stars": 32,
       "forks": 4,
       "openIssues": 0,
       "license": null,
@@ -1273,7 +1232,7 @@
       "homepage": "https://nusakit.my.id",
       "description": "🇮🇩 Indonesian Data Validation API — NIK, NPWP, Phone, Rupiah, Bank, Wilayah. Live: nusakit.my.id",
       "language": "TypeScript",
-      "stars": 18,
+      "stars": 19,
       "forks": 2,
       "openIssues": 0,
       "license": "MIT",
@@ -1424,7 +1383,7 @@
       "description": null,
       "language": "TypeScript",
       "stars": 12,
-      "forks": 4,
+      "forks": 3,
       "openIssues": 0,
       "license": "MIT",
       "topics": [],
@@ -1440,16 +1399,30 @@
       "ownerUrl": "https://github.com/NAEOS-foundation",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/301789713?v=4",
       "url": "https://github.com/NAEOS-foundation/naeos",
-      "homepage": "naeos.dev",
+      "homepage": "https://naeos.dev",
       "description": "The Enterprise AI Engineering Framework for building production-ready software with AI coding agents.",
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 58,
+      "openIssues": 53,
       "license": "Apache-2.0",
-      "topics": [],
+      "topics": [
+        "linux",
+        "linux-kernel",
+        "naeos",
+        "open-source",
+        "open-source-ai",
+        "open-source-intelligence",
+        "open-source-project",
+        "operating-system",
+        "operating-system-kernel",
+        "operating-systems-project",
+        "os-development",
+        "system-programming",
+        "system-programming-control-systems"
+      ],
       "archived": false,
-      "pushedAt": "2026-10-19T12:58:35Z",
+      "pushedAt": "2026-10-20T20:49:40Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1484,6 +1457,26 @@
       "createdAt": "2026-03-25T12:38:25Z"
     },
     {
+      "slug": "raymondchins/tokengratis-id",
+      "fullName": "raymondchins/tokengratis-id",
+      "name": "tokengratis-id",
+      "owner": "raymondchins",
+      "ownerUrl": "https://github.com/raymondchins",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
+      "url": "https://github.com/raymondchins/tokengratis-id",
+      "homepage": "https://tokengratis.id",
+      "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
+      "language": "JavaScript",
+      "stars": 10,
+      "forks": 1,
+      "openIssues": 2,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-10-19T22:49:51Z",
+      "createdAt": "2026-06-01T10:04:41Z"
+    },
+    {
       "slug": "xpajonx/openempiric",
       "fullName": "xpajonx/openempiric",
       "name": "openempiric",
@@ -1494,7 +1487,7 @@
       "homepage": null,
       "description": "An event-sourced knowledge runtime for coding agents.",
       "language": "Python",
-      "stars": 11,
+      "stars": 10,
       "forks": 1,
       "openIssues": 0,
       "license": "MIT",
@@ -1590,7 +1583,7 @@
       "description": "A lightweight, Git-friendly tool for designing and collaborating on API contracts",
       "language": "Rust",
       "stars": 8,
-      "forks": 2,
+      "forks": 1,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -1705,26 +1698,6 @@
       "createdAt": "2026-01-09T17:20:39Z"
     },
     {
-      "slug": "raymondchins/tokengratis-id",
-      "fullName": "raymondchins/tokengratis-id",
-      "name": "tokengratis-id",
-      "owner": "raymondchins",
-      "ownerUrl": "https://github.com/raymondchins",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
-      "url": "https://github.com/raymondchins/tokengratis-id",
-      "homepage": "https://tokengratis.id",
-      "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
-      "language": "JavaScript",
-      "stars": 7,
-      "forks": 1,
-      "openIssues": 1,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-10-18T21:19:06Z",
-      "createdAt": "2026-06-01T10:04:41Z"
-    },
-    {
       "slug": "rahmanef63/framepilot",
       "fullName": "rahmanef63/framepilot",
       "name": "framepilot",
@@ -1791,11 +1764,11 @@
       "language": "TypeScript",
       "stars": 6,
       "forks": 0,
-      "openIssues": 11,
+      "openIssues": 2,
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-16T17:32:05Z",
+      "pushedAt": "2026-10-21T21:46:28Z",
       "createdAt": "2026-06-13T11:24:30Z"
     },
     {
@@ -1997,7 +1970,7 @@
         "productivity"
       ],
       "archived": false,
-      "pushedAt": "2026-10-19T12:10:28Z",
+      "pushedAt": "2026-10-20T14:40:56Z",
       "createdAt": "2026-02-10T04:21:08Z"
     },
     {
@@ -2065,14 +2038,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-10-19T22:49:40.547Z"
+      "syncedAt": "2026-10-21T22:11:58.442Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-10-19T22:49:40.547Z"
+      "syncedAt": "2026-10-21T22:11:58.442Z"
     }
   ],
-  "syncedAt": "2026-10-19T22:49:40.547Z",
-  "count": 77
+  "syncedAt": "2026-10-21T22:11:58.442Z",
+  "count": 76
 }

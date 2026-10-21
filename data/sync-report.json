@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T22:49:33.506Z",
+  "generatedAt": "2026-10-21T22:11:51.290Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -10,41 +10,41 @@
     },
     "freellm.net": {
       "status": "ok",
-      "providers": 22,
-      "models": 295,
+      "providers": 23,
+      "models": 301,
       "shapeIssues": [
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "maxOutput",
           "rule": "all-null-collapse",
-          "count": 295,
-          "total": 295,
+          "count": 301,
+          "total": 301,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"maxOutput\": 100% null di 295 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+          "message": "Field \"maxOutput\": 100% null di 301 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
         },
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "url",
           "rule": "all-null-collapse",
-          "count": 22,
-          "total": 22,
+          "count": 23,
+          "total": 23,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"url\": 100% null di 22 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+          "message": "Field \"url\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
         },
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "baseUrl",
           "rule": "all-null-collapse",
-          "count": 22,
-          "total": 22,
+          "count": 23,
+          "total": 23,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"baseUrl\": 100% null di 22 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+          "message": "Field \"baseUrl\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
         }
       ]
     },
@@ -56,7 +56,7 @@
     "openrouter.ai/api/v1/models": {
       "status": "ok",
       "providers": 1,
-      "models": 17,
+      "models": 18,
       "shapeIssues": []
     }
   },
@@ -64,56 +64,79 @@
     "cheahjs/free-llm-api-resources"
   ],
   "merged": {
-    "providers": 22,
-    "models": 305,
-    "shapeIssues": []
+    "providers": 23,
+    "models": 312,
+    "shapeIssues": [
+      {
+        "severity": "warn",
+        "source": "merged",
+        "field": "context",
+        "rule": "context-shape",
+        "count": 1,
+        "total": 296,
+        "ratio": 0.0033783783783783786,
+        "samples": [
+          "448"
+        ],
+        "message": "Field \"context\": 1/296 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
+      },
+      {
+        "severity": "warn",
+        "source": "merged",
+        "field": "maxOutput",
+        "rule": "maxoutput-shape",
+        "count": 1,
+        "total": 145,
+        "ratio": 0.006896551724137931,
+        "samples": [
+          "448"
+        ],
+        "message": "Field \"maxOutput\": 1/145 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
+      }
+    ]
   },
   "smokeTest": {
     "errors": [],
     "warnings": []
   },
   "diffGuard": {
-    "ok": false,
-    "errors": [
-      "provider \"cerebras\" disappeared (was in prev, missing in next)"
-    ],
+    "ok": true,
+    "errors": [],
     "warnings": [],
     "stats": {
       "prevProviders": 23,
-      "nextProviders": 22,
-      "prevModels": 307,
-      "nextModels": 305,
-      "totalDropPct": 0.6514657980456027,
-      "disappeared": [
-        "cerebras"
-      ],
+      "nextProviders": 23,
+      "prevModels": 306,
+      "nextModels": 312,
+      "totalDropPct": -1.9607843137254901,
+      "disappeared": [],
       "shrunk": [],
       "churned": [],
       "fieldChurn": {
         "model": {
           "context": {
             "eligible": 288,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "changed": 1,
+            "ratioPct": 0.3472222222222222,
+            "examples": [
+              {
+                "label": "nvidia-nim/nvidia-llama-nemotron-embed-vl-1b-v2",
+                "from": "32K",
+                "to": "8K"
+              }
+            ]
           },
           "maxOutput": {
-            "eligible": 143,
+            "eligible": 142,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "modality": {
             "eligible": 238,
-            "changed": 1,
-            "ratioPct": 0.42016806722689076,
-            "examples": [
-              {
-                "label": "nvidia-nim/stepfun-ai-step-5-preview",
-                "from": "text + image",
-                "to": "text + image + reasoning"
-              }
-            ]
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           },
           "rateLimit": {
             "eligible": 187,
@@ -142,7 +165,7 @@
             "examples": []
           },
           "maxContext": {
-            "eligible": 21,
+            "eligible": 22,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -158,47 +181,67 @@
       "source": "freellm.net",
       "field": "maxOutput",
       "rule": "all-null-collapse",
-      "count": 295,
-      "total": 295,
+      "count": 301,
+      "total": 301,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"maxOutput\": 100% null di 295 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+      "message": "Field \"maxOutput\": 100% null di 301 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
     },
     {
       "severity": "warn",
       "source": "freellm.net",
       "field": "url",
       "rule": "all-null-collapse",
-      "count": 22,
-      "total": 22,
+      "count": 23,
+      "total": 23,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"url\": 100% null di 22 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+      "message": "Field \"url\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
     },
     {
       "severity": "warn",
       "source": "freellm.net",
       "field": "baseUrl",
       "rule": "all-null-collapse",
-      "count": 22,
-      "total": 22,
+      "count": 23,
+      "total": 23,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"baseUrl\": 100% null di 22 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+      "message": "Field \"baseUrl\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+    },
+    {
+      "severity": "warn",
+      "source": "merged",
+      "field": "context",
+      "rule": "context-shape",
+      "count": 1,
+      "total": 296,
+      "ratio": 0.0033783783783783786,
+      "samples": [
+        "448"
+      ],
+      "message": "Field \"context\": 1/296 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
+    },
+    {
+      "severity": "warn",
+      "source": "merged",
+      "field": "maxOutput",
+      "rule": "maxoutput-shape",
+      "count": 1,
+      "total": 145,
+      "ratio": 0.006896551724137931,
+      "samples": [
+        "448"
+      ],
+      "message": "Field \"maxOutput\": 1/145 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
     }
   ],
   "quarantine": {
-    "heldProviders": [
-      {
-        "slug": "cerebras",
-        "kind": "disappeared",
-        "detail": "provider hilang dari hasil merge",
-        "streak": 1,
-        "needs": 3
-      }
-    ],
+    "heldProviders": [],
     "accepted": [],
-    "cleared": [],
+    "cleared": [
+      "cerebras"
+    ],
     "confirmRuns": 3
   }
 }
