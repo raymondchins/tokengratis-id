@@ -1,5 +1,51 @@
 [
   {
+    "date": "2026-10-22",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cloudflare Workers AI",
+        "added": [
+          "@cf/deepseek-ai/deepseek-v4-flash-0731",
+          "@cf/deepseek-ai/deepseek-v4-pro-0813",
+          "@cf/deepseek-ai/deepseek-v4.1-flash-1017",
+          "@cf/zai-org/glm-5.3",
+          "@cf/zai-org/glm-5.3-flash"
+        ],
+        "removed": [
+          "Mistral 7B",
+          "Qwen 1.5 7B"
+        ]
+      },
+      {
+        "provider": "Groq",
+        "added": [
+          "meta-llama/llama-prompt-guard-2-22m",
+          "meta-llama/llama-prompt-guard-2-86m"
+        ],
+        "removed": [
+          "Moonshot Kimi K2",
+          "Moonshot Kimi K2 0905"
+        ]
+      },
+      {
+        "provider": "LLM7.io",
+        "added": [],
+        "removed": [
+          "GLM-5.3-Flash"
+        ]
+      },
+      {
+        "provider": "OpenRouter",
+        "added": [],
+        "removed": [
+          "MiniMax: MiniMax M3.1 Flash (free)"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-10-21",
     "providersAdded": [],
     "providersRemoved": [],
@@ -2031,34 +2077,6 @@
         "removed": [
           "inclusionAI: Ling 3.0 Tiny (free)"
         ]
-      }
-    ]
-  },
-  {
-    "date": "2026-08-12",
-    "providersAdded": [],
-    "providersRemoved": [],
-    "models": [
-      {
-        "provider": "LLM7.io",
-        "added": [],
-        "removed": [
-          "Gemma 4 31B IT"
-        ]
-      },
-      {
-        "provider": "OpenCode Zen",
-        "added": [
-          "Hy3 preview"
-        ],
-        "removed": []
-      },
-      {
-        "provider": "OpenRouter",
-        "added": [
-          "LiquidAI: LFM2.5-2.6B (free)"
-        ],
-        "removed": []
       }
     ]
   }

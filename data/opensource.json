@@ -11,8 +11,8 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js: The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
-      "stars": 10208,
-      "forks": 1212,
+      "stars": 10207,
+      "forks": 1213,
       "openIssues": 17,
       "license": "AGPL-3.0",
       "topics": [
@@ -95,9 +95,9 @@
       "homepage": null,
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
-      "stars": 1231,
+      "stars": 1230,
       "forks": 1197,
-      "openIssues": 326,
+      "openIssues": 329,
       "license": null,
       "topics": [
         "opensid",
@@ -205,7 +205,7 @@
       "language": "Rust",
       "stars": 370,
       "forks": 35,
-      "openIssues": 24,
+      "openIssues": 25,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -230,7 +230,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-10-21T17:11:58Z",
+      "pushedAt": "2026-10-22T04:06:12Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -258,7 +258,7 @@
         "wails-app"
       ],
       "archived": false,
-      "pushedAt": "2026-09-21T07:05:46Z",
+      "pushedAt": "2026-10-22T04:28:20Z",
       "createdAt": "2025-11-04T15:37:00Z"
     },
     {
@@ -272,9 +272,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 281,
+      "stars": 282,
       "forks": 56,
-      "openIssues": 70,
+      "openIssues": 69,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -292,7 +292,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-10-21T19:28:35Z",
+      "pushedAt": "2026-10-22T17:38:52Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -308,7 +308,7 @@
       "language": "Rust",
       "stars": 275,
       "forks": 31,
-      "openIssues": 12,
+      "openIssues": 28,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -333,7 +333,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-10-21T09:17:14Z",
+      "pushedAt": "2026-10-22T13:15:41Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -349,7 +349,7 @@
       "language": "TypeScript",
       "stars": 207,
       "forks": 40,
-      "openIssues": 9,
+      "openIssues": 6,
       "license": null,
       "topics": [
         "coding",
@@ -365,7 +365,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-10-21T13:07:39Z",
+      "pushedAt": "2026-10-22T14:44:39Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -379,7 +379,7 @@
       "homepage": null,
       "description": null,
       "language": "Python",
-      "stars": 184,
+      "stars": 183,
       "forks": 44,
       "openIssues": 0,
       "license": "MIT",
@@ -436,7 +436,7 @@
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
       "stars": 153,
-      "forks": 51,
+      "forks": 52,
       "openIssues": 11,
       "license": "MIT",
       "topics": [
@@ -616,7 +616,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-10-21T19:54:24Z",
+      "pushedAt": "2026-10-22T19:49:23Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -651,7 +651,7 @@
       "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
       "language": "Svelte",
       "stars": 70,
-      "forks": 20,
+      "forks": 21,
       "openIssues": 6,
       "license": "MIT",
       "topics": [
@@ -687,7 +687,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-21T21:59:58Z",
+      "pushedAt": "2026-10-22T07:14:55Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -721,13 +721,13 @@
       "homepage": null,
       "description": "Its Factorio for coding agents",
       "language": "Ruby",
-      "stars": 51,
+      "stars": 52,
       "forks": 5,
-      "openIssues": 2,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-21T07:09:48Z",
+      "pushedAt": "2026-10-22T09:19:11Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -832,7 +832,7 @@
       "language": "Rust",
       "stars": 48,
       "forks": 16,
-      "openIssues": 9,
+      "openIssues": 4,
       "license": null,
       "topics": [
         "android",
@@ -845,7 +845,7 @@
         "windows"
       ],
       "archived": false,
-      "pushedAt": "2026-10-19T00:34:21Z",
+      "pushedAt": "2026-10-22T05:45:34Z",
       "createdAt": "2026-05-23T05:37:35Z"
     },
     {
@@ -878,7 +878,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-06-12T15:10:29Z",
+      "pushedAt": "2026-10-22T09:46:26Z",
       "createdAt": "2026-04-09T16:08:42Z"
     },
     {
@@ -1115,7 +1115,7 @@
       "language": "JavaScript",
       "stars": 20,
       "forks": 1,
-      "openIssues": 1,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [
         "antigravity",
@@ -1133,7 +1133,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-10-17T00:12:41Z",
+      "pushedAt": "2026-10-22T12:17:03Z",
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
@@ -1291,7 +1291,7 @@
         "zero-human"
       ],
       "archived": false,
-      "pushedAt": "2026-09-12T13:08:28Z",
+      "pushedAt": "2026-10-22T18:33:02Z",
       "createdAt": "2026-03-18T18:38:41Z"
     },
     {
@@ -1404,7 +1404,7 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 53,
+      "openIssues": 55,
       "license": "Apache-2.0",
       "topics": [
         "linux",
@@ -1422,8 +1422,28 @@
         "system-programming-control-systems"
       ],
       "archived": false,
-      "pushedAt": "2026-10-20T20:49:40Z",
+      "pushedAt": "2026-10-22T17:42:11Z",
       "createdAt": "2026-07-09T15:14:16Z"
+    },
+    {
+      "slug": "raymondchins/tokengratis-id",
+      "fullName": "raymondchins/tokengratis-id",
+      "name": "tokengratis-id",
+      "owner": "raymondchins",
+      "ownerUrl": "https://github.com/raymondchins",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
+      "url": "https://github.com/raymondchins/tokengratis-id",
+      "homepage": "https://tokengratis.id",
+      "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
+      "language": "JavaScript",
+      "stars": 11,
+      "forks": 1,
+      "openIssues": 2,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-10-21T22:12:11Z",
+      "createdAt": "2026-06-01T10:04:41Z"
     },
     {
       "slug": "fajarhide/heimsense",
@@ -1455,26 +1475,6 @@
       "archived": false,
       "pushedAt": "2026-10-01T04:23:44Z",
       "createdAt": "2026-03-25T12:38:25Z"
-    },
-    {
-      "slug": "raymondchins/tokengratis-id",
-      "fullName": "raymondchins/tokengratis-id",
-      "name": "tokengratis-id",
-      "owner": "raymondchins",
-      "ownerUrl": "https://github.com/raymondchins",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
-      "url": "https://github.com/raymondchins/tokengratis-id",
-      "homepage": "https://tokengratis.id",
-      "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
-      "language": "JavaScript",
-      "stars": 10,
-      "forks": 1,
-      "openIssues": 2,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-10-19T22:49:51Z",
-      "createdAt": "2026-06-01T10:04:41Z"
     },
     {
       "slug": "xpajonx/openempiric",
@@ -1568,7 +1568,7 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-10-13T02:23:55Z",
+      "pushedAt": "2026-10-22T14:55:50Z",
       "createdAt": "2026-06-06T00:23:26Z"
     },
     {
@@ -1768,7 +1768,7 @@
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-21T21:46:28Z",
+      "pushedAt": "2026-10-22T12:39:12Z",
       "createdAt": "2026-06-13T11:24:30Z"
     },
     {
@@ -2038,14 +2038,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-10-21T22:11:58.442Z"
+      "syncedAt": "2026-10-22T22:11:43.585Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-10-21T22:11:58.442Z"
+      "syncedAt": "2026-10-22T22:11:43.585Z"
     }
   ],
-  "syncedAt": "2026-10-21T22:11:58.442Z",
+  "syncedAt": "2026-10-22T22:11:43.585Z",
   "count": 76
 }
