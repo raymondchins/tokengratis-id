@@ -272,9 +272,9 @@
       "homepage": "https://bridgeplay.dev",
       "description": "Windows Steam games on Apple Silicon Macs, installed in one click",
       "language": "Scala",
-      "stars": 290,
-      "forks": 19,
-      "openIssues": 1,
+      "stars": 292,
+      "forks": 21,
+      "openIssues": 3,
       "license": "GPL-3.0",
       "topics": [],
       "archived": false,
@@ -292,7 +292,7 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 284,
+      "stars": 285,
       "forks": 56,
       "openIssues": 75,
       "license": "MIT",
@@ -815,6 +815,35 @@
       "createdAt": "2017-05-22T15:52:00Z"
     },
     {
+      "slug": "ardli-firman/sha-print",
+      "fullName": "ardli-firman/sha-print",
+      "name": "sha-print",
+      "owner": "ardli-firman",
+      "ownerUrl": "https://github.com/ardli-firman",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/48121202?v=4",
+      "url": "https://github.com/ardli-firman/sha-print",
+      "homepage": null,
+      "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
+      "language": "Rust",
+      "stars": 49,
+      "forks": 16,
+      "openIssues": 4,
+      "license": null,
+      "topics": [
+        "android",
+        "desktop-app",
+        "linux",
+        "linux-desktop",
+        "printer",
+        "sharing",
+        "sharing-printer",
+        "windows"
+      ],
+      "archived": false,
+      "pushedAt": "2026-10-22T05:45:34Z",
+      "createdAt": "2026-05-23T05:37:35Z"
+    },
+    {
       "slug": "abilfida/omnidrive",
       "fullName": "abilfida/OmniDrive",
       "name": "OmniDrive",
@@ -838,35 +867,6 @@
       "archived": false,
       "pushedAt": "2026-06-24T03:36:32Z",
       "createdAt": "2026-06-07T16:49:12Z"
-    },
-    {
-      "slug": "ardli-firman/sha-print",
-      "fullName": "ardli-firman/sha-print",
-      "name": "sha-print",
-      "owner": "ardli-firman",
-      "ownerUrl": "https://github.com/ardli-firman",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/48121202?v=4",
-      "url": "https://github.com/ardli-firman/sha-print",
-      "homepage": null,
-      "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
-      "language": "Rust",
-      "stars": 48,
-      "forks": 16,
-      "openIssues": 4,
-      "license": null,
-      "topics": [
-        "android",
-        "desktop-app",
-        "linux",
-        "linux-desktop",
-        "printer",
-        "sharing",
-        "sharing-printer",
-        "windows"
-      ],
-      "archived": false,
-      "pushedAt": "2026-10-22T05:45:34Z",
-      "createdAt": "2026-05-23T05:37:35Z"
     },
     {
       "slug": "rizukirr/no-vibe",
@@ -1177,6 +1177,39 @@
       "createdAt": "2026-04-08T09:27:49Z"
     },
     {
+      "slug": "rahmanef63/control-room",
+      "fullName": "rahmanef63/control-room",
+      "name": "control-room",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/control-room",
+      "homepage": null,
+      "description": "Mobile-first PWA for driving a single VPS from the browser — up to 16 concurrent terminals, AI agent launchers, host ops and audit behind one shared secret on a Tailscale-only domain. Next.js 15 · React 19 · Node agent (node-pty + xterm.js).",
+      "language": "TypeScript",
+      "stars": 19,
+      "forks": 3,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "ai-agents",
+        "devops",
+        "mobile-first",
+        "nextjs",
+        "nodejs",
+        "pty",
+        "pwa",
+        "self-hosted",
+        "terminal",
+        "tmux-alternative",
+        "vps",
+        "xterm"
+      ],
+      "archived": false,
+      "pushedAt": "2026-10-23T19:53:29Z",
+      "createdAt": "2026-03-20T14:25:48Z"
+    },
+    {
       "slug": "muslimtify-org/muslimtify",
       "fullName": "muslimtify-org/muslimtify",
       "name": "muslimtify",
@@ -1207,39 +1240,6 @@
       "archived": false,
       "pushedAt": "2026-10-23T14:57:35Z",
       "createdAt": "2026-02-23T13:59:12Z"
-    },
-    {
-      "slug": "rahmanef63/control-room",
-      "fullName": "rahmanef63/control-room",
-      "name": "control-room",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/control-room",
-      "homepage": null,
-      "description": "Mobile-first PWA for driving a single VPS from the browser — up to 16 concurrent terminals, AI agent launchers, host ops and audit behind one shared secret on a Tailscale-only domain. Next.js 15 · React 19 · Node agent (node-pty + xterm.js).",
-      "language": "TypeScript",
-      "stars": 19,
-      "forks": 3,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "ai-agents",
-        "devops",
-        "mobile-first",
-        "nextjs",
-        "nodejs",
-        "pty",
-        "pwa",
-        "self-hosted",
-        "terminal",
-        "tmux-alternative",
-        "vps",
-        "xterm"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-11T22:00:32Z",
-      "createdAt": "2026-03-20T14:25:48Z"
     },
     {
       "slug": "muhfauziazhar/nusakit-api",
@@ -1362,7 +1362,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-23T18:00:43Z",
+      "pushedAt": "2026-10-23T18:08:47Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1994,47 +1994,6 @@
       "createdAt": "2026-02-10T04:21:08Z"
     },
     {
-      "slug": "raymondchins/agentmap",
-      "fullName": "raymondchins/agentmap",
-      "name": "agentmap",
-      "owner": "raymondchins",
-      "ownerUrl": "https://github.com/raymondchins",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
-      "url": "https://github.com/raymondchins/agentmap",
-      "homepage": null,
-      "description": "Stop your coding agent reading the wrong files. Compiler-grade TS/JS repo map — 100% precision on blast radius vs grep's 60%, measured on public repos. CLI + MCP server, fully local, no vector DB.",
-      "language": "JavaScript",
-      "stars": 1,
-      "forks": 0,
-      "openIssues": 6,
-      "license": "MIT",
-      "topics": [
-        "ai-agents",
-        "ai-coding",
-        "claude-code",
-        "cli",
-        "code-context",
-        "code-graph",
-        "code-intelligence",
-        "code-map",
-        "coding-agent",
-        "context-engineering",
-        "dependency-graph",
-        "developer-tools",
-        "javascript",
-        "mcp",
-        "mcp-server",
-        "pagerank",
-        "repo-map",
-        "static-analysis",
-        "ts-morph",
-        "typescript"
-      ],
-      "archived": false,
-      "pushedAt": "2026-10-17T09:32:45Z",
-      "createdAt": "2026-06-13T11:29:36Z"
-    },
-    {
       "slug": "dayartcrew-web/masday-workflow-rust",
       "fullName": "dayartcrew-web/masday-workflow-rust",
       "name": "masday-workflow-rust",
@@ -2099,14 +2058,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-10-23T18:06:40.023Z"
+      "syncedAt": "2026-10-23T21:55:34.636Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-10-23T18:06:40.023Z"
+      "syncedAt": "2026-10-23T21:55:34.636Z"
     }
   ],
-  "syncedAt": "2026-10-23T18:06:40.023Z",
-  "count": 78
+  "syncedAt": "2026-10-23T21:55:34.636Z",
+  "count": 77
 }

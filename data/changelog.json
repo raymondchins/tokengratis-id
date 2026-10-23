@@ -1,5 +1,87 @@
 [
   {
+    "date": "2026-10-23",
+    "providersAdded": [
+      {
+        "slug": "gonka-broker",
+        "name": "Gonka Broker"
+      }
+    ],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cline",
+        "added": [],
+        "removed": [
+          "Minimax M3.1 Flash"
+        ]
+      },
+      {
+        "provider": "Cloudflare Workers AI",
+        "added": [
+          "Mistral 7B",
+          "Qwen 1.5 7B"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "Groq",
+        "added": [
+          "Moonshot Kimi K2",
+          "Moonshot Kimi K2 0905"
+        ],
+        "removed": [
+          "meta-llama/llama-prompt-guard-2-22m",
+          "meta-llama/llama-prompt-guard-2-86m"
+        ]
+      },
+      {
+        "provider": "Kilo Code",
+        "added": [
+          "nvidia/nemotron-3.5-super-vl:free",
+          "reflection/beam-free",
+          "inclusionai/ling-3.0-flash-sante:free",
+          "qwen/qwen3.8-27b:free",
+          "recursive/flint-v1.0:free",
+          "stepfun/step-3.7-flash:free",
+          "xingchen-agi/xing4.0-29b-a4b:free"
+        ],
+        "removed": [
+          "inclusionai/ling-3.0-flash-sante:free",
+          "qwen/qwen3.8-27b:free",
+          "stepfun/step-3.7-flash:free"
+        ]
+      },
+      {
+        "provider": "LLM7.io",
+        "added": [
+          "nemotron-3-nano:30b"
+        ],
+        "removed": [
+          "DeepSeek-V4-Flash-0731"
+        ]
+      },
+      {
+        "provider": "NVIDIA NIM",
+        "added": [
+          "minimaxai/minimax-m3.1-flash"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "SiliconFlow",
+        "added": [
+          "Qwen/Qwen3-8B",
+          "tencent/Hunyuan-MT-7B",
+          "XingChenAGI/Xing4.0-29B"
+        ],
+        "removed": [
+          "Qwen/Qwen3-8B"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-10-22",
     "providersAdded": [],
     "providersRemoved": [],
@@ -2053,29 +2135,6 @@
         ],
         "removed": [
           "ling-3.0-tiny-free"
-        ]
-      }
-    ]
-  },
-  {
-    "date": "2026-08-13",
-    "providersAdded": [],
-    "providersRemoved": [],
-    "models": [
-      {
-        "provider": "OpenCode Zen",
-        "added": [],
-        "removed": [
-          "LongCat-2.0",
-          "North Mini Code",
-          "ling-3.0-flash-free"
-        ]
-      },
-      {
-        "provider": "OpenRouter",
-        "added": [],
-        "removed": [
-          "inclusionAI: Ling 3.0 Tiny (free)"
         ]
       }
     ]
