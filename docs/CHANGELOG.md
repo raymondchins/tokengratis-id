@@ -181,3 +181,18 @@ tail -10 docs/CHANGELOG.md
 1. Home → choose Gambar and Context terbesar → matching providers; refresh retains filters.
 2. Provider → Cara pakai → official provider link; expand code examples → model/SDK selectors and copy actions available.
 3. Search a nonexistent model → empty state; reset → all providers reachable through pagination.
+
+### 2026-10-24 — Back to the list directory, slimmer navigation
+
+**Trigger / context:** The list view from before 2026-09-10 showed more at a glance than the six-card layout.
+
+**Changes:**
+- Reverted `5c01905`: the homepage, provider, modality, navbar and footer layouts are back to the list directory.
+- Removed "Pilih model" and "Rantai fallback" from the navbar, footer and homepage. `/pilih` and `/fallback` still resolve and stay in the sitemap.
+- Swapped the directory's GRATIS column for CONTEXT (max context window, filled for 22 of 23 providers). When a source states a free quota, it appears in green under the context.
+- Added `raymondchins/Bridgeplay` to the open source list through `EXTRA_REPOS` in `scripts/sync-opensource.mjs`. Metadata still comes from the GitHub API.
+
+**Test cases (after deploy):**
+1. Home: the table shows a Context column and no "Ga ada di sumber" cells.
+2. Navbar: Direktori, Modal gratis, Open source.
+3. /opensource lists Bridgeplay with its link to bridgeplay.dev.

@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js: The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
-      "stars": 10207,
+      "stars": 10206,
       "forks": 1213,
       "openIssues": 17,
       "license": "AGPL-3.0",
@@ -67,7 +67,7 @@
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
       "stars": 1367,
-      "forks": 306,
+      "forks": 307,
       "openIssues": 54,
       "license": "GPL-2.0",
       "topics": [
@@ -97,7 +97,7 @@
       "language": "PHP",
       "stars": 1230,
       "forks": 1197,
-      "openIssues": 329,
+      "openIssues": 326,
       "license": null,
       "topics": [
         "opensid",
@@ -230,7 +230,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-10-22T04:06:12Z",
+      "pushedAt": "2026-10-23T02:35:11Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -262,6 +262,26 @@
       "createdAt": "2025-11-04T15:37:00Z"
     },
     {
+      "slug": "raymondchins/bridgeplay",
+      "fullName": "raymondchins/Bridgeplay",
+      "name": "Bridgeplay",
+      "owner": "raymondchins",
+      "ownerUrl": "https://github.com/raymondchins",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
+      "url": "https://github.com/raymondchins/Bridgeplay",
+      "homepage": "https://bridgeplay.dev",
+      "description": "Windows Steam games on Apple Silicon Macs, installed in one click",
+      "language": "Scala",
+      "stars": 290,
+      "forks": 19,
+      "openIssues": 1,
+      "license": "GPL-3.0",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-10-23T17:43:19Z",
+      "createdAt": "2026-10-20T03:13:58Z"
+    },
+    {
       "slug": "gnoviawan/termul",
       "fullName": "gnoviawan/termul",
       "name": "termul",
@@ -272,9 +292,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 282,
+      "stars": 284,
       "forks": 56,
-      "openIssues": 69,
+      "openIssues": 75,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -292,7 +312,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-10-22T17:38:52Z",
+      "pushedAt": "2026-10-23T17:50:18Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -514,7 +534,7 @@
       "homepage": "https://pddikti.kemdiktisaintek.go.id/",
       "description": "Unofficial Python 3 API wrapper to retrieve data from PDDIKTI Kemdikbudristek.",
       "language": "Python",
-      "stars": 128,
+      "stars": 127,
       "forks": 29,
       "openIssues": 0,
       "license": null,
@@ -616,7 +636,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-10-22T19:49:23Z",
+      "pushedAt": "2026-10-23T12:27:05Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -687,7 +707,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-22T07:14:55Z",
+      "pushedAt": "2026-10-23T14:51:15Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -727,7 +747,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-22T09:19:11Z",
+      "pushedAt": "2026-10-23T01:52:28Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -771,6 +791,30 @@
       "createdAt": "2026-01-11T07:23:01Z"
     },
     {
+      "slug": "andriawan/andkasir",
+      "fullName": "andriawan/AndKasir",
+      "name": "AndKasir",
+      "owner": "andriawan",
+      "ownerUrl": "https://github.com/andriawan",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/13099373?v=4",
+      "url": "https://github.com/andriawan/AndKasir",
+      "homepage": null,
+      "description": "AndKasir merupakan aplikasi open source yang dibangun dengan bahasa pemrograman Java untuk kebutuhan retail perusahaan menengah dalam mengatur aktifitas barang masuk dan keluar. konsultasi isu, instalasi dan penambahan fitur silahkan kirim email ke irwan@andriawan.com",
+      "language": "Java",
+      "stars": 50,
+      "forks": 42,
+      "openIssues": 2,
+      "license": "GPL-3.0",
+      "topics": [
+        "java",
+        "kasir",
+        "point-of-sale"
+      ],
+      "archived": false,
+      "pushedAt": "2026-01-16T15:24:01Z",
+      "createdAt": "2017-05-22T15:52:00Z"
+    },
+    {
       "slug": "abilfida/omnidrive",
       "fullName": "abilfida/OmniDrive",
       "name": "OmniDrive",
@@ -794,30 +838,6 @@
       "archived": false,
       "pushedAt": "2026-06-24T03:36:32Z",
       "createdAt": "2026-06-07T16:49:12Z"
-    },
-    {
-      "slug": "andriawan/andkasir",
-      "fullName": "andriawan/AndKasir",
-      "name": "AndKasir",
-      "owner": "andriawan",
-      "ownerUrl": "https://github.com/andriawan",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/13099373?v=4",
-      "url": "https://github.com/andriawan/AndKasir",
-      "homepage": null,
-      "description": "AndKasir merupakan aplikasi open source yang dibangun dengan bahasa pemrograman Java untuk kebutuhan retail perusahaan menengah dalam mengatur aktifitas barang masuk dan keluar. konsultasi isu, instalasi dan penambahan fitur silahkan kirim email ke irwan@andriawan.com",
-      "language": "Java",
-      "stars": 49,
-      "forks": 42,
-      "openIssues": 2,
-      "license": "GPL-3.0",
-      "topics": [
-        "java",
-        "kasir",
-        "point-of-sale"
-      ],
-      "archived": false,
-      "pushedAt": "2026-01-16T15:24:01Z",
-      "createdAt": "2017-05-22T15:52:00Z"
     },
     {
       "slug": "ardli-firman/sha-print",
@@ -859,7 +879,7 @@
       "homepage": null,
       "description": "Turn your AI assistant into a tutor. It plans, shows code, reviews, adapts to how you learn and helps you complete your real project on your own",
       "language": "Shell",
-      "stars": 43,
+      "stars": 44,
       "forks": 1,
       "openIssues": 0,
       "license": "MIT",
@@ -1006,6 +1026,33 @@
       "createdAt": "2026-04-29T18:48:11Z"
     },
     {
+      "slug": "rizukirr/hyprsimple",
+      "fullName": "rizukirr/hyprsimple",
+      "name": "hyprsimple",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/hyprsimple",
+      "homepage": null,
+      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
+      "language": "Shell",
+      "stars": 33,
+      "forks": 4,
+      "openIssues": 0,
+      "license": null,
+      "topics": [
+        "arch-linux",
+        "dotfiles",
+        "hyprland",
+        "hyprland-config",
+        "linux",
+        "omarchy"
+      ],
+      "archived": false,
+      "pushedAt": "2026-10-23T14:30:58Z",
+      "createdAt": "2025-10-04T10:27:45Z"
+    },
+    {
       "slug": "pendig/rute-bayar",
       "fullName": "pendig/rute-bayar",
       "name": "rute-bayar",
@@ -1017,7 +1064,7 @@
       "description": "Payment router for Indonesian payment gateways.",
       "language": "Go",
       "stars": 33,
-      "forks": 5,
+      "forks": 6,
       "openIssues": 22,
       "license": "MIT",
       "topics": [
@@ -1034,33 +1081,6 @@
       "archived": false,
       "pushedAt": "2026-09-04T22:43:43Z",
       "createdAt": "2026-05-05T01:16:45Z"
-    },
-    {
-      "slug": "rizukirr/hyprsimple",
-      "fullName": "rizukirr/hyprsimple",
-      "name": "hyprsimple",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/hyprsimple",
-      "homepage": null,
-      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
-      "language": "Shell",
-      "stars": 32,
-      "forks": 4,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "arch-linux",
-        "dotfiles",
-        "hyprland",
-        "hyprland-config",
-        "linux",
-        "omarchy"
-      ],
-      "archived": false,
-      "pushedAt": "2026-10-17T09:25:57Z",
-      "createdAt": "2025-10-04T10:27:45Z"
     },
     {
       "slug": "galpratama/agent-cli",
@@ -1185,7 +1205,7 @@
         "windows-desktop"
       ],
       "archived": false,
-      "pushedAt": "2026-10-18T06:58:01Z",
+      "pushedAt": "2026-10-23T14:57:35Z",
       "createdAt": "2026-02-23T13:59:12Z"
     },
     {
@@ -1326,6 +1346,26 @@
       "createdAt": "2026-03-12T09:55:51Z"
     },
     {
+      "slug": "raymondchins/tokengratis-id",
+      "fullName": "raymondchins/tokengratis-id",
+      "name": "tokengratis-id",
+      "owner": "raymondchins",
+      "ownerUrl": "https://github.com/raymondchins",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
+      "url": "https://github.com/raymondchins/tokengratis-id",
+      "homepage": "https://tokengratis.id",
+      "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
+      "language": "JavaScript",
+      "stars": 12,
+      "forks": 1,
+      "openIssues": 2,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-10-23T18:00:43Z",
+      "createdAt": "2026-06-01T10:04:41Z"
+    },
+    {
       "slug": "hellodit/openmasjid",
       "fullName": "hellodit/OpenMasjid",
       "name": "OpenMasjid",
@@ -1404,7 +1444,7 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 55,
+      "openIssues": 56,
       "license": "Apache-2.0",
       "topics": [
         "linux",
@@ -1422,28 +1462,8 @@
         "system-programming-control-systems"
       ],
       "archived": false,
-      "pushedAt": "2026-10-22T17:42:11Z",
+      "pushedAt": "2026-10-23T17:52:42Z",
       "createdAt": "2026-07-09T15:14:16Z"
-    },
-    {
-      "slug": "raymondchins/tokengratis-id",
-      "fullName": "raymondchins/tokengratis-id",
-      "name": "tokengratis-id",
-      "owner": "raymondchins",
-      "ownerUrl": "https://github.com/raymondchins",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
-      "url": "https://github.com/raymondchins/tokengratis-id",
-      "homepage": "https://tokengratis.id",
-      "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
-      "language": "JavaScript",
-      "stars": 11,
-      "forks": 1,
-      "openIssues": 2,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-10-21T22:12:11Z",
-      "createdAt": "2026-06-01T10:04:41Z"
     },
     {
       "slug": "fajarhide/heimsense",
@@ -1698,6 +1718,26 @@
       "createdAt": "2026-01-09T17:20:39Z"
     },
     {
+      "slug": "aofsnorth/artidor",
+      "fullName": "Aofsnorth/Artidor",
+      "name": "Artidor",
+      "owner": "Aofsnorth",
+      "ownerUrl": "https://github.com/Aofsnorth",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/108259309?v=4",
+      "url": "https://github.com/Aofsnorth/Artidor",
+      "homepage": "https://artidor.vercel.app",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 7,
+      "forks": 0,
+      "openIssues": 2,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-10-23T01:26:16Z",
+      "createdAt": "2026-06-13T11:24:30Z"
+    },
+    {
       "slug": "rahmanef63/framepilot",
       "fullName": "rahmanef63/framepilot",
       "name": "framepilot",
@@ -1750,26 +1790,6 @@
       "archived": false,
       "pushedAt": "2026-06-09T15:51:19Z",
       "createdAt": "2026-06-09T15:29:44Z"
-    },
-    {
-      "slug": "aofsnorth/artidor",
-      "fullName": "Aofsnorth/Artidor",
-      "name": "Artidor",
-      "owner": "Aofsnorth",
-      "ownerUrl": "https://github.com/Aofsnorth",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/108259309?v=4",
-      "url": "https://github.com/Aofsnorth/Artidor",
-      "homepage": "https://artidor.vercel.app",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 6,
-      "forks": 0,
-      "openIssues": 2,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-10-22T12:39:12Z",
-      "createdAt": "2026-06-13T11:24:30Z"
     },
     {
       "slug": "achmdfzn/hippocrates",
@@ -1974,6 +1994,47 @@
       "createdAt": "2026-02-10T04:21:08Z"
     },
     {
+      "slug": "raymondchins/agentmap",
+      "fullName": "raymondchins/agentmap",
+      "name": "agentmap",
+      "owner": "raymondchins",
+      "ownerUrl": "https://github.com/raymondchins",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
+      "url": "https://github.com/raymondchins/agentmap",
+      "homepage": null,
+      "description": "Stop your coding agent reading the wrong files. Compiler-grade TS/JS repo map — 100% precision on blast radius vs grep's 60%, measured on public repos. CLI + MCP server, fully local, no vector DB.",
+      "language": "JavaScript",
+      "stars": 1,
+      "forks": 0,
+      "openIssues": 6,
+      "license": "MIT",
+      "topics": [
+        "ai-agents",
+        "ai-coding",
+        "claude-code",
+        "cli",
+        "code-context",
+        "code-graph",
+        "code-intelligence",
+        "code-map",
+        "coding-agent",
+        "context-engineering",
+        "dependency-graph",
+        "developer-tools",
+        "javascript",
+        "mcp",
+        "mcp-server",
+        "pagerank",
+        "repo-map",
+        "static-analysis",
+        "ts-morph",
+        "typescript"
+      ],
+      "archived": false,
+      "pushedAt": "2026-10-17T09:32:45Z",
+      "createdAt": "2026-06-13T11:29:36Z"
+    },
+    {
       "slug": "dayartcrew-web/masday-workflow-rust",
       "fullName": "dayartcrew-web/masday-workflow-rust",
       "name": "masday-workflow-rust",
@@ -2038,14 +2099,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-10-22T22:11:43.585Z"
+      "syncedAt": "2026-10-23T18:06:40.023Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-10-22T22:11:43.585Z"
+      "syncedAt": "2026-10-23T18:06:40.023Z"
     }
   ],
-  "syncedAt": "2026-10-22T22:11:43.585Z",
-  "count": 76
+  "syncedAt": "2026-10-23T18:06:40.023Z",
+  "count": 78
 }

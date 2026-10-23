@@ -14,7 +14,6 @@ export function getListItems(): ProviderListItem[] {
   return (_listItems ??= providers.map((p) => ({
     slug: p.slug,
     name: p.name,
-    url: p.url,
     logo: p.logo,
     flag: p.flag,
     category: p.category,

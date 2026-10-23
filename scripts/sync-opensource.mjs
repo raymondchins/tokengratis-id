@@ -25,6 +25,10 @@ const REPOS_URL =
 
 const GH_API_BASE = "https://api.github.com/repos";
 
+// Repo tambahan di luar kurasi awesome-indonesia (proyek Indonesia yang belum
+// masuk list upstream). Metadata tetap 100% dari GitHub API.
+const EXTRA_REPOS = ["raymondchins/Bridgeplay"];
+
 // Bounded concurrency: turunkan request rate ke GitHub API biar ga kena secondary
 // rate-limit. 6-8 concurrent requests = sweet spot untuk 39 repos.
 const CONCURRENCY = 7;
@@ -167,6 +171,8 @@ async function main() {
     process.exit(1);
   }
   console.log(`  ✓ ${slugs.length} slug didapat dari IndopenSource/awesome-indonesia`);
+  const known = new Set(slugs.map((x) => String(x).toLowerCase()));
+  slugs = [...slugs, ...EXTRA_REPOS.filter((x) => !known.has(x.toLowerCase()))];
 
   // 2. Fetch semua repo dari GitHub API (bounded concurrency = CONCURRENCY)
   const headers = makeHeaders();
