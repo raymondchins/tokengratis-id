@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js: The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
-      "stars": 10206,
+      "stars": 10207,
       "forks": 1213,
       "openIssues": 17,
       "license": "AGPL-3.0",
@@ -68,7 +68,7 @@
       "language": "PHP",
       "stars": 1367,
       "forks": 307,
-      "openIssues": 54,
+      "openIssues": 55,
       "license": "GPL-2.0",
       "topics": [
         "blog",
@@ -97,7 +97,7 @@
       "language": "PHP",
       "stars": 1230,
       "forks": 1197,
-      "openIssues": 326,
+      "openIssues": 327,
       "license": null,
       "topics": [
         "opensid",
@@ -118,8 +118,8 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1049,
-      "forks": 308,
+      "stars": 1052,
+      "forks": 309,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -166,6 +166,26 @@
       "createdAt": "2016-07-15T09:39:20Z"
     },
     {
+      "slug": "raymondchins/bridgeplay",
+      "fullName": "raymondchins/Bridgeplay",
+      "name": "Bridgeplay",
+      "owner": "raymondchins",
+      "ownerUrl": "https://github.com/raymondchins",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
+      "url": "https://github.com/raymondchins/Bridgeplay",
+      "homepage": "https://bridgeplay.dev",
+      "description": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit",
+      "language": "Scala",
+      "stars": 423,
+      "forks": 58,
+      "openIssues": 11,
+      "license": "GPL-3.0",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-10-24T17:49:00Z",
+      "createdAt": "2026-10-20T03:13:58Z"
+    },
+    {
       "slug": "rayasabari/joko-ui",
       "fullName": "rayasabari/joko-ui",
       "name": "joko-ui",
@@ -176,7 +196,7 @@
       "homepage": "https://jokoui.web.id",
       "description": "Free Open Source Tailwind CSS Component for Sat-set Developers with Zero Configuration, Installation, and Setup",
       "language": "TypeScript",
-      "stars": 418,
+      "stars": 419,
       "forks": 28,
       "openIssues": 10,
       "license": "MIT",
@@ -191,47 +211,6 @@
       "archived": false,
       "pushedAt": "2026-06-06T06:51:25Z",
       "createdAt": "2026-01-04T12:18:23Z"
-    },
-    {
-      "slug": "fajarhide/omni",
-      "fullName": "fajarhide/omni",
-      "name": "omni",
-      "owner": "fajarhide",
-      "ownerUrl": "https://github.com/fajarhide",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/4769529?v=4",
-      "url": "https://github.com/fajarhide/omni",
-      "homepage": "https://omni.weekndlabs.com/docs",
-      "description": "Your agent pays twice for output it has already seen. OMNI returns a handle instead: 97.2% off a file read twice. Nothing deleted, nothing invented.",
-      "language": "Rust",
-      "stars": 370,
-      "forks": 35,
-      "openIssues": 25,
-      "license": "Apache-2.0",
-      "topics": [
-        "agentic-ai",
-        "ai-agents",
-        "antigravity",
-        "claude-code",
-        "cli",
-        "context-compression",
-        "context-distillation",
-        "context-engineering",
-        "cost-reduction",
-        "cursor",
-        "developer-tools",
-        "homebrew",
-        "hooks",
-        "llm",
-        "mcp",
-        "memory",
-        "prompt-caching",
-        "rust",
-        "token-efficiency",
-        "token-optimization"
-      ],
-      "archived": false,
-      "pushedAt": "2026-10-23T02:35:11Z",
-      "createdAt": "2026-03-15T03:38:04Z"
     },
     {
       "slug": "drenzzz/adbkit",
@@ -262,24 +241,45 @@
       "createdAt": "2025-11-04T15:37:00Z"
     },
     {
-      "slug": "raymondchins/bridgeplay",
-      "fullName": "raymondchins/Bridgeplay",
-      "name": "Bridgeplay",
-      "owner": "raymondchins",
-      "ownerUrl": "https://github.com/raymondchins",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
-      "url": "https://github.com/raymondchins/Bridgeplay",
-      "homepage": "https://bridgeplay.dev",
-      "description": "Windows Steam games on Apple Silicon Macs, installed in one click",
-      "language": "Scala",
-      "stars": 292,
-      "forks": 21,
-      "openIssues": 3,
-      "license": "GPL-3.0",
-      "topics": [],
+      "slug": "fajarhide/omni",
+      "fullName": "fajarhide/omni",
+      "name": "omni",
+      "owner": "fajarhide",
+      "ownerUrl": "https://github.com/fajarhide",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/4769529?v=4",
+      "url": "https://github.com/fajarhide/omni",
+      "homepage": "https://omni.weekndlabs.com/docs",
+      "description": "Your agent pays twice for output it has already seen. OMNI returns a handle instead: 97.2% off a file read twice. Nothing deleted, nothing invented.",
+      "language": "Rust",
+      "stars": 366,
+      "forks": 35,
+      "openIssues": 25,
+      "license": "Apache-2.0",
+      "topics": [
+        "agentic-ai",
+        "ai-agents",
+        "antigravity",
+        "claude-code",
+        "cli",
+        "context-compression",
+        "context-distillation",
+        "context-engineering",
+        "cost-reduction",
+        "cursor",
+        "developer-tools",
+        "homebrew",
+        "hooks",
+        "llm",
+        "mcp",
+        "memory",
+        "prompt-caching",
+        "rust",
+        "token-efficiency",
+        "token-optimization"
+      ],
       "archived": false,
-      "pushedAt": "2026-10-23T17:43:19Z",
-      "createdAt": "2026-10-20T03:13:58Z"
+      "pushedAt": "2026-10-23T02:35:11Z",
+      "createdAt": "2026-03-15T03:38:04Z"
     },
     {
       "slug": "gnoviawan/termul",
@@ -292,9 +292,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 285,
-      "forks": 56,
-      "openIssues": 75,
+      "stars": 287,
+      "forks": 57,
+      "openIssues": 73,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -312,7 +312,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-10-23T17:50:18Z",
+      "pushedAt": "2026-10-24T21:00:41Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -326,7 +326,7 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 275,
+      "stars": 276,
       "forks": 31,
       "openIssues": 28,
       "license": "Apache-2.0",
@@ -455,7 +455,7 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 153,
+      "stars": 154,
       "forks": 52,
       "openIssues": 11,
       "license": "MIT",
@@ -548,6 +548,45 @@
       "createdAt": "2021-04-21T07:59:57Z"
     },
     {
+      "slug": "rahmanef63/mso",
+      "fullName": "rahmanef63/mso",
+      "name": "mso",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/mso",
+      "homepage": "https://mso.rahmanef.com",
+      "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
+      "language": "TypeScript",
+      "stars": 99,
+      "forks": 15,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "browser-shell",
+        "control-plane",
+        "file-manager",
+        "homelab",
+        "mobile-first",
+        "nextjs",
+        "pty",
+        "react",
+        "self-hosted",
+        "server-management",
+        "shadcn-ui",
+        "sysadmin",
+        "tailwindcss",
+        "terminal",
+        "typescript",
+        "vps",
+        "web-desktop",
+        "web-terminal"
+      ],
+      "archived": false,
+      "pushedAt": "2026-10-24T13:42:48Z",
+      "createdAt": "2026-05-29T17:44:06Z"
+    },
+    {
       "slug": "depapp/indogithubers",
       "fullName": "depapp/IndoGitHubers",
       "name": "IndoGitHubers",
@@ -601,45 +640,6 @@
       "createdAt": "2026-03-17T12:55:21Z"
     },
     {
-      "slug": "rahmanef63/mso",
-      "fullName": "rahmanef63/mso",
-      "name": "mso",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/mso",
-      "homepage": "https://mso.rahmanef.com",
-      "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
-      "language": "TypeScript",
-      "stars": 95,
-      "forks": 15,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "browser-shell",
-        "control-plane",
-        "file-manager",
-        "homelab",
-        "mobile-first",
-        "nextjs",
-        "pty",
-        "react",
-        "self-hosted",
-        "server-management",
-        "shadcn-ui",
-        "sysadmin",
-        "tailwindcss",
-        "terminal",
-        "typescript",
-        "vps",
-        "web-desktop",
-        "web-terminal"
-      ],
-      "archived": false,
-      "pushedAt": "2026-10-23T12:27:05Z",
-      "createdAt": "2026-05-29T17:44:06Z"
-    },
-    {
       "slug": "njinlabs/njinattend-backend",
       "fullName": "njinlabs/njinattend-backend",
       "name": "njinattend-backend",
@@ -651,7 +651,7 @@
       "description": "The backend of NjinAttend is built using AdonisJS.",
       "language": "TypeScript",
       "stars": 72,
-      "forks": 20,
+      "forks": 19,
       "openIssues": 0,
       "license": null,
       "topics": [],
@@ -701,13 +701,13 @@
       "homepage": null,
       "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
       "language": "TypeScript",
-      "stars": 57,
+      "stars": 58,
       "forks": 7,
       "openIssues": 0,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-23T14:51:15Z",
+      "pushedAt": "2026-10-24T17:57:12Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -747,7 +747,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-23T01:52:28Z",
+      "pushedAt": "2026-10-24T10:47:57Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -802,7 +802,7 @@
       "description": "AndKasir merupakan aplikasi open source yang dibangun dengan bahasa pemrograman Java untuk kebutuhan retail perusahaan menengah dalam mengatur aktifitas barang masuk dan keluar. konsultasi isu, instalasi dan penambahan fitur silahkan kirim email ke irwan@andriawan.com",
       "language": "Java",
       "stars": 50,
-      "forks": 42,
+      "forks": 41,
       "openIssues": 2,
       "license": "GPL-3.0",
       "topics": [
@@ -827,7 +827,7 @@
       "language": "Rust",
       "stars": 49,
       "forks": 16,
-      "openIssues": 4,
+      "openIssues": 0,
       "license": null,
       "topics": [
         "android",
@@ -840,7 +840,7 @@
         "windows"
       ],
       "archived": false,
-      "pushedAt": "2026-10-22T05:45:34Z",
+      "pushedAt": "2026-10-24T06:31:41Z",
       "createdAt": "2026-05-23T05:37:35Z"
     },
     {
@@ -914,7 +914,7 @@
       "language": null,
       "stars": 41,
       "forks": 5,
-      "openIssues": 19,
+      "openIssues": 20,
       "license": "MIT",
       "topics": [
         "adblock",
@@ -1049,7 +1049,7 @@
         "omarchy"
       ],
       "archived": false,
-      "pushedAt": "2026-10-23T14:30:58Z",
+      "pushedAt": "2026-10-24T10:41:45Z",
       "createdAt": "2025-10-04T10:27:45Z"
     },
     {
@@ -1135,7 +1135,7 @@
       "language": "JavaScript",
       "stars": 20,
       "forks": 1,
-      "openIssues": 0,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "antigravity",
@@ -1153,7 +1153,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-10-22T12:17:03Z",
+      "pushedAt": "2026-10-24T00:12:49Z",
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
@@ -1282,6 +1282,26 @@
       "createdAt": "2026-06-15T14:35:14Z"
     },
     {
+      "slug": "raymondchins/tokengratis-id",
+      "fullName": "raymondchins/tokengratis-id",
+      "name": "tokengratis-id",
+      "owner": "raymondchins",
+      "ownerUrl": "https://github.com/raymondchins",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
+      "url": "https://github.com/raymondchins/tokengratis-id",
+      "homepage": "https://tokengratis.id",
+      "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
+      "language": "JavaScript",
+      "stars": 13,
+      "forks": 1,
+      "openIssues": 2,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-10-23T21:55:46Z",
+      "createdAt": "2026-06-01T10:04:41Z"
+    },
+    {
       "slug": "rahmanef63/si-coder-agent",
       "fullName": "rahmanef63/si-coder-agent",
       "name": "si-coder-agent",
@@ -1344,26 +1364,6 @@
       "archived": false,
       "pushedAt": "2026-06-16T16:14:20Z",
       "createdAt": "2026-03-12T09:55:51Z"
-    },
-    {
-      "slug": "raymondchins/tokengratis-id",
-      "fullName": "raymondchins/tokengratis-id",
-      "name": "tokengratis-id",
-      "owner": "raymondchins",
-      "ownerUrl": "https://github.com/raymondchins",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
-      "url": "https://github.com/raymondchins/tokengratis-id",
-      "homepage": "https://tokengratis.id",
-      "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
-      "language": "JavaScript",
-      "stars": 12,
-      "forks": 1,
-      "openIssues": 2,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-10-23T18:08:47Z",
-      "createdAt": "2026-06-01T10:04:41Z"
     },
     {
       "slug": "hellodit/openmasjid",
@@ -1444,7 +1444,7 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 56,
+      "openIssues": 52,
       "license": "Apache-2.0",
       "topics": [
         "linux",
@@ -1462,7 +1462,7 @@
         "system-programming-control-systems"
       ],
       "archived": false,
-      "pushedAt": "2026-10-23T17:52:42Z",
+      "pushedAt": "2026-10-24T19:47:15Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1734,7 +1734,7 @@
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-23T01:26:16Z",
+      "pushedAt": "2026-10-24T00:40:25Z",
       "createdAt": "2026-06-13T11:24:30Z"
     },
     {
@@ -2058,14 +2058,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-10-23T21:55:34.636Z"
+      "syncedAt": "2026-10-24T21:26:31.563Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-10-23T21:55:34.636Z"
+      "syncedAt": "2026-10-24T21:26:31.563Z"
     }
   ],
-  "syncedAt": "2026-10-23T21:55:34.636Z",
+  "syncedAt": "2026-10-24T21:26:31.563Z",
   "count": 77
 }

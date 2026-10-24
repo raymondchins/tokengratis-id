@@ -1,5 +1,35 @@
 [
   {
+    "date": "2026-10-24",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Kilo Code",
+        "added": [],
+        "removed": [
+          "inclusionai/ling-3.0-flash-sante:free",
+          "qwen/qwen3.8-27b:free",
+          "stepfun/step-3.7-flash:free"
+        ]
+      },
+      {
+        "provider": "LLM7.io",
+        "added": [],
+        "removed": [
+          "Nemotron 3 Nano 30B A3B"
+        ]
+      },
+      {
+        "provider": "SiliconFlow",
+        "added": [],
+        "removed": [
+          "Qwen/Qwen3-8B"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-10-23",
     "providersAdded": [
       {
@@ -2112,30 +2142,6 @@
           "Dots Studio: Dots3-Note Preview (free)"
         ],
         "removed": []
-      }
-    ]
-  },
-  {
-    "date": "2026-08-14",
-    "providersAdded": [],
-    "providersRemoved": [],
-    "models": [
-      {
-        "provider": "NVIDIA NIM",
-        "added": [
-          "Muse Glimmer 30B",
-          "nvidia/nemotron-3.5-lightning-30b-a3b"
-        ],
-        "removed": []
-      },
-      {
-        "provider": "OpenCode Zen",
-        "added": [
-          "Nemotron 3.5 Lightning 30B A3B"
-        ],
-        "removed": [
-          "ling-3.0-tiny-free"
-        ]
       }
     ]
   }
