@@ -1,5 +1,95 @@
 [
   {
+    "date": "2026-10-25",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cloudflare Workers AI",
+        "added": [],
+        "removed": [
+          "Mistral 7B",
+          "Qwen 1.5 7B"
+        ]
+      },
+      {
+        "provider": "Google Gemini",
+        "added": [
+          "Gemini 2.5 Pro"
+        ],
+        "removed": [
+          "Gemini 2.5 Pro"
+        ]
+      },
+      {
+        "provider": "Groq",
+        "added": [
+          "meta-llama/llama-prompt-guard-2-22m",
+          "meta-llama/llama-prompt-guard-2-86m"
+        ],
+        "removed": [
+          "Moonshot Kimi K2",
+          "Moonshot Kimi K2 0905"
+        ]
+      },
+      {
+        "provider": "Kilo Code",
+        "added": [
+          "apodex/apodex-1.1-mini:free",
+          "inclusionai/ling-3.1-flash",
+          "nvidia/nemotron-3-super-120b-a12b:free",
+          "tencent/hy3:free"
+        ],
+        "removed": [
+          "apodex/apodex-1.1-mini:free",
+          "inclusionai/ling-3.1-flash",
+          "nvidia/nemotron-3-super-120b-a12b:free",
+          "tencent/hy3:free"
+        ]
+      },
+      {
+        "provider": "LLM7.io",
+        "added": [
+          "Nemotron 3 Nano 30B A3B"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "NVIDIA NIM",
+        "added": [
+          "Nemotron 3 Super 120B A12B",
+          "mistralai/mistral-large-2-instruct",
+          "nvidia/llama-3.1-nemotron-ultra-253b-v1",
+          "nvidia/nemotron-3.5-bolt-e4b"
+        ],
+        "removed": [
+          "nvidia/nemotron-3-super-120b-a12b",
+          "mistralai/mistral-large-2-instruct",
+          "nvidia/llama-3.1-nemotron-ultra-253b-v1"
+        ]
+      },
+      {
+        "provider": "Ollama Cloud",
+        "added": [],
+        "removed": [
+          "deepseek-v4-flash",
+          "kimi-k3",
+          "mistral-large-3:675b",
+          "qwen3.5:397b"
+        ]
+      },
+      {
+        "provider": "OVHcloud AI Endpoints",
+        "added": [
+          "Qwen3-32B"
+        ],
+        "removed": [
+          "Qwen3-32B"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-10-24",
     "providersAdded": [],
     "providersRemoved": [],
@@ -2121,25 +2211,6 @@
         "provider": "LLM7.io",
         "added": [
           "DeepSeek V4 Flash 0731"
-        ],
-        "removed": []
-      }
-    ]
-  },
-  {
-    "date": "2026-08-15",
-    "providersAdded": [
-      {
-        "slug": "cline",
-        "name": "Cline"
-      }
-    ],
-    "providersRemoved": [],
-    "models": [
-      {
-        "provider": "OpenRouter",
-        "added": [
-          "Dots Studio: Dots3-Note Preview (free)"
         ],
         "removed": []
       }

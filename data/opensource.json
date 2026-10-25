@@ -156,7 +156,7 @@
       "homepage": null,
       "description": "Package Laravel yang berisi data Provinsi, Kabupaten/Kota, dan Kecamatan/Desa di seluruh Indonesia.",
       "language": "PHP",
-      "stars": 680,
+      "stars": 681,
       "forks": 210,
       "openIssues": 5,
       "license": "MIT",
@@ -176,13 +176,13 @@
       "homepage": "https://bridgeplay.dev",
       "description": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit",
       "language": "Scala",
-      "stars": 423,
-      "forks": 58,
-      "openIssues": 11,
+      "stars": 499,
+      "forks": 91,
+      "openIssues": 17,
       "license": "GPL-3.0",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-24T17:49:00Z",
+      "pushedAt": "2026-10-25T09:13:34Z",
       "createdAt": "2026-10-20T03:13:58Z"
     },
     {
@@ -237,7 +237,7 @@
         "wails-app"
       ],
       "archived": false,
-      "pushedAt": "2026-10-22T04:28:20Z",
+      "pushedAt": "2026-10-25T10:22:40Z",
       "createdAt": "2025-11-04T15:37:00Z"
     },
     {
@@ -251,7 +251,7 @@
       "homepage": "https://omni.weekndlabs.com/docs",
       "description": "Your agent pays twice for output it has already seen. OMNI returns a handle instead: 97.2% off a file read twice. Nothing deleted, nothing invented.",
       "language": "Rust",
-      "stars": 366,
+      "stars": 367,
       "forks": 35,
       "openIssues": 25,
       "license": "Apache-2.0",
@@ -292,9 +292,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 287,
+      "stars": 288,
       "forks": 57,
-      "openIssues": 73,
+      "openIssues": 75,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -312,7 +312,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-10-24T21:00:41Z",
+      "pushedAt": "2026-10-25T20:35:45Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -385,7 +385,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-10-22T14:44:39Z",
+      "pushedAt": "2026-10-25T13:13:42Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -441,7 +441,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-10-09T06:12:02Z",
+      "pushedAt": "2026-10-25T16:43:24Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -494,8 +494,8 @@
       "homepage": null,
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
-      "stars": 143,
-      "forks": 75,
+      "stars": 144,
+      "forks": 74,
       "openIssues": 12,
       "license": "MIT",
       "topics": [],
@@ -534,7 +534,7 @@
       "homepage": "https://pddikti.kemdiktisaintek.go.id/",
       "description": "Unofficial Python 3 API wrapper to retrieve data from PDDIKTI Kemdikbudristek.",
       "language": "Python",
-      "stars": 127,
+      "stars": 128,
       "forks": 29,
       "openIssues": 0,
       "license": null,
@@ -558,9 +558,9 @@
       "homepage": "https://mso.rahmanef.com",
       "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
-      "stars": 99,
-      "forks": 15,
-      "openIssues": 0,
+      "stars": 100,
+      "forks": 16,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "browser-shell",
@@ -583,7 +583,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-10-24T13:42:48Z",
+      "pushedAt": "2026-10-25T12:50:41Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -707,7 +707,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-24T17:57:12Z",
+      "pushedAt": "2026-10-24T22:40:00Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -743,12 +743,41 @@
       "language": "Ruby",
       "stars": 52,
       "forks": 5,
-      "openIssues": 0,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-24T10:47:57Z",
+      "pushedAt": "2026-10-25T15:39:43Z",
       "createdAt": "2026-05-23T01:58:17Z"
+    },
+    {
+      "slug": "ardli-firman/sha-print",
+      "fullName": "ardli-firman/sha-print",
+      "name": "sha-print",
+      "owner": "ardli-firman",
+      "ownerUrl": "https://github.com/ardli-firman",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/48121202?v=4",
+      "url": "https://github.com/ardli-firman/sha-print",
+      "homepage": null,
+      "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
+      "language": "Rust",
+      "stars": 50,
+      "forks": 16,
+      "openIssues": 0,
+      "license": null,
+      "topics": [
+        "android",
+        "desktop-app",
+        "linux",
+        "linux-desktop",
+        "printer",
+        "sharing",
+        "sharing-printer",
+        "windows"
+      ],
+      "archived": false,
+      "pushedAt": "2026-10-24T06:31:41Z",
+      "createdAt": "2026-05-23T05:37:35Z"
     },
     {
       "slug": "mmenghancurkan/dynaqris",
@@ -813,35 +842,6 @@
       "archived": false,
       "pushedAt": "2026-01-16T15:24:01Z",
       "createdAt": "2017-05-22T15:52:00Z"
-    },
-    {
-      "slug": "ardli-firman/sha-print",
-      "fullName": "ardli-firman/sha-print",
-      "name": "sha-print",
-      "owner": "ardli-firman",
-      "ownerUrl": "https://github.com/ardli-firman",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/48121202?v=4",
-      "url": "https://github.com/ardli-firman/sha-print",
-      "homepage": null,
-      "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
-      "language": "Rust",
-      "stars": 49,
-      "forks": 16,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "android",
-        "desktop-app",
-        "linux",
-        "linux-desktop",
-        "printer",
-        "sharing",
-        "sharing-printer",
-        "windows"
-      ],
-      "archived": false,
-      "pushedAt": "2026-10-24T06:31:41Z",
-      "createdAt": "2026-05-23T05:37:35Z"
     },
     {
       "slug": "abilfida/omnidrive",
@@ -992,6 +992,33 @@
       "createdAt": "2026-06-05T18:22:55Z"
     },
     {
+      "slug": "rizukirr/hyprsimple",
+      "fullName": "rizukirr/hyprsimple",
+      "name": "hyprsimple",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/hyprsimple",
+      "homepage": null,
+      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
+      "language": "Shell",
+      "stars": 34,
+      "forks": 4,
+      "openIssues": 0,
+      "license": null,
+      "topics": [
+        "arch-linux",
+        "dotfiles",
+        "hyprland",
+        "hyprland-config",
+        "linux",
+        "omarchy"
+      ],
+      "archived": false,
+      "pushedAt": "2026-10-24T10:41:45Z",
+      "createdAt": "2025-10-04T10:27:45Z"
+    },
+    {
       "slug": "rahmanef63/open-silong",
       "fullName": "rahmanef63/open-silong",
       "name": "open-silong",
@@ -1024,33 +1051,6 @@
       "archived": false,
       "pushedAt": "2026-09-09T13:37:34Z",
       "createdAt": "2026-04-29T18:48:11Z"
-    },
-    {
-      "slug": "rizukirr/hyprsimple",
-      "fullName": "rizukirr/hyprsimple",
-      "name": "hyprsimple",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/hyprsimple",
-      "homepage": null,
-      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
-      "language": "Shell",
-      "stars": 33,
-      "forks": 4,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "arch-linux",
-        "dotfiles",
-        "hyprland",
-        "hyprland-config",
-        "linux",
-        "omarchy"
-      ],
-      "archived": false,
-      "pushedAt": "2026-10-24T10:41:45Z",
-      "createdAt": "2025-10-04T10:27:45Z"
     },
     {
       "slug": "pendig/rute-bayar",
@@ -1135,7 +1135,7 @@
       "language": "JavaScript",
       "stars": 20,
       "forks": 1,
-      "openIssues": 1,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [
         "antigravity",
@@ -1153,8 +1153,28 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-10-24T00:12:49Z",
+      "pushedAt": "2026-10-25T15:58:20Z",
       "createdAt": "2026-04-21T15:17:02Z"
+    },
+    {
+      "slug": "raymondchins/tokengratis-id",
+      "fullName": "raymondchins/tokengratis-id",
+      "name": "tokengratis-id",
+      "owner": "raymondchins",
+      "ownerUrl": "https://github.com/raymondchins",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
+      "url": "https://github.com/raymondchins/tokengratis-id",
+      "homepage": "https://tokengratis.id",
+      "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
+      "language": "JavaScript",
+      "stars": 20,
+      "forks": 2,
+      "openIssues": 2,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-10-24T21:26:43Z",
+      "createdAt": "2026-06-01T10:04:41Z"
     },
     {
       "slug": "rayasabari/yntk-ts",
@@ -1282,26 +1302,6 @@
       "createdAt": "2026-06-15T14:35:14Z"
     },
     {
-      "slug": "raymondchins/tokengratis-id",
-      "fullName": "raymondchins/tokengratis-id",
-      "name": "tokengratis-id",
-      "owner": "raymondchins",
-      "ownerUrl": "https://github.com/raymondchins",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
-      "url": "https://github.com/raymondchins/tokengratis-id",
-      "homepage": "https://tokengratis.id",
-      "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
-      "language": "JavaScript",
-      "stars": 13,
-      "forks": 1,
-      "openIssues": 2,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-10-23T21:55:46Z",
-      "createdAt": "2026-06-01T10:04:41Z"
-    },
-    {
       "slug": "rahmanef63/si-coder-agent",
       "fullName": "rahmanef63/si-coder-agent",
       "name": "si-coder-agent",
@@ -1366,26 +1366,6 @@
       "createdAt": "2026-03-12T09:55:51Z"
     },
     {
-      "slug": "hellodit/openmasjid",
-      "fullName": "hellodit/OpenMasjid",
-      "name": "OpenMasjid",
-      "owner": "hellodit",
-      "ownerUrl": "https://github.com/hellodit",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/32544683?v=4",
-      "url": "https://github.com/hellodit/OpenMasjid",
-      "homepage": null,
-      "description": null,
-      "language": "Vue",
-      "stars": 12,
-      "forks": 0,
-      "openIssues": 0,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-10-15T04:18:12Z",
-      "createdAt": "2026-05-16T04:31:37Z"
-    },
-    {
       "slug": "semutdev/goigniter",
       "fullName": "semutdev/goigniter",
       "name": "goigniter",
@@ -1408,8 +1388,28 @@
         "golang"
       ],
       "archived": false,
-      "pushedAt": "2026-10-09T02:37:21Z",
+      "pushedAt": "2026-10-25T10:25:34Z",
       "createdAt": "2026-01-11T03:16:04Z"
+    },
+    {
+      "slug": "hellodit/openmasjid",
+      "fullName": "hellodit/OpenMasjid",
+      "name": "OpenMasjid",
+      "owner": "hellodit",
+      "ownerUrl": "https://github.com/hellodit",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/32544683?v=4",
+      "url": "https://github.com/hellodit/OpenMasjid",
+      "homepage": null,
+      "description": null,
+      "language": "Vue",
+      "stars": 12,
+      "forks": 0,
+      "openIssues": 0,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-10-15T04:18:12Z",
+      "createdAt": "2026-05-16T04:31:37Z"
     },
     {
       "slug": "ahmadghaisanfad2/absen-kelas",
@@ -1444,7 +1444,7 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 52,
+      "openIssues": 57,
       "license": "Apache-2.0",
       "topics": [
         "linux",
@@ -1462,7 +1462,7 @@
         "system-programming-control-systems"
       ],
       "archived": false,
-      "pushedAt": "2026-10-24T19:47:15Z",
+      "pushedAt": "2026-10-25T18:01:51Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -2058,14 +2058,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-10-24T21:26:31.563Z"
+      "syncedAt": "2026-10-25T21:32:10.223Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-10-24T21:26:31.563Z"
+      "syncedAt": "2026-10-25T21:32:10.223Z"
     }
   ],
-  "syncedAt": "2026-10-24T21:26:31.563Z",
+  "syncedAt": "2026-10-25T21:32:10.223Z",
   "count": 77
 }
