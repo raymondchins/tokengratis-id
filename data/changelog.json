@@ -1,5 +1,70 @@
 [
   {
+    "date": "2026-10-26",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cloudflare Workers AI",
+        "added": [
+          "Mistral 7B",
+          "Qwen 1.5 7B"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "Google Gemini",
+        "added": [
+          "Gemini 3.5 Flash",
+          "Gemini 3.7 Flash"
+        ],
+        "removed": [
+          "Gemini 3.5 Flash",
+          "Gemini 3.7 Flash"
+        ]
+      },
+      {
+        "provider": "Groq",
+        "added": [
+          "Moonshot Kimi K2",
+          "Moonshot Kimi K2 0905"
+        ],
+        "removed": [
+          "meta-llama/llama-prompt-guard-2-22m",
+          "meta-llama/llama-prompt-guard-2-86m"
+        ]
+      },
+      {
+        "provider": "Kilo Code",
+        "added": [
+          "nvidia/nemotron-3-super-120b-a12b:free",
+          "stealth/glyph-cluster",
+          "nvidia/nemotron-3.5-content-safety:free"
+        ],
+        "removed": [
+          "apodex/apodex-1.1-mini:free",
+          "inclusionai/ling-3.1-flash",
+          "nvidia/nemotron-3-super-120b-a12b:free",
+          "tencent/hy3:free"
+        ]
+      },
+      {
+        "provider": "LLM7.io",
+        "added": [],
+        "removed": [
+          "Nemotron 3 Nano 30B A3B"
+        ]
+      },
+      {
+        "provider": "OVHcloud AI Endpoints",
+        "added": [],
+        "removed": [
+          "Qwen3-32B"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-10-25",
     "providersAdded": [],
     "providersRemoved": [],
@@ -2166,51 +2231,6 @@
         "provider": "OpenRouter",
         "added": [
           "Z.ai: GLM 5.2 (free)"
-        ],
-        "removed": []
-      }
-    ]
-  },
-  {
-    "date": "2026-08-16",
-    "providersAdded": [],
-    "providersRemoved": [],
-    "models": [
-      {
-        "provider": "Cerebras",
-        "added": [],
-        "removed": [
-          "Llama 3.1 70B"
-        ]
-      },
-      {
-        "provider": "Cloudflare Workers AI",
-        "added": [],
-        "removed": [
-          "Mistral 7B",
-          "Qwen 1.5 7B"
-        ]
-      },
-      {
-        "provider": "Google Gemini",
-        "added": [
-          "Gemini 3.7 Flash",
-          "gemini-3.7-flash-video-understanding-eap"
-        ],
-        "removed": []
-      },
-      {
-        "provider": "Groq",
-        "added": [],
-        "removed": [
-          "Moonshot Kimi K2",
-          "Moonshot Kimi K2 0905"
-        ]
-      },
-      {
-        "provider": "LLM7.io",
-        "added": [
-          "DeepSeek V4 Flash 0731"
         ],
         "removed": []
       }

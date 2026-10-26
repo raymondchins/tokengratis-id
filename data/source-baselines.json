@@ -1,17 +1,17 @@
 {
   "mnfst/awesome-free-llm-apis": {
     "providers": 16,
-    "models": 102,
-    "updatedAt": "2026-10-25T21:32:05.712Z"
+    "models": 106,
+    "updatedAt": "2026-10-26T23:03:44.792Z"
   },
   "freellm.net": {
     "providers": 23,
-    "models": 309,
-    "updatedAt": "2026-10-25T21:32:05.712Z"
+    "models": 300,
+    "updatedAt": "2026-10-26T23:03:44.792Z"
   },
   "openrouter.ai/api/v1/models": {
     "providers": 1,
     "models": 17,
-    "updatedAt": "2026-10-25T21:32:05.712Z"
+    "updatedAt": "2026-10-26T23:03:44.792Z"
   }
 }

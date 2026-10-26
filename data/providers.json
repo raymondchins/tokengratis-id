@@ -65,15 +65,15 @@
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-10-25T21:32:03.971Z"
+        "syncedAt": "2026-10-26T23:03:43.088Z"
       },
       {
         "name": "models.dev",
         "url": "https://models.dev",
-        "syncedAt": "2026-10-25T21:32:03.994Z"
+        "syncedAt": "2026-10-26T23:03:43.120Z"
       }
     ],
-    "syncedAt": "2026-10-25T21:32:03.971Z",
+    "syncedAt": "2026-10-26T23:03:43.088Z",
     "sourceUpdatedAt": null
   },
   {
@@ -132,16 +132,53 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-10-25T21:32:03.887Z"
+        "syncedAt": "2026-10-26T23:03:42.955Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-10-25T21:32:03.971Z"
+        "syncedAt": "2026-10-26T23:03:43.088Z"
       }
     ],
-    "syncedAt": "2026-10-25T21:32:03.971Z",
+    "syncedAt": "2026-10-26T23:03:43.088Z",
     "sourceUpdatedAt": "2026-10-25"
+  },
+  {
+    "slug": "cerebras",
+    "name": "Cerebras",
+    "category": null,
+    "country": null,
+    "flag": null,
+    "domain": null,
+    "logo": null,
+    "url": null,
+    "baseUrl": null,
+    "modalities": [
+      "text"
+    ],
+    "modelCount": 1,
+    "maxContext": "131K",
+    "freeLimit": null,
+    "moreModels": null,
+    "models": [
+      {
+        "id": "llama-3-1-70b",
+        "name": "Llama 3.1 70B",
+        "context": "131K",
+        "maxOutput": null,
+        "modality": "text",
+        "rateLimit": null
+      }
+    ],
+    "sources": [
+      {
+        "name": "freellm.net",
+        "url": "https://freellm.net",
+        "syncedAt": "2026-10-26T23:03:43.088Z"
+      }
+    ],
+    "syncedAt": "2026-10-26T23:03:43.088Z",
+    "sourceUpdatedAt": null
   },
   {
     "slug": "chutes-ai",
@@ -182,10 +219,10 @@
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-10-25T21:32:03.971Z"
+        "syncedAt": "2026-10-26T23:03:43.088Z"
       }
     ],
-    "syncedAt": "2026-10-25T21:32:03.971Z",
+    "syncedAt": "2026-10-26T23:03:43.088Z",
     "sourceUpdatedAt": null
   },
   {
@@ -252,15 +289,15 @@
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-10-25T21:32:03.971Z"
+        "syncedAt": "2026-10-26T23:03:43.088Z"
       },
       {
         "name": "models.dev",
         "url": "https://models.dev",
-        "syncedAt": "2026-10-25T21:32:03.994Z"
+        "syncedAt": "2026-10-26T23:03:43.120Z"
       }
     ],
-    "syncedAt": "2026-10-25T21:32:03.971Z",
+    "syncedAt": "2026-10-26T23:03:43.088Z",
     "sourceUpdatedAt": null
   },
   {
@@ -282,7 +319,7 @@
       "code",
       "embeddings"
     ],
-    "modelCount": 40,
+    "modelCount": 42,
     "maxContext": "262K",
     "freeLimit": "10,000 Neurons/hari",
     "moreModels": "55 more models",
@@ -342,6 +379,22 @@
         "maxOutput": "Shared w/ context",
         "modality": "Text (reasoning)",
         "rateLimit": "10K neurons/day (shared)"
+      },
+      {
+        "id": "mistral-7b",
+        "name": "Mistral 7B",
+        "context": "33K",
+        "maxOutput": null,
+        "modality": "text",
+        "rateLimit": null
+      },
+      {
+        "id": "qwen-1-5-7b",
+        "name": "Qwen 1.5 7B",
+        "context": "33K",
+        "maxOutput": null,
+        "modality": "text",
+        "rateLimit": null
       },
       {
         "id": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
@@ -612,20 +665,20 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-10-25T21:32:03.887Z"
+        "syncedAt": "2026-10-26T23:03:42.955Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-10-25T21:32:03.971Z"
+        "syncedAt": "2026-10-26T23:03:43.088Z"
       },
       {
         "name": "models.dev",
         "url": "https://models.dev",
-        "syncedAt": "2026-10-25T21:32:03.994Z"
+        "syncedAt": "2026-10-26T23:03:43.120Z"
       }
     ],
-    "syncedAt": "2026-10-25T21:32:03.971Z",
+    "syncedAt": "2026-10-26T23:03:43.088Z",
     "sourceUpdatedAt": "2026-10-25"
   },
   {
@@ -733,15 +786,15 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-10-25T21:32:03.887Z"
+        "syncedAt": "2026-10-26T23:03:42.955Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-10-25T21:32:03.971Z"
+        "syncedAt": "2026-10-26T23:03:43.088Z"
       }
     ],
-    "syncedAt": "2026-10-25T21:32:03.971Z",
+    "syncedAt": "2026-10-26T23:03:43.088Z",
     "sourceUpdatedAt": "2026-10-25"
   },
   {
@@ -783,10 +836,10 @@
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-10-25T21:32:03.971Z"
+        "syncedAt": "2026-10-26T23:03:43.088Z"
       }
     ],
-    "syncedAt": "2026-10-25T21:32:03.971Z",
+    "syncedAt": "2026-10-26T23:03:43.088Z",
     "sourceUpdatedAt": null
   },
   {
@@ -828,7 +881,7 @@
       {
         "id": "MiniMaxAI/MiniMax-M2.7",
         "name": "MiniMaxAI/MiniMax-M2.7",
-        "context": "204K",
+        "context": "200K",
         "maxOutput": "16K",
         "modality": "Text (reasoning)",
         "rateLimit": "~1M tokens/month (shared, varies by model)"
@@ -846,20 +899,20 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-10-25T21:32:03.887Z"
+        "syncedAt": "2026-10-26T23:03:42.955Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-10-25T21:32:03.971Z"
+        "syncedAt": "2026-10-26T23:03:43.088Z"
       },
       {
         "name": "models.dev",
         "url": "https://models.dev",
-        "syncedAt": "2026-10-25T21:32:03.994Z"
+        "syncedAt": "2026-10-26T23:03:43.120Z"
       }
     ],
-    "syncedAt": "2026-10-25T21:32:03.971Z",
+    "syncedAt": "2026-10-26T23:03:43.088Z",
     "sourceUpdatedAt": "2026-10-25"
   },
   {
@@ -917,11 +970,11 @@
         "rateLimit": "15 RPM, 500 RPD"
       },
       {
-        "id": "gemini-3.5-flash",
+        "id": "gemini-3-5-flash",
         "name": "Gemini 3.5 Flash",
-        "context": "1M",
-        "maxOutput": "65K",
-        "modality": "Text + Image + Audio + Video",
+        "context": "1.0M",
+        "maxOutput": "64K",
+        "modality": "text + image + video + audio + pdf + reasoning",
         "rateLimit": "15 RPM, 1,500 RPD"
       },
       {
@@ -941,11 +994,11 @@
         "rateLimit": "15 RPM, 1,500 RPD"
       },
       {
-        "id": "gemini-3.7-flash",
+        "id": "gemini-3-7-flash",
         "name": "Gemini 3.7 Flash",
-        "context": "1M",
-        "maxOutput": "65K",
-        "modality": "Text + Image + Audio + Video",
+        "context": "1.0M",
+        "maxOutput": "64K",
+        "modality": "text + image + video + audio + pdf + reasoning",
         "rateLimit": null
       },
       {
@@ -961,7 +1014,7 @@
         "name": "Gemma 4 26B A4B",
         "context": "256K",
         "maxOutput": "32K",
-        "modality": "Text",
+        "modality": "Text + Image",
         "rateLimit": "Varies by model and account"
       },
       {
@@ -969,7 +1022,7 @@
         "name": "Gemma 4 31B",
         "context": "256K",
         "maxOutput": "32K",
-        "modality": "Text",
+        "modality": "Text + Image",
         "rateLimit": "Varies by model and account"
       }
     ],
@@ -977,15 +1030,20 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-10-25T21:32:03.887Z"
+        "syncedAt": "2026-10-26T23:03:42.955Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-10-25T21:32:03.971Z"
+        "syncedAt": "2026-10-26T23:03:43.088Z"
+      },
+      {
+        "name": "models.dev",
+        "url": "https://models.dev",
+        "syncedAt": "2026-10-26T23:03:43.120Z"
       }
     ],
-    "syncedAt": "2026-10-25T21:32:03.971Z",
+    "syncedAt": "2026-10-26T23:03:43.088Z",
     "sourceUpdatedAt": "2026-10-25"
   },
   {
@@ -1001,13 +1059,30 @@
     "description": "Free tier, no credit card. Ultra-fast LPU inference.",
     "modalities": [
       "text",
-      "image"
+      "image",
+      "video"
     ],
     "modelCount": 8,
     "maxContext": "131K",
     "freeLimit": null,
     "moreModels": null,
     "models": [
+      {
+        "id": "moonshot-kimi-k2",
+        "name": "Moonshot Kimi K2",
+        "context": "131K",
+        "maxOutput": null,
+        "modality": "text",
+        "rateLimit": null
+      },
+      {
+        "id": "moonshot-kimi-k2-0905",
+        "name": "Moonshot Kimi K2 0905",
+        "context": "131K",
+        "maxOutput": null,
+        "modality": "text + image + video + reasoning",
+        "rateLimit": null
+      },
       {
         "id": "openai/gpt-oss-120b",
         "name": "openai/gpt-oss-120b",
@@ -1041,22 +1116,6 @@
         "rateLimit": null
       },
       {
-        "id": "meta-llama-llama-prompt-guard-2-22m",
-        "name": "meta-llama/llama-prompt-guard-2-22m",
-        "context": "8K",
-        "maxOutput": null,
-        "modality": null,
-        "rateLimit": null
-      },
-      {
-        "id": "meta-llama-llama-prompt-guard-2-86m",
-        "name": "meta-llama/llama-prompt-guard-2-86m",
-        "context": "8K",
-        "maxOutput": null,
-        "modality": null,
-        "rateLimit": null
-      },
-      {
         "id": "whisper-large-v3",
         "name": "whisper-large-v3",
         "context": null,
@@ -1077,96 +1136,21 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-10-25T21:32:03.887Z"
+        "syncedAt": "2026-10-26T23:03:42.955Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-10-25T21:32:03.971Z"
+        "syncedAt": "2026-10-26T23:03:43.088Z"
       },
       {
         "name": "models.dev",
         "url": "https://models.dev",
-        "syncedAt": "2026-10-25T21:32:03.994Z"
+        "syncedAt": "2026-10-26T23:03:43.120Z"
       }
     ],
-    "syncedAt": "2026-10-25T21:32:03.971Z",
+    "syncedAt": "2026-10-26T23:03:43.088Z",
     "sourceUpdatedAt": "2026-10-25"
-  },
-  {
-    "slug": "hugging-face",
-    "name": "Hugging Face",
-    "category": "inference_provider",
-    "country": "US",
-    "flag": "🇺🇸",
-    "domain": "huggingface.co",
-    "logo": "/logos/hugging-face.png",
-    "url": "https://huggingface.co/settings/tokens",
-    "baseUrl": "https://router.huggingface.co/v1",
-    "description": "$0.10/month in Inference Provider credits for free users (subject to change). Routes to Fireworks, Together, Hyperbolic, Nebius, Novita, DeepInfra and others. Thousands of models.",
-    "modalities": [
-      "text"
-    ],
-    "modelCount": 5,
-    "maxContext": "131K",
-    "freeLimit": "$0.10 kredit",
-    "moreModels": "thousands of community models",
-    "models": [
-      {
-        "id": "google/gemma-3-4b-it",
-        "name": "gemma-3-4b-it",
-        "context": "131K",
-        "maxOutput": "~4K",
-        "modality": "Text",
-        "rateLimit": "Credit-metered"
-      },
-      {
-        "id": "Qwen/Qwen2.5-7B-Instruct",
-        "name": "Qwen2.5-7B-Instruct",
-        "context": "131K",
-        "maxOutput": "~4K",
-        "modality": "Text",
-        "rateLimit": "Credit-metered"
-      },
-      {
-        "id": "Qwen/Qwen2.5-Coder-7B-Instruct",
-        "name": "Qwen2.5-Coder-7B-Instruct",
-        "context": "131K",
-        "maxOutput": "~4K",
-        "modality": "Text",
-        "rateLimit": "Credit-metered"
-      },
-      {
-        "id": "meta-llama/Llama-3.1-8B-Instruct",
-        "name": "Meta-Llama-3.1-8B-Instruct",
-        "context": "128K",
-        "maxOutput": "~4K",
-        "modality": "Text",
-        "rateLimit": "Credit-metered"
-      },
-      {
-        "id": "microsoft/phi-4",
-        "name": "phi-4",
-        "context": "16K",
-        "maxOutput": "~4K",
-        "modality": "Text",
-        "rateLimit": "Credit-metered"
-      }
-    ],
-    "sources": [
-      {
-        "name": "mnfst/awesome-free-llm-apis",
-        "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-10-24T21:26:25.713Z"
-      },
-      {
-        "name": "freellm.net",
-        "url": "https://freellm.net",
-        "syncedAt": "2026-10-24T21:26:25.881Z"
-      }
-    ],
-    "syncedAt": "2026-10-24T21:26:25.881Z",
-    "sourceUpdatedAt": "2026-10-23"
   },
   {
     "slug": "kilo-code",
@@ -1184,7 +1168,7 @@
       "vision",
       "code"
     ],
-    "modelCount": 18,
+    "modelCount": 17,
     "maxContext": "1M",
     "freeLimit": null,
     "moreModels": null,
@@ -1230,27 +1214,11 @@
         "rateLimit": "200 req/hr"
       },
       {
-        "id": "apodex-apodex-1-1-mini-free",
-        "name": "apodex/apodex-1.1-mini:free",
-        "context": "262K",
-        "maxOutput": "256K",
-        "modality": "text + reasoning",
-        "rateLimit": "200 req/hr"
-      },
-      {
-        "id": "inclusionai-ling-3-1-flash",
-        "name": "inclusionai/ling-3.1-flash",
-        "context": "262K",
-        "maxOutput": null,
-        "modality": "text + reasoning",
-        "rateLimit": "200 req/hr"
-      },
-      {
-        "id": "nvidia-nemotron-3-super-120b-a12b-free",
+        "id": "nvidia/nemotron-3-super-120b-a12b:free",
         "name": "nvidia/nemotron-3-super-120b-a12b:free",
         "context": "262K",
-        "maxOutput": null,
-        "modality": "text + reasoning",
+        "maxOutput": "235K",
+        "modality": "Text",
         "rateLimit": "200 req/hr"
       },
       {
@@ -1275,14 +1243,6 @@
         "context": "262K",
         "maxOutput": "235K",
         "modality": "Text (code)",
-        "rateLimit": "200 req/hr"
-      },
-      {
-        "id": "tencent-hy3-free",
-        "name": "tencent/hy3:free",
-        "context": "262K",
-        "maxOutput": null,
-        "modality": "text + reasoning",
         "rateLimit": "200 req/hr"
       },
       {
@@ -1318,6 +1278,22 @@
         "rateLimit": "200 req/hr"
       },
       {
+        "id": "stealth/glyph-cluster",
+        "name": "stealth/glyph-cluster",
+        "context": "256K",
+        "maxOutput": "256K",
+        "modality": "Text (code)",
+        "rateLimit": "200 req/hr"
+      },
+      {
+        "id": "nvidia/nemotron-3.5-content-safety:free",
+        "name": "nvidia/nemotron-3.5-content-safety:free",
+        "context": "128K",
+        "maxOutput": "8K",
+        "modality": "Text + Vision (moderation)",
+        "rateLimit": "200 req/hr"
+      },
+      {
         "id": "liquid/lfm-2.5-2.6b:free",
         "name": "liquid/lfm-2.5-2.6b:free",
         "context": "64K",
@@ -1338,20 +1314,15 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-10-25T21:32:03.887Z"
+        "syncedAt": "2026-10-26T23:03:42.955Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-10-25T21:32:03.971Z"
-      },
-      {
-        "name": "models.dev",
-        "url": "https://models.dev",
-        "syncedAt": "2026-10-25T21:32:03.994Z"
+        "syncedAt": "2026-10-26T23:03:43.088Z"
       }
     ],
-    "syncedAt": "2026-10-25T21:32:03.971Z",
+    "syncedAt": "2026-10-26T23:03:43.088Z",
     "sourceUpdatedAt": "2026-10-25"
   },
   {
@@ -1369,7 +1340,7 @@
       "text",
       "vision"
     ],
-    "modelCount": 10,
+    "modelCount": 9,
     "maxContext": "1M",
     "freeLimit": null,
     "moreModels": null,
@@ -1415,14 +1386,6 @@
         "rateLimit": null
       },
       {
-        "id": "nemotron-3-nano-30b-a3b",
-        "name": "Nemotron 3 Nano 30B A3B",
-        "context": "262K",
-        "maxOutput": null,
-        "modality": "reasoning",
-        "rateLimit": null
-      },
-      {
         "id": "minimax-m2.7",
         "name": "minimax-m2.7",
         "context": "180K",
@@ -1459,20 +1422,20 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-10-25T21:32:03.887Z"
+        "syncedAt": "2026-10-26T23:03:42.955Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-10-25T21:32:03.971Z"
+        "syncedAt": "2026-10-26T23:03:43.088Z"
       },
       {
         "name": "models.dev",
         "url": "https://models.dev",
-        "syncedAt": "2026-10-25T21:32:03.994Z"
+        "syncedAt": "2026-10-26T23:03:43.120Z"
       }
     ],
-    "syncedAt": "2026-10-25T21:32:03.971Z",
+    "syncedAt": "2026-10-26T23:03:43.088Z",
     "sourceUpdatedAt": "2026-10-25"
   },
   {
@@ -1485,7 +1448,7 @@
     "logo": "/logos/mistral-ai.png",
     "url": "https://console.mistral.ai/api-keys",
     "baseUrl": "https://api.mistral.ai/v1",
-    "description": "Free mode, enabled by default, no credit card required. $10/month in API credits, and free-mode prompts may be used to train Mistral models unless you opt out.",
+    "description": "Free mode, enabled by default, no credit card required. Free-mode prompts may be used to train Mistral models unless you opt out.",
     "modalities": [
       "text",
       "vision",
@@ -1494,7 +1457,7 @@
     ],
     "modelCount": 9,
     "maxContext": "256K",
-    "freeLimit": "$10 kredit",
+    "freeLimit": null,
     "moreModels": null,
     "models": [
       {
@@ -1574,20 +1537,20 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-10-25T21:32:03.887Z"
+        "syncedAt": "2026-10-26T23:03:42.955Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-10-25T21:32:03.971Z"
+        "syncedAt": "2026-10-26T23:03:43.088Z"
       },
       {
         "name": "models.dev",
         "url": "https://models.dev",
-        "syncedAt": "2026-10-25T21:32:03.994Z"
+        "syncedAt": "2026-10-26T23:03:43.120Z"
       }
     ],
-    "syncedAt": "2026-10-25T21:32:03.971Z",
+    "syncedAt": "2026-10-26T23:03:43.088Z",
     "sourceUpdatedAt": "2026-10-25"
   },
   {
@@ -1887,20 +1850,20 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-10-25T21:32:03.887Z"
+        "syncedAt": "2026-10-26T23:03:42.955Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-10-25T21:32:03.971Z"
+        "syncedAt": "2026-10-26T23:03:43.088Z"
       },
       {
         "name": "models.dev",
         "url": "https://models.dev",
-        "syncedAt": "2026-10-25T21:32:03.994Z"
+        "syncedAt": "2026-10-26T23:03:43.120Z"
       }
     ],
-    "syncedAt": "2026-10-25T21:32:03.971Z",
+    "syncedAt": "2026-10-26T23:03:43.088Z",
     "sourceUpdatedAt": "2026-10-25"
   },
   {
@@ -1989,7 +1952,7 @@
         "name": "google/gemma-4-31b-it",
         "context": "262K",
         "maxOutput": "8K",
-        "modality": "Text",
+        "modality": "Text + Image + Video",
         "rateLimit": "40 RPM, 10,000 RPD"
       },
       {
@@ -2589,20 +2552,20 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-10-25T21:32:03.887Z"
+        "syncedAt": "2026-10-26T23:03:42.955Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-10-25T21:32:03.971Z"
+        "syncedAt": "2026-10-26T23:03:43.088Z"
       },
       {
         "name": "models.dev",
         "url": "https://models.dev",
-        "syncedAt": "2026-10-25T21:32:03.994Z"
+        "syncedAt": "2026-10-26T23:03:43.120Z"
       }
     ],
-    "syncedAt": "2026-10-25T21:32:03.971Z",
+    "syncedAt": "2026-10-26T23:03:43.088Z",
     "sourceUpdatedAt": "2026-10-25"
   },
   {
@@ -2670,15 +2633,7 @@
       {
         "id": "nemotron-3-ultra",
         "name": "nemotron-3-ultra",
-        "context": "262K",
-        "maxOutput": "Model-dependent",
-        "modality": "Text",
-        "rateLimit": "1 concurrent request, monthly starter credits"
-      },
-      {
-        "id": "gpt-oss:20b",
-        "name": "gpt-oss:20b",
-        "context": "131K",
+        "context": "256K",
         "maxOutput": "Model-dependent",
         "modality": "Text",
         "rateLimit": "1 concurrent request, monthly starter credits"
@@ -2690,21 +2645,29 @@
         "maxOutput": "Model-dependent",
         "modality": "Text",
         "rateLimit": "1 concurrent request, monthly starter credits"
+      },
+      {
+        "id": "gpt-oss:20b",
+        "name": "gpt-oss:20b",
+        "context": "128K",
+        "maxOutput": "Model-dependent",
+        "modality": "Text",
+        "rateLimit": "1 concurrent request, monthly starter credits"
       }
     ],
     "sources": [
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-10-25T21:32:03.887Z"
+        "syncedAt": "2026-10-26T23:03:42.955Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-10-25T21:32:03.971Z"
+        "syncedAt": "2026-10-26T23:03:43.088Z"
       }
     ],
-    "syncedAt": "2026-10-25T21:32:03.971Z",
+    "syncedAt": "2026-10-26T23:03:43.088Z",
     "sourceUpdatedAt": "2026-10-25"
   },
   {
@@ -2907,15 +2870,15 @@
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-10-25T21:32:03.971Z"
+        "syncedAt": "2026-10-26T23:03:43.088Z"
       },
       {
         "name": "models.dev",
         "url": "https://models.dev",
-        "syncedAt": "2026-10-25T21:32:03.994Z"
+        "syncedAt": "2026-10-26T23:03:43.120Z"
       }
     ],
-    "syncedAt": "2026-10-25T21:32:03.971Z",
+    "syncedAt": "2026-10-26T23:03:43.088Z",
     "sourceUpdatedAt": null
   },
   {
@@ -2955,7 +2918,7 @@
         "context": "1.049M",
         "maxOutput": "262K",
         "modality": "Text + Vision + Audio",
-        "rateLimit": "200 req/day (free tier)"
+        "rateLimit": "20 RPM, 50 RPD"
       },
       {
         "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
@@ -3011,7 +2974,7 @@
         "context": "262K",
         "maxOutput": "236K",
         "modality": "Text",
-        "rateLimit": "200 req/day (free tier)"
+        "rateLimit": "20 RPM, 50 RPD"
       },
       {
         "id": "poolside/laguna-s-2.1:free",
@@ -3067,7 +3030,7 @@
         "context": "128K",
         "maxOutput": "8K",
         "modality": "Text + Vision",
-        "rateLimit": "200 req/day (free tier)"
+        "rateLimit": "20 RPM, 50 RPD"
       },
       {
         "id": "liquid/lfm-2.5-2.6b:free",
@@ -3082,20 +3045,20 @@
       {
         "name": "openrouter.ai/api/v1/models",
         "url": "https://openrouter.ai/api/v1/models",
-        "syncedAt": "2026-10-25T21:32:03.844Z"
+        "syncedAt": "2026-10-26T23:03:42.949Z"
       },
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-10-25T21:32:03.887Z"
+        "syncedAt": "2026-10-26T23:03:42.955Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-10-25T21:32:03.971Z"
+        "syncedAt": "2026-10-26T23:03:43.088Z"
       }
     ],
-    "syncedAt": "2026-10-25T21:32:03.971Z",
+    "syncedAt": "2026-10-26T23:03:43.088Z",
     "sourceUpdatedAt": "2026-10-25"
   },
   {
@@ -3113,7 +3076,7 @@
       "text",
       "vision"
     ],
-    "modelCount": 11,
+    "modelCount": 10,
     "maxContext": "262K",
     "freeLimit": "2 RPM/IP",
     "moreModels": null,
@@ -3151,6 +3114,22 @@
         "rateLimit": "2 RPM (anonymous)"
       },
       {
+        "id": "gpt-oss-120b",
+        "name": "gpt-oss-120b",
+        "context": "131K",
+        "maxOutput": "~32K",
+        "modality": "Text",
+        "rateLimit": "2 RPM (anonymous)"
+      },
+      {
+        "id": "gpt-oss-20b",
+        "name": "gpt-oss-20b",
+        "context": "131K",
+        "maxOutput": "~8K",
+        "modality": "Text",
+        "rateLimit": "2 RPM (anonymous)"
+      },
+      {
         "id": "Meta-Llama-3_3-70B-Instruct",
         "name": "Meta-Llama-3_3-70B-Instruct",
         "context": "131K",
@@ -3159,41 +3138,17 @@
         "rateLimit": "2 RPM (anonymous)"
       },
       {
-        "id": "qwen3-32b",
-        "name": "Qwen3-32B",
-        "context": "131K",
-        "maxOutput": null,
-        "modality": "text + reasoning",
-        "rateLimit": "2 RPM (anonymous)"
-      },
-      {
-        "id": "gpt-oss-120b",
-        "name": "gpt-oss-120b",
+        "id": "Mistral-Small-3.2-24B-Instruct-2506",
+        "name": "Mistral-Small-3.2-24B-Instruct",
         "context": "128K",
-        "maxOutput": "~32K",
-        "modality": "Text",
-        "rateLimit": "2 RPM (anonymous)"
-      },
-      {
-        "id": "gpt-oss-20b",
-        "name": "gpt-oss-20b",
-        "context": "128K",
-        "maxOutput": "~8K",
-        "modality": "Text",
+        "maxOutput": "~4K",
+        "modality": "Text + Vision",
         "rateLimit": "2 RPM (anonymous)"
       },
       {
         "id": "Mistral-Nemo-Instruct-2407",
         "name": "Mistral-Nemo-Instruct-2407",
-        "context": "128K",
-        "maxOutput": "~4K",
-        "modality": "Text",
-        "rateLimit": "2 RPM (anonymous)"
-      },
-      {
-        "id": "Mistral-Small-3.2-24B-Instruct-2506",
-        "name": "Mistral-Small-3.2-24B-Instruct",
-        "context": "128K",
+        "context": "118K",
         "maxOutput": "~4K",
         "modality": "Text",
         "rateLimit": "2 RPM (anonymous)"
@@ -3211,15 +3166,15 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-10-25T21:32:03.887Z"
+        "syncedAt": "2026-10-26T23:03:42.955Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-10-25T21:32:03.971Z"
+        "syncedAt": "2026-10-26T23:03:43.088Z"
       }
     ],
-    "syncedAt": "2026-10-25T21:32:03.971Z",
+    "syncedAt": "2026-10-26T23:03:43.088Z",
     "sourceUpdatedAt": "2026-10-25"
   },
   {
@@ -3262,15 +3217,15 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-10-25T21:32:03.887Z"
+        "syncedAt": "2026-10-26T23:03:42.955Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-10-25T21:32:03.971Z"
+        "syncedAt": "2026-10-26T23:03:43.088Z"
       }
     ],
-    "syncedAt": "2026-10-25T21:32:03.971Z",
+    "syncedAt": "2026-10-26T23:03:43.088Z",
     "sourceUpdatedAt": "2026-10-25"
   },
   {
@@ -3312,10 +3267,10 @@
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-10-25T21:32:03.971Z"
+        "syncedAt": "2026-10-26T23:03:43.088Z"
       }
     ],
-    "syncedAt": "2026-10-25T21:32:03.971Z",
+    "syncedAt": "2026-10-26T23:03:43.088Z",
     "sourceUpdatedAt": null
   },
   {
@@ -3374,45 +3329,83 @@
       {
         "name": "mnfst/awesome-free-llm-apis",
         "url": "https://github.com/mnfst/awesome-free-llm-apis",
-        "syncedAt": "2026-10-25T21:32:03.887Z"
+        "syncedAt": "2026-10-26T23:03:42.955Z"
       },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
-        "syncedAt": "2026-10-25T21:32:03.971Z"
+        "syncedAt": "2026-10-26T23:03:43.088Z"
       }
     ],
-    "syncedAt": "2026-10-25T21:32:03.971Z",
+    "syncedAt": "2026-10-26T23:03:43.088Z",
     "sourceUpdatedAt": "2026-10-25"
   },
   {
-    "slug": "cerebras",
-    "name": "Cerebras",
-    "category": null,
-    "country": null,
-    "flag": null,
-    "domain": null,
-    "logo": null,
-    "url": null,
-    "baseUrl": null,
+    "slug": "hugging-face",
+    "name": "Hugging Face",
+    "category": "inference_provider",
+    "country": "US",
+    "flag": "🇺🇸",
+    "domain": "huggingface.co",
+    "logo": "/logos/hugging-face.png",
+    "url": "https://huggingface.co/settings/tokens",
+    "baseUrl": "https://router.huggingface.co/v1",
+    "description": "$0.10/month in Inference Provider credits for free users (subject to change). Routes to Fireworks, Together, Hyperbolic, Nebius, Novita, DeepInfra and others. Thousands of models.",
     "modalities": [
       "text"
     ],
-    "modelCount": 1,
+    "modelCount": 5,
     "maxContext": "131K",
-    "freeLimit": null,
-    "moreModels": null,
+    "freeLimit": "$0.10 kredit",
+    "moreModels": "thousands of community models",
     "models": [
       {
-        "id": "llama-3-1-70b",
-        "name": "Llama 3.1 70B",
+        "id": "google/gemma-3-4b-it",
+        "name": "gemma-3-4b-it",
         "context": "131K",
-        "maxOutput": null,
-        "modality": "text",
-        "rateLimit": null
+        "maxOutput": "~4K",
+        "modality": "Text",
+        "rateLimit": "Credit-metered"
+      },
+      {
+        "id": "Qwen/Qwen2.5-7B-Instruct",
+        "name": "Qwen2.5-7B-Instruct",
+        "context": "131K",
+        "maxOutput": "~4K",
+        "modality": "Text",
+        "rateLimit": "Credit-metered"
+      },
+      {
+        "id": "Qwen/Qwen2.5-Coder-7B-Instruct",
+        "name": "Qwen2.5-Coder-7B-Instruct",
+        "context": "131K",
+        "maxOutput": "~4K",
+        "modality": "Text",
+        "rateLimit": "Credit-metered"
+      },
+      {
+        "id": "meta-llama/Llama-3.1-8B-Instruct",
+        "name": "Meta-Llama-3.1-8B-Instruct",
+        "context": "128K",
+        "maxOutput": "~4K",
+        "modality": "Text",
+        "rateLimit": "Credit-metered"
+      },
+      {
+        "id": "microsoft/phi-4",
+        "name": "phi-4",
+        "context": "16K",
+        "maxOutput": "~4K",
+        "modality": "Text",
+        "rateLimit": "Credit-metered"
       }
     ],
     "sources": [
+      {
+        "name": "mnfst/awesome-free-llm-apis",
+        "url": "https://github.com/mnfst/awesome-free-llm-apis",
+        "syncedAt": "2026-10-24T21:26:25.713Z"
+      },
       {
         "name": "freellm.net",
         "url": "https://freellm.net",
@@ -3420,6 +3413,6 @@
       }
     ],
     "syncedAt": "2026-10-24T21:26:25.881Z",
-    "sourceUpdatedAt": null
+    "sourceUpdatedAt": "2026-10-23"
   }
 ]

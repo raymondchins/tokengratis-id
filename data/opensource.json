@@ -96,8 +96,8 @@
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
       "stars": 1230,
-      "forks": 1197,
-      "openIssues": 327,
+      "forks": 1198,
+      "openIssues": 319,
       "license": null,
       "topics": [
         "opensid",
@@ -156,7 +156,7 @@
       "homepage": null,
       "description": "Package Laravel yang berisi data Provinsi, Kabupaten/Kota, dan Kecamatan/Desa di seluruh Indonesia.",
       "language": "PHP",
-      "stars": 681,
+      "stars": 682,
       "forks": 210,
       "openIssues": 5,
       "license": "MIT",
@@ -176,13 +176,13 @@
       "homepage": "https://bridgeplay.dev",
       "description": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit",
       "language": "Scala",
-      "stars": 499,
-      "forks": 91,
-      "openIssues": 17,
+      "stars": 545,
+      "forks": 113,
+      "openIssues": 14,
       "license": "GPL-3.0",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-25T09:13:34Z",
+      "pushedAt": "2026-10-26T11:15:27Z",
       "createdAt": "2026-10-20T03:13:58Z"
     },
     {
@@ -293,8 +293,8 @@
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
       "stars": 288,
-      "forks": 57,
-      "openIssues": 75,
+      "forks": 58,
+      "openIssues": 45,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -312,7 +312,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-10-25T20:35:45Z",
+      "pushedAt": "2026-10-26T22:10:16Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -368,8 +368,8 @@
       "description": "ERD Builder Pro is a database design and documentation tool for developers. Build ERDs, flowcharts, notes, and drawings — all in one workspace",
       "language": "TypeScript",
       "stars": 207,
-      "forks": 40,
-      "openIssues": 6,
+      "forks": 41,
+      "openIssues": 11,
       "license": null,
       "topics": [
         "coding",
@@ -385,7 +385,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-10-25T13:13:42Z",
+      "pushedAt": "2026-10-26T10:46:10Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -441,7 +441,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-10-25T16:43:24Z",
+      "pushedAt": "2026-10-26T03:03:03Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -495,7 +495,7 @@
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
       "stars": 144,
-      "forks": 74,
+      "forks": 75,
       "openIssues": 12,
       "license": "MIT",
       "topics": [],
@@ -516,11 +516,11 @@
       "language": "Java",
       "stars": 131,
       "forks": 99,
-      "openIssues": 0,
+      "openIssues": 1,
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-09-08T23:25:01Z",
+      "pushedAt": "2026-10-25T22:03:33Z",
       "createdAt": "2018-08-06T13:38:19Z"
     },
     {
@@ -560,8 +560,8 @@
       "language": "TypeScript",
       "stars": 100,
       "forks": 16,
-      "openIssues": 1,
-      "license": "MIT",
+      "openIssues": 4,
+      "license": null,
       "topics": [
         "browser-shell",
         "control-plane",
@@ -583,7 +583,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-10-25T12:50:41Z",
+      "pushedAt": "2026-10-26T10:48:28Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -622,7 +622,7 @@
       "homepage": "https://svelte-audio-ui.vercel.app/",
       "description": "A set of accessible and composable Audio UI components.",
       "language": "Svelte",
-      "stars": 99,
+      "stars": 98,
       "forks": 4,
       "openIssues": 15,
       "license": "MIT",
@@ -707,7 +707,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-24T22:40:00Z",
+      "pushedAt": "2026-10-26T13:48:36Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -742,12 +742,12 @@
       "description": "Its Factorio for coding agents",
       "language": "Ruby",
       "stars": 52,
-      "forks": 5,
-      "openIssues": 3,
+      "forks": 6,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-25T15:39:43Z",
+      "pushedAt": "2026-10-26T07:25:59Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -1103,6 +1103,26 @@
       "createdAt": "2025-12-17T16:19:36Z"
     },
     {
+      "slug": "raymondchins/tokengratis-id",
+      "fullName": "raymondchins/tokengratis-id",
+      "name": "tokengratis-id",
+      "owner": "raymondchins",
+      "ownerUrl": "https://github.com/raymondchins",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
+      "url": "https://github.com/raymondchins/tokengratis-id",
+      "homepage": "https://tokengratis.id",
+      "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
+      "language": "JavaScript",
+      "stars": 22,
+      "forks": 5,
+      "openIssues": 2,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-10-25T21:32:22Z",
+      "createdAt": "2026-06-01T10:04:41Z"
+    },
+    {
       "slug": "rafiulm/warungos",
       "fullName": "RafiulM/warungos",
       "name": "warungos",
@@ -1155,26 +1175,6 @@
       "archived": false,
       "pushedAt": "2026-10-25T15:58:20Z",
       "createdAt": "2026-04-21T15:17:02Z"
-    },
-    {
-      "slug": "raymondchins/tokengratis-id",
-      "fullName": "raymondchins/tokengratis-id",
-      "name": "tokengratis-id",
-      "owner": "raymondchins",
-      "ownerUrl": "https://github.com/raymondchins",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
-      "url": "https://github.com/raymondchins/tokengratis-id",
-      "homepage": "https://tokengratis.id",
-      "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
-      "language": "JavaScript",
-      "stars": 20,
-      "forks": 2,
-      "openIssues": 2,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-10-24T21:26:43Z",
-      "createdAt": "2026-06-01T10:04:41Z"
     },
     {
       "slug": "rayasabari/yntk-ts",
@@ -1388,7 +1388,7 @@
         "golang"
       ],
       "archived": false,
-      "pushedAt": "2026-10-25T10:25:34Z",
+      "pushedAt": "2026-10-26T00:37:19Z",
       "createdAt": "2026-01-11T03:16:04Z"
     },
     {
@@ -1444,7 +1444,7 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 57,
+      "openIssues": 63,
       "license": "Apache-2.0",
       "topics": [
         "linux",
@@ -1462,7 +1462,7 @@
         "system-programming-control-systems"
       ],
       "archived": false,
-      "pushedAt": "2026-10-25T18:01:51Z",
+      "pushedAt": "2026-10-26T21:39:13Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1533,6 +1533,26 @@
       "createdAt": "2026-06-02T04:21:59Z"
     },
     {
+      "slug": "rifqiakrm/code-island",
+      "fullName": "rifqiakrm/code-island",
+      "name": "code-island",
+      "owner": "rifqiakrm",
+      "ownerUrl": "https://github.com/rifqiakrm",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/35358522?v=4",
+      "url": "https://github.com/rifqiakrm/code-island",
+      "homepage": "https://rifqiakrm.github.io/code-island/",
+      "description": "macOS app that turns your MacBook's notch into a live dashboard for Claude Code, Codex, etc",
+      "language": "Swift",
+      "stars": 9,
+      "forks": 2,
+      "openIssues": 0,
+      "license": "GPL-3.0",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-07-30T12:28:13Z",
+      "createdAt": "2026-04-23T06:17:57Z"
+    },
+    {
       "slug": "rrndev/app-permission-analyzer",
       "fullName": "RRNDev/app-permission-analyzer",
       "name": "app-permission-analyzer",
@@ -1570,7 +1590,7 @@
       "language": "Rust",
       "stars": 8,
       "forks": 0,
-      "openIssues": 17,
+      "openIssues": 25,
       "license": "Apache-2.0",
       "topics": [
         "axum",
@@ -1588,7 +1608,7 @@
         "sveltekit"
       ],
       "archived": false,
-      "pushedAt": "2026-10-22T14:55:50Z",
+      "pushedAt": "2026-10-26T12:10:29Z",
       "createdAt": "2026-06-06T00:23:26Z"
     },
     {
@@ -1618,26 +1638,6 @@
       "archived": false,
       "pushedAt": "2026-09-23T12:08:09Z",
       "createdAt": "2026-06-04T12:15:07Z"
-    },
-    {
-      "slug": "rifqiakrm/code-island",
-      "fullName": "rifqiakrm/code-island",
-      "name": "code-island",
-      "owner": "rifqiakrm",
-      "ownerUrl": "https://github.com/rifqiakrm",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/35358522?v=4",
-      "url": "https://github.com/rifqiakrm/code-island",
-      "homepage": "https://rifqiakrm.github.io/code-island/",
-      "description": "macOS app that turns your MacBook's notch into a live dashboard for Claude Code, Codex, etc",
-      "language": "Swift",
-      "stars": 8,
-      "forks": 2,
-      "openIssues": 0,
-      "license": "GPL-3.0",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-07-30T12:28:13Z",
-      "createdAt": "2026-04-23T06:17:57Z"
     },
     {
       "slug": "wauputr4/agent-proxmox",
@@ -1841,7 +1841,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-17T14:48:51Z",
+      "pushedAt": "2026-10-26T11:37:11Z",
       "createdAt": "2025-11-22T11:52:35Z"
     },
     {
@@ -2058,14 +2058,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-10-25T21:32:10.223Z"
+      "syncedAt": "2026-10-26T23:03:49.026Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-10-25T21:32:10.223Z"
+      "syncedAt": "2026-10-26T23:03:49.026Z"
     }
   ],
-  "syncedAt": "2026-10-25T21:32:10.223Z",
+  "syncedAt": "2026-10-26T23:03:49.026Z",
   "count": 77
 }

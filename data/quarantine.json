@@ -1,21 +1,13 @@
 {
   "version": 1,
   "entries": {
-    "cerebras": {
+    "hugging-face": {
       "kind": "disappeared",
       "magnitude": 0,
       "detail": "provider hilang dari hasil merge",
       "streak": 1,
       "firstSeen": "2026-10-25T21:32:03.713Z",
-      "lastSeen": "2026-10-25T21:32:03.713Z"
-    },
-    "hugging-face": {
-      "kind": "churned",
-      "magnitude": 5,
-      "detail": "id churn, overlap 0% (5 -> 5 id)",
-      "streak": 1,
-      "firstSeen": "2026-10-25T21:32:03.713Z",
-      "lastSeen": "2026-10-25T21:32:03.713Z"
+      "lastSeen": "2026-10-26T23:03:42.757Z"
     }
   }
 }
