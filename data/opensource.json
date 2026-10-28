@@ -40,9 +40,9 @@
       "homepage": "https://antislop.ai.id",
       "description": "Rules for an AI coding agent to filter out generic AI-generated UI designs, text, and code.",
       "language": "JavaScript",
-      "stars": 7313,
-      "forks": 496,
-      "openIssues": 4,
+      "stars": 7456,
+      "forks": 508,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "accessibility",
@@ -57,7 +57,7 @@
         "ui-design"
       ],
       "archived": false,
-      "pushedAt": "2026-10-25T22:54:19Z",
+      "pushedAt": "2026-10-28T17:34:01Z",
       "createdAt": "2026-08-07T10:29:56Z"
     },
     {
@@ -73,7 +73,7 @@
       "language": "PHP",
       "stars": 1983,
       "forks": 186,
-      "openIssues": 0,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "avatar",
@@ -83,7 +83,7 @@
         "php-library"
       ],
       "archived": false,
-      "pushedAt": "2026-10-10T08:30:59Z",
+      "pushedAt": "2026-10-28T15:45:33Z",
       "createdAt": "2015-10-12T07:01:40Z"
     },
     {
@@ -126,9 +126,9 @@
       "homepage": null,
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
-      "stars": 1230,
-      "forks": 1198,
-      "openIssues": 315,
+      "stars": 1231,
+      "forks": 1197,
+      "openIssues": 319,
       "license": null,
       "topics": [
         "opensid",
@@ -149,8 +149,8 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1053,
-      "forks": 310,
+      "stars": 1056,
+      "forks": 311,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -177,6 +177,26 @@
       "createdAt": "2026-01-15T09:55:34Z"
     },
     {
+      "slug": "ahmadrosid/nakama",
+      "fullName": "ahmadrosid/nakama",
+      "name": "nakama",
+      "owner": "ahmadrosid",
+      "ownerUrl": "https://github.com/ahmadrosid",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/29406408?v=4",
+      "url": "https://github.com/ahmadrosid/nakama",
+      "homepage": "https://ahmadrosid.github.io/nakama",
+      "description": "The AI workspace where teams share agents, skills and automations that the whole company builds on.",
+      "language": "TypeScript",
+      "stars": 694,
+      "forks": 117,
+      "openIssues": 52,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-10-28T16:14:42Z",
+      "createdAt": "2026-05-23T06:02:30Z"
+    },
+    {
       "slug": "laravolt/indonesia",
       "fullName": "laravolt/indonesia",
       "name": "indonesia",
@@ -189,11 +209,11 @@
       "language": "PHP",
       "stars": 682,
       "forks": 210,
-      "openIssues": 5,
+      "openIssues": 6,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-03-03T06:32:45Z",
+      "pushedAt": "2026-10-28T15:51:22Z",
       "createdAt": "2016-07-15T09:39:20Z"
     },
     {
@@ -207,34 +227,14 @@
       "homepage": "https://bridgeplay.dev",
       "description": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit",
       "language": "Scala",
-      "stars": 595,
-      "forks": 125,
-      "openIssues": 16,
+      "stars": 622,
+      "forks": 131,
+      "openIssues": 15,
       "license": "GPL-3.0",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-27T18:50:58Z",
+      "pushedAt": "2026-10-28T19:16:42Z",
       "createdAt": "2026-10-20T03:13:58Z"
-    },
-    {
-      "slug": "ahmadrosid/nakama",
-      "fullName": "ahmadrosid/nakama",
-      "name": "nakama",
-      "owner": "ahmadrosid",
-      "ownerUrl": "https://github.com/ahmadrosid",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/29406408?v=4",
-      "url": "https://github.com/ahmadrosid/nakama",
-      "homepage": "https://ahmadrosid.github.io/nakama",
-      "description": "The AI workspace where teams share agents, skills and automations that the whole company builds on.",
-      "language": "TypeScript",
-      "stars": 595,
-      "forks": 102,
-      "openIssues": 47,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-10-27T18:47:54Z",
-      "createdAt": "2026-05-23T06:02:30Z"
     },
     {
       "slug": "rayasabari/joko-ui",
@@ -274,9 +274,9 @@
       "homepage": "https://omni.weekndlabs.com/docs",
       "description": "Your agent pays twice for output it has already seen. OMNI returns a handle instead: 97.2% off a file read twice. Nothing deleted, nothing invented.",
       "language": "Rust",
-      "stars": 372,
+      "stars": 373,
       "forks": 35,
-      "openIssues": 26,
+      "openIssues": 22,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -301,7 +301,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-10-27T16:54:52Z",
+      "pushedAt": "2026-10-28T22:35:17Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -343,9 +343,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 289,
+      "stars": 291,
       "forks": 58,
-      "openIssues": 49,
+      "openIssues": 52,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -363,7 +363,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-10-27T22:45:55Z",
+      "pushedAt": "2026-10-28T22:56:24Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -379,7 +379,7 @@
       "language": "Rust",
       "stars": 277,
       "forks": 31,
-      "openIssues": 31,
+      "openIssues": 15,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -404,7 +404,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-10-27T18:54:50Z",
+      "pushedAt": "2026-10-28T07:52:19Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -419,8 +419,8 @@
       "description": "ERD Builder Pro is a database design and documentation tool for developers. Build ERDs, flowcharts, notes, and drawings — all in one workspace",
       "language": "TypeScript",
       "stars": 207,
-      "forks": 41,
-      "openIssues": 11,
+      "forks": 40,
+      "openIssues": 10,
       "license": null,
       "topics": [
         "coding",
@@ -436,7 +436,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-10-27T11:06:02Z",
+      "pushedAt": "2026-10-28T11:59:04Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -506,7 +506,7 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 155,
+      "stars": 156,
       "forks": 52,
       "openIssues": 11,
       "license": "MIT",
@@ -585,7 +585,7 @@
       "homepage": "https://pddikti.kemdiktisaintek.go.id/",
       "description": "Unofficial Python 3 API wrapper to retrieve data from PDDIKTI Kemdikbudristek.",
       "language": "Python",
-      "stars": 128,
+      "stars": 129,
       "forks": 29,
       "openIssues": 0,
       "license": null,
@@ -634,7 +634,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-10-27T16:06:51Z",
+      "pushedAt": "2026-10-28T22:52:02Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -721,7 +721,7 @@
       "homepage": "https://bansos.dev",
       "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
       "language": "Svelte",
-      "stars": 69,
+      "stars": 68,
       "forks": 21,
       "openIssues": 3,
       "license": "MIT",
@@ -752,13 +752,13 @@
       "homepage": null,
       "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
       "language": "TypeScript",
-      "stars": 58,
+      "stars": 59,
       "forks": 7,
-      "openIssues": 0,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-27T22:03:14Z",
+      "pushedAt": "2026-10-28T21:05:29Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -794,11 +794,11 @@
       "language": "Ruby",
       "stars": 52,
       "forks": 6,
-      "openIssues": 2,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-26T07:25:59Z",
+      "pushedAt": "2026-10-28T07:14:43Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -1144,7 +1144,7 @@
       "homepage": null,
       "description": "A beautiful Terminal UI for launching multiple AI providers from a single command",
       "language": "HTML",
-      "stars": 31,
+      "stars": 32,
       "forks": 7,
       "openIssues": 0,
       "license": "MIT",
@@ -1164,13 +1164,13 @@
       "homepage": "https://tokengratis.id",
       "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
       "language": "JavaScript",
-      "stars": 24,
+      "stars": 26,
       "forks": 5,
       "openIssues": 2,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-26T23:04:03Z",
+      "pushedAt": "2026-10-27T22:52:45Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1277,7 +1277,7 @@
         "xterm"
       ],
       "archived": false,
-      "pushedAt": "2026-10-23T19:53:29Z",
+      "pushedAt": "2026-10-28T13:05:52Z",
       "createdAt": "2026-03-20T14:25:48Z"
     },
     {
@@ -1365,7 +1365,7 @@
       "language": "JavaScript",
       "stars": 13,
       "forks": 3,
-      "openIssues": 1,
+      "openIssues": 2,
       "license": "MIT",
       "topics": [
         "ai-agent",
@@ -1382,7 +1382,7 @@
         "zero-human"
       ],
       "archived": false,
-      "pushedAt": "2026-10-22T18:33:02Z",
+      "pushedAt": "2026-10-28T09:09:02Z",
       "createdAt": "2026-03-18T18:38:41Z"
     },
     {
@@ -1495,7 +1495,7 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 64,
+      "openIssues": 65,
       "license": "Apache-2.0",
       "topics": [
         "linux",
@@ -1513,7 +1513,7 @@
         "system-programming-control-systems"
       ],
       "archived": false,
-      "pushedAt": "2026-10-27T14:36:23Z",
+      "pushedAt": "2026-10-28T15:35:20Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1584,6 +1584,40 @@
       "createdAt": "2026-06-02T04:21:59Z"
     },
     {
+      "slug": "codecoradev/trapfall",
+      "fullName": "codecoradev/trapfall",
+      "name": "trapfall",
+      "owner": "codecoradev",
+      "ownerUrl": "https://github.com/codecoradev",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
+      "url": "https://github.com/codecoradev/trapfall",
+      "homepage": "https://codecora.dev",
+      "description": "TrapFall — Lightweight self-hosted error capture engine. Sentry-compatible, Rust + SvelteKit 5.",
+      "language": "Rust",
+      "stars": 9,
+      "forks": 0,
+      "openIssues": 25,
+      "license": "Apache-2.0",
+      "topics": [
+        "axum",
+        "blake3",
+        "crash-reporting",
+        "error-capture",
+        "error-tracking",
+        "flutter",
+        "mcp",
+        "observability",
+        "rust",
+        "self-hosted",
+        "sentry",
+        "sentry-alternative",
+        "sveltekit"
+      ],
+      "archived": false,
+      "pushedAt": "2026-10-26T12:10:29Z",
+      "createdAt": "2026-06-06T00:23:26Z"
+    },
+    {
       "slug": "rifqiakrm/code-island",
       "fullName": "rifqiakrm/code-island",
       "name": "code-island",
@@ -1629,40 +1663,6 @@
       "createdAt": "2026-05-23T08:12:20Z"
     },
     {
-      "slug": "codecoradev/trapfall",
-      "fullName": "codecoradev/trapfall",
-      "name": "trapfall",
-      "owner": "codecoradev",
-      "ownerUrl": "https://github.com/codecoradev",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
-      "url": "https://github.com/codecoradev/trapfall",
-      "homepage": "https://codecora.dev",
-      "description": "TrapFall — Lightweight self-hosted error capture engine. Sentry-compatible, Rust + SvelteKit 5.",
-      "language": "Rust",
-      "stars": 8,
-      "forks": 0,
-      "openIssues": 25,
-      "license": "Apache-2.0",
-      "topics": [
-        "axum",
-        "blake3",
-        "crash-reporting",
-        "error-capture",
-        "error-tracking",
-        "flutter",
-        "mcp",
-        "observability",
-        "rust",
-        "self-hosted",
-        "sentry",
-        "sentry-alternative",
-        "sveltekit"
-      ],
-      "archived": false,
-      "pushedAt": "2026-10-26T12:10:29Z",
-      "createdAt": "2026-06-06T00:23:26Z"
-    },
-    {
       "slug": "rizukirr/apic",
       "fullName": "rizukirr/apic",
       "name": "apic",
@@ -1689,6 +1689,40 @@
       "archived": false,
       "pushedAt": "2026-09-23T12:08:09Z",
       "createdAt": "2026-06-04T12:15:07Z"
+    },
+    {
+      "slug": "rahmanef63/framepilot",
+      "fullName": "rahmanef63/framepilot",
+      "name": "framepilot",
+      "owner": "rahmanef63",
+      "ownerUrl": "https://github.com/rahmanef63",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
+      "url": "https://github.com/rahmanef63/framepilot",
+      "homepage": "https://frame-pilot.rahmanef.com/",
+      "description": "Browser-based 3D camera previsualization and shot planner — design scenes, frames, angles, lenses and moves, then export platform-tuned prompts for AI video models. Next.js 16 · React 19 · Three.js · Convex.",
+      "language": "TypeScript",
+      "stars": 8,
+      "forks": 2,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [
+        "ai-video",
+        "camera",
+        "cinematography",
+        "convex",
+        "nextjs",
+        "previsualization",
+        "prompt-engineering",
+        "shot-planner",
+        "storyboard",
+        "text-to-video",
+        "threejs",
+        "typescript",
+        "webgl"
+      ],
+      "archived": false,
+      "pushedAt": "2026-09-09T13:32:00Z",
+      "createdAt": "2026-07-10T13:57:01Z"
     },
     {
       "slug": "wauputr4/agent-proxmox",
@@ -1787,40 +1821,6 @@
       "archived": false,
       "pushedAt": "2026-10-27T15:09:52Z",
       "createdAt": "2026-06-13T11:24:30Z"
-    },
-    {
-      "slug": "rahmanef63/framepilot",
-      "fullName": "rahmanef63/framepilot",
-      "name": "framepilot",
-      "owner": "rahmanef63",
-      "ownerUrl": "https://github.com/rahmanef63",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/71124675?v=4",
-      "url": "https://github.com/rahmanef63/framepilot",
-      "homepage": "https://frame-pilot.rahmanef.com/",
-      "description": "Browser-based 3D camera previsualization and shot planner — design scenes, frames, angles, lenses and moves, then export platform-tuned prompts for AI video models. Next.js 16 · React 19 · Three.js · Convex.",
-      "language": "TypeScript",
-      "stars": 7,
-      "forks": 2,
-      "openIssues": 0,
-      "license": "MIT",
-      "topics": [
-        "ai-video",
-        "camera",
-        "cinematography",
-        "convex",
-        "nextjs",
-        "previsualization",
-        "prompt-engineering",
-        "shot-planner",
-        "storyboard",
-        "text-to-video",
-        "threejs",
-        "typescript",
-        "webgl"
-      ],
-      "archived": false,
-      "pushedAt": "2026-09-09T13:32:00Z",
-      "createdAt": "2026-07-10T13:57:01Z"
     },
     {
       "slug": "ramaaditya49/ai-agentic",
@@ -2046,7 +2046,7 @@
         "vue"
       ],
       "archived": false,
-      "pushedAt": "2026-10-26T02:05:06Z",
+      "pushedAt": "2026-10-28T09:57:40Z",
       "createdAt": "2026-09-02T02:36:21Z"
     },
     {
@@ -2176,14 +2176,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-10-27T22:52:35.362Z"
+      "syncedAt": "2026-10-28T22:58:50.487Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-10-27T22:52:35.362Z"
+      "syncedAt": "2026-10-28T22:58:50.487Z"
     }
   ],
-  "syncedAt": "2026-10-27T22:52:35.362Z",
+  "syncedAt": "2026-10-28T22:58:50.487Z",
   "count": 81
 }

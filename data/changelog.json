@@ -1,5 +1,43 @@
 [
   {
+    "date": "2026-10-28",
+    "providersAdded": [],
+    "providersRemoved": [
+      {
+        "slug": "hugging-face",
+        "name": "Hugging Face"
+      }
+    ],
+    "models": [
+      {
+        "provider": "Cloudflare Workers AI",
+        "added": [],
+        "removed": [
+          "Mistral 7B",
+          "Qwen 1.5 7B"
+        ]
+      },
+      {
+        "provider": "Groq",
+        "added": [
+          "meta-llama/llama-prompt-guard-2-22m",
+          "meta-llama/llama-prompt-guard-2-86m"
+        ],
+        "removed": [
+          "Moonshot Kimi K2",
+          "Moonshot Kimi K2 0905"
+        ]
+      },
+      {
+        "provider": "LLM7.io",
+        "added": [
+          "Nemotron 3 Nano 30B A3B"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-10-27",
     "providersAdded": [],
     "providersRemoved": [],
@@ -2187,27 +2225,6 @@
           "Ministral 14B",
           "Ministral 8B",
           "Ministral 3B"
-        ],
-        "removed": []
-      }
-    ]
-  },
-  {
-    "date": "2026-08-18",
-    "providersAdded": [],
-    "providersRemoved": [],
-    "models": [
-      {
-        "provider": "Google Gemini",
-        "added": [],
-        "removed": [
-          "gemini-3.7-flash-video-understanding-eap"
-        ]
-      },
-      {
-        "provider": "LLM7.io",
-        "added": [
-          "Gemma 4 31B IT"
         ],
         "removed": []
       }
