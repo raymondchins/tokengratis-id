@@ -40,9 +40,9 @@
       "homepage": "https://antislop.ai.id",
       "description": "Rules for an AI coding agent to filter out generic AI-generated UI designs, text, and code.",
       "language": "JavaScript",
-      "stars": 7456,
-      "forks": 508,
-      "openIssues": 1,
+      "stars": 7559,
+      "forks": 515,
+      "openIssues": 4,
       "license": "MIT",
       "topics": [
         "accessibility",
@@ -73,7 +73,7 @@
       "language": "PHP",
       "stars": 1983,
       "forks": 186,
-      "openIssues": 1,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [
         "avatar",
@@ -83,7 +83,7 @@
         "php-library"
       ],
       "archived": false,
-      "pushedAt": "2026-10-28T15:45:33Z",
+      "pushedAt": "2026-10-29T02:45:54Z",
       "createdAt": "2015-10-12T07:01:40Z"
     },
     {
@@ -128,7 +128,7 @@
       "language": "PHP",
       "stars": 1231,
       "forks": 1197,
-      "openIssues": 319,
+      "openIssues": 329,
       "license": null,
       "topics": [
         "opensid",
@@ -149,7 +149,7 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1056,
+      "stars": 1060,
       "forks": 311,
       "openIssues": 0,
       "license": "MIT",
@@ -187,13 +187,13 @@
       "homepage": "https://ahmadrosid.github.io/nakama",
       "description": "The AI workspace where teams share agents, skills and automations that the whole company builds on.",
       "language": "TypeScript",
-      "stars": 694,
-      "forks": 117,
-      "openIssues": 52,
+      "stars": 722,
+      "forks": 121,
+      "openIssues": 40,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-28T16:14:42Z",
+      "pushedAt": "2026-10-29T19:49:00Z",
       "createdAt": "2026-05-23T06:02:30Z"
     },
     {
@@ -209,11 +209,11 @@
       "language": "PHP",
       "stars": 682,
       "forks": 210,
-      "openIssues": 6,
+      "openIssues": 5,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-28T15:51:22Z",
+      "pushedAt": "2026-10-29T02:46:07Z",
       "createdAt": "2016-07-15T09:39:20Z"
     },
     {
@@ -227,13 +227,28 @@
       "homepage": "https://bridgeplay.dev",
       "description": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit",
       "language": "Scala",
-      "stars": 622,
-      "forks": 131,
-      "openIssues": 15,
+      "stars": 667,
+      "forks": 136,
+      "openIssues": 12,
       "license": "GPL-3.0",
-      "topics": [],
+      "topics": [
+        "apple-silicon",
+        "d3dmetal",
+        "dxmt",
+        "dxvk",
+        "game-porting-toolkit",
+        "gptk",
+        "mac-gaming",
+        "macos",
+        "metalfx",
+        "rosetta-2",
+        "steam",
+        "steam-play",
+        "wine",
+        "winecx"
+      ],
       "archived": false,
-      "pushedAt": "2026-10-28T19:16:42Z",
+      "pushedAt": "2026-10-29T13:59:58Z",
       "createdAt": "2026-10-20T03:13:58Z"
     },
     {
@@ -247,9 +262,9 @@
       "homepage": "https://jokoui.web.id",
       "description": "Free Open Source Tailwind CSS Component for Sat-set Developers with Zero Configuration, Installation, and Setup",
       "language": "TypeScript",
-      "stars": 419,
+      "stars": 420,
       "forks": 28,
-      "openIssues": 10,
+      "openIssues": 8,
       "license": "MIT",
       "topics": [
         "css",
@@ -260,30 +275,30 @@
         "uikit"
       ],
       "archived": false,
-      "pushedAt": "2026-06-06T06:51:25Z",
+      "pushedAt": "2026-10-29T06:29:35Z",
       "createdAt": "2026-01-04T12:18:23Z"
     },
     {
-      "slug": "fajarhide/omni",
-      "fullName": "fajarhide/omni",
-      "name": "omni",
+      "slug": "fajarhide/contexere",
+      "fullName": "fajarhide/contexere",
+      "name": "contexere",
       "owner": "fajarhide",
       "ownerUrl": "https://github.com/fajarhide",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/4769529?v=4",
-      "url": "https://github.com/fajarhide/omni",
+      "url": "https://github.com/fajarhide/contexere",
       "homepage": "https://omni.weekndlabs.com/docs",
-      "description": "Your agent pays twice for output it has already seen. OMNI returns a handle instead: 97.2% off a file read twice. Nothing deleted, nothing invented.",
+      "description": "The context layer for AI coding agents: less noise, fewer tokens, nothing lost. Formerly OMNI.",
       "language": "Rust",
-      "stars": 373,
+      "stars": 375,
       "forks": 35,
-      "openIssues": 22,
+      "openIssues": 13,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
         "ai-agents",
-        "antigravity",
         "claude-code",
         "cli",
+        "contexere",
         "context-compression",
         "context-distillation",
         "context-engineering",
@@ -301,7 +316,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-10-28T22:35:17Z",
+      "pushedAt": "2026-10-29T16:33:13Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -315,7 +330,7 @@
       "homepage": "https://adbkit.pages.dev",
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 368,
+      "stars": 369,
       "forks": 45,
       "openIssues": 3,
       "license": "MIT",
@@ -343,9 +358,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 291,
+      "stars": 292,
       "forks": 58,
-      "openIssues": 52,
+      "openIssues": 46,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -363,7 +378,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-10-28T22:56:24Z",
+      "pushedAt": "2026-10-29T15:59:54Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -377,9 +392,9 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 277,
+      "stars": 278,
       "forks": 31,
-      "openIssues": 15,
+      "openIssues": 7,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -404,7 +419,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-10-28T07:52:19Z",
+      "pushedAt": "2026-10-29T09:30:58Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -419,7 +434,7 @@
       "description": "ERD Builder Pro is a database design and documentation tool for developers. Build ERDs, flowcharts, notes, and drawings — all in one workspace",
       "language": "TypeScript",
       "stars": 207,
-      "forks": 40,
+      "forks": 39,
       "openIssues": 10,
       "license": null,
       "topics": [
@@ -436,7 +451,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-10-28T11:59:04Z",
+      "pushedAt": "2026-10-29T16:48:19Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -492,7 +507,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-10-26T03:03:03Z",
+      "pushedAt": "2026-10-29T08:06:33Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -609,7 +624,7 @@
       "homepage": "https://mso.rahmanef.com",
       "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
-      "stars": 100,
+      "stars": 101,
       "forks": 16,
       "openIssues": 0,
       "license": null,
@@ -634,7 +649,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-10-28T22:52:02Z",
+      "pushedAt": "2026-10-29T16:55:37Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -673,7 +688,7 @@
       "homepage": "https://svelte-audio-ui.vercel.app/",
       "description": "A set of accessible and composable Audio UI components.",
       "language": "Svelte",
-      "stars": 98,
+      "stars": 99,
       "forks": 4,
       "openIssues": 15,
       "license": "MIT",
@@ -752,13 +767,13 @@
       "homepage": null,
       "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
       "language": "TypeScript",
-      "stars": 59,
+      "stars": 61,
       "forks": 7,
       "openIssues": 1,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-28T21:05:29Z",
+      "pushedAt": "2026-10-29T06:57:11Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -798,7 +813,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-28T07:14:43Z",
+      "pushedAt": "2026-10-29T13:16:52Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -928,7 +943,7 @@
       "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
       "url": "https://github.com/rizukirr/no-vibe",
       "homepage": null,
-      "description": "Turn your AI assistant into a tutor. It plans, shows code, reviews, adapts to how you learn and helps you complete your real project on your own",
+      "description": "Turn your AI coding agent into a tutor. It learns your level and adapts to you",
       "language": "Shell",
       "stars": 44,
       "forks": 1,
@@ -949,7 +964,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-10-22T09:46:26Z",
+      "pushedAt": "2026-10-29T19:01:19Z",
       "createdAt": "2026-04-09T16:08:42Z"
     },
     {
@@ -1164,13 +1179,13 @@
       "homepage": "https://tokengratis.id",
       "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
       "language": "JavaScript",
-      "stars": 26,
+      "stars": 27,
       "forks": 5,
       "openIssues": 2,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-27T22:52:45Z",
+      "pushedAt": "2026-10-28T22:59:07Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1495,7 +1510,7 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 65,
+      "openIssues": 66,
       "license": "Apache-2.0",
       "topics": [
         "linux",
@@ -2046,7 +2061,7 @@
         "vue"
       ],
       "archived": false,
-      "pushedAt": "2026-10-28T09:57:40Z",
+      "pushedAt": "2026-10-29T02:28:34Z",
       "createdAt": "2026-09-02T02:36:21Z"
     },
     {
@@ -2176,14 +2191,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-10-28T22:58:50.487Z"
+      "syncedAt": "2026-10-29T23:07:40.856Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-10-28T22:58:50.487Z"
+      "syncedAt": "2026-10-29T23:07:40.856Z"
     }
   ],
-  "syncedAt": "2026-10-28T22:58:50.487Z",
+  "syncedAt": "2026-10-29T23:07:40.856Z",
   "count": 81
 }
