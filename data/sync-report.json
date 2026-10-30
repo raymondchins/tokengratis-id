@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T23:07:33.753Z",
+  "generatedAt": "2026-10-30T22:50:24.567Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -119,31 +119,25 @@
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 288,
+            "eligible": 291,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "maxOutput": {
-            "eligible": 128,
+            "eligible": 129,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "modality": {
-            "eligible": 234,
-            "changed": 1,
-            "ratioPct": 0.4273504273504274,
-            "examples": [
-              {
-                "label": "ollama-cloud/nemotron-3-ultra",
-                "from": "Text",
-                "to": "text + reasoning"
-              }
-            ]
+            "eligible": 237,
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           },
           "rateLimit": {
-            "eligible": 175,
+            "eligible": 178,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -151,13 +145,13 @@
         },
         "provider": {
           "description": {
-            "eligible": 16,
+            "eligible": 15,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "baseUrl": {
-            "eligible": 16,
+            "eligible": 15,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -241,16 +235,14 @@
     }
   ],
   "quarantine": {
-    "heldProviders": [
+    "heldProviders": [],
+    "accepted": [
       {
         "slug": "cerebras",
         "kind": "disappeared",
-        "detail": "provider hilang dari hasil merge",
-        "streak": 2,
-        "needs": 3
+        "detail": "provider hilang dari hasil merge"
       }
     ],
-    "accepted": [],
     "cleared": [],
     "confirmRuns": 3
   }

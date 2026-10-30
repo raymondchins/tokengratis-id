@@ -11,8 +11,8 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js: The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
-      "stars": 10209,
-      "forks": 1213,
+      "stars": 10210,
+      "forks": 1211,
       "openIssues": 17,
       "license": "AGPL-3.0",
       "topics": [
@@ -40,8 +40,8 @@
       "homepage": "https://antislop.ai.id",
       "description": "Rules for an AI coding agent to filter out generic AI-generated UI designs, text, and code.",
       "language": "JavaScript",
-      "stars": 7559,
-      "forks": 515,
+      "stars": 7633,
+      "forks": 520,
       "openIssues": 4,
       "license": "MIT",
       "topics": [
@@ -128,14 +128,14 @@
       "language": "PHP",
       "stars": 1231,
       "forks": 1197,
-      "openIssues": 329,
+      "openIssues": 322,
       "license": null,
       "topics": [
         "opensid",
         "sistem-informasi-desa"
       ],
       "archived": false,
-      "pushedAt": "2026-09-06T06:59:28Z",
+      "pushedAt": "2026-10-30T11:04:58Z",
       "createdAt": "2016-05-21T10:55:38Z"
     },
     {
@@ -149,8 +149,8 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1060,
-      "forks": 311,
+      "stars": 1061,
+      "forks": 310,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -187,14 +187,49 @@
       "homepage": "https://ahmadrosid.github.io/nakama",
       "description": "The AI workspace where teams share agents, skills and automations that the whole company builds on.",
       "language": "TypeScript",
-      "stars": 722,
-      "forks": 121,
-      "openIssues": 40,
+      "stars": 739,
+      "forks": 123,
+      "openIssues": 35,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-29T19:49:00Z",
+      "pushedAt": "2026-10-30T19:09:33Z",
       "createdAt": "2026-05-23T06:02:30Z"
+    },
+    {
+      "slug": "raymondchins/bridgeplay",
+      "fullName": "raymondchins/Bridgeplay",
+      "name": "Bridgeplay",
+      "owner": "raymondchins",
+      "ownerUrl": "https://github.com/raymondchins",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
+      "url": "https://github.com/raymondchins/Bridgeplay",
+      "homepage": "https://bridgeplay.dev",
+      "description": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit",
+      "language": "Scala",
+      "stars": 691,
+      "forks": 138,
+      "openIssues": 18,
+      "license": "GPL-3.0",
+      "topics": [
+        "apple-silicon",
+        "d3dmetal",
+        "dxmt",
+        "dxvk",
+        "game-porting-toolkit",
+        "gptk",
+        "mac-gaming",
+        "macos",
+        "metalfx",
+        "rosetta-2",
+        "steam",
+        "steam-play",
+        "wine",
+        "winecx"
+      ],
+      "archived": false,
+      "pushedAt": "2026-10-30T15:40:34Z",
+      "createdAt": "2026-10-20T03:13:58Z"
     },
     {
       "slug": "laravolt/indonesia",
@@ -215,41 +250,6 @@
       "archived": false,
       "pushedAt": "2026-10-29T02:46:07Z",
       "createdAt": "2016-07-15T09:39:20Z"
-    },
-    {
-      "slug": "raymondchins/bridgeplay",
-      "fullName": "raymondchins/Bridgeplay",
-      "name": "Bridgeplay",
-      "owner": "raymondchins",
-      "ownerUrl": "https://github.com/raymondchins",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/12913191?v=4",
-      "url": "https://github.com/raymondchins/Bridgeplay",
-      "homepage": "https://bridgeplay.dev",
-      "description": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit",
-      "language": "Scala",
-      "stars": 667,
-      "forks": 136,
-      "openIssues": 12,
-      "license": "GPL-3.0",
-      "topics": [
-        "apple-silicon",
-        "d3dmetal",
-        "dxmt",
-        "dxvk",
-        "game-porting-toolkit",
-        "gptk",
-        "mac-gaming",
-        "macos",
-        "metalfx",
-        "rosetta-2",
-        "steam",
-        "steam-play",
-        "wine",
-        "winecx"
-      ],
-      "archived": false,
-      "pushedAt": "2026-10-29T13:59:58Z",
-      "createdAt": "2026-10-20T03:13:58Z"
     },
     {
       "slug": "rayasabari/joko-ui",
@@ -291,7 +291,7 @@
       "language": "Rust",
       "stars": 375,
       "forks": 35,
-      "openIssues": 13,
+      "openIssues": 11,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -316,7 +316,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-10-29T16:33:13Z",
+      "pushedAt": "2026-10-30T16:28:22Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -358,9 +358,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 292,
+      "stars": 293,
       "forks": 58,
-      "openIssues": 46,
+      "openIssues": 48,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -378,7 +378,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-10-29T15:59:54Z",
+      "pushedAt": "2026-10-30T22:44:54Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -392,9 +392,9 @@
       "homepage": "https://codecora.dev",
       "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
       "language": "Rust",
-      "stars": 278,
+      "stars": 280,
       "forks": 31,
-      "openIssues": 7,
+      "openIssues": 16,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -419,7 +419,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-10-29T09:30:58Z",
+      "pushedAt": "2026-10-30T09:43:10Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -435,7 +435,7 @@
       "language": "TypeScript",
       "stars": 207,
       "forks": 39,
-      "openIssues": 10,
+      "openIssues": 13,
       "license": null,
       "topics": [
         "coding",
@@ -451,7 +451,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-10-29T16:48:19Z",
+      "pushedAt": "2026-10-30T15:03:27Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -523,7 +523,7 @@
       "language": "Go",
       "stars": 156,
       "forks": 52,
-      "openIssues": 11,
+      "openIssues": 12,
       "license": "MIT",
       "topics": [
         "ai",
@@ -546,7 +546,7 @@
         "zai"
       ],
       "archived": false,
-      "pushedAt": "2026-10-20T23:01:45Z",
+      "pushedAt": "2026-10-30T14:42:26Z",
       "createdAt": "2026-05-31T09:02:50Z"
     },
     {
@@ -626,7 +626,7 @@
       "language": "TypeScript",
       "stars": 101,
       "forks": 16,
-      "openIssues": 0,
+      "openIssues": 4,
       "license": null,
       "topics": [
         "browser-shell",
@@ -649,7 +649,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-10-29T16:55:37Z",
+      "pushedAt": "2026-10-30T22:49:26Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -738,7 +738,7 @@
       "language": "Svelte",
       "stars": 68,
       "forks": 21,
-      "openIssues": 3,
+      "openIssues": 4,
       "license": "MIT",
       "topics": [
         "bansos",
@@ -773,7 +773,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-29T06:57:11Z",
+      "pushedAt": "2026-10-30T02:32:14Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -809,11 +809,11 @@
       "language": "Ruby",
       "stars": 52,
       "forks": 6,
-      "openIssues": 1,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-29T13:16:52Z",
+      "pushedAt": "2026-10-30T14:04:20Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -897,7 +897,7 @@
       "description": "AndKasir merupakan aplikasi open source yang dibangun dengan bahasa pemrograman Java untuk kebutuhan retail perusahaan menengah dalam mengatur aktifitas barang masuk dan keluar. konsultasi isu, instalasi dan penambahan fitur silahkan kirim email ke irwan@andriawan.com",
       "language": "Java",
       "stars": 50,
-      "forks": 41,
+      "forks": 42,
       "openIssues": 2,
       "license": "GPL-3.0",
       "topics": [
@@ -964,7 +964,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-10-29T19:01:19Z",
+      "pushedAt": "2026-10-30T05:57:09Z",
       "createdAt": "2026-04-09T16:08:42Z"
     },
     {
@@ -1179,13 +1179,13 @@
       "homepage": "https://tokengratis.id",
       "description": "Directory free AI credits & free tier, Indonesia-first, auto-aggregated dari sumber komunitas. Aggregator transparan (bukan verifier), anti-halusinasi, maintenance nyaris nol.",
       "language": "JavaScript",
-      "stars": 27,
+      "stars": 28,
       "forks": 5,
       "openIssues": 2,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-28T22:59:07Z",
+      "pushedAt": "2026-10-29T23:07:51Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1239,7 +1239,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-10-27T06:40:03Z",
+      "pushedAt": "2026-10-30T18:45:44Z",
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
@@ -1380,7 +1380,7 @@
       "language": "JavaScript",
       "stars": 13,
       "forks": 3,
-      "openIssues": 2,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "ai-agent",
@@ -1397,7 +1397,7 @@
         "zero-human"
       ],
       "archived": false,
-      "pushedAt": "2026-10-28T09:09:02Z",
+      "pushedAt": "2026-10-30T01:04:13Z",
       "createdAt": "2026-03-18T18:38:41Z"
     },
     {
@@ -2061,7 +2061,7 @@
         "vue"
       ],
       "archived": false,
-      "pushedAt": "2026-10-29T02:28:34Z",
+      "pushedAt": "2026-10-30T03:08:00Z",
       "createdAt": "2026-09-02T02:36:21Z"
     },
     {
@@ -2191,14 +2191,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-10-29T23:07:40.856Z"
+      "syncedAt": "2026-10-30T22:50:31.469Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-10-29T23:07:40.856Z"
+      "syncedAt": "2026-10-30T22:50:31.469Z"
     }
   ],
-  "syncedAt": "2026-10-29T23:07:40.856Z",
+  "syncedAt": "2026-10-30T22:50:31.469Z",
   "count": 81
 }
