@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js: The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
-      "stars": 10210,
+      "stars": 10211,
       "forks": 1211,
       "openIssues": 17,
       "license": "AGPL-3.0",
@@ -40,8 +40,8 @@
       "homepage": "https://antislop.ai.id",
       "description": "Rules for an AI coding agent to filter out generic AI-generated UI designs, text, and code.",
       "language": "JavaScript",
-      "stars": 7633,
-      "forks": 520,
+      "stars": 7760,
+      "forks": 529,
       "openIssues": 4,
       "license": "MIT",
       "topics": [
@@ -83,7 +83,7 @@
         "php-library"
       ],
       "archived": false,
-      "pushedAt": "2026-10-29T02:45:54Z",
+      "pushedAt": "2026-10-31T12:23:48Z",
       "createdAt": "2015-10-12T07:01:40Z"
     },
     {
@@ -97,7 +97,7 @@
       "homepage": "https://www.htmly.com",
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
-      "stars": 1367,
+      "stars": 1368,
       "forks": 307,
       "openIssues": 55,
       "license": "GPL-2.0",
@@ -127,8 +127,8 @@
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
       "stars": 1231,
-      "forks": 1197,
-      "openIssues": 322,
+      "forks": 1196,
+      "openIssues": 323,
       "license": null,
       "topics": [
         "opensid",
@@ -187,13 +187,13 @@
       "homepage": "https://ahmadrosid.github.io/nakama",
       "description": "The AI workspace where teams share agents, skills and automations that the whole company builds on.",
       "language": "TypeScript",
-      "stars": 739,
-      "forks": 123,
-      "openIssues": 35,
+      "stars": 743,
+      "forks": 125,
+      "openIssues": 53,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-30T19:09:33Z",
+      "pushedAt": "2026-10-31T16:05:13Z",
       "createdAt": "2026-05-23T06:02:30Z"
     },
     {
@@ -207,9 +207,9 @@
       "homepage": "https://bridgeplay.dev",
       "description": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit",
       "language": "Scala",
-      "stars": 691,
+      "stars": 706,
       "forks": 138,
-      "openIssues": 18,
+      "openIssues": 17,
       "license": "GPL-3.0",
       "topics": [
         "apple-silicon",
@@ -228,7 +228,7 @@
         "winecx"
       ],
       "archived": false,
-      "pushedAt": "2026-10-30T15:40:34Z",
+      "pushedAt": "2026-10-31T15:24:09Z",
       "createdAt": "2026-10-20T03:13:58Z"
     },
     {
@@ -244,11 +244,11 @@
       "language": "PHP",
       "stars": 682,
       "forks": 210,
-      "openIssues": 5,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-29T02:46:07Z",
+      "pushedAt": "2026-10-31T13:14:27Z",
       "createdAt": "2016-07-15T09:39:20Z"
     },
     {
@@ -330,8 +330,8 @@
       "homepage": "https://adbkit.pages.dev",
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 369,
-      "forks": 45,
+      "stars": 370,
+      "forks": 47,
       "openIssues": 3,
       "license": "MIT",
       "topics": [
@@ -358,9 +358,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 293,
+      "stars": 296,
       "forks": 58,
-      "openIssues": 48,
+      "openIssues": 59,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -378,7 +378,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-10-30T22:44:54Z",
+      "pushedAt": "2026-10-31T22:04:27Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -389,10 +389,10 @@
       "ownerUrl": "https://github.com/codecoradev",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
       "url": "https://github.com/codecoradev/uteke",
-      "homepage": "https://codecora.dev",
-      "description": "🧠 The Brain for Your AI — Local-first memory engine for AI agents. Store, recall, and search memories with semantic embeddings. Single Rust binary, zero config, fully offline.",
+      "homepage": "https://uteke.app",
+      "description": "Long-term memory for any AI agent. One Rust binary, offline, 98.2% recall@5 on LongMemEval-S. Self-host free or use Uteke Cloud.",
       "language": "Rust",
-      "stars": 280,
+      "stars": 281,
       "forks": 31,
       "openIssues": 16,
       "license": "Apache-2.0",
@@ -400,18 +400,18 @@
         "agent-memory",
         "ai",
         "ai-agents",
+        "claude-code",
         "cli",
-        "cli-tool",
         "embeddings",
         "hnsw",
         "llm",
         "local-first",
+        "longmemeval",
         "mcp",
         "mcp-server",
         "memory",
         "offline-first",
         "onnx",
-        "onnxruntime",
         "rag",
         "rust",
         "semantic-search",
@@ -435,7 +435,7 @@
       "language": "TypeScript",
       "stars": 207,
       "forks": 39,
-      "openIssues": 13,
+      "openIssues": 11,
       "license": null,
       "topics": [
         "coding",
@@ -451,7 +451,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-10-30T15:03:27Z",
+      "pushedAt": "2026-10-31T06:48:33Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -465,7 +465,7 @@
       "homepage": null,
       "description": null,
       "language": "Python",
-      "stars": 183,
+      "stars": 184,
       "forks": 44,
       "openIssues": 0,
       "license": "MIT",
@@ -507,7 +507,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-10-29T08:06:33Z",
+      "pushedAt": "2026-10-31T13:44:04Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -523,7 +523,7 @@
       "language": "Go",
       "stars": 156,
       "forks": 52,
-      "openIssues": 12,
+      "openIssues": 10,
       "license": "MIT",
       "topics": [
         "ai",
@@ -546,7 +546,7 @@
         "zai"
       ],
       "archived": false,
-      "pushedAt": "2026-10-30T14:42:26Z",
+      "pushedAt": "2026-10-31T13:25:01Z",
       "createdAt": "2026-05-31T09:02:50Z"
     },
     {
@@ -626,7 +626,7 @@
       "language": "TypeScript",
       "stars": 101,
       "forks": 16,
-      "openIssues": 4,
+      "openIssues": 1,
       "license": null,
       "topics": [
         "browser-shell",
@@ -649,7 +649,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-10-30T22:49:26Z",
+      "pushedAt": "2026-10-31T18:46:45Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -674,7 +674,7 @@
         "hacktoberfest2023"
       ],
       "archived": false,
-      "pushedAt": "2026-10-19T05:15:19Z",
+      "pushedAt": "2026-10-31T21:15:53Z",
       "createdAt": "2023-09-05T12:35:21Z"
     },
     {
@@ -773,7 +773,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-30T02:32:14Z",
+      "pushedAt": "2026-10-31T06:02:45Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -813,7 +813,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-30T14:04:20Z",
+      "pushedAt": "2026-10-31T14:47:26Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -964,7 +964,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-10-30T05:57:09Z",
+      "pushedAt": "2026-10-31T07:44:13Z",
       "createdAt": "2026-04-09T16:08:42Z"
     },
     {
@@ -1068,7 +1068,7 @@
       "homepage": null,
       "description": "Minimal aesthetic arch linux + hyprland dotfiles",
       "language": "Shell",
-      "stars": 34,
+      "stars": 35,
       "forks": 4,
       "openIssues": 0,
       "license": null,
@@ -1185,7 +1185,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-29T23:07:51Z",
+      "pushedAt": "2026-10-30T22:50:43Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1221,7 +1221,7 @@
       "language": "JavaScript",
       "stars": 20,
       "forks": 1,
-      "openIssues": 0,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "antigravity",
@@ -1239,7 +1239,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-10-30T18:45:44Z",
+      "pushedAt": "2026-10-31T07:45:04Z",
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
@@ -1401,6 +1401,32 @@
       "createdAt": "2026-03-18T18:38:41Z"
     },
     {
+      "slug": "semutdev/goigniter",
+      "fullName": "semutdev/goigniter",
+      "name": "goigniter",
+      "owner": "semutdev",
+      "ownerUrl": "https://github.com/semutdev",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/209312156?v=4",
+      "url": "https://github.com/semutdev/goigniter",
+      "homepage": "https://goigniter.semut.dev",
+      "description": "Simple MVC web framework golang",
+      "language": "Go",
+      "stars": 13,
+      "forks": 2,
+      "openIssues": 0,
+      "license": null,
+      "topics": [
+        "ci3",
+        "codeigniter",
+        "codeigniter3",
+        "goigniter",
+        "golang"
+      ],
+      "archived": false,
+      "pushedAt": "2026-10-26T00:37:19Z",
+      "createdAt": "2026-01-11T03:16:04Z"
+    },
+    {
       "slug": "rizukirr/numc",
       "fullName": "rizukirr/numc",
       "name": "numc",
@@ -1430,32 +1456,6 @@
       "archived": false,
       "pushedAt": "2026-06-16T16:14:20Z",
       "createdAt": "2026-03-12T09:55:51Z"
-    },
-    {
-      "slug": "semutdev/goigniter",
-      "fullName": "semutdev/goigniter",
-      "name": "goigniter",
-      "owner": "semutdev",
-      "ownerUrl": "https://github.com/semutdev",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/209312156?v=4",
-      "url": "https://github.com/semutdev/goigniter",
-      "homepage": "https://goigniter.semut.dev",
-      "description": "Simple MVC web framework golang",
-      "language": "Go",
-      "stars": 12,
-      "forks": 2,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "ci3",
-        "codeigniter",
-        "codeigniter3",
-        "goigniter",
-        "golang"
-      ],
-      "archived": false,
-      "pushedAt": "2026-10-26T00:37:19Z",
-      "createdAt": "2026-01-11T03:16:04Z"
     },
     {
       "slug": "hellodit/openmasjid",
@@ -1510,7 +1510,7 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 66,
+      "openIssues": 63,
       "license": "Apache-2.0",
       "topics": [
         "linux",
@@ -1528,7 +1528,7 @@
         "system-programming-control-systems"
       ],
       "archived": false,
-      "pushedAt": "2026-10-28T15:35:20Z",
+      "pushedAt": "2026-10-31T19:17:44Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -2191,14 +2191,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-10-30T22:50:31.469Z"
+      "syncedAt": "2026-10-31T22:19:26.051Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-10-30T22:50:31.469Z"
+      "syncedAt": "2026-10-31T22:19:26.051Z"
     }
   ],
-  "syncedAt": "2026-10-30T22:50:31.469Z",
+  "syncedAt": "2026-10-31T22:19:26.051Z",
   "count": 81
 }

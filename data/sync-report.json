@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-30T22:50:24.567Z",
+  "generatedAt": "2026-10-31T22:19:18.938Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
       "status": "ok",
       "providers": 15,
-      "models": 101,
+      "models": 94,
       "shapeIssues": []
     },
     "freellm.net": {
@@ -56,7 +56,7 @@
     "openrouter.ai/api/v1/models": {
       "status": "ok",
       "providers": 1,
-      "models": 16,
+      "models": 14,
       "shapeIssues": []
     }
   },
@@ -65,7 +65,7 @@
   ],
   "merged": {
     "providers": 22,
-    "models": 307,
+    "models": 305,
     "shapeIssues": [
       {
         "severity": "warn",
@@ -73,12 +73,12 @@
         "field": "context",
         "rule": "context-shape",
         "count": 1,
-        "total": 291,
-        "ratio": 0.003436426116838488,
+        "total": 289,
+        "ratio": 0.0034602076124567475,
         "samples": [
           "448"
         ],
-        "message": "Field \"context\": 1/291 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
+        "message": "Field \"context\": 1/289 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
       },
       {
         "severity": "warn",
@@ -86,12 +86,12 @@
         "field": "maxOutput",
         "rule": "maxoutput-shape",
         "count": 1,
-        "total": 129,
-        "ratio": 0.007751937984496124,
+        "total": 124,
+        "ratio": 0.008064516129032258,
         "samples": [
           "448"
         ],
-        "message": "Field \"maxOutput\": 1/129 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
+        "message": "Field \"maxOutput\": 1/124 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
       }
     ]
   },
@@ -100,47 +100,49 @@
     "warnings": []
   },
   "diffGuard": {
-    "ok": false,
-    "errors": [
-      "provider \"cerebras\" disappeared (was in prev, missing in next)"
-    ],
+    "ok": true,
+    "errors": [],
     "warnings": [],
     "stats": {
-      "prevProviders": 23,
+      "prevProviders": 22,
       "nextProviders": 22,
-      "prevModels": 308,
-      "nextModels": 307,
-      "totalDropPct": 0.3246753246753247,
-      "disappeared": [
-        "cerebras"
-      ],
+      "prevModels": 307,
+      "nextModels": 305,
+      "totalDropPct": 0.6514657980456027,
+      "disappeared": [],
       "shrunk": [],
       "churned": [],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 291,
+            "eligible": 285,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "maxOutput": {
-            "eligible": 129,
+            "eligible": 124,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "modality": {
-            "eligible": 237,
+            "eligible": 231,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "rateLimit": {
-            "eligible": 178,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "eligible": 172,
+            "changed": 1,
+            "ratioPct": 0.5813953488372093,
+            "examples": [
+              {
+                "label": "openrouter/nvidia/nemotron-3.5-content-safety:free",
+                "from": "20 RPM, 50 RPD",
+                "to": "200 req/day (free tier)"
+              }
+            ]
           }
         },
         "provider": {
@@ -213,12 +215,12 @@
       "field": "context",
       "rule": "context-shape",
       "count": 1,
-      "total": 291,
-      "ratio": 0.003436426116838488,
+      "total": 289,
+      "ratio": 0.0034602076124567475,
       "samples": [
         "448"
       ],
-      "message": "Field \"context\": 1/291 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
+      "message": "Field \"context\": 1/289 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
     },
     {
       "severity": "warn",
@@ -226,23 +228,17 @@
       "field": "maxOutput",
       "rule": "maxoutput-shape",
       "count": 1,
-      "total": 129,
-      "ratio": 0.007751937984496124,
+      "total": 124,
+      "ratio": 0.008064516129032258,
       "samples": [
         "448"
       ],
-      "message": "Field \"maxOutput\": 1/129 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
+      "message": "Field \"maxOutput\": 1/124 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
     }
   ],
   "quarantine": {
     "heldProviders": [],
-    "accepted": [
-      {
-        "slug": "cerebras",
-        "kind": "disappeared",
-        "detail": "provider hilang dari hasil merge"
-      }
-    ],
+    "accepted": [],
     "cleared": [],
     "confirmRuns": 3
   }
