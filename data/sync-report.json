@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T22:19:18.938Z",
+  "generatedAt": "2026-11-01T22:37:15.921Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -106,16 +106,16 @@
     "stats": {
       "prevProviders": 22,
       "nextProviders": 22,
-      "prevModels": 307,
+      "prevModels": 305,
       "nextModels": 305,
-      "totalDropPct": 0.6514657980456027,
+      "totalDropPct": 0,
       "disappeared": [],
       "shrunk": [],
       "churned": [],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 285,
+            "eligible": 289,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -127,22 +127,16 @@
             "examples": []
           },
           "modality": {
-            "eligible": 231,
+            "eligible": 235,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "rateLimit": {
-            "eligible": 172,
-            "changed": 1,
-            "ratioPct": 0.5813953488372093,
-            "examples": [
-              {
-                "label": "openrouter/nvidia/nemotron-3.5-content-safety:free",
-                "from": "20 RPM, 50 RPD",
-                "to": "200 req/day (free tier)"
-              }
-            ]
+            "eligible": 176,
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           }
         },
         "provider": {

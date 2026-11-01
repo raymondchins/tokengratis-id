@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js: The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
-      "stars": 10211,
+      "stars": 10212,
       "forks": 1211,
       "openIssues": 17,
       "license": "AGPL-3.0",
@@ -40,9 +40,9 @@
       "homepage": "https://antislop.ai.id",
       "description": "Rules for an AI coding agent to filter out generic AI-generated UI designs, text, and code.",
       "language": "JavaScript",
-      "stars": 7760,
-      "forks": 529,
-      "openIssues": 4,
+      "stars": 7922,
+      "forks": 536,
+      "openIssues": 2,
       "license": "MIT",
       "topics": [
         "accessibility",
@@ -57,7 +57,7 @@
         "ui-design"
       ],
       "archived": false,
-      "pushedAt": "2026-10-28T17:34:01Z",
+      "pushedAt": "2026-11-01T12:06:35Z",
       "createdAt": "2026-08-07T10:29:56Z"
     },
     {
@@ -83,7 +83,7 @@
         "php-library"
       ],
       "archived": false,
-      "pushedAt": "2026-10-31T12:23:48Z",
+      "pushedAt": "2026-11-01T13:23:36Z",
       "createdAt": "2015-10-12T07:01:40Z"
     },
     {
@@ -97,7 +97,7 @@
       "homepage": "https://www.htmly.com",
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
-      "stars": 1368,
+      "stars": 1367,
       "forks": 307,
       "openIssues": 55,
       "license": "GPL-2.0",
@@ -150,8 +150,8 @@
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
       "stars": 1061,
-      "forks": 310,
-      "openIssues": 0,
+      "forks": 309,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "ai-video",
@@ -177,26 +177,6 @@
       "createdAt": "2026-01-15T09:55:34Z"
     },
     {
-      "slug": "ahmadrosid/nakama",
-      "fullName": "ahmadrosid/nakama",
-      "name": "nakama",
-      "owner": "ahmadrosid",
-      "ownerUrl": "https://github.com/ahmadrosid",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/29406408?v=4",
-      "url": "https://github.com/ahmadrosid/nakama",
-      "homepage": "https://ahmadrosid.github.io/nakama",
-      "description": "The AI workspace where teams share agents, skills and automations that the whole company builds on.",
-      "language": "TypeScript",
-      "stars": 743,
-      "forks": 125,
-      "openIssues": 53,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-10-31T16:05:13Z",
-      "createdAt": "2026-05-23T06:02:30Z"
-    },
-    {
       "slug": "raymondchins/bridgeplay",
       "fullName": "raymondchins/Bridgeplay",
       "name": "Bridgeplay",
@@ -207,9 +187,9 @@
       "homepage": "https://bridgeplay.dev",
       "description": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit",
       "language": "Scala",
-      "stars": 706,
-      "forks": 138,
-      "openIssues": 17,
+      "stars": 790,
+      "forks": 140,
+      "openIssues": 11,
       "license": "GPL-3.0",
       "topics": [
         "apple-silicon",
@@ -228,8 +208,28 @@
         "winecx"
       ],
       "archived": false,
-      "pushedAt": "2026-10-31T15:24:09Z",
+      "pushedAt": "2026-11-01T05:57:15Z",
       "createdAt": "2026-10-20T03:13:58Z"
+    },
+    {
+      "slug": "ahmadrosid/nakama",
+      "fullName": "ahmadrosid/nakama",
+      "name": "nakama",
+      "owner": "ahmadrosid",
+      "ownerUrl": "https://github.com/ahmadrosid",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/29406408?v=4",
+      "url": "https://github.com/ahmadrosid/nakama",
+      "homepage": "https://ahmadrosid.github.io/nakama",
+      "description": "The AI workspace where teams share agents, skills and automations that the whole company builds on.",
+      "language": "TypeScript",
+      "stars": 749,
+      "forks": 130,
+      "openIssues": 53,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-11-01T19:25:28Z",
+      "createdAt": "2026-05-23T06:02:30Z"
     },
     {
       "slug": "laravolt/indonesia",
@@ -248,7 +248,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-31T13:14:27Z",
+      "pushedAt": "2026-11-01T13:23:40Z",
       "createdAt": "2016-07-15T09:39:20Z"
     },
     {
@@ -287,11 +287,11 @@
       "ownerAvatar": "https://avatars.githubusercontent.com/u/4769529?v=4",
       "url": "https://github.com/fajarhide/contexere",
       "homepage": "https://omni.weekndlabs.com/docs",
-      "description": "The context layer for AI coding agents: less noise, fewer tokens, nothing lost. Formerly OMNI.",
+      "description": "The one place for the skills, keys and memory of every agent you use. Formerly OMNI.",
       "language": "Rust",
-      "stars": 375,
+      "stars": 378,
       "forks": 35,
-      "openIssues": 11,
+      "openIssues": 19,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -316,7 +316,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-10-30T16:28:22Z",
+      "pushedAt": "2026-11-01T13:31:18Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -332,7 +332,7 @@
       "language": "TypeScript",
       "stars": 370,
       "forks": 47,
-      "openIssues": 3,
+      "openIssues": 4,
       "license": "MIT",
       "topics": [
         "adb",
@@ -358,9 +358,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 296,
-      "forks": 58,
-      "openIssues": 59,
+      "stars": 299,
+      "forks": 60,
+      "openIssues": 66,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -378,7 +378,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-10-31T22:04:27Z",
+      "pushedAt": "2026-11-01T22:28:10Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -394,7 +394,7 @@
       "language": "Rust",
       "stars": 281,
       "forks": 31,
-      "openIssues": 16,
+      "openIssues": 8,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -419,7 +419,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-10-30T09:43:10Z",
+      "pushedAt": "2026-11-01T14:13:20Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -451,7 +451,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-10-31T06:48:33Z",
+      "pushedAt": "2026-11-01T00:39:28Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -522,7 +522,7 @@
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
       "stars": 156,
-      "forks": 52,
+      "forks": 53,
       "openIssues": 10,
       "license": "MIT",
       "topics": [
@@ -626,7 +626,7 @@
       "language": "TypeScript",
       "stars": 101,
       "forks": 16,
-      "openIssues": 1,
+      "openIssues": 9,
       "license": null,
       "topics": [
         "browser-shell",
@@ -649,7 +649,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-10-31T18:46:45Z",
+      "pushedAt": "2026-11-01T21:52:59Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -767,13 +767,13 @@
       "homepage": null,
       "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
       "language": "TypeScript",
-      "stars": 61,
+      "stars": 62,
       "forks": 7,
       "openIssues": 1,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-31T06:02:45Z",
+      "pushedAt": "2026-11-01T21:11:33Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -809,11 +809,11 @@
       "language": "Ruby",
       "stars": 52,
       "forks": 6,
-      "openIssues": 0,
+      "openIssues": 2,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-31T14:47:26Z",
+      "pushedAt": "2026-11-01T13:05:14Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -931,7 +931,7 @@
         "vitejs"
       ],
       "archived": false,
-      "pushedAt": "2026-06-24T03:36:32Z",
+      "pushedAt": "2026-11-01T18:28:45Z",
       "createdAt": "2026-06-07T16:49:12Z"
     },
     {
@@ -964,7 +964,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-10-31T07:44:13Z",
+      "pushedAt": "2026-11-01T13:29:26Z",
       "createdAt": "2026-04-09T16:08:42Z"
     },
     {
@@ -993,6 +993,33 @@
       "archived": false,
       "pushedAt": "2026-09-25T03:09:23Z",
       "createdAt": "2025-05-26T04:42:45Z"
+    },
+    {
+      "slug": "rizukirr/hyprsimple",
+      "fullName": "rizukirr/hyprsimple",
+      "name": "hyprsimple",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/hyprsimple",
+      "homepage": null,
+      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
+      "language": "Shell",
+      "stars": 37,
+      "forks": 4,
+      "openIssues": 0,
+      "license": null,
+      "topics": [
+        "arch-linux",
+        "dotfiles",
+        "hyprland",
+        "hyprland-config",
+        "linux",
+        "omarchy"
+      ],
+      "archived": false,
+      "pushedAt": "2026-11-01T17:05:09Z",
+      "createdAt": "2025-10-04T10:27:45Z"
     },
     {
       "slug": "ammar-rasyidi/mandum-rimba",
@@ -1056,33 +1083,6 @@
       "archived": false,
       "pushedAt": "2026-08-05T02:24:00Z",
       "createdAt": "2026-06-05T18:22:55Z"
-    },
-    {
-      "slug": "rizukirr/hyprsimple",
-      "fullName": "rizukirr/hyprsimple",
-      "name": "hyprsimple",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/hyprsimple",
-      "homepage": null,
-      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
-      "language": "Shell",
-      "stars": 35,
-      "forks": 4,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "arch-linux",
-        "dotfiles",
-        "hyprland",
-        "hyprland-config",
-        "linux",
-        "omarchy"
-      ],
-      "archived": false,
-      "pushedAt": "2026-10-24T10:41:45Z",
-      "createdAt": "2025-10-04T10:27:45Z"
     },
     {
       "slug": "rahmanef63/open-silong",
@@ -1185,7 +1185,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-30T22:50:43Z",
+      "pushedAt": "2026-10-31T22:19:39Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1510,7 +1510,7 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 63,
+      "openIssues": 69,
       "license": "Apache-2.0",
       "topics": [
         "linux",
@@ -1528,7 +1528,7 @@
         "system-programming-control-systems"
       ],
       "archived": false,
-      "pushedAt": "2026-10-31T19:17:44Z",
+      "pushedAt": "2026-11-01T21:00:10Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1561,6 +1561,40 @@
       "archived": false,
       "pushedAt": "2026-10-01T04:23:44Z",
       "createdAt": "2026-03-25T12:38:25Z"
+    },
+    {
+      "slug": "codecoradev/trapfall",
+      "fullName": "codecoradev/trapfall",
+      "name": "trapfall",
+      "owner": "codecoradev",
+      "ownerUrl": "https://github.com/codecoradev",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
+      "url": "https://github.com/codecoradev/trapfall",
+      "homepage": "https://codecora.dev",
+      "description": "TrapFall — Lightweight self-hosted error capture engine. Sentry-compatible, Rust + SvelteKit 5.",
+      "language": "Rust",
+      "stars": 10,
+      "forks": 0,
+      "openIssues": 25,
+      "license": "Apache-2.0",
+      "topics": [
+        "axum",
+        "blake3",
+        "crash-reporting",
+        "error-capture",
+        "error-tracking",
+        "flutter",
+        "mcp",
+        "observability",
+        "rust",
+        "self-hosted",
+        "sentry",
+        "sentry-alternative",
+        "sveltekit"
+      ],
+      "archived": false,
+      "pushedAt": "2026-10-26T12:10:29Z",
+      "createdAt": "2026-06-06T00:23:26Z"
     },
     {
       "slug": "xpajonx/openempiric",
@@ -1597,40 +1631,6 @@
       "archived": false,
       "pushedAt": "2026-09-15T06:58:18Z",
       "createdAt": "2026-06-02T04:21:59Z"
-    },
-    {
-      "slug": "codecoradev/trapfall",
-      "fullName": "codecoradev/trapfall",
-      "name": "trapfall",
-      "owner": "codecoradev",
-      "ownerUrl": "https://github.com/codecoradev",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/289767358?v=4",
-      "url": "https://github.com/codecoradev/trapfall",
-      "homepage": "https://codecora.dev",
-      "description": "TrapFall — Lightweight self-hosted error capture engine. Sentry-compatible, Rust + SvelteKit 5.",
-      "language": "Rust",
-      "stars": 9,
-      "forks": 0,
-      "openIssues": 25,
-      "license": "Apache-2.0",
-      "topics": [
-        "axum",
-        "blake3",
-        "crash-reporting",
-        "error-capture",
-        "error-tracking",
-        "flutter",
-        "mcp",
-        "observability",
-        "rust",
-        "self-hosted",
-        "sentry",
-        "sentry-alternative",
-        "sveltekit"
-      ],
-      "archived": false,
-      "pushedAt": "2026-10-26T12:10:29Z",
-      "createdAt": "2026-06-06T00:23:26Z"
     },
     {
       "slug": "rifqiakrm/code-island",
@@ -2191,14 +2191,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-10-31T22:19:26.051Z"
+      "syncedAt": "2026-11-01T22:37:22.391Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-10-31T22:19:26.051Z"
+      "syncedAt": "2026-11-01T22:37:22.391Z"
     }
   ],
-  "syncedAt": "2026-10-31T22:19:26.051Z",
+  "syncedAt": "2026-11-01T22:37:22.391Z",
   "count": 81
 }
