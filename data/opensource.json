@@ -12,7 +12,7 @@
       "description": "UAParser.js: The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
       "stars": 10213,
-      "forks": 1211,
+      "forks": 1210,
       "openIssues": 17,
       "license": "AGPL-3.0",
       "topics": [
@@ -40,8 +40,8 @@
       "homepage": "https://antislop.ai.id",
       "description": "Rules for an AI coding agent to filter out generic AI-generated UI designs, text, and code.",
       "language": "JavaScript",
-      "stars": 8025,
-      "forks": 539,
+      "stars": 8109,
+      "forks": 544,
       "openIssues": 2,
       "license": "MIT",
       "topics": [
@@ -128,7 +128,7 @@
       "language": "PHP",
       "stars": 1231,
       "forks": 1196,
-      "openIssues": 323,
+      "openIssues": 325,
       "license": null,
       "topics": [
         "opensid",
@@ -149,8 +149,8 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1062,
-      "forks": 309,
+      "stars": 1067,
+      "forks": 311,
       "openIssues": 1,
       "license": "MIT",
       "topics": [
@@ -187,8 +187,8 @@
       "homepage": "https://bridgeplay.dev",
       "description": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit",
       "language": "Scala",
-      "stars": 822,
-      "forks": 142,
+      "stars": 837,
+      "forks": 145,
       "openIssues": 12,
       "license": "GPL-3.0",
       "topics": [
@@ -208,7 +208,7 @@
         "winecx"
       ],
       "archived": false,
-      "pushedAt": "2026-11-02T18:29:22Z",
+      "pushedAt": "2026-11-03T14:33:32Z",
       "createdAt": "2026-10-20T03:13:58Z"
     },
     {
@@ -222,9 +222,9 @@
       "homepage": "https://ahmadrosid.github.io/nakama",
       "description": "The AI workspace where teams share agents, skills and automations that the whole company builds on.",
       "language": "TypeScript",
-      "stars": 757,
+      "stars": 768,
       "forks": 129,
-      "openIssues": 50,
+      "openIssues": 68,
       "license": "MIT",
       "topics": [
         "agents",
@@ -234,7 +234,7 @@
         "openai"
       ],
       "archived": false,
-      "pushedAt": "2026-11-02T22:11:35Z",
+      "pushedAt": "2026-11-03T17:14:03Z",
       "createdAt": "2026-05-23T06:02:30Z"
     },
     {
@@ -295,9 +295,9 @@
       "homepage": "https://omni.weekndlabs.com/docs",
       "description": "The one place for the skills, keys and memory of every agent you use. Formerly OMNI.",
       "language": "Rust",
-      "stars": 380,
+      "stars": 381,
       "forks": 35,
-      "openIssues": 20,
+      "openIssues": 25,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -322,7 +322,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-11-01T13:31:18Z",
+      "pushedAt": "2026-11-03T16:54:54Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -366,7 +366,7 @@
       "language": "TypeScript",
       "stars": 302,
       "forks": 60,
-      "openIssues": 65,
+      "openIssues": 55,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -384,7 +384,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-11-03T01:13:32Z",
+      "pushedAt": "2026-11-03T23:08:31Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -398,9 +398,9 @@
       "homepage": "https://uteke.app",
       "description": "Long-term memory for any AI agent. One Rust binary, offline, 98.2% recall@5 on LongMemEval-S. Self-host free or use Uteke Cloud.",
       "language": "Rust",
-      "stars": 282,
+      "stars": 283,
       "forks": 31,
-      "openIssues": 7,
+      "openIssues": 9,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -425,7 +425,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-11-03T01:04:10Z",
+      "pushedAt": "2026-11-03T18:55:12Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -441,7 +441,7 @@
       "language": "TypeScript",
       "stars": 207,
       "forks": 40,
-      "openIssues": 13,
+      "openIssues": 16,
       "license": null,
       "topics": [
         "coding",
@@ -457,7 +457,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-11-01T00:39:28Z",
+      "pushedAt": "2026-11-03T12:28:51Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -513,7 +513,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-11-03T01:25:34Z",
+      "pushedAt": "2026-11-03T04:49:20Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -527,7 +527,7 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 159,
+      "stars": 160,
       "forks": 53,
       "openIssues": 11,
       "license": "MIT",
@@ -630,7 +630,7 @@
       "homepage": "https://mso.rahmanef.com",
       "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
-      "stars": 102,
+      "stars": 105,
       "forks": 16,
       "openIssues": 0,
       "license": null,
@@ -655,7 +655,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-11-02T23:16:06Z",
+      "pushedAt": "2026-11-03T23:11:07Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -779,8 +779,37 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-02T11:50:32Z",
+      "pushedAt": "2026-11-03T22:06:33Z",
       "createdAt": "2026-06-09T15:06:10Z"
+    },
+    {
+      "slug": "ardli-firman/sha-print",
+      "fullName": "ardli-firman/sha-print",
+      "name": "sha-print",
+      "owner": "ardli-firman",
+      "ownerUrl": "https://github.com/ardli-firman",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/48121202?v=4",
+      "url": "https://github.com/ardli-firman/sha-print",
+      "homepage": null,
+      "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
+      "language": "Rust",
+      "stars": 53,
+      "forks": 16,
+      "openIssues": 0,
+      "license": null,
+      "topics": [
+        "android",
+        "desktop-app",
+        "linux",
+        "linux-desktop",
+        "printer",
+        "sharing",
+        "sharing-printer",
+        "windows"
+      ],
+      "archived": false,
+      "pushedAt": "2026-10-24T06:31:41Z",
+      "createdAt": "2026-05-23T05:37:35Z"
     },
     {
       "slug": "maziyank/nats",
@@ -815,41 +844,12 @@
       "language": "Ruby",
       "stars": 52,
       "forks": 6,
-      "openIssues": 1,
+      "openIssues": 2,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-03T01:18:35Z",
+      "pushedAt": "2026-11-03T04:43:43Z",
       "createdAt": "2026-05-23T01:58:17Z"
-    },
-    {
-      "slug": "ardli-firman/sha-print",
-      "fullName": "ardli-firman/sha-print",
-      "name": "sha-print",
-      "owner": "ardli-firman",
-      "ownerUrl": "https://github.com/ardli-firman",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/48121202?v=4",
-      "url": "https://github.com/ardli-firman/sha-print",
-      "homepage": null,
-      "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
-      "language": "Rust",
-      "stars": 50,
-      "forks": 16,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "android",
-        "desktop-app",
-        "linux",
-        "linux-desktop",
-        "printer",
-        "sharing",
-        "sharing-printer",
-        "windows"
-      ],
-      "archived": false,
-      "pushedAt": "2026-10-24T06:31:41Z",
-      "createdAt": "2026-05-23T05:37:35Z"
     },
     {
       "slug": "mmenghancurkan/dynaqris",
@@ -970,7 +970,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-11-03T00:02:37Z",
+      "pushedAt": "2026-11-03T15:39:02Z",
       "createdAt": "2026-04-09T16:08:42Z"
     },
     {
@@ -1101,7 +1101,7 @@
       "homepage": "https://silong-os.vercel.app/",
       "description": "Open-source, self-hostable Notion/Obsidian-style workspace — block editor for notes, docs and lightweight databases, plus a knowledge graph over them. Next.js 16 · React 19 · Convex · Tailwind v4.",
       "language": "TypeScript",
-      "stars": 34,
+      "stars": 35,
       "forks": 7,
       "openIssues": 0,
       "license": "MIT",
@@ -1191,7 +1191,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-01T22:37:39Z",
+      "pushedAt": "2026-11-03T01:28:15Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1516,7 +1516,7 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 74,
+      "openIssues": 72,
       "license": "Apache-2.0",
       "topics": [
         "linux",
@@ -1534,7 +1534,7 @@
         "system-programming-control-systems"
       ],
       "archived": false,
-      "pushedAt": "2026-11-02T12:56:35Z",
+      "pushedAt": "2026-11-03T18:03:32Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1708,7 +1708,7 @@
         "rust"
       ],
       "archived": false,
-      "pushedAt": "2026-09-23T12:08:09Z",
+      "pushedAt": "2026-11-03T15:58:24Z",
       "createdAt": "2026-06-04T12:15:07Z"
     },
     {
@@ -1836,11 +1836,11 @@
       "language": "TypeScript",
       "stars": 7,
       "forks": 0,
-      "openIssues": 10,
+      "openIssues": 14,
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-27T15:09:52Z",
+      "pushedAt": "2026-11-03T15:08:13Z",
       "createdAt": "2026-06-13T11:24:30Z"
     },
     {
@@ -1913,7 +1913,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-10-26T11:37:11Z",
+      "pushedAt": "2026-11-03T08:32:48Z",
       "createdAt": "2025-11-22T11:52:35Z"
     },
     {
@@ -2067,7 +2067,7 @@
         "vue"
       ],
       "archived": false,
-      "pushedAt": "2026-11-02T07:24:26Z",
+      "pushedAt": "2026-11-03T09:42:16Z",
       "createdAt": "2026-09-02T02:36:21Z"
     },
     {
@@ -2197,14 +2197,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-11-03T01:27:59.548Z"
+      "syncedAt": "2026-11-03T23:53:03.017Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-11-03T01:27:59.548Z"
+      "syncedAt": "2026-11-03T23:53:03.017Z"
     }
   ],
-  "syncedAt": "2026-11-03T01:27:59.548Z",
+  "syncedAt": "2026-11-03T23:53:03.017Z",
   "count": 81
 }

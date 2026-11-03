@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T01:27:53.004Z",
+  "generatedAt": "2026-11-03T23:52:57.429Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -106,16 +106,16 @@
     "stats": {
       "prevProviders": 22,
       "nextProviders": 22,
-      "prevModels": 305,
+      "prevModels": 301,
       "nextModels": 301,
-      "totalDropPct": 1.3114754098360655,
+      "totalDropPct": 0,
       "disappeared": [],
       "shrunk": [],
       "churned": [],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 285,
+            "eligible": 286,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
