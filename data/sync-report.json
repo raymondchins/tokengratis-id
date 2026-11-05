@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-03T23:52:57.429Z",
+  "generatedAt": "2026-11-05T00:12:56.041Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
       "status": "ok",
       "providers": 15,
-      "models": 94,
+      "models": 88,
       "shapeIssues": []
     },
     "freellm.net": {
@@ -56,7 +56,7 @@
     "openrouter.ai/api/v1/models": {
       "status": "ok",
       "providers": 1,
-      "models": 14,
+      "models": 12,
       "shapeIssues": []
     }
   },
@@ -65,7 +65,7 @@
   ],
   "merged": {
     "providers": 22,
-    "models": 301,
+    "models": 298,
     "shapeIssues": [
       {
         "severity": "warn",
@@ -73,12 +73,12 @@
         "field": "context",
         "rule": "context-shape",
         "count": 1,
-        "total": 286,
-        "ratio": 0.0034965034965034965,
+        "total": 283,
+        "ratio": 0.0035335689045936395,
         "samples": [
           "448"
         ],
-        "message": "Field \"context\": 1/286 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
+        "message": "Field \"context\": 1/283 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
       },
       {
         "severity": "warn",
@@ -86,12 +86,12 @@
         "field": "maxOutput",
         "rule": "maxoutput-shape",
         "count": 1,
-        "total": 123,
-        "ratio": 0.008130081300813009,
+        "total": 118,
+        "ratio": 0.00847457627118644,
         "samples": [
           "448"
         ],
-        "message": "Field \"maxOutput\": 1/123 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
+        "message": "Field \"maxOutput\": 1/118 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
       }
     ]
   },
@@ -107,33 +107,33 @@
       "prevProviders": 22,
       "nextProviders": 22,
       "prevModels": 301,
-      "nextModels": 301,
-      "totalDropPct": 0,
+      "nextModels": 298,
+      "totalDropPct": 0.9966777408637874,
       "disappeared": [],
       "shrunk": [],
       "churned": [],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 286,
+            "eligible": 280,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "maxOutput": {
-            "eligible": 123,
+            "eligible": 117,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "modality": {
-            "eligible": 232,
+            "eligible": 226,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "rateLimit": {
-            "eligible": 174,
+            "eligible": 168,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -160,9 +160,15 @@
           },
           "maxContext": {
             "eligible": 21,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "changed": 1,
+            "ratioPct": 4.761904761904762,
+            "examples": [
+              {
+                "label": "openrouter",
+                "from": "1.049M",
+                "to": "1M"
+              }
+            ]
           }
         }
       }
@@ -209,12 +215,12 @@
       "field": "context",
       "rule": "context-shape",
       "count": 1,
-      "total": 286,
-      "ratio": 0.0034965034965034965,
+      "total": 283,
+      "ratio": 0.0035335689045936395,
       "samples": [
         "448"
       ],
-      "message": "Field \"context\": 1/286 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
+      "message": "Field \"context\": 1/283 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
     },
     {
       "severity": "warn",
@@ -222,12 +228,12 @@
       "field": "maxOutput",
       "rule": "maxoutput-shape",
       "count": 1,
-      "total": 123,
-      "ratio": 0.008130081300813009,
+      "total": 118,
+      "ratio": 0.00847457627118644,
       "samples": [
         "448"
       ],
-      "message": "Field \"maxOutput\": 1/123 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
+      "message": "Field \"maxOutput\": 1/118 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
     }
   ],
   "quarantine": {
