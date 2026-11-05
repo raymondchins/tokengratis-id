@@ -11,8 +11,8 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js: The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
-      "stars": 10212,
-      "forks": 1210,
+      "stars": 10211,
+      "forks": 1211,
       "openIssues": 17,
       "license": "AGPL-3.0",
       "topics": [
@@ -40,9 +40,9 @@
       "homepage": "https://antislop.ai.id",
       "description": "Rules for an AI coding agent to filter out generic AI-generated UI designs, text, and code.",
       "language": "JavaScript",
-      "stars": 8211,
-      "forks": 550,
-      "openIssues": 2,
+      "stars": 8355,
+      "forks": 562,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [
         "accessibility",
@@ -57,7 +57,7 @@
         "ui-design"
       ],
       "archived": false,
-      "pushedAt": "2026-11-01T12:06:35Z",
+      "pushedAt": "2026-11-05T11:11:47Z",
       "createdAt": "2026-08-07T10:29:56Z"
     },
     {
@@ -128,7 +128,7 @@
       "language": "PHP",
       "stars": 1232,
       "forks": 1195,
-      "openIssues": 326,
+      "openIssues": 330,
       "license": null,
       "topics": [
         "opensid",
@@ -149,7 +149,7 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1069,
+      "stars": 1071,
       "forks": 310,
       "openIssues": 1,
       "license": "MIT",
@@ -187,9 +187,9 @@
       "homepage": "https://bridgeplay.dev",
       "description": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit",
       "language": "Scala",
-      "stars": 855,
-      "forks": 149,
-      "openIssues": 12,
+      "stars": 866,
+      "forks": 148,
+      "openIssues": 15,
       "license": "GPL-3.0",
       "topics": [
         "apple-silicon",
@@ -208,7 +208,7 @@
         "winecx"
       ],
       "archived": false,
-      "pushedAt": "2026-11-04T08:36:32Z",
+      "pushedAt": "2026-11-05T17:19:34Z",
       "createdAt": "2026-10-20T03:13:58Z"
     },
     {
@@ -222,9 +222,9 @@
       "homepage": "https://ahmadrosid.github.io/nakama",
       "description": "The AI workspace where teams share agents, skills and automations that the whole company builds on.",
       "language": "TypeScript",
-      "stars": 775,
+      "stars": 779,
       "forks": 129,
-      "openIssues": 65,
+      "openIssues": 60,
       "license": "MIT",
       "topics": [
         "agents",
@@ -234,7 +234,7 @@
         "openai"
       ],
       "archived": false,
-      "pushedAt": "2026-11-04T21:03:00Z",
+      "pushedAt": "2026-11-05T20:56:06Z",
       "createdAt": "2026-05-23T06:02:30Z"
     },
     {
@@ -248,7 +248,7 @@
       "homepage": null,
       "description": "Package Laravel yang berisi data Provinsi, Kabupaten/Kota, dan Kecamatan/Desa di seluruh Indonesia.",
       "language": "PHP",
-      "stars": 682,
+      "stars": 683,
       "forks": 210,
       "openIssues": 1,
       "license": "MIT",
@@ -268,7 +268,7 @@
       "homepage": "https://jokoui.web.id",
       "description": "Free Open Source Tailwind CSS Component for Sat-set Developers with Zero Configuration, Installation, and Setup",
       "language": "TypeScript",
-      "stars": 419,
+      "stars": 418,
       "forks": 28,
       "openIssues": 8,
       "license": "MIT",
@@ -295,9 +295,9 @@
       "homepage": "https://omni.weekndlabs.com/docs",
       "description": "The one place for the skills, keys and memory of every agent you use. Formerly OMNI.",
       "language": "Rust",
-      "stars": 378,
+      "stars": 377,
       "forks": 35,
-      "openIssues": 15,
+      "openIssues": 4,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -322,7 +322,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-11-04T14:55:36Z",
+      "pushedAt": "2026-11-05T22:52:47Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -364,9 +364,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 303,
-      "forks": 61,
-      "openIssues": 63,
+      "stars": 302,
+      "forks": 62,
+      "openIssues": 68,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -384,7 +384,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-11-04T23:37:23Z",
+      "pushedAt": "2026-11-05T23:48:04Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -398,9 +398,9 @@
       "homepage": "https://uteke.app",
       "description": "Long-term memory for any AI agent. One Rust binary, offline, 98.2% recall@5 on LongMemEval-S. Self-host free or use Uteke Cloud.",
       "language": "Rust",
-      "stars": 285,
+      "stars": 284,
       "forks": 31,
-      "openIssues": 3,
+      "openIssues": 6,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -425,7 +425,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-11-04T07:27:27Z",
+      "pushedAt": "2026-11-05T08:22:35Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -441,7 +441,7 @@
       "language": "TypeScript",
       "stars": 207,
       "forks": 40,
-      "openIssues": 14,
+      "openIssues": 15,
       "license": null,
       "topics": [
         "coding",
@@ -457,7 +457,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-11-04T02:10:02Z",
+      "pushedAt": "2026-11-05T13:26:42Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -529,7 +529,7 @@
       "language": "Go",
       "stars": 160,
       "forks": 53,
-      "openIssues": 11,
+      "openIssues": 10,
       "license": "MIT",
       "topics": [
         "ai",
@@ -552,7 +552,7 @@
         "zai"
       ],
       "archived": false,
-      "pushedAt": "2026-11-02T02:32:42Z",
+      "pushedAt": "2026-11-05T09:30:54Z",
       "createdAt": "2026-05-31T09:02:50Z"
     },
     {
@@ -699,7 +699,7 @@
       "language": "TypeScript",
       "stars": 99,
       "forks": 23,
-      "openIssues": 21,
+      "openIssues": 22,
       "license": "MIT",
       "topics": [
         "hacktoberfest",
@@ -708,22 +708,22 @@
         "hacktoberfest2023"
       ],
       "archived": false,
-      "pushedAt": "2026-11-02T02:54:38Z",
+      "pushedAt": "2026-11-05T08:01:30Z",
       "createdAt": "2023-09-05T12:35:21Z"
     },
     {
-      "slug": "njinlabs/njinattend-backend",
-      "fullName": "njinlabs/njinattend-backend",
+      "slug": "akbaraditamasp/njinattend-backend",
+      "fullName": "akbaraditamasp/njinattend-backend",
       "name": "njinattend-backend",
-      "owner": "njinlabs",
-      "ownerUrl": "https://github.com/njinlabs",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/145111707?v=4",
-      "url": "https://github.com/njinlabs/njinattend-backend",
+      "owner": "akbaraditamasp",
+      "ownerUrl": "https://github.com/akbaraditamasp",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/105755365?v=4",
+      "url": "https://github.com/akbaraditamasp/njinattend-backend",
       "homepage": null,
       "description": "The backend of NjinAttend is built using AdonisJS.",
       "language": "TypeScript",
       "stars": 72,
-      "forks": 19,
+      "forks": 18,
       "openIssues": 0,
       "license": null,
       "topics": [],
@@ -773,13 +773,13 @@
       "homepage": null,
       "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
       "language": "TypeScript",
-      "stars": 63,
+      "stars": 64,
       "forks": 7,
       "openIssues": 0,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-04T22:34:15Z",
+      "pushedAt": "2026-11-05T14:02:01Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -794,7 +794,7 @@
       "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
       "language": "Rust",
       "stars": 54,
-      "forks": 17,
+      "forks": 18,
       "openIssues": 0,
       "license": null,
       "topics": [
@@ -808,7 +808,7 @@
         "windows"
       ],
       "archived": false,
-      "pushedAt": "2026-11-04T06:58:27Z",
+      "pushedAt": "2026-11-05T01:47:26Z",
       "createdAt": "2026-05-23T05:37:35Z"
     },
     {
@@ -848,7 +848,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-04T16:36:35Z",
+      "pushedAt": "2026-11-05T16:26:02Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -1011,7 +1011,7 @@
       "homepage": null,
       "description": "Minimal aesthetic arch linux + hyprland dotfiles",
       "language": "Shell",
-      "stars": 37,
+      "stars": 39,
       "forks": 4,
       "openIssues": 1,
       "license": null,
@@ -1191,7 +1191,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-03T23:53:18Z",
+      "pushedAt": "2026-11-05T03:00:13Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1516,7 +1516,7 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 71,
+      "openIssues": 73,
       "license": "Apache-2.0",
       "topics": [
         "linux",
@@ -1534,7 +1534,7 @@
         "system-programming-control-systems"
       ],
       "archived": false,
-      "pushedAt": "2026-11-04T11:04:57Z",
+      "pushedAt": "2026-11-05T20:04:47Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1696,8 +1696,8 @@
       "language": "Rust",
       "stars": 8,
       "forks": 1,
-      "openIssues": 1,
-      "license": "MIT",
+      "openIssues": 0,
+      "license": "GPL-3.0",
       "topics": [
         "api",
         "api-contract",
@@ -1708,7 +1708,7 @@
         "rust"
       ],
       "archived": false,
-      "pushedAt": "2026-11-04T16:26:37Z",
+      "pushedAt": "2026-11-05T15:22:09Z",
       "createdAt": "2026-06-04T12:15:07Z"
     },
     {
@@ -1836,11 +1836,11 @@
       "language": "TypeScript",
       "stars": 7,
       "forks": 0,
-      "openIssues": 14,
+      "openIssues": 0,
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-03T15:08:13Z",
+      "pushedAt": "2026-11-05T01:35:39Z",
       "createdAt": "2026-06-13T11:24:30Z"
     },
     {
@@ -2197,14 +2197,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-11-05T00:13:02.277Z"
+      "syncedAt": "2026-11-05T23:57:44.064Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-11-05T00:13:02.277Z"
+      "syncedAt": "2026-11-05T23:57:44.064Z"
     }
   ],
-  "syncedAt": "2026-11-05T00:13:02.277Z",
+  "syncedAt": "2026-11-05T23:57:44.064Z",
   "count": 81
 }

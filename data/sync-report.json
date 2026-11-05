@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T00:12:56.041Z",
+  "generatedAt": "2026-11-05T23:57:28.313Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -106,34 +106,34 @@
     "stats": {
       "prevProviders": 22,
       "nextProviders": 22,
-      "prevModels": 301,
+      "prevModels": 298,
       "nextModels": 298,
-      "totalDropPct": 0.9966777408637874,
+      "totalDropPct": 0,
       "disappeared": [],
       "shrunk": [],
       "churned": [],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 280,
+            "eligible": 283,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "maxOutput": {
-            "eligible": 117,
+            "eligible": 118,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "modality": {
-            "eligible": 226,
+            "eligible": 229,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "rateLimit": {
-            "eligible": 168,
+            "eligible": 171,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -160,15 +160,9 @@
           },
           "maxContext": {
             "eligible": 21,
-            "changed": 1,
-            "ratioPct": 4.761904761904762,
-            "examples": [
-              {
-                "label": "openrouter",
-                "from": "1.049M",
-                "to": "1M"
-              }
-            ]
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           }
         }
       }
