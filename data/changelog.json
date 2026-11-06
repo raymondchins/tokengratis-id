@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-11-06",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "OpenRouter",
+        "added": [],
+        "removed": [
+          "NVIDIA: Nemotron 3.5 Content Safety (free)"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-05",
     "providersAdded": [],
     "providersRemoved": [],
@@ -2024,22 +2038,6 @@
           "MiniMax: MiniMax M2.7 (free)"
         ],
         "removed": []
-      }
-    ]
-  },
-  {
-    "date": "2026-08-24",
-    "providersAdded": [],
-    "providersRemoved": [],
-    "models": [
-      {
-        "provider": "OpenRouter",
-        "added": [],
-        "removed": [
-          "NVIDIA: Nemotron 3 Nano 30B A3B (free)",
-          "NVIDIA: Nemotron Nano 12B 2 VL (free)",
-          "NVIDIA: Nemotron Nano 9B V2 (free)"
-        ]
       }
     ]
   }
