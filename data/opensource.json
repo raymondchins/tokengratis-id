@@ -11,9 +11,9 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js: The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
-      "stars": 10209,
+      "stars": 10210,
       "forks": 1211,
-      "openIssues": 17,
+      "openIssues": 19,
       "license": "AGPL-3.0",
       "topics": [
         "analytics",
@@ -40,9 +40,9 @@
       "homepage": "https://antislop.ai.id",
       "description": "Rules for an AI coding agent to filter out generic AI-generated UI designs, text, and code.",
       "language": "JavaScript",
-      "stars": 8478,
-      "forks": 568,
-      "openIssues": 2,
+      "stars": 8595,
+      "forks": 579,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [
         "accessibility",
@@ -83,7 +83,7 @@
         "php-library"
       ],
       "archived": false,
-      "pushedAt": "2026-11-01T13:23:36Z",
+      "pushedAt": "2026-11-07T17:32:58Z",
       "createdAt": "2015-10-12T07:01:40Z"
     },
     {
@@ -149,8 +149,8 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1071,
-      "forks": 311,
+      "stars": 1072,
+      "forks": 312,
       "openIssues": 1,
       "license": "MIT",
       "topics": [
@@ -187,7 +187,7 @@
       "homepage": "https://bridgeplay.dev",
       "description": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit",
       "language": "Scala",
-      "stars": 881,
+      "stars": 898,
       "forks": 148,
       "openIssues": 12,
       "license": "GPL-3.0",
@@ -208,7 +208,7 @@
         "winecx"
       ],
       "archived": false,
-      "pushedAt": "2026-11-06T06:37:21Z",
+      "pushedAt": "2026-11-07T12:41:51Z",
       "createdAt": "2026-10-20T03:13:58Z"
     },
     {
@@ -222,9 +222,9 @@
       "homepage": "https://ahmadrosid.github.io/nakama",
       "description": "The AI workspace where teams share agents, skills and automations that the whole company builds on.",
       "language": "TypeScript",
-      "stars": 783,
-      "forks": 130,
-      "openIssues": 58,
+      "stars": 785,
+      "forks": 131,
+      "openIssues": 54,
       "license": "MIT",
       "topics": [
         "agents",
@@ -234,7 +234,7 @@
         "openai"
       ],
       "archived": false,
-      "pushedAt": "2026-11-06T15:27:29Z",
+      "pushedAt": "2026-11-07T20:52:39Z",
       "createdAt": "2026-05-23T06:02:30Z"
     },
     {
@@ -254,7 +254,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-01T13:23:40Z",
+      "pushedAt": "2026-11-07T17:32:51Z",
       "createdAt": "2016-07-15T09:39:20Z"
     },
     {
@@ -268,7 +268,7 @@
       "homepage": "https://jokoui.web.id",
       "description": "Free Open Source Tailwind CSS Component for Sat-set Developers with Zero Configuration, Installation, and Setup",
       "language": "TypeScript",
-      "stars": 419,
+      "stars": 420,
       "forks": 28,
       "openIssues": 8,
       "license": "MIT",
@@ -296,8 +296,8 @@
       "description": "The one place for the skills, keys and memory of every agent you use. Formerly OMNI.",
       "language": "Rust",
       "stars": 377,
-      "forks": 35,
-      "openIssues": 5,
+      "forks": 36,
+      "openIssues": 4,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -322,7 +322,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-11-06T15:50:03Z",
+      "pushedAt": "2026-11-07T16:53:59Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -364,9 +364,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 302,
-      "forks": 62,
-      "openIssues": 64,
+      "stars": 303,
+      "forks": 64,
+      "openIssues": 63,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -384,7 +384,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-11-06T23:25:32Z",
+      "pushedAt": "2026-11-07T22:15:18Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -400,7 +400,7 @@
       "language": "Rust",
       "stars": 284,
       "forks": 31,
-      "openIssues": 6,
+      "openIssues": 7,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -425,7 +425,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-11-06T11:13:33Z",
+      "pushedAt": "2026-11-07T17:13:55Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -441,7 +441,7 @@
       "language": "TypeScript",
       "stars": 207,
       "forks": 40,
-      "openIssues": 15,
+      "openIssues": 14,
       "license": null,
       "topics": [
         "coding",
@@ -457,7 +457,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-11-05T13:26:42Z",
+      "pushedAt": "2026-11-07T11:51:43Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -527,9 +527,9 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 160,
+      "stars": 161,
       "forks": 53,
-      "openIssues": 12,
+      "openIssues": 10,
       "license": "MIT",
       "topics": [
         "ai",
@@ -552,7 +552,7 @@
         "zai"
       ],
       "archived": false,
-      "pushedAt": "2026-11-06T23:19:44Z",
+      "pushedAt": "2026-11-07T03:26:33Z",
       "createdAt": "2026-05-31T09:02:50Z"
     },
     {
@@ -744,7 +744,7 @@
       "language": "Svelte",
       "stars": 69,
       "forks": 21,
-      "openIssues": 4,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [
         "bansos",
@@ -783,6 +783,26 @@
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
+      "slug": "firewalker06/tycho",
+      "fullName": "firewalker06/tycho",
+      "name": "tycho",
+      "owner": "firewalker06",
+      "ownerUrl": "https://github.com/firewalker06",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/157515?v=4",
+      "url": "https://github.com/firewalker06/tycho",
+      "homepage": null,
+      "description": "Its Factorio for coding agents",
+      "language": "Ruby",
+      "stars": 54,
+      "forks": 6,
+      "openIssues": 0,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-11-07T02:26:21Z",
+      "createdAt": "2026-05-23T01:58:17Z"
+    },
+    {
       "slug": "ardli-firman/sha-print",
       "fullName": "ardli-firman/sha-print",
       "name": "sha-print",
@@ -810,26 +830,6 @@
       "archived": false,
       "pushedAt": "2026-11-05T01:47:26Z",
       "createdAt": "2026-05-23T05:37:35Z"
-    },
-    {
-      "slug": "firewalker06/tycho",
-      "fullName": "firewalker06/tycho",
-      "name": "tycho",
-      "owner": "firewalker06",
-      "ownerUrl": "https://github.com/firewalker06",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/157515?v=4",
-      "url": "https://github.com/firewalker06/tycho",
-      "homepage": null,
-      "description": "Its Factorio for coding agents",
-      "language": "Ruby",
-      "stars": 53,
-      "forks": 6,
-      "openIssues": 1,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-11-06T12:02:43Z",
-      "createdAt": "2026-05-23T01:58:17Z"
     },
     {
       "slug": "maziyank/nats",
@@ -1191,7 +1191,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-05T23:57:54Z",
+      "pushedAt": "2026-11-06T23:40:28Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1245,7 +1245,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-10-31T07:45:04Z",
+      "pushedAt": "2026-11-07T00:12:48Z",
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
@@ -1516,7 +1516,7 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 71,
+      "openIssues": 63,
       "license": "Apache-2.0",
       "topics": [
         "linux",
@@ -1534,7 +1534,7 @@
         "system-programming-control-systems"
       ],
       "archived": false,
-      "pushedAt": "2026-11-06T17:06:19Z",
+      "pushedAt": "2026-11-07T17:29:56Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -2197,14 +2197,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-11-06T23:40:18.183Z"
+      "syncedAt": "2026-11-07T22:31:11.410Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-11-06T23:40:18.183Z"
+      "syncedAt": "2026-11-07T22:31:11.410Z"
     }
   ],
-  "syncedAt": "2026-11-06T23:40:18.183Z",
+  "syncedAt": "2026-11-07T22:31:11.410Z",
   "count": 81
 }

@@ -1,5 +1,35 @@
 [
   {
+    "date": "2026-11-07",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "LLM7.io",
+        "added": [
+          "GLM-5.3-Flash",
+          "DeepSeek-V4-Flash-0731",
+          "minimax-m2.7"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "NVIDIA NIM",
+        "added": [],
+        "removed": [
+          "meta/llama-3.2-11b-vision-instruct"
+        ]
+      },
+      {
+        "provider": "OpenRouter",
+        "added": [
+          "LiquidAI: LFM3-1.7B (free)"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-11-06",
     "providersAdded": [],
     "providersRemoved": [],
@@ -2016,28 +2046,6 @@
           "nvidia/nv-embedcode-7b-v1",
           "nvidia/nv-embedqa-e5-v5"
         ]
-      }
-    ]
-  },
-  {
-    "date": "2026-08-25",
-    "providersAdded": [],
-    "providersRemoved": [],
-    "models": [
-      {
-        "provider": "LLM7.io",
-        "added": [],
-        "removed": [
-          "DeepSeek V4 Flash 0731"
-        ]
-      },
-      {
-        "provider": "OpenRouter",
-        "added": [
-          "MiniMax: MiniMax M3 (free)",
-          "MiniMax: MiniMax M2.7 (free)"
-        ],
-        "removed": []
       }
     ]
   }
