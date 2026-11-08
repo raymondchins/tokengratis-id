@@ -12,8 +12,8 @@
       "description": "UAParser.js: The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
       "stars": 10210,
-      "forks": 1211,
-      "openIssues": 19,
+      "forks": 1212,
+      "openIssues": 20,
       "license": "AGPL-3.0",
       "topics": [
         "analytics",
@@ -40,9 +40,9 @@
       "homepage": "https://antislop.ai.id",
       "description": "Rules for an AI coding agent to filter out generic AI-generated UI designs, text, and code.",
       "language": "JavaScript",
-      "stars": 8595,
-      "forks": 579,
-      "openIssues": 3,
+      "stars": 8664,
+      "forks": 584,
+      "openIssues": 2,
       "license": "MIT",
       "topics": [
         "accessibility",
@@ -57,7 +57,7 @@
         "ui-design"
       ],
       "archived": false,
-      "pushedAt": "2026-11-05T11:11:47Z",
+      "pushedAt": "2026-11-08T08:22:03Z",
       "createdAt": "2026-08-07T10:29:56Z"
     },
     {
@@ -97,7 +97,7 @@
       "homepage": "https://www.htmly.com",
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
-      "stars": 1368,
+      "stars": 1369,
       "forks": 306,
       "openIssues": 55,
       "license": "GPL-2.0",
@@ -127,8 +127,8 @@
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
       "stars": 1232,
-      "forks": 1196,
-      "openIssues": 333,
+      "forks": 1197,
+      "openIssues": 340,
       "license": null,
       "topics": [
         "opensid",
@@ -149,8 +149,8 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1072,
-      "forks": 312,
+      "stars": 1074,
+      "forks": 311,
       "openIssues": 1,
       "license": "MIT",
       "topics": [
@@ -187,9 +187,9 @@
       "homepage": "https://bridgeplay.dev",
       "description": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit",
       "language": "Scala",
-      "stars": 898,
-      "forks": 148,
-      "openIssues": 12,
+      "stars": 910,
+      "forks": 149,
+      "openIssues": 9,
       "license": "GPL-3.0",
       "topics": [
         "apple-silicon",
@@ -208,7 +208,7 @@
         "winecx"
       ],
       "archived": false,
-      "pushedAt": "2026-11-07T12:41:51Z",
+      "pushedAt": "2026-11-08T11:15:05Z",
       "createdAt": "2026-10-20T03:13:58Z"
     },
     {
@@ -222,9 +222,9 @@
       "homepage": "https://ahmadrosid.github.io/nakama",
       "description": "The AI workspace where teams share agents, skills and automations that the whole company builds on.",
       "language": "TypeScript",
-      "stars": 785,
-      "forks": 131,
-      "openIssues": 54,
+      "stars": 790,
+      "forks": 134,
+      "openIssues": 49,
       "license": "MIT",
       "topics": [
         "agents",
@@ -234,7 +234,7 @@
         "openai"
       ],
       "archived": false,
-      "pushedAt": "2026-11-07T20:52:39Z",
+      "pushedAt": "2026-11-08T20:38:13Z",
       "createdAt": "2026-05-23T06:02:30Z"
     },
     {
@@ -297,7 +297,7 @@
       "language": "Rust",
       "stars": 377,
       "forks": 36,
-      "openIssues": 4,
+      "openIssues": 18,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -322,7 +322,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-11-07T16:53:59Z",
+      "pushedAt": "2026-11-08T16:36:05Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -336,7 +336,7 @@
       "homepage": "https://adbkit.pages.dev",
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 372,
+      "stars": 373,
       "forks": 48,
       "openIssues": 4,
       "license": "MIT",
@@ -365,8 +365,8 @@
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
       "stars": 303,
-      "forks": 64,
-      "openIssues": 63,
+      "forks": 63,
+      "openIssues": 64,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -384,7 +384,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-11-07T22:15:18Z",
+      "pushedAt": "2026-11-08T17:42:43Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -399,7 +399,7 @@
       "description": "Long-term memory for any AI agent. One Rust binary, offline, 98.2% recall@5 on LongMemEval-S. Self-host free or use Uteke Cloud.",
       "language": "Rust",
       "stars": 284,
-      "forks": 31,
+      "forks": 32,
       "openIssues": 7,
       "license": "Apache-2.0",
       "topics": [
@@ -425,7 +425,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-11-07T17:13:55Z",
+      "pushedAt": "2026-11-08T15:48:19Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -439,9 +439,9 @@
       "homepage": "https://www.erdbuilderpro.com",
       "description": "ERD Builder Pro is a database design and documentation tool for developers. Build ERDs, flowcharts, notes, and drawings — all in one workspace",
       "language": "TypeScript",
-      "stars": 207,
+      "stars": 208,
       "forks": 40,
-      "openIssues": 14,
+      "openIssues": 17,
       "license": null,
       "topics": [
         "coding",
@@ -457,7 +457,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-11-07T11:51:43Z",
+      "pushedAt": "2026-11-08T11:13:22Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -491,7 +491,7 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 169,
+      "stars": 170,
       "forks": 15,
       "openIssues": 0,
       "license": "Apache-2.0",
@@ -527,9 +527,9 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 161,
-      "forks": 53,
-      "openIssues": 10,
+      "stars": 162,
+      "forks": 54,
+      "openIssues": 11,
       "license": "MIT",
       "topics": [
         "ai",
@@ -576,6 +576,30 @@
       "createdAt": "2026-02-12T11:02:43Z"
     },
     {
+      "slug": "ilhamrisky/pddikti-kemdikbud-api",
+      "fullName": "IlhamriSKY/PDDIKTI-kemdikbud-API",
+      "name": "PDDIKTI-kemdikbud-API",
+      "owner": "IlhamriSKY",
+      "ownerUrl": "https://github.com/IlhamriSKY",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/18723904?v=4",
+      "url": "https://github.com/IlhamriSKY/PDDIKTI-kemdikbud-API",
+      "homepage": "https://pddikti.kemdiktisaintek.go.id/",
+      "description": "Unofficial Python 3 API wrapper to retrieve data from PDDIKTI Kemdikbudristek.",
+      "language": "Python",
+      "stars": 140,
+      "forks": 29,
+      "openIssues": 0,
+      "license": null,
+      "topics": [
+        "api-wrapper",
+        "package",
+        "python3"
+      ],
+      "archived": false,
+      "pushedAt": "2026-08-24T02:52:54Z",
+      "createdAt": "2021-04-21T07:59:57Z"
+    },
+    {
       "slug": "hendisantika/online-banking-angular-springboot-mysql",
       "fullName": "hendisantika/Online-banking-angular-springboot-mysql",
       "name": "Online-banking-angular-springboot-mysql",
@@ -596,30 +620,6 @@
       "createdAt": "2018-08-06T13:38:19Z"
     },
     {
-      "slug": "ilhamrisky/pddikti-kemdikbud-api",
-      "fullName": "IlhamriSKY/PDDIKTI-kemdikbud-API",
-      "name": "PDDIKTI-kemdikbud-API",
-      "owner": "IlhamriSKY",
-      "ownerUrl": "https://github.com/IlhamriSKY",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/18723904?v=4",
-      "url": "https://github.com/IlhamriSKY/PDDIKTI-kemdikbud-API",
-      "homepage": "https://pddikti.kemdiktisaintek.go.id/",
-      "description": "Unofficial Python 3 API wrapper to retrieve data from PDDIKTI Kemdikbudristek.",
-      "language": "Python",
-      "stars": 129,
-      "forks": 29,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "api-wrapper",
-        "package",
-        "python3"
-      ],
-      "archived": false,
-      "pushedAt": "2026-08-24T02:52:54Z",
-      "createdAt": "2021-04-21T07:59:57Z"
-    },
-    {
       "slug": "rahmanef63/mso",
       "fullName": "rahmanef63/mso",
       "name": "mso",
@@ -630,7 +630,7 @@
       "homepage": "https://mso.rahmanef.com",
       "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
-      "stars": 105,
+      "stars": 106,
       "forks": 16,
       "openIssues": 0,
       "license": null,
@@ -655,7 +655,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-11-04T16:13:19Z",
+      "pushedAt": "2026-11-08T21:44:14Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -669,9 +669,9 @@
       "homepage": "https://svelte-audio-ui.vercel.app/",
       "description": "A set of accessible and composable Audio UI components.",
       "language": "Svelte",
-      "stars": 100,
+      "stars": 101,
       "forks": 4,
-      "openIssues": 15,
+      "openIssues": 16,
       "license": "MIT",
       "topics": [
         "audio",
@@ -742,7 +742,7 @@
       "homepage": "https://bansos.dev",
       "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
       "language": "Svelte",
-      "stars": 69,
+      "stars": 70,
       "forks": 21,
       "openIssues": 3,
       "license": "MIT",
@@ -779,7 +779,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-06T07:56:26Z",
+      "pushedAt": "2026-11-08T22:20:20Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -790,14 +790,20 @@
       "ownerUrl": "https://github.com/firewalker06",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/157515?v=4",
       "url": "https://github.com/firewalker06/tycho",
-      "homepage": null,
+      "homepage": "https://usetycho.com",
       "description": "Its Factorio for coding agents",
       "language": "Ruby",
       "stars": 54,
       "forks": 6,
       "openIssues": 0,
       "license": "MIT",
-      "topics": [],
+      "topics": [
+        "agent-orchestration",
+        "ai-agents",
+        "ai-coding",
+        "developer-tools",
+        "ruby"
+      ],
       "archived": false,
       "pushedAt": "2026-11-07T02:26:21Z",
       "createdAt": "2026-05-23T01:58:17Z"
@@ -1191,7 +1197,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-06T23:40:28Z",
+      "pushedAt": "2026-11-07T22:31:26Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1249,6 +1255,38 @@
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
+      "slug": "muslimtify-org/muslimtify",
+      "fullName": "muslimtify-org/muslimtify",
+      "name": "muslimtify",
+      "owner": "muslimtify-org",
+      "ownerUrl": "https://github.com/muslimtify-org",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/302768915?v=4",
+      "url": "https://github.com/muslimtify-org/muslimtify",
+      "homepage": "https://muslimtify.org",
+      "description": "A daily prayer notification & reminder for Muslims on Windows and Linux, supporting 21 global standard calculation methods, all madzhab, all country.",
+      "language": "C",
+      "stars": 20,
+      "forks": 1,
+      "openIssues": 1,
+      "license": "GPL-3.0",
+      "topics": [
+        "c-language",
+        "cross-platform",
+        "daemon",
+        "linux",
+        "muslim-prayer-times",
+        "muslims-prayer",
+        "notification",
+        "systemd",
+        "windows",
+        "windows-app",
+        "windows-desktop"
+      ],
+      "archived": false,
+      "pushedAt": "2026-11-04T15:19:52Z",
+      "createdAt": "2026-02-23T13:59:12Z"
+    },
+    {
       "slug": "rayasabari/yntk-ts",
       "fullName": "rayasabari/yntk-ts",
       "name": "yntk-ts",
@@ -1267,38 +1305,6 @@
       "archived": false,
       "pushedAt": "2026-04-08T09:29:42Z",
       "createdAt": "2026-04-08T09:27:49Z"
-    },
-    {
-      "slug": "muslimtify-org/muslimtify",
-      "fullName": "muslimtify-org/muslimtify",
-      "name": "muslimtify",
-      "owner": "muslimtify-org",
-      "ownerUrl": "https://github.com/muslimtify-org",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/302768915?v=4",
-      "url": "https://github.com/muslimtify-org/muslimtify",
-      "homepage": "https://muslimtify.org",
-      "description": "A daily prayer notification & reminder for Muslims on Windows and Linux, supporting 21 global standard calculation methods, all madzhab, all country.",
-      "language": "C",
-      "stars": 19,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "GPL-3.0",
-      "topics": [
-        "c-language",
-        "cross-platform",
-        "daemon",
-        "linux",
-        "muslim-prayer-times",
-        "muslims-prayer",
-        "notification",
-        "systemd",
-        "windows",
-        "windows-app",
-        "windows-desktop"
-      ],
-      "archived": false,
-      "pushedAt": "2026-11-04T15:19:52Z",
-      "createdAt": "2026-02-23T13:59:12Z"
     },
     {
       "slug": "rahmanef63/control-room",
@@ -1516,7 +1522,7 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 63,
+      "openIssues": 62,
       "license": "Apache-2.0",
       "topics": [
         "linux",
@@ -1534,7 +1540,7 @@
         "system-programming-control-systems"
       ],
       "archived": false,
-      "pushedAt": "2026-11-07T17:29:56Z",
+      "pushedAt": "2026-11-08T19:50:47Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1639,6 +1645,34 @@
       "createdAt": "2026-06-02T04:21:59Z"
     },
     {
+      "slug": "rizukirr/apic",
+      "fullName": "rizukirr/apic",
+      "name": "apic",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/apic",
+      "homepage": null,
+      "description": "A lightweight, Git-friendly tool for designing and collaborating on API contracts",
+      "language": "Rust",
+      "stars": 9,
+      "forks": 1,
+      "openIssues": 1,
+      "license": "GPL-3.0",
+      "topics": [
+        "api",
+        "api-contract",
+        "cli-tool",
+        "colaboration",
+        "contracts",
+        "rest-api",
+        "rust"
+      ],
+      "archived": false,
+      "pushedAt": "2026-11-08T22:35:03Z",
+      "createdAt": "2026-06-04T12:15:07Z"
+    },
+    {
       "slug": "rifqiakrm/code-island",
       "fullName": "rifqiakrm/code-island",
       "name": "code-island",
@@ -1682,34 +1716,6 @@
       "archived": false,
       "pushedAt": "2026-05-23T13:14:20Z",
       "createdAt": "2026-05-23T08:12:20Z"
-    },
-    {
-      "slug": "rizukirr/apic",
-      "fullName": "rizukirr/apic",
-      "name": "apic",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/apic",
-      "homepage": null,
-      "description": "A lightweight, Git-friendly tool for designing and collaborating on API contracts",
-      "language": "Rust",
-      "stars": 8,
-      "forks": 1,
-      "openIssues": 1,
-      "license": "GPL-3.0",
-      "topics": [
-        "api",
-        "api-contract",
-        "cli-tool",
-        "colaboration",
-        "contracts",
-        "rest-api",
-        "rust"
-      ],
-      "archived": false,
-      "pushedAt": "2026-11-06T15:18:12Z",
-      "createdAt": "2026-06-04T12:15:07Z"
     },
     {
       "slug": "rahmanef63/framepilot",
@@ -2197,14 +2203,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-11-07T22:31:11.410Z"
+      "syncedAt": "2026-11-08T22:41:36.031Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-11-07T22:31:11.410Z"
+      "syncedAt": "2026-11-08T22:41:36.031Z"
     }
   ],
-  "syncedAt": "2026-11-07T22:31:11.410Z",
+  "syncedAt": "2026-11-08T22:41:36.031Z",
   "count": 81
 }

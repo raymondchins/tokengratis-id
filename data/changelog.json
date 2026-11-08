@@ -1,5 +1,33 @@
 [
   {
+    "date": "2026-11-08",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cline",
+        "added": [],
+        "removed": [
+          "Beam"
+        ]
+      },
+      {
+        "provider": "LLM7.io",
+        "added": [],
+        "removed": [
+          "Nemotron 3 Nano 30B A3B"
+        ]
+      },
+      {
+        "provider": "Mistral AI",
+        "added": [
+          "Mistral Medium 3"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-11-07",
     "providersAdded": [],
     "providersRemoved": [],
@@ -2019,33 +2047,6 @@
           "Ling 3.0 Flash Fin (free)"
         ],
         "removed": []
-      }
-    ]
-  },
-  {
-    "date": "2026-08-26",
-    "providersAdded": [],
-    "providersRemoved": [],
-    "models": [
-      {
-        "provider": "LLM7.io",
-        "added": [
-          "DeepSeek V4 Flash 0731"
-        ],
-        "removed": []
-      },
-      {
-        "provider": "NVIDIA NIM",
-        "added": [],
-        "removed": [
-          "Inkling",
-          "baai/bge-m3",
-          "nvidia/llama-nemotron-embed-1b-v2",
-          "nvidia/nemoretriever-parse",
-          "nvidia/nv-embed-v1",
-          "nvidia/nv-embedcode-7b-v1",
-          "nvidia/nv-embedqa-e5-v5"
-        ]
       }
     ]
   }
