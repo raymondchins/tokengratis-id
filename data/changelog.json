@@ -6,10 +6,10 @@
     "models": [
       {
         "provider": "OpenRouter",
-        "added": [
-          "Thinking Machines: Inkling 2 Small (free)"
-        ],
-        "removed": []
+        "added": [],
+        "removed": [
+          "XingChen: Xing4.0 29B A4B (free)"
+        ]
       }
     ]
   },
