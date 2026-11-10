@@ -13,7 +13,7 @@
       "language": "JavaScript",
       "stars": 10210,
       "forks": 1212,
-      "openIssues": 20,
+      "openIssues": 16,
       "license": "AGPL-3.0",
       "topics": [
         "analytics",
@@ -26,7 +26,7 @@
         "user-agent-parser"
       ],
       "archived": false,
-      "pushedAt": "2026-09-29T05:34:12Z",
+      "pushedAt": "2026-11-09T11:01:03Z",
       "createdAt": "2012-02-01T01:11:49Z"
     },
     {
@@ -40,9 +40,9 @@
       "homepage": "https://antislop.ai.id",
       "description": "Rules for an AI coding agent to filter out generic AI-generated UI designs, text, and code.",
       "language": "JavaScript",
-      "stars": 8664,
-      "forks": 584,
-      "openIssues": 2,
+      "stars": 8771,
+      "forks": 593,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [
         "accessibility",
@@ -57,7 +57,7 @@
         "ui-design"
       ],
       "archived": false,
-      "pushedAt": "2026-11-08T08:22:03Z",
+      "pushedAt": "2026-11-09T11:02:11Z",
       "createdAt": "2026-08-07T10:29:56Z"
     },
     {
@@ -128,7 +128,7 @@
       "language": "PHP",
       "stars": 1232,
       "forks": 1197,
-      "openIssues": 340,
+      "openIssues": 331,
       "license": null,
       "topics": [
         "opensid",
@@ -149,8 +149,8 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1074,
-      "forks": 311,
+      "stars": 1075,
+      "forks": 312,
       "openIssues": 1,
       "license": "MIT",
       "topics": [
@@ -187,9 +187,9 @@
       "homepage": "https://bridgeplay.dev",
       "description": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit",
       "language": "Scala",
-      "stars": 910,
-      "forks": 149,
-      "openIssues": 9,
+      "stars": 920,
+      "forks": 150,
+      "openIssues": 7,
       "license": "GPL-3.0",
       "topics": [
         "apple-silicon",
@@ -208,7 +208,7 @@
         "winecx"
       ],
       "archived": false,
-      "pushedAt": "2026-11-08T11:15:05Z",
+      "pushedAt": "2026-11-09T16:42:11Z",
       "createdAt": "2026-10-20T03:13:58Z"
     },
     {
@@ -222,9 +222,9 @@
       "homepage": "https://ahmadrosid.github.io/nakama",
       "description": "The AI workspace where teams share agents, skills and automations that the whole company builds on.",
       "language": "TypeScript",
-      "stars": 790,
-      "forks": 134,
-      "openIssues": 49,
+      "stars": 798,
+      "forks": 136,
+      "openIssues": 44,
       "license": "MIT",
       "topics": [
         "agents",
@@ -234,7 +234,7 @@
         "openai"
       ],
       "archived": false,
-      "pushedAt": "2026-11-08T20:38:13Z",
+      "pushedAt": "2026-11-09T20:58:11Z",
       "createdAt": "2026-05-23T06:02:30Z"
     },
     {
@@ -295,9 +295,9 @@
       "homepage": "https://omni.weekndlabs.com/docs",
       "description": "The one place for the skills, keys and memory of every agent you use. Formerly OMNI.",
       "language": "Rust",
-      "stars": 377,
+      "stars": 378,
       "forks": 36,
-      "openIssues": 18,
+      "openIssues": 21,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -322,7 +322,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-11-08T16:36:05Z",
+      "pushedAt": "2026-11-09T10:22:37Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -364,9 +364,9 @@
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 303,
+      "stars": 304,
       "forks": 63,
-      "openIssues": 64,
+      "openIssues": 72,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -384,7 +384,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-11-08T17:42:43Z",
+      "pushedAt": "2026-11-10T01:49:51Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -398,9 +398,9 @@
       "homepage": "https://uteke.app",
       "description": "Long-term memory for any AI agent. One Rust binary, offline, 98.2% recall@5 on LongMemEval-S. Self-host free or use Uteke Cloud.",
       "language": "Rust",
-      "stars": 284,
+      "stars": 285,
       "forks": 32,
-      "openIssues": 7,
+      "openIssues": 8,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -425,7 +425,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-11-08T15:48:19Z",
+      "pushedAt": "2026-11-10T01:42:46Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -441,7 +441,7 @@
       "language": "TypeScript",
       "stars": 208,
       "forks": 40,
-      "openIssues": 17,
+      "openIssues": 15,
       "license": null,
       "topics": [
         "coding",
@@ -457,7 +457,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-11-08T11:13:22Z",
+      "pushedAt": "2026-11-10T01:54:07Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -491,7 +491,7 @@
       "homepage": "https://tedi.ilhamriski.com",
       "description": "Terminal Director. One lightweight app, eight features, your whole dev workflow in a single window.",
       "language": "TypeScript",
-      "stars": 170,
+      "stars": 171,
       "forks": 15,
       "openIssues": 0,
       "license": "Apache-2.0",
@@ -513,7 +513,7 @@
         "terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-11-04T07:56:04Z",
+      "pushedAt": "2026-11-09T15:19:48Z",
       "createdAt": "2026-05-13T00:00:22Z"
     },
     {
@@ -527,8 +527,8 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 162,
-      "forks": 54,
+      "stars": 164,
+      "forks": 55,
       "openIssues": 11,
       "license": "MIT",
       "topics": [
@@ -552,7 +552,7 @@
         "zai"
       ],
       "archived": false,
-      "pushedAt": "2026-11-07T03:26:33Z",
+      "pushedAt": "2026-11-09T13:06:05Z",
       "createdAt": "2026-05-31T09:02:50Z"
     },
     {
@@ -567,7 +567,7 @@
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
       "stars": 145,
-      "forks": 76,
+      "forks": 77,
       "openIssues": 12,
       "license": "MIT",
       "topics": [],
@@ -586,7 +586,7 @@
       "homepage": "https://pddikti.kemdiktisaintek.go.id/",
       "description": "Unofficial Python 3 API wrapper to retrieve data from PDDIKTI Kemdikbudristek.",
       "language": "Python",
-      "stars": 140,
+      "stars": 143,
       "forks": 29,
       "openIssues": 0,
       "license": null,
@@ -596,7 +596,7 @@
         "python3"
       ],
       "archived": false,
-      "pushedAt": "2026-08-24T02:52:54Z",
+      "pushedAt": "2026-11-09T01:25:17Z",
       "createdAt": "2021-04-21T07:59:57Z"
     },
     {
@@ -632,7 +632,7 @@
       "language": "TypeScript",
       "stars": 106,
       "forks": 16,
-      "openIssues": 0,
+      "openIssues": 2,
       "license": null,
       "topics": [
         "browser-shell",
@@ -655,7 +655,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-11-08T21:44:14Z",
+      "pushedAt": "2026-11-09T10:46:46Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -773,13 +773,13 @@
       "homepage": null,
       "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
       "language": "TypeScript",
-      "stars": 64,
+      "stars": 65,
       "forks": 7,
       "openIssues": 0,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-08T22:20:20Z",
+      "pushedAt": "2026-11-10T01:06:07Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -980,6 +980,33 @@
       "createdAt": "2026-04-09T16:08:42Z"
     },
     {
+      "slug": "rizukirr/hyprsimple",
+      "fullName": "rizukirr/hyprsimple",
+      "name": "hyprsimple",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/hyprsimple",
+      "homepage": null,
+      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
+      "language": "Shell",
+      "stars": 42,
+      "forks": 4,
+      "openIssues": 1,
+      "license": null,
+      "topics": [
+        "arch-linux",
+        "dotfiles",
+        "hyprland",
+        "hyprland-config",
+        "linux",
+        "omarchy"
+      ],
+      "archived": false,
+      "pushedAt": "2026-11-06T13:22:16Z",
+      "createdAt": "2025-10-04T10:27:45Z"
+    },
+    {
       "slug": "akbxr/dns",
       "fullName": "akbxr/dns",
       "name": "dns",
@@ -1005,33 +1032,6 @@
       "archived": false,
       "pushedAt": "2026-09-25T03:09:23Z",
       "createdAt": "2025-05-26T04:42:45Z"
-    },
-    {
-      "slug": "rizukirr/hyprsimple",
-      "fullName": "rizukirr/hyprsimple",
-      "name": "hyprsimple",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/hyprsimple",
-      "homepage": null,
-      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
-      "language": "Shell",
-      "stars": 40,
-      "forks": 4,
-      "openIssues": 1,
-      "license": null,
-      "topics": [
-        "arch-linux",
-        "dotfiles",
-        "hyprland",
-        "hyprland-config",
-        "linux",
-        "omarchy"
-      ],
-      "archived": false,
-      "pushedAt": "2026-11-06T13:22:16Z",
-      "createdAt": "2025-10-04T10:27:45Z"
     },
     {
       "slug": "ammar-rasyidi/mandum-rimba",
@@ -1142,7 +1142,7 @@
       "description": "Payment router for Indonesian payment gateways.",
       "language": "Go",
       "stars": 33,
-      "forks": 6,
+      "forks": 7,
       "openIssues": 22,
       "license": "MIT",
       "topics": [
@@ -1197,7 +1197,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-07T22:31:26Z",
+      "pushedAt": "2026-11-08T22:41:50Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1391,8 +1391,8 @@
       "description": "Zero-human full-stack deployment as a bundle of /sc-* Claude Code slash commands — GitHub + Convex (self-hosted & Cloud) + Dokploy + Vercel + Hostinger DNS, source to verified live URL. Node ≥18, no runtime dependencies. 8 skills implemented, 5 stubs.",
       "language": "JavaScript",
       "stars": 13,
-      "forks": 3,
-      "openIssues": 1,
+      "forks": 2,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [
         "ai-agent",
@@ -1522,7 +1522,7 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 62,
+      "openIssues": 63,
       "license": "Apache-2.0",
       "topics": [
         "linux",
@@ -1540,7 +1540,7 @@
         "system-programming-control-systems"
       ],
       "archived": false,
-      "pushedAt": "2026-11-08T19:50:47Z",
+      "pushedAt": "2026-11-10T01:33:45Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1604,7 +1604,7 @@
         "sentry-alternative",
         "sveltekit"
       ],
-      "archived": false,
+      "archived": true,
       "pushedAt": "2026-10-26T12:10:29Z",
       "createdAt": "2026-06-06T00:23:26Z"
     },
@@ -1652,12 +1652,12 @@
       "ownerUrl": "https://github.com/rizukirr",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
       "url": "https://github.com/rizukirr/apic",
-      "homepage": null,
-      "description": "A lightweight, Git-friendly tool for designing and collaborating on API contracts",
+      "homepage": "https://rizukirr.github.io/apic-web",
+      "description": "A lightweight, Git-native tool for designing and collaborating on API contracts",
       "language": "Rust",
       "stars": 9,
       "forks": 1,
-      "openIssues": 1,
+      "openIssues": 0,
       "license": "GPL-3.0",
       "topics": [
         "api",
@@ -1669,7 +1669,7 @@
         "rust"
       ],
       "archived": false,
-      "pushedAt": "2026-11-08T22:35:03Z",
+      "pushedAt": "2026-11-09T11:15:08Z",
       "createdAt": "2026-06-04T12:15:07Z"
     },
     {
@@ -2203,14 +2203,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-11-08T22:41:36.031Z"
+      "syncedAt": "2026-11-10T01:54:32.667Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-11-08T22:41:36.031Z"
+      "syncedAt": "2026-11-10T01:54:32.667Z"
     }
   ],
-  "syncedAt": "2026-11-08T22:41:36.031Z",
+  "syncedAt": "2026-11-10T01:54:32.667Z",
   "count": 81
 }
