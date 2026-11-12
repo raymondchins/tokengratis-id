@@ -1,28 +1,28 @@
 {
-  "generatedAt": "2026-11-10T23:55:57.306Z",
+  "generatedAt": "2026-11-12T01:21:55.504Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
       "status": "ok",
-      "providers": 15,
-      "models": 88,
+      "providers": 14,
+      "models": 79,
       "shapeIssues": []
     },
     "freellm.net": {
       "status": "ok",
       "providers": 22,
-      "models": 298,
+      "models": 301,
       "shapeIssues": [
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "maxOutput",
           "rule": "all-null-collapse",
-          "count": 298,
-          "total": 298,
+          "count": 301,
+          "total": 301,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"maxOutput\": 100% null di 298 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+          "message": "Field \"maxOutput\": 100% null di 301 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
         },
         {
           "severity": "warn",
@@ -56,7 +56,7 @@
     "openrouter.ai/api/v1/models": {
       "status": "ok",
       "providers": 1,
-      "models": 12,
+      "models": 13,
       "shapeIssues": []
     }
   },
@@ -65,7 +65,7 @@
   ],
   "merged": {
     "providers": 22,
-    "models": 299,
+    "models": 302,
     "shapeIssues": [
       {
         "severity": "warn",
@@ -73,12 +73,12 @@
         "field": "context",
         "rule": "context-shape",
         "count": 1,
-        "total": 284,
-        "ratio": 0.0035211267605633804,
+        "total": 287,
+        "ratio": 0.003484320557491289,
         "samples": [
           "448"
         ],
-        "message": "Field \"context\": 1/284 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
+        "message": "Field \"context\": 1/287 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
       },
       {
         "severity": "warn",
@@ -86,12 +86,12 @@
         "field": "maxOutput",
         "rule": "maxoutput-shape",
         "count": 1,
-        "total": 117,
-        "ratio": 0.008547008547008548,
+        "total": 121,
+        "ratio": 0.008264462809917356,
         "samples": [
           "448"
         ],
-        "message": "Field \"maxOutput\": 1/117 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
+        "message": "Field \"maxOutput\": 1/121 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
       }
     ]
   },
@@ -102,41 +102,66 @@
   "diffGuard": {
     "ok": true,
     "errors": [],
-    "warnings": [],
+    "warnings": [
+      "provider \"mistral-ai\" model ids churned 70.0% at same-ish count (overlap 30.0%, 10→10 ids), but catalog grew (22→22 providers, 299→302 models) — treating as normal upstream churn"
+    ],
     "stats": {
       "prevProviders": 22,
       "nextProviders": 22,
-      "prevModels": 300,
-      "nextModels": 299,
-      "totalDropPct": 0.33333333333333337,
+      "prevModels": 299,
+      "nextModels": 302,
+      "totalDropPct": -1.0033444816053512,
       "disappeared": [],
       "shrunk": [],
-      "churned": [],
+      "churned": [
+        {
+          "slug": "mistral-ai",
+          "overlapPct": 30,
+          "prevIds": 10,
+          "nextIds": 10
+        }
+      ],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 284,
+            "eligible": 275,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "maxOutput": {
-            "eligible": 117,
+            "eligible": 114,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "modality": {
-            "eligible": 230,
+            "eligible": 221,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "rateLimit": {
-            "eligible": 172,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "eligible": 164,
+            "changed": 3,
+            "ratioPct": 1.8292682926829267,
+            "examples": [
+              {
+                "label": "groq/openai/gpt-oss-120b",
+                "from": "30 RPM, 1,000 RPD",
+                "to": "30 RPM, 1,000 RPD, 8,000 TPM, 200,000 TPD"
+              },
+              {
+                "label": "groq/openai/gpt-oss-20b",
+                "from": "30 RPM, 1,000 RPD",
+                "to": "30 RPM, 1,000 RPD, 8,000 TPM, 200,000 TPD"
+              },
+              {
+                "label": "groq/qwen/qwen3.8-27b",
+                "from": "30 RPM, 1,000 RPD",
+                "to": "30 RPM, 1,000 RPD, 8,000 TPM, 200,000 TPD"
+              }
+            ]
           }
         },
         "provider": {
@@ -175,11 +200,11 @@
       "source": "freellm.net",
       "field": "maxOutput",
       "rule": "all-null-collapse",
-      "count": 298,
-      "total": 298,
+      "count": 301,
+      "total": 301,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"maxOutput\": 100% null di 298 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+      "message": "Field \"maxOutput\": 100% null di 301 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
     },
     {
       "severity": "warn",
@@ -209,12 +234,12 @@
       "field": "context",
       "rule": "context-shape",
       "count": 1,
-      "total": 284,
-      "ratio": 0.0035211267605633804,
+      "total": 287,
+      "ratio": 0.003484320557491289,
       "samples": [
         "448"
       ],
-      "message": "Field \"context\": 1/284 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
+      "message": "Field \"context\": 1/287 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
     },
     {
       "severity": "warn",
@@ -222,12 +247,12 @@
       "field": "maxOutput",
       "rule": "maxoutput-shape",
       "count": 1,
-      "total": 117,
-      "ratio": 0.008547008547008548,
+      "total": 121,
+      "ratio": 0.008264462809917356,
       "samples": [
         "448"
       ],
-      "message": "Field \"maxOutput\": 1/117 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
+      "message": "Field \"maxOutput\": 1/121 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
     }
   ],
   "quarantine": {
