@@ -40,9 +40,9 @@
       "homepage": "https://antislop.ai.id",
       "description": "Rules for an AI coding agent to filter out generic AI-generated UI designs, text, and code.",
       "language": "JavaScript",
-      "stars": 8962,
-      "forks": 609,
-      "openIssues": 0,
+      "stars": 9041,
+      "forks": 617,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [
         "accessibility",
@@ -57,7 +57,7 @@
         "ui-design"
       ],
       "archived": false,
-      "pushedAt": "2026-11-11T12:36:17Z",
+      "pushedAt": "2026-11-12T12:57:00Z",
       "createdAt": "2026-08-07T10:29:56Z"
     },
     {
@@ -126,9 +126,9 @@
       "homepage": null,
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
-      "stars": 1233,
+      "stars": 1234,
       "forks": 1198,
-      "openIssues": 329,
+      "openIssues": 328,
       "license": null,
       "topics": [
         "opensid",
@@ -149,7 +149,7 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1076,
+      "stars": 1078,
       "forks": 312,
       "openIssues": 1,
       "license": "MIT",
@@ -187,9 +187,9 @@
       "homepage": "https://bridgeplay.dev",
       "description": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit",
       "language": "Scala",
-      "stars": 939,
-      "forks": 151,
-      "openIssues": 9,
+      "stars": 947,
+      "forks": 152,
+      "openIssues": 10,
       "license": "GPL-3.0",
       "topics": [
         "apple-silicon",
@@ -208,7 +208,7 @@
         "winecx"
       ],
       "archived": false,
-      "pushedAt": "2026-11-11T06:08:01Z",
+      "pushedAt": "2026-11-12T07:05:48Z",
       "createdAt": "2026-10-20T03:13:58Z"
     },
     {
@@ -222,9 +222,9 @@
       "homepage": "https://ahmadrosid.github.io/nakama",
       "description": "The AI workspace where teams share agents, skills and automations that the whole company builds on.",
       "language": "TypeScript",
-      "stars": 809,
-      "forks": 141,
-      "openIssues": 59,
+      "stars": 820,
+      "forks": 145,
+      "openIssues": 56,
       "license": "MIT",
       "topics": [
         "agents",
@@ -234,7 +234,7 @@
         "openai"
       ],
       "archived": false,
-      "pushedAt": "2026-11-11T16:33:34Z",
+      "pushedAt": "2026-11-12T19:43:54Z",
       "createdAt": "2026-05-23T06:02:30Z"
     },
     {
@@ -297,7 +297,7 @@
       "language": "Rust",
       "stars": 377,
       "forks": 36,
-      "openIssues": 26,
+      "openIssues": 29,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -322,7 +322,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-11-10T16:53:50Z",
+      "pushedAt": "2026-11-12T16:43:17Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -350,23 +350,23 @@
         "wails-app"
       ],
       "archived": false,
-      "pushedAt": "2026-11-12T01:08:06Z",
+      "pushedAt": "2026-11-12T04:05:35Z",
       "createdAt": "2025-11-04T15:37:00Z"
     },
     {
-      "slug": "gnoviawan/termul",
-      "fullName": "gnoviawan/termul",
-      "name": "termul",
+      "slug": "gnoviawan/troupe",
+      "fullName": "gnoviawan/troupe",
+      "name": "troupe",
       "owner": "gnoviawan",
       "ownerUrl": "https://github.com/gnoviawan",
       "ownerAvatar": "https://avatars.githubusercontent.com/u/72639723?v=4",
-      "url": "https://github.com/gnoviawan/termul",
+      "url": "https://github.com/gnoviawan/troupe",
       "homepage": "https://termul.dev",
       "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
       "language": "TypeScript",
-      "stars": 305,
+      "stars": 306,
       "forks": 63,
-      "openIssues": 44,
+      "openIssues": 31,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -384,7 +384,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-11-12T00:37:37Z",
+      "pushedAt": "2026-11-12T23:55:44Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -400,7 +400,7 @@
       "language": "Rust",
       "stars": 286,
       "forks": 31,
-      "openIssues": 13,
+      "openIssues": 10,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -425,7 +425,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-11-11T15:53:59Z",
+      "pushedAt": "2026-11-12T13:28:01Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -441,7 +441,7 @@
       "language": "TypeScript",
       "stars": 209,
       "forks": 40,
-      "openIssues": 17,
+      "openIssues": 19,
       "license": null,
       "topics": [
         "coding",
@@ -457,7 +457,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-11-11T23:35:04Z",
+      "pushedAt": "2026-11-12T23:46:42Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -527,9 +527,9 @@
       "homepage": "https://keirouter.app",
       "description": "Your friendly, blazing-fast, self-hostable AI gateway",
       "language": "Go",
-      "stars": 165,
-      "forks": 56,
-      "openIssues": 5,
+      "stars": 164,
+      "forks": 57,
+      "openIssues": 6,
       "license": "MIT",
       "topics": [
         "ai",
@@ -566,7 +566,7 @@
       "homepage": null,
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
-      "stars": 146,
+      "stars": 145,
       "forks": 76,
       "openIssues": 12,
       "license": "MIT",
@@ -630,9 +630,9 @@
       "homepage": "https://mso.rahmanef.com",
       "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
-      "stars": 106,
+      "stars": 107,
       "forks": 16,
-      "openIssues": 1,
+      "openIssues": 2,
       "license": null,
       "topics": [
         "browser-shell",
@@ -655,7 +655,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-11-10T16:36:25Z",
+      "pushedAt": "2026-11-12T20:41:25Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -742,9 +742,9 @@
       "homepage": "https://bansos.dev",
       "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
       "language": "Svelte",
-      "stars": 70,
+      "stars": 71,
       "forks": 21,
-      "openIssues": 3,
+      "openIssues": 4,
       "license": "MIT",
       "topics": [
         "bansos",
@@ -773,13 +773,13 @@
       "homepage": null,
       "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
       "language": "TypeScript",
-      "stars": 68,
+      "stars": 70,
       "forks": 8,
       "openIssues": 0,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-11T22:58:46Z",
+      "pushedAt": "2026-11-12T23:36:16Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -795,7 +795,7 @@
       "language": "Ruby",
       "stars": 54,
       "forks": 6,
-      "openIssues": 2,
+      "openIssues": 3,
       "license": "MIT",
       "topics": [
         "agent-orchestration",
@@ -805,7 +805,7 @@
         "ruby"
       ],
       "archived": false,
-      "pushedAt": "2026-11-12T01:21:22Z",
+      "pushedAt": "2026-11-12T09:41:47Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -990,7 +990,7 @@
       "homepage": "https://rizukirr.github.io/hyprsimple-web/",
       "description": "Minimal aesthetic arch linux + hyprland dotfiles",
       "language": "Shell",
-      "stars": 43,
+      "stars": 42,
       "forks": 4,
       "openIssues": 1,
       "license": null,
@@ -1034,40 +1034,6 @@
       "createdAt": "2025-05-26T04:42:45Z"
     },
     {
-      "slug": "ammar-rasyidi/mandum-rimba",
-      "fullName": "ammar-rasyidi/mandum-rimba",
-      "name": "mandum-rimba",
-      "owner": "ammar-rasyidi",
-      "ownerUrl": "https://github.com/ammar-rasyidi",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/110449863?v=4",
-      "url": "https://github.com/ammar-rasyidi/mandum-rimba",
-      "homepage": "https://www.mandumrimba.org",
-      "description": "Mandum Rimba is an independent, nonprofit public-interest observatory. We do not sell data, carry advertising, or take sides. We consolidate satellite data and credible public sources into a single open map, auditable by anyone, fully open source, and with every figure traceable to its origin.",
-      "language": "TypeScript",
-      "stars": 36,
-      "forks": 7,
-      "openIssues": 0,
-      "license": "AGPL-3.0",
-      "topics": [
-        "conservation",
-        "environment",
-        "forest",
-        "geospatial",
-        "indonesia",
-        "maplibre",
-        "mongodb",
-        "nestjs",
-        "nextjs",
-        "open-data",
-        "open-source",
-        "pmtiles",
-        "wildlife"
-      ],
-      "archived": false,
-      "pushedAt": "2026-10-21T03:58:48Z",
-      "createdAt": "2026-06-14T05:07:25Z"
-    },
-    {
       "slug": "fadhilbarkah/diskus",
       "fullName": "fadhilbarkah/diskus",
       "name": "diskus",
@@ -1095,6 +1061,40 @@
       "archived": false,
       "pushedAt": "2026-08-05T02:24:00Z",
       "createdAt": "2026-06-05T18:22:55Z"
+    },
+    {
+      "slug": "ammar-rasyidi/mandum-rimba",
+      "fullName": "ammar-rasyidi/mandum-rimba",
+      "name": "mandum-rimba",
+      "owner": "ammar-rasyidi",
+      "ownerUrl": "https://github.com/ammar-rasyidi",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/110449863?v=4",
+      "url": "https://github.com/ammar-rasyidi/mandum-rimba",
+      "homepage": "https://www.mandumrimba.org",
+      "description": "Mandum Rimba is an independent, nonprofit public-interest observatory. We do not sell data, carry advertising, or take sides. We consolidate satellite data and credible public sources into a single open map, auditable by anyone, fully open source, and with every figure traceable to its origin.",
+      "language": "TypeScript",
+      "stars": 35,
+      "forks": 7,
+      "openIssues": 0,
+      "license": "AGPL-3.0",
+      "topics": [
+        "conservation",
+        "environment",
+        "forest",
+        "geospatial",
+        "indonesia",
+        "maplibre",
+        "mongodb",
+        "nestjs",
+        "nextjs",
+        "open-data",
+        "open-source",
+        "pmtiles",
+        "wildlife"
+      ],
+      "archived": false,
+      "pushedAt": "2026-10-21T03:58:48Z",
+      "createdAt": "2026-06-14T05:07:25Z"
     },
     {
       "slug": "rahmanef63/open-silong",
@@ -1197,7 +1197,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-10T23:56:17Z",
+      "pushedAt": "2026-11-12T01:22:17Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1540,7 +1540,7 @@
         "system-programming-control-systems"
       ],
       "archived": false,
-      "pushedAt": "2026-11-12T01:10:14Z",
+      "pushedAt": "2026-11-12T16:26:08Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -2203,14 +2203,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-11-12T01:22:01.868Z"
+      "syncedAt": "2026-11-12T23:59:22.854Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-11-12T01:22:01.868Z"
+      "syncedAt": "2026-11-12T23:59:22.854Z"
     }
   ],
-  "syncedAt": "2026-11-12T01:22:01.868Z",
+  "syncedAt": "2026-11-12T23:59:22.854Z",
   "count": 81
 }

@@ -5,56 +5,10 @@
     "providersRemoved": [],
     "models": [
       {
-        "provider": "Groq",
-        "added": [
-          "meta-llama/llama-prompt-guard-2-22m",
-          "meta-llama/llama-prompt-guard-2-86m"
-        ],
-        "removed": []
-      },
-      {
-        "provider": "Kilo Code",
-        "added": [
-          "reflection/beam-free"
-        ],
-        "removed": [
-          "reflection/beam-free"
-        ]
-      },
-      {
-        "provider": "LLM7.io",
-        "added": [
-          "nemotron-3-nano:30b"
-        ],
-        "removed": [
-          "nemotron-3-nano:30b"
-        ]
-      },
-      {
-        "provider": "Mistral AI",
-        "added": [
-          "Ministral 3 14B",
-          "Ministral 3 3B",
-          "Ministral 3 8B",
-          "Mistral Large 3",
-          "Mistral Medium 3.5 (128B)",
-          "Mistral Small 4",
-          "Codestral"
-        ],
-        "removed": [
-          "Ministral 3 14B",
-          "Ministral 3 3B",
-          "Ministral 3 8B",
-          "Mistral Large 3",
-          "Mistral Medium 3.5 (128B)",
-          "Mistral Small 4",
-          "Codestral"
-        ]
-      },
-      {
         "provider": "OpenRouter",
         "added": [
-          "Baidu: ERNIE-5.5-Flash-Preview (free)"
+          "Particle AI: Particle-1 (free)",
+          "Apodex: Apodex 1.1 Mini (free)"
         ],
         "removed": []
       }
