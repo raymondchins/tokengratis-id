@@ -12,8 +12,8 @@
       "description": "UAParser.js: The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
       "stars": 10212,
-      "forks": 1213,
-      "openIssues": 16,
+      "forks": 1215,
+      "openIssues": 20,
       "license": "AGPL-3.0",
       "topics": [
         "analytics",
@@ -40,9 +40,9 @@
       "homepage": "https://antislop.ai.id",
       "description": "Rules for an AI coding agent to filter out generic AI-generated UI designs, text, and code.",
       "language": "JavaScript",
-      "stars": 9041,
-      "forks": 617,
-      "openIssues": 3,
+      "stars": 9135,
+      "forks": 626,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [
         "accessibility",
@@ -57,7 +57,7 @@
         "ui-design"
       ],
       "archived": false,
-      "pushedAt": "2026-11-12T12:57:00Z",
+      "pushedAt": "2026-11-13T12:29:58Z",
       "createdAt": "2026-08-07T10:29:56Z"
     },
     {
@@ -127,8 +127,8 @@
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
       "stars": 1234,
-      "forks": 1198,
-      "openIssues": 328,
+      "forks": 1197,
+      "openIssues": 325,
       "license": null,
       "topics": [
         "opensid",
@@ -149,8 +149,8 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1078,
-      "forks": 312,
+      "stars": 1082,
+      "forks": 311,
       "openIssues": 1,
       "license": "MIT",
       "topics": [
@@ -187,9 +187,9 @@
       "homepage": "https://bridgeplay.dev",
       "description": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit",
       "language": "Scala",
-      "stars": 947,
+      "stars": 953,
       "forks": 152,
-      "openIssues": 10,
+      "openIssues": 11,
       "license": "GPL-3.0",
       "topics": [
         "apple-silicon",
@@ -208,7 +208,7 @@
         "winecx"
       ],
       "archived": false,
-      "pushedAt": "2026-11-12T07:05:48Z",
+      "pushedAt": "2026-11-13T08:59:24Z",
       "createdAt": "2026-10-20T03:13:58Z"
     },
     {
@@ -222,9 +222,9 @@
       "homepage": "https://ahmadrosid.github.io/nakama",
       "description": "The AI workspace where teams share agents, skills and automations that the whole company builds on.",
       "language": "TypeScript",
-      "stars": 820,
-      "forks": 145,
-      "openIssues": 56,
+      "stars": 823,
+      "forks": 146,
+      "openIssues": 49,
       "license": "MIT",
       "topics": [
         "agents",
@@ -234,7 +234,7 @@
         "openai"
       ],
       "archived": false,
-      "pushedAt": "2026-11-12T19:43:54Z",
+      "pushedAt": "2026-11-13T16:53:47Z",
       "createdAt": "2026-05-23T06:02:30Z"
     },
     {
@@ -297,7 +297,7 @@
       "language": "Rust",
       "stars": 377,
       "forks": 36,
-      "openIssues": 29,
+      "openIssues": 30,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -350,7 +350,7 @@
         "wails-app"
       ],
       "archived": false,
-      "pushedAt": "2026-11-12T04:05:35Z",
+      "pushedAt": "2026-11-13T19:19:41Z",
       "createdAt": "2025-11-04T15:37:00Z"
     },
     {
@@ -362,9 +362,9 @@
       "ownerAvatar": "https://avatars.githubusercontent.com/u/72639723?v=4",
       "url": "https://github.com/gnoviawan/troupe",
       "homepage": "https://termul.dev",
-      "description": "Termul is Terminal Ultimate Manager a cross-platform desktop terminal manager built with Tauri and React. Organize terminals by workspace with persistent sessions, multiple shell, split panes, embedded browser tabs, and a built-in code & markdown editor.",
+      "description": "Troupe any Agents in one UI for Claude, ChatGPT, Antigravity and 30+ more",
       "language": "TypeScript",
-      "stars": 306,
+      "stars": 310,
       "forks": 63,
       "openIssues": 31,
       "license": "MIT",
@@ -384,7 +384,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-11-12T23:55:44Z",
+      "pushedAt": "2026-11-13T22:35:46Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -400,7 +400,7 @@
       "language": "Rust",
       "stars": 286,
       "forks": 31,
-      "openIssues": 10,
+      "openIssues": 13,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -425,7 +425,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-11-12T13:28:01Z",
+      "pushedAt": "2026-11-13T07:58:08Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -441,7 +441,7 @@
       "language": "TypeScript",
       "stars": 209,
       "forks": 40,
-      "openIssues": 19,
+      "openIssues": 17,
       "license": null,
       "topics": [
         "coding",
@@ -457,7 +457,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-11-12T23:46:42Z",
+      "pushedAt": "2026-11-13T22:55:37Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -630,9 +630,9 @@
       "homepage": "https://mso.rahmanef.com",
       "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
-      "stars": 107,
+      "stars": 106,
       "forks": 16,
-      "openIssues": 2,
+      "openIssues": 1,
       "license": null,
       "topics": [
         "browser-shell",
@@ -655,7 +655,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-11-12T20:41:25Z",
+      "pushedAt": "2026-11-13T22:11:46Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -669,7 +669,7 @@
       "homepage": "https://svelte-audio-ui.vercel.app/",
       "description": "A set of accessible and composable Audio UI components.",
       "language": "Svelte",
-      "stars": 101,
+      "stars": 102,
       "forks": 4,
       "openIssues": 16,
       "license": "MIT",
@@ -779,7 +779,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-12T23:36:16Z",
+      "pushedAt": "2026-11-13T13:49:38Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -795,7 +795,7 @@
       "language": "Ruby",
       "stars": 54,
       "forks": 6,
-      "openIssues": 3,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "agent-orchestration",
@@ -805,7 +805,7 @@
         "ruby"
       ],
       "archived": false,
-      "pushedAt": "2026-11-12T09:41:47Z",
+      "pushedAt": "2026-11-13T15:13:53Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -951,7 +951,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-11-03T15:39:02Z",
+      "pushedAt": "2026-11-13T10:43:03Z",
       "createdAt": "2026-04-09T16:08:42Z"
     },
     {
@@ -990,7 +990,7 @@
       "homepage": "https://rizukirr.github.io/hyprsimple-web/",
       "description": "Minimal aesthetic arch linux + hyprland dotfiles",
       "language": "Shell",
-      "stars": 42,
+      "stars": 43,
       "forks": 4,
       "openIssues": 1,
       "license": null,
@@ -1197,7 +1197,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-12T01:22:17Z",
+      "pushedAt": "2026-11-12T23:59:38Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1219,38 +1219,6 @@
       "archived": false,
       "pushedAt": "2026-05-21T16:51:06Z",
       "createdAt": "2026-03-28T09:34:42Z"
-    },
-    {
-      "slug": "muslimtify-org/muslimtify",
-      "fullName": "muslimtify-org/muslimtify",
-      "name": "muslimtify",
-      "owner": "muslimtify-org",
-      "ownerUrl": "https://github.com/muslimtify-org",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/302768915?v=4",
-      "url": "https://github.com/muslimtify-org/muslimtify",
-      "homepage": "https://muslimtify.org",
-      "description": "A daily prayer notification & reminder for Muslims on Windows and Linux, supporting 21 global standard calculation methods, all madzhab, all country.",
-      "language": "C",
-      "stars": 20,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "GPL-3.0",
-      "topics": [
-        "c-language",
-        "cross-platform",
-        "daemon",
-        "linux",
-        "muslim-prayer-times",
-        "muslims-prayer",
-        "notification",
-        "systemd",
-        "windows",
-        "windows-app",
-        "windows-desktop"
-      ],
-      "archived": false,
-      "pushedAt": "2026-11-11T04:44:31Z",
-      "createdAt": "2026-02-23T13:59:12Z"
     },
     {
       "slug": "rizukirr/vibekit",
@@ -1283,8 +1251,40 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-11-07T00:12:48Z",
+      "pushedAt": "2026-11-14T00:12:53Z",
       "createdAt": "2026-04-21T15:17:02Z"
+    },
+    {
+      "slug": "muslimtify-org/muslimtify",
+      "fullName": "muslimtify-org/muslimtify",
+      "name": "muslimtify",
+      "owner": "muslimtify-org",
+      "ownerUrl": "https://github.com/muslimtify-org",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/302768915?v=4",
+      "url": "https://github.com/muslimtify-org/muslimtify",
+      "homepage": "https://muslimtify.org",
+      "description": "A daily prayer notification & reminder for Muslims on Windows and Linux, supporting 21 global standard calculation methods, all madzhab, all country.",
+      "language": "C",
+      "stars": 20,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "GPL-3.0",
+      "topics": [
+        "c-language",
+        "cross-platform",
+        "daemon",
+        "linux",
+        "muslim-prayer-times",
+        "muslims-prayer",
+        "notification",
+        "systemd",
+        "windows",
+        "windows-app",
+        "windows-desktop"
+      ],
+      "archived": false,
+      "pushedAt": "2026-11-11T04:44:31Z",
+      "createdAt": "2026-02-23T13:59:12Z"
     },
     {
       "slug": "rayasabari/yntk-ts",
@@ -1540,7 +1540,7 @@
         "system-programming-control-systems"
       ],
       "archived": false,
-      "pushedAt": "2026-11-12T16:26:08Z",
+      "pushedAt": "2026-11-13T17:53:07Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -2073,7 +2073,7 @@
         "vue"
       ],
       "archived": false,
-      "pushedAt": "2026-11-04T07:26:39Z",
+      "pushedAt": "2026-11-13T08:32:56Z",
       "createdAt": "2026-09-02T02:36:21Z"
     },
     {
@@ -2203,14 +2203,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-11-12T23:59:22.854Z"
+      "syncedAt": "2026-11-14T00:14:27.684Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-11-12T23:59:22.854Z"
+      "syncedAt": "2026-11-14T00:14:27.684Z"
     }
   ],
-  "syncedAt": "2026-11-12T23:59:22.854Z",
+  "syncedAt": "2026-11-14T00:14:27.684Z",
   "count": 81
 }

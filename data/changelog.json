@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-11-14",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "NVIDIA NIM",
+        "added": [
+          "Gemma 4 31B IT"
+        ],
+        "removed": [
+          "google/gemma-4-31b-it"
+        ]
+      },
+      {
+        "provider": "OpenRouter",
+        "added": [
+          "inclusionAI: Ling 3.2 Flash (free)"
+        ],
+        "removed": [
+          "Apodex: Apodex 1.1 Mini (free)",
+          "LiquidAI: LFM2.5-2.6B (free)"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-12",
     "providersAdded": [],
     "providersRemoved": [],
@@ -1992,20 +2018,6 @@
           "Ling 3.0 Flash Fin"
         ],
         "removed": []
-      }
-    ]
-  },
-  {
-    "date": "2026-08-30",
-    "providersAdded": [],
-    "providersRemoved": [],
-    "models": [
-      {
-        "provider": "OpenCode Zen",
-        "added": [],
-        "removed": [
-          "Hy3 preview"
-        ]
       }
     ]
   }
