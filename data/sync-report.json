@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T00:14:21.080Z",
+  "generatedAt": "2026-11-14T22:53:17.057Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -11,18 +11,18 @@
     "freellm.net": {
       "status": "ok",
       "providers": 22,
-      "models": 302,
+      "models": 301,
       "shapeIssues": [
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "maxOutput",
           "rule": "all-null-collapse",
-          "count": 302,
-          "total": 302,
+          "count": 301,
+          "total": 301,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"maxOutput\": 100% null di 302 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+          "message": "Field \"maxOutput\": 100% null di 301 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
         },
         {
           "severity": "warn",
@@ -65,7 +65,7 @@
   ],
   "merged": {
     "providers": 22,
-    "models": 303,
+    "models": 299,
     "shapeIssues": [
       {
         "severity": "warn",
@@ -73,12 +73,12 @@
         "field": "context",
         "rule": "context-shape",
         "count": 1,
-        "total": 288,
-        "ratio": 0.003472222222222222,
+        "total": 282,
+        "ratio": 0.0035460992907801418,
         "samples": [
           "448"
         ],
-        "message": "Field \"context\": 1/288 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
+        "message": "Field \"context\": 1/282 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
       },
       {
         "severity": "warn",
@@ -86,12 +86,12 @@
         "field": "maxOutput",
         "rule": "maxoutput-shape",
         "count": 1,
-        "total": 123,
-        "ratio": 0.008130081300813009,
+        "total": 124,
+        "ratio": 0.008064516129032258,
         "samples": [
           "448"
         ],
-        "message": "Field \"maxOutput\": 1/123 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
+        "message": "Field \"maxOutput\": 1/124 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
       }
     ]
   },
@@ -100,40 +100,80 @@
     "warnings": []
   },
   "diffGuard": {
-    "ok": true,
-    "errors": [],
+    "ok": false,
+    "errors": [
+      "provider \"llm7-io\" model count dropped 63.6% (11 → 4), threshold is 40%",
+      "provider \"agnes-ai\" model ids churned 60.0% at same-ish count (overlap 40.0%, 5→6 ids) — possible source corruption",
+      "provider \"llm7-io\" model ids churned 63.6% at same-ish count (overlap 36.4%, 11→4 ids) — possible source corruption"
+    ],
     "warnings": [],
     "stats": {
       "prevProviders": 22,
       "nextProviders": 22,
-      "prevModels": 304,
-      "nextModels": 303,
-      "totalDropPct": 0.3289473684210526,
+      "prevModels": 303,
+      "nextModels": 299,
+      "totalDropPct": 1.3201320132013201,
       "disappeared": [],
-      "shrunk": [],
-      "churned": [],
+      "shrunk": [
+        {
+          "slug": "llm7-io",
+          "prev": 11,
+          "next": 4,
+          "dropPct": 63.63636363636363
+        }
+      ],
+      "churned": [
+        {
+          "slug": "agnes-ai",
+          "overlapPct": 40,
+          "prevIds": 5,
+          "nextIds": 6
+        },
+        {
+          "slug": "llm7-io",
+          "overlapPct": 36.36363636363637,
+          "prevIds": 11,
+          "nextIds": 4
+        }
+      ],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 286,
+            "eligible": 278,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "maxOutput": {
-            "eligible": 120,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "eligible": 121,
+            "changed": 4,
+            "ratioPct": 3.3057851239669422,
+            "examples": [
+              {
+                "label": "llm7-io/gpt-oss:20b",
+                "from": "32K",
+                "to": "128K"
+              },
+              {
+                "label": "modelscope/meituan-longcat-longcat-flash-lite",
+                "from": "320K",
+                "to": "256K"
+              },
+              {
+                "label": "ollama-cloud/gpt-oss-20b",
+                "from": "32K",
+                "to": "128K"
+              }
+            ]
           },
           "modality": {
-            "eligible": 230,
+            "eligible": 222,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "rateLimit": {
-            "eligible": 170,
+            "eligible": 165,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -175,11 +215,11 @@
       "source": "freellm.net",
       "field": "maxOutput",
       "rule": "all-null-collapse",
-      "count": 302,
-      "total": 302,
+      "count": 301,
+      "total": 301,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"maxOutput\": 100% null di 302 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+      "message": "Field \"maxOutput\": 100% null di 301 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
     },
     {
       "severity": "warn",
@@ -209,12 +249,12 @@
       "field": "context",
       "rule": "context-shape",
       "count": 1,
-      "total": 288,
-      "ratio": 0.003472222222222222,
+      "total": 282,
+      "ratio": 0.0035460992907801418,
       "samples": [
         "448"
       ],
-      "message": "Field \"context\": 1/288 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
+      "message": "Field \"context\": 1/282 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
     },
     {
       "severity": "warn",
@@ -222,16 +262,31 @@
       "field": "maxOutput",
       "rule": "maxoutput-shape",
       "count": 1,
-      "total": 123,
-      "ratio": 0.008130081300813009,
+      "total": 124,
+      "ratio": 0.008064516129032258,
       "samples": [
         "448"
       ],
-      "message": "Field \"maxOutput\": 1/123 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
+      "message": "Field \"maxOutput\": 1/124 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
     }
   ],
   "quarantine": {
-    "heldProviders": [],
+    "heldProviders": [
+      {
+        "slug": "llm7-io",
+        "kind": "shrunk",
+        "detail": "model 11 -> 4 (-64%)",
+        "streak": 1,
+        "needs": 3
+      },
+      {
+        "slug": "agnes-ai",
+        "kind": "churned",
+        "detail": "id churn, overlap 40% (5 -> 6 id)",
+        "streak": 1,
+        "needs": 3
+      }
+    ],
     "accepted": [],
     "cleared": [],
     "confirmRuns": 3

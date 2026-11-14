@@ -1,4 +1,21 @@
 {
   "version": 1,
-  "entries": {}
+  "entries": {
+    "llm7-io": {
+      "kind": "shrunk",
+      "magnitude": 4,
+      "detail": "model 11 -> 4 (-64%)",
+      "streak": 1,
+      "firstSeen": "2026-11-14T22:53:17.057Z",
+      "lastSeen": "2026-11-14T22:53:17.057Z"
+    },
+    "agnes-ai": {
+      "kind": "churned",
+      "magnitude": 6,
+      "detail": "id churn, overlap 40% (5 -> 6 id)",
+      "streak": 1,
+      "firstSeen": "2026-11-14T22:53:17.057Z",
+      "lastSeen": "2026-11-14T22:53:17.057Z"
+    }
+  }
 }

@@ -5,23 +5,18 @@
     "providersRemoved": [],
     "models": [
       {
-        "provider": "NVIDIA NIM",
+        "provider": "Cloudflare Workers AI",
         "added": [
-          "Gemma 4 31B IT"
+          "@cf/thinkingmachines/inkling-2-small"
         ],
-        "removed": [
-          "google/gemma-4-31b-it"
-        ]
+        "removed": []
       },
       {
-        "provider": "OpenRouter",
+        "provider": "Google Gemini",
         "added": [
-          "inclusionAI: Ling 3.2 Flash (free)"
+          "Gemini 4 Hydrogen"
         ],
-        "removed": [
-          "Apodex: Apodex 1.1 Mini (free)",
-          "LiquidAI: LFM2.5-2.6B (free)"
-        ]
+        "removed": []
       }
     ]
   },
