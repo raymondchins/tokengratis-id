@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-11-15",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Agnes AI",
+        "added": [
+          "agnes-2.5-flash",
+          "agnes-3.0-flash",
+          "agnes-image-2.5-flash",
+          "agnes-video-2.5-flash"
+        ],
+        "removed": [
+          "agnes-1.5-flash",
+          "agnes-2.0-flash",
+          "agnes-video-v2.0"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-14",
     "providersAdded": [],
     "providersRemoved": [],
@@ -1999,20 +2020,6 @@
         "removed": [
           "meta-Llama-3.1-8B-Instruct-Turbo"
         ]
-      }
-    ]
-  },
-  {
-    "date": "2026-08-31",
-    "providersAdded": [],
-    "providersRemoved": [],
-    "models": [
-      {
-        "provider": "OpenCode Zen",
-        "added": [
-          "Ling 3.0 Flash Fin"
-        ],
-        "removed": []
       }
     ]
   }

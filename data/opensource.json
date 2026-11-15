@@ -11,9 +11,9 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js: The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
-      "stars": 10213,
-      "forks": 1217,
-      "openIssues": 20,
+      "stars": 10214,
+      "forks": 1218,
+      "openIssues": 21,
       "license": "AGPL-3.0",
       "topics": [
         "analytics",
@@ -40,9 +40,9 @@
       "homepage": "https://antislop.ai.id",
       "description": "Rules for an AI coding agent to filter out generic AI-generated UI designs, text, and code.",
       "language": "JavaScript",
-      "stars": 9222,
-      "forks": 632,
-      "openIssues": 0,
+      "stars": 9305,
+      "forks": 636,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "accessibility",
@@ -127,8 +127,8 @@
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
       "stars": 1234,
-      "forks": 1197,
-      "openIssues": 328,
+      "forks": 1199,
+      "openIssues": 341,
       "license": null,
       "topics": [
         "opensid",
@@ -149,7 +149,7 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1084,
+      "stars": 1085,
       "forks": 312,
       "openIssues": 1,
       "license": "MIT",
@@ -187,8 +187,8 @@
       "homepage": "https://bridgeplay.dev",
       "description": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit",
       "language": "Scala",
-      "stars": 968,
-      "forks": 153,
+      "stars": 978,
+      "forks": 152,
       "openIssues": 11,
       "license": "GPL-3.0",
       "topics": [
@@ -208,7 +208,7 @@
         "winecx"
       ],
       "archived": false,
-      "pushedAt": "2026-11-14T06:14:19Z",
+      "pushedAt": "2026-11-15T10:25:50Z",
       "createdAt": "2026-10-20T03:13:58Z"
     },
     {
@@ -223,8 +223,8 @@
       "description": "The AI workspace where teams share agents, skills and automations that the whole company builds on.",
       "language": "TypeScript",
       "stars": 825,
-      "forks": 146,
-      "openIssues": 47,
+      "forks": 147,
+      "openIssues": 49,
       "license": "MIT",
       "topics": [
         "agents",
@@ -234,7 +234,7 @@
         "openai"
       ],
       "archived": false,
-      "pushedAt": "2026-11-14T15:09:29Z",
+      "pushedAt": "2026-11-15T10:12:43Z",
       "createdAt": "2026-05-23T06:02:30Z"
     },
     {
@@ -297,7 +297,7 @@
       "language": "Rust",
       "stars": 377,
       "forks": 36,
-      "openIssues": 28,
+      "openIssues": 26,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -322,7 +322,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-11-14T14:21:42Z",
+      "pushedAt": "2026-11-15T15:29:36Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -350,7 +350,7 @@
         "wails-app"
       ],
       "archived": false,
-      "pushedAt": "2026-11-13T19:19:41Z",
+      "pushedAt": "2026-11-15T01:15:57Z",
       "createdAt": "2025-11-04T15:37:00Z"
     },
     {
@@ -364,9 +364,9 @@
       "homepage": "https://termul.dev",
       "description": "Troupe any Agents in one UI for Claude, ChatGPT, Antigravity and 30+ more",
       "language": "TypeScript",
-      "stars": 320,
+      "stars": 323,
       "forks": 62,
-      "openIssues": 29,
+      "openIssues": 28,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -384,7 +384,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-11-14T22:46:26Z",
+      "pushedAt": "2026-11-15T21:54:27Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -398,7 +398,7 @@
       "homepage": "https://uteke.app",
       "description": "Long-term memory for AI agents (MCP). One Rust binary, offline, 98.2% recall@5 on LongMemEval-S. Works with Claude Code, Cursor, Codex. Self-host free or use Uteke Cloud.",
       "language": "Rust",
-      "stars": 287,
+      "stars": 288,
       "forks": 31,
       "openIssues": 14,
       "license": "Apache-2.0",
@@ -441,7 +441,7 @@
       "language": "TypeScript",
       "stars": 209,
       "forks": 40,
-      "openIssues": 10,
+      "openIssues": 13,
       "license": null,
       "topics": [
         "coding",
@@ -457,7 +457,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-11-14T16:24:00Z",
+      "pushedAt": "2026-11-15T05:50:16Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -556,6 +556,30 @@
       "createdAt": "2026-05-31T09:02:50Z"
     },
     {
+      "slug": "ilhamrisky/pddikti-kemdikbud-api",
+      "fullName": "IlhamriSKY/PDDIKTI-kemdikbud-API",
+      "name": "PDDIKTI-kemdikbud-API",
+      "owner": "IlhamriSKY",
+      "ownerUrl": "https://github.com/IlhamriSKY",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/18723904?v=4",
+      "url": "https://github.com/IlhamriSKY/PDDIKTI-kemdikbud-API",
+      "homepage": "https://pddikti.kemdiktisaintek.go.id/",
+      "description": "Unofficial Python 3 API wrapper to retrieve data from PDDIKTI Kemdikbudristek.",
+      "language": "Python",
+      "stars": 145,
+      "forks": 29,
+      "openIssues": 0,
+      "license": null,
+      "topics": [
+        "api-wrapper",
+        "package",
+        "python3"
+      ],
+      "archived": false,
+      "pushedAt": "2026-11-09T01:25:17Z",
+      "createdAt": "2021-04-21T07:59:57Z"
+    },
+    {
       "slug": "jipraks/kasirgratisan",
       "fullName": "jipraks/kasirgratisan",
       "name": "kasirgratisan",
@@ -574,30 +598,6 @@
       "archived": false,
       "pushedAt": "2026-09-13T20:30:31Z",
       "createdAt": "2026-02-12T11:02:43Z"
-    },
-    {
-      "slug": "ilhamrisky/pddikti-kemdikbud-api",
-      "fullName": "IlhamriSKY/PDDIKTI-kemdikbud-API",
-      "name": "PDDIKTI-kemdikbud-API",
-      "owner": "IlhamriSKY",
-      "ownerUrl": "https://github.com/IlhamriSKY",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/18723904?v=4",
-      "url": "https://github.com/IlhamriSKY/PDDIKTI-kemdikbud-API",
-      "homepage": "https://pddikti.kemdiktisaintek.go.id/",
-      "description": "Unofficial Python 3 API wrapper to retrieve data from PDDIKTI Kemdikbudristek.",
-      "language": "Python",
-      "stars": 144,
-      "forks": 29,
-      "openIssues": 0,
-      "license": null,
-      "topics": [
-        "api-wrapper",
-        "package",
-        "python3"
-      ],
-      "archived": false,
-      "pushedAt": "2026-11-09T01:25:17Z",
-      "createdAt": "2021-04-21T07:59:57Z"
     },
     {
       "slug": "hendisantika/online-banking-angular-springboot-mysql",
@@ -655,7 +655,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-11-14T17:37:46Z",
+      "pushedAt": "2026-11-15T21:54:15Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -712,26 +712,6 @@
       "createdAt": "2023-09-05T12:35:21Z"
     },
     {
-      "slug": "akbaraditamasp/njinattend-backend",
-      "fullName": "akbaraditamasp/njinattend-backend",
-      "name": "njinattend-backend",
-      "owner": "akbaraditamasp",
-      "ownerUrl": "https://github.com/akbaraditamasp",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/105755365?v=4",
-      "url": "https://github.com/akbaraditamasp/njinattend-backend",
-      "homepage": null,
-      "description": "The backend of NjinAttend is built using AdonisJS.",
-      "language": "TypeScript",
-      "stars": 72,
-      "forks": 18,
-      "openIssues": 0,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2023-10-04T21:50:13Z",
-      "createdAt": "2023-09-23T21:07:22Z"
-    },
-    {
       "slug": "wauputr4/bansos",
       "fullName": "wauputr4/bansos",
       "name": "bansos",
@@ -742,7 +722,7 @@
       "homepage": "https://bansos.dev",
       "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
       "language": "Svelte",
-      "stars": 71,
+      "stars": 72,
       "forks": 21,
       "openIssues": 4,
       "license": "MIT",
@@ -763,6 +743,26 @@
       "createdAt": "2026-06-11T13:28:54Z"
     },
     {
+      "slug": "akbaraditamasp/njinattend-backend",
+      "fullName": "akbaraditamasp/njinattend-backend",
+      "name": "njinattend-backend",
+      "owner": "akbaraditamasp",
+      "ownerUrl": "https://github.com/akbaraditamasp",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/105755365?v=4",
+      "url": "https://github.com/akbaraditamasp/njinattend-backend",
+      "homepage": null,
+      "description": "The backend of NjinAttend is built using AdonisJS.",
+      "language": "TypeScript",
+      "stars": 72,
+      "forks": 18,
+      "openIssues": 0,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2023-10-04T21:50:13Z",
+      "createdAt": "2023-09-23T21:07:22Z"
+    },
+    {
       "slug": "rudycity/superagent",
       "fullName": "RudyCity/superagent",
       "name": "superagent",
@@ -773,13 +773,13 @@
       "homepage": null,
       "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
       "language": "TypeScript",
-      "stars": 70,
+      "stars": 71,
       "forks": 8,
       "openIssues": 0,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-14T14:58:49Z",
+      "pushedAt": "2026-11-15T11:39:16Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -805,7 +805,7 @@
         "ruby"
       ],
       "archived": false,
-      "pushedAt": "2026-11-14T15:50:50Z",
+      "pushedAt": "2026-11-15T14:04:58Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -1197,7 +1197,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-14T00:14:41Z",
+      "pushedAt": "2026-11-14T22:53:34Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1522,7 +1522,7 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 61,
+      "openIssues": 65,
       "license": "Apache-2.0",
       "topics": [
         "linux",
@@ -1540,7 +1540,7 @@
         "system-programming-control-systems"
       ],
       "archived": false,
-      "pushedAt": "2026-11-14T19:03:45Z",
+      "pushedAt": "2026-11-15T19:56:08Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1669,7 +1669,7 @@
         "rust"
       ],
       "archived": false,
-      "pushedAt": "2026-11-14T16:35:40Z",
+      "pushedAt": "2026-11-15T11:31:26Z",
       "createdAt": "2026-06-04T12:15:07Z"
     },
     {
@@ -2203,14 +2203,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-11-14T22:53:22.704Z"
+      "syncedAt": "2026-11-15T23:20:00.328Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-11-14T22:53:22.704Z"
+      "syncedAt": "2026-11-15T23:20:00.328Z"
     }
   ],
-  "syncedAt": "2026-11-14T22:53:22.704Z",
+  "syncedAt": "2026-11-15T23:20:00.328Z",
   "count": 81
 }
