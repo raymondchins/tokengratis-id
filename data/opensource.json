@@ -11,8 +11,8 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js: The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
-      "stars": 10214,
-      "forks": 1218,
+      "stars": 10215,
+      "forks": 1219,
       "openIssues": 21,
       "license": "AGPL-3.0",
       "topics": [
@@ -40,8 +40,8 @@
       "homepage": "https://antislop.ai.id",
       "description": "Rules for an AI coding agent to filter out generic AI-generated UI designs, text, and code.",
       "language": "JavaScript",
-      "stars": 9305,
-      "forks": 636,
+      "stars": 9367,
+      "forks": 640,
       "openIssues": 1,
       "license": "MIT",
       "topics": [
@@ -128,14 +128,14 @@
       "language": "PHP",
       "stars": 1234,
       "forks": 1199,
-      "openIssues": 341,
+      "openIssues": 328,
       "license": null,
       "topics": [
         "opensid",
         "sistem-informasi-desa"
       ],
       "archived": false,
-      "pushedAt": "2026-11-04T11:41:51Z",
+      "pushedAt": "2026-11-17T02:21:43Z",
       "createdAt": "2016-05-21T10:55:38Z"
     },
     {
@@ -149,7 +149,7 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1085,
+      "stars": 1088,
       "forks": 312,
       "openIssues": 1,
       "license": "MIT",
@@ -187,9 +187,9 @@
       "homepage": "https://bridgeplay.dev",
       "description": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit",
       "language": "Scala",
-      "stars": 978,
-      "forks": 152,
-      "openIssues": 11,
+      "stars": 988,
+      "forks": 153,
+      "openIssues": 12,
       "license": "GPL-3.0",
       "topics": [
         "apple-silicon",
@@ -208,7 +208,7 @@
         "winecx"
       ],
       "archived": false,
-      "pushedAt": "2026-11-15T10:25:50Z",
+      "pushedAt": "2026-11-16T12:22:49Z",
       "createdAt": "2026-10-20T03:13:58Z"
     },
     {
@@ -222,9 +222,9 @@
       "homepage": "https://ahmadrosid.github.io/nakama",
       "description": "The AI workspace where teams share agents, skills and automations that the whole company builds on.",
       "language": "TypeScript",
-      "stars": 825,
-      "forks": 147,
-      "openIssues": 49,
+      "stars": 827,
+      "forks": 146,
+      "openIssues": 51,
       "license": "MIT",
       "topics": [
         "agents",
@@ -295,7 +295,7 @@
       "homepage": "https://omni.weekndlabs.com/docs",
       "description": "The one place for the skills, keys and memory of every agent you use. Formerly OMNI.",
       "language": "Rust",
-      "stars": 377,
+      "stars": 378,
       "forks": 36,
       "openIssues": 26,
       "license": "Apache-2.0",
@@ -336,7 +336,7 @@
       "homepage": "https://adbkit.pages.dev",
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 373,
+      "stars": 374,
       "forks": 47,
       "openIssues": 4,
       "license": "MIT",
@@ -364,9 +364,9 @@
       "homepage": "https://termul.dev",
       "description": "Troupe any Agents in one UI for Claude, ChatGPT, Antigravity and 30+ more",
       "language": "TypeScript",
-      "stars": 323,
+      "stars": 327,
       "forks": 62,
-      "openIssues": 28,
+      "openIssues": 38,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -384,7 +384,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-11-15T21:54:27Z",
+      "pushedAt": "2026-11-17T02:19:05Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -398,7 +398,7 @@
       "homepage": "https://uteke.app",
       "description": "Long-term memory for AI agents (MCP). One Rust binary, offline, 98.2% recall@5 on LongMemEval-S. Works with Claude Code, Cursor, Codex. Self-host free or use Uteke Cloud.",
       "language": "Rust",
-      "stars": 288,
+      "stars": 289,
       "forks": 31,
       "openIssues": 14,
       "license": "Apache-2.0",
@@ -425,7 +425,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-11-14T10:13:41Z",
+      "pushedAt": "2026-11-17T00:14:12Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -441,7 +441,7 @@
       "language": "TypeScript",
       "stars": 209,
       "forks": 40,
-      "openIssues": 13,
+      "openIssues": 23,
       "license": null,
       "topics": [
         "coding",
@@ -457,7 +457,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-11-15T05:50:16Z",
+      "pushedAt": "2026-11-16T13:59:22Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -471,7 +471,7 @@
       "homepage": null,
       "description": null,
       "language": "Python",
-      "stars": 184,
+      "stars": 185,
       "forks": 45,
       "openIssues": 0,
       "license": "MIT",
@@ -590,7 +590,7 @@
       "homepage": null,
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
-      "stars": 145,
+      "stars": 144,
       "forks": 76,
       "openIssues": 12,
       "license": "MIT",
@@ -631,8 +631,8 @@
       "description": "Browser-based graphical shell and control plane for a Linux server you own — real terminal, file manager, live metrics and BYOK AI in one mobile-first workspace. Next.js 16 · React 19 · node-pty · Tailwind v4 · shadcn/ui. Public alpha, self-hosted.",
       "language": "TypeScript",
       "stars": 106,
-      "forks": 16,
-      "openIssues": 3,
+      "forks": 17,
+      "openIssues": 14,
       "license": null,
       "topics": [
         "browser-shell",
@@ -655,7 +655,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-11-15T21:54:15Z",
+      "pushedAt": "2026-11-16T22:07:58Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -699,7 +699,7 @@
       "language": "TypeScript",
       "stars": 99,
       "forks": 23,
-      "openIssues": 8,
+      "openIssues": 11,
       "license": "MIT",
       "topics": [
         "hacktoberfest",
@@ -708,7 +708,7 @@
         "hacktoberfest2023"
       ],
       "archived": false,
-      "pushedAt": "2026-11-11T01:42:21Z",
+      "pushedAt": "2026-11-16T20:43:56Z",
       "createdAt": "2023-09-05T12:35:21Z"
     },
     {
@@ -779,7 +779,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-15T11:39:16Z",
+      "pushedAt": "2026-11-17T01:51:58Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -793,9 +793,9 @@
       "homepage": "https://usetycho.com",
       "description": "Its Factorio for coding agents",
       "language": "Ruby",
-      "stars": 54,
+      "stars": 55,
       "forks": 6,
-      "openIssues": 0,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "agent-orchestration",
@@ -805,7 +805,7 @@
         "ruby"
       ],
       "archived": false,
-      "pushedAt": "2026-11-15T14:04:58Z",
+      "pushedAt": "2026-11-17T01:01:54Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -1197,7 +1197,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-14T22:53:34Z",
+      "pushedAt": "2026-11-15T23:20:10Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1233,7 +1233,7 @@
       "language": "JavaScript",
       "stars": 20,
       "forks": 1,
-      "openIssues": 1,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [
         "antigravity",
@@ -1251,7 +1251,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-11-14T00:12:53Z",
+      "pushedAt": "2026-11-17T00:29:24Z",
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
@@ -1522,7 +1522,7 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 65,
+      "openIssues": 64,
       "license": "Apache-2.0",
       "topics": [
         "linux",
@@ -1540,7 +1540,7 @@
         "system-programming-control-systems"
       ],
       "archived": false,
-      "pushedAt": "2026-11-15T19:56:08Z",
+      "pushedAt": "2026-11-16T17:34:47Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1573,6 +1573,34 @@
       "archived": false,
       "pushedAt": "2026-10-01T04:23:44Z",
       "createdAt": "2026-03-25T12:38:25Z"
+    },
+    {
+      "slug": "rizukirr/apic",
+      "fullName": "rizukirr/apic",
+      "name": "apic",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/apic",
+      "homepage": "https://rizukirr.github.io/apic-web",
+      "description": "A lightweight, Git-native tool for designing and collaborating on API contracts",
+      "language": "Rust",
+      "stars": 10,
+      "forks": 1,
+      "openIssues": 0,
+      "license": "GPL-3.0",
+      "topics": [
+        "api",
+        "api-contract",
+        "cli-tool",
+        "colaboration",
+        "contracts",
+        "rest-api",
+        "rust"
+      ],
+      "archived": false,
+      "pushedAt": "2026-11-16T15:43:12Z",
+      "createdAt": "2026-06-04T12:15:07Z"
     },
     {
       "slug": "codecoradev/trapfall",
@@ -1643,34 +1671,6 @@
       "archived": false,
       "pushedAt": "2026-09-15T06:58:18Z",
       "createdAt": "2026-06-02T04:21:59Z"
-    },
-    {
-      "slug": "rizukirr/apic",
-      "fullName": "rizukirr/apic",
-      "name": "apic",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/apic",
-      "homepage": "https://rizukirr.github.io/apic-web",
-      "description": "A lightweight, Git-native tool for designing and collaborating on API contracts",
-      "language": "Rust",
-      "stars": 9,
-      "forks": 1,
-      "openIssues": 0,
-      "license": "GPL-3.0",
-      "topics": [
-        "api",
-        "api-contract",
-        "cli-tool",
-        "colaboration",
-        "contracts",
-        "rest-api",
-        "rust"
-      ],
-      "archived": false,
-      "pushedAt": "2026-11-15T11:31:26Z",
-      "createdAt": "2026-06-04T12:15:07Z"
     },
     {
       "slug": "rifqiakrm/code-island",
@@ -2203,14 +2203,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-11-15T23:20:00.328Z"
+      "syncedAt": "2026-11-17T02:21:57.419Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-11-15T23:20:00.328Z"
+      "syncedAt": "2026-11-17T02:21:57.419Z"
     }
   ],
-  "syncedAt": "2026-11-15T23:20:00.328Z",
+  "syncedAt": "2026-11-17T02:21:57.419Z",
   "count": 81
 }

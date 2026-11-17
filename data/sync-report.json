@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-15T23:19:53.813Z",
+  "generatedAt": "2026-11-17T02:21:50.662Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
       "status": "ok",
       "providers": 14,
-      "models": 77,
+      "models": 76,
       "shapeIssues": []
     },
     "freellm.net": {
@@ -86,12 +86,12 @@
         "field": "maxOutput",
         "rule": "maxoutput-shape",
         "count": 1,
-        "total": 126,
-        "ratio": 0.007936507936507936,
+        "total": 127,
+        "ratio": 0.007874015748031496,
         "samples": [
           "448"
         ],
-        "message": "Field \"maxOutput\": 1/126 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
+        "message": "Field \"maxOutput\": 1/127 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
       }
     ]
   },
@@ -102,53 +102,38 @@
   "diffGuard": {
     "ok": true,
     "errors": [],
-    "warnings": [
-      "provider \"agnes-ai\" model ids churned 60.0% at same-ish count (overlap 40.0%, 5→6 ids), but catalog grew (22→22 providers, 305→306 models) — treating as normal upstream churn"
-    ],
+    "warnings": [],
     "stats": {
       "prevProviders": 22,
       "nextProviders": 22,
-      "prevModels": 305,
+      "prevModels": 306,
       "nextModels": 306,
-      "totalDropPct": -0.32786885245901637,
+      "totalDropPct": 0,
       "disappeared": [],
       "shrunk": [],
-      "churned": [
-        {
-          "slug": "agnes-ai",
-          "overlapPct": 40,
-          "prevIds": 5,
-          "nextIds": 6
-        }
-      ],
+      "churned": [],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 285,
+            "eligible": 289,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "maxOutput": {
-            "eligible": 123,
-            "changed": 1,
-            "ratioPct": 0.8130081300813009,
-            "examples": [
-              {
-                "label": "llm7-io/gpt-oss:20b",
-                "from": "32K",
-                "to": "128K"
-              }
-            ]
+            "eligible": 126,
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           },
           "modality": {
-            "eligible": 231,
+            "eligible": 235,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "rateLimit": {
-            "eligible": 170,
+            "eligible": 174,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -237,21 +222,18 @@
       "field": "maxOutput",
       "rule": "maxoutput-shape",
       "count": 1,
-      "total": 126,
-      "ratio": 0.007936507936507936,
+      "total": 127,
+      "ratio": 0.007874015748031496,
       "samples": [
         "448"
       ],
-      "message": "Field \"maxOutput\": 1/126 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
+      "message": "Field \"maxOutput\": 1/127 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
     }
   ],
   "quarantine": {
     "heldProviders": [],
     "accepted": [],
-    "cleared": [
-      "llm7-io",
-      "agnes-ai"
-    ],
+    "cleared": [],
     "confirmRuns": 3
   }
 }
