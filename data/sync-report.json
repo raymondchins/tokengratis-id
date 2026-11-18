@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-17T02:21:50.662Z",
+  "generatedAt": "2026-11-18T01:31:24.948Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
       "status": "ok",
-      "providers": 14,
-      "models": 76,
+      "providers": 15,
+      "models": 80,
       "shapeIssues": []
     },
     "freellm.net": {
@@ -64,8 +64,8 @@
     "cheahjs/free-llm-api-resources"
   ],
   "merged": {
-    "providers": 22,
-    "models": 306,
+    "providers": 23,
+    "models": 310,
     "shapeIssues": [
       {
         "severity": "warn",
@@ -73,12 +73,12 @@
         "field": "context",
         "rule": "context-shape",
         "count": 1,
-        "total": 289,
-        "ratio": 0.0034602076124567475,
+        "total": 293,
+        "ratio": 0.0034129692832764505,
         "samples": [
           "448"
         ],
-        "message": "Field \"context\": 1/289 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
+        "message": "Field \"context\": 1/293 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
       },
       {
         "severity": "warn",
@@ -86,12 +86,12 @@
         "field": "maxOutput",
         "rule": "maxoutput-shape",
         "count": 1,
-        "total": 127,
-        "ratio": 0.007874015748031496,
+        "total": 130,
+        "ratio": 0.007692307692307693,
         "samples": [
           "448"
         ],
-        "message": "Field \"maxOutput\": 1/127 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
+        "message": "Field \"maxOutput\": 1/130 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
       }
     ]
   },
@@ -105,10 +105,10 @@
     "warnings": [],
     "stats": {
       "prevProviders": 22,
-      "nextProviders": 22,
+      "nextProviders": 23,
       "prevModels": 306,
-      "nextModels": 306,
-      "totalDropPct": 0,
+      "nextModels": 310,
+      "totalDropPct": -1.3071895424836601,
       "disappeared": [],
       "shrunk": [],
       "churned": [],
@@ -121,7 +121,7 @@
             "examples": []
           },
           "maxOutput": {
-            "eligible": 126,
+            "eligible": 127,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -209,12 +209,12 @@
       "field": "context",
       "rule": "context-shape",
       "count": 1,
-      "total": 289,
-      "ratio": 0.0034602076124567475,
+      "total": 293,
+      "ratio": 0.0034129692832764505,
       "samples": [
         "448"
       ],
-      "message": "Field \"context\": 1/289 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
+      "message": "Field \"context\": 1/293 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
     },
     {
       "severity": "warn",
@@ -222,12 +222,12 @@
       "field": "maxOutput",
       "rule": "maxoutput-shape",
       "count": 1,
-      "total": 127,
-      "ratio": 0.007874015748031496,
+      "total": 130,
+      "ratio": 0.007692307692307693,
       "samples": [
         "448"
       ],
-      "message": "Field \"maxOutput\": 1/127 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
+      "message": "Field \"maxOutput\": 1/130 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
     }
   ],
   "quarantine": {
