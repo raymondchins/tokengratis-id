@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js: The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
-      "stars": 10214,
+      "stars": 10216,
       "forks": 1219,
       "openIssues": 21,
       "license": "AGPL-3.0",
@@ -40,9 +40,9 @@
       "homepage": "https://antislop.ai.id",
       "description": "Rules for an AI coding agent to filter out generic AI-generated UI designs, text, and code.",
       "language": "JavaScript",
-      "stars": 9439,
-      "forks": 646,
-      "openIssues": 2,
+      "stars": 9495,
+      "forks": 652,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "accessibility",
@@ -57,7 +57,7 @@
         "ui-design"
       ],
       "archived": false,
-      "pushedAt": "2026-11-17T11:36:52Z",
+      "pushedAt": "2026-11-18T13:00:54Z",
       "createdAt": "2026-08-07T10:29:56Z"
     },
     {
@@ -127,15 +127,15 @@
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
       "stars": 1234,
-      "forks": 1199,
-      "openIssues": 331,
+      "forks": 1198,
+      "openIssues": 330,
       "license": null,
       "topics": [
         "opensid",
         "sistem-informasi-desa"
       ],
       "archived": false,
-      "pushedAt": "2026-11-18T01:18:34Z",
+      "pushedAt": "2026-11-18T03:42:15Z",
       "createdAt": "2016-05-21T10:55:38Z"
     },
     {
@@ -149,7 +149,7 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1091,
+      "stars": 1094,
       "forks": 312,
       "openIssues": 1,
       "license": "MIT",
@@ -187,9 +187,9 @@
       "homepage": "https://bridgeplay.dev",
       "description": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit",
       "language": "Scala",
-      "stars": 1001,
+      "stars": 1011,
       "forks": 153,
-      "openIssues": 12,
+      "openIssues": 18,
       "license": "GPL-3.0",
       "topics": [
         "apple-silicon",
@@ -208,7 +208,7 @@
         "winecx"
       ],
       "archived": false,
-      "pushedAt": "2026-11-17T12:24:06Z",
+      "pushedAt": "2026-11-18T14:13:01Z",
       "createdAt": "2026-10-20T03:13:58Z"
     },
     {
@@ -222,9 +222,9 @@
       "homepage": "https://ahmadrosid.github.io/nakama",
       "description": "The AI workspace where teams share agents, skills and automations that the whole company builds on.",
       "language": "TypeScript",
-      "stars": 829,
-      "forks": 146,
-      "openIssues": 54,
+      "stars": 831,
+      "forks": 150,
+      "openIssues": 39,
       "license": "MIT",
       "topics": [
         "agents",
@@ -234,7 +234,7 @@
         "openai"
       ],
       "archived": false,
-      "pushedAt": "2026-11-17T15:59:55Z",
+      "pushedAt": "2026-11-18T18:51:41Z",
       "createdAt": "2026-05-23T06:02:30Z"
     },
     {
@@ -296,7 +296,7 @@
       "description": "The one place for the skills, keys and memory of every agent you use. Formerly OMNI.",
       "language": "Rust",
       "stars": 379,
-      "forks": 36,
+      "forks": 37,
       "openIssues": 29,
       "license": "Apache-2.0",
       "topics": [
@@ -364,7 +364,7 @@
       "homepage": "https://usetroupe.dev",
       "description": "Troupe any Agents in one UI for Claude, ChatGPT, Antigravity and 30+ more",
       "language": "TypeScript",
-      "stars": 329,
+      "stars": 331,
       "forks": 63,
       "openIssues": 33,
       "license": "MIT",
@@ -384,7 +384,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-11-17T20:47:21Z",
+      "pushedAt": "2026-11-18T23:34:10Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -398,7 +398,7 @@
       "homepage": "https://uteke.app",
       "description": "Long-term memory for AI agents (MCP). One Rust binary, offline, 98.2% recall@5 on LongMemEval-S. Works with Claude Code, Cursor, Codex. Self-host free or use Uteke Cloud.",
       "language": "Rust",
-      "stars": 289,
+      "stars": 290,
       "forks": 31,
       "openIssues": 19,
       "license": "Apache-2.0",
@@ -632,7 +632,7 @@
       "language": "TypeScript",
       "stars": 106,
       "forks": 17,
-      "openIssues": 15,
+      "openIssues": 9,
       "license": null,
       "topics": [
         "browser-shell",
@@ -655,7 +655,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-11-17T22:33:37Z",
+      "pushedAt": "2026-11-19T00:24:24Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -774,12 +774,12 @@
       "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
       "language": "TypeScript",
       "stars": 71,
-      "forks": 8,
-      "openIssues": 0,
+      "forks": 9,
+      "openIssues": 4,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-18T01:29:31Z",
+      "pushedAt": "2026-11-18T23:02:00Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -795,7 +795,7 @@
       "language": "Ruby",
       "stars": 55,
       "forks": 6,
-      "openIssues": 2,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [
         "agent-orchestration",
@@ -805,7 +805,7 @@
         "ruby"
       ],
       "archived": false,
-      "pushedAt": "2026-11-18T00:40:59Z",
+      "pushedAt": "2026-11-18T15:18:37Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -820,7 +820,7 @@
       "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
       "language": "Rust",
       "stars": 54,
-      "forks": 19,
+      "forks": 20,
       "openIssues": 0,
       "license": null,
       "topics": [
@@ -834,7 +834,7 @@
         "windows"
       ],
       "archived": false,
-      "pushedAt": "2026-11-17T10:48:57Z",
+      "pushedAt": "2026-11-18T01:33:15Z",
       "createdAt": "2026-05-23T05:37:35Z"
     },
     {
@@ -1017,7 +1017,7 @@
       "homepage": "https://dns.akbxr.com",
       "description": "DNS Pemblokir Judol, Iklan & Tracker",
       "language": null,
-      "stars": 42,
+      "stars": 43,
       "forks": 5,
       "openIssues": 20,
       "license": "MIT",
@@ -1197,7 +1197,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-17T02:22:08Z",
+      "pushedAt": "2026-11-18T01:31:44Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1522,7 +1522,7 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 65,
+      "openIssues": 57,
       "license": "Apache-2.0",
       "topics": [
         "linux",
@@ -1540,7 +1540,7 @@
         "system-programming-control-systems"
       ],
       "archived": false,
-      "pushedAt": "2026-11-18T01:17:45Z",
+      "pushedAt": "2026-11-18T18:32:15Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1614,7 +1614,7 @@
       "description": "TrapFall — Lightweight self-hosted error capture engine. Sentry-compatible, Rust + SvelteKit 5.",
       "language": "Rust",
       "stars": 10,
-      "forks": 0,
+      "forks": 1,
       "openIssues": 25,
       "license": "Apache-2.0",
       "topics": [
@@ -1842,11 +1842,11 @@
       "language": "TypeScript",
       "stars": 7,
       "forks": 0,
-      "openIssues": 10,
+      "openIssues": 11,
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-17T15:05:36Z",
+      "pushedAt": "2026-11-18T16:40:17Z",
       "createdAt": "2026-06-13T11:24:30Z"
     },
     {
@@ -1919,7 +1919,7 @@
       "license": "Apache-2.0",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-04T14:54:39Z",
+      "pushedAt": "2026-11-18T11:37:06Z",
       "createdAt": "2025-11-22T11:52:35Z"
     },
     {
@@ -2203,14 +2203,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-11-18T01:31:32.043Z"
+      "syncedAt": "2026-11-19T01:00:00.557Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-11-18T01:31:32.043Z"
+      "syncedAt": "2026-11-19T01:00:00.557Z"
     }
   ],
-  "syncedAt": "2026-11-18T01:31:32.043Z",
+  "syncedAt": "2026-11-19T01:00:00.557Z",
   "count": 81
 }

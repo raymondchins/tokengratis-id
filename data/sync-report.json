@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T01:31:24.948Z",
+  "generatedAt": "2026-11-19T00:59:53.224Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -86,12 +86,12 @@
         "field": "maxOutput",
         "rule": "maxoutput-shape",
         "count": 1,
-        "total": 130,
-        "ratio": 0.007692307692307693,
+        "total": 129,
+        "ratio": 0.007751937984496124,
         "samples": [
           "448"
         ],
-        "message": "Field \"maxOutput\": 1/130 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
+        "message": "Field \"maxOutput\": 1/129 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
       }
     ]
   },
@@ -104,36 +104,36 @@
     "errors": [],
     "warnings": [],
     "stats": {
-      "prevProviders": 22,
+      "prevProviders": 23,
       "nextProviders": 23,
-      "prevModels": 306,
+      "prevModels": 310,
       "nextModels": 310,
-      "totalDropPct": -1.3071895424836601,
+      "totalDropPct": 0,
       "disappeared": [],
       "shrunk": [],
       "churned": [],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 289,
+            "eligible": 293,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "maxOutput": {
-            "eligible": 127,
+            "eligible": 130,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "modality": {
-            "eligible": 235,
+            "eligible": 239,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "rateLimit": {
-            "eligible": 174,
+            "eligible": 178,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -141,25 +141,25 @@
         },
         "provider": {
           "description": {
-            "eligible": 14,
+            "eligible": 15,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "baseUrl": {
-            "eligible": 14,
+            "eligible": 15,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "freeLimit": {
-            "eligible": 8,
+            "eligible": 9,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "maxContext": {
-            "eligible": 20,
+            "eligible": 21,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -222,12 +222,12 @@
       "field": "maxOutput",
       "rule": "maxoutput-shape",
       "count": 1,
-      "total": 130,
-      "ratio": 0.007692307692307693,
+      "total": 129,
+      "ratio": 0.007751937984496124,
       "samples": [
         "448"
       ],
-      "message": "Field \"maxOutput\": 1/130 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
+      "message": "Field \"maxOutput\": 1/129 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
     }
   ],
   "quarantine": {
