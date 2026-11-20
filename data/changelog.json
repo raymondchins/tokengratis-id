@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-11-20",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "OpenRouter",
+        "added": [],
+        "removed": [
+          "Thinking Machines: Inkling 2 Small (free)"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-18",
     "providersAdded": [
       {
@@ -1986,37 +2000,6 @@
         "removed": [
           "Laguna S 2.1"
         ]
-      }
-    ]
-  },
-  {
-    "date": "2026-09-04",
-    "providersAdded": [],
-    "providersRemoved": [],
-    "models": [
-      {
-        "provider": "Google Gemini",
-        "added": [
-          "Gemini 3.8 Flash"
-        ],
-        "removed": []
-      },
-      {
-        "provider": "Groq",
-        "added": [],
-        "removed": [
-          "GPT-OSS Safeguard 20B",
-          "meta-llama/llama-prompt-guard-2-22m",
-          "meta-llama/llama-prompt-guard-2-86m",
-          "qwen/qwen3.8-27b"
-        ]
-      },
-      {
-        "provider": "OpenRouter",
-        "added": [
-          "inclusionAI: Ling 3.0 Flash Sante (free)"
-        ],
-        "removed": []
       }
     ]
   }
