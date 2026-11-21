@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-11-21",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "OpenRouter",
+        "added": [],
+        "removed": [
+          "Cohere: North Mini Code (free)"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-20",
     "providersAdded": [],
     "providersRemoved": [],
@@ -1985,20 +1999,6 @@
         "added": [],
         "removed": [
           "Z.ai: GLM 5.2 (free)"
-        ]
-      }
-    ]
-  },
-  {
-    "date": "2026-09-05",
-    "providersAdded": [],
-    "providersRemoved": [],
-    "models": [
-      {
-        "provider": "OpenCode Zen",
-        "added": [],
-        "removed": [
-          "Laguna S 2.1"
         ]
       }
     ]

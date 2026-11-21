@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js: The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
-      "stars": 10214,
+      "stars": 10215,
       "forks": 1216,
       "openIssues": 18,
       "license": "AGPL-3.0",
@@ -40,8 +40,8 @@
       "homepage": "https://antislop.ai.id",
       "description": "Rules for an AI coding agent to filter out generic AI-generated UI designs, text, and code.",
       "language": "JavaScript",
-      "stars": 9604,
-      "forks": 660,
+      "stars": 9693,
+      "forks": 666,
       "openIssues": 1,
       "license": "MIT",
       "topics": [
@@ -57,7 +57,7 @@
         "ui-design"
       ],
       "archived": false,
-      "pushedAt": "2026-11-18T13:00:54Z",
+      "pushedAt": "2026-11-20T11:56:28Z",
       "createdAt": "2026-08-07T10:29:56Z"
     },
     {
@@ -97,9 +97,9 @@
       "homepage": "https://www.htmly.com",
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
-      "stars": 1368,
-      "forks": 306,
-      "openIssues": 55,
+      "stars": 1369,
+      "forks": 307,
+      "openIssues": 56,
       "license": "GPL-2.0",
       "topics": [
         "blog",
@@ -128,14 +128,14 @@
       "language": "PHP",
       "stars": 1234,
       "forks": 1196,
-      "openIssues": 332,
+      "openIssues": 351,
       "license": null,
       "topics": [
         "opensid",
         "sistem-informasi-desa"
       ],
       "archived": false,
-      "pushedAt": "2026-11-19T13:46:16Z",
+      "pushedAt": "2026-11-20T08:49:24Z",
       "createdAt": "2016-05-21T10:55:38Z"
     },
     {
@@ -149,8 +149,8 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1100,
-      "forks": 311,
+      "stars": 1102,
+      "forks": 312,
       "openIssues": 2,
       "license": "MIT",
       "topics": [
@@ -187,9 +187,9 @@
       "homepage": "https://bridgeplay.dev",
       "description": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit",
       "language": "Scala",
-      "stars": 1021,
-      "forks": 155,
-      "openIssues": 20,
+      "stars": 1025,
+      "forks": 154,
+      "openIssues": 17,
       "license": "GPL-3.0",
       "topics": [
         "apple-silicon",
@@ -208,7 +208,7 @@
         "winecx"
       ],
       "archived": false,
-      "pushedAt": "2026-11-19T17:51:20Z",
+      "pushedAt": "2026-11-20T13:56:04Z",
       "createdAt": "2026-10-20T03:13:58Z"
     },
     {
@@ -222,9 +222,9 @@
       "homepage": "https://ahmadrosid.github.io/nakama",
       "description": "The AI workspace where teams share agents, skills and automations that the whole company builds on.",
       "language": "TypeScript",
-      "stars": 834,
+      "stars": 835,
       "forks": 150,
-      "openIssues": 32,
+      "openIssues": 34,
       "license": "MIT",
       "topics": [
         "agents",
@@ -234,7 +234,7 @@
         "openai"
       ],
       "archived": false,
-      "pushedAt": "2026-11-19T15:24:28Z",
+      "pushedAt": "2026-11-20T15:37:20Z",
       "createdAt": "2026-05-23T06:02:30Z"
     },
     {
@@ -364,9 +364,9 @@
       "homepage": "https://usetroupe.dev",
       "description": "Troupe any Agents in one UI for Claude, ChatGPT, Antigravity and 30+ more",
       "language": "TypeScript",
-      "stars": 331,
+      "stars": 333,
       "forks": 64,
-      "openIssues": 34,
+      "openIssues": 33,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -384,7 +384,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-11-19T23:23:34Z",
+      "pushedAt": "2026-11-20T18:46:10Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -441,7 +441,7 @@
       "language": "TypeScript",
       "stars": 209,
       "forks": 40,
-      "openIssues": 24,
+      "openIssues": 20,
       "license": null,
       "topics": [
         "coding",
@@ -457,7 +457,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-11-17T04:50:28Z",
+      "pushedAt": "2026-11-20T11:51:50Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -471,7 +471,7 @@
       "homepage": null,
       "description": null,
       "language": "Python",
-      "stars": 186,
+      "stars": 187,
       "forks": 45,
       "openIssues": 0,
       "license": "MIT",
@@ -632,7 +632,7 @@
       "language": "TypeScript",
       "stars": 106,
       "forks": 17,
-      "openIssues": 4,
+      "openIssues": 3,
       "license": null,
       "topics": [
         "browser-shell",
@@ -655,7 +655,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-11-19T15:16:58Z",
+      "pushedAt": "2026-11-20T22:36:11Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -722,8 +722,8 @@
       "homepage": "https://bansos.dev",
       "description": "bansos.dev — Promo developer Indonesia: domain gratis, AI credits, cloud credits, hosting free-tier, API credits, database credits, startup credits, diskon tools coding & hosting gratis. Open source.",
       "language": "Svelte",
-      "stars": 73,
-      "forks": 21,
+      "stars": 74,
+      "forks": 20,
       "openIssues": 4,
       "license": "MIT",
       "topics": [
@@ -741,6 +741,26 @@
       "archived": false,
       "pushedAt": "2026-10-27T15:16:43Z",
       "createdAt": "2026-06-11T13:28:54Z"
+    },
+    {
+      "slug": "rudycity/superagent",
+      "fullName": "RudyCity/superagent",
+      "name": "superagent",
+      "owner": "RudyCity",
+      "ownerUrl": "https://github.com/RudyCity",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/82188919?v=4",
+      "url": "https://github.com/RudyCity/superagent",
+      "homepage": null,
+      "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
+      "language": "TypeScript",
+      "stars": 72,
+      "forks": 9,
+      "openIssues": 3,
+      "license": "MIT",
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-11-20T23:21:44Z",
+      "createdAt": "2026-06-09T15:06:10Z"
     },
     {
       "slug": "akbaraditamasp/njinattend-backend",
@@ -763,26 +783,6 @@
       "createdAt": "2023-09-23T21:07:22Z"
     },
     {
-      "slug": "rudycity/superagent",
-      "fullName": "RudyCity/superagent",
-      "name": "superagent",
-      "owner": "RudyCity",
-      "ownerUrl": "https://github.com/RudyCity",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/82188919?v=4",
-      "url": "https://github.com/RudyCity/superagent",
-      "homepage": null,
-      "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
-      "language": "TypeScript",
-      "stars": 71,
-      "forks": 9,
-      "openIssues": 3,
-      "license": "MIT",
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-11-19T21:39:43Z",
-      "createdAt": "2026-06-09T15:06:10Z"
-    },
-    {
       "slug": "firewalker06/tycho",
       "fullName": "firewalker06/tycho",
       "name": "tycho",
@@ -795,7 +795,7 @@
       "language": "Ruby",
       "stars": 55,
       "forks": 6,
-      "openIssues": 0,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "agent-orchestration",
@@ -805,7 +805,7 @@
         "ruby"
       ],
       "archived": false,
-      "pushedAt": "2026-11-18T15:18:37Z",
+      "pushedAt": "2026-11-20T23:25:39Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -834,7 +834,7 @@
         "windows"
       ],
       "archived": false,
-      "pushedAt": "2026-11-18T01:33:15Z",
+      "pushedAt": "2026-11-20T22:20:13Z",
       "createdAt": "2026-05-23T05:37:35Z"
     },
     {
@@ -1197,7 +1197,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-19T01:00:11Z",
+      "pushedAt": "2026-11-20T01:05:30Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1211,9 +1211,9 @@
       "homepage": null,
       "description": "Efficient, Evidence-based, Opinionated vibe-coding pipeline for CC / Codex / OpenCode / Antigravity / Pi",
       "language": "JavaScript",
-      "stars": 22,
+      "stars": 23,
       "forks": 1,
-      "openIssues": 0,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "antigravity",
@@ -1231,7 +1231,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-11-17T04:06:59Z",
+      "pushedAt": "2026-11-21T00:12:38Z",
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
@@ -1439,6 +1439,26 @@
       "createdAt": "2026-01-11T03:16:04Z"
     },
     {
+      "slug": "hellodit/openmasjid",
+      "fullName": "hellodit/OpenMasjid",
+      "name": "OpenMasjid",
+      "owner": "hellodit",
+      "ownerUrl": "https://github.com/hellodit",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/32544683?v=4",
+      "url": "https://github.com/hellodit/OpenMasjid",
+      "homepage": null,
+      "description": null,
+      "language": "Vue",
+      "stars": 13,
+      "forks": 0,
+      "openIssues": 0,
+      "license": null,
+      "topics": [],
+      "archived": false,
+      "pushedAt": "2026-10-15T04:18:12Z",
+      "createdAt": "2026-05-16T04:31:37Z"
+    },
+    {
       "slug": "rizukirr/numc",
       "fullName": "rizukirr/numc",
       "name": "numc",
@@ -1468,26 +1488,6 @@
       "archived": false,
       "pushedAt": "2026-06-16T16:14:20Z",
       "createdAt": "2026-03-12T09:55:51Z"
-    },
-    {
-      "slug": "hellodit/openmasjid",
-      "fullName": "hellodit/OpenMasjid",
-      "name": "OpenMasjid",
-      "owner": "hellodit",
-      "ownerUrl": "https://github.com/hellodit",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/32544683?v=4",
-      "url": "https://github.com/hellodit/OpenMasjid",
-      "homepage": null,
-      "description": null,
-      "language": "Vue",
-      "stars": 12,
-      "forks": 0,
-      "openIssues": 0,
-      "license": null,
-      "topics": [],
-      "archived": false,
-      "pushedAt": "2026-10-15T04:18:12Z",
-      "createdAt": "2026-05-16T04:31:37Z"
     },
     {
       "slug": "ahmadghaisanfad2/absen-kelas",
@@ -1522,7 +1522,7 @@
       "language": "Go",
       "stars": 11,
       "forks": 6,
-      "openIssues": 56,
+      "openIssues": 53,
       "license": "Apache-2.0",
       "topics": [
         "linux",
@@ -1540,7 +1540,7 @@
         "system-programming-control-systems"
       ],
       "archived": false,
-      "pushedAt": "2026-11-19T22:09:10Z",
+      "pushedAt": "2026-11-20T18:05:57Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -2203,14 +2203,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-11-20T01:05:15.626Z"
+      "syncedAt": "2026-11-21T00:39:35.962Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-11-20T01:05:15.626Z"
+      "syncedAt": "2026-11-21T00:39:35.962Z"
     }
   ],
-  "syncedAt": "2026-11-20T01:05:15.626Z",
+  "syncedAt": "2026-11-21T00:39:35.962Z",
   "count": 81
 }
