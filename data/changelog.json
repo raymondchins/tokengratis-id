@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-11-23",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cline",
+        "added": [],
+        "removed": [
+          "Solar Mini 4"
+        ]
+      },
+      {
+        "provider": "NVIDIA NIM",
+        "added": [
+          "moonshotai/kimi-k3.1-pro"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-11-21",
     "providersAdded": [],
     "providersRemoved": [],
@@ -1977,28 +1998,6 @@
         "removed": [
           "MiniMax: MiniMax M3 (free)",
           "MiniMax: MiniMax M2.7 (free)"
-        ]
-      }
-    ]
-  },
-  {
-    "date": "2026-09-06",
-    "providersAdded": [],
-    "providersRemoved": [],
-    "models": [
-      {
-        "provider": "Cerebras",
-        "added": [],
-        "removed": [
-          "gemma-4-31b",
-          "gpt-oss-120b"
-        ]
-      },
-      {
-        "provider": "OpenRouter",
-        "added": [],
-        "removed": [
-          "Z.ai: GLM 5.2 (free)"
         ]
       }
     ]

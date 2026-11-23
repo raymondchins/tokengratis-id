@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T23:43:06.215Z",
+  "generatedAt": "2026-11-23T00:03:25.894Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -11,18 +11,18 @@
     "freellm.net": {
       "status": "ok",
       "providers": 22,
-      "models": 308,
+      "models": 307,
       "shapeIssues": [
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "maxOutput",
           "rule": "all-null-collapse",
-          "count": 308,
-          "total": 308,
+          "count": 307,
+          "total": 307,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"maxOutput\": 100% null di 308 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+          "message": "Field \"maxOutput\": 100% null di 307 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
         },
         {
           "severity": "warn",
@@ -73,12 +73,12 @@
         "field": "context",
         "rule": "context-shape",
         "count": 1,
-        "total": 290,
-        "ratio": 0.0034482758620689655,
+        "total": 291,
+        "ratio": 0.003436426116838488,
         "samples": [
           "448"
         ],
-        "message": "Field \"context\": 1/290 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
+        "message": "Field \"context\": 1/291 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
       },
       {
         "severity": "warn",
@@ -106,9 +106,9 @@
     "stats": {
       "prevProviders": 23,
       "nextProviders": 23,
-      "prevModels": 308,
+      "prevModels": 307,
       "nextModels": 307,
-      "totalDropPct": 0.3246753246753247,
+      "totalDropPct": 0,
       "disappeared": [],
       "shrunk": [],
       "churned": [],
@@ -127,10 +127,26 @@
             "examples": []
           },
           "modality": {
-            "eligible": 236,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "eligible": 235,
+            "changed": 3,
+            "ratioPct": 1.276595744680851,
+            "examples": [
+              {
+                "label": "agnes-ai/agnes-2-5-flash",
+                "from": "text + vision",
+                "to": "text + vision + image + reasoning"
+              },
+              {
+                "label": "agnes-ai/agnes-3-0-flash",
+                "from": "text + vision",
+                "to": "text + vision + image + reasoning"
+              },
+              {
+                "label": "agnes-ai/agnes-image-2-5-flash",
+                "from": "image",
+                "to": "image + text"
+              }
+            ]
           },
           "rateLimit": {
             "eligible": 175,
@@ -175,11 +191,11 @@
       "source": "freellm.net",
       "field": "maxOutput",
       "rule": "all-null-collapse",
-      "count": 308,
-      "total": 308,
+      "count": 307,
+      "total": 307,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"maxOutput\": 100% null di 308 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+      "message": "Field \"maxOutput\": 100% null di 307 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
     },
     {
       "severity": "warn",
@@ -209,12 +225,12 @@
       "field": "context",
       "rule": "context-shape",
       "count": 1,
-      "total": 290,
-      "ratio": 0.0034482758620689655,
+      "total": 291,
+      "ratio": 0.003436426116838488,
       "samples": [
         "448"
       ],
-      "message": "Field \"context\": 1/290 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
+      "message": "Field \"context\": 1/291 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
     },
     {
       "severity": "warn",
