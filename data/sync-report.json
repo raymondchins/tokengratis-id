@@ -1,50 +1,50 @@
 {
-  "generatedAt": "2026-11-23T00:03:25.894Z",
+  "generatedAt": "2026-11-24T04:13:26.727Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
       "status": "ok",
-      "providers": 15,
-      "models": 80,
+      "providers": 16,
+      "models": 79,
       "shapeIssues": []
     },
     "freellm.net": {
       "status": "ok",
-      "providers": 22,
-      "models": 307,
+      "providers": 23,
+      "models": 287,
       "shapeIssues": [
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "maxOutput",
           "rule": "all-null-collapse",
-          "count": 307,
-          "total": 307,
+          "count": 287,
+          "total": 287,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"maxOutput\": 100% null di 307 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+          "message": "Field \"maxOutput\": 100% null di 287 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
         },
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "url",
           "rule": "all-null-collapse",
-          "count": 22,
-          "total": 22,
+          "count": 23,
+          "total": 23,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"url\": 100% null di 22 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+          "message": "Field \"url\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
         },
         {
           "severity": "warn",
           "source": "freellm.net",
           "field": "baseUrl",
           "rule": "all-null-collapse",
-          "count": 22,
-          "total": 22,
+          "count": 23,
+          "total": 23,
           "ratio": 1,
           "samples": [],
-          "message": "Field \"baseUrl\": 100% null di 22 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+          "message": "Field \"baseUrl\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
         }
       ]
     },
@@ -56,7 +56,7 @@
     "openrouter.ai/api/v1/models": {
       "status": "ok",
       "providers": 1,
-      "models": 11,
+      "models": 12,
       "shapeIssues": []
     }
   },
@@ -64,8 +64,8 @@
     "cheahjs/free-llm-api-resources"
   ],
   "merged": {
-    "providers": 23,
-    "models": 307,
+    "providers": 25,
+    "models": 293,
     "shapeIssues": [
       {
         "severity": "warn",
@@ -73,12 +73,12 @@
         "field": "context",
         "rule": "context-shape",
         "count": 1,
-        "total": 291,
-        "ratio": 0.003436426116838488,
+        "total": 275,
+        "ratio": 0.0036363636363636364,
         "samples": [
           "448"
         ],
-        "message": "Field \"context\": 1/291 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
+        "message": "Field \"context\": 1/275 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
       },
       {
         "severity": "warn",
@@ -86,12 +86,12 @@
         "field": "maxOutput",
         "rule": "maxoutput-shape",
         "count": 1,
-        "total": 126,
-        "ratio": 0.007936507936507936,
+        "total": 120,
+        "ratio": 0.008333333333333333,
         "samples": [
           "448"
         ],
-        "message": "Field \"maxOutput\": 1/126 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
+        "message": "Field \"maxOutput\": 1/120 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
       }
     ]
   },
@@ -100,67 +100,97 @@
     "warnings": []
   },
   "diffGuard": {
-    "ok": true,
-    "errors": [],
+    "ok": false,
+    "errors": [
+      "provider \"cloudflare-workers-ai\" model count dropped 41.5% (41 → 24), threshold is 40%",
+      "provider \"ollama-cloud\" model count dropped 75.0% (8 → 2), threshold is 40%",
+      "provider \"ollama-cloud\" model ids churned 75.0% at same-ish count (overlap 25.0%, 8→2 ids) — possible source corruption"
+    ],
     "warnings": [],
     "stats": {
       "prevProviders": 23,
-      "nextProviders": 23,
+      "nextProviders": 25,
       "prevModels": 307,
-      "nextModels": 307,
-      "totalDropPct": 0,
+      "nextModels": 293,
+      "totalDropPct": 4.5602605863192185,
       "disappeared": [],
-      "shrunk": [],
-      "churned": [],
+      "shrunk": [
+        {
+          "slug": "cloudflare-workers-ai",
+          "prev": 41,
+          "next": 24,
+          "dropPct": 41.46341463414634
+        },
+        {
+          "slug": "ollama-cloud",
+          "prev": 8,
+          "next": 2,
+          "dropPct": 75
+        }
+      ],
+      "churned": [
+        {
+          "slug": "ollama-cloud",
+          "overlapPct": 25,
+          "prevIds": 8,
+          "nextIds": 2
+        }
+      ],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 290,
+            "eligible": 266,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "maxOutput": {
-            "eligible": 126,
+            "eligible": 112,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "modality": {
-            "eligible": 235,
-            "changed": 3,
-            "ratioPct": 1.276595744680851,
-            "examples": [
-              {
-                "label": "agnes-ai/agnes-2-5-flash",
-                "from": "text + vision",
-                "to": "text + vision + image + reasoning"
-              },
-              {
-                "label": "agnes-ai/agnes-3-0-flash",
-                "from": "text + vision",
-                "to": "text + vision + image + reasoning"
-              },
-              {
-                "label": "agnes-ai/agnes-image-2-5-flash",
-                "from": "image",
-                "to": "image + text"
-              }
-            ]
-          },
-          "rateLimit": {
-            "eligible": 175,
+            "eligible": 224,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
+          },
+          "rateLimit": {
+            "eligible": 169,
+            "changed": 3,
+            "ratioPct": 1.7751479289940828,
+            "examples": [
+              {
+                "label": "llm7-io/gpt-oss:20b",
+                "from": "60 RPM, 250 req/hr (free token)",
+                "to": "Not published"
+              },
+              {
+                "label": "llm7-io/mistral-Nemo-Instruct-2407",
+                "from": "60 RPM, 250 req/hr (free token)",
+                "to": "Not published"
+              },
+              {
+                "label": "llm7-io/codestral-latest",
+                "from": "60 RPM, 250 req/hr (free token)",
+                "to": "Not published"
+              }
+            ]
           }
         },
         "provider": {
           "description": {
             "eligible": 15,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "changed": 1,
+            "ratioPct": 6.666666666666667,
+            "examples": [
+              {
+                "label": "llm7-io",
+                "from": "API gateway with a free tier. Anonymous access needs no key and reaches the turbo models; a free token from token.llm7.io raises the rate and token limits but reaches the same models.",
+                "to": "API gateway whose turbo models answer with no key and no account. LLM7 no longer documents this free access or its limits, so it can end without notice."
+              }
+            ]
           },
           "baseUrl": {
             "eligible": 15,
@@ -176,9 +206,15 @@
           },
           "maxContext": {
             "eligible": 21,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "changed": 1,
+            "ratioPct": 4.761904761904762,
+            "examples": [
+              {
+                "label": "cloudflare-workers-ai",
+                "from": "262K",
+                "to": "256K"
+              }
+            ]
           }
         }
       }
@@ -191,33 +227,33 @@
       "source": "freellm.net",
       "field": "maxOutput",
       "rule": "all-null-collapse",
-      "count": 307,
-      "total": 307,
+      "count": 287,
+      "total": 287,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"maxOutput\": 100% null di 307 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
+      "message": "Field \"maxOutput\": 100% null di 287 model dari sumber \"freellm.net\". Ini BISA legit (sumber emang ga publish kolom ini — persis kasus freellm.net yang Max Output-nya hilang dari layout baru, lihat INCIDENT 2026-07-25) ATAU tanda parser patah gagal narik kolom yang harusnya ada. Manusia perlu cek struktur sumber \"freellm.net\" langsung untuk mutusin."
     },
     {
       "severity": "warn",
       "source": "freellm.net",
       "field": "url",
       "rule": "all-null-collapse",
-      "count": 22,
-      "total": 22,
+      "count": 23,
+      "total": 23,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"url\": 100% null di 22 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+      "message": "Field \"url\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
     },
     {
       "severity": "warn",
       "source": "freellm.net",
       "field": "baseUrl",
       "rule": "all-null-collapse",
-      "count": 22,
-      "total": 22,
+      "count": 23,
+      "total": 23,
       "ratio": 1,
       "samples": [],
-      "message": "Field \"baseUrl\": 100% null di 22 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
+      "message": "Field \"baseUrl\": 100% null di 23 provider dari sumber \"freellm.net\". Cek apakah sumber ini emang ga publish field ini, atau parser gagal narik link."
     },
     {
       "severity": "warn",
@@ -225,12 +261,12 @@
       "field": "context",
       "rule": "context-shape",
       "count": 1,
-      "total": 291,
-      "ratio": 0.003436426116838488,
+      "total": 275,
+      "ratio": 0.0036363636363636364,
       "samples": [
         "448"
       ],
-      "message": "Field \"context\": 1/291 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
+      "message": "Field \"context\": 1/275 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
     },
     {
       "severity": "warn",
@@ -238,16 +274,31 @@
       "field": "maxOutput",
       "rule": "maxoutput-shape",
       "count": 1,
-      "total": 126,
-      "ratio": 0.007936507936507936,
+      "total": 120,
+      "ratio": 0.008333333333333333,
       "samples": [
         "448"
       ],
-      "message": "Field \"maxOutput\": 1/126 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
+      "message": "Field \"maxOutput\": 1/120 (1%) nilai TIDAK berbentuk token output yang wajar (contoh valid: \"8K\", \"Varies\", \"Model-dependent\"). Sample: 448. Cek apakah kolom maxOutput di sumber \"merged\" ketuker dengan kolom lain (currency/tanggal/persentase/prosa bebas bukan bentuk maxOutput yang valid)."
     }
   ],
   "quarantine": {
-    "heldProviders": [],
+    "heldProviders": [
+      {
+        "slug": "cloudflare-workers-ai",
+        "kind": "shrunk",
+        "detail": "model 41 -> 24 (-41%)",
+        "streak": 1,
+        "needs": 3
+      },
+      {
+        "slug": "ollama-cloud",
+        "kind": "shrunk",
+        "detail": "model 8 -> 2 (-75%)",
+        "streak": 1,
+        "needs": 3
+      }
+    ],
     "accepted": [],
     "cleared": [],
     "confirmRuns": 3

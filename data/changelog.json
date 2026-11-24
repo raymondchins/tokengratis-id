@@ -1,5 +1,48 @@
 [
   {
+    "date": "2026-11-24",
+    "providersAdded": [
+      {
+        "slug": "perch-ai",
+        "name": "Perch AI"
+      },
+      {
+        "slug": "runcrate",
+        "name": "Runcrate"
+      }
+    ],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Kilo Code",
+        "added": [
+          "dots-studio/dots-3-note-preview:free",
+          "cohere/north-mini-code:free"
+        ],
+        "removed": [
+          "dots-studio/dots-3-note-preview:free",
+          "cohere/north-mini-code:free"
+        ]
+      },
+      {
+        "provider": "NVIDIA NIM",
+        "added": [
+          "GPT OSS 20B"
+        ],
+        "removed": [
+          "openai/gpt-oss-20b"
+        ]
+      },
+      {
+        "provider": "OpenRouter",
+        "added": [
+          "Dots Studio: Dots3-Note Preview (free)"
+        ],
+        "removed": []
+      }
+    ]
+  },
+  {
     "date": "2026-11-23",
     "providersAdded": [],
     "providersRemoved": [],
@@ -1983,21 +2026,6 @@
         "added": [],
         "removed": [
           "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
-        ]
-      }
-    ]
-  },
-  {
-    "date": "2026-09-07",
-    "providersAdded": [],
-    "providersRemoved": [],
-    "models": [
-      {
-        "provider": "OpenRouter",
-        "added": [],
-        "removed": [
-          "MiniMax: MiniMax M3 (free)",
-          "MiniMax: MiniMax M2.7 (free)"
         ]
       }
     ]
