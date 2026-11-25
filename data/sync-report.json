@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T04:13:26.727Z",
+  "generatedAt": "2026-11-25T02:57:32.147Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -56,7 +56,7 @@
     "openrouter.ai/api/v1/models": {
       "status": "ok",
       "providers": 1,
-      "models": 12,
+      "models": 11,
       "shapeIssues": []
     }
   },
@@ -65,7 +65,7 @@
   ],
   "merged": {
     "providers": 25,
-    "models": 293,
+    "models": 292,
     "shapeIssues": [
       {
         "severity": "warn",
@@ -73,12 +73,12 @@
         "field": "context",
         "rule": "context-shape",
         "count": 1,
-        "total": 275,
-        "ratio": 0.0036363636363636364,
+        "total": 274,
+        "ratio": 0.0036496350364963502,
         "samples": [
           "448"
         ],
-        "message": "Field \"context\": 1/275 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
+        "message": "Field \"context\": 1/274 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
       },
       {
         "severity": "warn",
@@ -108,11 +108,11 @@
     ],
     "warnings": [],
     "stats": {
-      "prevProviders": 23,
+      "prevProviders": 25,
       "nextProviders": 25,
-      "prevModels": 307,
-      "nextModels": 293,
-      "totalDropPct": 4.5602605863192185,
+      "prevModels": 316,
+      "nextModels": 292,
+      "totalDropPct": 7.59493670886076,
       "disappeared": [],
       "shrunk": [
         {
@@ -139,61 +139,39 @@
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 266,
+            "eligible": 274,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "maxOutput": {
-            "eligible": 112,
+            "eligible": 119,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "modality": {
-            "eligible": 224,
+            "eligible": 235,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "rateLimit": {
-            "eligible": 169,
-            "changed": 3,
-            "ratioPct": 1.7751479289940828,
-            "examples": [
-              {
-                "label": "llm7-io/gpt-oss:20b",
-                "from": "60 RPM, 250 req/hr (free token)",
-                "to": "Not published"
-              },
-              {
-                "label": "llm7-io/mistral-Nemo-Instruct-2407",
-                "from": "60 RPM, 250 req/hr (free token)",
-                "to": "Not published"
-              },
-              {
-                "label": "llm7-io/codestral-latest",
-                "from": "60 RPM, 250 req/hr (free token)",
-                "to": "Not published"
-              }
-            ]
+            "eligible": 176,
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           }
         },
         "provider": {
           "description": {
-            "eligible": 15,
-            "changed": 1,
-            "ratioPct": 6.666666666666667,
-            "examples": [
-              {
-                "label": "llm7-io",
-                "from": "API gateway with a free tier. Anonymous access needs no key and reaches the turbo models; a free token from token.llm7.io raises the rate and token limits but reaches the same models.",
-                "to": "API gateway whose turbo models answer with no key and no account. LLM7 no longer documents this free access or its limits, so it can end without notice."
-              }
-            ]
+            "eligible": 16,
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           },
           "baseUrl": {
-            "eligible": 15,
+            "eligible": 16,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -205,9 +183,9 @@
             "examples": []
           },
           "maxContext": {
-            "eligible": 21,
+            "eligible": 22,
             "changed": 1,
-            "ratioPct": 4.761904761904762,
+            "ratioPct": 4.545454545454546,
             "examples": [
               {
                 "label": "cloudflare-workers-ai",
@@ -261,12 +239,12 @@
       "field": "context",
       "rule": "context-shape",
       "count": 1,
-      "total": 275,
-      "ratio": 0.0036363636363636364,
+      "total": 274,
+      "ratio": 0.0036496350364963502,
       "samples": [
         "448"
       ],
-      "message": "Field \"context\": 1/275 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
+      "message": "Field \"context\": 1/274 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
     },
     {
       "severity": "warn",
@@ -288,14 +266,14 @@
         "slug": "cloudflare-workers-ai",
         "kind": "shrunk",
         "detail": "model 41 -> 24 (-41%)",
-        "streak": 1,
+        "streak": 2,
         "needs": 3
       },
       {
         "slug": "ollama-cloud",
         "kind": "shrunk",
         "detail": "model 8 -> 2 (-75%)",
-        "streak": 1,
+        "streak": 2,
         "needs": 3
       }
     ],

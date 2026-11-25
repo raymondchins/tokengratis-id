@@ -5,17 +5,17 @@
       "kind": "shrunk",
       "magnitude": 24,
       "detail": "model 41 -> 24 (-41%)",
-      "streak": 1,
+      "streak": 2,
       "firstSeen": "2026-11-24T04:13:26.726Z",
-      "lastSeen": "2026-11-24T04:13:26.726Z"
+      "lastSeen": "2026-11-25T02:57:32.147Z"
     },
     "ollama-cloud": {
       "kind": "shrunk",
       "magnitude": 2,
       "detail": "model 8 -> 2 (-75%)",
-      "streak": 1,
+      "streak": 2,
       "firstSeen": "2026-11-24T04:13:26.726Z",
-      "lastSeen": "2026-11-24T04:13:26.726Z"
+      "lastSeen": "2026-11-25T02:57:32.147Z"
     }
   }
 }

@@ -11,7 +11,7 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js: The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
-      "stars": 10215,
+      "stars": 10216,
       "forks": 1217,
       "openIssues": 19,
       "license": "AGPL-3.0",
@@ -40,8 +40,8 @@
       "homepage": "https://antislop.ai.id",
       "description": "Rules for an AI coding agent to filter out generic AI-generated UI designs, text, and code.",
       "language": "JavaScript",
-      "stars": 9966,
-      "forks": 687,
+      "stars": 10071,
+      "forks": 693,
       "openIssues": 3,
       "license": "MIT",
       "topics": [
@@ -97,7 +97,7 @@
       "homepage": "https://www.htmly.com",
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
-      "stars": 1368,
+      "stars": 1369,
       "forks": 307,
       "openIssues": 56,
       "license": "GPL-2.0",
@@ -126,9 +126,9 @@
       "homepage": null,
       "description": "Sistem Informasi Desa (SID) yang sengaja dibuat terbuka agar dapat dikembangkan secara bersama-sama oleh komunitas peduli SID",
       "language": "PHP",
-      "stars": 1237,
+      "stars": 1238,
       "forks": 1198,
-      "openIssues": 360,
+      "openIssues": 348,
       "license": null,
       "topics": [
         "opensid",
@@ -149,8 +149,8 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1108,
-      "forks": 314,
+      "stars": 1110,
+      "forks": 315,
       "openIssues": 2,
       "license": "MIT",
       "topics": [
@@ -187,8 +187,8 @@
       "homepage": "https://bridgeplay.dev",
       "description": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit",
       "language": "Scala",
-      "stars": 1041,
-      "forks": 155,
+      "stars": 1056,
+      "forks": 158,
       "openIssues": 17,
       "license": "GPL-3.0",
       "topics": [
@@ -208,7 +208,7 @@
         "winecx"
       ],
       "archived": false,
-      "pushedAt": "2026-11-23T15:16:12Z",
+      "pushedAt": "2026-11-24T17:35:16Z",
       "createdAt": "2026-10-20T03:13:58Z"
     },
     {
@@ -222,9 +222,9 @@
       "homepage": "https://ahmadrosid.github.io/nakama",
       "description": "The AI workspace where teams share agents, skills and automations that the whole company builds on.",
       "language": "TypeScript",
-      "stars": 845,
-      "forks": 151,
-      "openIssues": 47,
+      "stars": 849,
+      "forks": 152,
+      "openIssues": 48,
       "license": "MIT",
       "topics": [
         "agents",
@@ -234,7 +234,7 @@
         "openai"
       ],
       "archived": false,
-      "pushedAt": "2026-11-24T00:59:03Z",
+      "pushedAt": "2026-11-24T17:19:08Z",
       "createdAt": "2026-05-23T06:02:30Z"
     },
     {
@@ -297,7 +297,7 @@
       "language": "Rust",
       "stars": 380,
       "forks": 37,
-      "openIssues": 19,
+      "openIssues": 23,
       "license": "Apache-2.0",
       "topics": [
         "agentic-ai",
@@ -322,7 +322,7 @@
         "token-optimization"
       ],
       "archived": false,
-      "pushedAt": "2026-11-23T04:03:13Z",
+      "pushedAt": "2026-11-24T16:54:23Z",
       "createdAt": "2026-03-15T03:38:04Z"
     },
     {
@@ -336,8 +336,8 @@
       "homepage": "https://adbkit.pages.dev",
       "description": "A simple, modern GUI for ADB, Fastboot and Scrcpy",
       "language": "TypeScript",
-      "stars": 373,
-      "forks": 46,
+      "stars": 374,
+      "forks": 47,
       "openIssues": 5,
       "license": "MIT",
       "topics": [
@@ -364,9 +364,9 @@
       "homepage": "https://usetroupe.dev",
       "description": "Troupe any Agents in one UI for Claude, ChatGPT, Antigravity and 30+ more",
       "language": "TypeScript",
-      "stars": 343,
-      "forks": 66,
-      "openIssues": 47,
+      "stars": 344,
+      "forks": 68,
+      "openIssues": 58,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -384,7 +384,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-11-24T04:12:27Z",
+      "pushedAt": "2026-11-25T02:50:56Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -400,7 +400,7 @@
       "language": "Rust",
       "stars": 292,
       "forks": 30,
-      "openIssues": 19,
+      "openIssues": 16,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -425,7 +425,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-11-17T18:54:31Z",
+      "pushedAt": "2026-11-25T02:49:04Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -457,7 +457,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-11-22T06:56:01Z",
+      "pushedAt": "2026-11-24T04:48:37Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -591,7 +591,7 @@
       "description": "Free, Open Source, Offline Point of Sales Apps",
       "language": "TypeScript",
       "stars": 144,
-      "forks": 76,
+      "forks": 75,
       "openIssues": 12,
       "license": "MIT",
       "topics": [],
@@ -612,11 +612,11 @@
       "language": "Java",
       "stars": 131,
       "forks": 99,
-      "openIssues": 2,
+      "openIssues": 3,
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-23T11:26:25Z",
+      "pushedAt": "2026-11-24T22:33:02Z",
       "createdAt": "2018-08-06T13:38:19Z"
     },
     {
@@ -655,7 +655,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-11-24T03:29:08Z",
+      "pushedAt": "2026-11-24T22:17:30Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -753,13 +753,13 @@
       "homepage": null,
       "description": "An interactive, terminal-based AI coding assistant featuring a cyberpunk style terminal UI, context token tracking, and subagent orchestration.",
       "language": "TypeScript",
-      "stars": 72,
+      "stars": 73,
       "forks": 9,
       "openIssues": 3,
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-24T01:14:49Z",
+      "pushedAt": "2026-11-25T02:17:10Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -795,7 +795,7 @@
       "language": "Ruby",
       "stars": 55,
       "forks": 6,
-      "openIssues": 2,
+      "openIssues": 0,
       "license": "MIT",
       "topics": [
         "agent-orchestration",
@@ -805,7 +805,7 @@
         "ruby"
       ],
       "archived": false,
-      "pushedAt": "2026-11-24T04:13:09Z",
+      "pushedAt": "2026-11-24T17:17:25Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -980,33 +980,6 @@
       "createdAt": "2026-06-07T16:49:12Z"
     },
     {
-      "slug": "rizukirr/hyprsimple",
-      "fullName": "rizukirr/hyprsimple",
-      "name": "hyprsimple",
-      "owner": "rizukirr",
-      "ownerUrl": "https://github.com/rizukirr",
-      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
-      "url": "https://github.com/rizukirr/hyprsimple",
-      "homepage": "https://rizukirr.github.io/hyprsimple-web/",
-      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
-      "language": "Shell",
-      "stars": 43,
-      "forks": 4,
-      "openIssues": 1,
-      "license": null,
-      "topics": [
-        "arch-linux",
-        "dotfiles",
-        "hyprland",
-        "hyprland-config",
-        "linux",
-        "omarchy"
-      ],
-      "archived": false,
-      "pushedAt": "2026-11-11T13:35:48Z",
-      "createdAt": "2025-10-04T10:27:45Z"
-    },
-    {
       "slug": "akbxr/dns",
       "fullName": "akbxr/dns",
       "name": "dns",
@@ -1032,6 +1005,33 @@
       "archived": false,
       "pushedAt": "2026-09-25T03:09:23Z",
       "createdAt": "2025-05-26T04:42:45Z"
+    },
+    {
+      "slug": "rizukirr/hyprsimple",
+      "fullName": "rizukirr/hyprsimple",
+      "name": "hyprsimple",
+      "owner": "rizukirr",
+      "ownerUrl": "https://github.com/rizukirr",
+      "ownerAvatar": "https://avatars.githubusercontent.com/u/230007457?v=4",
+      "url": "https://github.com/rizukirr/hyprsimple",
+      "homepage": "https://rizukirr.github.io/hyprsimple-web/",
+      "description": "Minimal aesthetic arch linux + hyprland dotfiles",
+      "language": "Shell",
+      "stars": 42,
+      "forks": 4,
+      "openIssues": 1,
+      "license": null,
+      "topics": [
+        "arch-linux",
+        "dotfiles",
+        "hyprland",
+        "hyprland-config",
+        "linux",
+        "omarchy"
+      ],
+      "archived": false,
+      "pushedAt": "2026-11-11T13:35:48Z",
+      "createdAt": "2025-10-04T10:27:45Z"
     },
     {
       "slug": "rahmanef63/open-silong",
@@ -1197,7 +1197,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-23T00:03:45Z",
+      "pushedAt": "2026-11-24T04:13:44Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1520,7 +1520,7 @@
         "system-programming-control-systems"
       ],
       "archived": false,
-      "pushedAt": "2026-11-23T17:44:15Z",
+      "pushedAt": "2026-11-24T17:33:43Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -1846,7 +1846,7 @@
       "license": null,
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-18T16:40:17Z",
+      "pushedAt": "2026-11-24T15:05:21Z",
       "createdAt": "2026-06-13T11:24:30Z"
     },
     {
@@ -2203,14 +2203,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-11-24T04:13:33.814Z"
+      "syncedAt": "2026-11-25T02:57:38.953Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-11-24T04:13:33.814Z"
+      "syncedAt": "2026-11-25T02:57:38.953Z"
     }
   ],
-  "syncedAt": "2026-11-24T04:13:33.814Z",
+  "syncedAt": "2026-11-25T02:57:38.953Z",
   "count": 81
 }
