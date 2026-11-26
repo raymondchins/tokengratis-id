@@ -1,5 +1,55 @@
 [
   {
+    "date": "2026-11-26",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "Cloudflare Workers AI",
+        "added": [],
+        "removed": [
+          "@cf/moonshotai/kimi-k2.7-code",
+          "@cf/deepseek-ai/deepseek-r1-distill-qwen-32b",
+          "@cf/deepseek-ai/deepseek-v4-flash-0731",
+          "@cf/deepseek-ai/deepseek-v4-pro-0813",
+          "@cf/google/gemma-2b-it-lora",
+          "@cf/google/gemma-7b-it-lora",
+          "@cf/meta-llama/llama-2-7b-chat-hf-lora",
+          "@cf/meta/llama-3.1-8b-instruct-fp8",
+          "@cf/meta/llama-3.2-1b-instruct",
+          "@cf/meta/llama-3.2-3b-instruct",
+          "@cf/moonshotai/kimi-k2.6",
+          "@cf/nvidia/nemotron-3-120b-a12b",
+          "@cf/qwen/qwen3-30b-a3b-fp8",
+          "@cf/qwen/qwq-32b",
+          "@cf/zai-org/glm-5.2",
+          "@cf/zai-org/glm-5.3-flash",
+          "@cf/google/embeddinggemma-300m"
+        ]
+      },
+      {
+        "provider": "Google Gemini",
+        "added": [
+          "Gemini Embedding 001",
+          "Gemini Embedding 2"
+        ],
+        "removed": []
+      },
+      {
+        "provider": "Ollama Cloud",
+        "added": [],
+        "removed": [
+          "Gemma 4 31B IT",
+          "Nemotron 3 Nano 30B A3B",
+          "Nemotron 3 Super 120B A12B",
+          "nemotron-3-ultra",
+          "gpt-oss:20b",
+          "gpt-oss:120b"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-25",
     "providersAdded": [],
     "providersRemoved": [],
@@ -1958,28 +2008,6 @@
           "inclusionAI: Ling 3.0 Flash VL (free)"
         ],
         "removed": []
-      }
-    ]
-  },
-  {
-    "date": "2026-09-09",
-    "providersAdded": [],
-    "providersRemoved": [],
-    "models": [
-      {
-        "provider": "Cline",
-        "added": [
-          "Muse Spark 1.3 Contributor",
-          "Solar Pro 4"
-        ],
-        "removed": []
-      },
-      {
-        "provider": "Groq",
-        "added": [],
-        "removed": [
-          "GPT-OSS Safeguard 20B"
-        ]
       }
     ]
   }
