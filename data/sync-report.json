@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T02:05:10.229Z",
+  "generatedAt": "2026-11-27T02:03:30.667Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
@@ -100,64 +100,46 @@
     "warnings": []
   },
   "diffGuard": {
-    "ok": false,
-    "errors": [
-      "provider \"cloudflare-workers-ai\" model count dropped 41.5% (41 → 24), threshold is 40%",
-      "provider \"ollama-cloud\" model count dropped 75.0% (8 → 2), threshold is 40%",
-      "provider \"ollama-cloud\" model ids churned 75.0% at same-ish count (overlap 25.0%, 8→2 ids) — possible source corruption"
-    ],
+    "ok": true,
+    "errors": [],
     "warnings": [],
     "stats": {
       "prevProviders": 25,
       "nextProviders": 25,
-      "prevModels": 315,
+      "prevModels": 294,
       "nextModels": 294,
-      "totalDropPct": 6.666666666666667,
+      "totalDropPct": 0,
       "disappeared": [],
-      "shrunk": [
-        {
-          "slug": "cloudflare-workers-ai",
-          "prev": 41,
-          "next": 24,
-          "dropPct": 41.46341463414634
-        },
-        {
-          "slug": "ollama-cloud",
-          "prev": 8,
-          "next": 2,
-          "dropPct": 75
-        }
-      ],
-      "churned": [
-        {
-          "slug": "ollama-cloud",
-          "overlapPct": 25,
-          "prevIds": 8,
-          "nextIds": 2
-        }
-      ],
+      "shrunk": [],
+      "churned": [],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 274,
+            "eligible": 276,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "maxOutput": {
             "eligible": 120,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "changed": 1,
+            "ratioPct": 0.8333333333333334,
+            "examples": [
+              {
+                "label": "openrouter/particle-ai/particle-1:free",
+                "from": "131K",
+                "to": "944K"
+              }
+            ]
           },
           "modality": {
-            "eligible": 235,
+            "eligible": 237,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "rateLimit": {
-            "eligible": 176,
+            "eligible": 178,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -184,15 +166,9 @@
           },
           "maxContext": {
             "eligible": 22,
-            "changed": 1,
-            "ratioPct": 4.545454545454546,
-            "examples": [
-              {
-                "label": "cloudflare-workers-ai",
-                "from": "262K",
-                "to": "256K"
-              }
-            ]
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           }
         }
       }
@@ -262,18 +238,7 @@
   ],
   "quarantine": {
     "heldProviders": [],
-    "accepted": [
-      {
-        "slug": "cloudflare-workers-ai",
-        "kind": "shrunk",
-        "detail": "model 41 -> 24 (-41%)"
-      },
-      {
-        "slug": "ollama-cloud",
-        "kind": "shrunk",
-        "detail": "model 8 -> 2 (-75%)"
-      }
-    ],
+    "accepted": [],
     "cleared": [],
     "confirmRuns": 3
   }
