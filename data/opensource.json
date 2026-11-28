@@ -11,8 +11,8 @@
       "homepage": "https://antislop.ai.id",
       "description": "Rules for an AI coding agent to filter out generic AI-generated UI designs, text, and code.",
       "language": "JavaScript",
-      "stars": 10240,
-      "forks": 696,
+      "stars": 10295,
+      "forks": 697,
       "openIssues": 0,
       "license": "MIT",
       "topics": [
@@ -42,9 +42,9 @@
       "homepage": "https://uaparser.dev/",
       "description": "UAParser.js: The Essential Web Development Tool for User-Agent Detection. Detect Browsers, OS, Devices, Bots, Apps, AI Crawlers, and more. Run in Browser or Node",
       "language": "JavaScript",
-      "stars": 10217,
-      "forks": 1217,
-      "openIssues": 17,
+      "stars": 10218,
+      "forks": 1218,
+      "openIssues": 18,
       "license": "AGPL-3.0",
       "topics": [
         "analytics",
@@ -98,7 +98,7 @@
       "description": "Simple and fast databaseless PHP blogging platform, and Flat-File CMS",
       "language": "PHP",
       "stars": 1369,
-      "forks": 307,
+      "forks": 306,
       "openIssues": 56,
       "license": "GPL-2.0",
       "topics": [
@@ -149,7 +149,7 @@
       "homepage": null,
       "description": "Windows desktop app that turns long-form YouTube videos into 9:16 short-form clips — AI highlight detection, face-tracking portrait reframe, and word-by-word captions.",
       "language": "TypeScript",
-      "stars": 1115,
+      "stars": 1118,
       "forks": 316,
       "openIssues": 2,
       "license": "MIT",
@@ -187,9 +187,9 @@
       "homepage": "https://bridgeplay.dev",
       "description": "Free fork of NotProton: Windows Steam games in Mac Steam, on CodeWeavers' Wine and Apple's Game Porting Toolkit",
       "language": "Scala",
-      "stars": 1066,
+      "stars": 1072,
       "forks": 159,
-      "openIssues": 21,
+      "openIssues": 22,
       "license": "GPL-3.0",
       "topics": [
         "apple-silicon",
@@ -208,7 +208,7 @@
         "winecx"
       ],
       "archived": false,
-      "pushedAt": "2026-11-26T15:17:53Z",
+      "pushedAt": "2026-11-28T00:36:37Z",
       "createdAt": "2026-10-20T03:13:58Z"
     },
     {
@@ -222,9 +222,9 @@
       "homepage": "https://ahmadrosid.github.io/nakama",
       "description": "The AI workspace where teams share agents, skills and automations that the whole company builds on.",
       "language": "TypeScript",
-      "stars": 864,
+      "stars": 868,
       "forks": 152,
-      "openIssues": 41,
+      "openIssues": 35,
       "license": "MIT",
       "topics": [
         "agents",
@@ -234,7 +234,7 @@
         "openai"
       ],
       "archived": false,
-      "pushedAt": "2026-11-26T17:22:21Z",
+      "pushedAt": "2026-11-27T15:32:36Z",
       "createdAt": "2026-05-23T06:02:30Z"
     },
     {
@@ -268,7 +268,7 @@
       "homepage": "https://jokoui.web.id",
       "description": "Free Open Source Tailwind CSS Component for Sat-set Developers with Zero Configuration, Installation, and Setup",
       "language": "TypeScript",
-      "stars": 421,
+      "stars": 420,
       "forks": 28,
       "openIssues": 8,
       "license": "MIT",
@@ -350,7 +350,7 @@
         "wails-app"
       ],
       "archived": false,
-      "pushedAt": "2026-11-26T16:21:01Z",
+      "pushedAt": "2026-11-27T06:29:46Z",
       "createdAt": "2025-11-04T15:37:00Z"
     },
     {
@@ -364,9 +364,9 @@
       "homepage": "https://usetroupe.dev",
       "description": "Troupe any Agents in one UI for Claude, ChatGPT, Antigravity and 30+ more",
       "language": "TypeScript",
-      "stars": 369,
+      "stars": 372,
       "forks": 69,
-      "openIssues": 56,
+      "openIssues": 64,
       "license": "MIT",
       "topics": [
         "cross-platform",
@@ -384,7 +384,7 @@
         "workspace-manager"
       ],
       "archived": false,
-      "pushedAt": "2026-11-27T01:59:25Z",
+      "pushedAt": "2026-11-28T01:42:56Z",
       "createdAt": "2026-01-13T04:36:02Z"
     },
     {
@@ -400,7 +400,7 @@
       "language": "Rust",
       "stars": 293,
       "forks": 30,
-      "openIssues": 9,
+      "openIssues": 13,
       "license": "Apache-2.0",
       "topics": [
         "agent-memory",
@@ -425,7 +425,7 @@
         "vector-database"
       ],
       "archived": false,
-      "pushedAt": "2026-11-27T01:20:42Z",
+      "pushedAt": "2026-11-27T09:43:57Z",
       "createdAt": "2026-05-29T00:27:31Z"
     },
     {
@@ -441,7 +441,7 @@
       "language": "TypeScript",
       "stars": 208,
       "forks": 40,
-      "openIssues": 13,
+      "openIssues": 18,
       "license": null,
       "topics": [
         "coding",
@@ -457,7 +457,7 @@
         "tiptap-editor"
       ],
       "archived": false,
-      "pushedAt": "2026-11-26T16:35:25Z",
+      "pushedAt": "2026-11-27T14:34:44Z",
       "createdAt": "2026-03-30T00:18:38Z"
     },
     {
@@ -632,7 +632,7 @@
       "language": "TypeScript",
       "stars": 106,
       "forks": 17,
-      "openIssues": 7,
+      "openIssues": 9,
       "license": null,
       "topics": [
         "browser-shell",
@@ -655,7 +655,7 @@
         "web-terminal"
       ],
       "archived": false,
-      "pushedAt": "2026-11-26T23:29:12Z",
+      "pushedAt": "2026-11-27T23:39:22Z",
       "createdAt": "2026-05-29T17:44:06Z"
     },
     {
@@ -698,7 +698,7 @@
       "description": "IndoGitHubers is an application that displays the GitHub rank of users in Indonesia.",
       "language": "TypeScript",
       "stars": 99,
-      "forks": 23,
+      "forks": 22,
       "openIssues": 11,
       "license": "MIT",
       "topics": [
@@ -759,7 +759,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-26T12:24:49Z",
+      "pushedAt": "2026-11-28T00:58:46Z",
       "createdAt": "2026-06-09T15:06:10Z"
     },
     {
@@ -793,9 +793,9 @@
       "homepage": "https://usetycho.com",
       "description": "Its Factorio for coding agents",
       "language": "Ruby",
-      "stars": 55,
+      "stars": 56,
       "forks": 6,
-      "openIssues": 3,
+      "openIssues": 2,
       "license": "MIT",
       "topics": [
         "agent-orchestration",
@@ -805,7 +805,7 @@
         "ruby"
       ],
       "archived": false,
-      "pushedAt": "2026-11-27T01:39:22Z",
+      "pushedAt": "2026-11-28T01:32:08Z",
       "createdAt": "2026-05-23T01:58:17Z"
     },
     {
@@ -820,7 +820,7 @@
       "description": "The Simplest & Most Reliable LAN / Cross-VLAN Virtual Printer Sharing Solution for Windows",
       "language": "Rust",
       "stars": 54,
-      "forks": 20,
+      "forks": 19,
       "openIssues": 0,
       "license": null,
       "topics": [
@@ -1197,7 +1197,7 @@
       "license": "MIT",
       "topics": [],
       "archived": false,
-      "pushedAt": "2026-11-26T02:05:26Z",
+      "pushedAt": "2026-11-27T02:03:48Z",
       "createdAt": "2026-06-01T10:04:41Z"
     },
     {
@@ -1213,7 +1213,7 @@
       "language": "JavaScript",
       "stars": 23,
       "forks": 1,
-      "openIssues": 0,
+      "openIssues": 1,
       "license": "MIT",
       "topics": [
         "antigravity",
@@ -1231,7 +1231,7 @@
         "vibecoding"
       ],
       "archived": false,
-      "pushedAt": "2026-11-23T12:41:28Z",
+      "pushedAt": "2026-11-28T00:12:25Z",
       "createdAt": "2026-04-21T15:17:02Z"
     },
     {
@@ -1330,7 +1330,7 @@
       "homepage": "https://nusakit.my.id",
       "description": "🇮🇩 Indonesian Data Validation API — NIK, NPWP, Phone, Rupiah, Bank, Wilayah. Live: nusakit.my.id",
       "language": "TypeScript",
-      "stars": 19,
+      "stars": 20,
       "forks": 2,
       "openIssues": 0,
       "license": "MIT",
@@ -1520,7 +1520,7 @@
         "system-programming-control-systems"
       ],
       "archived": false,
-      "pushedAt": "2026-11-25T18:56:44Z",
+      "pushedAt": "2026-11-27T17:34:13Z",
       "createdAt": "2026-07-09T15:14:16Z"
     },
     {
@@ -2183,14 +2183,14 @@
     {
       "name": "IndopenSource/awesome-indonesia",
       "url": "https://github.com/IndopenSource/awesome-indonesia",
-      "syncedAt": "2026-11-27T02:03:36.987Z"
+      "syncedAt": "2026-11-28T01:48:19.777Z"
     },
     {
       "name": "GitHub API",
       "url": "https://docs.github.com/en/rest/repos/repos#get-a-repository",
-      "syncedAt": "2026-11-27T02:03:36.987Z"
+      "syncedAt": "2026-11-28T01:48:19.777Z"
     }
   ],
-  "syncedAt": "2026-11-27T02:03:36.987Z",
+  "syncedAt": "2026-11-28T01:48:19.777Z",
   "count": 80
 }

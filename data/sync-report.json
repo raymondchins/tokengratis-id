@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-27T02:03:30.667Z",
+  "generatedAt": "2026-11-28T01:48:13.929Z",
   "outcome": "ok-with-warnings",
   "sources": {
     "mnfst/awesome-free-llm-apis": {
       "status": "ok",
       "providers": 16,
-      "models": 79,
+      "models": 78,
       "shapeIssues": []
     },
     "freellm.net": {
@@ -56,7 +56,7 @@
     "openrouter.ai/api/v1/models": {
       "status": "ok",
       "providers": 1,
-      "models": 11,
+      "models": 10,
       "shapeIssues": []
     }
   },
@@ -65,7 +65,7 @@
   ],
   "merged": {
     "providers": 25,
-    "models": 294,
+    "models": 293,
     "shapeIssues": [
       {
         "severity": "warn",
@@ -73,12 +73,12 @@
         "field": "context",
         "rule": "context-shape",
         "count": 1,
-        "total": 276,
-        "ratio": 0.0036231884057971015,
+        "total": 275,
+        "ratio": 0.0036363636363636364,
         "samples": [
           "448"
         ],
-        "message": "Field \"context\": 1/276 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
+        "message": "Field \"context\": 1/275 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
       },
       {
         "severity": "warn",
@@ -107,39 +107,33 @@
       "prevProviders": 25,
       "nextProviders": 25,
       "prevModels": 294,
-      "nextModels": 294,
-      "totalDropPct": 0,
+      "nextModels": 293,
+      "totalDropPct": 0.3401360544217687,
       "disappeared": [],
       "shrunk": [],
       "churned": [],
       "fieldChurn": {
         "model": {
           "context": {
-            "eligible": 276,
+            "eligible": 274,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "maxOutput": {
-            "eligible": 120,
-            "changed": 1,
-            "ratioPct": 0.8333333333333334,
-            "examples": [
-              {
-                "label": "openrouter/particle-ai/particle-1:free",
-                "from": "131K",
-                "to": "944K"
-              }
-            ]
+            "eligible": 119,
+            "changed": 0,
+            "ratioPct": 0,
+            "examples": []
           },
           "modality": {
-            "eligible": 237,
+            "eligible": 235,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
           },
           "rateLimit": {
-            "eligible": 178,
+            "eligible": 176,
             "changed": 0,
             "ratioPct": 0,
             "examples": []
@@ -148,9 +142,15 @@
         "provider": {
           "description": {
             "eligible": 16,
-            "changed": 0,
-            "ratioPct": 0,
-            "examples": []
+            "changed": 1,
+            "ratioPct": 6.25,
+            "examples": [
+              {
+                "label": "aion-labs",
+                "from": "Permanent free tier, no credit card required. 15 RPM, 20K tokens/day. Specialized for roleplay and storytelling.",
+                "to": "Permanent free tier. API access requires verifying a payment card, which is never charged. 15 RPM, 20K tokens/day. Specialized for roleplay and storytelling."
+              }
+            ]
           },
           "baseUrl": {
             "eligible": 16,
@@ -215,12 +215,12 @@
       "field": "context",
       "rule": "context-shape",
       "count": 1,
-      "total": 276,
-      "ratio": 0.0036231884057971015,
+      "total": 275,
+      "ratio": 0.0036363636363636364,
       "samples": [
         "448"
       ],
-      "message": "Field \"context\": 1/276 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
+      "message": "Field \"context\": 1/275 (0%) nilai TIDAK berbentuk context window yang wajar (contoh valid: \"128K\", \"1M\", \"8192\"). Sample: 448. Ini pola PERSIS INCIDENT 2026-07-25 (kolom \"Score\" freellm.net kebaca sebagai context — nilai 40-81 telanjang tanpa unit K/M). Cek mapping header kolom di adapter sumber \"merged\" sebelum percaya angka ini."
     },
     {
       "severity": "warn",

@@ -1,5 +1,28 @@
 [
   {
+    "date": "2026-11-28",
+    "providersAdded": [],
+    "providersRemoved": [],
+    "models": [
+      {
+        "provider": "LLM7.io",
+        "added": [
+          "mistral-Nemo-Instruct-2407"
+        ],
+        "removed": [
+          "mistral-Nemo-Instruct-2407"
+        ]
+      },
+      {
+        "provider": "OpenRouter",
+        "added": [],
+        "removed": [
+          "inclusionAI: Ling 3.2 Flash (free)"
+        ]
+      }
+    ]
+  },
+  {
     "date": "2026-11-26",
     "providersAdded": [],
     "providersRemoved": [],
@@ -1938,76 +1961,6 @@
         "removed": [
           "Qwen/Qwen3-235B-A22B-Instruct-2507"
         ]
-      }
-    ]
-  },
-  {
-    "date": "2026-09-10",
-    "providersAdded": [],
-    "providersRemoved": [
-      {
-        "slug": "sambanova",
-        "name": "SambaNova"
-      }
-    ],
-    "models": [
-      {
-        "provider": "Cloudflare Workers AI",
-        "added": [],
-        "removed": [
-          "Mistral 7B",
-          "Qwen 1.5 7B"
-        ]
-      },
-      {
-        "provider": "GitHub Models",
-        "added": [],
-        "removed": [
-          "gpt-4.1",
-          "gpt-4.1-mini",
-          "Llama-4-Scout-17B-16E-Instruct",
-          "Llama-4-Maverick-17B-128E-Instruct-FP8",
-          "gpt-5",
-          "o4-mini",
-          "Llama-3.3-70B-Instruct",
-          "gpt-4o",
-          "Mistral-Small-3.1",
-          "DeepSeek-R1"
-        ]
-      },
-      {
-        "provider": "Groq",
-        "added": [
-          "meta-llama/llama-prompt-guard-2-22m",
-          "meta-llama/llama-prompt-guard-2-86m",
-          "qwen/qwen3.8-27b"
-        ],
-        "removed": [
-          "Moonshot Kimi K2",
-          "Moonshot Kimi K2 0905"
-        ]
-      },
-      {
-        "provider": "ModelScope",
-        "added": [],
-        "removed": [
-          "Qwen/Qwen3-235B-A22B"
-        ]
-      },
-      {
-        "provider": "NVIDIA NIM",
-        "added": [],
-        "removed": [
-          "deepseek-ai/deepseek-v4-flash",
-          "deepseek-ai/deepseek-v4-pro"
-        ]
-      },
-      {
-        "provider": "OpenRouter",
-        "added": [
-          "inclusionAI: Ling 3.0 Flash VL (free)"
-        ],
-        "removed": []
       }
     ]
   }
